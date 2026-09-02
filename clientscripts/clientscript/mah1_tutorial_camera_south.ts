@@ -1,0 +1,10 @@
+/// <reference path="../cs2.d.ts" />
+/// <reference path="../gamevals.d.ts" />
+/// <reference path="../vars.d.ts" />
+// [clientscript,mah1_tutorial_camera_south]
+
+function mah1_tutorial_camera_south(): void {
+    varc_mah1_tutorial_camera_step = 4;
+    camMovealong(0, varc_mah1_tutorial_camera_step, 600, 900, 1, varc_mah1_tutorial_camera_step);
+    ifSetOnCamFinished(hook(mah1_tutorial_camera_next, "", []), Component.interface_558.component_558_0);
+}

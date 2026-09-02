@@ -1,0 +1,26 @@
+/// <reference path="../cs2.d.ts" />
+/// <reference path="../gamevals.d.ts" />
+/// <reference path="../vars.d.ts" />
+// cs2_2697
+
+function cs2_2697(intArg0: number, intArg1: number): void {
+    if (intArg0 == detailGetActiveToolkit()) {
+        return;
+    }
+    changeRender(intArg0);
+    let int2: number = detailGetActiveToolkit();
+    cs2_2593(int2);
+
+    if (intArg0 != int2) {
+        detailToolkit(int2, 1);
+        graphics_options_message(intArg1, 1, "RuneScape was unable to enter that display mode." + "<br>" + "<br>" + "Please visit our website for more information.", "", "");
+        cs2_3387(int2, getWindowMode(), ...graphics_options_reviewoptions(int2), intArg1);
+    }
+    cs2_3387(int2, getWindowMode(), ...graphics_options_reviewoptions(int2), intArg1);
+
+    if (int2 == 1 || int2 == 3) {
+        cs2_2700(1, intArg1, false, true);
+    } else {
+        detailToolkit(int2, 0);
+    }
+}

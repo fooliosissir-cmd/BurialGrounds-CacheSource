@@ -1,0 +1,106 @@
+/// <reference path="../cs2.d.ts" />
+/// <reference path="../gamevals.d.ts" />
+/// <reference path="../vars.d.ts" />
+// cs2_5451
+
+function cs2_5451(intArg0: number): number {
+    switch (intArg0) {
+        case 1:
+            return varbit_dom_boss_1_slain;
+        case 2:
+            return varbit_dom_boss_2_slain;
+        case 3:
+            return varbit_dom_boss_3_slain;
+        case 4:
+            return varbit_dom_boss_4_slain;
+        case 5:
+            return varbit_dom_boss_5_slain;
+        case 6:
+            return varbit_dom_boss_6_slain;
+        case 7:
+            return varbit_dom_boss_7_slain;
+        case 8:
+            return varbit_dom_boss_8_slain;
+        case 9:
+            return varbit_dom_boss_9_slain;
+        case 10:
+            return varbit_dom_boss_10_slain;
+        case 11:
+            return varbit_dom_boss_11_slain;
+        case 12:
+            return varbit_dom_boss_12_slain;
+        case 13:
+            return varbit_dom_boss_13_slain;
+        case 14:
+            return varbit_dom_boss_14_slain;
+        case 15:
+            return varbit_dom_boss_15_slain;
+        case 16:
+            return varbit_dom_boss_16_slain;
+        case 17:
+            return varbit_dom_boss_17_slain;
+        case 18:
+            return varbit_dom_boss_18_slain;
+        case 19:
+            return varbit_dom_boss_19_slain;
+        case 20:
+            return varbit_dom_boss_20_slain;
+        case 21:
+            return varbit_dom_boss_21_slain;
+        case 22:
+            return varbit_dom_boss_22_slain;
+        case 23:
+            return varbit_dom_boss_23_slain;
+        case 24:
+            return varbit_dom_boss_24_slain;
+        case 25:
+            return varbit_dom_boss_25_slain;
+        case 26:
+            return varbit_dom_boss_26_slain;
+        case 27:
+            return varbit_dom_boss_27_slain;
+        case 28:
+            return varbit_dom_boss_28_slain;
+        case 29:
+            return varbit_dom_boss_29_slain;
+        case 30:
+            return varbit_dom_boss_30_slain;
+        case 31:
+            return varbit_dom_boss_31_slain;
+        case 32:
+            return varbit_dom_boss_32_slain;
+        case 33:
+            return varbit_dom_boss_33_slain;
+        case 34:
+            return varbit_dom_boss_34_slain;
+        case 35:
+            return varbit_dom_boss_35_slain;
+        case 36:
+            return varbit_dom_boss_36_slain;
+        case 37:
+            return varbit_dom_boss_37_slain;
+        case 38:
+            return varbit_dom_boss_38_slain;
+        case 39:
+            return varbit_dom_boss_39_slain;
+        case 40:
+            return varbit_dom_boss_40_slain;
+        case 41:
+            return varbit_dom_boss_41_slain;
+        case 42:
+            return varbit_dom_boss_42_slain;
+        case 43:
+            return varbit_dom_boss_43_slain;
+        case 44:
+            return varbit_dom_boss_44_slain;
+        case 45:
+            return varbit_dom_boss_45_slain;
+        case 46:
+            return varbit_dom_boss_46_slain;
+        case 47:
+            return varbit_dom_boss_47_slain;
+        case 48:
+            return varbit_dom_boss_48_slain;
+    }
+    return 0;
+}

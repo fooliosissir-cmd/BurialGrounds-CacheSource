@@ -1,0 +1,41 @@
+/// <reference path="../cs2.d.ts" />
+/// <reference path="../gamevals.d.ts" />
+/// <reference path="../vars.d.ts" />
+// cs2_2617
+
+function cs2_2617(): number {
+    let int0: number = camGetAngleYa();
+
+    if (int0 < 128 || int0 >= 1920) {
+        return 0;
+    }
+
+    if (int0 < 384 && int0 >= 128) {
+        return 7;
+    }
+
+    if (int0 >= 384 && int0 < 650) {
+        return 6;
+    }
+
+    if (int0 < 896 && int0 >= 650) {
+        return 5;
+    }
+
+    if (int0 >= 896 && int0 < 1152) {
+        return 4;
+    }
+
+    if (int0 < 1408 && int0 >= 1152) {
+        return 3;
+    }
+
+    if (int0 >= 1408 && int0 < 1664) {
+        return 2;
+    }
+
+    if (int0 < 1920 && int0 >= 1664) {
+        return 1;
+    }
+    return 0;
+}

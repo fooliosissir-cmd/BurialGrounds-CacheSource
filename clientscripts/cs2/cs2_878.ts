@@ -1,0 +1,10 @@
+/// <reference path="../cs2.d.ts" />
+/// <reference path="../gamevals.d.ts" />
+/// <reference path="../vars.d.ts" />
+// cs2_878
+
+function cs2_878(intArg0: component): void {
+    ifSetModel(Model.model_32408, intArg0);
+    hookMouseExit(noHook(""), intArg0);
+    ifSetHide(true, Component.interface_696.component_696_3);
+}

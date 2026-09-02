@@ -1,0 +1,90 @@
+/// <reference path="../cs2.d.ts" />
+/// <reference path="../gamevals.d.ts" />
+/// <reference path="../vars.d.ts" />
+// cs2_5319
+
+function cs2_5319(intArg0: number): number {
+    switch (intArg0) {
+        case 0:
+            return varc_clan_keep_theatre_sound_bm0_varc;
+        case 1:
+            return varc_clan_keep_theatre_sound_bm1_varc;
+        case 2:
+            return varc_clan_keep_theatre_sound_bm2_varc;
+        case 3:
+            return varc_clan_keep_theatre_sound_bm3_varc;
+        case 4:
+            return varc_clan_keep_theatre_sound_bm4_varc;
+        case 5:
+            return varc_clan_keep_theatre_sound_bm5_varc;
+        case 6:
+            return varc_clan_keep_theatre_sound_bm6_varc;
+        case 7:
+            return varc_clan_keep_theatre_sound_bm7_varc;
+        case 8:
+            return varc_clan_keep_theatre_sound_bm8_varc;
+        case 9:
+            return varc_clan_keep_theatre_sound_bm9_varc;
+        case 10:
+            return varc_clan_keep_theatre_sound_bm10_varc;
+        case 11:
+            return varc_clan_keep_theatre_sound_bm11_varc;
+        case 12:
+            return varc_clan_keep_theatre_sound_bm12_varc;
+        case 13:
+            return varc_clan_keep_theatre_sound_bm13_varc;
+        case 14:
+            return varc_clan_keep_theatre_sound_bm14_varc;
+        case 15:
+            return varc_clan_keep_theatre_sound_bm15_varc;
+        case 16:
+            return varc_clan_keep_theatre_sound_bm16_varc;
+        case 17:
+            return varc_clan_keep_theatre_sound_bm17_varc;
+        case 18:
+            return varc_clan_keep_theatre_sound_bm18_varc;
+        case 19:
+            return varc_clan_keep_theatre_sound_bm19_varc;
+        case 20:
+            return varc_clan_keep_theatre_sound_bm20_varc;
+        case 21:
+            return varc_clan_keep_theatre_sound_bm21_varc;
+        case 22:
+            return varc_clan_keep_theatre_sound_bm22_varc;
+        case 23:
+            return varc_clan_keep_theatre_sound_bm23_varc;
+        case 24:
+            return varc_clan_keep_theatre_sound_bm24_varc;
+        case 25:
+            return varc_clan_keep_theatre_sound_bm25_varc;
+        case 26:
+            return varc_clan_keep_theatre_sound_bm26_varc;
+        case 27:
+            return varc_clan_keep_theatre_sound_bm27_varc;
+        case 28:
+            return varc_clan_keep_theatre_sound_bm28_varc;
+        case 29:
+            return varc_clan_keep_theatre_sound_bm29_varc;
+        case 30:
+            return varc_clan_keep_theatre_sound_bm30_varc;
+        case 31:
+            return varc_clan_keep_theatre_sound_bm31_varc;
+        case 32:
+            return varc_clan_keep_theatre_sound_bm32_varc;
+        case 33:
+            return varc_clan_keep_theatre_sound_bm33_varc;
+        case 34:
+            return varc_clan_keep_theatre_sound_bm34_varc;
+        case 35:
+            return varc_clan_keep_theatre_sound_bm35_varc;
+        case 36:
+            return varc_clan_keep_theatre_sound_bm36_varc;
+        case 37:
+            return varc_clan_keep_theatre_sound_bm37_varc;
+        case 38:
+            return varc_clan_keep_theatre_sound_bm38_varc;
+        case 39:
+            return varc_clan_keep_theatre_sound_bm39_varc;
+    }
+    return 0;
+}

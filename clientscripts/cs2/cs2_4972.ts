@@ -1,0 +1,106 @@
+/// <reference path="../cs2.d.ts" />
+/// <reference path="../gamevals.d.ts" />
+/// <reference path="../vars.d.ts" />
+// cs2_4972
+
+function cs2_4972(intArg0: number): component {
+    switch (intArg0) {
+        case 1:
+            return Component.interface_1261.component_1261_341;
+        case 2:
+            return Component.interface_1261.component_1261_338;
+        case 3:
+            return Component.interface_1261.component_1261_335;
+        case 4:
+            return Component.interface_1261.component_1261_299;
+        case 5:
+            return Component.interface_1261.component_1261_302;
+        case 6:
+            return Component.interface_1261.component_1261_305;
+        case 7:
+            return Component.interface_1261.component_1261_308;
+        case 8:
+            return Component.interface_1261.component_1261_311;
+        case 9:
+            return Component.interface_1261.component_1261_314;
+        case 10:
+            return Component.interface_1261.component_1261_317;
+        case 11:
+            return Component.interface_1261.component_1261_320;
+        case 12:
+            return Component.interface_1261.component_1261_323;
+        case 13:
+            return Component.interface_1261.component_1261_326;
+        case 14:
+            return Component.interface_1261.component_1261_329;
+        case 15:
+            return Component.interface_1261.component_1261_332;
+        case 16:
+            return Component.interface_1258.component_1258_501;
+        case 17:
+            return Component.interface_1258.component_1258_504;
+        case 18:
+            return Component.interface_1258.component_1258_507;
+        case 19:
+            return Component.interface_1258.component_1258_510;
+        case 20:
+            return Component.interface_1258.component_1258_513;
+        case 21:
+            return Component.interface_1258.component_1258_516;
+        case 22:
+            return Component.interface_1258.component_1258_520;
+        case 23:
+            return Component.interface_1258.component_1258_523;
+        case 24:
+            return Component.interface_1258.component_1258_526;
+        case 25:
+            return Component.interface_1258.component_1258_529;
+        case 26:
+            return Component.interface_1258.component_1258_532;
+        case 27:
+            return Component.interface_1258.component_1258_535;
+        case 28:
+            return Component.interface_1258.component_1258_538;
+        case 29:
+            return Component.interface_1258.component_1258_541;
+        case 30:
+            return Component.interface_1258.component_1258_544;
+        case 31:
+            return Component.interface_1258.component_1258_547;
+        case 32:
+            return Component.interface_1258.component_1258_550;
+        case 33:
+            return Component.interface_1258.component_1258_553;
+        case 34:
+            return Component.interface_1258.component_1258_556;
+        case 35:
+            return Component.interface_1258.component_1258_558;
+        case 36:
+            return Component.interface_1258.component_1258_566;
+        case 37:
+            return Component.interface_1258.component_1258_562;
+        case 38:
+            return Component.interface_1258.component_1258_570;
+        case 39:
+            return Component.interface_1258.component_1258_574;
+        case 40:
+            return Component.interface_1258.component_1258_578;
+        case 41:
+            return Component.interface_1258.component_1258_582;
+        case 42:
+            return Component.interface_1258.component_1258_586;
+        case 43:
+            return Component.interface_1258.component_1258_590;
+        case 44:
+            return Component.interface_1258.component_1258_594;
+        case 45:
+            return Component.interface_1258.component_1258_598;
+        case 46:
+            return Component.interface_1258.component_1258_602;
+        case 47:
+            return Component.interface_1258.component_1258_606;
+        case 48:
+            return Component.interface_1258.component_1258_610;
+    }
+    return -1;
+}

@@ -1,0 +1,29 @@
+/// <reference path="../cs2.d.ts" />
+/// <reference path="../gamevals.d.ts" />
+/// <reference path="../vars.d.ts" />
+// cs2_991
+
+function cs2_991(intArg0: number): [string, number] {
+    switch (intArg0) {
+        case 0:
+            return ["Pickpocket", 1];
+        case 1:
+            return ["Multiple Pickpocket", 1];
+        case 2:
+            return ["Stalls", 1];
+        case 3:
+            return ["Chests", 1];
+        case 4:
+            return ["Miscellaneous", 1];
+        case 5:
+            return ["Other", 1];
+        case 6:
+            return ["Minigames", 1];
+        case 7:
+            return ["Dungeoneering", 1];
+        case 8:
+            return ["Milestones", 1];
+        default:
+            return ["", -1];
+    }
+}

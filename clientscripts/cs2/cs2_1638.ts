@@ -1,0 +1,111 @@
+/// <reference path="../cs2.d.ts" />
+/// <reference path="../gamevals.d.ts" />
+/// <reference path="../vars.d.ts" />
+// cs2_1638
+
+function cs2_1638(intArg0: number): string {
+    switch (intArg0) {
+        case 0:
+            return varcstr_224;
+        case 1:
+            return varcstr_225;
+        case 2:
+            return varcstr_226;
+        case 3:
+            return varcstr_227;
+        case 4:
+            return varcstr_228;
+        case 5:
+            return varcstr_229;
+        case 6:
+            return varcstr_230;
+        case 7:
+            return varcstr_231;
+        case 8:
+            return varcstr_232;
+        case 9:
+            return varcstr_233;
+        case 10:
+            return varcstr_234;
+        case 11:
+            return varcstr_235;
+        case 12:
+            return varcstr_236;
+        case 13:
+            return varcstr_237;
+        case 14:
+            return varcstr_238;
+        case 15:
+            return varcstr_239;
+        case 16:
+            return varcstr_240;
+        case 17:
+            return varcstr_241;
+        case 18:
+            return varcstr_242;
+        case 19:
+            return varcstr_243;
+        case 20:
+            return varcstr_244;
+        case 21:
+            return varcstr_245;
+        case 22:
+            return varcstr_246;
+        case 23:
+            return varcstr_247;
+        case 24:
+            return varcstr_248;
+        case 25:
+            return varcstr_249;
+        case 26:
+            return varcstr_250;
+        case 27:
+            return varcstr_251;
+        case 28:
+            return varcstr_252;
+        case 29:
+            return varcstr_253;
+        case 30:
+            return varcstr_254;
+        case 31:
+            return varcstr_255;
+        case 32:
+            return varcstr_256;
+        case 33:
+            return varcstr_257;
+        case 34:
+            return varcstr_258;
+        case 35:
+            return varcstr_259;
+        case 36:
+            return varcstr_260;
+        case 37:
+            return varcstr_261;
+        case 38:
+            return varcstr_262;
+        case 39:
+            return varcstr_263;
+        case 40:
+            return varcstr_264;
+        case 41:
+            return varcstr_265;
+        case 42:
+            return varcstr_266;
+        case 43:
+            return varcstr_267;
+        case 44:
+            return varcstr_268;
+        case 45:
+            return varcstr_269;
+        case 46:
+            return varcstr_270;
+        case 47:
+            return varcstr_271;
+        case 48:
+            return varcstr_272;
+        case 49:
+            return varcstr_273;
+        default:
+            return "";
+    }
+}

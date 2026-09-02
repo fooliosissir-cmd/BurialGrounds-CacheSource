@@ -1,0 +1,84 @@
+/// <reference path="../cs2.d.ts" />
+/// <reference path="../gamevals.d.ts" />
+/// <reference path="../vars.d.ts" />
+// cs2_4028
+
+function cs2_4028(intArg0: component): number {
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(20, 20, 1, 1);
+    ccSetPosition(0, 0, 1, 1);
+    ccSetGraphic(Graphic.aif_window_texture_5);
+    ccSettiling(true);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(96, 44, 0, 0);
+    ccSetPosition(0, 0, 0, 0);
+    ccSetGraphic(Graphic.aif_window3_topleft);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(96, 44, 0, 0);
+    ccSetPosition(0, 0, 2, 0);
+    ccSetGraphic(Graphic.aif_window3_topright);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(96, 22, 0, 0);
+    ccSetPosition(0, 9, 0, 2);
+    ccSetGraphic(Graphic.aif_window3_bottomcorner);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(96, 22, 0, 0);
+    ccSetPosition(0, 9, 2, 2);
+    ccSethflip(true);
+    ccSetGraphic(Graphic.aif_window3_bottomcorner);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(21, 209, 0, 1);
+    ccSetPosition(1, 100, 0, 0);
+    ccSetGraphic(Graphic.aif_window3_sidemiddle);
+    ccSettiling(true);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(21, 209, 0, 1);
+    ccSetPosition(1, 100, 2, 0);
+    ccSethflip(true);
+    ccSetGraphic(Graphic.aif_window3_sidemiddle);
+    ccSettiling(true);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(21, 56, 0, 0);
+    ccSetPosition(1, 44, 0, 0);
+    ccSetGraphic(Graphic.aif_window3_sidetop);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(21, 56, 0, 0);
+    ccSetPosition(1, 44, 2, 0);
+    ccSethflip(true);
+    ccSetGraphic(Graphic.aif_window3_sidetop);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(22, 78, 0, 0);
+    ccSetPosition(0, 31, 0, 2);
+    ccSetGraphic(Graphic.aif_window3_sidebottom);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(22, 78, 0, 0);
+    ccSetPosition(0, 31, 2, 2);
+    ccSethflip(true);
+    ccSetGraphic(Graphic.aif_window3_sidebottom);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(190, 43, 1, 0);
+    ccSetPosition(0, 1, 1, 0);
+    ccSetGraphic(Graphic.aif_window3_topmiddletile);
+    ccSettiling(true);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(190, 21, 1, 0);
+    ccSetPosition(0, 10, 1, 2);
+    ccSetGraphic(Graphic.aif_window3_bottommiddletile);
+    ccSettiling(true);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(55, 32, 0, 0);
+    ccSetPosition(0, 0, 1, 2);
+    ccSetGraphic(Graphic.aif_window3_bottommiddledetail);
+    ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
+    ccSetSize(19, 19, 0, 0);
+    ccSetPosition(12, 12, 2, 0);
+    let int1: graphic = Graphic.aif_close_1_0;
+    let int2: graphic = Graphic.aif_close_1_1;
+    ccSetGraphic(int1);
+    ccSetTrans(125);
+    ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int2]));
+    ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int1]));
+    ccSetOp(1, "Close");
+    ccSetOnOpt(hook(closebutton_click, "", []));
+    return ccGetId();
+}

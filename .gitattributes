@@ -1,0 +1,9 @@
+# Text formats: normalise line endings so every platform commits the same bytes.
+*.json text eol=lf
+*.ts text eol=lf
+*.md text eol=lf
+# Everything the unpacker writes as bytes is binary; keep git from ever touching it.
+*.dat binary
+*.grp binary
+*.container binary
+*.pristine binary
