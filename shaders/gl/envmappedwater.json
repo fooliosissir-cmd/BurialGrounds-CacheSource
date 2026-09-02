@@ -1,0 +1,167 @@
+{
+  "header": 4,
+  "name": "EnvMappedWater",
+  "variables": [
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "WVPMatrix",
+      "alias": "",
+      "program": [0, 0],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 41,
+      "elementType": null,
+      "arraySize": null,
+      "name": "TexCoordMatrix",
+      "alias": "",
+      "program": [4, 4],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "EyePosAndTime",
+      "alias": "",
+      "program": [6, 6],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "DistanceFogPlane",
+      "alias": "",
+      "program": [7, 7],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "DistanceFogColour",
+      "alias": "",
+      "program": [8, 8],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "HeightFogPlane",
+      "alias": "",
+      "program": [9, 9],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "HeightFogColour",
+      "alias": "",
+      "program": [10, 10],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "SunDir",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "SunColour",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "AmbientColour",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 38,
+      "elementType": null,
+      "arraySize": null,
+      "name": "WorldMatrix",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "SunDirectionAndExponent",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [0, 0]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "SunColourAndWaveExponent",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [1, 1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "WaveIntensityAndBreakWaterDepthAndOffset",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [2, 2]
+    },
+    {
+      "type": 46,
+      "elementType": null,
+      "arraySize": null,
+      "name": "NormalSampler",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [0, 0]
+    },
+    {
+      "type": 48,
+      "elementType": null,
+      "arraySize": null,
+      "name": "EnvMapSampler",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [1, 1]
+    }
+  ],
+  "optionalVariables": [],
+  "mappings": [
+    {
+      "name": "EnvMappedSea",
+      "vertexSource": "EnvMappedWater.vertex.glsl",
+      "fragmentSource": "EnvMappedWater.fragment.glsl",
+      "vertexDefines": [],
+      "fragmentDefines": [{"name": "waves", "value": "true"}]
+    },
+    {
+      "name": "EnvMappedWater",
+      "vertexSource": "EnvMappedWater.vertex.glsl",
+      "fragmentSource": "EnvMappedWater.fragment.glsl",
+      "vertexDefines": [],
+      "fragmentDefines": [{"name": "waves", "value": "false"}]
+    }
+  ]
+}

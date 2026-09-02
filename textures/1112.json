@@ -1,0 +1,252 @@
+{
+  "id": 1112,
+  "operations": [
+    {
+      "type": 1,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 6505013, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 36,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 974, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 7,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 3, "values": null, "shapes": null}],
+      "children": [1, 0]
+    },
+    {
+      "type": 0,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 0, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 3,
+      "opcodes": [{"opcode": 0, "value": 0, "values": [0, 4095, 848, 1, 4096, 1], "shapes": null}],
+      "children": [9]
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 0, "values": [0, 1, 1, 1, 2834, 1, 4096, 2585], "shapes": null}
+      ],
+      "children": [7]
+    },
+    {"type": 21, "imageCacheCapacity": 1, "opcodes": [], "children": [8, 15, 16]},
+    {
+      "type": 32,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 2048, "values": null, "shapes": null},
+        {"opcode": 1, "value": 0, "values": null, "shapes": null},
+        {"opcode": 2, "value": 4096, "values": null, "shapes": null}
+      ],
+      "children": [4]
+    },
+    {
+      "type": 30,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 2048, "values": null, "shapes": null},
+        {"opcode": 1, "value": 4096, "values": null, "shapes": null}
+      ],
+      "children": [13]
+    },
+    {"type": 5, "imageCacheCapacity": 1, "opcodes": [], "children": [12]},
+    {
+      "type": 6,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 40, "values": null, "shapes": null},
+        {"opcode": 1, "value": 4096, "values": null, "shapes": null},
+        {"opcode": 2, "value": 0, "values": null, "shapes": null}
+      ],
+      "children": [19]
+    },
+    {
+      "type": 29,
+      "imageCacheCapacity": 255,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": null,
+          "values": null,
+          "shapes": [
+            {
+              "shape": 0,
+              "coordinates": [0, 1920, 64, 2048],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [0, 2176, 64, 2048],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [4032, 2048, 4160, 2304],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [4032, 2048, 4096, 1920],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [1920, 0, 2048, 64],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [2048, 64, 2176, 0],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [2048, 128, 1792, 0],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [2048, 128, 2304, 0],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [2048, 3968, 1792, 4096],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [2048, 3968, 2304, 4096],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [2048, 4032, 1920, 4096],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [2048, 4032, 2176, 4096],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [128, 2048, 0, 1792],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [0, 2304, 128, 2048],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [3968, 2048, 4096, 2304],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [3968, 2048, 4096, 1792],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            }
+          ]
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": 29,
+      "imageCacheCapacity": 255,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": null,
+          "values": null,
+          "shapes": [
+            {
+              "shape": 0,
+              "coordinates": [0, 4096, 4096, 0],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [0, 0, 4096, 4096],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            }
+          ]
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": 36,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 1122, "values": null, "shapes": null}],
+      "children": []
+    },
+    {"type": 0, "imageCacheCapacity": 1, "opcodes": [], "children": []},
+    {"type": 21, "imageCacheCapacity": 1, "opcodes": [], "children": [5, 0, 16]},
+    {"type": 5, "imageCacheCapacity": 1, "opcodes": [], "children": [4]},
+    {"type": 5, "imageCacheCapacity": 1, "opcodes": [], "children": [11]},
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 0, "values": [0, 0, 848, 4095, 4096, 4096], "shapes": null}
+      ],
+      "children": [17]
+    },
+    {"type": 21, "imageCacheCapacity": 1, "opcodes": [], "children": [6, 2, 20]},
+    {"type": 22, "imageCacheCapacity": 1, "opcodes": [], "children": [18]}
+  ],
+  "opaque": 10,
+  "opacity": 14,
+  "hdr": 3,
+  "trailer": "00000101000000220000"
+}

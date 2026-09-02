@@ -1,0 +1,218 @@
+{
+  "header": 4,
+  "name": "UnderWater",
+  "variables": [
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "diffuseTexture",
+      "alias": "",
+      "program": [-1, -1, -1, -1],
+      "slot": [0, 0, 0, 0]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "fogPlanes",
+      "alias": "",
+      "program": [17, 14, 17, 14],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "fogParams",
+      "alias": "",
+      "program": [18, 15, 18, 15],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "waterPlane",
+      "alias": "",
+      "program": [19, 16, 19, 16],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "waterFogColour",
+      "alias": "",
+      "program": [-1, -1, -1, -1],
+      "slot": [0, 0, 0, 0]
+    },
+    {
+      "type": 46,
+      "elementType": null,
+      "arraySize": null,
+      "name": "causticSampler3D",
+      "alias": "",
+      "program": [-1, -1, -1, -1],
+      "slot": [1, 1, 1, 1]
+    },
+    {
+      "type": 24,
+      "elementType": null,
+      "arraySize": null,
+      "name": "time",
+      "alias": "",
+      "program": [20, 17, 20, 17],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 25,
+      "elementType": null,
+      "arraySize": null,
+      "name": "waterParams",
+      "alias": "",
+      "program": [21, 18, 21, 18],
+      "slot": [1, 1, 1, 1]
+    }
+  ],
+  "optionalVariables": [
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "sunColour",
+      "alias": "",
+      "program": [0, -1, 0, -1],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "antiSunColour",
+      "alias": "",
+      "program": [-1, -1, -1, -1],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "ambientColour",
+      "alias": "",
+      "program": [1, -1, 1, -1],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "sunDirection",
+      "alias": "",
+      "program": [2, -1, 2, -1],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 41,
+      "elementType": null,
+      "arraySize": null,
+      "name": "textureMatrix",
+      "alias": "",
+      "program": [3, 0, 3, 0],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "modelMatrix",
+      "alias": "",
+      "program": [5, 2, 5, 2],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "viewProjectionMatrix",
+      "alias": "",
+      "program": [-1, -1, -1, -1],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "modelViewMatrix",
+      "alias": "",
+      "program": [9, 6, 9, 6],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "projectionMatrix",
+      "alias": "",
+      "program": [13, 10, 13, 10],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "fogColour",
+      "alias": "",
+      "program": [-1, -1, -1, -1],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "eyePosition",
+      "alias": "",
+      "program": [22, 19, 22, 19],
+      "slot": [-1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "eyePositionOS",
+      "alias": "",
+      "program": [-1, -1, -1, -1],
+      "slot": [-1, -1, -1, -1]
+    }
+  ],
+  "mappings": [
+    {
+      "name": "GroundLit",
+      "vertexSource": "UnderWater.vertex.vs_2_0.2",
+      "fragmentSource": "UnderWater.fragment.ps_2_0",
+      "vertexDefines": [{"name": "model", "value": "false"}, {"name": "lit", "value": "true"}],
+      "fragmentDefines": []
+    },
+    {
+      "name": "GroundUnlit",
+      "vertexSource": "UnderWater.vertex.vs_2_0.0",
+      "fragmentSource": "UnderWater.fragment.ps_2_0",
+      "vertexDefines": [{"name": "model", "value": "false"}, {"name": "lit", "value": "false"}],
+      "fragmentDefines": []
+    },
+    {
+      "name": "ModelLit",
+      "vertexSource": "UnderWater.vertex.vs_2_0.3",
+      "fragmentSource": "UnderWater.fragment.ps_2_0",
+      "vertexDefines": [{"name": "model", "value": "true"}, {"name": "lit", "value": "true"}],
+      "fragmentDefines": []
+    },
+    {
+      "name": "ModelUnlit",
+      "vertexSource": "UnderWater.vertex.vs_2_0.1",
+      "fragmentSource": "UnderWater.fragment.ps_2_0",
+      "vertexDefines": [{"name": "model", "value": "true"}, {"name": "lit", "value": "false"}],
+      "fragmentDefines": []
+    }
+  ]
+}

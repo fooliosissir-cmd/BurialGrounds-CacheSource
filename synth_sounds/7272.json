@@ -1,0 +1,70 @@
+{
+  "id": 7272,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 4,
+        "start": 1000,
+        "end": 2000,
+        "phaseDuration": [0, 11305, 22964, 29323, 37802, 47164, 65535],
+        "phasePeak": [22591, 25569, 28797, 64544, 28797, 29790, 27804]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 10422, 21727, 29146, 33916, 41158, 55997, 65535],
+        "phasePeak": [0, 1986, 6703, 20605, 9930, 5214, 1490, 0]
+      },
+      "pitchModifier": null,
+      "pitchModifierAmplitude": null,
+      "volumeMultiplier": null,
+      "volumeAmplitude": null,
+      "release": {
+        "form": 1,
+        "start": 0,
+        "end": 10,
+        "phaseDuration": [0, 14004, 28009, 44708, 65535],
+        "phasePeak": [63701, 62129, 56624, 51905, 42730]
+      },
+      "attack": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 32766, 53685, 65535],
+        "phasePeak": [32768, 32768, 32768, 28574, 29885]
+      },
+      "oscillatorVolume": [75, 75, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 600,
+      "offset": 0,
+      "filter": {
+        "unity": [6677, 0],
+        "varying": 16,
+        "forward": [
+          {"phase": 2649, "magnitude": 5688, "endPhase": 2649, "endMagnitude": 5688},
+          {"phase": 34799, "magnitude": 2967, "endPhase": 34799, "endMagnitude": 2967}
+        ],
+        "backward": [{"phase": 13071, "magnitude": 15085, "endPhase": 46811, "endMagnitude": 19537}],
+        "envelope": {
+          "phaseDuration": [0, 15550, 20734, 24066, 27584, 31101, 34063, 38136, 44060, 65535],
+          "phasePeak": [0, 4762, 10363, 18485, 30808, 52093, 28848, 17085, 7842, 0]
+        }
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

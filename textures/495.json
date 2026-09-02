@@ -1,0 +1,95 @@
+{
+  "id": 495,
+  "operations": [
+    {"type": 0, "imageCacheCapacity": 1, "opcodes": [], "children": []},
+    {
+      "type": 38,
+      "imageCacheCapacity": 255,
+      "opcodes": [
+        {"opcode": 1, "value": 4000, "values": null, "shapes": null},
+        {"opcode": 2, "value": 11, "values": null, "shapes": null},
+        {"opcode": 4, "value": 819, "values": null, "shapes": null}
+      ],
+      "children": []
+    },
+    {
+      "type": 10,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 0, "values": [1433, 243, 255, 255, 4096, 23, 77, 21], "shapes": null}
+      ],
+      "children": [1]
+    },
+    {
+      "type": 36,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 154, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 7,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 3, "values": null, "shapes": null}],
+      "children": [2, 7]
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [0, 0, 1944, 1923, 3392, 3992, 4096, 4096],
+          "shapes": null
+        }
+      ],
+      "children": [3]
+    },
+    {
+      "type": 30,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 1, "value": 4096, "values": null, "shapes": null}],
+      "children": [4]
+    },
+    {
+      "type": 10,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [
+            2577,
+            242,
+            255,
+            255,
+            3174,
+            227,
+            224,
+            199,
+            3584,
+            178,
+            160,
+            111,
+            4096,
+            133,
+            113,
+            95
+          ],
+          "shapes": null
+        }
+      ],
+      "children": [5]
+    },
+    {
+      "type": 0,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 0, "values": null, "shapes": null}],
+      "children": []
+    }
+  ],
+  "opaque": 6,
+  "opacity": 0,
+  "hdr": 8,
+  "trailer": "00000101000000220300"
+}

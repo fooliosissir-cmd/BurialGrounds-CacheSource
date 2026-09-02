@@ -1,0 +1,79 @@
+{
+  "id": 5532,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 2,
+        "start": 50,
+        "end": 200,
+        "phaseDuration": [0, 19837, 48000, 56148, 65535],
+        "phasePeak": [0, 65535, 24805, 16189, 5745]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 7793, 14169, 24620, 41447, 49915, 53326, 58174, 65535],
+        "phasePeak": [0, 30308, 22278, 27458, 12434, 11273, 5768, 3146, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 500,
+        "phaseDuration": [0, 16383, 32857, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 32236, 49149, 65535],
+        "phasePeak": [32768, 32768, 32638, 32768, 32768]
+      },
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 80,
+        "phaseDuration": [0, 16383, 32236, 49149, 65535],
+        "phasePeak": [32768, 32768, 33416, 32768, 32768]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 17181, 31351, 49149, 65535],
+        "phasePeak": [49994, 48440, 53880, 32768, 32768]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [60, 0, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 300,
+      "offset": 0,
+      "filter": {
+        "unity": [1310, 0],
+        "varying": 16,
+        "forward": [{"phase": 65535, "magnitude": 2621, "endPhase": 65535, "endMagnitude": 2621}],
+        "backward": [{"phase": 0, "magnitude": 4194, "endPhase": 25316, "endMagnitude": 1572}],
+        "envelope": {
+          "phaseDuration": [0, 8259, 15800, 22264, 31960, 43630, 56199, 65535],
+          "phasePeak": [0, 3408, 10486, 35914, 47186, 48759, 40109, 0]
+        }
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

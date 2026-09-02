@@ -1,0 +1,35 @@
+{
+  "id": 2116,
+  "operations": [
+    {
+      "type": 1,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 3444832, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 0, "values": [0, 0, 4096, 165], "shapes": null}],
+      "children": [2]
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [0, 0, 827, 4095, 1261, 4095, 1882, 1, 2234, 1, 2896, 4095, 3247, 4095, 4096, 1],
+          "shapes": null
+        }
+      ],
+      "children": [3]
+    },
+    {"type": 2, "imageCacheCapacity": 1, "opcodes": [], "children": []}
+  ],
+  "opaque": 0,
+  "opacity": 2,
+  "hdr": 1,
+  "trailer": "00000101000d00220001"
+}

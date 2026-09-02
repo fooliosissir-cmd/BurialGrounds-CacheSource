@@ -1,0 +1,79 @@
+{
+  "id": 3742,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 4,
+        "start": 10,
+        "end": 1000,
+        "phaseDuration": [0, 1, 59251, 65535],
+        "phasePeak": [0, 0, 65535, 0]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 6463, 16159, 26393, 32319, 46324, 53326, 65535],
+        "phasePeak": [33293, 19137, 10486, 6554, 6554, 6554, 5768, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 22084, 38244, 65535],
+        "phasePeak": [37225, 32768, 33293, 32506, 30147]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 6284, 10593, 14902, 21366, 28369, 39142, 50992, 58533, 60149, 65535],
+        "phasePeak": [65535, 28574, 45089, 56886, 62391, 65535, 60818, 49021, 31720, 24642, 0]
+      },
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 10234, 21546, 33935, 49017, 56558, 65535],
+        "phasePeak": [65535, 38011, 21496, 12846, 4195, 1836, 0]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 27291, 40758, 52608, 58533, 62304, 65535],
+        "phasePeak": [65535, 65535, 63177, 55313, 41944, 24642, 0]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [100, 0, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 25,
+      "delayDecay": 25,
+      "duration": 3000,
+      "offset": 0,
+      "filter": {
+        "unity": [0, 0],
+        "varying": 16,
+        "forward": [],
+        "backward": [{"phase": 0, "magnitude": 1835, "endPhase": 60867, "endMagnitude": 2621}],
+        "envelope": {
+          "phaseDuration": [0, 25855, 45785, 56019, 65535],
+          "phasePeak": [0, 4981, 16778, 42730, 65535]
+        }
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

@@ -1,0 +1,54 @@
+{
+  "id": 483,
+  "operations": [
+    {
+      "type": 36,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 144, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 7,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 3, "values": null, "shapes": null},
+        {"opcode": 1, "value": 1, "values": null, "shapes": null}
+      ],
+      "children": [5, 4]
+    },
+    {"type": 0, "imageCacheCapacity": 1, "opcodes": [], "children": []},
+    {"type": 3, "imageCacheCapacity": 1, "opcodes": [], "children": []},
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [0, 4095, 1758, 3827, 2958, 3040, 4096, 1717],
+          "shapes": null
+        }
+      ],
+      "children": [3]
+    },
+    {
+      "type": 20,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 2, "values": null, "shapes": null},
+        {"opcode": 1, "value": 2, "values": null, "shapes": null}
+      ],
+      "children": [0]
+    },
+    {
+      "type": 0,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 0, "values": null, "shapes": null}],
+      "children": []
+    }
+  ],
+  "opaque": 1,
+  "opacity": 2,
+  "hdr": 6,
+  "trailer": "00000101000000220000"
+}

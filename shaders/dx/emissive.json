@@ -1,0 +1,107 @@
+{
+  "header": 4,
+  "name": "Emissive",
+  "variables": [
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "emissiveTexture",
+      "alias": "",
+      "program": [-1],
+      "slot": [-1]
+    }
+  ],
+  "optionalVariables": [
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "sunColour",
+      "alias": "",
+      "program": [-1],
+      "slot": [-1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "antiSunColour",
+      "alias": "",
+      "program": [-1],
+      "slot": [-1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "ambientColour",
+      "alias": "",
+      "program": [-1],
+      "slot": [-1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "sunDirection",
+      "alias": "",
+      "program": [-1],
+      "slot": [-1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "modelViewProjectionMatrix",
+      "alias": "",
+      "program": [0],
+      "slot": [-1]
+    },
+    {
+      "type": 41,
+      "elementType": null,
+      "arraySize": null,
+      "name": "textureMatrix",
+      "alias": "",
+      "program": [4],
+      "slot": [-1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "eyePosition",
+      "alias": "",
+      "program": [-1],
+      "slot": [-1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "fogColour",
+      "alias": "",
+      "program": [-1],
+      "slot": [0]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "fogPlanes",
+      "alias": "",
+      "program": [6],
+      "slot": [-1]
+    }
+  ],
+  "mappings": [
+    {
+      "name": "Opaque",
+      "vertexSource": "Emissive.vertex.vs_2_0",
+      "fragmentSource": "Emissive.fragment.ps_2_0",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    }
+  ]
+}

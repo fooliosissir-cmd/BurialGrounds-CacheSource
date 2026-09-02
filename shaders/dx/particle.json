@@ -1,0 +1,52 @@
+{
+  "header": 4,
+  "name": "Particle",
+  "variables": [
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "WVPMatrix",
+      "alias": "",
+      "program": [0],
+      "slot": [-1]
+    },
+    {
+      "type": 41,
+      "elementType": null,
+      "arraySize": null,
+      "name": "TexCoordMatrix",
+      "alias": "",
+      "program": [4],
+      "slot": [-1]
+    },
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "DiffuseSampler",
+      "alias": "",
+      "program": [-1],
+      "slot": [0]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "DiffuseColour",
+      "alias": "",
+      "program": [-1],
+      "slot": [0]
+    }
+  ],
+  "optionalVariables": [],
+  "mappings": [
+    {
+      "name": "Particle",
+      "vertexSource": "Particle.vertex.vs_2_0",
+      "fragmentSource": "Particle.fragment.ps_2_0",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    }
+  ]
+}

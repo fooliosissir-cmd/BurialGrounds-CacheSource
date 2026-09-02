@@ -1,0 +1,76 @@
+{
+  "id": 2632,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 4,
+        "start": 3,
+        "end": 1200,
+        "phaseDuration": [0, 3591, 17955, 36807, 65535],
+        "phasePeak": [0, 14418, 0, 65535, 0]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 10234, 18134, 28907, 50094, 65535],
+        "phasePeak": [40633, 3146, 0, 13108, 787, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 77,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [33817, 34341]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [65535, 55313]
+      },
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 13,
+        "phaseDuration": [0, 13286, 26034, 45785, 65535],
+        "phasePeak": [32768, 34604, 46400, 41419, 12583]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 7182, 35551, 49915, 65535],
+        "phasePeak": [20710, 36176, 32244, 20448, 0]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [75, 75, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 400,
+      "offset": 0,
+      "filter": {
+        "unity": [26214, 0],
+        "varying": 16,
+        "forward": [{"phase": 60508, "magnitude": 5505, "endPhase": 60508, "endMagnitude": 5505}],
+        "backward": [{"phase": 28907, "magnitude": 2097, "endPhase": 53326, "endMagnitude": 5767}],
+        "envelope": {"phaseDuration": [0, 7720, 65535], "phasePeak": [32768, 56624, 19661]}
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

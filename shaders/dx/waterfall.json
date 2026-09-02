@@ -1,0 +1,86 @@
+{
+  "header": 4,
+  "name": "Waterfall",
+  "variables": [
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "WorldMatrix",
+      "alias": "",
+      "program": [0, 0],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "WVPMatrix",
+      "alias": "",
+      "program": [4, 4],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "UGenerationPlane",
+      "alias": "",
+      "program": [8, 8],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "VGenerationPlane",
+      "alias": "",
+      "program": [9, 9],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "Time",
+      "alias": "",
+      "program": [10, 10],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 46,
+      "elementType": null,
+      "arraySize": null,
+      "name": "billowSampler3D",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [0, -1]
+    },
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "billowSampler2D",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [-1, 0]
+    }
+  ],
+  "optionalVariables": [],
+  "mappings": [
+    {
+      "name": "Waterfall3D",
+      "vertexSource": "Waterfall.vertex.vs_2_0",
+      "fragmentSource": "Waterfall.fragment3D.ps_2_0",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    },
+    {
+      "name": "Waterfall2D",
+      "vertexSource": "Waterfall.vertex.vs_2_0",
+      "fragmentSource": "Waterfall.fragment2D.ps_2_0",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    }
+  ]
+}

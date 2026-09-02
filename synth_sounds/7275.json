@@ -1,0 +1,88 @@
+{
+  "id": 7275,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 1,
+        "start": 0,
+        "end": 8000,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [65535, 65535]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 2302, 5313, 8324, 14347, 53700, 65535],
+        "phasePeak": [35488, 22019, 11916, 6994, 2850, 0, 0]
+      },
+      "pitchModifier": {
+        "form": 2,
+        "start": 0,
+        "end": 777,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [33031, 33017]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [65535, 32520]
+      },
+      "volumeMultiplier": {
+        "form": 2,
+        "start": 0,
+        "end": 3,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "release": {
+        "form": 1,
+        "start": 0,
+        "end": 6,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [32645, 32892]
+      },
+      "attack": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [32645, 32768]
+      },
+      "oscillatorVolume": [75, 0, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 100,
+      "delayDecay": 0,
+      "duration": 600,
+      "offset": 0,
+      "filter": {
+        "unity": [2277, 0],
+        "varying": 0,
+        "forward": [],
+        "backward": [{"phase": 47578, "magnitude": 5819, "endPhase": 47578, "endMagnitude": 5819}],
+        "envelope": {"phaseDuration": [0, 65535], "phasePeak": [0, 0]}
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

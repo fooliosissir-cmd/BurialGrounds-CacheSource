@@ -1,0 +1,405 @@
+{
+  "header": 4,
+  "name": "Model",
+  "variables": [
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "DiffuseSampler",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+      "slot": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    },
+    {
+      "type": 48,
+      "elementType": null,
+      "arraySize": null,
+      "name": "EnvironmentSampler",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1, 1, 1, 1, 1, -1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "WVPMatrix",
+      "alias": "",
+      "program": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 41,
+      "elementType": null,
+      "arraySize": null,
+      "name": "TexCoordMatrix",
+      "alias": "",
+      "program": [4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4, 4],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "EyePos",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1, -1, 6, 6, 6, 6, 6, 6, 6, 6, 6, 6, -1],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "DistanceFogPlane",
+      "alias": "",
+      "program": [6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 6],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "DistanceFogColour",
+      "alias": "",
+      "program": [7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8, 8, 8, 8, 8, 8, 8, -1],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 0]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "HeightFogPlane",
+      "alias": "",
+      "program": [8, 8, 8, 8, 8, 8, 8, 9, 9, 9, 9, 9, 9, 9, 9, 9, 9, -1],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "HeightFogColour",
+      "alias": "",
+      "program": [9, 9, 9, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, -1],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 2]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "SpecularExponent",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, 0, 0, 0, 0, 0, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "SunDir",
+      "alias": "",
+      "program": [-1, -1, 10, 10, 10, 10, 10, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 7],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "SunColour",
+      "alias": "",
+      "program": [-1, -1, 11, 11, 11, 11, 11, 12, 12, 12, 12, 12, 12, 12, 12, 12, 12, 8],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "AntiSunColour",
+      "alias": "",
+      "program": [-1, -1, 12, 12, 12, 12, 12, 13, 13, 13, 13, 13, 13, 13, 13, 13, 13, 9],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "AmbientColour",
+      "alias": "",
+      "program": [-1, -1, 13, 13, 13, 13, 13, 14, 14, 14, 14, 14, 14, 14, 14, 14, 14, 10],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "ColourModifier",
+      "alias": "",
+      "program": [10, 10, 14, 14, 14, 14, 14, 15, 15, 15, 15, 15, 15, 15, 15, 15, 15, 11],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 38,
+      "elementType": null,
+      "arraySize": null,
+      "name": "WorldMatrix",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 16, 16, 16, 16, 16, -1],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 2,
+      "elementType": 27,
+      "arraySize": 4,
+      "name": "PointLightsPosAndRadiusSq",
+      "alias": "",
+      "program": [-1, -1, -1, 15, 15, 15, 15, -1, 16, 16, 16, 16, -1, 19, 19, 19, 19, -1],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 2,
+      "elementType": 27,
+      "arraySize": 4,
+      "name": "PointLightsDiffuseColour",
+      "alias": "",
+      "program": [-1, -1, -1, 19, 19, 19, 19, -1, 20, 20, 20, 20, -1, 23, 23, 23, 23, -1],
+      "slot": [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1]
+    }
+  ],
+  "optionalVariables": [],
+  "mappings": [
+    {
+      "name": "Unlit",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "0"},
+        {"name": "ShaderMode", "value": "3"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "3"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "Unlit_IgnoreAlpha",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "0"},
+        {"name": "ShaderMode", "value": "3"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "3"},
+        {"name": "IgnoreAlpha", "value": "true"}
+      ]
+    },
+    {
+      "name": "Standard_0PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "0"},
+        {"name": "ShaderMode", "value": "0"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "0"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "Standard_1PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "1"},
+        {"name": "ShaderMode", "value": "0"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "0"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "Standard_2PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "2"},
+        {"name": "ShaderMode", "value": "0"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "0"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "Standard_3PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "3"},
+        {"name": "ShaderMode", "value": "0"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "0"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "Standard_4PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "4"},
+        {"name": "ShaderMode", "value": "0"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "0"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "Specular_0PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "0"},
+        {"name": "ShaderMode", "value": "1"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "1"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "Specular_1PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "1"},
+        {"name": "ShaderMode", "value": "1"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "1"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "Specular_2PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "2"},
+        {"name": "ShaderMode", "value": "1"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "1"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "Specular_3PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "3"},
+        {"name": "ShaderMode", "value": "1"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "1"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "Specular_4PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "4"},
+        {"name": "ShaderMode", "value": "1"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "1"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "EnvironmentalMapping_0PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "0"},
+        {"name": "ShaderMode", "value": "2"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "2"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "EnvironmentalMapping_1PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "1"},
+        {"name": "ShaderMode", "value": "2"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "2"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "EnvironmentalMapping_2PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "2"},
+        {"name": "ShaderMode", "value": "2"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "2"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "EnvironmentalMapping_3PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "3"},
+        {"name": "ShaderMode", "value": "2"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "2"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "EnvironmentalMapping_4PointLights",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "4"},
+        {"name": "ShaderMode", "value": "2"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "2"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    },
+    {
+      "name": "UnderwaterGround",
+      "vertexSource": "Model.vertex.glsl",
+      "fragmentSource": "Model.fragment.glsl",
+      "vertexDefines": [
+        {"name": "PointLightCount", "value": "0"},
+        {"name": "ShaderMode", "value": "4"}
+      ],
+      "fragmentDefines": [
+        {"name": "ShaderMode", "value": "4"},
+        {"name": "IgnoreAlpha", "value": "false"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "header": 4,
+  "name": "Sprite",
+  "variables": [
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "SpriteSampler",
+      "alias": "",
+      "program": [-1, -1, -1],
+      "slot": [0, 0, 0]
+    },
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "MaskSampler",
+      "alias": "",
+      "program": [-1, -1, -1],
+      "slot": [-1, 1, -1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "WVPMatrix",
+      "alias": "",
+      "program": [0, 0, 0],
+      "slot": [-1, -1, -1]
+    },
+    {
+      "type": 41,
+      "elementType": null,
+      "arraySize": null,
+      "name": "SpriteTexCoordMatrix",
+      "alias": "",
+      "program": [4, 4, 4],
+      "slot": [-1, -1, -1]
+    },
+    {
+      "type": 41,
+      "elementType": null,
+      "arraySize": null,
+      "name": "MaskTexCoordMatrix",
+      "alias": "",
+      "program": [-1, 6, -1],
+      "slot": [-1, -1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "MulColour",
+      "alias": "",
+      "program": [-1, -1, -1],
+      "slot": [0, 0, 0]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "AddColour",
+      "alias": "",
+      "program": [-1, -1, -1],
+      "slot": [1, 1, 1]
+    }
+  ],
+  "optionalVariables": [],
+  "mappings": [
+    {
+      "name": "Normal",
+      "vertexSource": "Sprite.vertex.vs_2_0.0",
+      "fragmentSource": "Sprite.fragment.ps_2_0.0",
+      "vertexDefines": [{"name": "Masked", "value": "false"}],
+      "fragmentDefines": [
+        {"name": "Masked", "value": "false"},
+        {"name": "AlphaTex", "value": "false"}
+      ]
+    },
+    {
+      "name": "Masked",
+      "vertexSource": "Sprite.vertex.vs_2_0.1",
+      "fragmentSource": "Sprite.fragment.ps_2_0.1",
+      "vertexDefines": [{"name": "Masked", "value": "true"}],
+      "fragmentDefines": [
+        {"name": "Masked", "value": "true"},
+        {"name": "AlphaTex", "value": "false"}
+      ]
+    },
+    {
+      "name": "AlphaTex",
+      "vertexSource": "Sprite.vertex.vs_2_0.0",
+      "fragmentSource": "Sprite.fragment.ps_2_0.2",
+      "vertexDefines": [{"name": "Masked", "value": "false"}],
+      "fragmentDefines": [
+        {"name": "Masked", "value": "false"},
+        {"name": "AlphaTex", "value": "true"}
+      ]
+    }
+  ]
+}

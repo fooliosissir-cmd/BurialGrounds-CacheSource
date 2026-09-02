@@ -1,0 +1,90 @@
+{
+  "id": 1755,
+  "operations": [
+    {
+      "type": 5,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 4, "values": null, "shapes": null},
+        {"opcode": 1, "value": 4, "values": null, "shapes": null}
+      ],
+      "children": [8]
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 0, "values": [0, 0, 1, 4095, 4096, 4096], "shapes": null}],
+      "children": [0]
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [0, 1, 889, 1034, 2130, 2378, 2503, 1530, 4096, 248],
+          "shapes": null
+        }
+      ],
+      "children": [3]
+    },
+    {"type": 3, "imageCacheCapacity": 1, "opcodes": [], "children": []},
+    {
+      "type": 7,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 3, "values": null, "shapes": null}],
+      "children": [1, 2]
+    },
+    {
+      "type": 30,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 0, "values": null, "shapes": null},
+        {"opcode": 1, "value": 40, "values": null, "shapes": null}
+      ],
+      "children": [6]
+    },
+    {
+      "type": 0,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 127, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 6,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 1, "value": 4096, "values": null, "shapes": null},
+        {"opcode": 2, "value": 0, "values": null, "shapes": null}
+      ],
+      "children": [4]
+    },
+    {
+      "type": 29,
+      "imageCacheCapacity": 255,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": null,
+          "values": null,
+          "shapes": [
+            {
+              "shape": 2,
+              "coordinates": [0, 1536, 4096, 2304],
+              "fill": 4064,
+              "stroke": 4080,
+              "strokeWidth": 1
+            }
+          ]
+        }
+      ],
+      "children": []
+    },
+    {"type": 0, "imageCacheCapacity": 1, "opcodes": [], "children": []}
+  ],
+  "opaque": 9,
+  "opacity": 7,
+  "hdr": 5,
+  "trailer": "00000101000080220001"
+}

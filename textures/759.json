@@ -1,0 +1,48 @@
+{
+  "id": 759,
+  "operations": [
+    {
+      "type": 15,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 2, "value": 0, "values": null, "shapes": null},
+        {"opcode": 3, "value": 0, "values": null, "shapes": null},
+        {"opcode": 5, "value": 1, "values": null, "shapes": null},
+        {"opcode": 6, "value": 1, "values": null, "shapes": null}
+      ],
+      "children": []
+    },
+    {
+      "type": 10,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [102, 0, 0, 0, 460, 59, 60, 59, 768, 99, 100, 99],
+          "shapes": null
+        }
+      ],
+      "children": [0]
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 0, "values": [0, 4095, 413, 3330, 1055, 1, 4096, 1], "shapes": null}
+      ],
+      "children": [0]
+    },
+    {"type": 22, "imageCacheCapacity": 1, "opcodes": [], "children": [1]},
+    {
+      "type": 0,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 25, "values": null, "shapes": null}],
+      "children": []
+    }
+  ],
+  "opaque": 3,
+  "opacity": 2,
+  "hdr": 4,
+  "trailer": "00000000000000220001"
+}

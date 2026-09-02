@@ -1,0 +1,34 @@
+{
+  "header": 4,
+  "name": "Basic",
+  "variables": [],
+  "optionalVariables": [
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "modelMatrix",
+      "alias": "",
+      "program": [0],
+      "slot": [-1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "projectionMatrix",
+      "alias": "",
+      "program": [4],
+      "slot": [-1]
+    }
+  ],
+  "mappings": [
+    {
+      "name": "",
+      "vertexSource": "Basic.vertex.glsl",
+      "fragmentSource": "Basic.fragment.glsl",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    }
+  ]
+}

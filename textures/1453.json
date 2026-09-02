@@ -1,0 +1,81 @@
+{
+  "id": 1453,
+  "operations": [
+    {"type": 13, "imageCacheCapacity": 1, "opcodes": [], "children": []},
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [0, 4095, 1386, 4095, 2709, 3516, 4096, 2792],
+          "shapes": null
+        }
+      ],
+      "children": [0]
+    },
+    {
+      "type": 34,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 1, "value": 2, "values": null, "shapes": null},
+        {"opcode": 2, "value": 65535, "values": [2290, 1388], "shapes": null},
+        {"opcode": 5, "value": 3, "values": null, "shapes": null},
+        {"opcode": 6, "value": 3, "values": null, "shapes": null}
+      ],
+      "children": []
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [0, 0, 951, 3537, 2316, 4095, 4096, 4096],
+          "shapes": null
+        }
+      ],
+      "children": [2]
+    },
+    {
+      "type": 7,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 3, "values": null, "shapes": null}],
+      "children": [3, 1]
+    },
+    {
+      "type": 0,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 0, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 0, "values": [0, 1, 2213, 558, 4096, 3206], "shapes": null}
+      ],
+      "children": [0]
+    },
+    {
+      "type": 7,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 8, "values": null, "shapes": null}],
+      "children": [6, 3]
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 0, "values": [0, 413, 2378, 1696, 4096, 3268], "shapes": null}
+      ],
+      "children": [7]
+    }
+  ],
+  "opaque": 4,
+  "opacity": 8,
+  "hdr": 5,
+  "trailer": "00000101000000220000"
+}

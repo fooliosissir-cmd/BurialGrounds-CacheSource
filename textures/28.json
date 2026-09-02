@@ -1,0 +1,79 @@
+{
+  "id": 28,
+  "operations": [
+    {"type": 0, "imageCacheCapacity": 1, "opcodes": [], "children": []},
+    {
+      "type": 34,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 2, "value": 2048, "values": null, "shapes": null},
+        {"opcode": 4, "value": 16, "values": null, "shapes": null},
+        {"opcode": 5, "value": 3, "values": null, "shapes": null},
+        {"opcode": 6, "value": 5, "values": null, "shapes": null}
+      ],
+      "children": []
+    },
+    {
+      "type": 36,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 135, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 32,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 16384, "values": null, "shapes": null}],
+      "children": [9]
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 2,
+          "values": [0, 0, 2006, 41, 2027, 3185, 4096, 4075],
+          "shapes": null
+        }
+      ],
+      "children": [1]
+    },
+    {"type": 21, "imageCacheCapacity": 1, "opcodes": [], "children": [8, 6, 4]},
+    {
+      "type": 1,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 0, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 7,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 3, "values": null, "shapes": null}],
+      "children": [5, 3]
+    },
+    {
+      "type": 10,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 0, "values": [0, 36, 54, 37, 4096, 100, 121, 97], "shapes": null}
+      ],
+      "children": [2]
+    },
+    {
+      "type": 0,
+      "imageCacheCapacity": 3,
+      "opcodes": [{"opcode": 0, "value": 127, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 0,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 0, "values": null, "shapes": null}],
+      "children": []
+    }
+  ],
+  "opaque": 7,
+  "opacity": 0,
+  "hdr": 10,
+  "trailer": "01000101000000220000"
+}

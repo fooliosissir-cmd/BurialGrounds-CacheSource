@@ -1,0 +1,97 @@
+{
+  "id": 1340,
+  "operations": [
+    {
+      "type": 36,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 125, "values": null, "shapes": null}],
+      "children": []
+    },
+    {"type": 0, "imageCacheCapacity": 1, "opcodes": [], "children": []},
+    {
+      "type": 34,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 1, "value": 3, "values": null, "shapes": null},
+        {"opcode": 2, "value": 65535, "values": [4720, 3054, 64981], "shapes": null},
+        {"opcode": 4, "value": 4, "values": null, "shapes": null},
+        {"opcode": 5, "value": 1, "values": null, "shapes": null},
+        {"opcode": 6, "value": 0, "values": null, "shapes": null}
+      ],
+      "children": []
+    },
+    {
+      "type": 7,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 7, "values": null, "shapes": null},
+        {"opcode": 1, "value": 1, "values": null, "shapes": null}
+      ],
+      "children": [5, 7]
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 0, "values": [0, 1, 2978, 1, 3578, 517, 4096, 4095], "shapes": null}
+      ],
+      "children": [3]
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [
+            0,
+            1,
+            806,
+            4095,
+            1261,
+            1,
+            1303,
+            4095,
+            1551,
+            1,
+            1820,
+            4095,
+            1965,
+            41,
+            2275,
+            4095,
+            2503,
+            1,
+            2772,
+            4095,
+            2896,
+            1,
+            4096,
+            1
+          ],
+          "shapes": null
+        }
+      ],
+      "children": [2]
+    },
+    {"type": 3, "imageCacheCapacity": 1, "opcodes": [], "children": []},
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [0, 4095, 599, 4095, 2585, 2130, 4096, 1],
+          "shapes": null
+        }
+      ],
+      "children": [6]
+    }
+  ],
+  "opaque": 0,
+  "opacity": 4,
+  "hdr": 1,
+  "trailer": "00000000000000220600"
+}

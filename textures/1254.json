@@ -1,0 +1,60 @@
+{
+  "id": 1254,
+  "operations": [
+    {
+      "type": 34,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 2, "value": 819, "values": null, "shapes": null},
+        {"opcode": 4, "value": 6, "values": null, "shapes": null},
+        {"opcode": 5, "value": 5, "values": null, "shapes": null}
+      ],
+      "children": []
+    },
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": 0,
+          "values": [0, 0, 827, 289, 2234, 1096, 3247, 2461, 4096, 4095],
+          "shapes": null
+        }
+      ],
+      "children": [6]
+    },
+    {
+      "type": 0,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 0, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 34,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 1, "value": 6, "values": null, "shapes": null},
+        {"opcode": 4, "value": 8, "values": null, "shapes": null},
+        {"opcode": 5, "value": 2, "values": null, "shapes": null},
+        {"opcode": 6, "value": 2, "values": null, "shapes": null}
+      ],
+      "children": []
+    },
+    {"type": 0, "imageCacheCapacity": 1, "opcodes": [], "children": []},
+    {
+      "type": 34,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 1, "value": 6, "values": null, "shapes": null},
+        {"opcode": 4, "value": 2, "values": null, "shapes": null}
+      ],
+      "children": []
+    },
+    {"type": 21, "imageCacheCapacity": 1, "opcodes": [], "children": [3, 5, 0]}
+  ],
+  "opaque": 4,
+  "opacity": 1,
+  "hdr": 2,
+  "trailer": "0000010100fefe220000"
+}

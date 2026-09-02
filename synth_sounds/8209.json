@@ -1,0 +1,82 @@
+{
+  "id": 8209,
+  "instruments": [
+    null,
+    {
+      "pitch": {
+        "form": 2,
+        "start": 0,
+        "end": 5000,
+        "phaseDuration": [0, 6730, 15941, 65535],
+        "phasePeak": [45429, 45677, 47415, 47663]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 3188, 9564, 9565, 19129, 23203, 36841, 59690, 65535],
+        "phasePeak": [8409, 0, 0, 5194, 0, 5936, 990, 0, 0]
+      },
+      "pitchModifier": null,
+      "pitchModifierAmplitude": null,
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 15,
+        "phaseDuration": [0, 13107, 21609, 44458, 65535],
+        "phasePeak": [15581, 47730, 34871, 13850, 4205]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 26922, 65535],
+        "phasePeak": [1979, 61580, 46247]
+      },
+      "release": {
+        "form": 1,
+        "start": 0,
+        "end": 2,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [59354, 25226]
+      },
+      "attack": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [65535, 34129]
+      },
+      "oscillatorVolume": [75, 0, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 0,
+      "duration": 300,
+      "offset": 0,
+      "filter": {
+        "unity": [25719, 3462],
+        "varying": 16,
+        "forward": [{"phase": 54377, "magnitude": 9644, "endPhase": 54377, "endMagnitude": 9644}],
+        "backward": [
+          {"phase": 35070, "magnitude": 20031, "endPhase": 46406, "endMagnitude": 7913},
+          {"phase": 43572, "magnitude": 18547, "endPhase": 43572, "endMagnitude": 18547}
+        ],
+        "envelope": {
+          "phaseDuration": [0, 12033, 21475, 27214, 36470, 65535],
+          "phasePeak": [65535, 65535, 56294, 53494, 57134, 51813]
+        }
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

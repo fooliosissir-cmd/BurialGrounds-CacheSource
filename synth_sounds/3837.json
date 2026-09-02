@@ -1,0 +1,79 @@
+{
+  "id": 3837,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 3,
+        "start": 50,
+        "end": 4200,
+        "phaseDuration": [0, 5745, 12927, 39038, 65535],
+        "phasePeak": [23593, 48759, 56099, 56506, 49798]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 6712, 13955, 22434, 45751, 65535],
+        "phasePeak": [0, 4864, 5888, 5888, 4096, 0]
+      },
+      "pitchModifier": {
+        "form": 3,
+        "start": 0,
+        "end": 2000,
+        "phaseDuration": [0, 22982, 44528, 59431, 65535],
+        "phasePeak": [65535, 65535, 65535, 65535, 65535]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "volumeMultiplier": {
+        "form": 3,
+        "start": 0,
+        "end": 1500,
+        "phaseDuration": [0, 16698, 36212, 50167, 65535],
+        "phasePeak": [31458, 31720, 20224, 11008, 0]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [100, 30, 0, 0, 0],
+      "oscillatorPitch": [0, 8, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 800,
+      "offset": 0,
+      "filter": {
+        "unity": [0, 0],
+        "varying": 16,
+        "forward": [],
+        "backward": [{"phase": 44169, "magnitude": 23068, "endPhase": 47580, "endMagnitude": 23330}],
+        "envelope": {
+          "phaseDuration": [0, 13645, 35012, 65535],
+          "phasePeak": [0, 33031, 53740, 65535]
+        }
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

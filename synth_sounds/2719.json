@@ -1,0 +1,79 @@
+{
+  "id": 2719,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 4,
+        "start": 2000,
+        "end": 0,
+        "phaseDuration": [0, 11311, 24957, 42373, 65535],
+        "phasePeak": [0, 3146, 4719, 6554, 9176]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 14364, 30523, 49555, 65535],
+        "phasePeak": [0, 1836, 4981, 787, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 77,
+        "phaseDuration": [0, 16383, 30164, 49149, 65535],
+        "phasePeak": [30409, 32768, 30147, 32768, 30933]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 17057, 65535],
+        "phasePeak": [44303, 63177, 65535]
+      },
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 9157, 24239, 43810, 65535],
+        "phasePeak": [31982, 41419, 46400, 46924, 40109]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [100, 0, 0, 0, 0],
+      "oscillatorPitch": [120, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 750,
+      "offset": 0,
+      "filter": {
+        "unity": [40632, 262],
+        "varying": 16,
+        "forward": [],
+        "backward": [{"phase": 56558, "magnitude": 1835, "endPhase": 65535, "endMagnitude": 6291}],
+        "envelope": {
+          "phaseDuration": [0, 20468, 43451, 65535],
+          "phasePeak": [50856, 57148, 61604, 63439]
+        }
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

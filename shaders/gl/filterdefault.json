@@ -1,0 +1,61 @@
+{
+  "header": 4,
+  "name": "FilterDefault",
+  "variables": [
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "modelView",
+      "alias": "",
+      "program": [-1],
+      "slot": [-1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "proj",
+      "alias": "",
+      "program": [-1],
+      "slot": [-1]
+    },
+    {
+      "type": 2,
+      "elementType": 27,
+      "arraySize": 3,
+      "name": "PosAndTexCoords",
+      "alias": "",
+      "program": [0],
+      "slot": [-1]
+    },
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "sceneTex",
+      "alias": "",
+      "program": [-1],
+      "slot": [-1]
+    },
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "screen",
+      "alias": "",
+      "program": [-1],
+      "slot": [0]
+    }
+  ],
+  "optionalVariables": [],
+  "mappings": [
+    {
+      "name": "Red",
+      "vertexSource": "Filter.Filter_vertexGL.glsl",
+      "fragmentSource": "FilterDefault.filter.glsl",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    }
+  ]
+}

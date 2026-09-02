@@ -1,0 +1,82 @@
+{
+  "id": 8163,
+  "instruments": [
+    null,
+    {
+      "pitch": {
+        "form": 4,
+        "start": 0,
+        "end": 400,
+        "phaseDuration": [0, 13638, 65535],
+        "phasePeak": [38230, 20605, 0]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 4782, 13461, 21786, 37550, 45166, 51188, 65535],
+        "phasePeak": [0, 26462, 0, 2968, 0, 0, 990, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 10,
+        "phaseDuration": [0, 5206, 32766, 49149, 65535],
+        "phasePeak": [65535, 33031, 32768, 32768, 32768]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 12752, 65535],
+        "phasePeak": [0, 14399, 56848]
+      },
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 15,
+        "phaseDuration": [0, 16383, 30819, 49949, 65535],
+        "phasePeak": [32768, 32768, 23000, 13108, 6183]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 32590, 65535],
+        "phasePeak": [40064, 52677, 64300]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [80, 80, 0, 0, 0],
+      "oscillatorPitch": [80, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 125,
+      "delayDecay": 5,
+      "duration": 250,
+      "offset": 0,
+      "filter": {
+        "unity": [25225, 0],
+        "varying": 32,
+        "forward": [{"phase": 38613, "magnitude": 3956, "endPhase": 38613, "endMagnitude": 3956}],
+        "backward": [
+          {"phase": 25505, "magnitude": 4698, "endPhase": 25505, "endMagnitude": 4698},
+          {"phase": 6553, "magnitude": 9892, "endPhase": 13107, "endMagnitude": 6924}
+        ],
+        "envelope": {
+          "phaseDuration": [0, 5183, 8886, 32953, 46467, 65535],
+          "phasePeak": [37530, 58535, 45372, 57975, 55734, 65535]
+        }
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

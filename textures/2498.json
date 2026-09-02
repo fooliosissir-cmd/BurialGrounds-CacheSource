@@ -1,0 +1,84 @@
+{
+  "id": 2498,
+  "operations": [
+    {
+      "type": 29,
+      "imageCacheCapacity": 255,
+      "opcodes": [
+        {
+          "opcode": 0,
+          "value": null,
+          "values": null,
+          "shapes": [
+            {
+              "shape": 0,
+              "coordinates": [1664, 0, 2048, 2048],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 4
+            },
+            {
+              "shape": 0,
+              "coordinates": [896, 0, 2048, 2048],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            },
+            {
+              "shape": 0,
+              "coordinates": [0, 0, 2048, 2048],
+              "fill": null,
+              "stroke": 4080,
+              "strokeWidth": 1
+            }
+          ]
+        }
+      ],
+      "children": []
+    },
+    {
+      "type": 7,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 5, "values": null, "shapes": null},
+        {"opcode": 1, "value": 1, "values": null, "shapes": null}
+      ],
+      "children": [4, 5]
+    },
+    {
+      "type": 0,
+      "imageCacheCapacity": 1,
+      "opcodes": [{"opcode": 0, "value": 2, "values": null, "shapes": null}],
+      "children": []
+    },
+    {
+      "type": 6,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 1, "value": 204, "values": null, "shapes": null},
+        {"opcode": 2, "value": 1, "values": null, "shapes": null}
+      ],
+      "children": [7]
+    },
+    {
+      "type": 23,
+      "imageCacheCapacity": 3,
+      "opcodes": [{"opcode": 0, "value": 1, "values": null, "shapes": null}],
+      "children": [0]
+    },
+    {"type": 5, "imageCacheCapacity": 1, "opcodes": [], "children": [4]},
+    {
+      "type": 8,
+      "imageCacheCapacity": 1,
+      "opcodes": [
+        {"opcode": 0, "value": 0, "values": [0, 1, 1758, 4095, 4096, 4096], "shapes": null}
+      ],
+      "children": [1]
+    },
+    {"type": 0, "imageCacheCapacity": 1, "opcodes": [], "children": []}
+  ],
+  "opaque": 2,
+  "opacity": 6,
+  "hdr": 3,
+  "trailer": "00000101000000220000"
+}

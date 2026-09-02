@@ -1,0 +1,71 @@
+{
+  "id": 3947,
+  "instruments": [
+    null,
+    {
+      "pitch": {
+        "form": 2,
+        "start": 100,
+        "end": 800,
+        "phaseDuration": [0, 8438, 15441, 65535],
+        "phasePeak": [0, 13370, 64750, 63701]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 8079, 14902, 17955, 21007, 27471, 32857, 46862, 65534, 65535],
+        "phasePeak": [0, 20448, 7603, 28836, 33293, 20710, 10486, 2622, 0, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 10234, 21007, 31780, 45246, 65535],
+        "phasePeak": [0, 56099, 65535, 65535, 51381, 29361]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [32768, 32244]
+      },
+      "volumeMultiplier": null,
+      "volumeAmplitude": null,
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [70, 20, 35, 0, 0],
+      "oscillatorPitch": [0, 248, 70, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 100,
+      "delayDecay": 10,
+      "duration": 350,
+      "offset": 0,
+      "filter": {
+        "unity": [0, 0],
+        "varying": 16,
+        "forward": [
+          {"phase": 65535, "magnitude": 13631, "endPhase": 65535, "endMagnitude": 13631},
+          {"phase": 0, "magnitude": 4194, "endPhase": 0, "endMagnitude": 4194},
+          {"phase": 12029, "magnitude": 4980, "endPhase": 12029, "endMagnitude": 4980}
+        ],
+        "backward": [{"phase": 0, "magnitude": 2621, "endPhase": 20289, "endMagnitude": 8126}],
+        "envelope": {
+          "phaseDuration": [0, 4129, 21007, 36628, 49017, 65535],
+          "phasePeak": [3408, 57672, 64750, 56886, 45089, 24642]
+        }
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

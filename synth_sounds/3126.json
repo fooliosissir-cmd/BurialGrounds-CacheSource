@@ -1,0 +1,99 @@
+{
+  "id": 3126,
+  "instruments": [
+    null,
+    {
+      "pitch": {
+        "form": 4,
+        "start": 5,
+        "end": 5000,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [6554, 6816]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [3933, 3933]
+      },
+      "pitchModifier": null,
+      "pitchModifierAmplitude": null,
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 6,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [6030, 7341]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [28312, 28312]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [100, 0, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 0,
+      "duration": 3000,
+      "offset": 0,
+      "filter": {
+        "unity": [53739, 3932],
+        "varying": 1,
+        "forward": [{"phase": 64279, "magnitude": 12058, "endPhase": 62663, "endMagnitude": 20971}],
+        "backward": [{"phase": 35910, "magnitude": 12582, "endPhase": 35910, "endMagnitude": 12582}],
+        "envelope": {
+          "phaseDuration": [
+            0,
+            4847,
+            7900,
+            12388,
+            15261,
+            19571,
+            27112,
+            32139,
+            35191,
+            43092,
+            50633,
+            53865,
+            57635,
+            61406,
+            65535
+          ],
+          "phasePeak": [
+            42468,
+            51905,
+            42730,
+            59507,
+            40109,
+            49284,
+            35390,
+            47711,
+            40371,
+            61080,
+            42206,
+            49021,
+            42992,
+            58196,
+            49808
+          ]
+        }
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 3000
+}

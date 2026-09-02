@@ -1,0 +1,76 @@
+{
+  "id": 2640,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 4,
+        "start": 3,
+        "end": 2000,
+        "phaseDuration": [0, 6643, 23880, 45964, 65535],
+        "phasePeak": [0, 2098, 6554, 525, 0]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 4488, 18673, 32857, 54044, 65535],
+        "phasePeak": [22021, 13108, 7341, 5506, 1049, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 77,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [33817, 34341]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [65535, 55313]
+      },
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 13,
+        "phaseDuration": [0, 17416, 31600, 43451, 65535],
+        "phasePeak": [32768, 26215, 22807, 13370, 6030]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 9516, 21007, 39142, 65535],
+        "phasePeak": [20710, 28050, 34604, 49284, 50856]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [75, 75, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 400,
+      "offset": 0,
+      "filter": {
+        "unity": [26214, 0],
+        "varying": 16,
+        "forward": [{"phase": 55122, "magnitude": 1835, "endPhase": 55122, "endMagnitude": 1835}],
+        "backward": [{"phase": 50094, "magnitude": 9175, "endPhase": 64817, "endMagnitude": 4718}],
+        "envelope": {"phaseDuration": [0, 8079, 65535], "phasePeak": [23069, 60556, 35914]}
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

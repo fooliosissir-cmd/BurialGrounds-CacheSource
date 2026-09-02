@@ -1,0 +1,79 @@
+{
+  "id": 8190,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 4,
+        "start": 5,
+        "end": 1000,
+        "phaseDuration": [0, 34716, 65535],
+        "phasePeak": [17129, 16136, 17874]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 13815, 23203, 38613, 54731, 65535],
+        "phasePeak": [495, 3463, 4947, 2474, 495, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 10,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [6292, 6292]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [4981, 3933]
+      },
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 10,
+        "phaseDuration": [0, 10981, 25505, 50480, 65535],
+        "phasePeak": [16817, 12613, 13355, 16570, 13355]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [18548, 19785]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [100, 50, 0, 0, 0],
+      "oscillatorPitch": [0, 120, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 2000,
+      "offset": 0,
+      "filter": {
+        "unity": [18053, 524],
+        "varying": 16,
+        "forward": [{"phase": 48177, "magnitude": 12612, "endPhase": 48177, "endMagnitude": 12612}],
+        "backward": [{"phase": 1416, "magnitude": 19537, "endPhase": 26922, "endMagnitude": 19784}],
+        "envelope": {
+          "phaseDuration": [0, 13699, 25733, 36655, 52762, 65535],
+          "phasePeak": [29408, 33889, 35009, 29968, 24086, 8963]
+        }
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

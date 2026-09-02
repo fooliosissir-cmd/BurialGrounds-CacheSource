@@ -1,0 +1,90 @@
+{
+  "id": 2714,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 4,
+        "start": 2,
+        "end": 1800,
+        "phaseDuration": [0, 6463, 26034, 65535],
+        "phasePeak": [65535, 21234, 1836, 0]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 5566, 11850, 28548, 65535],
+        "phasePeak": [0, 26739, 0, 4195, 0]
+      },
+      "pitchModifier": null,
+      "pitchModifierAmplitude": null,
+      "volumeMultiplier": null,
+      "volumeAmplitude": null,
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [80, 0, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 0,
+      "duration": 450,
+      "offset": 0,
+      "filter": {
+        "unity": [15990, 0],
+        "varying": 16,
+        "forward": [{"phase": 63201, "magnitude": 22544, "endPhase": 63201, "endMagnitude": 22544}],
+        "backward": [{"phase": 0, "magnitude": 786, "endPhase": 44887, "endMagnitude": 12582}],
+        "envelope": {
+          "phaseDuration": [0, 8797, 44349, 65535],
+          "phasePeak": [31196, 58196, 36439, 0]
+        }
+      }
+    },
+    {
+      "pitch": {
+        "form": 4,
+        "start": 3,
+        "end": 500,
+        "phaseDuration": [0, 14184, 65535],
+        "phasePeak": [5768, 3408, 0]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 20289, 65535],
+        "phasePeak": [38011, 7341, 0]
+      },
+      "pitchModifier": null,
+      "pitchModifierAmplitude": null,
+      "volumeMultiplier": null,
+      "volumeAmplitude": null,
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [80, 50, 0, 0, 0],
+      "oscillatorPitch": [5, 44, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 350,
+      "offset": 300,
+      "filter": {
+        "unity": [58458, 0],
+        "varying": 16,
+        "forward": [],
+        "backward": [{"phase": 43451, "magnitude": 7602, "endPhase": 24598, "endMagnitude": 3670}],
+        "envelope": {"phaseDuration": [0, 38603, 65535], "phasePeak": [65535, 53740, 27788]}
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

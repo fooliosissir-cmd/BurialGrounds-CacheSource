@@ -1,0 +1,82 @@
+{
+  "id": 3095,
+  "instruments": [
+    null,
+    null,
+    {
+      "pitch": {
+        "form": 4,
+        "start": 500,
+        "end": 9000,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [0, 0]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 31780, 65535],
+        "phasePeak": [525, 1573, 263]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 222,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [32244, 33555]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [32506, 32506]
+      },
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 333,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 15800, 45246, 65535],
+        "phasePeak": [16253, 11273, 15729, 12321]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [3, 0, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 3000,
+      "offset": 0,
+      "filter": {
+        "unity": [46399, 6553],
+        "varying": 16,
+        "forward": [
+          {"phase": 18852, "magnitude": 11272, "endPhase": 18852, "endMagnitude": 11272},
+          {"phase": 60329, "magnitude": 21757, "endPhase": 60329, "endMagnitude": 21757}
+        ],
+        "backward": [
+          {"phase": 63022, "magnitude": 9437, "endPhase": 43630, "endMagnitude": 22020},
+          {"phase": 34473, "magnitude": 20447, "endPhase": 34473, "endMagnitude": 20447}
+        ],
+        "envelope": {"phaseDuration": [0, 33037, 65535], "phasePeak": [65535, 65535, 65535]}
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 3000
+}

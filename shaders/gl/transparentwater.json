@@ -1,0 +1,96 @@
+{
+  "header": 4,
+  "name": "TransparentWater",
+  "variables": [
+    {
+      "type": 24,
+      "elementType": null,
+      "arraySize": null,
+      "name": "time",
+      "alias": "",
+      "program": [7, 7],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 46,
+      "elementType": null,
+      "arraySize": null,
+      "name": "causticSampler3D",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [0, -1]
+    },
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "causticSampler2D",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [-1, 0]
+    }
+  ],
+  "optionalVariables": [
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "modelViewProjectionMatrix",
+      "alias": "",
+      "program": [0, 0],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 41,
+      "elementType": null,
+      "arraySize": null,
+      "name": "textureMatrix",
+      "alias": "",
+      "program": [4, 4],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 26,
+      "elementType": null,
+      "arraySize": null,
+      "name": "eyePositionOS",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [-1, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "fogColour",
+      "alias": "",
+      "program": [-1, -1],
+      "slot": [0, 0]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "fogPlanes",
+      "alias": "",
+      "program": [6, 6],
+      "slot": [-1, -1]
+    }
+  ],
+  "mappings": [
+    {
+      "name": "Water3D",
+      "vertexSource": "TransparentWater.vertex.glsl",
+      "fragmentSource": "TransparentWater.fragment3D.glsl",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    },
+    {
+      "name": "Water2D",
+      "vertexSource": "TransparentWater.vertex.glsl",
+      "fragmentSource": "TransparentWater.fragment2D.glsl",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "header": 4,
+  "name": "Primitive",
+  "variables": [
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "colour",
+      "alias": "",
+      "program": [-1],
+      "slot": [0]
+    }
+  ],
+  "optionalVariables": [
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "projectionMatrix",
+      "alias": "",
+      "program": [0],
+      "slot": [-1]
+    }
+  ],
+  "mappings": [
+    {
+      "name": "",
+      "vertexSource": "Primitive.vertex.glsl",
+      "fragmentSource": "Primitive.fragment.glsl",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    }
+  ]
+}

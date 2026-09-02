@@ -1,0 +1,79 @@
+{
+  "id": 8722,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 2,
+        "start": 50,
+        "end": 6000,
+        "phaseDuration": [0, 12541, 33209, 50521, 65535],
+        "phasePeak": [46422, 58586, 62061, 54614, 65535]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 3231, 35012, 53865, 65535],
+        "phasePeak": [263, 24642, 19923, 14418, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 500,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "volumeMultiplier": {
+        "form": 2,
+        "start": 1,
+        "end": 50,
+        "phaseDuration": [0, 13466, 31241, 45246, 65535],
+        "phasePeak": [8913, 9700, 35652, 9700, 9700]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 20827, 31600, 52608, 65535],
+        "phasePeak": [65535, 65535, 65535, 65535, 65535]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [20, 0, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 500,
+      "offset": 0,
+      "filter": {
+        "unity": [2621, 0],
+        "varying": 0,
+        "forward": [{"phase": 0, "magnitude": 3407, "endPhase": 0, "endMagnitude": 3407}],
+        "backward": [
+          {"phase": 52787, "magnitude": 12845, "endPhase": 52787, "endMagnitude": 12845},
+          {"phase": 61463, "magnitude": 14169, "endPhase": 61463, "endMagnitude": 14169}
+        ],
+        "envelope": {"phaseDuration": [0, 65535], "phasePeak": [65535, 65535]}
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

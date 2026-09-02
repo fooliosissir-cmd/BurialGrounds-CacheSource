@@ -1,0 +1,76 @@
+{
+  "id": 2212,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 3,
+        "start": 10,
+        "end": 500,
+        "phaseDuration": [0, 18493, 60329, 65535],
+        "phasePeak": [3408, 6292, 6292, 4719]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 9336, 17595, 32498, 58353, 65535],
+        "phasePeak": [0, 2098, 3671, 3933, 2884, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 4,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 26477]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 28009, 65535],
+        "phasePeak": [0, 787, 0]
+      },
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 10,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [10224, 6554]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [100, 80, 0, 0, 0],
+      "oscillatorPitch": [0, 140, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 2000,
+      "offset": 0,
+      "filter": {
+        "unity": [19660, 6291],
+        "varying": 17,
+        "forward": [{"phase": 45605, "magnitude": 31457, "endPhase": 48658, "endMagnitude": 25427}],
+        "backward": [{"phase": 34653, "magnitude": 15204, "endPhase": 41117, "endMagnitude": 18874}],
+        "envelope": {"phaseDuration": [0, 26034, 65535], "phasePeak": [65535, 63439, 65535]}
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

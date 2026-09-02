@@ -1,0 +1,183 @@
+{
+  "id": 5045,
+  "instruments": [
+    null,
+    null,
+    {
+      "pitch": {
+        "form": 3,
+        "start": 300,
+        "end": 500,
+        "phaseDuration": [0, 20667, 35859, 48401, 65535],
+        "phasePeak": [7572, 31018, 38772, 23263, 6504]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 8125, 26143, 43808, 58470, 65535],
+        "phasePeak": [0, 20366, 19583, 17233, 0, 0]
+      },
+      "pitchModifier": {
+        "form": 3,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 18547, 32149, 55290, 65535],
+        "phasePeak": [6789, 6528, 6528, 29016, 6789]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 15544, 38862, 57056, 65535],
+        "phasePeak": [32768, 64036, 65535, 56532, 65535]
+      },
+      "volumeMultiplier": {
+        "form": 3,
+        "start": 100,
+        "end": 300,
+        "phaseDuration": [
+          0,
+          6535,
+          6889,
+          10775,
+          11658,
+          15191,
+          17311,
+          19784,
+          21374,
+          24200,
+          26673,
+          29676,
+          32326,
+          35152,
+          37979,
+          41512,
+          44868,
+          48401,
+          51580,
+          54937,
+          57940,
+          62003,
+          65535
+        ],
+        "phasePeak": [
+          0,
+          18016,
+          0,
+          17755,
+          0,
+          18016,
+          0,
+          17755,
+          0,
+          18016,
+          0,
+          17233,
+          0,
+          17755,
+          0,
+          17233,
+          0,
+          17233,
+          0,
+          17494,
+          0,
+          18016,
+          0
+        ]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [100, 0, 0, 0, 0],
+      "oscillatorPitch": [110, 0, 0, 0, 0],
+      "oscillatorDelay": [8, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 1500,
+      "offset": 0,
+      "filter": {
+        "unity": [23498, 0],
+        "varying": 0,
+        "forward": [],
+        "backward": [{"phase": 14308, "magnitude": 15404, "endPhase": 14308, "endMagnitude": 15404}],
+        "envelope": {"phaseDuration": [0, 65535], "phasePeak": [32768, 32768]}
+      }
+    },
+    {
+      "pitch": {
+        "form": 4,
+        "start": 500,
+        "end": 1000,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [65535, 65535]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 12188, 24023, 46634, 65535],
+        "phasePeak": [0, 4178, 6006, 2350, 0]
+      },
+      "pitchModifier": null,
+      "pitchModifierAmplitude": null,
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 50,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 19961, 34622, 46988, 65535],
+        "phasePeak": [65535, 65535, 65535, 65535, 65535]
+      },
+      "release": {
+        "form": 1,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 14308, 35859, 53524, 65535],
+        "phasePeak": [0, 61550, 63045, 65535, 32768]
+      },
+      "attack": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "oscillatorVolume": [100, 0, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 100,
+      "duration": 1500,
+      "offset": 0,
+      "filter": {
+        "unity": [0, 0],
+        "varying": 0,
+        "forward": [{"phase": 4592, "magnitude": 18190, "endPhase": 4592, "endMagnitude": 18190}],
+        "backward": [],
+        "envelope": null
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}

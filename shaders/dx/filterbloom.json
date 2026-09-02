@@ -1,0 +1,123 @@
+{
+  "header": 4,
+  "name": "FilterBloom",
+  "variables": [
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "modelView",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1],
+      "slot": [-1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 43,
+      "elementType": null,
+      "arraySize": null,
+      "name": "proj",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1],
+      "slot": [-1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 2,
+      "elementType": 27,
+      "arraySize": 3,
+      "name": "PosAndTexCoords",
+      "alias": "",
+      "program": [0, 0, 0, 0, 0, 0],
+      "slot": [-1, -1, -1, -1, -1, -1]
+    },
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "sceneTex",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1],
+      "slot": [0, 0, 0, 0, 0, 0]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "params",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1],
+      "slot": [-1, -1, 0, -1, 0, -1]
+    },
+    {
+      "type": 27,
+      "elementType": null,
+      "arraySize": null,
+      "name": "pixelOffsetAndBloomScale",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1],
+      "slot": [-1, -1, 1, 0, 1, 0]
+    },
+    {
+      "type": 25,
+      "elementType": null,
+      "arraySize": null,
+      "name": "sampleSize",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1],
+      "slot": [-1, -1, -1, 1, -1, -1]
+    },
+    {
+      "type": 45,
+      "elementType": null,
+      "arraySize": null,
+      "name": "bloomTex1",
+      "alias": "",
+      "program": [-1, -1, -1, -1, -1, -1],
+      "slot": [-1, -1, -1, -1, 1, -1]
+    }
+  ],
+  "optionalVariables": [],
+  "mappings": [
+    {
+      "name": "techFullscreenTri",
+      "vertexSource": "FilterBloom.Filter_vertexD3D.vs_2_0",
+      "fragmentSource": "FilterBloom.passThrough.ps_2_0",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    },
+    {
+      "name": "techDefault",
+      "vertexSource": "FilterBloom.Filter_vertexD3D.vs_2_0",
+      "fragmentSource": "FilterBloom.passThrough.ps_2_0",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    },
+    {
+      "name": "brightpass",
+      "vertexSource": "FilterBloom.Filter_vertexD3D.vs_2_0",
+      "fragmentSource": "FilterBloom.brightpass.ps_2_0",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    },
+    {
+      "name": "blur",
+      "vertexSource": "FilterBloom.Filter_vertexD3D.vs_3_0",
+      "fragmentSource": "FilterBloom.blur.ps_3_0",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    },
+    {
+      "name": "composite",
+      "vertexSource": "FilterBloom.Filter_vertexD3D.vs_2_0",
+      "fragmentSource": "FilterBloom.composite.ps_2_0",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    },
+    {
+      "name": "test",
+      "vertexSource": "FilterBloom.Filter_vertexD3D.vs_2_0",
+      "fragmentSource": "FilterBloom.test.ps_2_0",
+      "vertexDefines": [],
+      "fragmentDefines": []
+    }
+  ]
+}

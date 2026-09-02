@@ -1,0 +1,76 @@
+{
+  "id": 1566,
+  "instruments": [
+    {
+      "pitch": {
+        "form": 4,
+        "start": 80,
+        "end": 4000,
+        "phaseDuration": [0, 35191, 65535],
+        "phasePeak": [47973, 48235, 65535]
+      },
+      "volume": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 13825, 27830, 50094, 65535],
+        "phasePeak": [0, 2098, 6554, 1311, 0]
+      },
+      "pitchModifier": {
+        "form": 4,
+        "start": 0,
+        "end": 44,
+        "phaseDuration": [0, 20109, 35012, 48478, 65535],
+        "phasePeak": [0, 11535, 18613, 18351, 21234]
+      },
+      "pitchModifierAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 65535],
+        "phasePeak": [65535, 65535]
+      },
+      "volumeMultiplier": {
+        "form": 4,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 21007, 36269, 55481, 65535],
+        "phasePeak": [7603, 16253, 16253, 12321, 0]
+      },
+      "volumeAmplitude": {
+        "form": 0,
+        "start": 0,
+        "end": 100,
+        "phaseDuration": [0, 16383, 32766, 49149, 65535],
+        "phasePeak": [32768, 32768, 32768, 32768, 32768]
+      },
+      "release": null,
+      "attack": null,
+      "oscillatorVolume": [50, 0, 0, 0, 0],
+      "oscillatorPitch": [0, 0, 0, 0, 0],
+      "oscillatorDelay": [0, 0, 0, 0, 0],
+      "delayTime": 0,
+      "delayDecay": 0,
+      "duration": 500,
+      "offset": 0,
+      "filter": {
+        "unity": [42205, 0],
+        "varying": 0,
+        "forward": [{"phase": 54224, "magnitude": 5505, "endPhase": 54224, "endMagnitude": 5505}],
+        "backward": [{"phase": 62663, "magnitude": 9437, "endPhase": 62663, "endMagnitude": 9437}],
+        "envelope": {"phaseDuration": [0, 29625, 65535], "phasePeak": [57934, 63439, 57148]}
+      }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
+  "loopBegin": 0,
+  "loopEnd": 0
+}
