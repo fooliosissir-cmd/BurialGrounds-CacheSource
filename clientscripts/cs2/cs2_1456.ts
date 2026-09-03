@@ -21,16 +21,12 @@ function cs2_1456(): void {
         }
         while (int0 < int6) {
             if (ccFind(Component.interface_762.component_762_95, int0) == 1) {
-                if (invGetNum(95, int0) != 0) {
-                    ccSetPosition(int1, int2, 0, 0);
-                    ccSetHide(false);
-                    int1 = int1 + 44;
-                    if (int1 >= 44 * 10) {
-                        int1 = 8;
-                        int2 = int2 + 44;
-                    }
-                } else {
-                    int0 = 1000;
+                ccSetPosition(int1, int2, 0, 0);
+                ccSetHide(false);
+                int1 = int1 + 44;
+                if (int1 >= 44 * 10) {
+                    int1 = 8;
+                    int2 = int2 + 44;
                 }
             }
             int0 = int0 + 1;

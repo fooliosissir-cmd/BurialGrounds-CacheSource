@@ -6,15 +6,23 @@
 function cs2_1453(intArg0: number): void {
     let int1: obj = invGetobj(95, intArg0);
 
-    ccSetObject(int1, invGetNum(95, intArg0));
+    ccClearops();
     ccSetOpBase("<col=ff981f>" + ocName(invGetobj(95, intArg0)));
-    ccSetOp(1, "Withdraw-1");
-    ccSetOp(2, "Withdraw-5");
-    ccSetOp(3, "Withdraw-10");
-    ccSetOp(4, "Withdraw-" + tostring(varp_1249));
-    ccSetOp(5, "Withdraw-X");
-    ccSetOp(6, "Withdraw-All");
-    ccSetOp(7, "Withdraw-All but one");
+    if (invGetNum(95, intArg0) == 0) {
+        ccSetObjectNonum(int1, 0);
+        ccSetTrans(128);
+        ccSetOp(9, "Release");
+    } else {
+        ccSetObject(int1, invGetNum(95, intArg0));
+        ccSetTrans(0);
+        ccSetOp(1, "Withdraw-1");
+        ccSetOp(2, "Withdraw-5");
+        ccSetOp(3, "Withdraw-10");
+        ccSetOp(4, "Withdraw-" + tostring(varp_1249));
+        ccSetOp(5, "Withdraw-X");
+        ccSetOp(6, "Withdraw-All");
+        ccSetOp(7, "Withdraw-All but one");
+    }
     ccSetOp(10, "Examine" + "<col=ff9040>");
     ccSetdraggable(Component.interface_762.component_762_0, -1);
     ccSetdragdeadzone(5);
