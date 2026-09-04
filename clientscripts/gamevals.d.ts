@@ -168154,6 +168154,7 @@ declare namespace Graphic {
     /** graphic 12068 */ const graphic_12068: number;
     /** graphic 12069 */ const graphic_12069: number;
     /** graphic 12070 */ const graphic_12070: number;
+    /** graphic 12071 */ const symbol_lock_open: number;
 }
 
 /** Revision-727 interface ids by Jagex dev-name (1321 named of 1321). */
