@@ -6354,6 +6354,8 @@ declare let varbit_megagames_shop2_bought_obj8: number;
 declare let varbit_megagames_shop2_bought_obj23: number;
 /** varbit 11678 */
 declare let varbit_megagames_shop2_bought_obj24: number;
+/** varbit 11713 */
+declare let varbit_bank_placeholders: number;
 /** varc 0 */
 declare let varc_quickchat_listdialog_000: number;
 /** varc 1 */

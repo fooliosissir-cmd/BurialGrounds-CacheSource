@@ -287775,6 +287775,10 @@ declare namespace Component {
         /** component 762:121 */ const component_762_121: number;
         /** component 762:122 */ const component_762_122: number;
         /** component 762:123 */ const component_762_123: number;
+        /** component 762:124 */ const component_762_124: number;
+        /** component 762:125 */ const component_762_125: number;
+        /** component 762:126 */ const component_762_126: number;
+        /** component 762:127 */ const component_762_127: number;
     }
     /** interface_763, interface 763. */
     namespace interface_763 {
