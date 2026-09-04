@@ -182,6 +182,9 @@ function lobby_worldswitcher_timer(): void {
             cc_add_graphic(int9, int36, 24, 12, 4, int37 + 4, int22, false, false, false, 0);
             cc_add_text(int8, int36, 30, 20, 30, int37, str0, int21, Graphic.p11_full, 0, 1, 0, true);
             ccSetSize(30, 20, 1, 0);
+            if (testBit(int32, 2) == 1) {
+                lobby_worldswitcher_bots_icon(int9, 1000 + int36, 6, int37 + 2, 2);
+            }
             cc_add_text(int10, int36, ifGetWidth(int10) - 10, 20, 5, int37, str1, int21, Graphic.p11_full, 0, 1, 0, true);
             cc_add_graphic(int11, int36, 17, 17, 0, int37 + 1, int23, false, false, false, 0);
             ccSetPosition(0, int37 + 1, 1, 0);

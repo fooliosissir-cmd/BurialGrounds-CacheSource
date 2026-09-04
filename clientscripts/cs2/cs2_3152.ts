@@ -19,10 +19,14 @@ function cs2_3152(intArg0: component, intArg1: number, intArg2: number, strArg0:
             int5 = int5 + ifGetX(int8);
             int6 = int6 + ifGetY(int8);
             int8 = ifGetLayer(int8);
+            if (int7 == 0) {
+                int5 = int5 - ifGetScrollX(int8);
+                int6 = int6 - ifGetScrollY(int8);
+            }
         }
         if (intArg1 > -1 && ccFind(intArg0, intArg1) == 1) {
-            int5 = int5 + ccGetX();
-            int6 = int6 + ccGetY();
+            int5 = int5 + ccGetX() - ifGetScrollX(intArg0);
+            int6 = int6 + ccGetY() - ifGetScrollY(intArg0);
         }
         int5 = int5 + intArg3 + 3;
         int6 = int6 + intArg4 - 3 - ifGetHeight(Component.interface_910.component_910_14);
