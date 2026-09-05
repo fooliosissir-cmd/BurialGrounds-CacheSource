@@ -720,8 +720,8 @@ declare function ccSetTextFont<Operand = void>(arg0: graphic | boolean): void;
 declare function ccSetTextShadow<Operand = void>(arg0: boolean | boolean): void;
 /** `CC_SETTRANS` (opcode 320) */
 declare function ccSetTrans<Operand = void>(arg0: number | boolean): void;
-/** `CC_SETVIDEO_SPRITE` (opcode 513) */
-declare function ccSetVideoSprite<Operand = void>(): void;
+/** `CC_SETVIDEO_GRAPHIC` (opcode 513) */
+declare function ccSetVideoGraphic<Operand = void>(): void;
 /** `CC_SETVIDEO_TEXT` (opcode 100) */
 declare function ccSetVideoText<Operand = void>(): void;
 /** `CC_SETDRAGDEADTIME` (opcode 223) */
@@ -1580,8 +1580,8 @@ declare function ifSetTextFont<Operand = void>(arg0: graphic | boolean, arg1: co
 declare function ifSetTextShadow<Operand = void>(arg0: boolean | boolean, arg1: component | boolean): void;
 /** `IF_SETTRANS` (opcode 763) */
 declare function ifSetTrans<Operand = void>(arg0: number | boolean, arg1: component | boolean): void;
-/** `IF_SETVIDEO_SPRITE` (opcode 479) */
-declare function ifSetVideoSprite<Operand = void>(arg0: component | boolean): void;
+/** `IF_SETVIDEO_GRAPHIC` (opcode 479) */
+declare function ifSetVideoGraphic<Operand = void>(arg0: component | boolean): void;
 /** `IF_SETVIDEO_TEXT` (opcode 206) */
 declare function ifSetVideoText<Operand = void>(arg0: component | boolean): void;
 /** `IF_SETDRAGDEADTIME` (opcode 413) */
@@ -1756,8 +1756,8 @@ declare function max<Operand = void>(arg0: number | boolean, arg1: number | bool
 declare function mecCategory<Operand = void>(arg0: mapelement | boolean): number;
 /** `MEC_PARAM` (opcode 230) */
 declare function mecParam<Operand = void>(arg0: mapelement | boolean, arg1: param | boolean): any;
-/** `MEC_SPRITE` (opcode 631) */
-declare function mecSprite<Operand = void>(arg0: mapelement | boolean): number;
+/** `MEC_GRAPHIC` (opcode 631) */
+declare function mecGraphic<Operand = void>(arg0: mapelement | boolean): number;
 /** `MEC_TEXT` (opcode 985) */
 declare function mecText<Operand = void>(arg0: mapelement | boolean): string;
 /** `MEC_TEXTSIZE` (opcode 757) */

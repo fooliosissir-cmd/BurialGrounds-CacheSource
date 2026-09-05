@@ -33,7 +33,7 @@ distinguishable in each catalog's `coverage.by_channel`. Its rules and its arith
 ## Type names are canonical Jagex names
 
 `obj` (not item), `loc` (not object), `seq` (not animation), `spotanim` (not graphic/gfx),
-`graphic` = 2D sprite, `inv`, `enum`, `struct`, `param`, `npc`, `interface`, `component`,
+`graphic` = 2D graphic, `inv`, `enum`, `struct`, `param`, `npc`, `interface`, `component`,
 `varp` / `varbit` / `varc` / `varcstr` / `varclan` / `varbitclan` / `varclansetting` /
 `varbitclansetting`, `clientscript` (placeholder prefix `cs2_`), `bas`, `hitmark`, `headbar`,
 `cursor`, `mapelement`, `model`, `sound`, `midi`, `material`, `fontmetrics`, `quest`, `idk`,
@@ -181,7 +181,7 @@ rule.
 
 | channel | what it compares | strength |
 |---|---|---|
-| `hash` | a 727 cache name hash equals `String.hashCode(<name>)`: index-12 archive names as `"[cat,name]"` (clientscript), a type-index archive name (sprite/fontmetrics/midi), or an index-23 world-map static-element **file** name paired with the map element id in that file's own payload (mapelement) | proof (32-bit; see collision note) |
+| `hash` | a 727 cache name hash equals `String.hashCode(<name>)`: index-12 archive names as `"[cat,name]"` (clientscript), a type-index archive name (graphic/fontmetrics/midi), or an index-23 world-map static-element **file** name paired with the map element id in that file's own payload (mapelement) | proof (32-bit; see collision note) |
 | `struct` | same id, and the 727 definition's identity-bearing fields equal the RS3 definition's | proof when the field set is identity-bearing for that type (per-type table below) |
 | `cs2` | a 727 script and an RS3 script that are the *same script by `hash`* use the 727 id and the RS3 name at aligned instruction positions | proof when the two instruction streams align 1:1 and the operand's arg-type matches |
 | `derived` | the name is a deterministic function of another proven name (spotanim ← seq; obj base ← its noted cert twin, `cert_` stripped) | proof, inherits the parent's evidence |
@@ -303,10 +303,10 @@ normalisation. Strings are compared case-sensitively after trimming; `null`/`"nu
 - **inv**: `size` eq **and** (stock `ids` eq when both have stock, or a `cs2` witness).
 - **interface**: carbon copy only — same id, same component count, and **every** component equal
   on (`type`, `contentType`, `parent`, `basePositionX/Y`, `baseWidth/Height`, position/size
-  modes, `text`, `options`, `name`, sprite/model/anim ids where applicable). Then every
+  modes, `text`, `options`, `name`, graphic/model/anim ids where applicable). Then every
   `component` name of that interface carries over by index. Nothing partial.
 - **var\***: `carry` from the pre-existing name tables; sample-checked with `cs2` witnesses.
-- **model / sprite / sound / midi / material / fontmetrics**: raw-byte `sha1` eq with the RS3
+- **model / graphic / sound / midi / material / fontmetrics**: raw-byte `sha1` eq with the RS3
   archive of the same id (the RS3 side needed a raw dump; where none was available the type stayed
   placeholder-only, which its `coverage` block shows).
 - **bas / hitmark / headbar / cursor / mapelement / quest**: struct eq on the full decoded field
