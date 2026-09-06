@@ -19,9 +19,9 @@ function proc_lobbyscreen_report_abuse_stage2(): void {
 
     if (playermod() == 1 || staffmodlevel() > 0) {
         if (varc_snapshot_mute == 0) {
-            ifSetGraphic(Graphic.check_box_2_0, Component.interface_915.component_915_46);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.check_box_2_0), Component.interface_915.component_915_46);
         } else {
-            ifSetGraphic(Graphic.check_box_2_2, Component.interface_915.component_915_46);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.check_box_2_2), Component.interface_915.component_915_46);
         }
         if (playermodlevel() == 5 || playermodlevel() == 6) {
             ifSetText("Suggest to mute this player for 48 hours", Component.interface_915.component_915_47);

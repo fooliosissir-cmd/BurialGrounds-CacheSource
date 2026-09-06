@@ -13,9 +13,9 @@ function cs2_5644(intArg0: component, intArg1: number, intArg2: number): void {
     } else {
         deltooltip_action(Component.interface_261.component_261_31);
         if (intArg1 == 1) {
-            ifSetGraphic(Graphic.graphic_4584, intArg0);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4584), intArg0);
         } else {
-            ifSetGraphic(Graphic.graphic_4583, intArg0);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4583), intArg0);
         }
     }
 }

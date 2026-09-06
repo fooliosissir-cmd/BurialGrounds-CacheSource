@@ -9,8 +9,8 @@ function cs2_1260(): void {
     }
 
     if (varp_266 == 0) {
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_114.component_114_29);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_114.component_114_29);
     } else {
-        ifSetGraphic(Graphic.miscgraphics_11, Component.interface_114.component_114_29);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11), Component.interface_114.component_114_29);
     }
 }

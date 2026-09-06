@@ -4,7 +4,7 @@
 // cs2_188
 
 function cs2_188(intArg0: component): void {
-    if (getWindowMode() >= 2) {
+    if (gameframe_skin_new() == true) {
         ifSetGraphic(Graphic.graphic_8557, intArg0);
     } else {
         ifSetGraphic(Graphic.graphic_1025, intArg0);

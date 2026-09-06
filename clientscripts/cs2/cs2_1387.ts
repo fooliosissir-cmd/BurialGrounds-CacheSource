@@ -26,114 +26,114 @@ function cs2_1387(intArg0: number): void {
             ifSetHide(false, Component.interface_746.component_746_111);
             switch (intArg0) {
                 case 0:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_75);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_75);
                     ifSetHide(false, Component.interface_746.component_746_112);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_152);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_153);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_152);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_153);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 1:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_76);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_76);
                     ifSetHide(false, Component.interface_746.component_746_113);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_154);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_155);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_154);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_155);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 2:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_77);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_156);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_157);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_77);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_156);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_157);
                     ifSetHide(false, Component.interface_746.component_746_114);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 3:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_78);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_158);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_159);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_78);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_158);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_159);
                     ifSetHide(false, Component.interface_746.component_746_115);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 4:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_79);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_160);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_161);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_79);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_160);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_161);
                     ifSetHide(false, Component.interface_746.component_746_116);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 5:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_80);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_162);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_163);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_80);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_162);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_163);
                     ifSetHide(false, Component.interface_746.component_746_117);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 6:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_81);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_164);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_165);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_81);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_164);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_165);
                     ifSetHide(false, Component.interface_746.component_746_118);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 7:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_82);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_166);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_167);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_82);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_166);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_167);
                     ifSetHide(false, Component.interface_746.component_746_119);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 8:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_83);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_168);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_169);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_83);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_168);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_169);
                     ifSetHide(false, Component.interface_746.component_746_120);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 9:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_84);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_170);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_171);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_84);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_170);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_171);
                     ifSetHide(false, Component.interface_746.component_746_121);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 10:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_85);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_172);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_173);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_85);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_172);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_173);
                     ifSetHide(false, Component.interface_746.component_746_122);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 11:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_86);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_174);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_175);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_86);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_174);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_175);
                     ifSetHide(false, Component.interface_746.component_746_123);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 12:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_87);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_176);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_177);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_87);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_176);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_177);
                     ifSetHide(false, Component.interface_746.component_746_124);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 13:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_88);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_178);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_179);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_88);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_178);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_179);
                     ifSetHide(false, Component.interface_746.component_746_125);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 14:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_89);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_180);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_181);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_89);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_180);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_181);
                     ifSetHide(false, Component.interface_746.component_746_126);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;
                 case 15:
-                    ifSetGraphic(Graphic.graphic_8548, Component.interface_746.component_746_90);
-                    ifSetGraphic(Graphic.graphic_8551, Component.interface_746.component_746_182);
-                    ifSetGraphic(Graphic.graphic_8550, Component.interface_746.component_746_183);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8548), Component.interface_746.component_746_90);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8551), Component.interface_746.component_746_182);
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8550), Component.interface_746.component_746_183);
                     ifSetHide(false, Component.interface_746.component_746_127);
                     ifSetHide(false, Component.interface_746.component_746_108);
                     break;

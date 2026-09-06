@@ -127,7 +127,7 @@ function proc_clansettings_list_build(): void {
         ccCreate(int3, 5, int26);
         if (int35 == 0) {
             ccSetSize(int27, int28, 0, 0);
-            ccSetGraphic(Graphic.aif_browngrad_whole_btn_3);
+            ccSetGraphic(gameframe_skin_graphic(Graphic.aif_browngrad_whole_btn_3));
             ccSetOp(1, "Show details");
             ccSetOnOpt(hook(cs2_4303, "", []));
         }

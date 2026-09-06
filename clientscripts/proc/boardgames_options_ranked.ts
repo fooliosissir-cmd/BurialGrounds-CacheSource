@@ -5,8 +5,8 @@
 
 function proc_boardgames_options_ranked(): void {
     if (varbit_boardgames_rankedgame == 1) {
-        ifSetGraphic(Graphic.miscgraphics_11, Component.interface_756.component_756_50);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11), Component.interface_756.component_756_50);
     } else {
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_756.component_756_50);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_756.component_756_50);
     }
 }

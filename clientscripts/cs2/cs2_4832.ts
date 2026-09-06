@@ -67,7 +67,7 @@ function cs2_4832(intArg0: component, intArg1: number): void {
                     }
                     break;
             }
-            ccSetGraphic(Graphic.aif_checkbox_large_0);
+            ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
         } else {
             cs2_4834(intArg0);
         }

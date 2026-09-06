@@ -95,7 +95,7 @@ function proc_subchanged(): void {
             } else {
                 ccDeleteAll(Component.interface_752.component_752_2);
                 cs2_5392(Component.interface_752.component_752_2, 22, 0);
-                ifSetGraphic(Graphic.graphic_1247, Component.interface_752.component_752_1);
+                ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_1247), Component.interface_752.component_752_1);
                 ifSetAlpha(true, Component.interface_752.component_752_1);
                 ifSettiling(false, Component.interface_752.component_752_1);
                 ifSetHide(true, Component.interface_137.component_137_51);
@@ -163,7 +163,7 @@ function proc_subchanged(): void {
                 hookMouseEnter(noHook(""), cs2_2459(int0));
                 ifSetOnMouseOver(noHook(""), cs2_2459(int0));
                 hookMouseExit(noHook(""), cs2_2459(int0));
-                ifSetGraphic(Graphic.graphic_8547, cs2_2459(int0));
+                ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8547), cs2_2459(int0));
                 int0 = int0 + 1;
             }
         } else {
@@ -175,7 +175,7 @@ function proc_subchanged(): void {
                     hookMouseEnter(noHook(""), cs2_2459(int0));
                     ifSetOnMouseOver(noHook(""), cs2_2459(int0));
                     hookMouseExit(noHook(""), cs2_2459(int0));
-                    ifSetGraphic(Graphic.graphic_8547, cs2_2459(int0));
+                    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8547), cs2_2459(int0));
                 } else {
                     hookMouseEnter(hook(cs2_1292, "I1", [event_com, true]), cs2_2459(int0));
                     ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, cs2_2459(int0), ifGetOp(1, cs2_2458(int0))]), cs2_2459(int0));

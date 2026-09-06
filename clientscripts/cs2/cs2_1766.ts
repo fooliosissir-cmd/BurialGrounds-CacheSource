@@ -7,8 +7,8 @@ function cs2_1766(): void {
     let str0: string = "";
 
     if (varc_232 == 0) {
-        ifSetGraphic(Graphic.stonemenusideicons_0, Component.interface_548.component_548_120);
-        ifSetGraphic(Graphic.graphic_8687, Component.interface_746.component_746_59);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_0), Component.interface_548.component_548_120);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8687), Component.interface_746.component_746_59);
         str0 = "Combat Styles";
         ifSetOp(1, str0, Component.interface_548.component_548_112);
         ifSetOp(1, str0, Component.interface_746.component_746_75);
@@ -24,8 +24,8 @@ function cs2_1766(): void {
 
     if (varc_822 == 0) {
         cs2_4089();
-        ifSetGraphic(Graphic.stonemenusideicons_3, Component.interface_548.component_548_121);
-        ifSetGraphic(Graphic.graphic_8698, Component.interface_746.component_746_60);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_3), Component.interface_548.component_548_121);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8698), Component.interface_746.component_746_60);
         str0 = "Task List";
         ifSetOp(1, str0, Component.interface_548.component_548_113);
         ifSetOp(1, str0, Component.interface_746.component_746_76);
@@ -80,8 +80,8 @@ function cs2_1766(): void {
             ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_93, str0]), Component.interface_746.component_746_93);
             break;
         default:
-            ifSetGraphic(Graphic.stonemenusideicons_1, Component.interface_548.component_548_122);
-            ifSetGraphic(Graphic.graphic_8697, Component.interface_746.component_746_61);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_1), Component.interface_548.component_548_122);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8697), Component.interface_746.component_746_61);
             str0 = "Stats";
             ifSetOp(1, str0, Component.interface_548.component_548_114);
             ifSetOp(1, str0, Component.interface_746.component_746_77);
@@ -107,7 +107,7 @@ function cs2_1766(): void {
             ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_94, str0]), Component.interface_746.component_746_94);
             break;
         case 3:
-            ifSetGraphic(Graphic.staticons2_13, Component.interface_548.component_548_123);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.staticons2_13), Component.interface_548.component_548_123);
             ifSetGraphic(Graphic.graphic_8727, Component.interface_746.component_746_62);
             str0 = "Party organiser";
             ifSetOp(1, str0, Component.interface_548.component_548_115);
@@ -115,7 +115,7 @@ function cs2_1766(): void {
             ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_94, str0]), Component.interface_746.component_746_94);
             break;
         case 4:
-            ifSetGraphic(Graphic.stonemenusideicons_17, Component.interface_548.component_548_123);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_17), Component.interface_548.component_548_123);
             ifSetGraphic(Graphic.graphic_8724, Component.interface_746.component_746_62);
             str0 = "Book";
             ifSetOp(1, str0, Component.interface_548.component_548_115);
@@ -131,8 +131,8 @@ function cs2_1766(): void {
             ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_94, str0]), Component.interface_746.component_746_94);
             break;
         default:
-            ifSetGraphic(Graphic.stonemenusideicons_2, Component.interface_548.component_548_123);
-            ifSetGraphic(Graphic.graphic_8695, Component.interface_746.component_746_62);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_2), Component.interface_548.component_548_123);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8695), Component.interface_746.component_746_62);
             str0 = "Quest Journals";
             ifSetOp(1, str0, Component.interface_548.component_548_115);
             ifSetOp(1, str0, Component.interface_746.component_746_78);
@@ -141,8 +141,8 @@ function cs2_1766(): void {
     }
 
     if (varc_235 == 0) {
-        ifSetGraphic(Graphic.stonemenusideicons_4, Component.interface_548.component_548_124);
-        ifSetGraphic(Graphic.graphic_8690, Component.interface_746.component_746_63);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_4), Component.interface_548.component_548_124);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8690), Component.interface_746.component_746_63);
         str0 = "Inventory";
         ifSetOp(1, str0, Component.interface_548.component_548_116);
         ifSetOp(1, str0, Component.interface_746.component_746_79);
@@ -164,14 +164,14 @@ function cs2_1766(): void {
     }
 
     if (varc_236 == 0) {
-        ifSetGraphic(Graphic.stonemenusideicons_5, Component.interface_548.component_548_125);
-        ifSetGraphic(Graphic.graphic_6128, Component.interface_746.component_746_64);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_5), Component.interface_548.component_548_125);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_6128), Component.interface_746.component_746_64);
         str0 = "Worn Equipment";
         ifSetOp(1, str0, Component.interface_548.component_548_117);
         ifSetOp(1, str0, Component.interface_746.component_746_80);
         ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_96, str0]), Component.interface_746.component_746_96);
     } else if (varc_236 == 1) {
-        ifSetGraphic(Graphic.stonemenusideicons_16, Component.interface_548.component_548_125);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_16), Component.interface_548.component_548_125);
         ifSetGraphic(Graphic.graphic_8725, Component.interface_746.component_746_64);
         str0 = "Acrobat Emotes";
         ifSetOp(1, str0, Component.interface_548.component_548_117);
@@ -201,15 +201,15 @@ function cs2_1766(): void {
     }
 
     if (varc_237 == 0) {
-        ifSetGraphic(Graphic.stonemenusideicons_6, Component.interface_548.component_548_126);
-        ifSetGraphic(Graphic.graphic_8694, Component.interface_746.component_746_65);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_6), Component.interface_548.component_548_126);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8694), Component.interface_746.component_746_65);
         str0 = "Prayer List";
         ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_97, str0]), Component.interface_746.component_746_97);
     }
 
     if (varc_238 == 0) {
-        ifSetGraphic(Graphic.stonemenusideicons_7, Component.interface_548.component_548_127);
-        ifSetGraphic(Graphic.graphic_8696, Component.interface_746.component_746_66);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_7), Component.interface_548.component_548_127);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8696), Component.interface_746.component_746_66);
         str0 = "Magic Spellbook";
         ifSetOp(1, str0, Component.interface_548.component_548_119);
         ifSetOp(1, str0, Component.interface_746.component_746_82);
@@ -224,7 +224,7 @@ function cs2_1766(): void {
         ifSetOp(1, str0, Component.interface_746.component_746_83);
         ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_99, str0]), Component.interface_746.component_746_99);
     } else if (varc_823 == 2) {
-        ifSetGraphic(Graphic.stonemenusideicons_18, Component.interface_548.component_548_91);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_18), Component.interface_548.component_548_91);
         ifSetGraphic(Graphic.graphic_8726, Component.interface_746.component_746_67);
         str0 = "Production";
         ifSetOp(1, str0, Component.interface_548.component_548_83);
@@ -240,35 +240,35 @@ function cs2_1766(): void {
 
     if (varc_240 == 0) {
         ifSetGraphic(Graphic.aif_clan_toplevel_icons_1, Component.interface_548.component_548_92);
-        ifSetGraphic(Graphic.graphic_8689, Component.interface_746.component_746_68);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8689), Component.interface_746.component_746_68);
         str0 = "Friends List";
         ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_100, str0]), Component.interface_746.component_746_100);
     }
 
     if (varc_241 == 0) {
         ifSetGraphic(Graphic.aif_clan_toplevel_icons_0, Component.interface_548.component_548_93);
-        ifSetGraphic(Graphic.graphic_8685, Component.interface_746.component_746_69);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8685), Component.interface_746.component_746_69);
         str0 = "Friends Chat";
         ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_101, str0]), Component.interface_746.component_746_101);
     }
 
     if (varc_242 == 0) {
-        ifSetGraphic(Graphic.stonemenusideicons_11, Component.interface_548.component_548_94);
-        ifSetGraphic(Graphic.graphic_8686, Component.interface_746.component_746_70);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_11), Component.interface_548.component_548_94);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8686), Component.interface_746.component_746_70);
         str0 = "Clan Chat";
         ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_102, str0]), Component.interface_746.component_746_102);
     }
 
     if (varc_243 == 0) {
-        ifSetGraphic(Graphic.stonemenusideicons_12, Component.interface_548.component_548_95);
-        ifSetGraphic(Graphic.graphic_8693, Component.interface_746.component_746_71);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_12), Component.interface_548.component_548_95);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8693), Component.interface_746.component_746_71);
         str0 = "Options";
         ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_103, str0]), Component.interface_746.component_746_103);
     }
 
     if (varc_244 == 0) {
-        ifSetGraphic(Graphic.stonemenusideicons_13, Component.interface_548.component_548_96);
-        ifSetGraphic(Graphic.graphic_8688, Component.interface_746.component_746_72);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_13), Component.interface_548.component_548_96);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8688), Component.interface_746.component_746_72);
         str0 = "Emotes";
         ifSetOp(1, str0, Component.interface_548.component_548_88);
         ifSetOp(1, str0, Component.interface_746.component_746_88);
@@ -283,8 +283,8 @@ function cs2_1766(): void {
     }
 
     if (varc_245 == 0) {
-        ifSetGraphic(Graphic.stonemenusideicons_14, Component.interface_548.component_548_97);
-        ifSetGraphic(Graphic.graphic_8691, Component.interface_746.component_746_73);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_14), Component.interface_548.component_548_97);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8691), Component.interface_746.component_746_73);
         str0 = "Music Player";
         ifSetOp(1, str0, Component.interface_548.component_548_89);
         ifSetOp(1, str0, Component.interface_746.component_746_89);
@@ -299,8 +299,8 @@ function cs2_1766(): void {
     }
 
     if (varc_824 == 0) {
-        ifSetGraphic(Graphic.stonemenusideicons_15, Component.interface_548.component_548_98);
-        ifSetGraphic(Graphic.graphic_8692, Component.interface_746.component_746_74);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_15), Component.interface_548.component_548_98);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8692), Component.interface_746.component_746_74);
         str0 = "Notes";
         ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, Component.interface_746.component_746_106, str0]), Component.interface_746.component_746_106);
     }

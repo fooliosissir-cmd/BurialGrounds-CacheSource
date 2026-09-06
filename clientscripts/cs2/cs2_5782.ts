@@ -22,7 +22,7 @@ function cs2_5782(): void {
     ifSetGraphic(enumOp(type_int, type_graphic, Enum.enum_3491, varbit_8575), Component.interface_1056.component_1056_108);
 
     if (varbit_task_priority_mode == 1) {
-        ifSetGraphic(Graphic.graphic_8698, Component.interface_1056.component_1056_108);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8698), Component.interface_1056.component_1056_108);
     }
 
     while (int2 < 6) {

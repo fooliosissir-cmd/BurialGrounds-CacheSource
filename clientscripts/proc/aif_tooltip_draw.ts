@@ -79,7 +79,7 @@ function aif_tooltip_draw(intArg0: component, intArg1: component, intArg2: numbe
             ccSetPosition(0, 0, 1, 0);
             break;
     }
-    ccSetGraphic(Graphic.aif_overlay_frame_gold_corner_1_0);
+    ccSetGraphic(gameframe_skin_graphic(Graphic.aif_overlay_frame_gold_corner_1_0));
     ccSettiling(true);
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
 
@@ -101,7 +101,7 @@ function aif_tooltip_draw(intArg0: component, intArg1: component, intArg2: numbe
             ccSetPosition(0, 0, 1, 2);
             break;
     }
-    ccSetGraphic(Graphic.aif_overlay_frame_gold_corner_1_0);
+    ccSetGraphic(gameframe_skin_graphic(Graphic.aif_overlay_frame_gold_corner_1_0));
     ccSettiling(true);
     ccSetvflip(true);
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
@@ -124,7 +124,7 @@ function aif_tooltip_draw(intArg0: component, intArg1: component, intArg2: numbe
             ccSetPosition(0, 0, 0, 1);
             break;
     }
-    ccSetGraphic(Graphic.aif_overlay_frame_gold_corner_1_2);
+    ccSetGraphic(gameframe_skin_graphic(Graphic.aif_overlay_frame_gold_corner_1_2));
     ccSettiling(true);
     ccSethflip(true);
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
@@ -147,7 +147,7 @@ function aif_tooltip_draw(intArg0: component, intArg1: component, intArg2: numbe
             ccSetPosition(0, 0, 2, 1);
             break;
     }
-    ccSetGraphic(Graphic.aif_overlay_frame_gold_corner_1_2);
+    ccSetGraphic(gameframe_skin_graphic(Graphic.aif_overlay_frame_gold_corner_1_2));
     ccSettiling(true);
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
     ccSetSize(10, 10, 0, 0);
@@ -163,7 +163,7 @@ function aif_tooltip_draw(intArg0: component, intArg1: component, intArg2: numbe
             ccSetPosition(0, 0, 0, 0);
             break;
     }
-    ccSetGraphic(Graphic.aif_overlay_frame_gold_corner_1_1);
+    ccSetGraphic(gameframe_skin_graphic(Graphic.aif_overlay_frame_gold_corner_1_1));
     ccSethflip(true);
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
     ccSetSize(10, 10, 0, 0);
@@ -179,7 +179,7 @@ function aif_tooltip_draw(intArg0: component, intArg1: component, intArg2: numbe
             ccSetPosition(0, 0, 2, 0);
             break;
     }
-    ccSetGraphic(Graphic.aif_overlay_frame_gold_corner_1_1);
+    ccSetGraphic(gameframe_skin_graphic(Graphic.aif_overlay_frame_gold_corner_1_1));
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
     ccSetSize(10, 10, 0, 0);
 
@@ -194,7 +194,7 @@ function aif_tooltip_draw(intArg0: component, intArg1: component, intArg2: numbe
             ccSetPosition(0, 0, 0, 2);
             break;
     }
-    ccSetGraphic(Graphic.aif_overlay_frame_gold_corner_1_1);
+    ccSetGraphic(gameframe_skin_graphic(Graphic.aif_overlay_frame_gold_corner_1_1));
     ccSethflip(true);
     ccSetvflip(true);
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
@@ -211,7 +211,7 @@ function aif_tooltip_draw(intArg0: component, intArg1: component, intArg2: numbe
             ccSetPosition(0, 0, 2, 2);
             break;
     }
-    ccSetGraphic(Graphic.aif_overlay_frame_gold_corner_1_1);
+    ccSetGraphic(gameframe_skin_graphic(Graphic.aif_overlay_frame_gold_corner_1_1));
     ccSetvflip(true);
     ccCreate(intArg0, 4, ifGetNextSubId(intArg0));
     ccSetSize(int12, int13, 0, 0);

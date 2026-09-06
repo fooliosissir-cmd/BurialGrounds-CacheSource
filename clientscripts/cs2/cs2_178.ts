@@ -9,7 +9,7 @@ function cs2_178(): void {
     let int1: number = 0;
     let int2: number = 8;
 
-    if (getWindowMode() >= 2) {
+    if (gameframe_skin_new() == true) {
         ifSetHide(false, Component.interface_751.component_751_4);
         ifSetSize(ifGetWidth(Component.interface_751.component_751_3), 27, 0, 0, Component.interface_751.component_751_3);
         ifSetPosition(-3, 0, 0, 0, Component.interface_751.component_751_5);
@@ -34,7 +34,7 @@ function cs2_178(): void {
         ifSetSize(ifGetWidth(Component.interface_751.component_751_3), 22, 0, 0, Component.interface_751.component_751_3);
         ifSetPosition(0, 0, 0, 0, Component.interface_751.component_751_5);
         ifSetSize(57, 22, 0, 0, Component.interface_751.component_751_14);
-        ifSetGraphic(Graphic.graphic_1024, Component.interface_751.component_751_15);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_1024), Component.interface_751.component_751_15);
         while (int0 < int2) {
             if (varc_42 == int0 && varc_chat_view == int0) {
                 ifSetGraphic(Graphic.small_button_pressed_highlight, enumOp(type_int, type_component, Enum.enum_683, int0));

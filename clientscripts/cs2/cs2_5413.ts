@@ -11,11 +11,11 @@ function cs2_5413(): void {
     varc_tooltip_built = 0;
 
     if (varbit_snapshot_right_click_enabled == 1) {
-        ifSetGraphic(Graphic.aif_checkbox_large_0, Component.interface_261.component_261_6);
-        ifSetGraphic(Graphic.aif_checkbox_large_1, Component.interface_261.component_261_7);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0), Component.interface_261.component_261_6);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_1), Component.interface_261.component_261_7);
     } else {
-        ifSetGraphic(Graphic.aif_checkbox_large_5, Component.interface_261.component_261_6);
-        ifSetGraphic(Graphic.aif_checkbox_large_6, Component.interface_261.component_261_7);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_5), Component.interface_261.component_261_6);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_6), Component.interface_261.component_261_7);
     }
     rebuildchatbox();
     cs2_89();

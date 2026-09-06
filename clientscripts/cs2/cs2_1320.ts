@@ -5,8 +5,8 @@
 
 function cs2_1320(intArg0: component, intArg1: number): void {
     if (intArg1 == 1) {
-        ifSetGraphic(Graphic.miscgraphics_11, intArg0);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11), intArg0);
     } else {
-        ifSetGraphic(Graphic.miscgraphics_10, intArg0);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), intArg0);
     }
 }

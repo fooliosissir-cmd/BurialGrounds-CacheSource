@@ -49,7 +49,7 @@ function cs2_5796(intArg0: number, intArg1: number, intArg2: component, intArg3:
 
     if (intArg7 != -1) {
         if (structParam(int8, Param.task_set) != 0 && structParam(int8, Param.task_set) != 63) {
-            int11 = Graphic.graphic_4272;
+            int11 = gameframe_skin_graphic(Graphic.graphic_4272);
         }
         ifSetGraphic(int11, intArg7);
     }

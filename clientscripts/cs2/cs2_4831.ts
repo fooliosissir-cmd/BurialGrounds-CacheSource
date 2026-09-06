@@ -16,21 +16,21 @@ function cs2_4831(intArg0: component): void {
                 case Component.interface_1258.component_1258_358:
                 case Component.interface_1258.component_1258_284:
                     if (varbit_clan_custom_slot_1_options1_varp > 0 && ccFind(intArg0, varbit_clan_custom_slot_1_options1_varp - 1) == 1) {
-                        ccSetGraphic(Graphic.aif_checkbox_large_0);
+                        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
                     }
                     break;
                 case Component.interface_1258.component_1258_414:
                 case Component.interface_1258.component_1258_344:
                 case Component.interface_1258.component_1258_268:
                     if (varbit_clan_custom_slot_1_options2_varp > 0 && ccFind(intArg0, varbit_clan_custom_slot_1_options2_varp - 1) == 1) {
-                        ccSetGraphic(Graphic.aif_checkbox_large_0);
+                        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
                     }
                     break;
                 case Component.interface_1258.component_1258_402:
                 case Component.interface_1258.component_1258_330:
                 case Component.interface_1258.component_1258_252:
                     if (varbit_clan_custom_slot_1_options3_varp > 0 && ccFind(intArg0, varbit_clan_custom_slot_1_options3_varp - 1) == 1) {
-                        ccSetGraphic(Graphic.aif_checkbox_large_0);
+                        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
                     }
                     break;
             }
@@ -41,21 +41,21 @@ function cs2_4831(intArg0: component): void {
                 case Component.interface_1258.component_1258_358:
                 case Component.interface_1258.component_1258_284:
                     if (varbit_clan_custom_slot_2_options1_varp > 0 && ccFind(intArg0, varbit_clan_custom_slot_2_options1_varp - 1) == 1) {
-                        ccSetGraphic(Graphic.aif_checkbox_large_0);
+                        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
                     }
                     break;
                 case Component.interface_1258.component_1258_414:
                 case Component.interface_1258.component_1258_344:
                 case Component.interface_1258.component_1258_268:
                     if (varbit_clan_custom_slot_2_options2_varp > 0 && ccFind(intArg0, varbit_clan_custom_slot_2_options2_varp - 1) == 1) {
-                        ccSetGraphic(Graphic.aif_checkbox_large_0);
+                        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
                     }
                     break;
                 case Component.interface_1258.component_1258_402:
                 case Component.interface_1258.component_1258_330:
                 case Component.interface_1258.component_1258_252:
                     if (varbit_clan_custom_slot_2_options3_varp > 0 && ccFind(intArg0, varbit_clan_custom_slot_2_options3_varp - 1) == 1) {
-                        ccSetGraphic(Graphic.aif_checkbox_large_0);
+                        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
                     }
                     break;
             }
@@ -66,21 +66,21 @@ function cs2_4831(intArg0: component): void {
                 case Component.interface_1258.component_1258_358:
                 case Component.interface_1258.component_1258_284:
                     if (varbit_clan_custom_slot_3_options1_varp > 0 && ccFind(intArg0, varbit_clan_custom_slot_3_options1_varp - 1) == 1) {
-                        ccSetGraphic(Graphic.aif_checkbox_large_0);
+                        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
                     }
                     break;
                 case Component.interface_1258.component_1258_414:
                 case Component.interface_1258.component_1258_344:
                 case Component.interface_1258.component_1258_268:
                     if (varbit_clan_custom_slot_3_options2_varp > 0 && ccFind(intArg0, varbit_clan_custom_slot_3_options2_varp - 1) == 1) {
-                        ccSetGraphic(Graphic.aif_checkbox_large_0);
+                        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
                     }
                     break;
                 case Component.interface_1258.component_1258_402:
                 case Component.interface_1258.component_1258_330:
                 case Component.interface_1258.component_1258_252:
                     if (varbit_clan_custom_slot_3_options3_varp > 0 && ccFind(intArg0, varbit_clan_custom_slot_3_options3_varp - 1) == 1) {
-                        ccSetGraphic(Graphic.aif_checkbox_large_0);
+                        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
                     }
                     break;
             }

@@ -7,37 +7,37 @@ function cs2_5245(): void {
     let int0: number = 0;
     let int1: number = 0;
 
-    if (ifGetGraphic(Component.interface_1128.component_1128_4) == Graphic.aif_checkbox_large_3) {
+    if (ifGetGraphic(Component.interface_1128.component_1128_4) == gameframe_skin_graphic(Graphic.aif_checkbox_large_3)) {
         int0 = int0 + 20;
         int1 = int1 + 20;
     }
 
-    if (ifGetGraphic(Component.interface_1128.component_1128_106) == Graphic.aif_checkbox_large_3) {
+    if (ifGetGraphic(Component.interface_1128.component_1128_106) == gameframe_skin_graphic(Graphic.aif_checkbox_large_3)) {
         int0 = int0 + 20;
         int1 = int1 + 20;
     }
 
-    if (ifGetGraphic(Component.interface_1128.component_1128_144) == Graphic.aif_checkbox_large_3) {
+    if (ifGetGraphic(Component.interface_1128.component_1128_144) == gameframe_skin_graphic(Graphic.aif_checkbox_large_3)) {
         int0 = int0 + 30;
         int1 = int1 + 20;
     }
 
-    if (ifGetGraphic(Component.interface_1128.component_1128_181) == Graphic.aif_checkbox_large_3) {
+    if (ifGetGraphic(Component.interface_1128.component_1128_181) == gameframe_skin_graphic(Graphic.aif_checkbox_large_3)) {
         int0 = int0 + 28;
         int1 = int1 + 20;
     }
 
-    if (ifGetGraphic(Component.interface_1128.component_1128_218) == Graphic.aif_checkbox_large_3) {
+    if (ifGetGraphic(Component.interface_1128.component_1128_218) == gameframe_skin_graphic(Graphic.aif_checkbox_large_3)) {
         int0 = int0 + 24;
         int1 = int1 + 20;
     }
 
-    if (ifGetGraphic(Component.interface_1128.component_1128_255) == Graphic.aif_checkbox_large_3) {
+    if (ifGetGraphic(Component.interface_1128.component_1128_255) == gameframe_skin_graphic(Graphic.aif_checkbox_large_3)) {
         int0 = int0 + 26;
         int1 = int1 + 20;
     }
 
-    if (ifGetGraphic(Component.interface_1128.component_1128_292) == Graphic.aif_checkbox_large_3) {
+    if (ifGetGraphic(Component.interface_1128.component_1128_292) == gameframe_skin_graphic(Graphic.aif_checkbox_large_3)) {
         int0 = int0 + 200;
         int1 = int1 + 200;
     }

@@ -46,7 +46,7 @@ function chatdefault_init(): void {
     if (getWindowMode() >= 2) {
         ccDeleteAll(Component.interface_752.component_752_2);
         cs2_5392(Component.interface_752.component_752_2, 22, 0);
-        ifSetGraphic(Graphic.graphic_1247, Component.interface_752.component_752_1);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_1247), Component.interface_752.component_752_1);
         ifSetAlpha(true, Component.interface_752.component_752_1);
         ifSetHide(false, Component.interface_752.component_752_1);
         ifSetHide(true, Component.interface_137.component_137_51);

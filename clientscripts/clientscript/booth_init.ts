@@ -46,37 +46,37 @@ function booth_init(): void {
                 ccSetSize(32, 32, 0, 0);
                 if (int0 == 0) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_116, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_156);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_156));
                 } else if (int0 == 1) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_117, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_157);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_157));
                 } else if (int0 == 2) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_118, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_158);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_158));
                 } else if (int0 == 3) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_120, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_159);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_159));
                 } else if (int0 == 4) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_121, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_161);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_161));
                 } else if (int0 == 5) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_122, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_162);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_162));
                 } else if (int0 == 7) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_123, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_163);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_163));
                 } else if (int0 == 9) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_125, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_164);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_164));
                 } else if (int0 == 10) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_124, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_165);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_165));
                 } else if (int0 == 12) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_126, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_160);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_160));
                 } else if (int0 == 13) {
                     ccSetPosition(...cs2_788(Component.interface_549.component_549_119, 2, 2), 0, 0);
-                    ccSetGraphic(Graphic.graphic_166);
+                    ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_166));
                 }
             }
         }

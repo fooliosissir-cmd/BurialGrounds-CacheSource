@@ -4,5 +4,5 @@
 // cs2_5713
 
 function cs2_5713(intArg0: component): void {
-    aif_checkbox_build_disabled_layer(intArg0, Graphic.aif_checkbox_large_4);
+    aif_checkbox_build_disabled_layer(intArg0, gameframe_skin_graphic(Graphic.aif_checkbox_large_4));
 }

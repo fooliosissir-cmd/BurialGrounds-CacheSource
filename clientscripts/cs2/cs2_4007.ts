@@ -9,9 +9,9 @@ function cs2_4007(intArg0: number): void {
         ifSetGraphic(Graphic.graphic_4324, Component.interface_1056.component_1056_110);
         ifSetGraphic(Graphic.graphic_4325, Component.interface_1056.component_1056_111);
     } else {
-        ifSetGraphic(Graphic.graphic_4322, Component.interface_1056.component_1056_109);
-        ifSetGraphic(Graphic.graphic_4322, Component.interface_1056.component_1056_110);
-        ifSetGraphic(Graphic.graphic_4323, Component.interface_1056.component_1056_111);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4322), Component.interface_1056.component_1056_109);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4322), Component.interface_1056.component_1056_110);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4323), Component.interface_1056.component_1056_111);
         deltooltip_action(Component.interface_1056.component_1056_131);
     }
 }

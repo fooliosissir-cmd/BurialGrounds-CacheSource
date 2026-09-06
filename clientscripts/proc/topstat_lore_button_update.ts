@@ -6,11 +6,11 @@
 function topstat_lore_button_update(): void {
     let int0: graphic = Graphic.topstat_icon_3;
 
-    if (getWindowMode() >= 2) {
-        int0 = Graphic.aif_topstat_icon_3;
+    if (gameframe_skin_new() == true) {
+        int0 = gameframe_skin_graphic(Graphic.aif_topstat_icon_3);
         ifSetSize(67, 34, 0, 0, Component.interface_747.component_747_3);
         ifSetPosition(2, 2, 2, 0, Component.interface_747.component_747_6);
-        ifSetGraphic(Graphic.graphic_8625, Component.interface_747.component_747_5);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8625), Component.interface_747.component_747_5);
         ifSetPosition(3, 15, 0, 0, Component.interface_747.component_747_7);
         ifSetSize(34, 14, 0, 0, Component.interface_747.component_747_7);
     } else {

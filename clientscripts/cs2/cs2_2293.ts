@@ -4,6 +4,6 @@
 // cs2_2293
 
 function cs2_2293(intArg0: component, intArg1: component): void {
-    ifSetGraphic(Graphic.ame_confirm_button_no_back_0, intArg1);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.ame_confirm_button_no_back_0), intArg1);
     ifSetColour(colour(0xFF981F), intArg0);
 }

@@ -25,10 +25,10 @@ function cs2_1388(intArg0: component): void {
         ccSetPosition(int5, int6, 0, 0);
         if (cs2_2297(int4) == 0) {
             ccSetOp(1, "Select" + "<col=ff9040>");
-            ccSetGraphic(Graphic.miscgraphics_10);
+            ccSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10));
         } else {
             ccSetOp(1, "Deselect" + "<col=ff9040>");
-            ccSetGraphic(Graphic.miscgraphics_11);
+            ccSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11));
         }
         ccSetOnOpt(hook(cs2_2290, "Ii", [event_com, event_comsubid]));
         ccSetOnVarTransmit(hook(cs2_2291, "IiY", [event_com, event_comsubid], [1397, 1587]));

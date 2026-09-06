@@ -41,8 +41,8 @@ function cs2_4243(intArg0: Enum): number {
                 int7 = structParam(int4, Param.task_icon);
             }
             ccCreate(Component.interface_917.component_917_67, 5, int9);
-            int12 = Graphic.graphic_4041;
-            int11 = Graphic.graphic_4042;
+            int12 = gameframe_skin_graphic(Graphic.graphic_4041);
+            int11 = gameframe_skin_graphic(Graphic.graphic_4042);
             ccSetGraphic(int12);
             ccHookMouseEnter(hook(cs2_4013, "id", [event_comsubid, int11]));
             ccHookMouseExit(hook(cs2_4013, "id", [event_comsubid, int12]));
@@ -86,7 +86,7 @@ function cs2_4243(intArg0: Enum): number {
             ccSetSize(11, 11, 0, 0);
             ccSetPosition(int14 + 70 - 17, int15 + 39, 0, 0);
             if (cs2_3994(int2) == 1) {
-                ccSetGraphic(Graphic.graphic_4296);
+                ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_4296));
             }
             int10 = int10 + 1;
             int9 = int10 * 4;
@@ -156,7 +156,7 @@ function cs2_4243(intArg0: Enum): number {
             ccSetSize(11, 11, 0, 0);
             ccSetPosition(int14 + 70 - 17, int15 + 39, 0, 0);
             if (cs2_3994(int2) == 1) {
-                ccSetGraphic(Graphic.graphic_4296);
+                ccSetGraphic(gameframe_skin_graphic(Graphic.graphic_4296));
             }
             int10 = int10 + 1;
             int9 = int10 * 4;

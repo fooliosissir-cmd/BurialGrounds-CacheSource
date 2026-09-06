@@ -10,7 +10,7 @@ function wornitems_slot(intArg0: component, intArg1: number): void {
         ifSetObject(-1, 0, intArg0);
         ifSetSize(32, 32, 0, 0, intArg0);
         ifSetPosition(0, 0, 1, 1, intArg0);
-        ifSetGraphic(enumOp(type_int, type_graphic, Enum.enum_796, intArg1), intArg0);
+        ifSetGraphic(gameframe_skin_graphic(enumOp(type_int, type_graphic, Enum.enum_796, intArg1)), intArg0);
         ifSetOutline(0, intArg0);
         ifSetGraphicShadow(0, intArg0);
         ifSetOnOpt(noHook(""), intArg0);

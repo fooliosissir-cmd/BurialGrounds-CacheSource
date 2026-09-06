@@ -4,8 +4,8 @@
 // cs2_1422
 
 function cs2_1422(intArg0: component, intArg1: component, intArg2: component, intArg3: component): void {
-    ifSetGraphic(Graphic.miscgraphics_11, intArg0);
-    ifSetGraphic(Graphic.miscgraphics_10, intArg1);
-    ifSetGraphic(Graphic.miscgraphics_10, intArg2);
-    ifSetGraphic(Graphic.miscgraphics_10, intArg3);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11), intArg0);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), intArg1);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), intArg2);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), intArg3);
 }

@@ -4,6 +4,11 @@
 // cs2_2968
 
 function cs2_2968(intArg0: component): void {
+    if (varbit_option_gameframe_skin == 1) {
+        ccDeleteAll(intArg0);
+        gameframe_skin_panel_frame(intArg0);
+        return;
+    }
     let int1: number = ifGetWidth(intArg0);
     let int2: number = ifGetHeight(intArg0);
     let int3: number = ifGetNextSubId(intArg0);

@@ -5,10 +5,10 @@
 
 function cs2_2680(): void {
     if (varbit_poh_building_mode == 1) {
-        ifSetGraphic(Graphic.miscgraphics_9, Component.interface_398.component_398_15);
-        ifSetGraphic(Graphic.miscgraphics_0, Component.interface_398.component_398_1);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_9), Component.interface_398.component_398_15);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_0), Component.interface_398.component_398_1);
     } else {
-        ifSetGraphic(Graphic.miscgraphics_0, Component.interface_398.component_398_15);
-        ifSetGraphic(Graphic.miscgraphics_9, Component.interface_398.component_398_1);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_0), Component.interface_398.component_398_15);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_9), Component.interface_398.component_398_1);
     }
 }

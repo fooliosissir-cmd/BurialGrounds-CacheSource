@@ -18,14 +18,14 @@ function proc_loginscreen_load(intArg0: component, intArg1: component, intArg2: 
     ifSetGraphic(Graphic.corner_flourish_0, Component.interface_744.component_744_22);
     ifSetGraphic(Graphic.corner_flourish_0, Component.interface_744.component_744_97);
     ifSetGraphic(Graphic.corner_flourish_0, Component.interface_744.component_744_100);
-    ifSetGraphic(Graphic.corner_frame_1_4, Component.interface_744.component_744_70);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_4), Component.interface_744.component_744_70);
     ifSethflip(true, Component.interface_744.component_744_70);
     ifSetvflip(true, Component.interface_744.component_744_70);
-    ifSetGraphic(Graphic.corner_frame_1_4, Component.interface_744.component_744_74);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_4), Component.interface_744.component_744_74);
     ifSethflip(false, Component.interface_744.component_744_74);
     ifSetvflip(true, Component.interface_744.component_744_74);
-    ifSetGraphic(Graphic.corner_frame_1_4, Component.interface_744.component_744_4);
-    ifSetGraphic(Graphic.corner_frame_1_4, Component.interface_744.component_744_6);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_4), Component.interface_744.component_744_4);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_4), Component.interface_744.component_744_6);
     detailLoadingscreentype(random(36));
 
     if (varc_176 <= 0) {

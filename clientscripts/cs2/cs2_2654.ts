@@ -7,19 +7,19 @@ function cs2_2654(): void {
     let int0: component = Component.interface_748.component_748_4;
     let int1: component = Component.interface_748.component_748_5;
     let int2: graphic = Graphic.topstat_icon_0;
-    let int3: graphic = Graphic.topstat_fill_full_0;
-    let int4: graphic = Graphic.topstat_fill_full_9;
-    let int5: graphic = Graphic.topstat_fill_full_10;
+    let int3: graphic = gameframe_skin_graphic(Graphic.topstat_fill_full_0);
+    let int4: graphic = gameframe_skin_graphic(Graphic.topstat_fill_full_9);
+    let int5: graphic = gameframe_skin_graphic(Graphic.topstat_fill_full_10);
 
-    if (getWindowMode() >= 2) {
-        int2 = Graphic.aif_topstat_icon_0;
+    if (gameframe_skin_new() == true) {
+        int2 = gameframe_skin_graphic(Graphic.aif_topstat_icon_0);
         int3 = Graphic.aif_topstat_fill_full_0;
         int4 = Graphic.aif_topstat_fill_full_9;
         int5 = Graphic.aif_topstat_fill_full_10;
         ifSetSize(67, 34, 0, 0, Component.interface_748.component_748_0);
         ifSetPosition(2, 2, 2, 0, Component.interface_748.component_748_3);
-        ifSetGraphic(Graphic.graphic_8625, Component.interface_748.component_748_1);
-        ifSetGraphic(Graphic.graphic_8625, Component.interface_748.component_748_2);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8625), Component.interface_748.component_748_1);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8625), Component.interface_748.component_748_2);
         ifSetPosition(3, 15, 0, 0, Component.interface_748.component_748_8);
         ifSetSize(34, 14, 0, 0, Component.interface_748.component_748_8);
     } else {

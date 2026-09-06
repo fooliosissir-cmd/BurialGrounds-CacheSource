@@ -4,6 +4,9 @@
 // cs2_5392
 
 function cs2_5392(intArg0: component, intArg1: number, intArg2: number): void {
+    if (varbit_option_gameframe_skin == 1) {
+        return;
+    }
     let int3: number = ifGetWidth(intArg0);
     let int4: number = ifGetHeight(intArg0);
     let int5: number = ifGetNextSubId(intArg0);

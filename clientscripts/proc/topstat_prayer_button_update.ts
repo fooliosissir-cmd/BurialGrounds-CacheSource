@@ -5,17 +5,17 @@
 
 function proc_topstat_prayer_button_update(): void {
     let int0: number = 1245;
-    let int1: graphic = Graphic.topstat_fill_full_1;
-    let int2: graphic = Graphic.topstat_fill_full_5;
+    let int1: graphic = gameframe_skin_graphic(Graphic.topstat_fill_full_1);
+    let int2: graphic = gameframe_skin_graphic(Graphic.topstat_fill_full_5);
     let int3: graphic = Graphic.topstat_icon_1;
 
-    if (getWindowMode() >= 2) {
+    if (gameframe_skin_new() == true) {
         int0 = 8645;
         int1 = Graphic.aif_topstat_fill_full_1;
         int2 = Graphic.aif_topstat_fill_full_5;
-        int3 = Graphic.aif_topstat_icon_1;
-        if (ifGetGraphic(Component.interface_749.component_749_4) != Graphic.graphic_8625 && ifGetGraphic(Component.interface_749.component_749_4) != Graphic.graphic_8624) {
-            ifSetGraphic(Graphic.graphic_8625, Component.interface_749.component_749_4);
+        int3 = gameframe_skin_graphic(Graphic.aif_topstat_icon_1);
+        if (ifGetGraphic(Component.interface_749.component_749_4) != gameframe_skin_graphic(Graphic.graphic_8625) && ifGetGraphic(Component.interface_749.component_749_4) != gameframe_skin_graphic(Graphic.graphic_8624)) {
+            ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8625), Component.interface_749.component_749_4);
         }
         ifSetSize(67, 34, 0, 0, Component.interface_749.component_749_3);
         ifSetPosition(2, 1, 2, 0, Component.interface_749.component_749_5);

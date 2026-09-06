@@ -4,9 +4,9 @@
 // cs2_190
 
 function cs2_190(intArg0: component): void {
-    if (getWindowMode() >= 2) {
+    if (gameframe_skin_new() == true) {
         ifSetGraphic(Graphic.graphic_8556, intArg0);
     } else {
-        ifSetGraphic(Graphic.graphic_1024, intArg0);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_1024), intArg0);
     }
 }

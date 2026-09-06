@@ -137,9 +137,9 @@ function cs2_4806(intArg0: Enum, intArg1: number, intArg2: number, intArg3: numb
                 ccSetOnOpt(hook(cs2_4832, "Ii", [event_com, event_comsubid]));
             }
             if (int19 == int16 + 1) {
-                ccSetGraphic(Graphic.aif_checkbox_large_0);
+                ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));
             } else {
-                ccSetGraphic(Graphic.aif_checkbox_large_5);
+                ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_5));
             }
             int16 = int16 + 1;
         }

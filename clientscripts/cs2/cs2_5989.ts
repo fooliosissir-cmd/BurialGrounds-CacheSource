@@ -12,7 +12,7 @@ function cs2_5989(intArg0: component, intArg1: number): void {
     ccCreate(intArg0, 5, int2);
     ccSetPosition(0, 0, 1, 1);
     ccSetSize(0, 0, 1, 1);
-    ccSetGraphic(Graphic.window_texture_2);
+    ccSetGraphic(gameframe_skin_graphic(Graphic.window_texture_2));
     ccSettiling(true);
     int2 = ifGetNextSubId(intArg0);
     ccCreate(intArg0, 5, int2);

@@ -54,7 +54,7 @@ function cs2_2117(intArg0: number, intArg1: number, intArg2: number, intArg3: co
         ccSetSize(22, 22, 0, 0);
         ccSetPosition(int7 + 15, int6 + 20, 0, 0);
         ccSetOutline(0);
-        ccSetGraphic(Graphic.stonemenusideicons_13);
+        ccSetGraphic(gameframe_skin_graphic(Graphic.stonemenusideicons_13));
     } else if (intArg0 == 27) {
         ccSetSize(42, 42, 0, 0);
         ccSetPosition(int7 + 5, int6 + 12, 0, 0);

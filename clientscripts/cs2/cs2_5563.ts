@@ -24,47 +24,47 @@ function cs2_5563(intArg0: number, intArg1: component): void {
             int8 = 0;
         }
         ifSetTrans(int8, intArg1);
-        ifSetGraphic(Graphic.aif_money_xp_button_1_1, Component.interface_746.component_746_209);
-        ifSetGraphic(Graphic.money_pouch_button_1, Component.interface_548.component_548_32);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_money_xp_button_1_1), Component.interface_746.component_746_209);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.money_pouch_button_1), Component.interface_548.component_548_32);
     } else if (clientClock() < int3) {
         int8 = ifGetTrans(intArg1) + 15;
         if (int8 > 255) {
             int8 = 255;
         }
         ifSetTrans(int8, intArg1);
-        ifSetGraphic(Graphic.aif_money_xp_button_1_0, Component.interface_746.component_746_209);
-        ifSetGraphic(Graphic.money_pouch_button_0, Component.interface_548.component_548_32);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_money_xp_button_1_0), Component.interface_746.component_746_209);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.money_pouch_button_0), Component.interface_548.component_548_32);
     } else if (clientClock() < int4) {
         int8 = ifGetTrans(intArg1) - 15;
         if (int8 < 0) {
             int8 = 0;
         }
         ifSetTrans(int8, intArg1);
-        ifSetGraphic(Graphic.aif_money_xp_button_1_1, Component.interface_746.component_746_209);
-        ifSetGraphic(Graphic.money_pouch_button_1, Component.interface_548.component_548_32);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_money_xp_button_1_1), Component.interface_746.component_746_209);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.money_pouch_button_1), Component.interface_548.component_548_32);
     } else if (clientClock() < int5) {
         int8 = ifGetTrans(intArg1) + 15;
         if (int8 > 255) {
             int8 = 255;
         }
         ifSetTrans(int8, intArg1);
-        ifSetGraphic(Graphic.aif_money_xp_button_1_0, Component.interface_746.component_746_209);
-        ifSetGraphic(Graphic.money_pouch_button_0, Component.interface_548.component_548_32);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_money_xp_button_1_0), Component.interface_746.component_746_209);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.money_pouch_button_0), Component.interface_548.component_548_32);
     } else if (clientClock() < int6) {
         int8 = ifGetTrans(intArg1) - 15;
         if (int8 < 0) {
             int8 = 0;
         }
         ifSetTrans(int8, intArg1);
-        ifSetGraphic(Graphic.aif_money_xp_button_1_1, Component.interface_746.component_746_209);
-        ifSetGraphic(Graphic.money_pouch_button_1, Component.interface_548.component_548_32);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_money_xp_button_1_1), Component.interface_746.component_746_209);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.money_pouch_button_1), Component.interface_548.component_548_32);
     } else {
         int8 = ifGetTrans(intArg1) + 15;
         if (int8 > 255) {
             int8 = 255;
         }
         ifSetTrans(int8, intArg1);
-        ifSetGraphic(Graphic.aif_money_xp_button_1_0, Component.interface_746.component_746_209);
-        ifSetGraphic(Graphic.money_pouch_button_0, Component.interface_548.component_548_32);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_money_xp_button_1_0), Component.interface_746.component_746_209);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.money_pouch_button_0), Component.interface_548.component_548_32);
     }
 }

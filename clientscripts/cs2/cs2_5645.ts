@@ -6,13 +6,13 @@
 function cs2_5645(intArg0: component, intArg1: number, intArg2: number): void {
     if (intArg2 == 1) {
         if (intArg1 == 1) {
-            ifSetGraphic(Graphic.combatboxes_large_3, intArg0);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.combatboxes_large_3), intArg0);
         } else {
-            ifSetGraphic(Graphic.combatboxes_large_2, intArg0);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.combatboxes_large_2), intArg0);
         }
     } else if (intArg1 == 1) {
-        ifSetGraphic(Graphic.combatboxes_large_1, intArg0);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.combatboxes_large_1), intArg0);
     } else {
-        ifSetGraphic(Graphic.combatboxes_large_0, intArg0);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.combatboxes_large_0), intArg0);
     }
 }

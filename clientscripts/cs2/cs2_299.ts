@@ -5,5 +5,5 @@
 
 function cs2_299(intArg0: component, intArg1: component, intArg2: graphic): void {
     deltooltip_action(intArg0);
-    ifSetGraphic(intArg2, intArg1);
+    ifSetGraphic(gameframe_skin_graphic(intArg2), intArg1);
 }

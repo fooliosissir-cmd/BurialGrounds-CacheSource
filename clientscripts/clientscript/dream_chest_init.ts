@@ -47,19 +47,19 @@ function dream_chest_init(): void {
             }
         } else {
             if (int0 == 0) {
-                ifSetGraphic(Graphic.graphic_159, Component.interface_260.component_260_40);
+                ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_159), Component.interface_260.component_260_40);
             }
             if (int0 == 1) {
-                ifSetGraphic(Graphic.graphic_156, Component.interface_260.component_260_36);
+                ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_156), Component.interface_260.component_260_36);
             }
             if (int0 == 2) {
-                ifSetGraphic(Graphic.graphic_161, Component.interface_260.component_260_37);
+                ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_161), Component.interface_260.component_260_37);
             }
             if (int0 == 3) {
-                ifSetGraphic(Graphic.graphic_163, Component.interface_260.component_260_38);
+                ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_163), Component.interface_260.component_260_38);
             }
             if (int0 == 4) {
-                ifSetGraphic(Graphic.graphic_165, Component.interface_260.component_260_39);
+                ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_165), Component.interface_260.component_260_39);
             }
         }
         int0 = int0 + 1;

@@ -7,6 +7,6 @@ function cs2_5757(intArg0: component): void {
     if (ifFind(intArg0) == 1) {
         ccSetPosition(0, 0, 1, 1);
         ccSetSize(16, 16, 0, 0);
-        ccSetGraphic(Graphic.aif_help_icon_0);
+        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_help_icon_0));
     }
 }

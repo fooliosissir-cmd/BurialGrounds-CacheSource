@@ -14,12 +14,12 @@ function cs2_3436(intArg0: model, intArg1: component, intArg2: component, strArg
     ifSetHide(true, Component.interface_311.component_311_19);
     ifSetHide(true, Component.interface_311.component_311_15);
     ifSetHide(false, intArg1);
-    ifSetGraphic(Graphic.graphic_4041, Component.interface_311.component_311_24);
-    ifSetGraphic(Graphic.graphic_4041, Component.interface_311.component_311_20);
-    ifSetGraphic(Graphic.graphic_4041, Component.interface_311.component_311_16);
-    ifSetGraphic(Graphic.graphic_4041, Component.interface_311.component_311_12);
-    ifSetGraphic(Graphic.graphic_4041, Component.interface_311.component_311_8);
-    ifSetGraphic(Graphic.graphic_4041, Component.interface_311.component_311_4);
-    ifSetGraphic(Graphic.graphic_4041, Component.interface_311.component_311_0);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4041), Component.interface_311.component_311_24);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4041), Component.interface_311.component_311_20);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4041), Component.interface_311.component_311_16);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4041), Component.interface_311.component_311_12);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4041), Component.interface_311.component_311_8);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4041), Component.interface_311.component_311_4);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_4041), Component.interface_311.component_311_0);
     ifSetGraphic(Graphic.graphic_4043, intArg2);
 }

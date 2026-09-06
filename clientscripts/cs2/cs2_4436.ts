@@ -169,7 +169,7 @@ function cs2_4436(intArg0: component, intArg1: number): void {
         ccCreate(int10, 5, ifGetNextSubId(int10));
         ccSetPosition(0, 0, 2, 0);
         ccSetSize(9, int13, 0, 0);
-        ccSetGraphic(Graphic.aif_browngrad_whole_btn_1);
+        ccSetGraphic(gameframe_skin_graphic(Graphic.aif_browngrad_whole_btn_1));
         ccSetOnOpt(hook(cs2_4317, "Ii", [event_com, event_comsubid]));
         ccSetOp(1, "Show options");
         int25 = int25 + 1;

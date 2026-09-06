@@ -4,5 +4,5 @@
 // cs2_6420
 
 function cs2_6420(intArg0: component): void {
-    ifSetGraphic(Graphic.aif_bronze_close_button_1_0, intArg0);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.aif_bronze_close_button_1_0), intArg0);
 }

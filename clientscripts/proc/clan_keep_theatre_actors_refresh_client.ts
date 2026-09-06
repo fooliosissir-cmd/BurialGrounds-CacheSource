@@ -68,11 +68,11 @@ function clan_keep_theatre_actors_refresh_client(): void {
     }
 
     if (varc_clan_stronghold_keep_theatre_stage_restricted == 0) {
-        int10 = Graphic.aif_checkbox_large_5;
-        int11 = Graphic.aif_checkbox_large_6;
+        int10 = gameframe_skin_graphic(Graphic.aif_checkbox_large_5);
+        int11 = gameframe_skin_graphic(Graphic.aif_checkbox_large_6);
     } else {
-        int10 = Graphic.aif_checkbox_large_0;
-        int11 = Graphic.aif_checkbox_large_1;
+        int10 = gameframe_skin_graphic(Graphic.aif_checkbox_large_0);
+        int11 = gameframe_skin_graphic(Graphic.aif_checkbox_large_1);
     }
     ifSetGraphic(int10, Component.interface_310.component_310_20);
     hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int11]), Component.interface_310.component_310_20);

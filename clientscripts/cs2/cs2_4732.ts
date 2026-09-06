@@ -5,8 +5,8 @@
 
 function cs2_4732(intArg0: component, intArg1: number): void {
     if (testBit(varp_2396, intArg1) == 0) {
-        ifSetGraphic(Graphic.aif_checkbox_large_0, intArg0);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0), intArg0);
     } else {
-        ifSetGraphic(Graphic.aif_checkbox_large_7, intArg0);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_7), intArg0);
     }
 }

@@ -7,7 +7,7 @@ function cs2_2958(): void {
     let int0: graphic = Graphic.small_button;
     let int1: graphic = Graphic.small_button_highlight;
 
-    if (getWindowMode() >= 2) {
+    if (gameframe_skin_new() == true) {
         int0 = Graphic.graphic_8558;
         int1 = Graphic.graphic_8560;
         ifSetGraphic(Graphic.graphic_8558, Component.interface_751.component_751_15);

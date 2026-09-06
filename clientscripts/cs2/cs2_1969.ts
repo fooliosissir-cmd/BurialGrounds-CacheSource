@@ -11,7 +11,7 @@ function cs2_1969(intArg0: component): void {
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
     ccSetSize(int1 * 2, int2 * 2, 1, 1);
     ccSetPosition(0, 0, 1, 1);
-    ccSetGraphic(Graphic.window_texture_1);
+    ccSetGraphic(gameframe_skin_graphic(Graphic.window_texture_1));
     ccSettiling(true);
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
     ccSetSize(int1 * 2, int2, 1, 0);

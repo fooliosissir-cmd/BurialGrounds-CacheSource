@@ -6,16 +6,16 @@
 function cs2_2223(): void {
     ifOpenSubClient(Component.interface_744.component_744_49, Interface.interface_669);
     ifSetGraphic(Graphic.graphic_4088, Component.interface_669.component_669_27);
-    ifSetGraphic(Graphic.corner_frame_1_0, Component.interface_669.component_669_28);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_0), Component.interface_669.component_669_28);
     ifSetvflip(false, Component.interface_669.component_669_28);
     ifSethflip(true, Component.interface_669.component_669_28);
-    ifSetGraphic(Graphic.corner_frame_1_0, Component.interface_669.component_669_29);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_0), Component.interface_669.component_669_29);
     ifSetvflip(false, Component.interface_669.component_669_29);
     ifSethflip(false, Component.interface_669.component_669_29);
-    ifSetGraphic(Graphic.corner_frame_1_2, Component.interface_669.component_669_21);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_2), Component.interface_669.component_669_21);
     ifSetvflip(false, Component.interface_669.component_669_21);
     ifSethflip(true, Component.interface_669.component_669_21);
-    ifSetGraphic(Graphic.corner_frame_1_2, Component.interface_669.component_669_26);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_2), Component.interface_669.component_669_26);
     ifSetvflip(false, Component.interface_669.component_669_26);
     ifSethflip(false, Component.interface_669.component_669_26);
     let str0: string = "";

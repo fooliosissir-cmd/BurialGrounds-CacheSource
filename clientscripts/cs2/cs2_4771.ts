@@ -6,7 +6,7 @@
 function cs2_4771(intArg0: component, intArg1: number): number {
     let int2: number = 38;
     let int3: number = intArg1 / 8;
-    let int4: graphic = Graphic.window_texture_1;
+    let int4: graphic = gameframe_skin_graphic(Graphic.window_texture_1);
 
     ccCreate(intArg0, 3, intArg1);
     ccSetPosition(2, int2 * int3, 0, 0);

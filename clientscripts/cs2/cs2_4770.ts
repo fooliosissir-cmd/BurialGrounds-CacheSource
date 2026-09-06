@@ -7,7 +7,7 @@ function cs2_4770(intArg0: component, intArg1: number, intArg2: number, intArg3:
     let int6: number = intArg1 / 8;
     let int7: number = 38;
     let int8: graphic = Graphic.aif_icon_frame_1;
-    let int9: graphic = Graphic.aif_window_stone_header_fill;
+    let int9: graphic = gameframe_skin_graphic(Graphic.aif_window_stone_header_fill);
     let int10: number = loadClanVarbit<2580>() - loadClanVarbit<2633>();
     let str0: string = "";
 

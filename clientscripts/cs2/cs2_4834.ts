@@ -8,7 +8,7 @@ function cs2_4834(intArg0: component): void {
 
     while (int1 >= 0) {
         if (ccFind(intArg0, int1) == 1) {
-            ccSetGraphic(Graphic.aif_checkbox_large_5);
+            ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_5));
         }
         int1 = int1 - 1;
     }

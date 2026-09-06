@@ -8,12 +8,12 @@ function player_kit_select(intArg0: component, intArg1: number, intArg2: number)
 
     while (int3 < intArg2) {
         if (ccFind(intArg0, int3) == 1) {
-            ccSetGraphic(Graphic.miscgraphics_10);
+            ccSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10));
         }
         int3 = int3 + 1;
     }
 
     if (ccFind(intArg0, intArg1) == 1) {
-        ccSetGraphic(Graphic.miscgraphics_11);
+        ccSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11));
     }
 }

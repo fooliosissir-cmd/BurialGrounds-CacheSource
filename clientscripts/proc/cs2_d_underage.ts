@@ -29,7 +29,7 @@ function cs2_d_underage(): void {
 
     while (int3 >= 0) {
         if (ccFind(int0, int3) == 1) {
-            ccSetGraphic(Graphic.aif_checkbox_large_5);
+            ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_5));
         }
         int3 = int3 - 1;
     }

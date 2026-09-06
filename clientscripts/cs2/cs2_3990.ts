@@ -13,7 +13,7 @@ function cs2_3990(intArg0: number, intArg1: number, intArg2: number): void {
     if (int3 == 2) {
         cs2_4014(intArg1, Graphic.graphic_4043);
     } else {
-        cs2_4014(intArg1, Graphic.graphic_4041);
+        cs2_4014(intArg1, gameframe_skin_graphic(Graphic.graphic_4041));
     }
     cs2_3991(intArg0);
 }

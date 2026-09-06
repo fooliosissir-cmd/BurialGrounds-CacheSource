@@ -8,10 +8,10 @@ function cs2_3440(intArg0: component, intArg1: component): void {
 
     if (ifGetHide(intArg0) == 1) {
         ifSetHide(false, intArg0);
-        ifSetGraphic(Graphic.aif_checkbox_large_3, intArg1);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_3), intArg1);
     } else {
         ifSetHide(true, intArg0);
-        ifSetGraphic(Graphic.aif_checkbox_large_5, intArg1);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_5), intArg1);
     }
     cs2_5245();
 }

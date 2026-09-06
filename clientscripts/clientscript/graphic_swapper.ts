@@ -4,5 +4,5 @@
 // [clientscript,graphic_swapper]
 
 function graphic_swapper(intArg0: component, intArg1: graphic): void {
-    ifSetGraphic(intArg1, intArg0);
+    ifSetGraphic(gameframe_skin_graphic(intArg1), intArg0);
 }

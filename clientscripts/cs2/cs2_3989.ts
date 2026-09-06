@@ -43,8 +43,8 @@ function cs2_3989(intArg0: number, intArg1: number, intArg2: number): number {
                     int14 = Graphic.graphic_4043;
                     int13 = Graphic.graphic_4043;
                 } else {
-                    int14 = Graphic.graphic_4041;
-                    int13 = Graphic.graphic_4042;
+                    int14 = gameframe_skin_graphic(Graphic.graphic_4041);
+                    int13 = gameframe_skin_graphic(Graphic.graphic_4042);
                 }
                 ccSetGraphic(int14);
                 ccHookMouseEnter(hook(cs2_4013, "id", [event_comsubid, int13]));
@@ -77,14 +77,14 @@ function cs2_3989(intArg0: number, intArg1: number, intArg2: number): number {
                 ccSetTrans(int19);
                 ccCreate(Component.interface_917.component_917_67, 5, int11 + 2);
                 if (int5 != 0 && int5 != 63) {
-                    int10 = Graphic.graphic_4272;
+                    int10 = gameframe_skin_graphic(Graphic.graphic_4272);
                     ccSetSize(13, 13, 0, 0);
                     ccSetGraphic(int10);
                     ccSetPosition(int16 + 70 - 16, int18 + 4, 0, 0);
                 }
                 ccCreate(Component.interface_917.component_917_67, 5, int11 + 3);
                 if (cs2_3994(intArg0) == 1) {
-                    int10 = Graphic.graphic_4296;
+                    int10 = gameframe_skin_graphic(Graphic.graphic_4296);
                     ccSetSize(11, 11, 0, 0);
                     int17 = 16;
                 } else if (cs2_3996(intArg0) == 0) {

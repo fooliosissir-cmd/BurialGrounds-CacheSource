@@ -4,20 +4,20 @@
 // [proc,create_setup]
 
 function create_setup(): void {
-    ifSetGraphic(Graphic.corner_frame_1_0, Component.interface_673.component_673_101);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_0), Component.interface_673.component_673_101);
     ifSetvflip(false, Component.interface_673.component_673_101);
     ifSethflip(true, Component.interface_673.component_673_101);
-    ifSetGraphic(Graphic.corner_frame_1_0, Component.interface_673.component_673_108);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_0), Component.interface_673.component_673_108);
     ifSetvflip(false, Component.interface_673.component_673_108);
     ifSethflip(false, Component.interface_673.component_673_108);
-    ifSetGraphic(Graphic.corner_frame_1_2, Component.interface_673.component_673_102);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_2), Component.interface_673.component_673_102);
     ifSetvflip(false, Component.interface_673.component_673_102);
     ifSethflip(true, Component.interface_673.component_673_102);
-    ifSetGraphic(Graphic.corner_frame_1_2, Component.interface_673.component_673_109);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_2), Component.interface_673.component_673_109);
     ifSetvflip(false, Component.interface_673.component_673_109);
     ifSethflip(false, Component.interface_673.component_673_109);
     varc_1411 = 1;
-    ifSetGraphic(Graphic.check_box_2_2, Component.interface_673.component_673_40);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.check_box_2_2), Component.interface_673.component_673_40);
     browserOpen();
     varcstr_122 = "";
     varcstr_326 = "";

@@ -9,11 +9,11 @@ function cs2_2290(intArg0: component, intArg1: number): void {
             return;
         }
         if (ccFind(intArg0, intArg1) == 1) {
-            ccSetGraphic(Graphic.miscgraphics_11);
+            ccSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11));
             ccSetOp(1, "Deselect");
         }
     } else if (ccFind(intArg0, intArg1) == 1) {
-        ccSetGraphic(Graphic.miscgraphics_10);
+        ccSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10));
         ccSetOp(1, "Select");
     }
 }

@@ -45,12 +45,12 @@ function lore_head_update(): void {
             ifSetHide(false, Component.interface_662.component_662_66);
             ifSetHide(false, enumOp(type_npc, type_component, Enum.enum_1282, varp_lore_npc_head));
             ifSetHide(false, enumOp(type_npc, type_component, Enum.enum_1092, varp_lore_npc_head));
-            if (getWindowMode() >= 2) {
+            if (gameframe_skin_new() == true) {
                 ifSetGraphic(Graphic.aif_topstat_fill_full_11, Component.interface_747.component_747_0);
                 ifSetGraphic(Graphic.aif_topstat_fill_full_4, Component.interface_747.component_747_1);
             } else {
-                ifSetGraphic(Graphic.topstat_fill_full_11, Component.interface_747.component_747_0);
-                ifSetGraphic(Graphic.topstat_fill_full_4, Component.interface_747.component_747_1);
+                ifSetGraphic(gameframe_skin_graphic(Graphic.topstat_fill_full_11), Component.interface_747.component_747_0);
+                ifSetGraphic(gameframe_skin_graphic(Graphic.topstat_fill_full_4), Component.interface_747.component_747_1);
             }
         } else {
             ifSetHide(true, Component.interface_662.component_662_66);

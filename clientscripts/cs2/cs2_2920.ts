@@ -26,9 +26,9 @@ function cs2_2920(strArg0: string, intArg0: number, intArg1: number): void {
 
     if (intArg0 == 1) {
         if (varc_snapshot_mute == 0) {
-            ifSetGraphic(Graphic.check_box_2_0, Component.interface_914.component_914_23);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.check_box_2_0), Component.interface_914.component_914_23);
         } else {
-            ifSetGraphic(Graphic.check_box_2_2, Component.interface_914.component_914_23);
+            ifSetGraphic(gameframe_skin_graphic(Graphic.check_box_2_2), Component.interface_914.component_914_23);
         }
         if (intArg1 == 5 || intArg1 == 6) {
             ifSetText("Suggest to mute this player for 48 hours", Component.interface_914.component_914_22);

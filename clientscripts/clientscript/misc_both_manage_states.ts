@@ -464,30 +464,30 @@ function misc_both_manage_states(): void {
     }
 
     if (varbit_misc_herbs_or_flax == 1) {
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_391.component_391_155);
-        ifSetGraphic(Graphic.miscgraphics_11, Component.interface_391.component_391_157);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_391.component_391_155);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11), Component.interface_391.component_391_157);
     } else {
-        ifSetGraphic(Graphic.miscgraphics_11, Component.interface_391.component_391_155);
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_391.component_391_157);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11), Component.interface_391.component_391_155);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_391.component_391_157);
     }
 
     if (varbit_misc_rarewood_type == 0) {
-        ifSetGraphic(Graphic.miscgraphics_11, Component.interface_391.component_391_134);
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_391.component_391_135);
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_391.component_391_136);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11), Component.interface_391.component_391_134);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_391.component_391_135);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_391.component_391_136);
     } else if (varbit_misc_rarewood_type == 1) {
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_391.component_391_134);
-        ifSetGraphic(Graphic.miscgraphics_11, Component.interface_391.component_391_135);
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_391.component_391_136);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_391.component_391_134);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11), Component.interface_391.component_391_135);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_391.component_391_136);
     } else {
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_391.component_391_134);
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_391.component_391_135);
-        ifSetGraphic(Graphic.miscgraphics_11, Component.interface_391.component_391_136);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_391.component_391_134);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_391.component_391_135);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11), Component.interface_391.component_391_136);
     }
 
     if (varbit_misc_cooked == 0) {
-        ifSetGraphic(Graphic.miscgraphics_10, Component.interface_391.component_391_120);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10), Component.interface_391.component_391_120);
     } else {
-        ifSetGraphic(Graphic.miscgraphics_11, Component.interface_391.component_391_120);
+        ifSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11), Component.interface_391.component_391_120);
     }
 }

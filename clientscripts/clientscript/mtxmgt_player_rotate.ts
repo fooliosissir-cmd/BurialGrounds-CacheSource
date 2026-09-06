@@ -4,7 +4,7 @@
 // [clientscript,mtxmgt_player_rotate]
 
 function mtxmgt_player_rotate(intArg0: component, intArg1: number, intArg2: number, intArg3: number): void {
-    if (ifGetGraphic(Component.interface_1311.component_1311_0) == Graphic.aif_worn_bnt_2_1) {
+    if (ifGetGraphic(Component.interface_1311.component_1311_0) == gameframe_skin_graphic(Graphic.aif_worn_bnt_2_1)) {
         return;
     }
     let int4: number = 0;

@@ -5,6 +5,6 @@
 
 function cs2_1385(): void {
     cs2_1309(0);
-    ifSetGraphic(Graphic.graphic_8553, Component.interface_746.component_746_195);
+    ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8553), Component.interface_746.component_746_195);
     cs2_1308();
 }

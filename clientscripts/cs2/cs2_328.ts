@@ -34,7 +34,7 @@ function cs2_328(intArg0: component): void {
         ccCreate(intArg0, 5, int3);
         ccSetSize(36, 36, 0, 0);
         ccSetPosition(int1, int2, 0, 0);
-        ccSetGraphic(Graphic.miscgraphics_10);
+        ccSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10));
         ccSetOp(1, "Select" + "<col=ff9040>");
         ccSetOnOpt(hook(cs2_331, "Ii", [event_com, event_comsubid]));
         int3 = int3 + 1;
