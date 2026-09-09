@@ -9,9 +9,10 @@ function cs2_23(): void {
     ifSetOnOpt(hook(cs2_212, "s", [enumOp(type_int, type_string, Enum.enum_696, varbit_skill_guide_skill_v2)]), Component.interface_499.component_499_27);
     let str1: string = "";
     let int1: number = 0;
+    let [int20, int21] = skillguide_legacy_tabs(varbit_skill_guide_skill_v2);
 
     if (int0 > 1) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 0);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 0, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_9);
         ifSetHide(false, Component.interface_499.component_499_9);
     } else {
@@ -20,7 +21,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 2) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 1);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 1, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_10);
         ifSetPosition(353, 78, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_10);
@@ -30,7 +31,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 3) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 2);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 2, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_11);
         ifSetPosition(353, 95, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_11);
@@ -40,7 +41,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 4) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 3);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 3, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_12);
         ifSetPosition(353, 114, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_12);
@@ -50,7 +51,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 5) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 4);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 4, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_13);
         ifSetPosition(353, 129, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_13);
@@ -60,7 +61,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 6) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 5);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 5, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_14);
         ifSetPosition(353, 146, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_14);
@@ -70,7 +71,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 7) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 6);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 6, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_15);
         ifSetPosition(353, 168, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_15);
@@ -80,7 +81,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 8) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 7);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 7, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_16);
         ifSetPosition(353, 180, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_16);
@@ -90,7 +91,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 9) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 8);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 8, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_17);
         ifSetPosition(353, 197, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_17);
@@ -100,7 +101,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 10) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 9);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 9, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_18);
         ifSetPosition(353, 214, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_18);
@@ -110,7 +111,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 11) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 10);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 10, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_19);
         ifSetPosition(353, 231, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_19);
@@ -120,7 +121,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 12) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 11);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 11, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_20);
         ifSetPosition(353, 248, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_20);
@@ -130,7 +131,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 13) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 12);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 12, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_21);
         ifSetPosition(353, 265, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_21);
@@ -140,7 +141,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 14) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 13);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 13, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_22);
         ifSetPosition(353, 282, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_22);
@@ -150,7 +151,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 15) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 14);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 14, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_23);
         ifSetPosition(353, 299, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_23);
@@ -160,7 +161,7 @@ function cs2_23(): void {
     }
 
     if (int0 >= 16) {
-        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 15);
+        [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, 15, int20, int21);
         ifSetText(str1, Component.interface_499.component_499_24);
         ifSetPosition(353, 316, 0, 0, Component.interface_499.component_499_4);
         ifSetHide(false, Component.interface_499.component_499_24);
@@ -210,7 +211,7 @@ function cs2_23(): void {
     } else if (int0 == 16) {
         ifSetModel(Model.model_43500, Component.interface_499.component_499_2);
     }
-    [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, varbit_skill_guide_subsection_v2);
+    [str1, int1] = cs2_13(varbit_skill_guide_skill_v2, varbit_skill_guide_subsection_v2, int20, int21);
     ifSetText(str1, Component.interface_499.component_499_8);
 
     if (int1 == 0) {
