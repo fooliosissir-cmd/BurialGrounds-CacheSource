@@ -33,7 +33,7 @@ function graphics_options_detailset(intArg0: struct, intArg1: number, intArg2: n
             detailWaterDetailHigh(int_to_bool(intArg1));
             break;
         case Struct.struct_840:
-            if (intArg1 == 0 && (detailGetActiveToolkit() == 0 || detailGetActiveToolkit() == 2)) {
+            if (intArg1 == 0 && detailGetActiveToolkit() == 0) {
                 detailWaterDetailHigh(0);
                 detailFogOn(0);
             } else {
@@ -45,7 +45,7 @@ function graphics_options_detailset(intArg0: struct, intArg1: number, intArg2: n
             break;
         case Struct.struct_841:
             detailAntialiasing(intArg1);
-            if (intArg1 > 0 && detailGetActiveToolkit() != 0 && detailGetActiveToolkit() != 2) {
+            if (intArg1 > 0 && detailGetActiveToolkit() != 0) {
                 cs2_2700(4, intArg2, false, true);
                 return 2;
             }
@@ -58,7 +58,7 @@ function graphics_options_detailset(intArg0: struct, intArg1: number, intArg2: n
             detailParticles(intArg1);
             return 1;
         case Struct.struct_843:
-            if (intArg1 == 0 && (detailGetActiveToolkit() == 0 || detailGetActiveToolkit() == 2)) {
+            if (intArg1 == 0 && detailGetActiveToolkit() == 0) {
                 detailWaterDetailHigh(0);
                 detailFogOn(0);
                 detailTexturing(0);

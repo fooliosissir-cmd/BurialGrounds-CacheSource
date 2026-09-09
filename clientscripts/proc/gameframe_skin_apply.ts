@@ -263,6 +263,57 @@ function gameframe_skin_apply(intArg0: component, intArg1: number, intArg2: bool
             ifSetColour(int6, Component.interface_320.component_320_149);
             ifSetColour(int6, Component.interface_320.component_320_151);
             break;
+        case Component.interface_667.component_667_0:
+            ifSetHide(int3, Component.interface_667.component_667_5);
+            ifSetHide(int3, Component.interface_667.component_667_6);
+            ifSetHide(int3, Component.interface_667.component_667_65);
+            ifSetHide(int3, Component.interface_667.component_667_66);
+            ifSetHide(int3, Component.interface_667.component_667_67);
+            ifSetHide(int3, Component.interface_667.component_667_68);
+            ifSetHide(int3, Component.interface_667.component_667_69);
+            ifSetHide(int3, Component.interface_667.component_667_70);
+            ifSetHide(int3, Component.interface_667.component_667_71);
+            ifSetHide(int3, Component.interface_667.component_667_72);
+            ifSetHide(int3, Component.interface_667.component_667_73);
+            ifSetHide(int3, Component.interface_667.component_667_74);
+            ifSetHide(int3, Component.interface_667.component_667_75);
+            ifSetHide(int3, Component.interface_667.component_667_76);
+            ifSetHide(int3, Component.interface_667.component_667_77);
+            ifSetHide(int3, Component.interface_667.component_667_78);
+            ifSetHide(int3, Component.interface_667.component_667_79);
+            ifSetHide(int3, Component.interface_667.component_667_80);
+            ccDeleteAll(Component.interface_667.component_667_4);
+            if (int3 == true) {
+                ccCreate(Component.interface_667.component_667_4, 5, 0);
+                ccSetPosition(0, 19, 1, 0);
+                ccSetSize(32, 160, 0, 0);
+                ccSetGraphic(Graphic.graphic_821);
+                ccSettiling(true);
+                ccCreate(Component.interface_667.component_667_4, 5, 1);
+                ccSetPosition(-54, 94, 1, 0);
+                ccSetSize(32, 85, 0, 0);
+                ccSetGraphic(Graphic.graphic_821);
+                ccSettiling(true);
+                ccCreate(Component.interface_667.component_667_4, 5, 2);
+                ccSetPosition(54, 94, 1, 0);
+                ccSetSize(32, 85, 0, 0);
+                ccSetGraphic(Graphic.graphic_821);
+                ccSettiling(true);
+                ccSethflip(true);
+                ccCreate(Component.interface_667.component_667_4, 5, 3);
+                ccSetPosition(0, 42, 1, 0);
+                ccSetSize(80, 32, 0, 0);
+                ccSetGraphic(Graphic.graphic_822);
+                ccSettiling(true);
+                ccSetvflip(true);
+                ccCreate(Component.interface_667.component_667_4, 5, 4);
+                ccSetPosition(0, 81, 1, 0);
+                ccSetSize(110, 32, 0, 0);
+                ccSetGraphic(Graphic.graphic_822);
+                ccSettiling(true);
+                ccSetvflip(true);
+            }
+            break;
         case Component.interface_387.component_387_0:
             ifSetHide(int3, Component.interface_387.component_387_3);
             ifSetHide(int3, Component.interface_387.component_387_48);

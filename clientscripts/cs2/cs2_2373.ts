@@ -78,7 +78,7 @@ function cs2_2373(intArg0: component, intArg1: number): void {
             } else {
                 ccSetSize(32, 32, 0, 0);
                 ccSetPosition(...cs2_788(int3, 2, 2), 0, 0);
-                ccSetGraphic(enumOp(type_int, type_graphic, Enum.enum_796, int2));
+                ccSetGraphic(gameframe_skin_graphic(enumOp(type_int, type_graphic, Enum.enum_796, int2)));
             }
         } else {
             ccSetHide(true);

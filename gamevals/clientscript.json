@@ -4,8 +4,8 @@
   "source": "rs3-949 gameval names crosswalked onto the 727 cache; see gamevals/CONTRACT.md",
   "date": "2026-08-31",
   "coverage": {
-    "cache_ids": 6580,
-    "named": 1687,
+    "cache_ids": 6591,
+    "named": 1698,
     "placeholder": 4893,
     "by_channel": {
       "brute": 94,
@@ -6604,9 +6604,20 @@
     "6574": "[proc,gameframe_skin_new]",
     "6575": "[proc,gameframe_skin_apply]",
     "6576": "[clientscript,gameframe_skin_update]",
-    "6577": "[clientscript,options_gameframe_dropdown]",
-    "6578": "[clientscript,options_gameframe_dropdown_open]",
-    "6579": "[clientscript,options_gameframe_dropdown_close]",
-    "6581": "[proc,gameframe_skin_panel_frame]"
+    "6581": "[proc,gameframe_skin_panel_frame]",
+    "6582": "[proc,graphics_options_renderer_buttons]",
+    "6583": "[proc,graphics_options_renderer_button_highlight]",
+    "6584": "[clientscript,graphics_options_renderer_button_highlight]",
+    "6585": "[proc,graphics_options_renderer_button]",
+    "6586": "[proc,game_settings_count]",
+    "6587": "[proc,game_settings_label]",
+    "6588": "[proc,game_settings_value_text]",
+    "6589": "[proc,game_settings_rebuild]",
+    "6590": "[clientscript,game_settings_init]",
+    "6591": "[proc,game_settings_current]",
+    "6592": "[proc,game_settings_values]",
+    "6593": "[proc,game_settings_dropdown]",
+    "6594": "[clientscript,game_settings_dropdown_open]",
+    "6595": "[clientscript,game_settings_dropdown_close]"
   }
 }

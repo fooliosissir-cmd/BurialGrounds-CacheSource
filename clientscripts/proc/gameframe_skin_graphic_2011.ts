@@ -1232,6 +1232,12 @@ function gameframe_skin_graphic_2011(intArg0: graphic): graphic {
         case Graphic.graphic_9195:
             int1 = Graphic.options_button_hover_2011;
             break;
+        case Graphic.graphic_9208:
+            int1 = Graphic.options_icons_profanity_hover_2011;
+            break;
+        case Graphic.graphic_9209:
+            int1 = Graphic.options_icons_profanity_hover_2011;
+            break;
     }
 
     return int1;

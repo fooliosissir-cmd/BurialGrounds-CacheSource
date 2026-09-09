@@ -168500,6 +168500,7 @@ declare namespace Graphic {
     /** graphic 12414 */ const worn_slot_weapon_2011: number;
     /** graphic 12415 */ const worn_slot_body_2011: number;
     /** graphic 12416 */ const worn_slot_shield_2011: number;
+    /** graphic 12417 */ const options_icons_profanity_hover_2011: number;
 }
 
 /** Revision-727 interface ids by Jagex dev-name (1321 named of 1321). */
@@ -169825,6 +169826,7 @@ declare namespace Interface {
     /** interface 1318 */ const interface_1318: number;
     /** interface 1319 */ const interface_1319: number;
     /** interface 1320 */ const interface_1320: number;
+    /** interface 1321 */ const game_settings: number;
 }
 
 /** Revision-727 sound ids by Jagex dev-name (10084 named of 10084). */
@@ -265592,17 +265594,12 @@ declare namespace Component {
         /** component 261:29 */ const component_261_29: number;
         /** component 261:30 */ const component_261_30: number;
         /** component 261:31 */ const component_261_31: number;
-        /** component 261:32 */ const gameframe_label: number;
-        /** component 261:33 */ const gameframe_dropdown: number;
-        /** component 261:34 */ const gameframe_dropdown_list: number;
-        /** component 261:35 */ const gameframe_dropdown_left: number;
-        /** component 261:36 */ const gameframe_dropdown_middle: number;
-        /** component 261:37 */ const gameframe_dropdown_arrow: number;
-        /** component 261:38 */ const gameframe_dropdown_text: number;
-        /** component 261:39 */ const gameframe_dropdown_button: number;
-        /** component 261:40 */ const gameframe_dropdown_list_background: number;
-        /** component 261:41 */ const gameframe_dropdown_2012: number;
-        /** component 261:42 */ const gameframe_dropdown_2011: number;
+        /** component 261:32 */ const game_settings_button: number;
+        /** component 261:33 */ const game_settings_button_left: number;
+        /** component 261:34 */ const game_settings_button_middle: number;
+        /** component 261:35 */ const game_settings_button_right: number;
+        /** component 261:36 */ const game_settings_button_text_shadow: number;
+        /** component 261:37 */ const game_settings_button_text: number;
     }
     /** interface_262, interface 262. */
     namespace interface_262 {
@@ -326686,5 +326683,37 @@ declare namespace Component {
         /** component 1320:37 */ const component_1320_37: number;
         /** component 1320:38 */ const component_1320_38: number;
         /** component 1320:39 */ const component_1320_39: number;
+    }
+    /** game_settings, interface 1321. */
+    namespace game_settings {
+        /** interface id 1321 */ const IFACE: number;
+        /** component 1321:0 */ const popup_fill: number;
+        /** component 1321:1 */ const popup_left: number;
+        /** component 1321:2 */ const popup_right: number;
+        /** component 1321:3 */ const popup_bottom: number;
+        /** component 1321:4 */ const window: number;
+        /** component 1321:5 */ const frame: number;
+        /** component 1321:6 */ const content: number;
+        /** component 1321:7 */ const background: number;
+        /** component 1321:8 */ const frame_body: number;
+        /** component 1321:9 */ const frame_body_bottom: number;
+        /** component 1321:10 */ const frame_top: number;
+        /** component 1321:11 */ const frame_top_left: number;
+        /** component 1321:12 */ const frame_top_right: number;
+        /** component 1321:13 */ const frame_left: number;
+        /** component 1321:14 */ const frame_right: number;
+        /** component 1321:15 */ const frame_bottom: number;
+        /** component 1321:16 */ const frame_bottom_left: number;
+        /** component 1321:17 */ const frame_bottom_right: number;
+        /** component 1321:18 */ const close_button: number;
+        /** component 1321:19 */ const title: number;
+        /** component 1321:20 */ const popup: number;
+        /** component 1321:21 */ const popup_body: number;
+        /** component 1321:22 */ const popup_scrollbar: number;
+        /** component 1321:23 */ const rows: number;
+        /** component 1321:24 */ const interface_caption: number;
+        /** component 1321:25 */ const dropdown: number;
+        /** component 1321:26 */ const dropdown_background: number;
+        /** component 1321:27 */ const dropdown_border: number;
     }
 }

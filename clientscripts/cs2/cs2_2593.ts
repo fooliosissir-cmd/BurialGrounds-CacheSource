@@ -4,7 +4,7 @@
 // cs2_2593
 
 function cs2_2593(intArg0: number): void {
-    if (intArg0 == 0 || intArg0 == 2) {
+    if (intArg0 == 0) {
         if (detailGetGroundblending() == 0) {
             detailWaterDetailHigh(0);
             detailFogOn(0);
@@ -12,9 +12,5 @@ function cs2_2593(intArg0: number): void {
         } else if (detailGetFogOn() == 0) {
             detailWaterDetailHigh(0);
         }
-    }
-
-    if (intArg0 == 2 && detailGetTexturing() == 0) {
-        detailHardshadows(0);
     }
 }

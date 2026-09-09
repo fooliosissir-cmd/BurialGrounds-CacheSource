@@ -506,6 +506,9 @@ function gameframe_skin_graphic_2012(intArg0: graphic): graphic {
         case Graphic.options_icons_profanity_1_2011:
             int1 = Graphic.graphic_4584;
             break;
+        case Graphic.options_icons_profanity_hover_2011:
+            int1 = Graphic.graphic_9208;
+            break;
         case Graphic.aif_overlay_frame_gold_corner_1_0_2011:
             int1 = Graphic.aif_overlay_frame_gold_corner_1_0;
             break;

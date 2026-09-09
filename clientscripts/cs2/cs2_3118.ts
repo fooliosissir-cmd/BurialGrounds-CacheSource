@@ -68,7 +68,6 @@ function cs2_3118(intArg0: number, intArg1: component, intArg2: number, intArg3:
     cc_add_graphic(intArg1, 8, 24, 12, ifGetX(Component.interface_910.component_910_73) + 4, 4, int12, false, false, false, 0);
     cc_add_text(intArg1, 9, ifGetWidth(Component.interface_910.component_910_72) - 30, 20, ifGetX(Component.interface_910.component_910_72) + 30, 0, str3, int14, Graphic.p11_full, 0, 1, 0, true);
     cc_add_text(intArg1, 10, ifGetWidth(Component.interface_910.component_910_74) - 10, 20, ifGetX(Component.interface_910.component_910_74) + 5, 0, str4, int14, Graphic.p11_full, 0, 1, 0, true);
-    lobby_worldswitcher_bots_icon(intArg1, 15, ifGetX(Component.interface_910.component_910_74) - 24, 2, 0, int8);
     cc_add_graphic(intArg1, 11, 17, 17, ifGetX(Component.interface_910.component_910_75) + (ifGetWidth(Component.interface_910.component_910_75) - 17) / 2, 1, int15, false, false, false, 0);
     cc_add_text(intArg1, 12, ifGetWidth(Component.interface_910.component_910_75) - 10, 20, ifGetX(Component.interface_910.component_910_76) + 5, 0, tostring(int11), int14, Graphic.p11_full, 0, 1, 0, true);
     cc_add_text(intArg1, 13, ifGetWidth(Component.interface_910.component_910_77), 20, ifGetX(Component.interface_910.component_910_77), 0, "", colour(0x000000), Graphic.p11_full, 0, 1, 0, true);
@@ -83,4 +82,5 @@ function cs2_3118(intArg0: number, intArg1: component, intArg2: number, intArg3:
     ccSetOp(1, "Remove");
     ccSetOpBase("Favourite");
     ccSetOnOpt(hook(cs2_3134, "i", [intArg0]));
+    lobby_worldswitcher_bots_icon(intArg1, 15, ifGetX(Component.interface_910.component_910_74) - 24, 2, 0, int8);
 }
