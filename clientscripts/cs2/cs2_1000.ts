@@ -150,67 +150,101 @@ function cs2_1000(intArg0: number, intArg1: number): [obj, obj, string, string] 
                 case 0:
                     return [Obj.mcannontoolkit, Obj.pot_empty, "Pot", "You can now craft and fire " + "<col=000080>" + "clay pots" + "</col>" + "."];
                 case 1:
-                    return [Obj.mcannontoolkit, Obj.obj_20382, "Cracked mining urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked mining urns" + "</col>" + "."];
+                    return [1, Obj.urns_fishing1_rune, "Cracked fishing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked fishing urns" + "</col>" + "."];
                 case 2:
-                    return [Obj.mcannonball, Obj.obj_20352, "Cracked cooking urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked cooking urns" + "</col>" + "."];
+                    return [1, Obj.urns_cooking1_rune, "Cracked cooking urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked cooking urns" + "</col>" + "."];
                 case 3:
-                    return [Obj.mcannonball, Obj.obj_20322, "Cracked fishing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked fishing urns" + "</col>" + "."];
+                    return [1, Obj.urns_mining1_rune, "Cracked mining urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked mining urns" + "</col>" + "."];
                 case 4:
-                    return [Obj.mcannonball, Obj.obj_20412, "Impious urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "impious urns" + "</col>" + "."];
+                    return [1, Obj.urns_prayer1_rune, "Impious urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "impious urns" + "</col>" + "."];
                 case 5:
-                    return [Obj.ammo_mould, Obj.clay_ring, "Clay ring", "You can now craft and fire " + "<col=000080>" + "clay rings" + "</col>" + "."];
+                    return [3, Obj.urns_hunter1_rune, "Cracked hunter urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked hunter urns" + "</col>" + "."];
                 case 6:
-                    return [Obj.ammo_mould, Obj.obj_20298, "Cracked woodcutting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked woodcutting urns" + "</col>" + "."];
+                    return [Obj.ammo_mould, Obj.clay_ring, "Clay ring", "You can now craft and fire " + "<col=000080>" + "clay rings" + "</col>" + "."];
                 case 7:
-                    return [Obj.ammo_mould, Obj.obj_20274, "Cracked smelting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked smelting urns" + "</col>" + "."];
+                    return [4, Obj.urns_smithing1_rune, "Cracked smithing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked smithing urns" + "</col>" + "."];
                 case 8:
-                    return [Obj.cert_twpart1, Obj.piedish, "Pie dish", "You can now craft and fire " + "<col=000080>" + "clay pie dishes" + "</col>" + "."];
+                    return [4, Obj.urns_woodcutting1_rune, "Cracked woodcutting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked woodcutting urns" + "</col>" + "."];
                 case 9:
-                    return [Obj.twpart2, Obj.bowl_empty, "Bowl", "You can now craft and fire " + "<col=000080>" + "clay bowls" + "</col>" + "."];
+                    return [4, Obj.urns_runecrafting1_rune, "Cracked runecrafting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked runecrafting urns" + "</col>" + "."];
                 case 10:
-                    return [Obj.twpart4, Obj.obj_20358, "Fragile cooking urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile cooking urns" + "</col>" + "."];
+                    return [5, Obj.urns_farming1_rune, "Cracked farming urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cracked farming urns" + "</col>" + "."];
                 case 11:
-                    return [Obj.holy_table_napkin, Obj.obj_20328, "Fragile fishing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile fishing urns" + "</col>" + "."];
+                    return [Obj.cert_twpart1, Obj.piedish, "Pie dish", "You can now craft and fire " + "<col=000080>" + "clay pie dishes" + "</col>" + "."];
                 case 12:
-                    return [Obj.holy_table_napkin, Obj.obj_20304, "Fragile woodcutting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile woodcutting urns" + "</col>" + "."];
+                    return [Obj.twpart2, Obj.bowl_empty, "Bowl", "You can now craft and fire " + "<col=000080>" + "clay bowls" + "</col>" + "."];
                 case 13:
-                    return [Obj.grail_bell, Obj.obj_20388, "Fragile mining urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile mining urns" + "</col>" + "."];
+                    return [12, Obj.urns_cooking2_rune, "Fragile cooking urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile cooking urns" + "</col>" + "."];
                 case 14:
-                    return [Obj.grail_bell, Obj.obj_20280, "Fragile smelting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile smelting urns" + "</col>" + "."];
+                    return [15, Obj.urns_woodcutting2_rune, "Fragile woodcutting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile woodcutting urns" + "</col>" + "."];
                 case 15:
-                    return [Obj.holy_grail, Obj.plantpot_empty, "Members: Plant pot", "Members can now craft and fire " + "<col=000080>" + "clay plant pots" + "</col>" + "."];
+                    return [15, Obj.urns_fishing2_rune, "Fragile fishing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile fishing urns" + "</col>" + "."];
                 case 16:
-                    return [Obj.red_vine_worm, Obj.potlid, "Members: Pot lid" + "<br>" + " (after starting One Small Favour)", "Members can now craft and fire " + "<col=000080>" + "clay pot lids" + "</col>" + " (after starting One Small Favour.)"];
+                    return [17, Obj.urns_smithing2_rune, "Fragile smithing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile smithing urns" + "</col>" + "."];
                 case 17:
-                    return [Obj.hemenster_fishing_trophy, Obj.obj_20418, "Accursed urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "accursed urns" + "</col>" + "."];
+                    return [17, Obj.urns_mining2_rune, "Fragile mining urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile mining urns" + "</col>" + "."];
                 case 18:
-                    return [Obj.obj_32, Obj.obj_20394, "Mining urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "mining urns" + "</col>" + "."];
+                    return [17, Obj.urns_hunter2_rune, "Members: Fragile hunter urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "fragile hunter urns" + "</col>" + "."];
                 case 19:
-                    return [Obj.excalibur, Obj.obj_20286, "Smelting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "smelting urns" + "</col>" + "."];
+                    return [18, Obj.urns_farming2_rune, "Members: Fragile farming urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "fragile farming urns" + "</col>" + "."];
                 case 20:
-                    return [Obj.obj_36, Obj.obj_20364, "Cooking urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "cooking urns" + "</col>" + "."];
+                    return [18, Obj.urns_runecrafting2_rune, "Fragile runecrafting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fragile runecrafting urns" + "</col>" + "."];
                 case 21:
-                    return [Obj.steel_arrowheads, Obj.obj_20334, "Fishing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "fishing urns" + "</col>" + "."];
+                    return [Obj.holy_grail, Obj.plantpot_empty, "Members: Plant pot", "Members can now craft and fire " + "<col=000080>" + "clay plant pots" + "</col>" + "."];
                 case 22:
-                    return [Obj.rune_arrowheads, Obj.obj_20310, "Woodcutting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "woodcutting urns" + "</col>" + "."];
+                    return [Obj.red_vine_worm, Obj.potlid, "Members: Pot lid" + "<br>" + " (after starting One Small Favour)", "Members can now craft and fire " + "<col=000080>" + "clay pot lids" + "</col>" + " (after starting One Small Favour.)"];
                 case 23:
-                    return [Obj.obj_48, Obj.obj_20400, "Members: Strong mining urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong mining urns" + "</col>" + "."];
+                    return [26, Obj.urns_prayer2_rune, "Accursed urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "accursed urns" + "</col>" + "."];
                 case 24:
-                    return [Obj.obj_49, Obj.obj_20292, "Members: Strong smelting urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong smelting urns" + "</col>" + "."];
+                    return [32, Obj.urns_mining3_rune, "Plain mining urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "plain mining urns" + "</col>" + "."];
                 case 25:
-                    return [Obj.obj_51, Obj.obj_20370, "Members: Strong cooking urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong cooking urns" + "</col>" + "."];
+                    return [33, Obj.urns_runecrafting3_rune, "Plain runecrafting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "plain runecrafting urns" + "</col>" + "."];
                 case 26:
-                    return [Obj.obj_53, Obj.obj_20340, "Members: Strong fishing urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong fishing urns" + "</col>" + "."];
+                    return [34, Obj.urns_hunter3_rune, "Members: Plain hunter urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "plain hunter urns" + "</col>" + "."];
                 case 27:
-                    return [Obj.obj_59, Obj.obj_20406, "Members: Decorated mining urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated mining urns" + "</col>" + "."];
+                    return [35, Obj.urns_smithing3_rune, "Plain smithing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "plain smithing urns" + "</col>" + "."];
                 case 28:
-                    return [Obj.obj_61, Obj.obj_20316, "Members: Strong woodcutting urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong woodcutting urns" + "</col>" + "."];
+                    return [36, Obj.urns_cooking3_rune, "Plain cooking urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "plain cooking urns" + "</col>" + "."];
                 case 29:
-                    return [Obj.obj_62, Obj.obj_20424, "Members: Infernal urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "infernal urns" + "</col>" + "."];
+                    return [40, Obj.urns_farming3_rune, "Members: Plain farming urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "plain farming urns" + "</col>" + "."];
                 case 30:
-                    return [Obj.khazard_cellkeys, Obj.obj_20346, "Members: Decorated fishing urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated fishing urns" + "</col>" + "."];
+                    return [41, Obj.urns_fishing3_rune, "Plain fishing urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "plain fishing urns" + "</col>" + "."];
                 case 31:
-                    return [Obj.obj_81, Obj.obj_20376, "Members: Decorated cooking urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated cooking urns" + "</col>" + "."];
+                    return [44, Obj.urns_woodcutting3_rune, "Plain woodcutting urn", "You can now craft, fire and attach runes to " + "<col=000080>" + "plain woodcutting urns" + "</col>" + "."];
+                case 32:
+                    return [48, Obj.urns_mining4_rune, "Members: Strong mining urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong mining urns" + "</col>" + "."];
+                case 33:
+                    return [49, Obj.urns_smithing4_rune, "Members: Strong smithing urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong smithing urns" + "</col>" + "."];
+                case 34:
+                    return [51, Obj.urns_cooking4_rune, "Members: Strong cooking urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong cooking urns" + "</col>" + "."];
+                case 35:
+                    return [52, Obj.urns_runecrafting4_rune, "Members: Strong runecrafting urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong runecrafting urns" + "</col>" + "."];
+                case 36:
+                    return [53, Obj.urns_fishing4_rune, "Members: Strong fishing urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong fishing urns" + "</col>" + "."];
+                case 37:
+                    return [55, Obj.urns_hunter4_rune, "Members: Strong hunter urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong hunter urns" + "</col>" + "."];
+                case 38:
+                    return [58, Obj.urns_farming4_rune, "Members: Strong farming urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong farming urns" + "</col>" + "."];
+                case 39:
+                    return [61, Obj.urns_woodcutting4_rune, "Members: Strong woodcutting urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "strong woodcutting urns" + "</col>" + "."];
+                case 40:
+                    return [62, Obj.urns_prayer3_rune, "Members: Infernal urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "infernal urns" + "</col>" + "."];
+                case 41:
+                    return [76, Obj.urns_fishing5_rune, "Members: Decorated fishing urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated fishing urns" + "</col>" + "."];
+                case 42:
+                    return [76, Obj.urns_woodcutting5_rune, "Members: Decorated woodcutting urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated woodcutting urns" + "</col>" + "."];
+                case 43:
+                    return [77, Obj.urns_runecrafting5_rune, "Members: Decorated runecrafting urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated runecrafting urns" + "</col>" + "."];
+                case 44:
+                    return [78, Obj.urns_mining5_rune, "Members: Decorated mining urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated mining urns" + "</col>" + "."];
+                case 45:
+                    return [79, Obj.urns_hunter5_rune, "Members: Decorated hunter urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated hunter urns" + "</col>" + "."];
+                case 46:
+                    return [80, Obj.urns_smithing5_rune, "Members: Decorated smithing urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated smithing urns" + "</col>" + "."];
+                case 47:
+                    return [81, Obj.urns_cooking5_rune, "Members: Decorated cooking urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated cooking urns" + "</col>" + "."];
+                case 48:
+                    return [84, Obj.urns_farming5_rune, "Members: Decorated farming urn", "Members can now craft, fire and attach runes to " + "<col=000080>" + "decorated farming urns" + "</col>" + "."];
             }
             break;
         case 4:

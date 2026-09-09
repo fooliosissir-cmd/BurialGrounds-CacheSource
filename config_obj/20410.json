@@ -1,7 +1,7 @@
 {
   "id": 20410,
   "modelId": 63540,
-  "name": "Impious urn (nr)",
+  "name": "Impious urn (no rune)",
   "graphicScale": 976,
   "graphicPitch": 138,
   "graphicCameraRoll": 1796,
@@ -19,7 +19,7 @@
   "primaryFemaleModel": 63453,
   "secondaryFemaleModel": -1,
   "floorOptions": [null, null, "Take", null, null, "Examine"],
-  "options": [null, null, null, null, "Drop"],
+  "options": ["Add air rune", null, null, null, "Drop"],
   "exchangeable": true,
   "tertiaryMaleModel": -1,
   "tertiaryFemaleModel": -1,
@@ -57,6 +57,5 @@
   "singleNoteId": -1,
   "singleNoteTemplateId": -1,
   "params": {"2195": 35},
-  "stringId": "",
-  "opcodeOrder": [1, 12, 8, 4, 6, 5, 113, 114, 23, 25, 65, 2, 97, 249, 127]
+  "stringId": ""
 }

@@ -176,13 +176,15 @@ function cs2_973(): void {
     let str2: string = "";
     [str0, int14] = cs2_12(int0);
 
-    while (int11 < int14) {
+    while (int11 < 1) {
         [str0, int15] = cs2_13(int0, int11);
         int16 = 0;
         int12 = Obj.obj_7620;
         int9 = int8;
+        int10 = 0;
         if (cs2_1566(int0, int11) == 1) {
-            while (int9 != -1) {
+            while (int10 != -1) {
+                [int10, int12, str2, str1] = cs2_14(int0, int11, int16);
                 [int10, int9, str2, str1] = cs2_1567(int0, int11, int16);
                 if (int10 <= statBase(int1) && int10 > int4) {
                     int7 = cs2_974(int5, int6, int12, int9, str1, int0, int11);
@@ -195,7 +197,7 @@ function cs2_973(): void {
             }
             int11 = int11 + 1;
         } else {
-            while (int12 != -1) {
+            while (int10 != -1) {
                 [int10, int12, str2, str1] = cs2_14(int0, int11, int16);
                 if (int10 <= statBase(int1) && int10 > int4) {
                     int7 = cs2_974(int5, int6, int12, int9, str1, int0, int11);

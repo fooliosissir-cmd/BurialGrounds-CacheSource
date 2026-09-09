@@ -52,11 +52,6 @@ function cs2_24(intArg0: obj, intArg1: obj, intArg2: graphic, strArg0: string, i
                 ccSetOnOpt(hook(cs2_1865, "io", [event_opindex, intArg1]));
                 ccHookMouseEnter(hook(cs2_1862, "Ii", [event_com, event_comsubid]));
                 ccHookMouseExit(hook(cs2_1863, "Ii", [event_com, event_comsubid]));
-            } else if (varbit_skill_guide_skill_v2 == 22 && varbit_skill_guide_subsection_v2 != 13 && varbit_skill_guide_subsection_v2 != 14 && varbit_skill_guide_subsection_v2 != 15) {
-                ccSetOp(1, "Check materials");
-                ccSetOnOpt(hook(cs2_1864, "ioii", [event_opindex, intArg1, varbit_skill_guide_subsection_v2, intArg3]));
-                ccHookMouseEnter(hook(cs2_1862, "Ii", [event_com, event_comsubid]));
-                ccHookMouseExit(hook(cs2_1863, "Ii", [event_com, event_comsubid]));
             }
         }
     } else {
