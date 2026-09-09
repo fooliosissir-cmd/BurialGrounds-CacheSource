@@ -83,4 +83,5 @@ function cs2_3118(intArg0: number, intArg1: component, intArg2: number, intArg3:
     ccSetOpBase("Favourite");
     ccSetOnOpt(hook(cs2_3134, "i", [intArg0]));
     lobby_worldswitcher_bots_icon(intArg1, 15, ifGetX(Component.interface_910.component_910_74) - 24, 2, 0, int8);
+    lobby_worldswitcher_customcache_icon(intArg1, 16, ifGetX(Component.interface_910.component_910_74) - 44, 2, 0, int8);
 }
