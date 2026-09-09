@@ -168341,6 +168341,7 @@ declare namespace Graphic {
     /** graphic 12070 */ const graphic_12070: number;
     /** graphic 12071 */ const symbol_lock_open: number;
     /** graphic 12072 */ const world_select_bots: number;
+    /** graphic 12418 */ const world_select_customcache: number;
     /** graphic 12073 */ const miscgraphics_0_2011: number;
     /** graphic 12074 */ const miscgraphics_1_2011: number;
     /** graphic 12075 */ const miscgraphics_2_2011: number;
