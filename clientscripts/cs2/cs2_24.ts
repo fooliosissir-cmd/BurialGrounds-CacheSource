@@ -20,7 +20,7 @@ function cs2_24(intArg0: obj, intArg1: obj, intArg2: graphic, strArg0: string, i
     ccCreate(Component.interface_499.component_499_6, 5, intArg3 * 3 + 1);
     ccSetSize(36, 32, 0, 0);
 
-    if (cs2_1566(varbit_skill_guide_skill_v2, varbit_skill_guide_subsection_v2) == 1) {
+    if (intArg2 != -1) {
         if (varbit_skill_guide_skill_v2 == 7) {
             ccSetSize(30, 30, 0, 0);
         } else if (varbit_skill_guide_skill_v2 == 4) {
@@ -28,11 +28,7 @@ function cs2_24(intArg0: obj, intArg1: obj, intArg2: graphic, strArg0: string, i
             ccSetPosition(0, intArg4, 1, 0);
         }
         ccSetOutline(0);
-        if (intArg2 != -1) {
-            ccSetGraphic(intArg2);
-        } else {
-            ccSetGraphic(Graphic.graphic_2287);
-        }
+        ccSetGraphic(intArg2);
     } else if (intArg1 != -1) {
         if (intArg1 == Obj.obj_18637 || intArg1 == Obj.obj_18638) {
             ccSetSize(24, 24, 0, 0);
