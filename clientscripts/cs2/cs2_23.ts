@@ -226,29 +226,17 @@ function cs2_23(): void {
     let int7: number = 0;
     let int4: obj = Obj.mcannonremains;
     let int5: obj = Obj.obj_7620;
-    let int6: graphic = Graphic.graphic_2287;
+    let int6: graphic = -1;
     let str2: string = "";
     let str3: string = "";
 
-    if (cs2_1566(varbit_skill_guide_skill_v2, varbit_skill_guide_subsection_v2) == 1) {
-        while (int4 != -1) {
-            [int4, int5, str2, str3] = cs2_14(varbit_skill_guide_skill_v2, varbit_skill_guide_subsection_v2, int2);
-            [int4, int6, str2, str3] = cs2_1567(varbit_skill_guide_skill_v2, varbit_skill_guide_subsection_v2, int2);
-            if (int4 >= 0) {
-                int3 = int3 + cs2_24(int4, int5, int6, str2, int7, int3);
-                int7 = int7 + 1;
-            }
-            int2 = int2 + 1;
+    while (int4 != -1) {
+        [int4, int5, int6, str2, str3] = cs2_14(varbit_skill_guide_skill_v2, varbit_skill_guide_subsection_v2, int2);
+        if (int4 >= 0) {
+            int3 = int3 + cs2_24(int4, int5, int6, str2, int7, int3);
+            int7 = int7 + 1;
         }
-    } else {
-        while (int4 != -1) {
-            [int4, int5, str2, str3] = cs2_14(varbit_skill_guide_skill_v2, varbit_skill_guide_subsection_v2, int2);
-            if (int4 >= 0) {
-                int3 = int3 + cs2_24(int4, int5, int6, str2, int7, int3);
-                int7 = int7 + 1;
-            }
-            int2 = int2 + 1;
-        }
+        int2 = int2 + 1;
     }
     ifSetScrollPos(0, 0, Component.interface_499.component_499_6);
     ifSetScrollSize(296, int3, Component.interface_499.component_499_6);
