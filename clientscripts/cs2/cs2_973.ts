@@ -175,9 +175,10 @@ function cs2_973(): void {
     let int16: number = 0;
     let str2: string = "";
     [str0, int14] = cs2_12(int0);
+    let [int17, int18] = skillguide_legacy_tabs(int0);
 
     while (int11 < 1) {
-        [str0, int15] = cs2_13(int0, int11);
+        [str0, int15] = cs2_13(int0, int11, int17, int18);
         int16 = 0;
         int12 = Obj.obj_7620;
         int9 = int8;
