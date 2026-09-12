@@ -5,10 +5,16 @@
 
 function cs2_5540(intArg0: number, intArg1: component, intArg2: component, intArg3: component): number {
     let int4: number = 0;
+    let int5: obj = -1;
+
+    ifSet2dangle(0, intArg3);
 
     if (varc_1725 == 1) {
+        int5 = toolbelt_tier_obj(varc_1725, varc_1724);
         if (mapMembers() == 0 && (varc_1724 == 7 || varc_1724 == 8 || varc_1724 == 9 || varc_1724 == 10 || varc_1724 == 11 || varc_1724 == 13)) {
             ifSetText("Members Item", Component.interface_1178.component_1178_81);
+        } else if (int5 != -1) {
+            ifSetText(ocName(int5), Component.interface_1178.component_1178_81);
         } else {
             ifSetText(ocName(enumOp(type_int, type_obj, Enum.enum_5350, varc_1724)), Component.interface_1178.component_1178_81);
         }
@@ -80,9 +86,18 @@ function cs2_5540(intArg0: number, intArg1: component, intArg2: component, intAr
                 int4 = -1;
                 break;
         }
+        int5 = toolbelt_tier_obj(varc_1725, intArg0);
         if (int4 == 1) {
-            ifSetGraphic(enumOp(type_int, type_graphic, Enum.enum_5348, intArg0), intArg2);
-            ifSetObject(-1, -1, intArg3);
+            if (int5 != -1 && int5 != enumOp(type_int, type_obj, Enum.enum_5350, intArg0)) {
+                ifSetObject(int5, -1, intArg3);
+                if (intArg0 == 1 || intArg0 == 4) {
+                    ifSet2dangle(8192, intArg3);
+                }
+                ifSetGraphic(-1, intArg2);
+            } else {
+                ifSetGraphic(enumOp(type_int, type_graphic, Enum.enum_5348, intArg0), intArg2);
+                ifSetObject(-1, -1, intArg3);
+            }
         } else if (int4 == 0) {
             ifSetGraphic(enumOp(type_int, type_graphic, Enum.enum_5349, intArg0), intArg2);
             ifSetObject(-1, -1, intArg3);
@@ -223,8 +238,11 @@ function cs2_5540(intArg0: number, intArg1: component, intArg2: component, intAr
             ifSetObject(-1, -1, intArg3);
         }
     } else if (varc_1725 == 4) {
+        int5 = toolbelt_tier_obj(varc_1725, varc_1724);
         if (mapMembers() == 0 && (varc_1724 == 1 || varc_1724 == 2 || varc_1724 == 4 || varc_1724 == 5)) {
             ifSetText("Members Item", Component.interface_1178.component_1178_81);
+        } else if (int5 != -1) {
+            ifSetText(ocName(int5), Component.interface_1178.component_1178_81);
         } else {
             ifSetText(ocName(enumOp(type_int, type_obj, Enum.enum_5359, varc_1724)), Component.interface_1178.component_1178_81);
         }
@@ -264,9 +282,15 @@ function cs2_5540(intArg0: number, intArg1: component, intArg2: component, intAr
                 int4 = -1;
                 break;
         }
+        int5 = toolbelt_tier_obj(varc_1725, intArg0);
         if (int4 == 1) {
-            ifSetGraphic(enumOp(type_int, type_graphic, Enum.enum_5357, intArg0), intArg2);
-            ifSetObject(-1, -1, intArg3);
+            if (int5 != -1 && int5 != enumOp(type_int, type_obj, Enum.enum_5359, intArg0)) {
+                ifSetObject(int5, -1, intArg3);
+                ifSetGraphic(-1, intArg2);
+            } else {
+                ifSetGraphic(enumOp(type_int, type_graphic, Enum.enum_5357, intArg0), intArg2);
+                ifSetObject(-1, -1, intArg3);
+            }
         } else if (int4 == 0) {
             ifSetGraphic(enumOp(type_int, type_graphic, Enum.enum_5358, intArg0), intArg2);
             ifSetObject(-1, -1, intArg3);
@@ -551,6 +575,7 @@ function cs2_5540(intArg0: number, intArg1: component, intArg2: component, intAr
         return -1;
     }
 
+    toolbelt_slot_ops(intArg3, varc_1725, intArg0);
     if (int4 >= 1) {
         ifSetHide(false, intArg1);
         ifSetHide(false, intArg2);
