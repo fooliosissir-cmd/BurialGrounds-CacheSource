@@ -156274,7 +156274,7 @@ declare namespace Inv {
     /** inv 673 */ const inv_673: number;
 }
 
-/** Revision-727 graphic ids by Jagex dev-name (12077 named of 12077). */
+/** Revision-727 graphic ids by Jagex dev-name (12106 named of 12106). */
 declare namespace Graphic {
     /** graphic 0 */ const emotes_40: number;
     /** graphic 1 */ const feathers_round_long: number;
@@ -168701,6 +168701,35 @@ declare namespace Graphic {
     /** graphic 12422 */ const njloot_2013_base_pattern_alpha: number;
     /** graphic 12423 */ const energy_beam_white_alpha: number;
     /** graphic 12424 */ const energy_ball2_alpha: number;
+    /** graphic 12425 */ const master_skillcape_cloth_alpha: number;
+    /** graphic 12426 */ const master_skillcape_agility_alpha: number;
+    /** graphic 12427 */ const master_skillcape_attack_alpha: number;
+    /** graphic 12428 */ const master_skillcape_strength_alpha: number;
+    /** graphic 12429 */ const master_skillcape_defence_alpha: number;
+    /** graphic 12430 */ const master_skillcape_ranged_alpha: number;
+    /** graphic 12431 */ const master_skillcape_prayer_alpha: number;
+    /** graphic 12432 */ const master_skillcape_magic_alpha: number;
+    /** graphic 12433 */ const master_skillcape_runecrafting_alpha: number;
+    /** graphic 12434 */ const master_skillcape_construction_alpha: number;
+    /** graphic 12435 */ const master_skillcape_hitpoints_alpha: number;
+    /** graphic 12436 */ const master_skillcape_herblore_alpha: number;
+    /** graphic 12437 */ const master_skillcape_thieving_alpha: number;
+    /** graphic 12438 */ const master_skillcape_crafting_alpha: number;
+    /** graphic 12439 */ const master_skillcape_fletching_alpha: number;
+    /** graphic 12440 */ const master_skillcape_slayer_alpha: number;
+    /** graphic 12441 */ const master_skillcape_hunter_alpha: number;
+    /** graphic 12442 */ const master_skillcape_divination_alpha: number;
+    /** graphic 12443 */ const master_skillcape_mining_alpha: number;
+    /** graphic 12444 */ const master_skillcape_smithing_alpha: number;
+    /** graphic 12445 */ const master_skillcape_fishing_alpha: number;
+    /** graphic 12446 */ const master_skillcape_cooking_alpha: number;
+    /** graphic 12447 */ const master_skillcape_firemaking_alpha: number;
+    /** graphic 12448 */ const master_skillcape_woodcutting_alpha: number;
+    /** graphic 12449 */ const master_skillcape_farming_alpha: number;
+    /** graphic 12450 */ const master_skillcape_summoning_alpha: number;
+    /** graphic 12451 */ const master_skillcape_invention_cloth_alpha: number;
+    /** graphic 12452 */ const master_skillcape_invention_base_alpha: number;
+    /** graphic 12453 */ const master_skillcape_invention_alpha: number;
 }
 
 /** Revision-727 interface ids by Jagex dev-name (1321 named of 1321). */
