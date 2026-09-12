@@ -115059,7 +115059,7 @@ declare namespace Loc {
     /** loc 73892 */ const clan_island_falloff_rpiece_4x4: number;
 }
 
-/** Revision-727 seq ids by Jagex dev-name (17220 named of 17220). */
+/** Revision-727 seq ids by Jagex dev-name (17224 named of 17224). */
 declare namespace Seq {
     /** seq 0 */ const swarm_walk: number;
     /** seq 1 */ const swarm_attack: number;
@@ -132281,9 +132281,13 @@ declare namespace Seq {
     /** seq 17217 */ const human_rune_in_urn_woodcutting_05: number;
     /** seq 17218 */ const human_urn_teleport_smithing_05: number;
     /** seq 17219 */ const human_rune_in_urn_smithing_05: number;
+    /** seq 17220 */ const njloot_2013_glow_t1: number;
+    /** seq 17221 */ const njloot_2013_glow_t2: number;
+    /** seq 17222 */ const njloot_2013_glow_t3: number;
+    /** seq 17223 */ const njloot_2013_glow: number;
 }
 
-/** Revision-727 spotanim ids by Jagex dev-name (3252 named of 3252). */
+/** Revision-727 spotanim ids by Jagex dev-name (3256 named of 3256). */
 declare namespace Spotanim {
     /** spotanim 0 */ const wc_update09_woodcutting_chippings_spotanim: number;
     /** spotanim 1 */ const dragon_firebreath_attack: number;
@@ -135537,6 +135541,10 @@ declare namespace Spotanim {
     /** spotanim 3249 */ const megagames_athletics_effect_applied_spotanim_10: number;
     /** spotanim 3250 */ const megagames_athletics_effect_removed_spotanim_10: number;
     /** spotanim 3251 */ const spotanim_3251: number;
+    /** spotanim 3252 */ const njloot_2013_glow_t1: number;
+    /** spotanim 3253 */ const njloot_2013_glow_t2: number;
+    /** spotanim 3254 */ const njloot_2013_glow_t3: number;
+    /** spotanim 3255 */ const njloot_2013_glow: number;
 }
 
 /** Revision-727 enum ids by Jagex dev-name (6048 named of 6048). */
@@ -156266,7 +156274,7 @@ declare namespace Inv {
     /** inv 673 */ const inv_673: number;
 }
 
-/** Revision-727 graphic ids by Jagex dev-name (12071 named of 12071). */
+/** Revision-727 graphic ids by Jagex dev-name (12077 named of 12077). */
 declare namespace Graphic {
     /** graphic 0 */ const emotes_40: number;
     /** graphic 1 */ const feathers_round_long: number;
@@ -168687,6 +168695,12 @@ declare namespace Graphic {
     /** graphic 12415 */ const worn_slot_body_2011: number;
     /** graphic 12416 */ const worn_slot_shield_2011: number;
     /** graphic 12417 */ const options_icons_profanity_hover_2011: number;
+    /** graphic 12419 */ const njloot_2013_base_pattern: number;
+    /** graphic 12420 */ const energy_beam_white: number;
+    /** graphic 12421 */ const energy_ball2: number;
+    /** graphic 12422 */ const njloot_2013_base_pattern_alpha: number;
+    /** graphic 12423 */ const energy_beam_white_alpha: number;
+    /** graphic 12424 */ const energy_ball2_alpha: number;
 }
 
 /** Revision-727 interface ids by Jagex dev-name (1321 named of 1321). */
@@ -182913,7 +182927,7 @@ declare namespace Worldmap {
     /** worldmap 44 */ const carni_sewervariants: number;
 }
 
-/** Revision-727 model ids by Jagex dev-name (73502 named of 73502). */
+/** Revision-727 model ids by Jagex dev-name (73506 named of 73506). */
 declare namespace Model {
     /** model 0 */ const model_0: number;
     /** model 1 */ const model_1: number;
@@ -256417,6 +256431,10 @@ declare namespace Model {
     /** model 73499 */ const urns_smithing5_rune: number;
     /** model 73500 */ const urns_smithing5_full: number;
     /** model 73501 */ const urns_kit_smithing_05: number;
+    /** model 73502 */ const njloot_2013_t1: number;
+    /** model 73503 */ const njloot_2013_t2: number;
+    /** model 73504 */ const njloot_2013_t3: number;
+    /** model 73505 */ const njloot_2013_t4: number;
 }
 
 /** Revision-727 interface components: `Component.<interface>.<component>` is the packed `(iface << 16) | comp`,
