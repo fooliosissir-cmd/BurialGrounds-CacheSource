@@ -141597,6 +141597,10 @@ declare namespace Enum {
     /** enum 6045 */ const megagames_cheesewheel_start_struct: number;
     /** enum 6046 */ const megagames_cheesewheel_bad_struct: number;
     /** enum 6047 */ const megagames_cheesewheel_win_struct: number;
+    /** enum 6048 */ const toolbelt_pickaxe_objects: number;
+    /** enum 6049 */ const toolbelt_hatchet_objects: number;
+    /** enum 6050 */ const toolbelt_machete_objects: number;
+    /** enum 6051 */ const toolbelt_secateurs_objects: number;
 }
 
 /** Revision-727 struct ids by Jagex dev-name (11406 named of 11406). */
@@ -317226,6 +317230,7 @@ declare namespace Component {
         /** component 1178:87 */ const component_1178_87: number;
         /** component 1178:88 */ const component_1178_88: number;
         /** component 1178:89 */ const component_1178_89: number;
+        /** component 1178:90 */ const tiered_tool_model: number;
     }
     /** interface_1179, interface 1179. */
     namespace interface_1179 {

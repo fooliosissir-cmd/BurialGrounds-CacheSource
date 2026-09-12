@@ -6358,6 +6358,14 @@ declare let varbit_megagames_shop2_bought_obj24: number;
 declare let varbit_bank_placeholders: number;
 /** varbit 11714 */
 declare let varbit_option_gameframe_skin: number;
+/** varbit 11715 */
+declare let varbit_toolbelt_pickaxe_tier: number;
+/** varbit 11716 */
+declare let varbit_toolbelt_hatchet_tier: number;
+/** varbit 11717 */
+declare let varbit_toolbelt_machete_tier: number;
+/** varbit 11718 */
+declare let varbit_toolbelt_secateurs_tier: number;
 /** varc 0 */
 declare let varc_quickchat_listdialog_000: number;
 /** varc 1 */

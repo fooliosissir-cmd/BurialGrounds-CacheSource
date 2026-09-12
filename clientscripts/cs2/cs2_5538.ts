@@ -6,6 +6,7 @@
 function cs2_5538(intArg0: component): void {
     let str0: string = "";
     let int1: number = 0;
+    let int2: obj = -1;
 
     switch (intArg0) {
         case Component.interface_1178.component_1178_2:
@@ -24,13 +25,19 @@ function cs2_5538(intArg0: component): void {
             int1 = varc_1810;
             break;
         case Component.interface_1178.component_1178_30:
+        case Component.interface_1178.tiered_tool_model:
             int1 = varc_1808;
             break;
     }
 
+    int2 = toolbelt_tier_obj(varc_1725, int1);
     switch (varc_1725) {
         case 1:
-            str0 = ocName(enumOp(type_int, type_obj, Enum.enum_5350, int1));
+            if (int2 != -1) {
+                str0 = ocName(int2);
+            } else {
+                str0 = ocName(enumOp(type_int, type_obj, Enum.enum_5350, int1));
+            }
             break;
         case 2:
             str0 = ocName(enumOp(type_int, type_obj, Enum.enum_5353, int1));
@@ -39,7 +46,11 @@ function cs2_5538(intArg0: component): void {
             str0 = ocName(enumOp(type_int, type_obj, Enum.enum_5356, int1));
             break;
         case 4:
-            str0 = ocName(enumOp(type_int, type_obj, Enum.enum_5359, int1));
+            if (int2 != -1) {
+                str0 = ocName(int2);
+            } else {
+                str0 = ocName(enumOp(type_int, type_obj, Enum.enum_5359, int1));
+            }
             break;
         case 11:
             if (int1 == 1) {
