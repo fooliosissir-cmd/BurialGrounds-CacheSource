@@ -28,8 +28,8 @@ function cs2_5271(intArg0: component, strArg0: string, intArg1: number, intArg2:
     ccSetTextShadow(true);
     ccSetColour(colour(0xCCCCCC));
     ccSetTextAlign(1, 1, 0);
-    ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
-    ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xCCCCCC)]));
+    ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+    ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xCCCCCC)]));
     ccSetOp(1, "Spawn");
     ccSetOp(2, "Pick spawn number");
     ccSetOp(3, "Kill");

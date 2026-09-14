@@ -7,10 +7,10 @@ function cs2_5975(): void {
     let int0: number = 0;
 
     if (clanProfileFind() == 1) {
-        if (varbit_clan_stronghold_main_selected_layout_varp != loadClanVarbit<2074>()) {
+        if (varbit_clan_stronghold_main_selected_layout_varp != pushVarClanBit<2074>()) {
             int0 = 1;
         }
-        if (varbit_clan_stronghold_main_selected_daynight_varp != loadClanVarbit<2075>()) {
+        if (varbit_clan_stronghold_main_selected_daynight_varp != pushVarClanBit<2075>()) {
             int0 = 1;
         }
         if (varbit_clan_stronghold_main_selected_daynight_varp == 0) {

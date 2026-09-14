@@ -4,7 +4,7 @@
 // cs2_5635
 
 function cs2_5635(strArg0: string, strArg1: string): void {
-    createCreaterequest(17);
-    logout();
+    createStepReached(17);
+    lobbyLeaveLobby();
     proc_loginscreen_link(strArg0, strArg1, false);
 }

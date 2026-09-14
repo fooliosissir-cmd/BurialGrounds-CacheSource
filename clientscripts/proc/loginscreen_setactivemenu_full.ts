@@ -79,19 +79,19 @@ function proc_loginscreen_setactivemenu_full(intArg0: number, intArg1: boolean, 
     if (intArg0 == 0 || intArg0 == 7 || intArg0 == 8) {
         ifSetColour(colour(0x646464), Component.interface_744.component_744_107);
         ifSetOnClick(noHook(""), Component.interface_744.component_744_107);
-        hookMouseEnter(noHook(""), Component.interface_744.component_744_107);
-        hookMouseExit(noHook(""), Component.interface_744.component_744_107);
+        ifSetOnMouseOver(noHook(""), Component.interface_744.component_744_107);
+        ifSetOnMouseLeave(noHook(""), Component.interface_744.component_744_107);
     } else {
         ifSetColour(colour(0x000000), Component.interface_744.component_744_107);
         ifSetOnClick(hook(clientscript_loginscreen_setactivemenu, "i", [6]), Component.interface_744.component_744_107);
-        hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int5]), Component.interface_744.component_744_107);
-        hookMouseExit(hook(graphic_swapper, "Id", [event_com, int4]), Component.interface_744.component_744_107);
+        ifSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int5]), Component.interface_744.component_744_107);
+        ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int4]), Component.interface_744.component_744_107);
     }
 
     if (intArg0 == 6) {
         proc_graphics_options_init(0);
         if (intArg2 == true) {
-            cs2_3387(detailGetActiveToolkit(), getWindowMode(), ...graphics_options_reviewoptions(detailGetActiveToolkit()), 0);
+            cs2_3387(detailGetToolkit(), getWindowMode(), ...graphics_options_reviewoptions(detailGetToolkit()), 0);
         }
         ifSetHide(false, Component.interface_744.component_744_50);
         varc_loginscreen_focus = 13;
@@ -118,14 +118,14 @@ function proc_loginscreen_setactivemenu_full(intArg0: number, intArg1: boolean, 
             ifSetPosition(0, int7, 1, 0, Component.interface_744.component_744_77);
             ifSetSize(stringWidth(str0, int8), ifGetHeight(Component.interface_744.component_744_77), 0, 0, Component.interface_744.component_744_77);
             ifSetText("<u=c8c8c8>" + str0 + "</u>", Component.interface_744.component_744_78);
-            hookMouseEnter(hook(clientscript_loginscreen_link_highlight, "IIsf1", [Component.interface_744.component_744_77, Component.interface_744.component_744_78, str0, int8, true]), Component.interface_744.component_744_77);
-            hookMouseExit(hook(clientscript_loginscreen_link_highlight, "IIsf1", [Component.interface_744.component_744_77, Component.interface_744.component_744_78, str0, int8, false]), Component.interface_744.component_744_77);
+            ifSetOnMouseOver(hook(clientscript_loginscreen_link_highlight, "IIsf1", [Component.interface_744.component_744_77, Component.interface_744.component_744_78, str0, int8, true]), Component.interface_744.component_744_77);
+            ifSetOnMouseLeave(hook(clientscript_loginscreen_link_highlight, "IIsf1", [Component.interface_744.component_744_77, Component.interface_744.component_744_78, str0, int8, false]), Component.interface_744.component_744_77);
             ifSetHide(false, Component.interface_744.component_744_77);
             int7 = int7 + ifGetHeight(Component.interface_744.component_744_77) + 6;
         } else {
             ifSetPosition(0, 0, 1, 0, Component.interface_744.component_744_77);
-            hookMouseEnter(noHook(""), Component.interface_744.component_744_77);
-            hookMouseExit(noHook(""), Component.interface_744.component_744_77);
+            ifSetOnMouseOver(noHook(""), Component.interface_744.component_744_77);
+            ifSetOnMouseLeave(noHook(""), Component.interface_744.component_744_77);
             ifSetOnClick(noHook(""), Component.interface_744.component_744_77);
             ifSetHide(true, Component.interface_744.component_744_77);
             ifSetText("", Component.interface_744.component_744_78);
@@ -136,8 +136,8 @@ function proc_loginscreen_setactivemenu_full(intArg0: number, intArg1: boolean, 
     } else {
         ifSetHide(true, Component.interface_744.component_744_51);
         ifSetPosition(0, 0, 1, 0, Component.interface_744.component_744_77);
-        hookMouseEnter(noHook(""), Component.interface_744.component_744_77);
-        hookMouseExit(noHook(""), Component.interface_744.component_744_77);
+        ifSetOnMouseOver(noHook(""), Component.interface_744.component_744_77);
+        ifSetOnMouseLeave(noHook(""), Component.interface_744.component_744_77);
         ifSetOnClick(noHook(""), Component.interface_744.component_744_77);
         ifSetHide(true, Component.interface_744.component_744_77);
         ifSetText("", Component.interface_744.component_744_78);

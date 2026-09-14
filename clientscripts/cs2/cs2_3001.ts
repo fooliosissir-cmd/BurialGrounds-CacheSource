@@ -25,8 +25,8 @@ function cs2_3001(): void {
         str2 = "Your membership will expire on " + str0 + str1 + ". Renew now to avoid losing member status. Click " + "<col=0166ff>" + "<u=0166ff>" + "here" + "</u>" + "</col>" + " to renew.";
         str3 = "Your membership will expire on " + str0 + str1 + ". Renew now to avoid losing member status. Click " + "<col=0296fe>" + "<u=0296fe>" + "here" + "</u>" + "</col>" + " to renew.";
         ifSetText(str2, Component.interface_907.component_907_54);
-        hookMouseEnter(hook(text_swapper, "Is", [event_com, str3]), Component.interface_907.component_907_54);
-        hookMouseExit(hook(text_swapper, "Is", [event_com, str2]), Component.interface_907.component_907_54);
+        ifSetOnMouseOver(hook(text_swapper, "Is", [event_com, str3]), Component.interface_907.component_907_54);
+        ifSetOnMouseLeave(hook(text_swapper, "Is", [event_com, str2]), Component.interface_907.component_907_54);
     }
     let int6: number = userDetailLobbyLastloginday();
 

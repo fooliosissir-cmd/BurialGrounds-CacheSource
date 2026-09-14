@@ -17,10 +17,10 @@ function cs2_5952(): void {
         proc_lobby_popup_close();
         if (int0 > int1) {
             lobby_popup(-3, 0, "Click continue to log into a members world.", 0, Graphic.loadingwheel_14, 0, -1, "", "", 1, "Continue", "Continue");
-            ifSetOnOpt(hook(cs2_5953, "", []), Component.interface_906.component_906_258);
+            ifSetOnOp(hook(cs2_5953, "", []), Component.interface_906.component_906_258);
         } else {
             lobby_popup(-3, 0, "We can't find your subscription. Click continue to log into a free to play world.", 0, Graphic.loadingwheel_15, 0, -1, "", "", 1, "Continue", "Continue");
-            ifSetOnOpt(hook(cs2_5953, "", []), Component.interface_906.component_906_258);
+            ifSetOnOp(hook(cs2_5953, "", []), Component.interface_906.component_906_258);
         }
     }
 }

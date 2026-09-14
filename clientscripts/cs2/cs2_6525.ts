@@ -10,8 +10,8 @@ function cs2_6525(): void {
     let int3: graphic = Graphic.graphic_11720;
 
     ifSetGraphic(int1, Component.interface_1317.component_1317_29);
-    hookMouseExit(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_29, int1]), Component.interface_1317.component_1317_29);
-    hookMouseEnter(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_29, int2]), Component.interface_1317.component_1317_29);
+    ifSetOnMouseLeave(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_29, int1]), Component.interface_1317.component_1317_29);
+    ifSetOnMouseOver(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_29, int2]), Component.interface_1317.component_1317_29);
     ifSetOnRelease(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_29, int2]), Component.interface_1317.component_1317_29);
     ifSetOnClick(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_29, int3]), Component.interface_1317.component_1317_29);
     ifSetHide(int0, Component.interface_1317.component_1317_30);

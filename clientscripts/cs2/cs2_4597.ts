@@ -21,8 +21,8 @@ function cs2_4597(): void {
         ifSetSize(16, int0, 1, 1, Component.interface_17.component_17_26);
         ifSetSize(16, int0, 0, 1, Component.interface_17.component_17_27);
         cs2_680(Component.interface_17.component_17_29);
-        hookMouseEnter(hook(cs2_95, "I", [Component.interface_17.component_17_29]), Component.interface_17.component_17_28);
-        hookMouseExit(hook(cs2_93, "I", [Component.interface_17.component_17_29]), Component.interface_17.component_17_28);
+        ifSetOnMouseOver(hook(cs2_95, "I", [Component.interface_17.component_17_29]), Component.interface_17.component_17_28);
+        ifSetOnMouseLeave(hook(cs2_93, "I", [Component.interface_17.component_17_29]), Component.interface_17.component_17_28);
         if (varbit_9226 == 1) {
             ifSetText(str1, Component.interface_17.component_17_30);
         } else {

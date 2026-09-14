@@ -18,7 +18,7 @@ function create_setup(): void {
     ifSethflip(false, Component.interface_673.component_673_109);
     varc_1411 = 1;
     ifSetGraphic(gameframe_skin_graphic(Graphic.check_box_2_2), Component.interface_673.component_673_40);
-    browserOpen();
+    notifyAccountcreatestarted();
     varcstr_122 = "";
     varcstr_326 = "";
     varcstr_124 = "";
@@ -31,8 +31,8 @@ function create_setup(): void {
     varc_1408 = 0;
     varc_1101 = 0;
     create_error("", -1);
-    ifSetText(getCustomStringParam(), Component.interface_673.component_673_43);
-    ifSetText(getCustomStringParam(), Component.interface_673.component_673_119);
+    ifSetText(createGetEmail(), Component.interface_673.component_673_43);
+    ifSetText(createGetEmail(), Component.interface_673.component_673_119);
     ifSetText("", Component.interface_673.component_673_90);
     ifSetText("", Component.interface_673.component_673_80);
     ifSetGraphic(Graphic.symbols_1_1, Component.interface_673.component_673_93);
@@ -69,7 +69,7 @@ function create_setup(): void {
     ifSetPosition(ifGetX(Component.interface_673.component_673_61) + ifGetWidth(Component.interface_673.component_673_61) + stringWidth(" ", Graphic.verdana_11pt_regular), ifGetY(Component.interface_673.component_673_62), 0, 0, Component.interface_673.component_673_62);
     varc_1099 = 0;
 
-    if (stringLength(getCustomStringParam()) > 0) {
+    if (stringLength(createGetEmail()) > 0) {
         cs2_3218(Component.interface_673.component_673_89, Component.interface_673.component_673_90, Component.interface_673.component_673_91, "", 7);
     }
     ifSetOnClick(hook(cs2_3217, "iIIIi", [event_mousex, Component.interface_673.component_673_99, Component.interface_673.component_673_43, Component.interface_673.component_673_100, 6]), Component.interface_673.component_673_43);

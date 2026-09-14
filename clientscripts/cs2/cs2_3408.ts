@@ -9,6 +9,6 @@ function cs2_3408(intArg0: component, strArg0: string): void {
 
     ifSetOp(1, "Open link", intArg0);
     ifSetOpCursor(1, Cursor.cursor_advisor_no_ring_1, intArg0);
-    hookMouseEnter(hook(cs2_2381, "Iis", [intArg0, colour(0x88FFFF), str1]), intArg0);
-    hookMouseExit(hook(cs2_2381, "Iis", [intArg0, colour(0x64C8FA), str2]), intArg0);
+    ifSetOnMouseOver(hook(cs2_2381, "Iis", [intArg0, colour(0x88FFFF), str1]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_2381, "Iis", [intArg0, colour(0x64C8FA), str2]), intArg0);
 }

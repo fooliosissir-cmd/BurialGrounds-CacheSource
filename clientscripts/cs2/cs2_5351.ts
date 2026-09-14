@@ -92,8 +92,8 @@ function cs2_5351(intArg0: struct, intArg1: number, intArg2: number, intArg3: nu
         intArg6 = intArg6 + 1;
         ccSetPosition(intArg2 - int12, intArg3, 0, 0);
         ccSetSize(int12 * 3, intArg4, 0, 0);
-        ccHookMouseEnter(hook(cs2_5359, "IiJ1", [int14, event_comsubid, intArg0, true]));
-        ccHookMouseExit(hook(cs2_5359, "IiJ1", [int14, event_comsubid, intArg0, false]));
+        ccSetOnMouseOver(hook(cs2_5359, "IiJ1", [int14, event_comsubid, intArg0, true]));
+        ccSetOnMouseLeave(hook(cs2_5359, "IiJ1", [int14, event_comsubid, intArg0, false]));
         ccCreate(int14, 5, intArg6);
         intArg6 = intArg6 + 1;
         ccSetPosition(intArg2, intArg3, 0, 0);
@@ -156,8 +156,8 @@ function cs2_5351(intArg0: struct, intArg1: number, intArg2: number, intArg3: nu
         ccSetGraphic(int31);
         ccSetSize(90, 23, 0, 0);
         if (int30 != 1 || int42 != 1) {
-            ccHookMouseEnter(hook(graphic_swapper_dynamic, "Iid", [int14, intArg6, int32]));
-            ccHookMouseExit(hook(graphic_swapper_dynamic, "Iid", [int14, intArg6, int31]));
+            ccSetOnMouseOver(hook(graphic_swapper_dynamic, "Iid", [int14, intArg6, int32]));
+            ccSetOnMouseLeave(hook(graphic_swapper_dynamic, "Iid", [int14, intArg6, int31]));
         }
         intArg6 = intArg6 + 1;
         int28 = 0;
@@ -283,7 +283,7 @@ function cs2_5351(intArg0: struct, intArg1: number, intArg2: number, intArg3: nu
             int36 = int37;
             ccSetOp(1, "Add to Favourites");
             if (varbit_9487 != 8) {
-                ccSetOnOpt(hook(cs2_5354, "Iiddddd", [int27, int33, int36, int37, int39, int38, int40]));
+                ccSetOnOp(hook(cs2_5354, "Iiddddd", [int27, int33, int36, int37, int39, int38, int40]));
             }
         } else {
             int34 = int39;
@@ -291,13 +291,13 @@ function cs2_5351(intArg0: struct, intArg1: number, intArg2: number, intArg3: nu
             int36 = int38;
             ccSetOp(1, "Remove from Favourites");
             if (varbit_9487 != 8) {
-                ccSetOnOpt(hook(cs2_5354, "Iiddddd", [int27, int33, int36, int37, int39, int38, int40]));
+                ccSetOnOp(hook(cs2_5354, "Iiddddd", [int27, int33, int36, int37, int39, int38, int40]));
             }
         }
         ccSetGraphic(int34);
         ccSetSize(21, 21, 0, 0);
-        ccHookMouseEnter(hook(graphic_swapper_child, "Iid", [int27, int33, int35]));
-        ccHookMouseExit(hook(graphic_swapper_child, "Iid", [int27, int33, int34]));
+        ccSetOnMouseOver(hook(graphic_swapper_child, "Iid", [int27, int33, int35]));
+        ccSetOnMouseLeave(hook(graphic_swapper_child, "Iid", [int27, int33, int34]));
         int33 = int33 + 1;
         ccCreate(int14, 5, intArg6);
         intArg6 = intArg6 + 1;

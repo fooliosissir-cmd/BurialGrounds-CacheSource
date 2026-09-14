@@ -33,14 +33,14 @@ function wom2_populate(intArg0: component, intArg1: component): void {
                 ccSetOp(10, "Examine");
                 ccSetOpBase("<col=ff9040>" + ocName(int4));
                 int7 = int7 + int2 + 36;
-                ccSetOnOpt(hook(wom2_onop, "Iii", [event_com, event_comsubid, event_opindex]));
-                ccHookMouseEnter(hook(wom2_onmouseover, "Ii", [event_com, event_comsubid]));
-                ccHookMouseExit(hook(wom2_onmouseleave, "Ii", [event_com, event_comsubid]));
+                ccSetOnOp(hook(wom2_onop, "Iii", [event_com, event_comsubid, event_opindex]));
+                ccSetOnMouseOver(hook(wom2_onmouseover, "Ii", [event_com, event_comsubid]));
+                ccSetOnMouseLeave(hook(wom2_onmouseleave, "Ii", [event_com, event_comsubid]));
             } else {
                 ccSetSize(0, 0, 0, 0);
                 ccSetPosition(0, 0, 0, 0);
                 ccSetHide(true);
-                ccSetOnOpt(noHook(""));
+                ccSetOnOp(noHook(""));
             }
         }
         int3 = int3 + 1;

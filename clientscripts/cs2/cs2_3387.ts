@@ -125,8 +125,8 @@ function cs2_3387(intArg0: number, intArg1: number, intArg2: number, intArg3: nu
                 ccSetSize<1>(16, 16, 0, 0);
                 ccSetPosition<1>(ccGetX() + ccGetWidth() - (ccGetWidth<1>() + 1), int7 + (16 - ccGetHeight<1>()) / 2, 0, 0);
                 ccSetGraphic<1>(Graphic.graphic_2554);
-                ccHookMouseEnter(hook(cs2_2691, "Ii1ii1", [event_com, ccGetId<1>(), true, int8, colour(0x80786D), true]));
-                ccHookMouseExit(hook(cs2_2691, "Ii1ii1", [event_com, ccGetId<1>(), false, int8, colour(0x5F5B52), true]));
+                ccSetOnMouseOver(hook(cs2_2691, "Ii1ii1", [event_com, ccGetId<1>(), true, int8, colour(0x80786D), true]));
+                ccSetOnMouseLeave(hook(cs2_2691, "Ii1ii1", [event_com, ccGetId<1>(), false, int8, colour(0x5F5B52), true]));
                 ccSetOnClick(hook(cs2_2695, "IiiiiJiiiii", [event_com, event_comsubid, ccGetId<1>(), int8, int13, int14, intArg2, intArg3, intArg0, intArg1, intArg4]));
             }
         }

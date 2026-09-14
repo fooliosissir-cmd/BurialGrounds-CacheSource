@@ -10,12 +10,12 @@ function snapshot_report(intArg0: number): void {
         chatSendAbuseReport(varcstr_snapshot_name, intArg0, varc_snapshot_mute, "");
     }
 
-    if (compare(varcstr_snapshot_name, chatPlayerName()) == 0) {
+    if (compare(varcstr_snapshot_name, chatPlayerNameUnfiltered()) == 0) {
         cs2_675();
         return;
     }
 
-    if (ignoreTest(varcstr_snapshot_name) == 0 && compare(varcstr_snapshot_name, chatPlayerName()) != 0) {
+    if (ignoreTest(varcstr_snapshot_name) == 0 && compare(varcstr_snapshot_name, chatPlayerNameUnfiltered()) != 0) {
         cs2_221();
     } else {
         cs2_675();

@@ -30,7 +30,7 @@ function cs2_1388(intArg0: component): void {
             ccSetOp(1, "Deselect" + "<col=ff9040>");
             ccSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_11));
         }
-        ccSetOnOpt(hook(cs2_2290, "Ii", [event_com, event_comsubid]));
+        ccSetOnOp(hook(cs2_2290, "Ii", [event_com, event_comsubid]));
         ccSetOnVarTransmit(hook(cs2_2291, "IiY", [event_com, event_comsubid], [1397, 1587]));
         int4 = int4 + 1;
         if (int4 % int1 == 0) {

@@ -55,7 +55,7 @@ function cs2_4885(intArg0: component): void {
             }
             return;
         }
-        if (loadClanVarbit<2148>() != int3 && loadClanVarbit<2165>() != int3 && loadClanVarbit<2182>() != int3) {
+        if (pushVarClanBit<2148>() != int3 && pushVarClanBit<2165>() != int3 && pushVarClanBit<2182>() != int3) {
             if (varbit_clan_custom_stronghold_slot1_disabled == 0) {
                 varbit_clan_custom_slot_1_destination_id_varp = int3;
                 varbit_clan_custom_slot_1_hotspot_varp = int1;

@@ -18,7 +18,7 @@ function clan_create_text_input(intArg0: component, intArg1: component, intArg2:
         case 99:
         case 102:
         case 103:
-            if (keyheldAlt() == 0) {
+            if (keyheldShift() == 0) {
                 return;
             }
             cs2_1553(intArg3, varc_1504, varcstr_348);

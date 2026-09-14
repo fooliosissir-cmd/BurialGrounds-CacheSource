@@ -4,7 +4,7 @@
 // cs2_4785
 
 function cs2_4785(): number {
-    switch (loadClanVarbit<2580>()) {
+    switch (pushVarClanBit<2580>()) {
         case 1:
             if (cs2_4789(1) < 1) {
                 return 0;

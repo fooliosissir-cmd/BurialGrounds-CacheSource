@@ -8,7 +8,7 @@ function cs2_2828(): void {
         return;
     }
 
-    if (compare(subString(chatPlayerNameUnfiltered(), 0, 1), "#") == 0) {
+    if (compare(subString(chatPlayerName(), 0, 1), "#") == 0) {
         return;
     }
     cs2_5861(varp_2523);

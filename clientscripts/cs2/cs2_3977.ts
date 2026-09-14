@@ -29,9 +29,9 @@ function cs2_3977(intArg0: number): void {
         ifSetTextFont(Graphic.verdana_11pt_regular, Component.interface_1056.component_1056_124);
         ifSetTextAlign(0, 0, 13, Component.interface_1056.component_1056_124);
         str1 = "Task area: " + enumOp(type_int, type_string, Enum.enum_3487, structParam(int1, Param.task_area));
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [event_com, Component.interface_1056.component_1056_131, str1, 45, 135]), Component.interface_1056.component_1056_128);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [event_com, Component.interface_1056.component_1056_131, str1, 45, 135]), Component.interface_1056.component_1056_128);
         str1 = "Task difficulty: " + enumOp(type_int, type_string, Enum.enum_3488, structParam(int1, Param.param_1272));
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [event_com, Component.interface_1056.component_1056_131, str1, 45, 135]), Component.interface_1056.component_1056_129);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [event_com, Component.interface_1056.component_1056_131, str1, 45, 135]), Component.interface_1056.component_1056_129);
     }
     let str2: string = "";
 

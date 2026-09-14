@@ -45,12 +45,12 @@ function cs2_6349(intArg0: component, intArg1: number, intArg2: number): [compon
             break;
         case 24:
             if (getWindowMode() >= 2) {
-                if (ifIsOpen(48889965, 1266) == 0) {
+                if (ifHasSubModal(48889965, 1266) == 0) {
                     intArg0 = -1;
                 }
                 intArg1 = -1;
             } else {
-                if (ifIsOpen(35913900, 1266) == 0) {
+                if (ifHasSubModal(35913900, 1266) == 0) {
                     intArg0 = -1;
                 }
                 intArg1 = -1;

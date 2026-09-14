@@ -130,190 +130,190 @@ function clan_permissions_rank_update(): void {
         ifSetHide(true, Component.interface_1096.component_1096_571);
         if (varc_1569 < 100) {
             str0 = "Only admins and above may upgrade the citadel.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_604);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_604);
         } else if (cs2_5145(int1) == 0) {
             str0 = "You may only allow upgrades to the citadel if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_604);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_604);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_604);
         }
         if (varc_1569 < 100) {
             str0 = "Only admins and above may downgrade the citadel.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_615);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_615);
         } else if (cs2_5147(int1) == 0) {
             str0 = "You may only allow downgrades to the citadel if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_615);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_615);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_615);
         }
         if (cs2_6026(int1) == 0) {
             str0 = "You may only allow transfer of resources if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_637);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_637);
         } else if (varc_1569 >= 100) {
             ifSetHide(true, Component.interface_1096.component_1096_637);
         }
         if (cs2_6012(int1) == 0) {
             str0 = "You may only allow recruiting if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_484);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_484);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_484);
         }
         if (varc_1569 < 100) {
             str0 = "Only admins and above may change the noticeboard.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_593);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_593);
         } else if (cs2_6006(int1) == 0) {
             str0 = "You may only allow adding of notices if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_593);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_593);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_593);
         }
         if (varc_1569 < 100) {
             str0 = "Only admins and above may change the signpost.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_582);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_582);
         } else if (cs2_6008(int1) == 0) {
             str0 = "You may only allow adding to the signpost if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_582);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_582);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_582);
         }
         if (cs2_6010(int1) == 0) {
             str0 = "You may only allow editing of the clan battlefield if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_626);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_626);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_626);
         }
         if (varc_1569 < 100) {
             str0 = "Only admins and above may change who may lock the citadel.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_548);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_548);
         } else if (cs2_5149(int1) == 0) {
             str0 = "You may only allow locking of the citadel if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_548);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_548);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_548);
         }
         if (varc_1569 < 100) {
             str0 = "Only admins and above may change who may lock the keep.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_535);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_535);
         } else if (cs2_5148(int1) == 0) {
             str0 = "You may only allow locking of the keep if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_535);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_535);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_535);
         }
         if (cs2_5149(int1) == 0) {
             str0 = "You may only allow entry to the citadel if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_753);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_753);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_753);
         }
         if (cs2_5148(int1) == 0) {
             str0 = "You may only allow entry to the keep if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_740);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_740);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_740);
         }
         if (cs2_6014(int1) == 0) {
             str0 = "You may only allow starting of battles if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_649);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_649);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_649);
         }
         if (cs2_6016(int1) == 0) {
             str0 = "You may only allow a rank to lead Rated Clan Wars if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_660);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_660);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_660);
         }
         if (cs2_6018(int1) == 0) {
             str0 = "You may only allow a rank to call a vote if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_672);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_672);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_672);
         }
         if (cs2_6020(int1) == 0) {
             str0 = "You may only allow a rank to begin a meeting if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_685);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_685);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_685);
         }
         if (cs2_6022(int1) == 0) {
             str0 = "You may only set a rank as a party tech if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_697);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_697);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_697);
         }
         if (cs2_6024(int1) == 0) {
             str0 = "You may only set a rank as a theatre tech if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_794);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_794);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_794);
         }
         if (varc_1569 < 100) {
             str0 = "Only admins and above may set skill plot locks.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_805);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_805);
         } else if (cs2_5962(int1) == 0) {
             str0 = "You may only allow a rank to lock plots if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_805);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_805);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_805);
         }
         if (cs2_5964(int1) == 0) {
             str0 = "You may only allow a rank to checkresources if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_816);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_816);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_816);
         }
         if (varc_1569 < 100) {
             str0 = "Only admins and above may set gathering goals.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_709);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_709);
         } else if (cs2_5225(int1) == 0) {
             str0 = "You may only allow a rank to gather resources if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_709);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_709);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_709);
         }
         if (varc_1569 < 103) {
             str0 = "Only overseers and above may set the citadel's language.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_783);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_783);
         } else if (cs2_6028(int1) == 0) {
             str0 = "You may only allow a rank to change the stronghold's language if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_783);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_783);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_783);
         }
         if (varc_1569 < 103) {
             str0 = "Only overseers and above may move the build tick.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_721);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_721);
         } else if (cs2_6030(int1) == 0) {
             str0 = "You may only allow a rank to change the stronghold's build time if your rank has this permission.";
-            ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_721);
+            ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_721);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_721);
         }
     } else {
         str0 = "Your rank is not high enough to alter this permission.";
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_604);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_615);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_637);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_484);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_593);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_582);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_626);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_548);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_535);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_753);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_740);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_649);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_660);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_672);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_685);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_697);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_794);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_805);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_816);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_709);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_783);
-        ifSetOnMouseOver(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_721);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_604);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_615);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_637);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_484);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_593);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_582);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_626);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_548);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_535);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_753);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_740);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_649);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_660);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_672);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_685);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_697);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_794);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_805);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_816);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_709);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip_invert, "sI", [str0, event_com]), Component.interface_1096.component_1096_783);
+        ifSetOnMouseRepeat(hook(clan_permissions_tooltip, "sI", [str0, event_com]), Component.interface_1096.component_1096_721);
     }
     cs2_5135();
 }

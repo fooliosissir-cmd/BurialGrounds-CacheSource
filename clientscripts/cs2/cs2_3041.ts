@@ -4,7 +4,7 @@
 // cs2_3041
 
 function cs2_3041(intArg0: component, intArg1: component, intArg2: component, intArg3: component, intArg4: component): void {
-    if (ifGetTop(intArg2, -1) == 1) {
+    if (minimenuopen(intArg2, -1) == 1) {
         ifSetOnTimer(hook(cs2_3040, "IIIII", [intArg0, intArg1, intArg2, intArg3, intArg4]), intArg3);
         return;
     } else {
@@ -45,8 +45,8 @@ function cs2_3041(intArg0: component, intArg1: component, intArg2: component, in
             } else {
                 ccSetColour(colour(0x292016));
             }
-            ccHookMouseEnter(hook(cs2_3031, "Ii", [intArg2, int6]));
-            ccHookMouseExit(hook(cs2_3036, "", []));
+            ccSetOnMouseOver(hook(cs2_3031, "Ii", [intArg2, int6]));
+            ccSetOnMouseLeave(hook(cs2_3036, "", []));
             if (stringLength(str1) > 0) {
                 int15 = stringWidth("Last known as: " + str1, Graphic.p11_full) + 8;
                 if (int15 > ifGetWidth(Component.interface_909.component_909_76)) {
@@ -54,11 +54,11 @@ function cs2_3041(intArg0: component, intArg1: component, intArg2: component, in
                 } else {
                     str3 = "Last known as: " + str1;
                 }
-                ccSetOnMouseOver(hook(cs2_2467, "IisiiIIIf", [event_com, event_comsubid, str3, event_mousex, event_mousey, Component.interface_909.component_909_78, Component.interface_909.component_909_80, Component.interface_909.component_909_83, Graphic.p11_full]));
+                ccSetOnMouseRepeat(hook(cs2_2467, "IisiiIIIf", [event_com, event_comsubid, str3, event_mousex, event_mousey, Component.interface_909.component_909_78, Component.interface_909.component_909_80, Component.interface_909.component_909_83, Graphic.p11_full]));
             }
             ccSetOpBase(str0);
             ccSetOp(1, "Delete");
-            ccSetOnOpt(hook(cs2_3042, "is", [event_opindex, str0]));
+            ccSetOnOp(hook(cs2_3042, "is", [event_opindex, str0]));
             cc_add_graphic(intArg1, int6, 14, 14, 5, int7 + 1, -1, false, false, false, 0);
             if (compare(str1, "") != 0) {
                 ccSetGraphic(Graphic.friends_changed_name);

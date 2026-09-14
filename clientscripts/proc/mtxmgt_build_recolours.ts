@@ -65,8 +65,8 @@ function mtxmgt_build_recolours(): void {
                 }
                 str0 = structParam(int0, Param.param_2548);
                 str1 = "Recolour this item to " + str0 + ".";
-                ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1311.component_1311_83, event_com, event_comsubid, str1, 350, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xB6B6B6), 12, 1, 1, event_mousex, event_mousey]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1311.component_1311_83]));
+                ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1311.component_1311_83, event_com, event_comsubid, str1, 350, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xB6B6B6), 12, 1, 1, event_mousex, event_mousey]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1311.component_1311_83]));
                 int0 = -1;
                 int3 = 0;
             }

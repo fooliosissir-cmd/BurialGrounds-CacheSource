@@ -9,6 +9,6 @@ function cs2_4147(intArg0: component, intArg1: number, intArg2: number, strArg0:
     ifSetSize(16, intArg1, 1, 0, intArg0);
     ifSetPosition(0, intArg2, 1, 1, intArg0);
     cs2_4149(intArg0, strArg0, false);
-    ifSetOnMouseOver(hook(cs2_4148, "Is1", [intArg0, strArg0, true]), intArg0);
-    hookMouseExit(hook(cs2_4148, "Is1", [intArg0, strArg0, false]), intArg0);
+    ifSetOnMouseRepeat(hook(cs2_4148, "Is1", [intArg0, strArg0, true]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_4148, "Is1", [intArg0, strArg0, false]), intArg0);
 }

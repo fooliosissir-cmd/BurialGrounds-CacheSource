@@ -27,16 +27,16 @@ function clan_setup_flags(intArg0: component, intArg1: component, intArg2: compo
         ccSetPosition(int10, int11, 0, 0);
         ccSetGraphic(Graphic.aif_smalltabs_whole_0);
         ccSetOnVarTransmit(hook(clan_flag_highlight_update, "iY", [int15], [2149]));
-        ccHookMouseEnter(hook(cs2_4326, "iI", [int4, intArg2]));
-        ccHookMouseExit(hook(cs2_4327, "iI", [int4, intArg2]));
+        ccSetOnMouseOver(hook(cs2_4326, "iI", [int4, intArg2]));
+        ccSetOnMouseLeave(hook(cs2_4327, "iI", [int4, intArg2]));
         ccCreate(intArg3, 5, int4);
         ccSetSize(int8 - 8, int9 - 8, 0, 0);
         ccSetPosition(int10 + 4, int11 + 4, 0, 0);
         ccSetGraphic(enumOp(type_int, type_graphic, Enum.clan_flag_selection_2gfx, int4));
         ccSetOp(1, "Select");
-        ccSetOnOpt(hook(clientscript_clan_flag_highlight, "iIi", [int4, intArg2, int15]));
-        ccSetOnMouseOver(hook(cs2_568, "IiIsii", [intArg3, int4, Component.clan_flag_selection.tooltip, enumOp(type_int, type_string, Enum.clan_flag_selection_2string, int4), 20, 350]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.clan_flag_selection.tooltip]));
+        ccSetOnOp(hook(clientscript_clan_flag_highlight, "iIi", [int4, intArg2, int15]));
+        ccSetOnMouseRepeat(hook(cs2_568, "IiIsii", [intArg3, int4, Component.clan_flag_selection.tooltip, enumOp(type_int, type_string, Enum.clan_flag_selection_2string, int4), 20, 350]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.clan_flag_selection.tooltip]));
         int4 = int4 + 1;
         if (int4 % int12 == 0) {
             int5 = int5 + 1;

@@ -27,17 +27,17 @@ function graphics_options_manual_button(intArg0: number, intArg1: boolean, intAr
     proc_graphics_options_manual_button_highlight(intArg2, intArg3, false);
 
     if (intArg3 == -1) {
-        hookMouseExit(hook(cs2_3930, "Ii1", [intArg2, intArg3, false]), intArg2);
-        hookMouseEnter(hook(cs2_3930, "Ii1", [intArg2, intArg3, true]), intArg2);
+        ifSetOnMouseLeave(hook(cs2_3930, "Ii1", [intArg2, intArg3, false]), intArg2);
+        ifSetOnMouseOver(hook(cs2_3930, "Ii1", [intArg2, intArg3, true]), intArg2);
     } else {
-        hookMouseExit(hook(clientscript_graphics_options_manual_button_highlight, "Ii1", [intArg2, intArg3, false]), intArg2);
-        hookMouseEnter(hook(clientscript_graphics_options_manual_button_highlight, "Ii1", [intArg2, intArg3, true]), intArg2);
+        ifSetOnMouseLeave(hook(clientscript_graphics_options_manual_button_highlight, "Ii1", [intArg2, intArg3, false]), intArg2);
+        ifSetOnMouseOver(hook(clientscript_graphics_options_manual_button_highlight, "Ii1", [intArg2, intArg3, true]), intArg2);
     }
 
     if (intArg0 == 0) {
         ifSetOnClick(hook(cs2_3388, "ii1", [intArg3, intArg0, intArg1]), intArg2);
     } else {
         ifSetOp(1, strArg0, intArg2);
-        ifSetOnOpt(hook(cs2_3388, "ii1", [intArg3, intArg0, intArg1]), intArg2);
+        ifSetOnOp(hook(cs2_3388, "ii1", [intArg3, intArg0, intArg1]), intArg2);
     }
 }

@@ -15,11 +15,11 @@ function quickchat_phrase_send(intArg0: number): void {
     }
     activeChatPhrasePrepare(intArg0);
     let int2: number = 0;
-    let int3: number = chatPhraseGetdynamiccommand(intArg0);
+    let int3: number = chatPhraseGetdynamiccommandcount(intArg0);
     let int4: number = -1;
 
     while (int2 < int3 && int2 < 10) {
-        switch (chatPhraseGetdynamiccommandparamEnum(intArg0, int2)) {
+        switch (chatPhraseGetdynamiccommand(intArg0, int2)) {
             case 0:
                 quickchat_phrase_setint(int2);
                 break;
@@ -37,7 +37,7 @@ function quickchat_phrase_send(intArg0: number): void {
     }
 
     if (varc_126 == 0 || varc_126 == 4) {
-        activeChatPhraseSend();
+        activeChatPhraseSendpublic();
     } else if (varc_126 == 1) {
         int4 = quickchat_friend_status(varcstr_27);
         if (int4 == 1) {
@@ -55,13 +55,13 @@ function quickchat_phrase_send(intArg0: number): void {
         activeChatPhraseSendprivate(removetags(varcstr_27));
         cs2_1089();
     } else if (varc_126 == 2 || varc_126 == 6) {
-        qcSendfriendschatmessage();
+        activeChatPhraseSendClan();
     } else if (varc_126 == 8 || varc_126 == 9) {
         if (activeClanChannelFindAffined() == 1) {
-            qcSendClanChatMessage();
+            activeChatPhraseSendClanChannelAffined();
         }
     } else if ((varc_126 == 10 || varc_126 == 11) && activeClanChannelFindListened() == 1) {
-        qcSendguestclanchatmessage();
+        activeChatPhraseSendClanChannelListened();
     }
     varc_130 = int1;
     varc_131 = varc_126;

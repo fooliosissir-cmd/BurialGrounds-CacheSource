@@ -106,9 +106,9 @@ function cs2_5871(intArg0: number, intArg1: number): void {
     }
     let int16: number = cs2_5798(intArg0, int12, 0, str0, 0, int2, -1, -1);
     let int17: number = ifGetHeight(Component.interface_1220.component_1220_14);
-    ifSetOnOpt(hook(cs2_5870, "ii", [intArg0, intArg1 + 1]), Component.interface_1220.component_1220_55);
+    ifSetOnOp(hook(cs2_5870, "ii", [intArg0, intArg1 + 1]), Component.interface_1220.component_1220_55);
     ifSetHide(int11, Component.interface_1220.component_1220_58);
-    ifSetOnOpt(hook(cs2_5870, "ii", [intArg0, intArg1 - 1]), Component.interface_1220.component_1220_46);
+    ifSetOnOp(hook(cs2_5870, "ii", [intArg0, intArg1 - 1]), Component.interface_1220.component_1220_46);
     ifSetHide(int10, Component.interface_1220.component_1220_49);
 
     if (int13 < 2) {

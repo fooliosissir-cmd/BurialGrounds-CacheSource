@@ -148,7 +148,7 @@ function proc_subchanged(): void {
             int0 = int0 + 1;
         }
         int1 = cs2_8(95);
-        if (ccIsOpen(int1, 662) == 1 || ccIsOpen(int1, 663) == 1) {
+        if (ifHasSubOverlay(int1, 662) == 1 || ifHasSubOverlay(int1, 663) == 1) {
             ifSetHide(false, Component.interface_747.component_747_9);
         } else {
             ifSetHide(true, Component.interface_747.component_747_9);
@@ -160,9 +160,9 @@ function proc_subchanged(): void {
                 if (ifFind(cs2_2459(int0)) == 1) {
                     ccSetParamInt(Param.glo3_sidecount, 0);
                 }
-                hookMouseEnter(noHook(""), cs2_2459(int0));
                 ifSetOnMouseOver(noHook(""), cs2_2459(int0));
-                hookMouseExit(noHook(""), cs2_2459(int0));
+                ifSetOnMouseRepeat(noHook(""), cs2_2459(int0));
+                ifSetOnMouseLeave(noHook(""), cs2_2459(int0));
                 ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8547), cs2_2459(int0));
                 int0 = int0 + 1;
             }
@@ -172,14 +172,14 @@ function proc_subchanged(): void {
                     ccSetParamInt(Param.glo3_sidecount, 0);
                 }
                 if (ifGetHide(cs2_121(int0)) == 1) {
-                    hookMouseEnter(noHook(""), cs2_2459(int0));
                     ifSetOnMouseOver(noHook(""), cs2_2459(int0));
-                    hookMouseExit(noHook(""), cs2_2459(int0));
+                    ifSetOnMouseRepeat(noHook(""), cs2_2459(int0));
+                    ifSetOnMouseLeave(noHook(""), cs2_2459(int0));
                     ifSetGraphic(gameframe_skin_graphic(Graphic.graphic_8547), cs2_2459(int0));
                 } else {
-                    hookMouseEnter(hook(cs2_1292, "I1", [event_com, true]), cs2_2459(int0));
-                    ifSetOnMouseOver(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, cs2_2459(int0), ifGetOp(1, cs2_2458(int0))]), cs2_2459(int0));
-                    hookMouseExit(hook(cs2_1292, "I1", [event_com, false]), cs2_2459(int0));
+                    ifSetOnMouseOver(hook(cs2_1292, "I1", [event_com, true]), cs2_2459(int0));
+                    ifSetOnMouseRepeat(hook(cs2_5515, "IIs", [Component.interface_746.component_746_42, cs2_2459(int0), ifGetOp(1, cs2_2458(int0))]), cs2_2459(int0));
+                    ifSetOnMouseLeave(hook(cs2_1292, "I1", [event_com, false]), cs2_2459(int0));
                 }
                 int0 = int0 + 1;
             }
@@ -295,7 +295,7 @@ function proc_subchanged(): void {
             int0 = int0 + 1;
         }
         int1 = cs2_8(95);
-        if (ccIsOpen(int1, 662) == 1 || ccIsOpen(int1, 663) == 1) {
+        if (ifHasSubOverlay(int1, 662) == 1 || ifHasSubOverlay(int1, 663) == 1) {
             ifSetHide(false, Component.interface_747.component_747_9);
         } else {
             ifSetHide(true, Component.interface_747.component_747_9);
@@ -303,20 +303,20 @@ function proc_subchanged(): void {
         int0 = 0;
         if (ifGetHide(Component.interface_548.component_548_65) == 1 && ifGetHide(Component.interface_548.component_548_111) == 1) {
             while (int0 <= 15) {
-                hookMouseEnter(noHook(""), cs2_2459(int0));
-                hookMouseExit(noHook(""), cs2_2459(int0));
+                ifSetOnMouseOver(noHook(""), cs2_2459(int0));
+                ifSetOnMouseLeave(noHook(""), cs2_2459(int0));
                 ifSetGraphic(Graphic.graphic_1835, cs2_2459(int0));
                 int0 = int0 + 1;
             }
         } else {
             while (int0 <= 15) {
                 if (ifGetHide(cs2_121(int0)) == 1) {
-                    hookMouseEnter(noHook(""), cs2_2459(int0));
-                    hookMouseExit(noHook(""), cs2_2459(int0));
+                    ifSetOnMouseOver(noHook(""), cs2_2459(int0));
+                    ifSetOnMouseLeave(noHook(""), cs2_2459(int0));
                     ifSetGraphic(Graphic.graphic_1835, cs2_2459(int0));
                 } else {
-                    hookMouseEnter(hook(cs2_2462, "I1", [event_com, true]), cs2_2459(int0));
-                    hookMouseExit(hook(cs2_2462, "I1", [event_com, false]), cs2_2459(int0));
+                    ifSetOnMouseOver(hook(cs2_2462, "I1", [event_com, true]), cs2_2459(int0));
+                    ifSetOnMouseLeave(hook(cs2_2462, "I1", [event_com, false]), cs2_2459(int0));
                 }
                 int0 = int0 + 1;
             }

@@ -10,12 +10,12 @@ function cs2_4510(intArg0: component, intArg1: struct): void {
     let int2: number = structParam(intArg1, Param.rs3tli_button_layer_type);
 
     if (int2 == 2) {
-        hookMouseEnter(hook(cs2_4159, "Iii", [event_com, 0, 0]), intArg0);
-        hookMouseExit(hook(cs2_4159, "Iii", [event_com, 255, 0]), intArg0);
+        ifSetOnMouseOver(hook(cs2_4159, "Iii", [event_com, 0, 0]), intArg0);
+        ifSetOnMouseLeave(hook(cs2_4159, "Iii", [event_com, 255, 0]), intArg0);
     } else if (int2 == 3) {
         ifSetOnClick(hook(cs2_4162, "I", [event_com]), intArg0);
         ifSetOnRelease(hook(cs2_4163, "I", [event_com]), intArg0);
-        hookMouseExit(hook(cs2_4163, "I", [event_com]), intArg0);
+        ifSetOnMouseLeave(hook(cs2_4163, "I", [event_com]), intArg0);
     }
     cs2_4202(intArg0, intArg1);
 

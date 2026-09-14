@@ -18,7 +18,7 @@ function cs2_2920(strArg0: string, intArg0: number, intArg1: number): void {
         cs2_3161(0);
     }
     ifSetOnKey(hook(lobbyscreen_report_abuse_stage1_keyboard, "izI", [event_keycode, event_keychar, event_com]), Component.interface_914.component_914_27);
-    ifSetOnOpt(hook(clientscript_lobbyscreen_report_abuse_stage1_next, "", []), Component.interface_914.component_914_16);
+    ifSetOnOp(hook(clientscript_lobbyscreen_report_abuse_stage1_next, "", []), Component.interface_914.component_914_16);
     varc_1097 = stringLength(varcstr_lobbyscreen_input);
     ifSetOnClick(hook(cs2_1878, "iII", [event_mousex, Component.interface_914.component_914_27, Component.interface_914.component_914_28]), Component.interface_914.component_914_27);
     cs2_1879(Component.interface_914.component_914_27, Component.interface_914.component_914_28, varcstr_lobbyscreen_input);

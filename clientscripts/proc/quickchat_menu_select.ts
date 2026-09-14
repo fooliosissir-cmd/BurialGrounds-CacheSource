@@ -10,15 +10,15 @@ function proc_quickchat_menu_select(intArg0: component, intArg1: component, intA
 
     while (ccFind(intArg0, int6) == 1) {
         if (int6 == intArg2) {
-            ccHookMouseEnter(noHook(""));
-            ccHookMouseExit(noHook(""));
+            ccSetOnMouseOver(noHook(""));
+            ccSetOnMouseLeave(noHook(""));
             if (ccFind<1>(intArg1, int6) == 1) {
                 ccSetHide<1>(false);
                 ccSetColour<1>(colour(0x969777));
             }
         } else {
-            ccHookMouseEnter(hook(cs2_1082, "iIi", [intArg4 - 1, intArg1, int6]));
-            ccHookMouseExit(hook(cs2_1083, "iIi", [intArg4 - 1, intArg1, int6]));
+            ccSetOnMouseOver(hook(cs2_1082, "iIi", [intArg4 - 1, intArg1, int6]));
+            ccSetOnMouseLeave(hook(cs2_1083, "iIi", [intArg4 - 1, intArg1, int6]));
             if (ccFind<1>(intArg1, int6) == 1) {
                 ccSetHide<1>(true);
             }

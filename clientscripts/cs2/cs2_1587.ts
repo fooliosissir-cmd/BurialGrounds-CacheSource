@@ -12,11 +12,11 @@ function cs2_1587(strArg0: string, intArg0: component, intArg1: component, intAr
             str1 = subString(str1, 0, stringLength(str1) - 1);
         }
         str1 = str1 + "...";
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [event_com, intArg1, strArg0, 25, 5000]), intArg0);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [intArg1]), intArg0);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [event_com, intArg1, strArg0, 25, 5000]), intArg0);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [intArg1]), intArg0);
     } else {
-        ifSetOnMouseOver(noHook(""), intArg0);
-        hookMouseExit(noHook(""), intArg0);
+        ifSetOnMouseRepeat(noHook(""), intArg0);
+        ifSetOnMouseLeave(noHook(""), intArg0);
     }
     ifSetText(str1, intArg0);
 }

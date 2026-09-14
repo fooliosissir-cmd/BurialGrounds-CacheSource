@@ -37,8 +37,8 @@ function cs2_1147(intArg0: number, intArg1: number, intArg2: number, intArg3: co
                 break;
         }
         ifSetGraphic(int6, intArg4);
-        hookMouseEnter(noHook(""), intArg3);
-        hookMouseExit(noHook(""), intArg3);
+        ifSetOnMouseOver(noHook(""), intArg3);
+        ifSetOnMouseLeave(noHook(""), intArg3);
         ifSetOnClick(noHook(""), intArg3);
     } else {
         ifSetSize(106, 27, 0, 0, intArg3);
@@ -93,8 +93,8 @@ function cs2_1147(intArg0: number, intArg1: number, intArg2: number, intArg3: co
                 break;
         }
         ifSetGraphic(int6, intArg4);
-        hookMouseEnter(hook(cs2_1148, "iIdd1", [intArg0, intArg4, int6, int7, true]), intArg3);
-        hookMouseExit(hook(cs2_1148, "iIdd1", [intArg0, intArg4, int6, int7, false]), intArg3);
+        ifSetOnMouseOver(hook(cs2_1148, "iIdd1", [intArg0, intArg4, int6, int7, true]), intArg3);
+        ifSetOnMouseLeave(hook(cs2_1148, "iIdd1", [intArg0, intArg4, int6, int7, false]), intArg3);
         ifSetOnClick(hook(cs2_2697, "ii", [intArg0, intArg5]), intArg3);
     }
 }

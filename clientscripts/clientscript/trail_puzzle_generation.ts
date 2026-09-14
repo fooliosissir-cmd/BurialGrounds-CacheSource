@@ -18,7 +18,7 @@ function trail_puzzle_generation(intArg0: component): void {
             ccSetmodelorthog(true);
             ccSetOpBase(ocName(invGetobj(140, int1)));
             ccSetOp(1, "Move");
-            ccSetOnOpt(hook(trail_puzzle_click, "Iii", [event_com, int1, event_opindex]));
+            ccSetOnOp(hook(trail_puzzle_click, "Iii", [event_com, int1, event_opindex]));
         } else {
             ccSetHide(true);
         }

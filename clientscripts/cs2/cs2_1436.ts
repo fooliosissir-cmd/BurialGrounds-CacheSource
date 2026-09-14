@@ -20,8 +20,8 @@ function cs2_1436(intArg0: Enum, intArg1: number, intArg2: number, intArg3: comp
     ccSetSize(16, ifGetHeight(intArg3), 0, 0);
     ccSetGraphic(intArg8);
     ccSettiling(false);
-    ccHookMouseEnter(hook(cs2_1351, "Iid", [intArg3, int21, intArg9]));
-    ccHookMouseExit(hook(cs2_1352, "Iid", [intArg3, int21, intArg8]));
+    ccSetOnMouseOver(hook(cs2_1351, "Iid", [intArg3, int21, intArg9]));
+    ccSetOnMouseLeave(hook(cs2_1352, "Iid", [intArg3, int21, intArg8]));
     let int22: number = ifGetNextSubId(intArg3);
     ccSetOnClick(hook(cs2_1347, "giIdIIIiiidiidddddd", [intArg0, intArg2, intArg4, intArg10, intArg5, intArg6, intArg3, intArg11, intArg12, intArg13, intArg14, int22, int21, intArg15, intArg16, intArg17, intArg18, intArg19, intArg20]));
     ccCreate(intArg3, 4, int22);
@@ -34,11 +34,11 @@ function cs2_1436(intArg0: Enum, intArg1: number, intArg2: number, intArg3: comp
 
     if (intArg1 >= intArg2) {
         ccSetColour(intArg12);
-        ccHookMouseExit(hook(cs2_1354, "Iii", [intArg3, int22, intArg12]));
+        ccSetOnMouseLeave(hook(cs2_1354, "Iii", [intArg3, int22, intArg12]));
     } else {
         ccSetColour(intArg11);
-        ccHookMouseExit(hook(cs2_1354, "Iii", [intArg3, int22, intArg11]));
+        ccSetOnMouseLeave(hook(cs2_1354, "Iii", [intArg3, int22, intArg11]));
     }
-    ccHookMouseEnter(hook(cs2_1353, "Iii", [intArg3, int22, intArg13]));
+    ccSetOnMouseOver(hook(cs2_1353, "Iii", [intArg3, int22, intArg13]));
     ccSetOnClick(hook(cs2_1347, "giIdIIIiiidiidddddd", [intArg0, intArg2, intArg4, intArg10, intArg5, intArg6, intArg3, intArg11, intArg12, intArg13, intArg14, int22, int21, intArg15, intArg16, intArg17, intArg18, intArg19, intArg20]));
 }

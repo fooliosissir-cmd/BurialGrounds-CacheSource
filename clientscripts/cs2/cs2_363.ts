@@ -41,12 +41,12 @@ function cs2_363(intArg0: component, intArg1: number, intArg2: Enum, intArg3: gr
 
     if (intArg8 == 1) {
         cs2_365(intArg0, int11, 1);
-        ifSetOnMouseOver(hook(cs2_366, "Iigii11Isi", [-1, intArg1, intArg2, int11, int9, true, intArg4, event_com, strArg1, event_mousex]), intArg0);
-        hookMouseExit(hook(cs2_366, "Iigii11Isi", [-1, intArg1, intArg2, int11, int9, false, intArg4, event_com, strArg1, -1]), intArg0);
+        ifSetOnMouseRepeat(hook(cs2_366, "Iigii11Isi", [-1, intArg1, intArg2, int11, int9, true, intArg4, event_com, strArg1, event_mousex]), intArg0);
+        ifSetOnMouseLeave(hook(cs2_366, "Iigii11Isi", [-1, intArg1, intArg2, int11, int9, false, intArg4, event_com, strArg1, -1]), intArg0);
         ifSetOnTimer(noHook(""), intArg0);
     } else {
         cs2_365(intArg0, int11, 0);
-        ifSetOnMouseOver(hook(cs2_366, "Iigii11Isi", [intArg0, intArg1, intArg2, int11, int9, true, intArg4, event_com, strArg1, event_mousex]), intArg0);
-        hookMouseExit(hook(cs2_366, "Iigii11Isi", [intArg0, intArg1, intArg2, int11, int9, false, intArg4, event_com, strArg1, -1]), intArg0);
+        ifSetOnMouseRepeat(hook(cs2_366, "Iigii11Isi", [intArg0, intArg1, intArg2, int11, int9, true, intArg4, event_com, strArg1, event_mousex]), intArg0);
+        ifSetOnMouseLeave(hook(cs2_366, "Iigii11Isi", [intArg0, intArg1, intArg2, int11, int9, false, intArg4, event_com, strArg1, -1]), intArg0);
     }
 }

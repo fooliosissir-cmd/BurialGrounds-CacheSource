@@ -4,5 +4,5 @@
 // cs2_1338
 
 function cs2_1338(intArg0: boolean, strArg0: string, strArg1: string): void {
-    openurlNoLogin(strArg0, strArg1, intArg0);
+    openurl(strArg0, strArg1, intArg0);
 }

@@ -4,11 +4,11 @@
 // cs2_3217
 
 function cs2_3217(intArg0: number, intArg1: component, intArg2: component, intArg3: component, intArg4: number): void {
-    if (createReply() == -3) {
+    if (createConnectReply() == -3) {
         return;
     }
 
-    if (createGetEmail() == -3) {
+    if (createReply() == -3) {
         return;
     }
 

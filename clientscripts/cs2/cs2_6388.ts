@@ -20,8 +20,8 @@ function cs2_6388(intArg0: number, intArg1: number, intArg2: number, intArg3: ob
         ccSetObject(intArg3, 1);
         ccSetOpBase(str0);
         int6 = Graphic.graphic_11755;
-        ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [intArg4, intArg2, int6]));
+        ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [intArg4, intArg2, int6]));
         int6 = Graphic.graphic_11756;
-        ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [intArg4, intArg2, int6]));
+        ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [intArg4, intArg2, int6]));
     }
 }

@@ -26,15 +26,15 @@ function clan_build_motif_layer(intArg0: component, intArg1: component, intArg2:
         ccSetPosition(int11, int12, 0, 0);
         ccSetGraphic(Graphic.aif_bronze_icon_button_1_0);
         ccSetOnVarTransmit(hook(cs2_4395, "iY", [int15], [2093]));
-        ccHookMouseEnter(hook(cs2_4396, "iI", [event_comsubid, intArg1]));
-        ccHookMouseExit(hook(cs2_4397, "iI", [event_comsubid, intArg1]));
+        ccSetOnMouseOver(hook(cs2_4396, "iI", [event_comsubid, intArg1]));
+        ccSetOnMouseLeave(hook(cs2_4397, "iI", [event_comsubid, intArg1]));
         int14 = ccGetY() + ccGetHeight() + int8;
         ccCreate(intArg0, 5, int5);
         ccSetSize(int10 - 10, int9 - 10, 0, 0);
         ccSetPosition(int11 + 5, int12 + 5, 0, 0);
         ccSetGraphic(enumOp(type_int, type_graphic, intArg4, int5 + 1));
         ccSetOp(1, "Select");
-        ccSetOnOpt(hook(cs2_4394, "iIi", [event_comsubid, intArg1, int15]));
+        ccSetOnOp(hook(cs2_4394, "iIi", [event_comsubid, intArg1, int15]));
         int5 = int5 + 1;
         if (int5 % int13 == 0) {
             int6 = int6 + 1;

@@ -8,6 +8,6 @@ function cs2_5810(intArg0: component): void {
     let int2: graphic = gameframe_skin_graphic(Graphic.aif_bronze_close_button_1_1);
 
     ifSetGraphic(int1, intArg0);
-    hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int2]), intArg0);
-    hookMouseExit(hook(graphic_swapper, "Id", [event_com, int1]), intArg0);
+    ifSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int2]), intArg0);
+    ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int1]), intArg0);
 }

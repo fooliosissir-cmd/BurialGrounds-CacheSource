@@ -77,14 +77,14 @@ function cs2_4806(intArg0: Enum, intArg1: number, intArg2: number, intArg3: numb
             ccSetGraphic(structParam(int18, Param.clan_custom_if_gfx));
             ccSetSize(22, 22, 0, 0);
             ccSetPosition(0, 2 + int16 * 27, 0, 0);
-            ccSetOnMouseOver(hook(cs2_4812, "sdii", [structParam(int18, Param.clan_custom_if_name), structParam(int18, Param.clan_custom_if_gfx), structParam(int18, Param.clan_custom_if_tier), 25]));
-            ccHookMouseExit(hook(cs2_4813, "", []));
+            ccSetOnMouseRepeat(hook(cs2_4812, "sdii", [structParam(int18, Param.clan_custom_if_name), structParam(int18, Param.clan_custom_if_gfx), structParam(int18, Param.clan_custom_if_tier), 25]));
+            ccSetOnMouseLeave(hook(cs2_4813, "", []));
             ccCreate(int7, 5, int16);
             ccSetGraphic(structParam(int18, Param.clan_custom_if_resource_gfx1));
             ccSetSize(20, 20, 0, 0);
             ccSetPosition(1, 2 + int16 * 27, 0, 0);
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1258.component_1258_484]));
-            ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1258.component_1258_484, event_com, event_comsubid, structParam(int18, Param.clan_custom_if_resource_name1), 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1258.component_1258_484]));
+            ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1258.component_1258_484, event_com, event_comsubid, structParam(int18, Param.clan_custom_if_resource_name1), 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]));
             ccCreate(int10, 4, int16);
             ccSetText(tostring(structParam(int18, Param.clan_custom_if_resource_cost1)));
             ccSetSize(0, 26, 1, 0);
@@ -98,8 +98,8 @@ function cs2_4806(intArg0: Enum, intArg1: number, intArg2: number, intArg3: numb
                 ccSetGraphic(structParam(int18, Param.clan_custom_if_resource_gfx2));
                 ccSetSize(20, 20, 0, 0);
                 ccSetPosition(1, 2 + int16 * 27, 0, 0);
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1258.component_1258_484]));
-                ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1258.component_1258_484, event_com, event_comsubid, structParam(int18, Param.clan_custom_if_resource_name2), 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1258.component_1258_484]));
+                ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1258.component_1258_484, event_com, event_comsubid, structParam(int18, Param.clan_custom_if_resource_name2), 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]));
             }
             if (int11 != -1) {
                 ccCreate(int11, 4, int16);
@@ -116,8 +116,8 @@ function cs2_4806(intArg0: Enum, intArg1: number, intArg2: number, intArg3: numb
                 ccSetGraphic(structParam(int18, Param.clan_custom_if_resource_gfx3));
                 ccSetSize(20, 20, 0, 0);
                 ccSetPosition(0, 2 + int16 * 27, 0, 0);
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1258.component_1258_484]));
-                ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1258.component_1258_484, event_com, event_comsubid, structParam(int18, Param.clan_custom_if_resource_name3), 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1258.component_1258_484]));
+                ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1258.component_1258_484, event_com, event_comsubid, structParam(int18, Param.clan_custom_if_resource_name3), 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]));
             }
             if (int12 != -1) {
                 ccCreate(int12, 4, int16);
@@ -134,7 +134,7 @@ function cs2_4806(intArg0: Enum, intArg1: number, intArg2: number, intArg3: numb
             ccSetPosition(1, 5 + int16 * 27, 0, 0);
             if (intArg3 == 0) {
                 ccSetOp(1, "Select");
-                ccSetOnOpt(hook(cs2_4832, "Ii", [event_com, event_comsubid]));
+                ccSetOnOp(hook(cs2_4832, "Ii", [event_com, event_comsubid]));
             }
             if (int19 == int16 + 1) {
                 ccSetGraphic(gameframe_skin_graphic(Graphic.aif_checkbox_large_0));

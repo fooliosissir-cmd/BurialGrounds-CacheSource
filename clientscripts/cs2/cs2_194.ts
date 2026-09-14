@@ -5,8 +5,8 @@
 
 function cs2_194(intArg0: number): void {
     if (intArg0 == 1) {
-        if (fcGetChatCount() > 0) {
-            fcLeaveChat();
+        if (clanGetChatCount() > 0) {
+            clanLeaveChat();
         } else {
             meslayer_mode10();
         }

@@ -28,8 +28,8 @@ function cs2_3339(intArg0: component): void {
         int3 = Graphic.rand_xp_but_5;
     }
     ifSetGraphic(int2, intArg0);
-    hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int1]), intArg0);
-    hookMouseExit(hook(graphic_swapper, "Id", [event_com, int2]), intArg0);
+    ifSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int1]), intArg0);
+    ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int2]), intArg0);
     ifSetOnClick(hook(graphic_swapper, "Id", [event_com, int3]), intArg0);
     deltooltip_action(Component.interface_939.component_939_114);
 }

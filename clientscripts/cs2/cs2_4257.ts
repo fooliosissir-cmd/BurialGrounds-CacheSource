@@ -8,7 +8,7 @@ function cs2_4257(intArg0: component): void {
         ccSetPosition(0, 0, 1, 1);
         ccSetSize(16, 15, 0, 0);
         ccSetGraphic(gameframe_skin_graphic(Graphic.aif_bronze_close_button_1_0));
-        ccSetOnOpt(hook(closebutton_click, "", []));
+        ccSetOnOp(hook(closebutton_click, "", []));
         ccSetOp(1, "Close");
     }
 }

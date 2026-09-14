@@ -5,7 +5,7 @@
 
 function lobbyscreen_pane_friendschat_chat_load(intArg0: component): void {
     ifSetOnFriendTransmit(hook(clientscript_lobbyscreen_pane_friendschat_chat_build, "I", [intArg0]), intArg0);
-    ifSetOnClanChannelTransmit(hook(clientscript_lobbyscreen_pane_friendschat_chat_build, "I", [intArg0]), intArg0);
+    ifSetOnClanTransmit(hook(clientscript_lobbyscreen_pane_friendschat_chat_build, "I", [intArg0]), intArg0);
     ifSetOnChatTransmit(hook(clientscript_lobbyscreen_pane_friendschat_chat_build, "I", [intArg0]), intArg0);
     proc_lobbyscreen_pane_friendschat_chat_build(intArg0);
 }

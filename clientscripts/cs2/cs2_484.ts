@@ -80,74 +80,74 @@ function cs2_484(intArg0: component): void {
     if (int1 == -1) {
         ifSetHide(true, Component.interface_1015.component_1015_135);
         ifSetHide(false, Component.interface_1015.component_1015_115);
-        ifSetGraphic(npcParam(int2, Param.conq_unit_icon), Component.interface_1015.component_1015_2);
-        ifSetText(npcParam(int2, Param.conq_unit_name), Component.interface_1015.component_1015_0);
-        ifSetText("Movement: " + tostring(npcParam(int2, Param.conq_unit_movement)), Component.interface_1015.component_1015_138);
-        ifSetText("Damage: " + tostring(npcParam(int2, Param.conq_unit_damage) * 100), Component.interface_1015.component_1015_139);
-        ifSetText("Health: " + tostring(npcParam(int2, Param.conq_unit_health) * 100), Component.interface_1015.component_1015_140);
-        ifSetText("Range: " + tostring(npcParam(int2, Param.conq_unit_range)), Component.interface_1015.component_1015_141);
-        ifSetText("Cost: " + tostring(npcParam(int2, Param.conq_unit_cost)), Component.interface_1015.component_1015_142);
+        ifSetGraphic(ncParam(int2, Param.conq_unit_icon), Component.interface_1015.component_1015_2);
+        ifSetText(ncParam(int2, Param.conq_unit_name), Component.interface_1015.component_1015_0);
+        ifSetText("Movement: " + tostring(ncParam(int2, Param.conq_unit_movement)), Component.interface_1015.component_1015_138);
+        ifSetText("Damage: " + tostring(ncParam(int2, Param.conq_unit_damage) * 100), Component.interface_1015.component_1015_139);
+        ifSetText("Health: " + tostring(ncParam(int2, Param.conq_unit_health) * 100), Component.interface_1015.component_1015_140);
+        ifSetText("Range: " + tostring(ncParam(int2, Param.conq_unit_range)), Component.interface_1015.component_1015_141);
+        ifSetText("Cost: " + tostring(ncParam(int2, Param.conq_unit_cost)), Component.interface_1015.component_1015_142);
     } else if (int1 != int2) {
-        ifSetGraphic(npcParam(int2, Param.conq_unit_icon), Component.interface_1015.component_1015_2);
-        ifSetText(append(ifGetText(Component.interface_1015.component_1015_0), " ~ " + npcParam(int2, Param.conq_unit_name)), Component.interface_1015.component_1015_0);
-        int3 = npcParam(int1, Param.conq_unit_movement);
-        int4 = npcParam(int2, Param.conq_unit_movement);
+        ifSetGraphic(ncParam(int2, Param.conq_unit_icon), Component.interface_1015.component_1015_2);
+        ifSetText(append(ifGetText(Component.interface_1015.component_1015_0), " ~ " + ncParam(int2, Param.conq_unit_name)), Component.interface_1015.component_1015_0);
+        int3 = ncParam(int1, Param.conq_unit_movement);
+        int4 = ncParam(int2, Param.conq_unit_movement);
         if (int3 < int4) {
             int5 = int4 - int3;
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_movement)) + " (" + "<col=00c800>" + "+" + tostring(int5) + "</col>" + ")";
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_movement)) + " (" + "<col=00c800>" + "+" + tostring(int5) + "</col>" + ")";
         } else if (int3 > int4) {
             int5 = int3 - int4;
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_movement)) + " (" + "<col=c80000>" + "-" + tostring(int5) + "</col>" + ")";
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_movement)) + " (" + "<col=c80000>" + "-" + tostring(int5) + "</col>" + ")";
         } else {
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_movement));
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_movement));
         }
         ifSetText(append(ifGetText(Component.interface_1015.component_1015_138), str0), Component.interface_1015.component_1015_138);
-        int3 = npcParam(int1, Param.conq_unit_damage);
-        int4 = npcParam(int2, Param.conq_unit_damage);
+        int3 = ncParam(int1, Param.conq_unit_damage);
+        int4 = ncParam(int2, Param.conq_unit_damage);
         if (int3 < int4) {
             int5 = int4 - int3;
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_damage) * 100) + " (" + "<col=00c800>" + "+" + tostring(int5 * 100) + "</col>" + ")";
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_damage) * 100) + " (" + "<col=00c800>" + "+" + tostring(int5 * 100) + "</col>" + ")";
         } else if (int3 > int4) {
             int5 = int3 - int4;
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_damage) * 100) + " (" + "<col=c80000>" + "-" + tostring(int5 * 100) + "</col>" + ")";
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_damage) * 100) + " (" + "<col=c80000>" + "-" + tostring(int5 * 100) + "</col>" + ")";
         } else {
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_damage) * 100);
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_damage) * 100);
         }
         ifSetText(append(ifGetText(Component.interface_1015.component_1015_139), str0), Component.interface_1015.component_1015_139);
-        int3 = npcParam(int1, Param.conq_unit_health);
-        int4 = npcParam(int2, Param.conq_unit_health);
+        int3 = ncParam(int1, Param.conq_unit_health);
+        int4 = ncParam(int2, Param.conq_unit_health);
         if (int3 < int4) {
             int5 = int4 - int3;
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_health) * 100) + " (" + "<col=00c800>" + "+" + tostring(int5 * 100) + "</col>" + ")";
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_health) * 100) + " (" + "<col=00c800>" + "+" + tostring(int5 * 100) + "</col>" + ")";
         } else if (int3 > int4) {
             int5 = int3 - int4;
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_health) * 100) + " (" + "<col=c80000>" + "-" + tostring(int5 * 100) + "</col>" + ")";
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_health) * 100) + " (" + "<col=c80000>" + "-" + tostring(int5 * 100) + "</col>" + ")";
         } else {
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_health) * 100);
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_health) * 100);
         }
         ifSetText(append(ifGetText(Component.interface_1015.component_1015_140), str0), Component.interface_1015.component_1015_140);
-        int3 = npcParam(int1, Param.conq_unit_range);
-        int4 = npcParam(int2, Param.conq_unit_range);
+        int3 = ncParam(int1, Param.conq_unit_range);
+        int4 = ncParam(int2, Param.conq_unit_range);
         if (int3 < int4) {
             int5 = int4 - int3;
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_range)) + " (" + "<col=00c800>" + "+" + tostring(int5) + "</col>" + ")";
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_range)) + " (" + "<col=00c800>" + "+" + tostring(int5) + "</col>" + ")";
         } else if (int3 > int4) {
             int5 = int3 - int4;
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_range)) + " (" + "<col=c80000>" + "-" + tostring(int5) + "</col>" + ")";
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_range)) + " (" + "<col=c80000>" + "-" + tostring(int5) + "</col>" + ")";
         } else {
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_range));
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_range));
         }
         ifSetText(append(ifGetText(Component.interface_1015.component_1015_141), str0), Component.interface_1015.component_1015_141);
-        int3 = npcParam(int1, Param.conq_unit_cost);
-        int4 = npcParam(int2, Param.conq_unit_cost);
+        int3 = ncParam(int1, Param.conq_unit_cost);
+        int4 = ncParam(int2, Param.conq_unit_cost);
         if (int3 < int4) {
             int5 = int4 - int3;
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_cost)) + " (" + "<col=c80000>" + "+" + tostring(int5) + "</col>" + ")";
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_cost)) + " (" + "<col=c80000>" + "+" + tostring(int5) + "</col>" + ")";
         } else if (int3 > int4) {
             int5 = int3 - int4;
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_cost)) + " (" + "<col=00c800>" + "-" + tostring(int5) + "</col>" + ")";
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_cost)) + " (" + "<col=00c800>" + "-" + tostring(int5) + "</col>" + ")";
         } else {
-            str0 = " ~ " + tostring(npcParam(int2, Param.conq_unit_cost));
+            str0 = " ~ " + tostring(ncParam(int2, Param.conq_unit_cost));
         }
         ifSetText(append(ifGetText(Component.interface_1015.component_1015_142), str0), Component.interface_1015.component_1015_142);
     }

@@ -19,7 +19,7 @@ function cs2_4886(intArg0: number): number {
     let int1: number = 0;
 
     if (clanProfileFind() == 1) {
-        int1 = loadClanVarbit<2580>();
+        int1 = pushVarClanBit<2580>();
         if (int1 >= 2) {
             switch (intArg0) {
                 case 23:

@@ -30,8 +30,8 @@ function cs2_765(intArg0: component, intArg1: number, intArg2: number, strArg0: 
             ccSetSize(48, 52, 0, 0);
             ccSetPosition(int5, int6, 0, 0);
             ccSetGraphic(Graphic.km_shoptile_0);
-            ccSetOnMouseOver(hook(graphic_swapper_dynamic, "Iid", [event_com, int16, int17]));
-            ccHookMouseExit(hook(graphic_swapper_dynamic, "Iid", [event_com, int16, int18]));
+            ccSetOnMouseRepeat(hook(graphic_swapper_dynamic, "Iid", [event_com, int16, int17]));
+            ccSetOnMouseLeave(hook(graphic_swapper_dynamic, "Iid", [event_com, int16, int18]));
             int16 = int16 + 1;
             ccCreate(intArg0, 5, int16);
             int16 = int16 + 1;
@@ -56,13 +56,13 @@ function cs2_765(intArg0: component, intArg1: number, intArg2: number, strArg0: 
                 lore_interface_inv_draw_slot(enumOp(type_int, type_obj, Enum.lore_null_spell_enum, int8), int14, intArg0, int16, strArg0, strArg1, strArg2, strArg3, strArg4, "");
             }
             if (int14 == Obj.lore_pouch_spell_grey) {
-                ccSetOnMouseOver(hook(lore_blanktip, "iIIis", [event_comsubid, Component.interface_79.component_79_31, Component.interface_79.component_79_17, int15, str5]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_79.component_79_31]));
+                ccSetOnMouseRepeat(hook(lore_blanktip, "iIIis", [event_comsubid, Component.interface_79.component_79_31, Component.interface_79.component_79_17, int15, str5]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_79.component_79_31]));
             } else {
                 str5 = enumOp(type_obj, type_string, Enum.enum_1187, int14);
                 int15 = enumOp(type_obj, type_int, Enum.lore_levels_enum, int13);
-                ccSetOnMouseOver(hook(cs2_770, "iIIisoioioioioioioioioioi", [event_comsubid, Component.interface_79.component_79_31, Component.interface_79.component_79_17, int15, str5, int13, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_79.component_79_31]));
+                ccSetOnMouseRepeat(hook(cs2_770, "iIIisoioioioioioioioioioi", [event_comsubid, Component.interface_79.component_79_31, Component.interface_79.component_79_17, int15, str5, int13, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1, -1, 1]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_79.component_79_31]));
             }
             int16 = int16 + 1;
             ccCreate(intArg0, 5, int16);

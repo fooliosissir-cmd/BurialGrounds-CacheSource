@@ -28,9 +28,9 @@ function cs2_662(intArg0: number): void {
     let int11: graphic = Graphic.bank_slot_3;
 
     if ((int10 == -1 || ifGetHide(int10) == 1) && ccFind(int1, 0) == 1) {
-        ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int11]));
+        ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int11]));
         int11 = Graphic.bank_slot_1;
-        ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int11]));
+        ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int11]));
         if (int8 != -1) {
             if (ocCert(int8) != int8) {
                 if (invGetNum(int3, 0) > 1) {
@@ -56,9 +56,9 @@ function cs2_662(intArg0: number): void {
 
     if ((int10 == -1 || ifGetHide(int10) == 1) && ccFind(int1, 2) == 1) {
         int11 = Graphic.bank_slot_3;
-        ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int11]));
+        ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int11]));
         int11 = Graphic.bank_slot_1;
-        ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int11]));
+        ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int11]));
         if (int9 != -1) {
             if (ocCert(int9) != int9) {
                 if (invGetNum(int3, 1) > 1) {
@@ -94,8 +94,8 @@ function cs2_662(intArg0: number): void {
         ccSetPosition(int6, 11, 0, 0);
         ccSetSize(18, 16, 0, 0);
         ccSetObject(int12, 0);
-        ccSetOnMouseOver(hook(cs2_568, "IiIsii", [int1, 10, int2, ocName(int12), 25, 106]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [int2]));
+        ccSetOnMouseRepeat(hook(cs2_568, "IiIsii", [int1, 10, int2, ocName(int12), 25, 106]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [int2]));
     }
     ccCreate(int1, 3, 11);
     int6 = int4 - 50;
@@ -117,7 +117,7 @@ function cs2_662(intArg0: number): void {
             ccSetGraphic(Graphic.grand_exchange_misc_graphics_6);
             str0 = "Sell";
         }
-        ccSetOnMouseOver(hook(cs2_568, "IiIsii", [int1, 12, int2, str0, 25, 106]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [int2]));
+        ccSetOnMouseRepeat(hook(cs2_568, "IiIsii", [int1, 12, int2, str0, 25, 106]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [int2]));
     }
 }

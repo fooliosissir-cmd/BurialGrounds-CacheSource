@@ -10,13 +10,13 @@ function cs2_4777(intArg0: number, intArg1: number, intArg2: number): void {
     let int4: number = 0;
     let int5: number = 0;
     let int6: number = 0;
-    let int7: number = loadClanVar<2724>() / 100;
-    let int8: number = loadClanVar<2725>() / 100;
-    let int9: number = loadClanVar<2728>() / 100;
-    let int10: number = loadClanVar<2732>() / 100;
-    let int11: number = loadClanVar<2731>() / 100;
-    let int12: number = loadClanVar<2730>() / 100;
-    let int13: number = loadClanVar<2733>() / 100;
+    let int7: number = pushVarClan<2724>() / 100;
+    let int8: number = pushVarClan<2725>() / 100;
+    let int9: number = pushVarClan<2728>() / 100;
+    let int10: number = pushVarClan<2732>() / 100;
+    let int11: number = pushVarClan<2731>() / 100;
+    let int12: number = pushVarClan<2730>() / 100;
+    let int13: number = pushVarClan<2733>() / 100;
     let int14: number = 0;
     let int15: number = 0;
     let int16: number = 0;
@@ -128,22 +128,22 @@ function cs2_4777(intArg0: number, intArg1: number, intArg2: number): void {
             }
             ifSetSize(int20 * int42 / max(1, int14), ifGetHeight(Component.interface_1115.component_1115_12), 0, 0, Component.interface_1115.component_1115_12);
             str2 = tostring(int20) + "<br>" + "of" + "<br>" + tostring(int14);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_12);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_12);
             ifSetSize(int21 * int42 / max(1, int15), ifGetHeight(Component.interface_1115.component_1115_98), 0, 0, Component.interface_1115.component_1115_98);
             str2 = tostring(int21) + "<br>" + "of" + "<br>" + tostring(int15);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_98);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_98);
             ifSetSize(int22 * int42 / max(1, int16), ifGetHeight(Component.interface_1115.component_1115_103), 0, 0, Component.interface_1115.component_1115_103);
             str2 = tostring(int22) + "<br>" + "of" + "<br>" + tostring(int16);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_103);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_103);
             ifSetSize(int23 * int42 / max(1, int17), ifGetHeight(Component.interface_1115.component_1115_108), 0, 0, Component.interface_1115.component_1115_108);
             str2 = tostring(int23) + "<br>" + "of" + "<br>" + tostring(int17);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_108);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_108);
             ifSetSize(int24 * int42 / max(1, int18), ifGetHeight(Component.interface_1115.component_1115_113), 0, 0, Component.interface_1115.component_1115_113);
             str2 = tostring(int24) + "<br>" + "of" + "<br>" + tostring(int18);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_113);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_113);
             ifSetSize(int25 * int42 / max(1, int19), ifGetHeight(Component.interface_1115.component_1115_121), 0, 0, Component.interface_1115.component_1115_121);
             str2 = tostring(int25) + "<br>" + "of" + "<br>" + tostring(int19);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_121);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_121);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_12) + ifGetWidth(Component.interface_1115.component_1115_12) + 1, 0, 0, 1, Component.interface_1115.component_1115_94);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_98) + ifGetWidth(Component.interface_1115.component_1115_98) + 1, 0, 0, 1, Component.interface_1115.component_1115_99);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_103) + ifGetWidth(Component.interface_1115.component_1115_103) + 1, 0, 0, 1, Component.interface_1115.component_1115_104);
@@ -152,22 +152,22 @@ function cs2_4777(intArg0: number, intArg1: number, intArg2: number): void {
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_121) + ifGetWidth(Component.interface_1115.component_1115_121) + 1, 0, 0, 1, Component.interface_1115.component_1115_122);
             ifSetSize(int26 * int42 / max(1, int14), ifGetHeight(Component.interface_1115.component_1115_94), 0, 0, Component.interface_1115.component_1115_94);
             str2 = tostring(int26) + "<br>" + "of" + "<br>" + tostring(int14);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_94);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_94);
             ifSetSize(int27 * int42 / max(1, int15), ifGetHeight(Component.interface_1115.component_1115_99), 0, 0, Component.interface_1115.component_1115_99);
             str2 = tostring(int27) + "<br>" + "of" + "<br>" + tostring(int15);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_99);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_99);
             ifSetSize(int28 * int42 / max(1, int16), ifGetHeight(Component.interface_1115.component_1115_104), 0, 0, Component.interface_1115.component_1115_104);
             str2 = tostring(int28) + "<br>" + "of" + "<br>" + tostring(int16);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_104);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_104);
             ifSetSize(int29 * int42 / max(1, int17), ifGetHeight(Component.interface_1115.component_1115_109), 0, 0, Component.interface_1115.component_1115_109);
             str2 = tostring(int29) + "<br>" + "of" + "<br>" + tostring(int17);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_109);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_109);
             ifSetSize(int30 * int42 / max(1, int18), ifGetHeight(Component.interface_1115.component_1115_114), 0, 0, Component.interface_1115.component_1115_114);
             str2 = tostring(int30) + "<br>" + "of" + "<br>" + tostring(int18);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_114);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_114);
             ifSetSize(int31 * int42 / max(1, int19), ifGetHeight(Component.interface_1115.component_1115_122), 0, 0, Component.interface_1115.component_1115_122);
             str2 = tostring(int31) + "<br>" + "of" + "<br>" + tostring(int19);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_122);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_122);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_94) + ifGetWidth(Component.interface_1115.component_1115_94) + 1, 0, 0, 1, Component.interface_1115.component_1115_95);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_99) + ifGetWidth(Component.interface_1115.component_1115_99) + 1, 0, 0, 1, Component.interface_1115.component_1115_100);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_104) + ifGetWidth(Component.interface_1115.component_1115_104) + 1, 0, 0, 1, Component.interface_1115.component_1115_105);
@@ -176,22 +176,22 @@ function cs2_4777(intArg0: number, intArg1: number, intArg2: number): void {
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_122) + ifGetWidth(Component.interface_1115.component_1115_122) + 1, 0, 0, 1, Component.interface_1115.component_1115_123);
             ifSetSize(int32 * int42 / max(1, int14), ifGetHeight(Component.interface_1115.component_1115_95), 0, 0, Component.interface_1115.component_1115_95);
             str2 = tostring(int32) + "<br>" + "of" + "<br>" + tostring(int14) + "<br>" + "1:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_95);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_95);
             ifSetSize(int33 * int42 / max(1, int15), ifGetHeight(Component.interface_1115.component_1115_100), 0, 0, Component.interface_1115.component_1115_100);
             str2 = tostring(int33) + "<br>" + "of" + "<br>" + tostring(int15) + "<br>" + "1:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_100);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_100);
             ifSetSize(int34 * int42 / max(1, int16), ifGetHeight(Component.interface_1115.component_1115_105), 0, 0, Component.interface_1115.component_1115_105);
             str2 = tostring(int34) + "<br>" + "of" + "<br>" + tostring(int16) + "<br>" + "3:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_105);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_105);
             ifSetSize(int35 * int42 / max(1, int17), ifGetHeight(Component.interface_1115.component_1115_110), 0, 0, Component.interface_1115.component_1115_110);
             str2 = tostring(int35) + "<br>" + "of" + "<br>" + tostring(int17) + "<br>" + "1:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_110);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_110);
             ifSetSize(int36 * int42 / max(1, int18), ifGetHeight(Component.interface_1115.component_1115_115), 0, 0, Component.interface_1115.component_1115_115);
             str2 = tostring(int36) + "<br>" + "of" + "<br>" + tostring(int18) + "<br>" + "1:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_115);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_115);
             ifSetSize(int37 * int42 / max(1, int19), ifGetHeight(Component.interface_1115.component_1115_123), 0, 0, Component.interface_1115.component_1115_123);
             str2 = tostring(int37) + "<br>" + "of" + "<br>" + tostring(int19) + "<br>" + "3:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_123);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_123);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_95) + ifGetWidth(Component.interface_1115.component_1115_95) + 1, 0, 0, 1, Component.interface_1115.component_1115_96);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_100) + ifGetWidth(Component.interface_1115.component_1115_100) + 1, 0, 0, 1, Component.interface_1115.component_1115_101);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_105) + ifGetWidth(Component.interface_1115.component_1115_105) + 1, 0, 0, 1, Component.interface_1115.component_1115_106);
@@ -200,57 +200,57 @@ function cs2_4777(intArg0: number, intArg1: number, intArg2: number): void {
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_123) + ifGetWidth(Component.interface_1115.component_1115_123) + 1, 0, 0, 1, Component.interface_1115.component_1115_124);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_12) + 1) - (ifGetWidth(Component.interface_1115.component_1115_94) + 1) - (ifGetWidth(Component.interface_1115.component_1115_95) + 1), ifGetHeight(Component.interface_1115.component_1115_96), 0, 0, Component.interface_1115.component_1115_96);
             str2 = tostring(int14 - (int20 + int26 + int32)) + "<br>" + "of" + "<br>" + tostring(int14);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_96);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_96);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_98) + 1) - (ifGetWidth(Component.interface_1115.component_1115_99) + 1) - (ifGetWidth(Component.interface_1115.component_1115_100) + 1), ifGetHeight(Component.interface_1115.component_1115_101), 0, 0, Component.interface_1115.component_1115_101);
             str2 = tostring(int15 - (int21 + int27 + int33)) + "<br>" + "of" + "<br>" + tostring(int15);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_101);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_101);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_103) + 1) - (ifGetWidth(Component.interface_1115.component_1115_104) + 1) - (ifGetWidth(Component.interface_1115.component_1115_105) + 1), ifGetHeight(Component.interface_1115.component_1115_106), 0, 0, Component.interface_1115.component_1115_106);
             str2 = tostring(int16 - (int22 + int28 + int34)) + "<br>" + "of" + "<br>" + tostring(int16);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_106);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_106);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_108) + 1) - (ifGetWidth(Component.interface_1115.component_1115_109) + 1) - (ifGetWidth(Component.interface_1115.component_1115_110) + 1), ifGetHeight(Component.interface_1115.component_1115_111), 0, 0, Component.interface_1115.component_1115_111);
             str2 = tostring(int17 - (int23 + int29 + int35)) + "<br>" + "of" + "<br>" + tostring(int17);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_111);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_111);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_113) + 1) - (ifGetWidth(Component.interface_1115.component_1115_114) + 1) - (ifGetWidth(Component.interface_1115.component_1115_115) + 1), ifGetHeight(Component.interface_1115.component_1115_116), 0, 0, Component.interface_1115.component_1115_116);
             str2 = tostring(int18 - (int24 + int30 + int36)) + "<br>" + "of" + "<br>" + tostring(int18);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_116);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_116);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_121) + 1) - (ifGetWidth(Component.interface_1115.component_1115_122) + 1) - (ifGetWidth(Component.interface_1115.component_1115_123) + 1), ifGetHeight(Component.interface_1115.component_1115_124), 0, 0, Component.interface_1115.component_1115_124);
             str2 = tostring(int19 - (int25 + int31 + int37)) + "<br>" + "of" + "<br>" + tostring(int19);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_124);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_124);
             str2 = tostring(int20) + " paid" + "<br>" + tostring(int26) + " available" + "<br>" + tostring(int32) + " from wildcard" + "<br>" + tostring(int14 - (int20 + int26 + int32)) + " shortfall";
             if (int14 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_7);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_7);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_7);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_7);
             }
             str2 = tostring(int21) + " paid" + "<br>" + tostring(int27) + " available" + "<br>" + tostring(int33) + " from wildcard" + "<br>" + tostring(int15 - (int21 + int27 + int33)) + " shortfall";
             if (int15 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_44);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_44);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_44);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_44);
             }
             str2 = tostring(int22) + " paid" + "<br>" + tostring(int28) + " available" + "<br>" + tostring(int34) + " from wildcard" + "<br>" + tostring(int16 - (int22 + int28 + int34)) + " shortfall";
             if (int16 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_81);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_81);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_81);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_81);
             }
             str2 = tostring(int23) + " paid" + "<br>" + tostring(int29) + " available" + "<br>" + tostring(int35) + " from wildcard" + "<br>" + tostring(int17 - (int23 + int29 + int35)) + " shortfall";
             if (int17 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_85);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_85);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_85);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_85);
             }
             str2 = tostring(int24) + " paid" + "<br>" + tostring(int30) + " available" + "<br>" + tostring(int36) + " from wildcard" + "<br>" + tostring(int18 - (int24 + int30 + int36)) + " shortfall";
             if (int18 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_89);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_89);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_89);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_89);
             }
             str2 = tostring(int25) + " paid" + "<br>" + tostring(int31) + " available" + "<br>" + tostring(int37) + " from wildcard" + "<br>" + tostring(int19 - (int25 + int31 + int37)) + " shortfall";
             if (int19 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_93);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_93);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_93);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_93);
             }
         } else if (intArg0 < 300) {
             str1 = "Downgrade -" + tostring(int5);
@@ -321,22 +321,22 @@ function cs2_4777(intArg0: number, intArg1: number, intArg2: number): void {
             }
             ifSetSize(int20 * int42 / max(1, int14), ifGetHeight(Component.interface_1115.component_1115_12), 0, 0, Component.interface_1115.component_1115_12);
             str2 = tostring(int20) + "<br>" + "of" + "<br>" + tostring(int14);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_12);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_12);
             ifSetSize(int21 * int42 / max(1, int15), ifGetHeight(Component.interface_1115.component_1115_98), 0, 0, Component.interface_1115.component_1115_98);
             str2 = tostring(int21) + "<br>" + "of" + "<br>" + tostring(int15);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_98);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_98);
             ifSetSize(int22 * int42 / max(1, int16), ifGetHeight(Component.interface_1115.component_1115_103), 0, 0, Component.interface_1115.component_1115_103);
             str2 = tostring(int22) + "<br>" + "of" + "<br>" + tostring(int16);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_103);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_103);
             ifSetSize(int23 * int42 / max(1, int17), ifGetHeight(Component.interface_1115.component_1115_108), 0, 0, Component.interface_1115.component_1115_108);
             str2 = tostring(int23) + "<br>" + "of" + "<br>" + tostring(int17);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_108);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_108);
             ifSetSize(int24 * int42 / max(1, int18), ifGetHeight(Component.interface_1115.component_1115_113), 0, 0, Component.interface_1115.component_1115_113);
             str2 = tostring(int24) + "<br>" + "of" + "<br>" + tostring(int18);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_113);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_113);
             ifSetSize(int25 * int42 / max(1, int19), ifGetHeight(Component.interface_1115.component_1115_121), 0, 0, Component.interface_1115.component_1115_121);
             str2 = tostring(int25) + "<br>" + "of" + "<br>" + tostring(int19);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_121);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_121);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_12) + ifGetWidth(Component.interface_1115.component_1115_12) + 1, 0, 0, 1, Component.interface_1115.component_1115_94);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_98) + ifGetWidth(Component.interface_1115.component_1115_98) + 1, 0, 0, 1, Component.interface_1115.component_1115_99);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_103) + ifGetWidth(Component.interface_1115.component_1115_103) + 1, 0, 0, 1, Component.interface_1115.component_1115_104);
@@ -345,22 +345,22 @@ function cs2_4777(intArg0: number, intArg1: number, intArg2: number): void {
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_121) + ifGetWidth(Component.interface_1115.component_1115_121) + 1, 0, 0, 1, Component.interface_1115.component_1115_122);
             ifSetSize(int26 * int42 / max(1, int14), ifGetHeight(Component.interface_1115.component_1115_94), 0, 0, Component.interface_1115.component_1115_94);
             str2 = tostring(int26) + "<br>" + "of" + "<br>" + tostring(int14);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_94);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_94);
             ifSetSize(int27 * int42 / max(1, int15), ifGetHeight(Component.interface_1115.component_1115_99), 0, 0, Component.interface_1115.component_1115_99);
             str2 = tostring(int27) + "<br>" + "of" + "<br>" + tostring(int15);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_99);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_99);
             ifSetSize(int28 * int42 / max(1, int16), ifGetHeight(Component.interface_1115.component_1115_104), 0, 0, Component.interface_1115.component_1115_104);
             str2 = tostring(int28) + "<br>" + "of" + "<br>" + tostring(int16);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_104);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_104);
             ifSetSize(int29 * int42 / max(1, int17), ifGetHeight(Component.interface_1115.component_1115_109), 0, 0, Component.interface_1115.component_1115_109);
             str2 = tostring(int29) + "<br>" + "of" + "<br>" + tostring(int17);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_109);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_109);
             ifSetSize(int30 * int42 / max(1, int18), ifGetHeight(Component.interface_1115.component_1115_114), 0, 0, Component.interface_1115.component_1115_114);
             str2 = tostring(int30) + "<br>" + "of" + "<br>" + tostring(int18);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_114);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_114);
             ifSetSize(int31 * int42 / max(1, int19), ifGetHeight(Component.interface_1115.component_1115_122), 0, 0, Component.interface_1115.component_1115_122);
             str2 = tostring(int31) + "<br>" + "of" + "<br>" + tostring(int19);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_122);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_122);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_94) + ifGetWidth(Component.interface_1115.component_1115_94) + 1, 0, 0, 1, Component.interface_1115.component_1115_95);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_99) + ifGetWidth(Component.interface_1115.component_1115_99) + 1, 0, 0, 1, Component.interface_1115.component_1115_100);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_104) + ifGetWidth(Component.interface_1115.component_1115_104) + 1, 0, 0, 1, Component.interface_1115.component_1115_105);
@@ -369,22 +369,22 @@ function cs2_4777(intArg0: number, intArg1: number, intArg2: number): void {
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_122) + ifGetWidth(Component.interface_1115.component_1115_122) + 1, 0, 0, 1, Component.interface_1115.component_1115_123);
             ifSetSize(int32 * int42 / max(1, int14), ifGetHeight(Component.interface_1115.component_1115_95), 0, 0, Component.interface_1115.component_1115_95);
             str2 = tostring(int32) + "<br>" + "of" + "<br>" + tostring(int14) + "<br>" + "1:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_95);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_95);
             ifSetSize(int33 * int42 / max(1, int15), ifGetHeight(Component.interface_1115.component_1115_100), 0, 0, Component.interface_1115.component_1115_100);
             str2 = tostring(int33) + "<br>" + "of" + "<br>" + tostring(int15) + "<br>" + "1:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_100);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_100);
             ifSetSize(int34 * int42 / max(1, int16), ifGetHeight(Component.interface_1115.component_1115_105), 0, 0, Component.interface_1115.component_1115_105);
             str2 = tostring(int34) + "<br>" + "of" + "<br>" + tostring(int16) + "<br>" + "3:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_105);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_105);
             ifSetSize(int35 * int42 / max(1, int17), ifGetHeight(Component.interface_1115.component_1115_110), 0, 0, Component.interface_1115.component_1115_110);
             str2 = tostring(int35) + "<br>" + "of" + "<br>" + tostring(int17) + "<br>" + "1:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_110);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_110);
             ifSetSize(int36 * int42 / max(1, int18), ifGetHeight(Component.interface_1115.component_1115_115), 0, 0, Component.interface_1115.component_1115_115);
             str2 = tostring(int36) + "<br>" + "of" + "<br>" + tostring(int18) + "<br>" + "1:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_115);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_115);
             ifSetSize(int37 * int42 / max(1, int19), ifGetHeight(Component.interface_1115.component_1115_123), 0, 0, Component.interface_1115.component_1115_123);
             str2 = tostring(int37) + "<br>" + "of" + "<br>" + tostring(int19) + "<br>" + "3:1 ratio";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_123);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_123);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_95) + ifGetWidth(Component.interface_1115.component_1115_95) + 1, 0, 0, 1, Component.interface_1115.component_1115_96);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_100) + ifGetWidth(Component.interface_1115.component_1115_100) + 1, 0, 0, 1, Component.interface_1115.component_1115_101);
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_105) + ifGetWidth(Component.interface_1115.component_1115_105) + 1, 0, 0, 1, Component.interface_1115.component_1115_106);
@@ -393,57 +393,57 @@ function cs2_4777(intArg0: number, intArg1: number, intArg2: number): void {
             ifSetPosition(ifGetX(Component.interface_1115.component_1115_123) + ifGetWidth(Component.interface_1115.component_1115_123) + 1, 0, 0, 1, Component.interface_1115.component_1115_124);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_12) + 1) - (ifGetWidth(Component.interface_1115.component_1115_94) + 1) - (ifGetWidth(Component.interface_1115.component_1115_95) + 1), ifGetHeight(Component.interface_1115.component_1115_96), 0, 0, Component.interface_1115.component_1115_96);
             str2 = tostring(int14 - (int20 + int26 + int32)) + "<br>" + "of" + "<br>" + tostring(int14);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_96);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_96);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_98) + 1) - (ifGetWidth(Component.interface_1115.component_1115_99) + 1) - (ifGetWidth(Component.interface_1115.component_1115_100) + 1), ifGetHeight(Component.interface_1115.component_1115_101), 0, 0, Component.interface_1115.component_1115_101);
             str2 = tostring(int15 - (int21 + int27 + int33)) + "<br>" + "of" + "<br>" + tostring(int15);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_101);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_101);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_103) + 1) - (ifGetWidth(Component.interface_1115.component_1115_104) + 1) - (ifGetWidth(Component.interface_1115.component_1115_105) + 1), ifGetHeight(Component.interface_1115.component_1115_106), 0, 0, Component.interface_1115.component_1115_106);
             str2 = tostring(int16 - (int22 + int28 + int34)) + "<br>" + "of" + "<br>" + tostring(int16);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_106);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_106);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_108) + 1) - (ifGetWidth(Component.interface_1115.component_1115_109) + 1) - (ifGetWidth(Component.interface_1115.component_1115_110) + 1), ifGetHeight(Component.interface_1115.component_1115_111), 0, 0, Component.interface_1115.component_1115_111);
             str2 = tostring(int17 - (int23 + int29 + int35)) + "<br>" + "of" + "<br>" + tostring(int17);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_111);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_111);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_113) + 1) - (ifGetWidth(Component.interface_1115.component_1115_114) + 1) - (ifGetWidth(Component.interface_1115.component_1115_115) + 1), ifGetHeight(Component.interface_1115.component_1115_116), 0, 0, Component.interface_1115.component_1115_116);
             str2 = tostring(int18 - (int24 + int30 + int36)) + "<br>" + "of" + "<br>" + tostring(int18);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_116);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_116);
             ifSetSize(int42 - (ifGetWidth(Component.interface_1115.component_1115_121) + 1) - (ifGetWidth(Component.interface_1115.component_1115_122) + 1) - (ifGetWidth(Component.interface_1115.component_1115_123) + 1), ifGetHeight(Component.interface_1115.component_1115_124), 0, 0, Component.interface_1115.component_1115_124);
             str2 = tostring(int19 - (int25 + int31 + int37)) + "<br>" + "of" + "<br>" + tostring(int19);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_124);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_124);
             str2 = tostring(int26) + " available" + "<br>" + tostring(int32) + " from wildcard" + "<br>" + tostring(int14 - (int26 + int32)) + " shortfall";
             if (int14 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_7);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_7);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_7);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_7);
             }
             str2 = tostring(int27) + " available" + "<br>" + tostring(int33) + " from wildcard" + "<br>" + tostring(int15 - (int27 + int33)) + " shortfall";
             if (int15 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_44);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_44);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_44);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_44);
             }
             str2 = tostring(int28) + " available" + "<br>" + tostring(int34) + " from wildcard" + "<br>" + tostring(int16 - (int28 + int34)) + " shortfall";
             if (int16 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_81);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_81);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_81);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1115.component_1115_81);
             }
             str2 = tostring(int29) + " available" + "<br>" + tostring(int35) + " from wildcard" + "<br>" + tostring(int17 - (int29 + int35)) + " shortfall";
             if (int17 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_85);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_85);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_85);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_85);
             }
             str2 = tostring(int30) + " available" + "<br>" + tostring(int36) + " from wildcard" + "<br>" + tostring(int18 - (int30 + int36)) + " shortfall";
             if (int18 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_89);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_89);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_89);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_89);
             }
             str2 = tostring(int31) + " available" + "<br>" + tostring(int37) + " from wildcard" + "<br>" + tostring(int19 - (int31 + int37)) + " shortfall";
             if (int19 == 0) {
-                ifSetOnMouseOver(noHook(""), Component.interface_1115.component_1115_93);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_1115.component_1115_93);
             } else {
-                ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_93);
+                ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1115.component_1115_186, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1115.component_1115_93);
             }
         }
         ifSetText(str1, Component.interface_1115.component_1115_79);

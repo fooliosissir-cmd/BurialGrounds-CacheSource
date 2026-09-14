@@ -4,7 +4,7 @@
 // cs2_1595
 
 function cs2_1595(intArg0: number, strArg0: string, strArg1: string): void {
-    if (fcIsself(intArg0) == 0) {
+    if (clanIsself(intArg0) == 0) {
         if (friendTest(strArg1) == 1) {
             ccSetOp(5, "Message " + strArg0);
             ccSetOp(7, "Remove friend " + strArg0);
@@ -16,7 +16,7 @@ function cs2_1595(intArg0: number, strArg0: string, strArg1: string): void {
         }
     }
 
-    if (fcGetChatRank() >= fcGetChatMinKick() && fcGetChatRank() > fcGetChatUserRank(intArg0)) {
+    if (clanGetChatRank() >= clanGetChatMinKick() && clanGetChatRank() > clanGetChatUserRank(intArg0)) {
         ccSetOp(9, "Kick/ban user " + strArg0);
     }
 }

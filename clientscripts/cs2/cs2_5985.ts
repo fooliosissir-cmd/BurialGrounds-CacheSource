@@ -12,6 +12,6 @@ function cs2_5985(intArg0: component): void {
     ccSetPosition(2, 2, 0, 0);
     ccSetSize(4, 4, 1, 1);
     ccSetTrans(255);
-    ccHookMouseEnter(hook(cc_settrans, "Iii", [intArg0, int1, 180]));
-    ccHookMouseExit(hook(cc_settrans, "Iii", [intArg0, int1, 255]));
+    ccSetOnMouseOver(hook(cc_settrans, "Iii", [intArg0, int1, 180]));
+    ccSetOnMouseLeave(hook(cc_settrans, "Iii", [intArg0, int1, 255]));
 }

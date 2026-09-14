@@ -6,7 +6,7 @@
 function login_popup_text_update(strArg0: string): void {
     let int0: component = Component.interface_596.component_596_13;
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         int0 = Component.interface_975.component_975_4;
     }
     ifSetText(strArg0, int0);

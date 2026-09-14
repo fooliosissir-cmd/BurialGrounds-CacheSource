@@ -29,18 +29,18 @@ function proc_lobbyscreen_tabswitch(intArg0: number): void {
     ifSetGraphic(Graphic.graphic_4672, Component.interface_906.component_906_26);
     ifSetGraphic(Graphic.graphic_4672, Component.interface_906.component_906_280);
     ifSetGraphic(Graphic.graphic_4672, Component.interface_906.component_906_25);
-    hookMouseEnter(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_231, colour(0xFAFAFA)]), Component.interface_906.component_906_214);
-    hookMouseEnter(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_228, colour(0xFAFAFA)]), Component.interface_906.component_906_215);
-    hookMouseEnter(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_226, colour(0xFAFAFA)]), Component.interface_906.component_906_216);
-    hookMouseEnter(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_224, colour(0xFAFAFA)]), Component.interface_906.component_906_218);
-    hookMouseEnter(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_281, colour(0xFAFAFA)]), Component.interface_906.component_906_217);
-    hookMouseEnter(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_222, colour(0xFAFAFA)]), Component.interface_906.component_906_219);
-    hookMouseExit(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_231, colour(0xEBE0BC)]), Component.interface_906.component_906_214);
-    hookMouseExit(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_228, colour(0xEBE0BC)]), Component.interface_906.component_906_215);
-    hookMouseExit(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_226, colour(0xEBE0BC)]), Component.interface_906.component_906_216);
-    hookMouseExit(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_224, colour(0xEBE0BC)]), Component.interface_906.component_906_218);
-    hookMouseExit(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_281, colour(0xEBE0BC)]), Component.interface_906.component_906_217);
-    hookMouseExit(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_222, colour(0xEBE0BC)]), Component.interface_906.component_906_219);
+    ifSetOnMouseOver(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_231, colour(0xFAFAFA)]), Component.interface_906.component_906_214);
+    ifSetOnMouseOver(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_228, colour(0xFAFAFA)]), Component.interface_906.component_906_215);
+    ifSetOnMouseOver(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_226, colour(0xFAFAFA)]), Component.interface_906.component_906_216);
+    ifSetOnMouseOver(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_224, colour(0xFAFAFA)]), Component.interface_906.component_906_218);
+    ifSetOnMouseOver(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_281, colour(0xFAFAFA)]), Component.interface_906.component_906_217);
+    ifSetOnMouseOver(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_222, colour(0xFAFAFA)]), Component.interface_906.component_906_219);
+    ifSetOnMouseLeave(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_231, colour(0xEBE0BC)]), Component.interface_906.component_906_214);
+    ifSetOnMouseLeave(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_228, colour(0xEBE0BC)]), Component.interface_906.component_906_215);
+    ifSetOnMouseLeave(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_226, colour(0xEBE0BC)]), Component.interface_906.component_906_216);
+    ifSetOnMouseLeave(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_224, colour(0xEBE0BC)]), Component.interface_906.component_906_218);
+    ifSetOnMouseLeave(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_281, colour(0xEBE0BC)]), Component.interface_906.component_906_217);
+    ifSetOnMouseLeave(hook(text_colour_swapper, "Ii", [Component.interface_906.component_906_222, colour(0xEBE0BC)]), Component.interface_906.component_906_219);
 
     if (intArg0 != 5) {
         cs2_3161(0);
@@ -70,40 +70,40 @@ function proc_lobbyscreen_tabswitch(intArg0: number): void {
     switch (intArg0) {
         case 0:
             ifSetGraphic(Graphic.graphic_4671, Component.interface_906.component_906_230);
-            hookMouseEnter(noHook(""), Component.interface_906.component_906_214);
-            hookMouseExit(noHook(""), Component.interface_906.component_906_214);
+            ifSetOnMouseOver(noHook(""), Component.interface_906.component_906_214);
+            ifSetOnMouseLeave(noHook(""), Component.interface_906.component_906_214);
             ccDeleteAll(Component.interface_906.component_906_214);
             break;
         case 1:
             ifSetGraphic(Graphic.graphic_4671, Component.interface_906.component_906_28);
-            hookMouseEnter(noHook(""), Component.interface_906.component_906_215);
-            hookMouseExit(noHook(""), Component.interface_906.component_906_215);
+            ifSetOnMouseOver(noHook(""), Component.interface_906.component_906_215);
+            ifSetOnMouseLeave(noHook(""), Component.interface_906.component_906_215);
             ccDeleteAll(Component.interface_906.component_906_215);
             break;
         case 2:
             ifSetGraphic(Graphic.graphic_4671, Component.interface_906.component_906_27);
-            hookMouseEnter(noHook(""), Component.interface_906.component_906_216);
-            hookMouseExit(noHook(""), Component.interface_906.component_906_216);
+            ifSetOnMouseOver(noHook(""), Component.interface_906.component_906_216);
+            ifSetOnMouseLeave(noHook(""), Component.interface_906.component_906_216);
             ccDeleteAll(Component.interface_906.component_906_216);
             break;
         case 5:
             ifSetGraphic(Graphic.graphic_4671, Component.interface_906.component_906_26);
-            hookMouseEnter(noHook(""), Component.interface_906.component_906_218);
-            hookMouseExit(noHook(""), Component.interface_906.component_906_218);
+            ifSetOnMouseOver(noHook(""), Component.interface_906.component_906_218);
+            ifSetOnMouseLeave(noHook(""), Component.interface_906.component_906_218);
             ccDeleteAll(Component.interface_906.component_906_218);
             cs2_3161(1);
             break;
         case 3:
             ifSetGraphic(Graphic.graphic_4671, Component.interface_906.component_906_280);
-            hookMouseEnter(noHook(""), Component.interface_906.component_906_217);
-            hookMouseExit(noHook(""), Component.interface_906.component_906_217);
+            ifSetOnMouseOver(noHook(""), Component.interface_906.component_906_217);
+            ifSetOnMouseLeave(noHook(""), Component.interface_906.component_906_217);
             ccDeleteAll(Component.interface_906.component_906_217);
             cs2_4556(1);
             break;
         case 4:
             ifSetGraphic(Graphic.graphic_4671, Component.interface_906.component_906_25);
-            hookMouseEnter(noHook(""), Component.interface_906.component_906_219);
-            hookMouseExit(noHook(""), Component.interface_906.component_906_219);
+            ifSetOnMouseOver(noHook(""), Component.interface_906.component_906_219);
+            ifSetOnMouseLeave(noHook(""), Component.interface_906.component_906_219);
             ccDeleteAll(Component.interface_906.component_906_219);
             break;
     }

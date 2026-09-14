@@ -40,8 +40,8 @@ function proc_worldmap_showmenu(intArg0: boolean, intArg1: component, intArg2: c
     ccSetTextFont(Graphic.b12_full);
     ccSetTextAlign(0, 1, 0);
     ccSetColour(colour(0xFFFFFF));
-    ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xAFAFAF)]));
-    ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+    ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xAFAFAF)]));
+    ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
     int8 = enumOp(type_int, 96, Enum.worldmap_maps, array0[0]);
     ccSetText(worldMapGetMapName(int8));
     ccSetOnClick(hook(worldmap_choosemap, "`IIIII", [int8, intArg1, intArg2, intArg3, intArg4, intArg5]));
@@ -57,8 +57,8 @@ function proc_worldmap_showmenu(intArg0: boolean, intArg1: component, intArg2: c
         ccSetTextFont(Graphic.p12_full);
         ccSetTextAlign(0, 1, 0);
         ccSetColour(colour(0xFFFFFF));
-        ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xAFAFAF)]));
-        ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+        ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xAFAFAF)]));
+        ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
         int8 = enumOp(type_int, 96, Enum.worldmap_maps, array0[int6]);
         ccSetText(worldMapGetMapName(int8));
         ccSetOnClick(hook(worldmap_choosemap, "`IIIII", [int8, intArg1, intArg2, intArg3, intArg4, intArg5]));

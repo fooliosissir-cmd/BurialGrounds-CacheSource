@@ -24,7 +24,7 @@ function gravestone_shop_select(intArg0: graphic, intArg1: component, intArg2: n
     let str0: string = enumOp(type_int, type_string, Enum.gravestone_desc, intArg0);
 
     if (int8 != -1) {
-        int7 = npcParam(int8, Param.param_356);
+        int7 = ncParam(int8, Param.param_356);
         int9 = int7 / 100;
         int10 = scale(int7 % 100, 100, 60);
         if (int10 < 10) {
@@ -79,9 +79,9 @@ function gravestone_shop_select(intArg0: graphic, intArg1: component, intArg2: n
             ccSetGraphic(Graphic.graphic_833);
             ccSetHide(false);
             int12 = Graphic.graphic_834;
-            ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int12]));
+            ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int12]));
             int12 = Graphic.graphic_833;
-            ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int12]));
+            ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int12]));
             ccSetOp(1, "Confirm:");
             ccSetOpBase("<col=ff9040>" + enumOp(type_int, type_string, Enum.gravestone_name, intArg0) + "</col>");
         } else {

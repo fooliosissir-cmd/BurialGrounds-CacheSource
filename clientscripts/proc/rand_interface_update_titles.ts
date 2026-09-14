@@ -17,8 +17,8 @@ function rand_interface_update_titles(intArg0: number, intArg1: number, intArg2:
         } else if (int3 == 0) {
             ifSetColour(colour(0xA00000), intArg2);
         }
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [event_com, Component.interface_933.component_933_254, str1, 25, 200]), intArg2);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_933.component_933_254]), intArg2);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [event_com, Component.interface_933.component_933_254, str1, 25, 200]), intArg2);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_933.component_933_254]), intArg2);
     } else {
         ifSetText("", intArg2);
     }

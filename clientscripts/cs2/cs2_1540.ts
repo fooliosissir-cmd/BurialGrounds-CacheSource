@@ -29,8 +29,8 @@ function cs2_1540(intArg0: component): void {
                     str0 = "Eat";
                 }
             }
-            ccSetOnMouseOver(hook(cs2_5495, "o", [int5]));
-            ccHookMouseExit(hook(cs2_5495, "o", [-1]));
+            ccSetOnMouseRepeat(hook(cs2_5495, "o", [int5]));
+            ccSetOnMouseLeave(hook(cs2_5495, "o", [-1]));
         } else {
             [str0, str1] = ["", ""];
             int6 = 0;

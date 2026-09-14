@@ -9,7 +9,7 @@ function meslayer_mode16(): void {
     let int2: number = -1;
 
     if (activeClanChannelFindAffined() == 1) {
-        int0 = activeClanChannelGetUserSlot(chatPlayerName());
+        int0 = activeClanChannelGetUserSlot(chatPlayerNameUnfiltered());
         if (int0 == -1) {
             return;
         }

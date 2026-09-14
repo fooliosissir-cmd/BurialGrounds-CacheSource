@@ -4,8 +4,8 @@
 // cs2_711
 
 function cs2_711(): void {
-    ifSetOnOpt(hook(cs2_2023, "ii", [event_opindex, 1]), Component.interface_916.component_916_24);
-    ifSetOnOpt(hook(cs2_2023, "ii", [event_opindex, -1]), Component.interface_916.component_916_25);
+    ifSetOnOp(hook(cs2_2023, "ii", [event_opindex, 1]), Component.interface_916.component_916_24);
+    ifSetOnOp(hook(cs2_2023, "ii", [event_opindex, -1]), Component.interface_916.component_916_25);
     cs2_2020(1, "1", 41, Component.interface_916.component_916_10);
     cs2_2020(5, "5", 41, Component.interface_916.component_916_11);
     cs2_2020(10, "10", 41, Component.interface_916.component_916_12);
@@ -59,8 +59,8 @@ function cs2_711(): void {
     ifSetSize(ifGetX(Component.interface_916.component_916_6) * 2 + int0, 0, 1, 1, Component.interface_916.component_916_6);
     str1 = "Show/Hide additional number buttons";
     let int6: graphic = Graphic.graphic_3883;
-    ifSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_905.component_905_29, str1, 25, 519]), Component.interface_916.component_916_26);
-    hookMouseExit(hook(cs2_299, "IId", [Component.interface_905.component_905_29, Component.interface_916.component_916_27, int6]), Component.interface_916.component_916_26);
+    ifSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_905.component_905_29, str1, 25, 519]), Component.interface_916.component_916_26);
+    ifSetOnMouseLeave(hook(cs2_299, "IId", [Component.interface_905.component_905_29, Component.interface_916.component_916_27, int6]), Component.interface_916.component_916_26);
     int2 = (70 - 56) / 2;
     int3 = 0;
 
@@ -146,12 +146,12 @@ function cs2_711(): void {
         ifSetSize(int3, 0, 0, 1, Component.interface_905.component_905_13);
         ifSetScrollSize(int4, 0, Component.interface_905.component_905_13);
         ifSetScrollPos(varc_93, 0, Component.interface_905.component_905_13);
-        ifSetOnMouseOver(hook(cs2_2369, "Idi", [event_com, int8, -4]), Component.interface_905.component_905_11);
-        ifSetOnMouseOver(hook(cs2_2369, "Idi", [event_com, int9, 4]), Component.interface_905.component_905_12);
+        ifSetOnMouseRepeat(hook(cs2_2369, "Idi", [event_com, int8, -4]), Component.interface_905.component_905_11);
+        ifSetOnMouseRepeat(hook(cs2_2369, "Idi", [event_com, int9, 4]), Component.interface_905.component_905_12);
         ifSetOnHold(hook(cs2_2369, "Idi", [event_com, int8, -6]), 59310091);
         ifSetOnHold(hook(cs2_2369, "Idi", [event_com, int9, 6]), 59310092);
-        hookMouseExit(hook(graphic_swapper, "Id", [event_com, int7]), Component.interface_905.component_905_11);
-        hookMouseExit(hook(graphic_swapper, "Id", [event_com, int6]), Component.interface_905.component_905_12);
+        ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int7]), Component.interface_905.component_905_11);
+        ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int6]), Component.interface_905.component_905_12);
         cs2_2370();
     } else {
         ifSetSize(int4, 0, 0, 1, Component.interface_905.component_905_13);

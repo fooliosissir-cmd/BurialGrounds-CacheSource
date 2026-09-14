@@ -19,7 +19,7 @@ function proc_login_popup_close(): void {
     let int12: component = Component.interface_596.component_596_18;
     let int13: component = Component.interface_596.component_596_65;
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         int0 = Component.interface_975.component_975_26;
         int1 = Component.interface_975.component_975_1;
         int2 = Component.interface_975.component_975_4;
@@ -37,10 +37,10 @@ function proc_login_popup_close(): void {
     }
     ifSetOnClick(noHook(""), int4);
     ifSetOnClick(noHook(""), int5);
-    hookMouseEnter(noHook(""), int5);
-    hookMouseExit(noHook(""), int5);
-    hookMouseEnter(noHook(""), int4);
-    hookMouseExit(noHook(""), int4);
+    ifSetOnMouseOver(noHook(""), int5);
+    ifSetOnMouseLeave(noHook(""), int5);
+    ifSetOnMouseOver(noHook(""), int4);
+    ifSetOnMouseLeave(noHook(""), int4);
     ifSetPosition(6, 5, 0, 2, int4);
     ifSetPosition(6, 5, 0, 2, int5);
     ifSetText("", int12);
@@ -54,7 +54,7 @@ function proc_login_popup_close(): void {
     ifSetHide(true, int0);
     ifSetHide(true, int1);
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         return;
     } else {
         login_open(11);

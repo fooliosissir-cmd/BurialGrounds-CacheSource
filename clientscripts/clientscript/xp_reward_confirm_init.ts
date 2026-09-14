@@ -9,7 +9,7 @@ function xp_reward_confirm_init(intArg0: component, intArg1: component, intArg2:
     cs2_5867(intArg3, Struct.struct_2752);
     cs2_5867(intArg4, Struct.struct_2754);
     ifSetOp(1, "Confirm", intArg4);
-    ifSetOnOpt(hook(xp_reward_confirm_invalid, "", []), intArg4);
+    ifSetOnOp(hook(xp_reward_confirm_invalid, "", []), intArg4);
     ifSetOnVarcTransmit(hook(clientscript_xp_reward_confirm_update, "IIIY", [intArg0, intArg4, intArg5], [1796, 1797, 1799]), intArg0);
     ifSetOnStatTransmit(hook(clientscript_xp_reward_confirm_update, "III", [intArg0, intArg4, intArg5]), intArg0);
     ifSetOnResize(hook(clientscript_xp_reward_confirm_update, "III", [intArg0, intArg4, intArg5]), intArg0);

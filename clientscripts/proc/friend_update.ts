@@ -116,7 +116,7 @@ function proc_friend_update(intArg0: number): void {
             ccSetOp(4, "Quick Message");
         }
         ccSetOp(5, "Delete");
-        ccSetOnOpt(hook(friend_op, "isi", [event_opindex, "event_opbase", int14]));
+        ccSetOnOp(hook(friend_op, "isi", [event_opindex, "event_opbase", int14]));
         if (stringWidth(str1, Graphic.verdana_11pt_regular) > int16) {
             while (stringWidth(str1 + "...", Graphic.verdana_11pt_regular) > int16 && stringLength(str1) > 0) {
                 str1 = subString(str1, 0, stringLength(str1) - 1);
@@ -131,8 +131,8 @@ function proc_friend_update(intArg0: number): void {
             } else {
                 str2 = str0;
             }
-            ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_550.component_550_51, event_com, event_comsubid, str2, event_mousex, event_mousey]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_550.component_550_51]));
+            ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_550.component_550_51, event_com, event_comsubid, str2, event_mousex, event_mousey]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_550.component_550_51]));
         } else {
             ccSetText(str1);
             if (int19 == 1) {
@@ -141,8 +141,8 @@ function proc_friend_update(intArg0: number): void {
                 } else {
                     str2 = "Last known as: " + str3;
                 }
-                ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_550.component_550_51, event_com, event_comsubid, str2, event_mousex, event_mousey]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_550.component_550_51]));
+                ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_550.component_550_51, event_com, event_comsubid, str2, event_mousex, event_mousey]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_550.component_550_51]));
             }
         }
         ccCreate(int2, 5, ifGetNextSubId(int2));
@@ -185,8 +185,8 @@ function proc_friend_update(intArg0: number): void {
             int29 = 0;
         }
         if (int17 < int26) {
-            ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_550.component_550_51, event_com, event_comsubid, str5, event_mousex, event_mousey]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_550.component_550_51]));
+            ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_550.component_550_51, event_com, event_comsubid, str5, event_mousex, event_mousey]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_550.component_550_51]));
             str4 = "...";
         }
         ccCreate(int3, 4, ifGetNextSubId(int3));
@@ -203,8 +203,8 @@ function proc_friend_update(intArg0: number): void {
         } else {
             ccSetColour(colour(0xFFFF64));
         }
-        ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_550.component_550_51, event_com, event_comsubid, str5, event_mousex, event_mousey]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_550.component_550_51]));
+        ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_550.component_550_51, event_com, event_comsubid, str5, event_mousex, event_mousey]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_550.component_550_51]));
         int14 = int14 + 1;
     }
     int21 = int21 + 15 + 5;

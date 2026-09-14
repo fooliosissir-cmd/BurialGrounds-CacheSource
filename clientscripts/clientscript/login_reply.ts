@@ -10,7 +10,7 @@ function login_reply(intArg0: number): void {
     let int4: component = Component.interface_596.component_596_44;
     let int5: component = Component.interface_596.component_596_6;
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         int2 = Component.interface_975.component_975_49;
         int4 = Component.interface_975.component_975_44;
         int5 = Component.interface_975.component_975_26;
@@ -20,12 +20,12 @@ function login_reply(intArg0: number): void {
         ifSetGraphic(Graphic.corner_flourish_2, Component.interface_744.component_744_97);
         ifSetHide(false, Component.interface_744.component_744_103);
         ifSetText(tostring(mapWorld()), Component.interface_744.component_744_130);
-        ifSetText(tostring(loginHandshakeCode()), Component.interface_744.component_744_131);
+        ifSetText(tostring(loginQueuePosition()), Component.interface_744.component_744_131);
         varc_login_reply_last = 42;
         return;
     } else if (int1 == 43) {
         ifSetText(tostring(mapWorld()), Component.interface_744.component_744_130);
-        ifSetText(tostring(loginHandshakeCode()), Component.interface_744.component_744_131);
+        ifSetText(tostring(loginQueuePosition()), Component.interface_744.component_744_131);
         varc_login_reply_last = 43;
         return;
     } else {
@@ -54,7 +54,7 @@ function login_reply(intArg0: number): void {
         ifSetText("Logging in...", int3);
         ifSetOnClick(noHook(""), int4);
         if (varc_loginscreen_hopblocked_time == 0) {
-            varc_loginscreen_hopblocked_time = loginQueuePosition();
+            varc_loginscreen_hopblocked_time = loginHopTime();
         }
         varc_loginscreen_hopblocked_time = varc_loginscreen_hopblocked_time - 1;
         if (varc_loginscreen_hopblocked_time <= 0) {
@@ -111,7 +111,7 @@ function login_reply(intArg0: number): void {
     }
     proc_login_popup_close();
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         ifSetText("Play Game", int2);
         ifSetText("Play Game", int3);
     } else {
@@ -120,7 +120,7 @@ function login_reply(intArg0: number): void {
     }
     ifSetOnClick(hook(clientscript_login_dologin, "", []), int4);
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         ifSetOnTimer(noHook(""), Component.interface_975.component_975_26);
     } else {
         ifSetOnTimer(noHook(""), Component.interface_596.component_596_6);
@@ -138,14 +138,14 @@ function login_reply(intArg0: number): void {
     switch (int1) {
         case -2:
             proc_login_popup_close();
-            if (hasBase64url() == 1) {
+            if (hasSignonKey() == 1) {
                 return;
             } else {
                 login_open(11);
             }
             return;
         case 29:
-            switch (loginReply()) {
+            switch (loginDisallowResult()) {
                 case 0:
                     str2 = "You must have a Combat Level of at least 20 (not including Summoning) to enter a PvP world.";
                     break;
@@ -173,9 +173,9 @@ function login_reply(intArg0: number): void {
             str2 = "This instance is marked for deletion/rebuild. Please try using a different world.";
             break;
         case 45:
-            switch (loginReplyExtrainfo()) {
+            switch (loginDisallowTrigger()) {
                 case 0:
-                    switch (loginReply()) {
+                    switch (loginDisallowResult()) {
                         case 0:
                             str2 = "You must be near the TzHaar Fight Pits entrance to enter a global match.";
                             break;
@@ -185,7 +185,7 @@ function login_reply(intArg0: number): void {
                     }
                     break;
                 case 1:
-                    switch (loginReply()) {
+                    switch (loginDisallowResult()) {
                         case 1:
                             str2 = "There was an error connecting to your meeting room. Please try again.";
                             break;

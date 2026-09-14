@@ -7,6 +7,6 @@ function cs2_2578(): void {
     ifSetColour(colour(0x666666), Component.interface_292.component_292_114);
     ifSetGraphic(Graphic.warning_icons_1, Component.interface_292.component_292_113);
     ifClearops(Component.interface_292.component_292_113);
-    ifSetOnOpt(noHook(""), Component.interface_292.component_292_113);
+    ifSetOnOp(noHook(""), Component.interface_292.component_292_113);
     ifSetOnClick(hook(cs2_2606, "I", [event_com]), Component.interface_292.component_292_113);
 }

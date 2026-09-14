@@ -6,7 +6,7 @@
 function cs2_23(): void {
     let [str0, int0] = cs2_12(varbit_skill_guide_skill_v2);
     ifSetText(str0, Component.interface_499.component_499_5);
-    ifSetOnOpt(hook(cs2_212, "s", [enumOp(type_int, type_string, Enum.enum_696, varbit_skill_guide_skill_v2)]), Component.interface_499.component_499_27);
+    ifSetOnOp(hook(cs2_212, "s", [enumOp(type_int, type_string, Enum.enum_696, varbit_skill_guide_skill_v2)]), Component.interface_499.component_499_27);
     let str1: string = "";
     let int1: number = 0;
     let [int20, int21] = skillguide_legacy_tabs(varbit_skill_guide_skill_v2);

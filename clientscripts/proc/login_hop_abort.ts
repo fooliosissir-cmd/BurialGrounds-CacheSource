@@ -6,7 +6,7 @@
 function proc_login_hop_abort(): void {
     let int0: component = Component.interface_596.component_596_44;
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         int0 = Component.interface_975.component_975_44;
     }
 

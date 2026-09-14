@@ -35,9 +35,9 @@ function cs2_3085(intArg0: component, intArg1: number, intArg2: number, strArg0:
         ifSetPosition(int5, int6, 0, 0, Component.interface_906.component_906_234);
         ifSetHide(false, Component.interface_906.component_906_234);
         if (intArg1 < 0) {
-            ifSetOnMouseOver(noHook(""), intArg0);
+            ifSetOnMouseRepeat(noHook(""), intArg0);
         } else if (ccFind(intArg0, intArg1) == 1) {
-            ccSetOnMouseOver(noHook(""));
+            ccSetOnMouseRepeat(noHook(""));
         }
     }
 }

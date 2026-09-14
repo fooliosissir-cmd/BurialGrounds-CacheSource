@@ -73,8 +73,8 @@ function cs2_5989(intArg0: component, intArg1: number): void {
     ccCreate(intArg0, 5, int2);
     ccSetPosition(2, 2, 0, 0);
     ccSetSize(4, 4, 1, 1);
-    ccHookMouseEnter(hook(cc_settrans, "Iii", [event_com, int2, 128]));
-    ccHookMouseExit(hook(cc_settrans, "Iii", [event_com, int2, 255]));
+    ccSetOnMouseOver(hook(cc_settrans, "Iii", [event_com, int2, 128]));
+    ccSetOnMouseLeave(hook(cc_settrans, "Iii", [event_com, int2, 255]));
     ccSetTrans(255);
     let int3: graphic = -1;
 

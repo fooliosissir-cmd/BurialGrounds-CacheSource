@@ -45,8 +45,8 @@ function cs2_3279(intArg0: number, intArg1: number, intArg2: number, intArg3: nu
             break;
     }
     ccSetSize(11, 11, 0, 0);
-    ccSetOnMouseOver(hook(rand_map_tooltip, "IiIs", [event_com, event_comsubid, Component.interface_942.component_942_7, strArg0]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_942.component_942_7]));
+    ccSetOnMouseRepeat(hook(rand_map_tooltip, "IiIs", [event_com, event_comsubid, Component.interface_942.component_942_7, strArg0]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_942.component_942_7]));
     ccSetfill(true);
     ccSetHide(false);
 }

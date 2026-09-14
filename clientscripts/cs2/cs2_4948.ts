@@ -14,29 +14,29 @@ function cs2_4948(intArg0: number): number {
         } else if (int1 == 3) {
             return 3;
         } else if (int1 == 4) {
-            if (loadClanVarbit<2553>() == intArg0) {
+            if (pushVarClanBit<2553>() == intArg0) {
                 return 4;
-            } else if (loadClanVarbit<2554>() == intArg0) {
+            } else if (pushVarClanBit<2554>() == intArg0) {
                 return 5;
-            } else if (loadClanVarbit<2555>() == intArg0) {
+            } else if (pushVarClanBit<2555>() == intArg0) {
                 return 6;
-            } else if (loadClanVarbit<2556>() == intArg0) {
+            } else if (pushVarClanBit<2556>() == intArg0) {
                 return 7;
-            } else if (loadClanVarbit<2557>() == intArg0) {
+            } else if (pushVarClanBit<2557>() == intArg0) {
                 return 8;
-            } else if (loadClanVarbit<2558>() == intArg0) {
+            } else if (pushVarClanBit<2558>() == intArg0) {
                 return 9;
-            } else if (loadClanVarbit<2560>() == intArg0) {
+            } else if (pushVarClanBit<2560>() == intArg0) {
                 return 10;
-            } else if (loadClanVarbit<2561>() == intArg0) {
+            } else if (pushVarClanBit<2561>() == intArg0) {
                 return 11;
-            } else if (loadClanVarbit<2562>() == intArg0) {
+            } else if (pushVarClanBit<2562>() == intArg0) {
                 return 12;
-            } else if (loadClanVarbit<2563>() == intArg0) {
+            } else if (pushVarClanBit<2563>() == intArg0) {
                 return 13;
-            } else if (loadClanVarbit<2564>() == intArg0) {
+            } else if (pushVarClanBit<2564>() == intArg0) {
                 return 14;
-            } else if (loadClanVarbit<2565>() == intArg0) {
+            } else if (pushVarClanBit<2565>() == intArg0) {
                 return 15;
             }
         } else if (int1 == 5 || int1 == 6) {

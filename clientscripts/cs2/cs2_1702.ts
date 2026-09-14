@@ -20,8 +20,8 @@ function cs2_1702(intArg0: number): void {
                 ifSetOnTimer(noHook(""), Component.interface_271.component_271_9);
                 proc_prayer_refresh_scrollbar();
                 ifSetHide(false, Component.interface_271.component_271_24);
-                ifSetOnMouseOver(hook(cs2_38, "IIsii", [Component.interface_271.component_271_13, Component.interface_271.component_271_49, str0, 25, 190]), Component.interface_271.component_271_13);
-                hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_271.component_271_49]), Component.interface_271.component_271_13);
+                ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [Component.interface_271.component_271_13, Component.interface_271.component_271_49, str0, 25, 190]), Component.interface_271.component_271_13);
+                ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_271.component_271_49]), Component.interface_271.component_271_13);
             }
         } else {
             if (int1 > 19) {
@@ -30,8 +30,8 @@ function cs2_1702(intArg0: number): void {
                 ifSetSize(16384, int1, 2, 0, Component.interface_271.component_271_9);
                 ifSetSize(16384, int1 + ifGetHeight(Component.interface_271.component_271_0), 2, 1, Component.interface_271.component_271_5);
                 ifSetSize(16, int1 + ifGetHeight(Component.interface_271.component_271_0) + 2, 0, 1, Component.interface_271.component_271_6);
-                ifSetOnMouseOver(noHook(""), Component.interface_271.component_271_13);
-                hookMouseExit(noHook(""), Component.interface_271.component_271_13);
+                ifSetOnMouseRepeat(noHook(""), Component.interface_271.component_271_13);
+                ifSetOnMouseLeave(noHook(""), Component.interface_271.component_271_13);
             }
             if (ifGetHeight(Component.interface_271.component_271_9) <= 19) {
                 ifSetOnTimer(noHook(""), Component.interface_271.component_271_9);

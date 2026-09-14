@@ -14,7 +14,7 @@ function cs2_497(): void {
     let str3: string = "";
 
     if (varc_1367 != -1) {
-        int0 = npcParam(varc_1367, Param.conq_unit_movement);
+        int0 = ncParam(varc_1367, Param.conq_unit_movement);
         if (varc_1368 > int0) {
             str0 = "Movement: " + "<col=00c800>" + tostring(varc_1368) + "<col=ff981f>" + "/" + tostring(int0);
         } else if (varc_1368 < int0) {
@@ -22,7 +22,7 @@ function cs2_497(): void {
         } else {
             str0 = "Movement: " + tostring(varc_1368) + "/" + tostring(int0);
         }
-        int1 = npcParam(varc_1367, Param.conq_unit_damage);
+        int1 = ncParam(varc_1367, Param.conq_unit_damage);
         if (varc_1369 > int1) {
             str1 = "Damage: " + "<col=00c800>" + tostring(varc_1369 * 100) + "<col=ff981f>" + "/" + tostring(int1 * 100);
         } else if (varc_1369 < int1) {
@@ -30,7 +30,7 @@ function cs2_497(): void {
         } else {
             str1 = "Damage: " + tostring(varc_1369 * 100) + "/" + tostring(int1 * 100);
         }
-        int2 = npcParam(varc_1367, Param.conq_unit_health);
+        int2 = ncParam(varc_1367, Param.conq_unit_health);
         if (varc_1370 > int2) {
             str2 = "Health: " + "<col=00c800>" + tostring(varc_1370 * 100) + "<col=ff981f>" + "/" + tostring(int2 * 100);
         } else if (varc_1370 < int2) {
@@ -38,7 +38,7 @@ function cs2_497(): void {
         } else {
             str2 = "Health: " + tostring(varc_1370 * 100) + "/" + tostring(int2 * 100);
         }
-        int3 = npcParam(varc_1367, Param.conq_unit_range);
+        int3 = ncParam(varc_1367, Param.conq_unit_range);
         if (varc_1371 > int3) {
             str3 = "Range: " + "<col=00c800>" + tostring(varc_1371) + "<col=ff981f>" + "/" + tostring(int3);
         } else if (varc_1371 < int3) {

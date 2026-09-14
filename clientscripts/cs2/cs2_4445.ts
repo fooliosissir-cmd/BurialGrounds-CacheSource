@@ -15,6 +15,6 @@ function cs2_4445(): void {
     ifSetHide(false, Component.interface_1110.component_1110_64);
     ifSetText("", Component.interface_1110.component_1110_65);
     let str0: string = "Join another" + "<br>" + "clan's clanchat.";
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1110.component_1110_124, event_com, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xF5B241), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1110.component_1110_91);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1110.component_1110_124, event_com, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xF5B241), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1110.component_1110_91);
     ifSetOp(1, "Join Clan Chat channel", Component.interface_1110.component_1110_91);
 }

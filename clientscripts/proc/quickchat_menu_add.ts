@@ -17,9 +17,9 @@ function quickchat_menu_add(intArg0: component, intArg1: number, intArg2: number
     ccSetColour(colour(0x000000));
     ccSetTextFont(Graphic.p12_full);
     ccSetTextAlign(1, 1, 0);
-    let str0: string = qcGetName(intArg2);
+    let str0: string = chatCatGetDesc(intArg2);
     ccSetOpBase(str0);
-    ccSetOnOpt(hook(clientscript_quickchat_return, "Ii", [intArg0, intArg1]));
+    ccSetOnOp(hook(clientscript_quickchat_return, "Ii", [intArg0, intArg1]));
     ccSetOp(1, "Return to: ");
 
     if (intArg1 > 0) {
@@ -27,7 +27,7 @@ function quickchat_menu_add(intArg0: component, intArg1: number, intArg2: number
     } else if (varc_126 == 1) {
         str0 = " To " + varcstr_27 + ": " + "<col=800000>" + str0 + " " + "<img=2>";
     } else if (varc_126 == 2) {
-        str0 = " [" + "<col=0000ff>" + fcGetChatDisplayName() + "<col=000000>" + "]: " + "<col=800000>" + str0 + " " + "<img=2>";
+        str0 = " [" + "<col=0000ff>" + clanGetChatDisplayName() + "<col=000000>" + "]: " + "<col=800000>" + str0 + " " + "<img=2>";
     } else if (varc_126 == 8) {
         if (activeClanChannelFindAffined() == 1) {
             str0 = " [" + "<col=0000ff>" + activeClanChannelGetClanName() + "<col=000000>" + "]: " + "<col=800000>" + str0 + " " + "<img=2>";
@@ -42,16 +42,16 @@ function quickchat_menu_add(intArg0: component, intArg1: number, intArg2: number
     ccSetText(str0);
     ccSetTextShadow(false);
     ccSetSize(parawidth(str0, ifGetWidth(intArg0), Graphic.p12_full) + 4, ifGetHeight(intArg0), 0, 0);
-    ccHookMouseEnter(hook(cs2_1080, "Ii", [Component.interface_137.component_137_2, intArg1]));
-    ccHookMouseExit(hook(cs2_1081, "Ii", [Component.interface_137.component_137_2, intArg1]));
+    ccSetOnMouseOver(hook(cs2_1080, "Ii", [Component.interface_137.component_137_2, intArg1]));
+    ccSetOnMouseLeave(hook(cs2_1081, "Ii", [Component.interface_137.component_137_2, intArg1]));
     ccCreate<1>(Component.interface_137.component_137_2, 3, intArg1);
     ccSetSize<1>(ccGetWidth(), ccGetHeight(), 0, 0);
     ccSetColour<1>(colour(0x577E45));
     ccSetfill<1>(true);
     ccSetHide<1>(true);
     ifSetHide(false, int5);
-    let int7: number = chatCatGetDesc(intArg2);
-    let int8: number = chatCatGetSubCatCount(intArg2);
+    let int7: number = chatCatGetSubCatCount(intArg2);
+    let int8: number = chatCatGetPhraseCount(intArg2);
     let int9: number = 0;
     let int10: number = 0;
     let int11: number = 0;
@@ -67,12 +67,12 @@ function quickchat_menu_add(intArg0: component, intArg1: number, intArg2: number
         ccSetTextFont(Graphic.p12_full);
         ccSetTextAlign(0, 1, 0);
         int13 = chatCatGetSubCat(intArg2, int9);
-        str0 = qcGetName(int13);
-        ccSetOnOpt(hook(clientscript_quickchat_menu_select, "IIiIik", [int5, int6, int10, intArg0, intArg1 + 1, int13]));
+        str0 = chatCatGetDesc(int13);
+        ccSetOnOp(hook(clientscript_quickchat_menu_select, "IIiIik", [int5, int6, int10, intArg0, intArg1 + 1, int13]));
         ccSetOpBase(str0);
         ccSetOp(1, "Select: ");
-        ccHookMouseEnter(hook(cs2_1082, "iIi", [intArg1, int6, int10]));
-        ccHookMouseExit(hook(cs2_1083, "iIi", [intArg1, int6, int10]));
+        ccSetOnMouseOver(hook(cs2_1082, "iIi", [intArg1, int6, int10]));
+        ccSetOnMouseLeave(hook(cs2_1083, "iIi", [intArg1, int6, int10]));
         int15 = charTouppercase(chatCatGetSubCatShortcut(intArg2, int9));
         if (charIsalphanumeric(int15) == 1) {
             str0 = "<col=555555>" + appendChar("", int15) + ". " + "<col=000000>" + str0 + " " + "<img=2>";
@@ -97,11 +97,11 @@ function quickchat_menu_add(intArg0: component, intArg1: number, intArg2: number
         ccSetTextAlign(0, 1, 0);
         int14 = chatCatGetPhrase(intArg2, int9);
         str0 = chatPhraseGetText(int14);
-        ccSetOnOpt(hook(clientscript_quickchat_phrase, "Iei", [intArg0, int14, intArg1]));
+        ccSetOnOp(hook(clientscript_quickchat_phrase, "Iei", [intArg0, int14, intArg1]));
         ccSetOpBase(str0);
         ccSetOp(1, "Send: ");
-        ccHookMouseEnter(hook(cs2_1082, "iIi", [intArg1, int6, int10]));
-        ccHookMouseExit(hook(cs2_1083, "iIi", [intArg1, int6, int10]));
+        ccSetOnMouseOver(hook(cs2_1082, "iIi", [intArg1, int6, int10]));
+        ccSetOnMouseLeave(hook(cs2_1083, "iIi", [intArg1, int6, int10]));
         if (int9 < 10) {
             str0 = "<col=555555>" + tostring((int9 + 1) % 10) + ". " + "<col=000000>" + str0;
         }
@@ -120,12 +120,12 @@ function quickchat_menu_add(intArg0: component, intArg1: number, intArg2: number
         ccSetColour(colour(0x000000));
         ccSetTextFont(Graphic.p12_full);
         ccSetTextAlign(0, 1, 0);
-        str0 = qcGetName(intArg3);
-        ccSetOnOpt(hook(clientscript_quickchat_menu_select, "IIiIik", [int5, int6, int10, intArg0, intArg1 + 1, intArg3]));
+        str0 = chatCatGetDesc(intArg3);
+        ccSetOnOp(hook(clientscript_quickchat_menu_select, "IIiIik", [int5, int6, int10, intArg0, intArg1 + 1, intArg3]));
         ccSetOpBase(str0);
         ccSetOp(1, "Select: ");
-        ccHookMouseEnter(hook(cs2_1082, "iIi", [intArg1, int6, int10]));
-        ccHookMouseExit(hook(cs2_1083, "iIi", [intArg1, int6, int10]));
+        ccSetOnMouseOver(hook(cs2_1082, "iIi", [intArg1, int6, int10]));
+        ccSetOnMouseLeave(hook(cs2_1083, "iIi", [intArg1, int6, int10]));
         str0 = "<col=555555>" + "X. " + "<col=000000>" + str0 + " " + "<img=2>";
         ccSetText(str0);
         ccSetTextShadow(false);
@@ -141,11 +141,11 @@ function quickchat_menu_add(intArg0: component, intArg1: number, intArg2: number
         ccSetColour(colour(0x000000));
         ccSetTextFont(Graphic.p12_full);
         ccSetTextAlign(0, 1, 0);
-        ccSetOnOpt(hook(clientscript_quickchat_enter_search, "IIii", [int5, int6, int10, intArg1]));
+        ccSetOnOp(hook(clientscript_quickchat_enter_search, "IIii", [int5, int6, int10, intArg1]));
         ccSetOpBase("Search phrases");
         ccSetOp(1, "Select: ");
-        ccHookMouseEnter(hook(cs2_1082, "iIi", [intArg1, int6, int10]));
-        ccHookMouseExit(hook(cs2_1083, "iIi", [intArg1, int6, int10]));
+        ccSetOnMouseOver(hook(cs2_1082, "iIi", [intArg1, int6, int10]));
+        ccSetOnMouseLeave(hook(cs2_1083, "iIi", [intArg1, int6, int10]));
         ccSetText("<col=555555>" + "Enter. " + "<col=000000>" + "Search " + "<img=2>");
         ccSetTextShadow(false);
         int11 = parawidth(str0, ifGetWidth(intArg0), Graphic.p12_full);

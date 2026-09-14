@@ -87,37 +87,37 @@ function proc_clansettings_list_build(): void {
             ccSetSize(int22, int23, 0, 0);
             ccSetGraphic(enumOp(type_int, type_graphic, Enum.enum_3712, int33));
             str1 = enumOp(type_int, type_string, Enum.clan_core_player_rank_int_to_rank, int33);
-            ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1096.component_1096_106, int2, int26, str1, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1096.component_1096_106]));
+            ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1096.component_1096_106, int2, int26, str1, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1096.component_1096_106]));
         }
         ccCreate(int6, 5, int26);
         if (int35 == 0) {
             ccSetSize(int22, int23, 0, 0);
             switch (int33) {
                 case 0:
-                    int34 = loadClanSettingVarbit<178>();
+                    int34 = pushVarClanSettingBit<178>();
                     break;
                 case 1:
-                    int34 = loadClanSettingVarbit<179>();
+                    int34 = pushVarClanSettingBit<179>();
                     break;
                 case 2:
-                    int34 = loadClanSettingVarbit<180>();
+                    int34 = pushVarClanSettingBit<180>();
                     break;
                 case 3:
-                    int34 = loadClanSettingVarbit<181>();
+                    int34 = pushVarClanSettingBit<181>();
                     break;
                 case 4:
-                    int34 = loadClanSettingVarbit<182>();
+                    int34 = pushVarClanSettingBit<182>();
                     break;
                 case 5:
-                    int34 = loadClanSettingVarbit<183>();
+                    int34 = pushVarClanSettingBit<183>();
                     break;
             }
             if (int34 == 1 || int33 >= 100) {
                 ccSetGraphic(Graphic.aif_clan_rank_icons_11);
                 str1 = "Rated Clan" + "<br>" + "Wars Leader";
-                ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1096.component_1096_106, int6, int26, str1, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1096.component_1096_106]));
+                ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1096.component_1096_106, int6, int26, str1, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1096.component_1096_106]));
             }
         }
         ccCreate(int7, 5, int26);
@@ -129,7 +129,7 @@ function proc_clansettings_list_build(): void {
             ccSetSize(int27, int28, 0, 0);
             ccSetGraphic(gameframe_skin_graphic(Graphic.aif_browngrad_whole_btn_3));
             ccSetOp(1, "Show details");
-            ccSetOnOpt(hook(cs2_4303, "", []));
+            ccSetOnOp(hook(cs2_4303, "", []));
         }
         int26 = int26 + 1;
     }

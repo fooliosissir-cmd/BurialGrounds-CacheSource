@@ -60,7 +60,7 @@ function cs2_3388(intArg0: number, intArg1: number, intArg2: boolean): void {
             proc_autosetup(intArg1);
             break;
     }
-    let int4: number = detailGetActiveToolkit();
+    let int4: number = detailGetToolkit();
 
     if (intArg0 == 0 || intArg2 == true) {
         cs2_3387(int4, getWindowMode(), ...graphics_options_reviewoptions(int4), intArg1);

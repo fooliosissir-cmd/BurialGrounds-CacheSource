@@ -16,5 +16,5 @@ function proc_bank_cert_button(): void {
         str0 = "Switch to item withdrawal mode";
     }
     ifSetOp(1, str0, Component.interface_762.component_762_19);
-    ifSetOnMouseOver(hook(cs2_38, "IIsii", [event_com, Component.interface_762.component_762_121, str0, 25, 150]), Component.interface_762.component_762_19);
+    ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [event_com, Component.interface_762.component_762_121, str0, 25, 150]), Component.interface_762.component_762_19);
 }

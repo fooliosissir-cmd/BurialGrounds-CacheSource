@@ -10,7 +10,7 @@ function quickchat_phrase_listdialog(intArg0: number): void {
     if (varc_126 == 1) {
         str0 = "To " + varcstr_27 + ": " + "<col=800000>" + str0;
     } else if (varc_126 == 2) {
-        str0 = "[" + "<col=0000ff>" + fcGetChatDisplayName() + "<col=000000>" + "]: " + "<col=800000>" + str0;
+        str0 = "[" + "<col=0000ff>" + clanGetChatDisplayName() + "<col=000000>" + "]: " + "<col=800000>" + str0;
     } else if (varc_126 == 8) {
         if (activeClanChannelFindAffined() == 1) {
             str0 = "[" + "<col=0000ff>" + activeClanChannelGetClanName() + "<col=000000>" + "]: " + "<col=800000>" + str0;
@@ -37,7 +37,7 @@ function quickchat_phrase_listdialog(intArg0: number): void {
     ifSetText(str0, Component.interface_137.component_137_3);
     ifSetTextShadow(false, Component.interface_137.component_137_3);
     ccDeleteAll(Component.interface_137.component_137_12);
-    let int1: Enum = qcGetPhraseValue(intArg0, varc_134, 0);
+    let int1: Enum = chatPhraseGetdynamiccommandparamEnum(intArg0, varc_134, 0);
     ccCreate(Component.interface_137.component_137_12, 3, 0);
     let int2: number = ifGetWidth(Component.interface_137.component_137_12);
     let int3: number = int2 - 8;
@@ -54,7 +54,7 @@ function quickchat_phrase_listdialog(intArg0: number): void {
         ccSetText(str0);
         ccSetTextFont(Graphic.p12_full);
         ccSetTextShadow(false);
-        ccHookMouseEnter(hook(cs2_1045, "iIi", [int4, Component.interface_137.component_137_12, int5]));
+        ccSetOnMouseOver(hook(cs2_1045, "iIi", [int4, Component.interface_137.component_137_12, int5]));
         ccSetOnClick(hook(clientscript_quickchat_phrase_int, "Iei", [Component.interface_137.component_137_1, intArg0, int4 - 1]));
         array0[int5] = int5;
         str0 = enumOp(type_int, type_string, int1, int4);
@@ -69,7 +69,7 @@ function quickchat_phrase_listdialog(intArg0: number): void {
         while (int5 <= int6) {
             if (ccFind(Component.interface_137.component_137_12, array0[int5] + 1) == 1) {
                 ccSetPosition(4, 14 * int5, 0, 0);
-                ccHookMouseEnter(hook(cs2_1045, "iIi", [array0[int5] + 1, Component.interface_137.component_137_12, int5]));
+                ccSetOnMouseOver(hook(cs2_1045, "iIi", [array0[int5] + 1, Component.interface_137.component_137_12, int5]));
             }
             int5 = int5 + 1;
         }

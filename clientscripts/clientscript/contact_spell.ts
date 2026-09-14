@@ -35,8 +35,8 @@ function contact_spell(): void {
         ccSetPosition(int3 * int2, int4 * int5, 0, 0);
         if (int9 == 1) {
             ccSetOp(1, "Speak-to");
-            ccHookMouseEnter(hook(cs2_1860, "iA", [event_comsubid, int10]));
-            ccHookMouseExit(hook(cs2_2607, "i", [event_comsubid]));
+            ccSetOnMouseOver(hook(cs2_1860, "iA", [event_comsubid, int10]));
+            ccSetOnMouseLeave(hook(cs2_2607, "i", [event_comsubid]));
         }
         ccCreate(Component.interface_88.component_88_6, 4, int0);
         ccSetSize(int2, int5 - int6 * 2, 0, 0);

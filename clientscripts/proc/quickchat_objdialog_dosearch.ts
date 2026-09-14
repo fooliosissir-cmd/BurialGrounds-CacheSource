@@ -51,7 +51,7 @@ function quickchat_objdialog_dosearch(intArg0: component, intArg1: component, in
             ccSetText(ocName(int8));
             ccSetTextFont(Graphic.p12_full);
             ccSetTextShadow(false);
-            ccHookMouseEnter(hook(quickchat_objdialog_highlight, "iI", [int7, intArg1]));
+            ccSetOnMouseOver(hook(quickchat_objdialog_highlight, "iI", [int7, intArg1]));
             ccSetOnClick(hook(clientscript_quickchat_phrase_obj, "Ieo", [intArg0, intArg3, int8]));
             int7 = int7 + 1;
         }

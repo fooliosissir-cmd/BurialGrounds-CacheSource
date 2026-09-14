@@ -28,8 +28,8 @@ function cs2_319(intArg0: component, intArg1: number, intArg2: number, strArg0: 
         ccSetSize(48, 52, 0, 0);
         ccSetPosition(int5, int6, 0, 0);
         ccSetGraphic(Graphic.km_shoptile_0);
-        ccHookMouseEnter(hook(cs2_6114, "Ii1", [event_com, int15, false]));
-        ccHookMouseExit(hook(cs2_6114, "Ii1", [event_com, int15, true]));
+        ccSetOnMouseOver(hook(cs2_6114, "Ii1", [event_com, int15, false]));
+        ccSetOnMouseLeave(hook(cs2_6114, "Ii1", [event_com, int15, true]));
         ccCreate(intArg0, 5, int15);
         int15 = int15 + 1;
         ccSetSize(48, 52, 0, 0);

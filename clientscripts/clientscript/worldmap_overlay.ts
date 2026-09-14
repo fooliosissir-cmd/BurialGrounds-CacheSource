@@ -13,7 +13,7 @@ function worldmap_overlay(intArg0: component, intArg1: component, intArg2: numbe
     if (int5 <= 0) {
         return;
     }
-    let [int6, int7] = worldMapGetConfigSize();
+    let [int6, int7] = worldMapGetSize();
 
     if (int6 <= 0) {
         return;

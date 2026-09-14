@@ -35,7 +35,7 @@ function proc_loginscreen_load(intArg0: component, intArg1: component, intArg2: 
     cs2_3964();
     varcstr_32 = "";
     varcstr_33 = "";
-    browserRefresh();
+    videoAdvertForceRemove();
     varc_loginscreen_pvp_warned = 0;
     varc_1093 = 0;
     ifOpenSubClient(Component.interface_744.component_744_50, Interface.interface_882);
@@ -51,14 +51,14 @@ function proc_loginscreen_load(intArg0: component, intArg1: component, intArg2: 
         varc_1091 = 11;
         proc_loginscreen_setactivemenu_full(11, true, false);
     } else {
-        if (varc_1240 == 2 && detailGetActiveToolkit() != 0) {
+        if (varc_1240 == 2 && detailGetToolkit() != 0) {
             varc_1240 = 3;
         }
-        if (detailGetChosesafemode() == 0 && (varc_1240 < 3 || detailGetSafemode() == 1 || detailGetToolkit() == 0)) {
+        if (detailGetChosesafemode() == 0 && (varc_1240 < 3 || detailGetSafemode() == 1 || detailGetToolkitDefault() == 0)) {
             varc_1090 = 0;
             varc_1091 = 0;
             proc_loginscreen_setactivemenu_full(0, true, false);
-        } else if (hasBase64url() == 1) {
+        } else if (hasSignonKey() == 1) {
             varc_1090 = 5;
             varc_1091 = 5;
             proc_loginscreen_setactivemenu_full(5, true, false);
@@ -89,7 +89,7 @@ function proc_loginscreen_load(intArg0: component, intArg1: component, intArg2: 
         varc_1701 = 1;
     }
 
-    if (checkJavaVersion() == 0) {
+    if (javaVersionSupported() == 0) {
         ifOpenSubClient(Component.interface_744.component_744_116, Interface.interface_405);
         ifSetnoclickthrough(true, Component.interface_744.component_744_116);
     }

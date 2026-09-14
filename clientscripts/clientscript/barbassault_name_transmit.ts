@@ -59,12 +59,12 @@ function barbassault_name_transmit(intArg0: component): void {
         while (parawidth(str1 + "... ", 2147483647, int1) > int3) {
             str1 = subString(str1, 0, stringLength(str1) - 1);
         }
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [event_com, int2, str0, 25, 5000]), intArg0);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [int2]), intArg0);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [event_com, int2, str0, 25, 5000]), intArg0);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [int2]), intArg0);
         str0 = str1 + "...";
     } else {
-        ifSetOnMouseOver(noHook(""), intArg0);
-        hookMouseExit(noHook(""), intArg0);
+        ifSetOnMouseRepeat(noHook(""), intArg0);
+        ifSetOnMouseLeave(noHook(""), intArg0);
     }
 
     switch (intArg0) {

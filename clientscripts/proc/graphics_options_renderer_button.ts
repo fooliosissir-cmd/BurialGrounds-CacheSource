@@ -26,12 +26,12 @@ function graphics_options_renderer_button(intArg0: number, intArg1: component, i
     ccSetTextShadow(false);
     ccSetText(strArg0);
     proc_graphics_options_renderer_button_highlight(intArg1, intArg2, false);
-    hookMouseExit(hook(clientscript_graphics_options_renderer_button_highlight, "Ii1", [intArg1, intArg2, false]), intArg1);
-    hookMouseEnter(hook(clientscript_graphics_options_renderer_button_highlight, "Ii1", [intArg1, intArg2, true]), intArg1);
+    ifSetOnMouseLeave(hook(clientscript_graphics_options_renderer_button_highlight, "Ii1", [intArg1, intArg2, false]), intArg1);
+    ifSetOnMouseOver(hook(clientscript_graphics_options_renderer_button_highlight, "Ii1", [intArg1, intArg2, true]), intArg1);
     if (intArg0 == 0) {
         ifSetOnClick(hook(cs2_2697, "ii", [intArg2, intArg0]), intArg1);
     } else {
         ifSetOp(1, strArg0, intArg1);
-        ifSetOnOpt(hook(cs2_2697, "ii", [intArg2, intArg0]), intArg1);
+        ifSetOnOp(hook(cs2_2697, "ii", [intArg2, intArg0]), intArg1);
     }
 }

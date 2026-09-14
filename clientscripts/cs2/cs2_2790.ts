@@ -57,14 +57,14 @@ function cs2_2790(): void {
             int9 = int8;
         } else {
             ccSetGraphic(Graphic.options_radio_buttons_0);
-            ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
-            ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
-            ccHookMouseEnter<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
-            ccHookMouseExit<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
+            ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
+            ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
+            ccSetOnMouseOver<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
+            ccSetOnMouseLeave<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
             ccSetOp(1, str0);
             ccSetOp<1>(1, str0);
-            ccSetOnOpt(hook(cs2_2831, "iKi", [event_opindex, int7, int2]));
-            ccSetOnOpt<1>(hook(cs2_2831, "iKi", [event_opindex, int7, int2]));
+            ccSetOnOp(hook(cs2_2831, "iKi", [event_opindex, int7, int2]));
+            ccSetOnOp<1>(hook(cs2_2831, "iKi", [event_opindex, int7, int2]));
         }
         int4 = int4 + 1;
         int8 = int8 + 19;
@@ -109,8 +109,8 @@ function cs2_2790(): void {
         ccSetfill(true);
         ccSetPosition(int12 * ccGetWidth() + int11, int8, 0, 0);
         ccSetColour(enumOp(type_int, type_int, Enum.player_kit_hair_colour, int4));
-        ccSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, event_comsubid, Component.interface_309.component_309_22, str0, 0, 512]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_309.component_309_22]));
+        ccSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, event_comsubid, Component.interface_309.component_309_22, str0, 0, 512]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_309.component_309_22]));
         ccCreate<1>(Component.interface_309.component_309_16, 5, ifGetNextSubId(Component.interface_309.component_309_16));
         ccSetSize<1>(ccGetWidth(), ccGetHeight(), 0, 0);
         ccSetPosition<1>(ccGetX(), ccGetY(), 0, 0);
@@ -120,11 +120,11 @@ function cs2_2790(): void {
         } else {
             int13 = Graphic.graphic_1041;
             ccSetGraphic<1>(int13);
-            ccHookMouseExit<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int13]));
+            ccSetOnMouseLeave<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int13]));
             int13 = Graphic.graphic_1042;
-            ccHookMouseEnter<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int13]));
+            ccSetOnMouseOver<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int13]));
             ccSetOp<1>(1, str0);
-            ccSetOnOpt<1>(hook(cs2_2832, "ii", [event_opindex, int14]));
+            ccSetOnOp<1>(hook(cs2_2832, "ii", [event_opindex, int14]));
         }
         int4 = int4 + 1;
         if (int12 < int10 - 1) {

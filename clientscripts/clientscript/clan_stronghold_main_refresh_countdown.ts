@@ -58,26 +58,26 @@ function clan_stronghold_main_refresh_countdown(): void {
     let str1: string = "";
 
     if (clanProfileFind() == 1) {
-        ifSetText(tostring(loadClanVar<2136>()), int0);
-        if (cs2_4786(loadClanVarbit<2580>() - loadClanVarbit<2633>()) == 1) {
+        ifSetText(tostring(pushVarClan<2136>()), int0);
+        if (cs2_4786(pushVarClanBit<2580>() - pushVarClanBit<2633>()) == 1) {
             ifSetColour(colour(0x28C851), int0);
             str1 = "Sufficient full members have visited to allow all upkeep and upgrades.";
-        } else if (cs2_4787(loadClanVarbit<2580>() - loadClanVarbit<2633>()) == 1) {
-            if (loadClanVarbit<2580>() == 7) {
+        } else if (cs2_4787(pushVarClanBit<2580>() - pushVarClanBit<2633>()) == 1) {
+            if (pushVarClanBit<2580>() == 7) {
                 ifSetColour(colour(0x28C851), int0);
                 str1 = "Sufficient full members have visited to allow all upkeep and upgrades.";
             } else {
                 ifSetColour(colour(0xD0C420), int0);
                 str1 = "Sufficient full members have visited to allow all upkeep, but not to upgrade your citadel.";
             }
-        } else if (loadClanVar<2136>() > 4) {
+        } else if (pushVarClan<2136>() > 4) {
             ifSetColour(colour(0xC4312D), int0);
             str1 = "More full members must visit your citadel to allow you to perform upkeep on it.";
         } else {
             ifSetColour(colour(0xC4312D), int0);
             str1 = "More full members must visit your citadel to avoid losing access to it next build tick.";
         }
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, event_com, -1, str1, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), int2);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), int2);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, event_com, -1, str1, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), int2);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), int2);
     }
 }

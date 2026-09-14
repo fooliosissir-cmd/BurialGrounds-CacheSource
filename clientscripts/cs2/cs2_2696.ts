@@ -31,8 +31,8 @@ function cs2_2696(intArg0: component, intArg1: number, intArg2: number, intArg3:
 
     if (ccFind(intArg0, intArg1) == 1) {
         ccSetOnClick(hook(cs2_2695, "IiiiiJiiiii", [event_com, event_comsubid, intArg2, intArg3, intArg4, intArg5, intArg6, intArg7, intArg8, intArg9, intArg10]));
-        ccHookMouseEnter(hook(cs2_2691, "Ii1ii1", [event_com, intArg2, true, intArg3, colour(0x80786D), true]));
-        ccHookMouseExit(hook(cs2_2691, "Ii1ii1", [event_com, intArg2, false, intArg3, colour(0x5F5B52), true]));
+        ccSetOnMouseOver(hook(cs2_2691, "Ii1ii1", [event_com, intArg2, true, intArg3, colour(0x80786D), true]));
+        ccSetOnMouseLeave(hook(cs2_2691, "Ii1ii1", [event_com, intArg2, false, intArg3, colour(0x5F5B52), true]));
         if (ccFind<1>(intArg0, intArg3) == 1) {
             ccSetColour<1>(colour(0x5F5B52));
             ccSetSize<1>(ccGetWidth<1>(), ccGetHeight(), 0, 0);

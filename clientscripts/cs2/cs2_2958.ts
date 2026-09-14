@@ -12,6 +12,6 @@ function cs2_2958(): void {
         int1 = Graphic.graphic_8560;
         ifSetGraphic(Graphic.graphic_8558, Component.interface_751.component_751_15);
     }
-    hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int1]), Component.interface_751.component_751_15);
-    hookMouseExit(hook(graphic_swapper, "Id", [event_com, int0]), Component.interface_751.component_751_15);
+    ifSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int1]), Component.interface_751.component_751_15);
+    ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int0]), Component.interface_751.component_751_15);
 }

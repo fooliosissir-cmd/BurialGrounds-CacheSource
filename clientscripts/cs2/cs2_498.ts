@@ -45,7 +45,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int13 = Struct.conq_command_shield_wall;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_15);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_15);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_15);
             ifSetHide(true, Component.interface_1012.component_1012_16);
             ifSetHide(true, Component.interface_1012.component_1012_17);
             ifSetHide(true, Component.interface_1012.component_1012_18);
@@ -69,7 +69,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int11 = 1;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_15);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_15);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_15);
             ifSetHide(false, Component.interface_1012.component_1012_16);
             ifSetPosition(115, ifGetY(Component.interface_1012.component_1012_16), 0, 0, Component.interface_1012.component_1012_16);
             if (varc_1373 == 1 && int8 == 0) {
@@ -84,7 +84,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int13 = Struct.conq_command_shield_wall;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_16);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_16);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_16);
             ifSetHide(true, Component.interface_1012.component_1012_17);
             ifSetHide(true, Component.interface_1012.component_1012_18);
             ifSetHide(true, Component.interface_1012.component_1012_19);
@@ -104,7 +104,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int10 = 1;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_15);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_15);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_15);
             ifSetHide(false, Component.interface_1012.component_1012_16);
             ifSetPosition(80, ifGetY(Component.interface_1012.component_1012_16), 0, 0, Component.interface_1012.component_1012_16);
             if (varc_1373 == 1 && int8 == 0) {
@@ -120,7 +120,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int11 = 1;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_16);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_16);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_16);
             ifSetHide(false, Component.interface_1012.component_1012_17);
             ifSetPosition(130, ifGetY(Component.interface_1012.component_1012_17), 0, 0, Component.interface_1012.component_1012_17);
             if (varc_1374 == 1 && int9 == 0) {
@@ -133,7 +133,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int13 = Struct.conq_command_shield_wall;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_17);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_17);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_17);
             ifSetHide(true, Component.interface_1012.component_1012_18);
             ifSetHide(true, Component.interface_1012.component_1012_19);
         } else if (int6 == 4) {
@@ -149,7 +149,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int9 = 1;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_15);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_15);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_15);
             ifSetHide(false, Component.interface_1012.component_1012_16);
             ifSetPosition(61, ifGetY(Component.interface_1012.component_1012_16), 0, 0, Component.interface_1012.component_1012_16);
             if (varc_1373 == 1 && int8 == 0) {
@@ -162,7 +162,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int10 = 1;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_16);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_16);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_16);
             ifSetHide(false, Component.interface_1012.component_1012_17);
             ifSetPosition(104, ifGetY(Component.interface_1012.component_1012_17), 0, 0, Component.interface_1012.component_1012_17);
             if (varc_1374 == 1 && int9 == 0) {
@@ -175,7 +175,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int11 = 1;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_17);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_17);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_17);
             ifSetHide(false, Component.interface_1012.component_1012_18);
             ifSetPosition(147, ifGetY(Component.interface_1012.component_1012_18), 0, 0, Component.interface_1012.component_1012_18);
             if (varc_1375 == 1 && int10 == 0) {
@@ -186,7 +186,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int13 = Struct.conq_command_shield_wall;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_18);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_18);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_18);
             ifSetHide(true, Component.interface_1012.component_1012_19);
         } else {
             ifSetHide(false, Component.interface_1012.component_1012_15);
@@ -198,7 +198,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int8 = 1;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_15);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_15);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_15);
             ifSetHide(false, Component.interface_1012.component_1012_16);
             ifSetPosition(47, ifGetY(Component.interface_1012.component_1012_16), 0, 0, Component.interface_1012.component_1012_16);
             if (varc_1373 == 1 && int8 == 0) {
@@ -208,7 +208,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int9 = 1;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_16);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_16);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_16);
             ifSetHide(false, Component.interface_1012.component_1012_17);
             ifSetPosition(83, ifGetY(Component.interface_1012.component_1012_17), 0, 0, Component.interface_1012.component_1012_17);
             if (varc_1374 == 1 && int9 == 0) {
@@ -218,7 +218,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int10 = 1;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_17);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_17);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_17);
             ifSetHide(false, Component.interface_1012.component_1012_18);
             ifSetPosition(119, ifGetY(Component.interface_1012.component_1012_18), 0, 0, Component.interface_1012.component_1012_18);
             if (varc_1375 == 1 && int10 == 0) {
@@ -228,7 +228,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int11 = 1;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_18);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_18);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_18);
             ifSetHide(false, Component.interface_1012.component_1012_19);
             ifSetPosition(155, ifGetY(Component.interface_1012.component_1012_19), 0, 0, Component.interface_1012.component_1012_19);
             if (varc_1376 == 1 && int11 == 0) {
@@ -237,7 +237,7 @@ function cs2_498(intArg0: number, intArg1: number, intArg2: number, intArg3: num
                 int13 = Struct.conq_command_shield_wall;
             }
             ifSetGraphic(structParam(int13, Param.conq_command_icon), Component.interface_1012.component_1012_19);
-            ifSetOnMouseOver(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_19);
+            ifSetOnMouseRepeat(hook(cs2_499, "i", [structParam(int13, Param.conq_command_id)]), Component.interface_1012.component_1012_19);
         }
     }
 }

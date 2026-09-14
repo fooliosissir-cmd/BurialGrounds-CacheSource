@@ -13,8 +13,8 @@ function cs2_1523(): void {
         ccSetText("Back");
         ccSetColour(colour(0x46320A));
         ccSetTextShadow(false);
-        ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
-        ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x46320A)]));
+        ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+        ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x46320A)]));
         ifSetOp(1, "Back to Index", Component.interface_275.component_275_8);
     }
 }

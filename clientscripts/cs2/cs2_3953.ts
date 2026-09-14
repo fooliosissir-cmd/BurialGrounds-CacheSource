@@ -7,8 +7,8 @@ function cs2_3953(intArg0: number): void {
     let int1: number = cs2_5638(intArg0);
 
     if (int1 == 1) {
-        createCreaterequest(6);
+        createStepReached(6);
     } else {
-        createCreaterequest(7);
+        createStepReached(7);
     }
 }

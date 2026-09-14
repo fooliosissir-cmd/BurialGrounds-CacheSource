@@ -51,7 +51,7 @@ function cs2_390(intArg0: boolean): void {
         }
         cs2_363(int2, int7, Enum.enum_3281, structParam(int6, Param.playerdesign4_outfit_image), true, 85, 181, 1, "", int5, "");
         ifSetOp(1, "Select outfit", int2);
-        ifSetOnOpt(hook(cs2_352, "ii", [event_opindex, int3 + 1]), int2);
+        ifSetOnOp(hook(cs2_352, "ii", [event_opindex, int3 + 1]), int2);
         int3 = int3 + 1;
         int6 = playerdesign4_getoutfit(int3, int4, intArg0);
         int2 = enumOp(type_int, type_component, Enum.enum_3281, int3);

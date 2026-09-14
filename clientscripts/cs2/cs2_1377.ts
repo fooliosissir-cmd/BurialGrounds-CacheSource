@@ -29,7 +29,7 @@ function cs2_1377(intArg0: component, intArg1: number): void {
     }
 
     if (int2 != -1) {
-        ifSetText(npcParam(int2, Param.conq_unit_initial), intArg0);
+        ifSetText(ncParam(int2, Param.conq_unit_initial), intArg0);
     } else {
         ifSetText("", intArg0);
     }

@@ -30,7 +30,7 @@ function cs2_5118(intArg0: component): void {
             ccSetTextShadow<1>(true);
             ccSetText<1>(str0);
             ccSetOp(1, str0);
-            ccSetOnOpt(hook(cs2_5119, "i", [int2]));
+            ccSetOnOp(hook(cs2_5119, "i", [int2]));
             int1 = int1 + ccGetHeight();
         } else {
             ccSetHide(true);

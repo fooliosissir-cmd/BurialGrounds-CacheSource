@@ -21,7 +21,7 @@ function cs2_387(intArg0: boolean): void {
         int6 = false;
     }
     cs2_2719(Component.interface_1028.component_1028_62, str0, int1, str2, int6);
-    ifSetOnOpt(hook(cs2_2718, "Isis1", [Component.interface_1028.component_1028_62, str0, int1, str2, true]), Component.interface_1028.component_1028_62);
+    ifSetOnOp(hook(cs2_2718, "Isis1", [Component.interface_1028.component_1028_62, str0, int1, str2, true]), Component.interface_1028.component_1028_62);
     int5 = int5 + int1 + 10;
     let int7: boolean = false;
 
@@ -29,7 +29,7 @@ function cs2_387(intArg0: boolean): void {
         int7 = true;
     }
     cs2_2719(Component.interface_1028.component_1028_63, str1, int1, str2, int7);
-    ifSetOnOpt(hook(cs2_2718, "Isis1", [Component.interface_1028.component_1028_63, str1, int1, str2, true]), Component.interface_1028.component_1028_63);
+    ifSetOnOp(hook(cs2_2718, "Isis1", [Component.interface_1028.component_1028_63, str1, int1, str2, true]), Component.interface_1028.component_1028_63);
     let int8: number = min(int2, enumGetoutputcount(int4));
     int1 = max((int8 + 1) * int3 + (89 - int3), scale(4, 5, 765));
     int1 = int8 * int3 + (89 - int3);
@@ -90,7 +90,7 @@ function cs2_387(intArg0: boolean): void {
                     int13 = 0;
                 }
                 cs2_363(int10, int9, Enum.enum_3280, int11, true, 89, 89, 2, "", int13, "");
-                ifSetOnOpt(hook(cs2_351, "ii", [event_opindex, int12 + 1]), int10);
+                ifSetOnOp(hook(cs2_351, "ii", [event_opindex, int12 + 1]), int10);
             } else {
                 cs2_363(int10, -1, -1, -1, false, 0, 0, 0, "", 0, "");
             }

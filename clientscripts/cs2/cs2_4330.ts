@@ -4,5 +4,5 @@
 // cs2_4330
 
 function cs2_4330(longArg0: bigint): void {
-    openurlNoLogin("clan-forum", "threads.ws?threadid=" + clanforumqfcTostring(longArg0), 0);
+    openurl("clan-forum", "threads.ws?threadid=" + clanforumqfcTostring(longArg0), 0);
 }

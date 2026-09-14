@@ -11,8 +11,8 @@ function clan_field_editor_init(intArg0: component): void {
     cs2_4211(Component.interface_1111.component_1111_5, Graphic.graphic_4040, colour(0xEFB063), colour(0x302821));
     ifSetOnVarClanTransmit(hook(cs2_5039, "", []), intArg0);
     ifSetOnScrollWheel(hook(clientscript_clan_field_editor_zoom, "Ii", [intArg0, event_mousey]), Component.interface_1111.component_1111_12);
-    ifSetOnOpt(hook(clientscript_clan_field_editor_zoom, "Ii", [intArg0, 1]), Component.interface_1111.component_1111_43);
-    ifSetOnOpt(hook(clientscript_clan_field_editor_zoom, "Ii", [intArg0, -1]), Component.interface_1111.component_1111_50);
+    ifSetOnOp(hook(clientscript_clan_field_editor_zoom, "Ii", [intArg0, 1]), Component.interface_1111.component_1111_43);
+    ifSetOnOp(hook(clientscript_clan_field_editor_zoom, "Ii", [intArg0, -1]), Component.interface_1111.component_1111_50);
     ifSetOnDragComplete(hook(cs2_5043, "IIi", [intArg0, event_com, event_mousex]), 72810544);
     let int1: number = 0;
     let int2: number = pow(112, 2);
@@ -96,7 +96,7 @@ function clan_field_editor_init(intArg0: component): void {
     ccSetHide(true);
     ifSetOnTimer(hook(clan_field_yah, "Ii", [event_com, ccGetId()]), Component.interface_1111.component_1111_12);
     ifSetOnVarcTransmit(hook(clan_field_yah, "IiY", [event_com, ccGetId()], [1065]), Component.interface_1111.component_1111_12);
-    ifSetOnOpt(hook(clientscript_clan_field_editor_focus, "Ii", [Component.interface_1111.component_1111_12, ccGetId()]), Component.interface_1111.component_1111_51);
+    ifSetOnOp(hook(clientscript_clan_field_editor_focus, "Ii", [Component.interface_1111.component_1111_12, ccGetId()]), Component.interface_1111.component_1111_51);
 
     if (varc_hw10_cutscene < 3 || varc_hw10_cutscene > 21) {
         varc_hw10_cutscene = 3 + (21 - 3) / 4;

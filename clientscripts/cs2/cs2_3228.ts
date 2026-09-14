@@ -9,19 +9,19 @@ function cs2_3228(intArg0: number, intArg1: number, intArg2: number): number {
     if (int3 == 1) {
         switch (intArg0) {
             case 7:
-                createCreaterequest(8);
+                createStepReached(8);
                 break;
             case 8:
-                createCreaterequest(10);
+                createStepReached(10);
                 break;
         }
     } else {
         switch (intArg0) {
             case 7:
-                createCreaterequest(9);
+                createStepReached(9);
                 break;
             case 8:
-                createCreaterequest(11);
+                createStepReached(11);
                 break;
         }
     }

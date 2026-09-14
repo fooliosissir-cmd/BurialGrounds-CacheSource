@@ -13,7 +13,7 @@ function cs2_1811(intArg0: component, intArg1: component, intArg2: component): v
     let int4: number = -1;
 
     while (int3 >= 0) {
-        switch (chatGettypebyline(int3)) {
+        switch (chatGethistorytype(int3)) {
             case 1:
             case 2:
             case 3:
@@ -29,10 +29,10 @@ function cs2_1811(intArg0: component, intArg1: component, intArg2: component): v
             case 42:
             case 44:
             case 45:
-                if (compare(lowercase(removetags(chatLineGetcrownedname(int3))), varcstr_clanwars_caller) != 0) {
+                if (compare(lowercase(removetags(chatGethistoryname(int3))), varcstr_clanwars_caller) != 0) {
                     break;
                 }
-                str0 = chatGetbyline(int3);
+                str0 = chatGethistorymessage(int3);
                 int4 = int3;
                 break;
         }

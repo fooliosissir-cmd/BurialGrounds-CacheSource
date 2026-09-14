@@ -7,7 +7,7 @@ function cs2_193(intArg0: number): number {
     if (varc_chat_view == 0) {
         return 1;
     }
-    let int1: number = chatGettypebyline(intArg0);
+    let int1: number = chatGethistorytype(intArg0);
 
     if (int1 == -1) {
         return 0;

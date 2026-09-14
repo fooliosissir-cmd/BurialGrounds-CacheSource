@@ -11,5 +11,5 @@ function worldmap_showoverview(intArg0: number): void {
         ifSetHide(true, Component.interface_755.component_755_46);
         ifSetOp(1, "Show overview", Component.interface_755.component_755_6);
     }
-    ifSetOnOpt(hook(worldmap_toggleoverview, "", []), Component.interface_755.component_755_6);
+    ifSetOnOp(hook(worldmap_toggleoverview, "", []), Component.interface_755.component_755_6);
 }

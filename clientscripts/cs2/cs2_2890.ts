@@ -68,8 +68,8 @@ function cs2_2890(): void {
             if (int0 != -1) {
                 ifSetGraphic(enumOp(type_npc, type_graphic, Enum.sfa_fam_graphic, int0), int10);
                 ifSetText(enumOp(type_npc, type_string, Enum.sfa_fam2string, int0), enumOp(type_component, type_component, Enum.sfa_fam_components_text, int10));
-                ifSetOnMouseOver(hook(cs2_1160, "IiIsii", [int10, -1, Component.sfa.tooltip, enumOp(type_npc, type_string, Enum.sfa_fam2string, int0), 25, 200]), int10);
-                hookMouseExit(hook(clientscript_deltooltip, "I", [Component.sfa.tooltip]), int10);
+                ifSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [int10, -1, Component.sfa.tooltip, enumOp(type_npc, type_string, Enum.sfa_fam2string, int0), 25, 200]), int10);
+                ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.sfa.tooltip]), int10);
                 if (int10 != Component.sfa.fam_graph1 && int10 != Component.sfa.fam_graph2) {
                     ifSetHide(false, Component.sfa.alert);
                     ifSetPosition(ifGetX(int10), ifGetY(int10), 0, 0, Component.sfa.alert);

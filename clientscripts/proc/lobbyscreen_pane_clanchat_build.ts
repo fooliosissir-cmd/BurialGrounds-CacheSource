@@ -4,7 +4,7 @@
 // [proc,lobbyscreen_pane_clanchat_build]
 
 function proc_lobbyscreen_pane_clanchat_build(intArg0: component, intArg1: component, intArg2: component, intArg3: component, intArg4: component, intArg5: component): void {
-    if (ifGetTop(intArg3, -1) == 1) {
+    if (minimenuopen(intArg3, -1) == 1) {
         ifSetOnTimer(hook(clientscript_lobbyscreen_pane_clanchat_build, "IIIIII", [intArg0, intArg1, intArg2, intArg3, intArg4, intArg5]), intArg4);
         return;
     } else {
@@ -29,7 +29,7 @@ function proc_lobbyscreen_pane_clanchat_build(intArg0: component, intArg1: compo
     let str2: string = "";
     let int16: number = 0;
     let int17: number = cs2_4468();
-    let int18: number = activeClanChannelGetUserSlot(removetags(chatPlayerNameUnfiltered()));
+    let int18: number = activeClanChannelGetUserSlot(removetags(chatPlayerName()));
     let int19: number = 0;
 
     if (int18 != -1) {
@@ -51,10 +51,10 @@ function proc_lobbyscreen_pane_clanchat_build(intArg0: component, intArg1: compo
             ccSetColour(colour(0x292016));
         }
         str1 = "Rank: " + enumOp(type_int, type_string, Enum.clan_core_rank_int_to_rank, int15);
-        ccHookMouseEnter(hook(cs2_3167, "Iis", [intArg3, int8, str1]));
-        ccHookMouseExit(hook(cs2_3169, "Ii", [intArg3, int8]));
-        if (activeClanChannelGetUserSlot(removetags(chatPlayerNameUnfiltered())) != int8) {
-            ccSetOnOpt(hook(lobbyscreen_pane_clanchat_op, "si", [str2, event_opindex]));
+        ccSetOnMouseOver(hook(cs2_3167, "Iis", [intArg3, int8, str1]));
+        ccSetOnMouseLeave(hook(cs2_3169, "Ii", [intArg3, int8]));
+        if (activeClanChannelGetUserSlot(removetags(chatPlayerName())) != int8) {
+            ccSetOnOp(hook(lobbyscreen_pane_clanchat_op, "si", [str2, event_opindex]));
             if (friendTest(removetags(str2)) == 1) {
                 ccSetOp(8, "Remove friend " + str0);
             } else if (ignoreTest(removetags(str2)) == 1) {

@@ -24,6 +24,6 @@ function cs2_5960(intArg0: component, intArg1: number): void {
             str0 = "Locked: This skillplot has been manually locked.";
             break;
     }
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1117.component_1117_144, intArg0, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]), intArg0);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1117.component_1117_144]), intArg0);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1117.component_1117_144, intArg0, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]), intArg0);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1117.component_1117_144]), intArg0);
 }

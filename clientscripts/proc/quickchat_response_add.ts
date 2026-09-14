@@ -19,7 +19,7 @@ function quickchat_response_add(intArg0: component, intArg1: number): void {
     if (varc_126 == 1) {
         str0 = "From " + varcstr_27 + ": " + "<col=800000>" + str0;
     } else if (varc_126 == 2) {
-        str0 = "[" + "<col=0000ff>" + fcGetChatDisplayName() + "<col=000000>" + "] " + varcstr_27 + ": " + "<col=800000>" + str0;
+        str0 = "[" + "<col=0000ff>" + clanGetChatDisplayName() + "<col=000000>" + "] " + varcstr_27 + ": " + "<col=800000>" + str0;
     } else if (varc_126 == 8) {
         if (activeClanChannelFindAffined() == 1) {
             str0 = "[" + "<col=0000ff>" + activeClanChannelGetClanName() + "<col=000000>" + "] " + varcstr_27 + ": " + "<col=800000>" + str0;
@@ -50,11 +50,11 @@ function quickchat_response_add(intArg0: component, intArg1: number): void {
         ccSetTextAlign(0, 1, 0);
         int9 = chatPhraseGetautoresponse(intArg1, int5);
         str0 = chatPhraseGetText(int9);
-        ccSetOnOpt(hook(clientscript_quickchat_phrase, "Iei", [intArg0, int9, 0]));
+        ccSetOnOp(hook(clientscript_quickchat_phrase, "Iei", [intArg0, int9, 0]));
         ccSetOpBase(str0);
         ccSetOp(1, "Send: ");
-        ccHookMouseEnter(hook(cs2_1082, "iIi", [0, int3, int6]));
-        ccHookMouseExit(hook(cs2_1083, "iIi", [0, int3, int6]));
+        ccSetOnMouseOver(hook(cs2_1082, "iIi", [0, int3, int6]));
+        ccSetOnMouseLeave(hook(cs2_1083, "iIi", [0, int3, int6]));
         if (int5 < 10) {
             str0 = "<col=555555>" + tostring((int5 + 1) % 10) + ". " + "<col=000000>" + str0;
         }

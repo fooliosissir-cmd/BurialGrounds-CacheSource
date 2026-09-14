@@ -5,6 +5,6 @@
 
 function proc_loginscreen_link_nologin(strArg0: string, intArg0: boolean): void {
     if (compare(strArg0, "") != 0) {
-        openurl(strArg0, intArg0);
+        openurlNoLogin(strArg0, intArg0);
     }
 }

@@ -55,7 +55,7 @@ function proc_lobbyscreen_entergame(intArg0: component): void {
     if (varp_2523 > 0) {
         cs2_5861(varp_2523);
     }
-    lobbyLeaveLobby();
+    lobbyEntergame();
     let int9: number = detailGetSoundVol();
     let int10: number = detailGetMusicVol();
     let int11: number = detailGetBgsoundvol();

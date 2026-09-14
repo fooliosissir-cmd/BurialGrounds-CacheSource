@@ -25,9 +25,9 @@ function cs2_389(): void {
         if (varc_1019 == int6) {
             int7 = int5;
         } else {
-            ccSetOnOpt(hook(cs2_357, "iii", [event_opindex, int6, 4]));
-            ccHookMouseEnter(hook(cs2_375, "IIiiiii", [event_com, event_com, event_comsubid, colour(0xBFA549), colour(0xBFA549), 1, int4]));
-            ccHookMouseExit(hook(cs2_377, "Ii", [event_com, int4]));
+            ccSetOnOp(hook(cs2_357, "iii", [event_opindex, int6, 4]));
+            ccSetOnMouseOver(hook(cs2_375, "IIiiiii", [event_com, event_com, event_comsubid, colour(0xBFA549), colour(0xBFA549), 1, int4]));
+            ccSetOnMouseLeave(hook(cs2_377, "Ii", [event_com, int4]));
         }
         int5 = int5 + 1;
     }

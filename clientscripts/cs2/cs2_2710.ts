@@ -33,8 +33,8 @@ function cs2_2710(intArg0: component, intArg1: component, intArg2: component, in
         }
     }
     ifSetOnClick(hook(cs2_2713, "IIIIII", [intArg0, intArg1, intArg2, intArg3, intArg4, intArg5]), intArg3);
-    ifSetOnMouseOver(hook(cs2_2961, "II1", [intArg4, intArg5, true]), intArg3);
-    hookMouseExit(hook(cs2_2961, "II1", [intArg4, intArg5, false]), intArg3);
+    ifSetOnMouseRepeat(hook(cs2_2961, "II1", [intArg4, intArg5, true]), intArg3);
+    ifSetOnMouseLeave(hook(cs2_2961, "II1", [intArg4, intArg5, false]), intArg3);
     varc_986 = 1;
 
     if (varc_986 == 1) {

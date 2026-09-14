@@ -31,18 +31,18 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
         varc_login_reply_last = 21;
         cs2_3064(0);
         if (varc_loginscreen_hopblocked_time == 0 && varc_lobby_video_ad_started == 0) {
-            varc_loginscreen_hopblocked_time = loginQueuePosition();
-            if (playerMember() == 0 && browserAgecheck(6) == 1) {
+            varc_loginscreen_hopblocked_time = loginHopTime();
+            if (playerMember() == 0 && videoAdvertPlay(6) == 1) {
                 varc_lobby_video_ad_started = 1;
             }
         }
         if (varc_loginscreen_hopblocked_time > 0) {
             varc_loginscreen_hopblocked_time = varc_loginscreen_hopblocked_time - 1;
-            if (varc_lobby_video_ad_started == 1 && varc_loginscreen_hopblocked_time == 0 && browserIssupported() == 0) {
-                browserFocus();
+            if (varc_lobby_video_ad_started == 1 && varc_loginscreen_hopblocked_time == 0 && videoAdvertHasFinished() == 0) {
+                videoAdvertAllowSkip();
             }
         }
-        if (varc_loginscreen_hopblocked_time <= 0 && (varc_lobby_video_ad_started == 0 || browserIssupported() == 1)) {
+        if (varc_loginscreen_hopblocked_time <= 0 && (varc_lobby_video_ad_started == 0 || videoAdvertHasFinished() == 1)) {
             if (worldListFetch() == 0) {
                 varc_loginscreen_hopblocked_time = 1;
                 return;
@@ -55,10 +55,10 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
             }
             ifSetOnTimer(noHook(""), intArg0);
             if (varc_lobby_video_ad_started == 1) {
-                browserRefresh();
+                videoAdvertForceRemove();
                 varc_lobby_video_ad_started = 0;
             }
-            if (varc_lobby_video_ad_started == 0 || browserIssupported() == 1) {
+            if (varc_lobby_video_ad_started == 0 || videoAdvertHasFinished() == 1) {
                 detailSoundVol(intArg2);
                 detailMusicVol(intArg3);
                 detailBgsoundvol(intArg4);
@@ -85,7 +85,7 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
     if (int7 == 42) {
         ifSetHide(false, Component.interface_906.component_906_55);
         ifSetText(tostring(intArg1), Component.interface_906.component_906_11);
-        ifSetText(tostring(loginHandshakeCode()), Component.interface_906.component_906_12);
+        ifSetText(tostring(loginQueuePosition()), Component.interface_906.component_906_12);
         if (varc_login_reply_last != 42) {
             lobby_popup(int7, 1, "World " + tostring(intArg1) + " is currently full." + "<br>" + "You have been added to the" + "<br>" + "queue for this world." + "<br>" + "You can track your progress in the" + "<br>" + "queue from lower left corner of this" + "<br>" + "screen.", 0, Graphic.loadingwheel_12, 0, 0, "", "", 1, "OK", "OK");
         }
@@ -93,7 +93,7 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
         return;
     } else if (int7 == 43) {
         ifSetText(tostring(intArg1), Component.interface_906.component_906_11);
-        ifSetText(tostring(loginHandshakeCode()), Component.interface_906.component_906_12);
+        ifSetText(tostring(loginQueuePosition()), Component.interface_906.component_906_12);
         varc_login_reply_last = 43;
         return;
     } else {
@@ -117,8 +117,8 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
     let int18: number = 1;
     let str7: string = "Back";
     let str8: string = "Back";
-    let int19: number = loginReply();
-    let int20: number = loginReplyExtrainfo();
+    let int19: number = loginDisallowResult();
+    let int20: number = loginDisallowTrigger();
 
     switch (int7) {
         case -2:

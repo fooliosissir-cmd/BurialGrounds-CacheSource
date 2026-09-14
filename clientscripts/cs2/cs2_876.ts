@@ -5,6 +5,6 @@
 
 function cs2_876(intArg0: component): void {
     ifSetModel(Model.model_32408, intArg0);
-    hookMouseExit(noHook(""), intArg0);
+    ifSetOnMouseLeave(noHook(""), intArg0);
     ifSetHide(true, Component.interface_694.component_694_23);
 }

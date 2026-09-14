@@ -31,7 +31,7 @@ function cs2_4499(intArg0: Enum, intArg1: number, strArg0: string, intArg2: numb
             }
             ccSetColour(colour(0xEFB063));
             ccSetTextShadow(true);
-            ccHookMouseEnter(hook(cs2_4502, "IIi", [intArg6, intArg7, event_comsubid]));
+            ccSetOnMouseOver(hook(cs2_4502, "IIi", [intArg6, intArg7, event_comsubid]));
             int11 = int11 + 1;
         }
         int10 = int10 + ccGetHeight();

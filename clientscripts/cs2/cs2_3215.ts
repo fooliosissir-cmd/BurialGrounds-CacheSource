@@ -20,7 +20,7 @@ function cs2_3215(intArg0: number, intArg1: number): void {
         varc_1660 = 0;
     } else if (intArg0 == 103) {
         varc_1660 = stringLength(str0);
-    } else if (intArg0 == 67 && keyheldShift() == 1) {
+    } else if (intArg0 == 67 && keyheldCtrl() == 1) {
         str2 = getclipboard();
         str2 = subString(str2, 0, min(320 - stringLength(str0), stringLength(str2)));
         str1 = subString(str0, 0, varc_1660);

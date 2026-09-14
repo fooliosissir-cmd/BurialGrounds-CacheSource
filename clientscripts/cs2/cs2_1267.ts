@@ -26,13 +26,13 @@ function cs2_1267(): void {
         varc_774 = int_to_bool(varbit_player_kit_beard_viewing);
         ifSetGraphic(Graphic.player_kit_fancy_4, Component.interface_309.component_309_6);
         ifSetGraphic(Graphic.player_kit_fancy_off_3, Component.interface_309.component_309_7);
-        ifSetOnOpt(hook(cs2_2830, "i1", [event_opindex, false]), Component.interface_309.component_309_6);
-        ifSetOnOpt(hook(cs2_2830, "i1", [event_opindex, true]), Component.interface_309.component_309_7);
-        ifSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_309.component_309_22, str0, 25, 512]), Component.interface_309.component_309_6);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_309.component_309_22]), Component.interface_309.component_309_6);
+        ifSetOnOp(hook(cs2_2830, "i1", [event_opindex, false]), Component.interface_309.component_309_6);
+        ifSetOnOp(hook(cs2_2830, "i1", [event_opindex, true]), Component.interface_309.component_309_7);
+        ifSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_309.component_309_22, str0, 25, 512]), Component.interface_309.component_309_6);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_309.component_309_22]), Component.interface_309.component_309_6);
         str0 = "Choose your facial hair";
-        ifSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_309.component_309_22, str0, 25, 512]), Component.interface_309.component_309_7);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_309.component_309_22]), Component.interface_309.component_309_7);
+        ifSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_309.component_309_22, str0, 25, 512]), Component.interface_309.component_309_7);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_309.component_309_22]), Component.interface_309.component_309_7);
         ifSetOnVarcTransmit(hook(cs2_2789, "Y", [], [1008, 1009, 1015]), Component.interface_309.component_309_1);
         ifSetOnVarTransmit(hook(cs2_2736, "Y", [], [1057]), Component.interface_309.component_309_1);
     }

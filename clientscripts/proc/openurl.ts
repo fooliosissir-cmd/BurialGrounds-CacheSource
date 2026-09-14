@@ -4,5 +4,5 @@
 // [proc,openurl]
 
 function proc_openurl(strArg0: string, strArg1: string, intArg0: number): void {
-    openurlNoLogin(strArg0, strArg1, intArg0);
+    openurl(strArg0, strArg1, intArg0);
 }

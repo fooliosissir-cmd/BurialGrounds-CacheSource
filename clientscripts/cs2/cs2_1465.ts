@@ -38,8 +38,8 @@ function cs2_1465(): void {
     }
     ifSetText(tostring(int2), Component.interface_762.component_762_29);
     ifSetText(tostring(int3), Component.interface_762.component_762_31);
-    ifSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_762.component_762_121, str0, 25, 150]), Component.interface_762.component_762_29);
-    ifSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_762.component_762_121, str1, 25, 150]), Component.interface_762.component_762_31);
+    ifSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_762.component_762_121, str0, 25, 150]), Component.interface_762.component_762_29);
+    ifSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_762.component_762_121, str1, 25, 150]), Component.interface_762.component_762_31);
     ifSetText(tostring(int0), Component.interface_762.component_762_30);
     ifSetText(tostring(int1), Component.interface_762.component_762_32);
 }

@@ -9,7 +9,7 @@ function cs2_6454(): void {
     if (gender() == 1) {
         int0 = 3872;
     }
-    let str0: string = chatPlayerName();
+    let str0: string = chatPlayerNameUnfiltered();
     let int1: number = stringWidth(str0, Graphic.graphic_4040) + 40;
     ifSetText(str0, Component.interface_1311.component_1311_67);
     ifSetSize(int1, 34, 0, 0, Component.interface_1311.component_1311_35);

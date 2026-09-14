@@ -4,6 +4,6 @@
 // cs2_5643
 
 function cs2_5643(intArg0: component, intArg1: number): void {
-    hookMouseEnter(hook(cs2_5644, "Iii", [intArg0, intArg1, 1]), intArg0);
-    hookMouseExit(hook(cs2_5644, "Iii", [intArg0, intArg1, 0]), intArg0);
+    ifSetOnMouseOver(hook(cs2_5644, "Iii", [intArg0, intArg1, 1]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_5644, "Iii", [intArg0, intArg1, 0]), intArg0);
 }

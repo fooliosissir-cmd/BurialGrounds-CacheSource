@@ -17,10 +17,10 @@ function cs2_6097(intArg0: number): void {
         ifSetGraphic(Graphic.aif_shop_tab_button_0, Component.interface_1265.component_1265_30);
         ifSetGraphic(Graphic.aif_shop_tab_button_1, Component.interface_1265.component_1265_31);
         ifSetGraphic(Graphic.aif_shop_tab_button_0, Component.interface_1265.component_1265_32);
-        hookMouseEnter(hook(cs2_6098, "iiIII", [1, 1, Component.interface_1265.component_1265_223, Component.interface_1265.component_1265_224, Component.interface_1265.component_1265_225]), Component.interface_1265.component_1265_29);
-        hookMouseExit(hook(cs2_6098, "iiIII", [1, 0, Component.interface_1265.component_1265_223, Component.interface_1265.component_1265_224, Component.interface_1265.component_1265_225]), Component.interface_1265.component_1265_29);
-        hookMouseEnter(hook(cs2_6098, "iiIII", [0, 1, Component.interface_1265.component_1265_30, Component.interface_1265.component_1265_31, Component.interface_1265.component_1265_32]), Component.interface_1265.component_1265_28);
-        hookMouseExit(hook(cs2_6098, "iiIII", [0, 0, Component.interface_1265.component_1265_30, Component.interface_1265.component_1265_31, Component.interface_1265.component_1265_32]), Component.interface_1265.component_1265_28);
+        ifSetOnMouseOver(hook(cs2_6098, "iiIII", [1, 1, Component.interface_1265.component_1265_223, Component.interface_1265.component_1265_224, Component.interface_1265.component_1265_225]), Component.interface_1265.component_1265_29);
+        ifSetOnMouseLeave(hook(cs2_6098, "iiIII", [1, 0, Component.interface_1265.component_1265_223, Component.interface_1265.component_1265_224, Component.interface_1265.component_1265_225]), Component.interface_1265.component_1265_29);
+        ifSetOnMouseOver(hook(cs2_6098, "iiIII", [0, 1, Component.interface_1265.component_1265_30, Component.interface_1265.component_1265_31, Component.interface_1265.component_1265_32]), Component.interface_1265.component_1265_28);
+        ifSetOnMouseLeave(hook(cs2_6098, "iiIII", [0, 0, Component.interface_1265.component_1265_30, Component.interface_1265.component_1265_31, Component.interface_1265.component_1265_32]), Component.interface_1265.component_1265_28);
     } else {
         ifSetHide(true, Component.interface_1265.component_1265_33);
         ifSetHide(false, Component.interface_1265.component_1265_226);
@@ -34,9 +34,9 @@ function cs2_6097(intArg0: number): void {
         ifSetGraphic(Graphic.aif_shop_tab_button_0, Component.interface_1265.component_1265_223);
         ifSetGraphic(Graphic.aif_shop_tab_button_1, Component.interface_1265.component_1265_224);
         ifSetGraphic(Graphic.aif_shop_tab_button_0, Component.interface_1265.component_1265_225);
-        hookMouseEnter(hook(cs2_6098, "iiIII", [1, 1, Component.interface_1265.component_1265_30, Component.interface_1265.component_1265_31, Component.interface_1265.component_1265_32]), Component.interface_1265.component_1265_28);
-        hookMouseExit(hook(cs2_6098, "iiIII", [1, 0, Component.interface_1265.component_1265_30, Component.interface_1265.component_1265_31, Component.interface_1265.component_1265_32]), Component.interface_1265.component_1265_28);
-        hookMouseEnter(hook(cs2_6098, "iiIII", [0, 1, Component.interface_1265.component_1265_223, Component.interface_1265.component_1265_224, Component.interface_1265.component_1265_225]), Component.interface_1265.component_1265_29);
-        hookMouseExit(hook(cs2_6098, "iiIII", [0, 0, Component.interface_1265.component_1265_223, Component.interface_1265.component_1265_224, Component.interface_1265.component_1265_225]), Component.interface_1265.component_1265_29);
+        ifSetOnMouseOver(hook(cs2_6098, "iiIII", [1, 1, Component.interface_1265.component_1265_30, Component.interface_1265.component_1265_31, Component.interface_1265.component_1265_32]), Component.interface_1265.component_1265_28);
+        ifSetOnMouseLeave(hook(cs2_6098, "iiIII", [1, 0, Component.interface_1265.component_1265_30, Component.interface_1265.component_1265_31, Component.interface_1265.component_1265_32]), Component.interface_1265.component_1265_28);
+        ifSetOnMouseOver(hook(cs2_6098, "iiIII", [0, 1, Component.interface_1265.component_1265_223, Component.interface_1265.component_1265_224, Component.interface_1265.component_1265_225]), Component.interface_1265.component_1265_29);
+        ifSetOnMouseLeave(hook(cs2_6098, "iiIII", [0, 0, Component.interface_1265.component_1265_223, Component.interface_1265.component_1265_224, Component.interface_1265.component_1265_225]), Component.interface_1265.component_1265_29);
     }
 }

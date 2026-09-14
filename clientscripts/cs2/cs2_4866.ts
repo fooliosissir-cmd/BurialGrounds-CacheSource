@@ -14,7 +14,7 @@ function cs2_4866(intArg0: number, intArg1: number, intArg2: number, intArg3: nu
     let int13: number = 1;
 
     if (clanProfileFind() == 1) {
-        int13 = loadClanVarbit<2581>();
+        int13 = pushVarClanBit<2581>();
     }
     let int14: number = cs2_5215(intArg0);
     let int15: number = ifGetWidth(ifGetParentLayer(int7));
@@ -41,7 +41,7 @@ function cs2_4866(intArg0: number, intArg1: number, intArg2: number, intArg3: nu
     if (int25 != -1 && int26 != -1) {
         int17 = int17 + 82;
         int17 = int17 - ifGetWidth(int26) / 2;
-        if (loadClanVar<2744>() == intArg0) {
+        if (pushVarClan<2744>() == intArg0) {
             int23 = Graphic.aif_resource_target_icons_2;
             int24 = Graphic.aif_resource_target_icons_1;
         }
@@ -72,7 +72,7 @@ function cs2_4866(intArg0: number, intArg1: number, intArg2: number, intArg3: nu
         str1 = append(str1, "<br>" + "Goal: " + tostring(int14));
     }
 
-    if (loadClanVar<2744>() == intArg0) {
+    if (pushVarClan<2744>() == intArg0) {
         str1 = append(str1, " (Primary)");
     }
     let int27: number = 2;
@@ -80,6 +80,6 @@ function cs2_4866(intArg0: number, intArg1: number, intArg2: number, intArg3: nu
     if (ifGetY(int12) > ifGetHeight(ifGetParentLayer(int12)) / 2 - 10) {
         int27 = 0;
     }
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str1, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int27, event_mousex, event_mousey]), int12);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), int12);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str1, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int27, event_mousex, event_mousey]), int12);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), int12);
 }

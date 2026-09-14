@@ -11,7 +11,7 @@ function cs2_4901(): void {
     let int4: number = 1;
 
     if (clanProfileFind() == 1) {
-        int4 = loadClanVarbit<2580>();
+        int4 = pushVarClanBit<2580>();
         int0 = clan_stronghold_main_get_map_graphic(0, 0, int4);
         if (int0 != -1) {
             ifSetGraphic(int0, Component.interface_1259.component_1259_24);

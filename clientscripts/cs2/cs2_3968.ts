@@ -25,9 +25,9 @@ function cs2_3968(): void {
     }
 
     if (varp_tutorial == 1000) {
-        ifSetOnOpt(hook(cs2_3976, "iii", [varc_1425, 1, int1]), Component.interface_1055.component_1055_4);
+        ifSetOnOp(hook(cs2_3976, "iii", [varc_1425, 1, int1]), Component.interface_1055.component_1055_4);
     } else {
-        ifSetOnOpt(noHook(""), Component.interface_1055.component_1055_4);
+        ifSetOnOp(noHook(""), Component.interface_1055.component_1055_4);
     }
 
     if (ifGetHide(Component.interface_1055.component_1055_2) == 1 && ifGetHide(Component.interface_1055.component_1055_0) == 1) {

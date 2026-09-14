@@ -21,8 +21,8 @@ function cs2_6559(): void {
         int2 = Graphic.graphic_11735;
     }
     ifSetGraphic(int0, Component.interface_1317.component_1317_46);
-    hookMouseExit(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_46, int0]), Component.interface_1317.component_1317_46);
-    hookMouseEnter(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_46, int1]), Component.interface_1317.component_1317_46);
+    ifSetOnMouseLeave(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_46, int0]), Component.interface_1317.component_1317_46);
+    ifSetOnMouseOver(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_46, int1]), Component.interface_1317.component_1317_46);
     ifSetOnRelease(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_46, int1]), Component.interface_1317.component_1317_46);
     ifSetOnClick(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_46, int2]), Component.interface_1317.component_1317_46);
     ifSetHide(int3, Component.interface_1317.component_1317_47);
@@ -39,8 +39,8 @@ function cs2_6559(): void {
         int2 = Graphic.graphic_11732;
     }
     ifSetGraphic(int0, Component.interface_1317.component_1317_48);
-    hookMouseExit(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_48, int0]), Component.interface_1317.component_1317_48);
-    hookMouseEnter(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_48, int1]), Component.interface_1317.component_1317_48);
+    ifSetOnMouseLeave(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_48, int0]), Component.interface_1317.component_1317_48);
+    ifSetOnMouseOver(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_48, int1]), Component.interface_1317.component_1317_48);
     ifSetOnRelease(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_48, int1]), Component.interface_1317.component_1317_48);
     ifSetOnClick(hook(graphic_swapper, "Id", [Component.interface_1317.component_1317_48, int2]), Component.interface_1317.component_1317_48);
     ifSetHide(int3, Component.interface_1317.component_1317_49);

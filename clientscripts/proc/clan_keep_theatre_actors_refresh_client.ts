@@ -38,16 +38,16 @@ function clan_keep_theatre_actors_refresh_client(): void {
         ccSetOp(1, "Target");
         ccSetSize(12, 13, 0, 0);
         ccSetPosition(18, 1 + int9 * int7, 2, 0);
-        ccHookMouseEnter(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int11]));
-        ccHookMouseExit(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
+        ccSetOnMouseOver(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int11]));
+        ccSetOnMouseLeave(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
         ccSettargetverb("Add Actor");
         ccSettargetcursors(Cursor.cursor_target, -1);
         ccCreate(int6, 3, ifGetNextSubId(int6));
         ccSetSize(12, 13, 0, 0);
         ccSetPosition(18, 1 + int9 * int7, 2, 0);
         str0 = "Add someone to the actor list. Click this, then click on the person you would like to add.";
-        ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_310.component_310_26, event_com, event_comsubid, str0, 90, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_310.component_310_26]));
+        ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_310.component_310_26, event_com, event_comsubid, str0, 90, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_310.component_310_26]));
         int10 = Graphic.aif_audio_buttons_1_6;
         int11 = Graphic.aif_audio_buttons_1_7;
         ccCreate(int4, 5, int9);
@@ -55,15 +55,15 @@ function clan_keep_theatre_actors_refresh_client(): void {
         ccSetOp(1, "Remove");
         ccSetSize(12, 13, 0, 0);
         ccSetPosition(3, 1 + int9 * int7, 2, 0);
-        ccHookMouseEnter(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int11]));
-        ccHookMouseExit(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
+        ccSetOnMouseOver(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int11]));
+        ccSetOnMouseLeave(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
         ccCreate(int6, 3, ifGetNextSubId(int6));
         ccSetSize(12, 13, 0, 0);
         ccSetPosition(3, 1 + int9 * int7, 2, 0);
         str0 = "Add someone to the actor list. Click this, then click on the person you would like to add.";
         str0 = "Remove this person from the actor list.";
-        ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_310.component_310_26, event_com, event_comsubid, str0, 90, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_310.component_310_26]));
+        ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_310.component_310_26, event_com, event_comsubid, str0, 90, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_310.component_310_26]));
         int8 = int8 + 1;
     }
 
@@ -75,6 +75,6 @@ function clan_keep_theatre_actors_refresh_client(): void {
         int11 = gameframe_skin_graphic(Graphic.aif_checkbox_large_1);
     }
     ifSetGraphic(int10, Component.interface_310.component_310_20);
-    hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int11]), Component.interface_310.component_310_20);
-    hookMouseExit(hook(graphic_swapper, "Id", [event_com, int10]), Component.interface_310.component_310_20);
+    ifSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int11]), Component.interface_310.component_310_20);
+    ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int10]), Component.interface_310.component_310_20);
 }

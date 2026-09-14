@@ -73,8 +73,8 @@ function cs2_1895(intArg0: component, intArg1: component): void {
             } else {
                 str2 = str0;
             }
-            ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1108.component_1108_25, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1108.component_1108_25]));
+            ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1108.component_1108_25, event_com, -1, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1108.component_1108_25]));
         } else if (int6 == 1) {
             ccSetText(str1);
             int5 = parawidth("Last known as: " + str3, 2147483647, Graphic.b12_full) + 8;
@@ -83,8 +83,8 @@ function cs2_1895(intArg0: component, intArg1: component): void {
             } else {
                 str2 = "Last known as: " + str3;
             }
-            ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1108.component_1108_25, event_com, int3, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1108.component_1108_25]));
+            ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1108.component_1108_25, event_com, int3, str2, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1108.component_1108_25]));
         } else {
             ccSetText(str0);
         }
@@ -109,7 +109,7 @@ function cs2_1895(intArg0: component, intArg1: component): void {
         ccSetOp(5, enumOp(type_int, type_string, Enum.friendschat_rankenum, 4));
         ccSetOp(6, enumOp(type_int, type_string, Enum.friendschat_rankenum, 5));
         ccSetOp(7, enumOp(type_int, type_string, Enum.friendschat_rankenum, 6));
-        ccSetOnOpt(hook(friendschat_setrank, "ii", [int3, event_opindex]));
+        ccSetOnOp(hook(friendschat_setrank, "ii", [int3, event_opindex]));
         int3 = int3 + 1;
     }
     let int10: number = 0;

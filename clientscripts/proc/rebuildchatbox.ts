@@ -63,7 +63,7 @@ function rebuildchatbox(): void {
             int15 = int14;
             int16 = 1;
             int14 = int14 + 1;
-            int17 = chatGettypebyline(int18);
+            int17 = chatGethistorytype(int18);
             ccSetColour(int12);
             ccSetTextFont(Graphic.p12_full);
             ccSetTextAlign(0, 0, 14);
@@ -86,126 +86,126 @@ function rebuildchatbox(): void {
                 case 30:
                 case 31:
                 case 120:
-                    ccSetText(chatGetbyline(int18));
+                    ccSetText(chatGethistorymessage(int18));
                     if (int3 == 1 && (int17 == 0 || int17 == 4 || int17 == 27 || int17 == 28 || int17 == 29 || int17 == 26 || int17 == 30 || int17 == 31)) {
-                        varc_1269 = chatLineGetcycles20ms(int18);
+                        varc_1269 = chatGetprevuid(int18);
                         int3 = 0;
                     }
                     break;
                 case 1:
                 case 2:
-                    ccSetText(chatLineGetcrownedname(int18) + ": " + str0 + chatGetbyline(int18));
+                    ccSetText(chatGethistoryname(int18) + ": " + str0 + chatGethistorymessage(int18));
                     break;
                 case 3:
-                    ccSetText("From " + chatLineGetcrownedname(int18) + ": " + str1 + chatGetbyline(int18));
+                    ccSetText("From " + chatGethistoryname(int18) + ": " + str1 + chatGethistorymessage(int18));
                     break;
                 case 100:
-                    ccSetText(str2 + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText(str2 + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 5:
-                    ccSetText(str1 + chatGetbyline(int18));
+                    ccSetText(str1 + chatGethistorymessage(int18));
                     break;
                 case 6:
-                    ccSetText("To " + chatLineGetcrownedname(int18) + ": " + str1 + chatGetbyline(int18));
+                    ccSetText("To " + chatGethistoryname(int18) + ": " + str1 + chatGethistorymessage(int18));
                     break;
                 case 7:
-                    ccSetText("From " + chatLineGetcrownedname(int18) + ": " + str1 + chatGetbyline(int18));
+                    ccSetText("From " + chatGethistoryname(int18) + ": " + str1 + chatGethistorymessage(int18));
                     break;
                 case 101:
-                    ccSetText("<col=7e3200>" + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText("<col=7e3200>" + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 41:
                     ccSetColour(int10);
-                    ccSetText(str4 + "[" + "</col>" + str0 + chatGetClan(int18) + "</col>" + str4 + "] " + chatLineGetcrownedname(int18) + ": " + "</col>" + chatGetbyline(int18));
+                    ccSetText(str4 + "[" + "</col>" + str0 + chatGethistoryclan(int18) + "</col>" + str4 + "] " + chatGethistoryname(int18) + ": " + "</col>" + chatGethistorymessage(int18));
                     break;
                 case 9:
                     ccSetColour(int9);
-                    ccSetText(str4 + "[" + "</col>" + str0 + chatGetClan(int18) + "</col>" + str4 + "] " + chatLineGetcrownedname(int18) + ": " + "</col>" + chatGetbyline(int18));
+                    ccSetText(str4 + "[" + "</col>" + str0 + chatGethistoryclan(int18) + "</col>" + str4 + "] " + chatGethistoryname(int18) + ": " + "</col>" + chatGethistorymessage(int18));
                     break;
                 case 44:
                     ccSetColour(int11);
-                    ccSetText(str4 + "[" + "</col>" + str0 + chatGetClan(int18) + "</col>" + str4 + "] " + chatLineGetcrownedname(int18) + ": " + "</col>" + chatGetbyline(int18));
+                    ccSetText(str4 + "[" + "</col>" + str0 + chatGethistoryclan(int18) + "</col>" + str4 + "] " + chatGethistoryname(int18) + ": " + "</col>" + chatGethistorymessage(int18));
                     break;
                 case 117:
-                    ccSetText("<col=7e3200>" + chatGetbyline(int18));
+                    ccSetText("<col=7e3200>" + chatGethistorymessage(int18));
                     break;
                 case 102:
-                    ccSetText("<col=8a2be2>" + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText("<col=8a2be2>" + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 105:
-                    ccSetText("<col=7e3200>" + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText("<col=7e3200>" + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 106:
-                    ccSetText("<col=7e3200>" + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText("<col=7e3200>" + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 107:
-                    ccSetText("<col=7e3200>" + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText("<col=7e3200>" + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 118:
-                    ccSetText("<col=7e3200>" + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText("<col=7e3200>" + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 17:
-                    if (compare(removetags(chatPlayerName()), removetags(chatLineGetcrownedname(int18))) != 0 && chatPhraseGetautoresponsecount(chatLineGetQuickChatId(int18)) > 0) {
-                        ccSetText(chatLineGetcrownedname(int18) + "<img=3>" + ": " + str0 + chatGetbyline(int18));
+                    if (compare(removetags(chatPlayerNameUnfiltered()), removetags(chatGethistoryname(int18))) != 0 && chatPhraseGetautoresponsecount(chatGethistoryphrase(int18)) > 0) {
+                        ccSetText(chatGethistoryname(int18) + "<img=3>" + ": " + str0 + chatGethistorymessage(int18));
                     } else {
-                        ccSetText(chatLineGetcrownedname(int18) + ": " + str0 + chatGetbyline(int18));
+                        ccSetText(chatGethistoryname(int18) + ": " + str0 + chatGethistorymessage(int18));
                     }
                     break;
                 case 18:
-                    if (compare(removetags(chatPlayerName()), removetags(chatLineGetcrownedname(int18))) != 0 && chatPhraseGetautoresponsecount(chatLineGetQuickChatId(int18)) > 0) {
-                        ccSetText("From " + chatLineGetcrownedname(int18) + "<img=3>" + ": " + str1 + chatGetbyline(int18));
+                    if (compare(removetags(chatPlayerNameUnfiltered()), removetags(chatGethistoryname(int18))) != 0 && chatPhraseGetautoresponsecount(chatGethistoryphrase(int18)) > 0) {
+                        ccSetText("From " + chatGethistoryname(int18) + "<img=3>" + ": " + str1 + chatGethistorymessage(int18));
                     } else {
-                        ccSetText("From " + chatLineGetcrownedname(int18) + ": " + str1 + chatGetbyline(int18));
+                        ccSetText("From " + chatGethistoryname(int18) + ": " + str1 + chatGethistorymessage(int18));
                     }
                     break;
                 case 19:
-                    ccSetText("To " + chatLineGetcrownedname(int18) + ": " + str1 + chatGetbyline(int18));
+                    ccSetText("To " + chatGethistoryname(int18) + ": " + str1 + chatGethistorymessage(int18));
                     break;
                 case 42:
                     ccSetColour(int10);
-                    if (compare(removetags(chatPlayerName()), removetags(chatLineGetcrownedname(int18))) != 0 && chatPhraseGetautoresponsecount(chatLineGetQuickChatId(int18)) > 0) {
-                        ccSetText(str4 + "[" + "</col>" + str0 + chatGetClan(int18) + "</col>" + str4 + "] " + chatLineGetcrownedname(int18) + "<img=3>" + ": " + "</col>" + chatGetbyline(int18));
+                    if (compare(removetags(chatPlayerNameUnfiltered()), removetags(chatGethistoryname(int18))) != 0 && chatPhraseGetautoresponsecount(chatGethistoryphrase(int18)) > 0) {
+                        ccSetText(str4 + "[" + "</col>" + str0 + chatGethistoryclan(int18) + "</col>" + str4 + "] " + chatGethistoryname(int18) + "<img=3>" + ": " + "</col>" + chatGethistorymessage(int18));
                     } else {
-                        ccSetText(str4 + "[" + "</col>" + str0 + chatGetClan(int18) + "</col>" + str4 + "] " + chatLineGetcrownedname(int18) + ": " + "</col>" + chatGetbyline(int18));
+                        ccSetText(str4 + "[" + "</col>" + str0 + chatGethistoryclan(int18) + "</col>" + str4 + "] " + chatGethistoryname(int18) + ": " + "</col>" + chatGethistorymessage(int18));
                     }
                     break;
                 case 45:
                     ccSetColour(int11);
-                    if (compare(removetags(chatPlayerName()), removetags(chatLineGetcrownedname(int18))) != 0 && chatPhraseGetautoresponsecount(chatLineGetQuickChatId(int18)) > 0) {
-                        ccSetText(str4 + "[" + "</col>" + str0 + chatGetClan(int18) + "</col>" + str4 + "] " + chatLineGetcrownedname(int18) + "<img=3>" + ": " + "</col>" + chatGetbyline(int18));
+                    if (compare(removetags(chatPlayerNameUnfiltered()), removetags(chatGethistoryname(int18))) != 0 && chatPhraseGetautoresponsecount(chatGethistoryphrase(int18)) > 0) {
+                        ccSetText(str4 + "[" + "</col>" + str0 + chatGethistoryclan(int18) + "</col>" + str4 + "] " + chatGethistoryname(int18) + "<img=3>" + ": " + "</col>" + chatGethistorymessage(int18));
                     } else {
-                        ccSetText(str4 + "[" + "</col>" + str0 + chatGetClan(int18) + "</col>" + str4 + "] " + chatLineGetcrownedname(int18) + ": " + "</col>" + chatGetbyline(int18));
+                        ccSetText(str4 + "[" + "</col>" + str0 + chatGethistoryclan(int18) + "</col>" + str4 + "] " + chatGethistoryname(int18) + ": " + "</col>" + chatGethistorymessage(int18));
                     }
                     break;
                 case 20:
                     ccSetColour(int9);
-                    if (compare(removetags(chatPlayerName()), removetags(chatLineGetcrownedname(int18))) != 0 && chatPhraseGetautoresponsecount(chatLineGetQuickChatId(int18)) > 0) {
-                        ccSetText(str4 + "[" + "</col>" + str0 + chatGetClan(int18) + "</col>" + str4 + "] " + chatLineGetcrownedname(int18) + "<img=3>" + ": " + "</col>" + chatGetbyline(int18));
+                    if (compare(removetags(chatPlayerNameUnfiltered()), removetags(chatGethistoryname(int18))) != 0 && chatPhraseGetautoresponsecount(chatGethistoryphrase(int18)) > 0) {
+                        ccSetText(str4 + "[" + "</col>" + str0 + chatGethistoryclan(int18) + "</col>" + str4 + "] " + chatGethistoryname(int18) + "<img=3>" + ": " + "</col>" + chatGethistorymessage(int18));
                     } else {
-                        ccSetText(str4 + "[" + "</col>" + str0 + chatGetClan(int18) + "</col>" + str4 + "] " + chatLineGetcrownedname(int18) + ": " + "</col>" + chatGetbyline(int18));
+                        ccSetText(str4 + "[" + "</col>" + str0 + chatGethistoryclan(int18) + "</col>" + str4 + "] " + chatGethistoryname(int18) + ": " + "</col>" + chatGethistorymessage(int18));
                     }
                     break;
                 case 108:
-                    ccSetText("<col=7e3200>" + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText("<col=7e3200>" + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 111:
                 case 112:
-                    ccSetText("<col=7e3200>" + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText("<col=7e3200>" + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 113:
                 case 114:
-                    ccSetText("<col=7e3200>" + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText("<col=7e3200>" + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 115:
-                    ccSetText("<col=7f0000>" + chatLineGetcrownedname(int18) + " " + chatGetbyline(int18));
+                    ccSetText("<col=7f0000>" + chatGethistoryname(int18) + " " + chatGethistorymessage(int18));
                     break;
                 case 116:
-                    ccSetText(chatGetbyline(int18));
+                    ccSetText(chatGethistorymessage(int18));
                     break;
             }
             ccClearops();
-            ccSetOnOpt(hook(chat_op, "isi", [event_opindex, chatLineGetName(int18), int18]));
-            ccSetOpBase("<col=ffffff>" + removetags(chatLineGetcrownedname(int18)));
+            ccSetOnOp(hook(chat_op, "isi", [event_opindex, unknownCommand5019(int18), int18]));
+            ccSetOpBase("<col=ffffff>" + removetags(chatGethistoryname(int18)));
             switch (int17) {
                 case 1:
                 case 2:
@@ -215,8 +215,8 @@ function rebuildchatbox(): void {
                 case 44:
                 case 9:
                 case 6:
-                    if (compare(removetags(chatPlayerName()), removetags(chatLineGetcrownedname(int18))) != 0 && compare(removetags(chatPlayerNameUnfiltered()), removetags(chatLineGetcrownedname(int18))) != 0) {
-                        if (friendTest(chatLineGetName(int18)) == 1) {
+                    if (compare(removetags(chatPlayerNameUnfiltered()), removetags(chatGethistoryname(int18))) != 0 && compare(removetags(chatPlayerName()), removetags(chatGethistoryname(int18))) != 0) {
+                        if (friendTest(unknownCommand5019(int18)) == 1) {
                             if (mapQuickChat() == 0 && userDetailQuickChat() == 0) {
                                 ccSetOp(6, "Message");
                             }
@@ -261,8 +261,8 @@ function rebuildchatbox(): void {
                 case 42:
                 case 45:
                 case 20:
-                    if (compare(removetags(chatPlayerName()), removetags(chatLineGetcrownedname(int18))) != 0 && compare(removetags(chatPlayerNameUnfiltered()), removetags(chatLineGetcrownedname(int18))) != 0) {
-                        if (friendTest(chatLineGetName(int18)) == 1) {
+                    if (compare(removetags(chatPlayerNameUnfiltered()), removetags(chatGethistoryname(int18))) != 0 && compare(removetags(chatPlayerName()), removetags(chatGethistoryname(int18))) != 0) {
+                        if (friendTest(unknownCommand5019(int18)) == 1) {
                             if (mapQuickChat() == 0 && userDetailQuickChat() == 0) {
                                 ccSetOp(6, "Message");
                             }
@@ -276,10 +276,10 @@ function rebuildchatbox(): void {
                         if (int17 == 20 && int8 == 1) {
                             ccSetOp(10, "Kick/ban");
                         }
-                        if (chatPhraseGetautoresponsecount(chatLineGetQuickChatId(int18)) > 0) {
+                        if (chatPhraseGetautoresponsecount(chatGethistoryphrase(int18)) > 0) {
                             if (varc_132 == -1) {
-                                varc_132 = chatLineGetQuickChatId(int18);
-                                varcstr_29 = chatLineGetcrownedname(int18);
+                                varc_132 = chatGethistoryphrase(int18);
+                                varcstr_29 = chatGethistoryname(int18);
                                 if (int17 == 20) {
                                     varc_133 = 6;
                                     ccSetOp(9, "Quick Response");
@@ -293,7 +293,7 @@ function rebuildchatbox(): void {
                                     ccSetOp(9, "Quick Response");
                                 } else if (int17 == 18) {
                                     varc_133 = 5;
-                                    if (friendTest(chatLineGetName(int18)) == 1) {
+                                    if (friendTest(unknownCommand5019(int18)) == 1) {
                                         ccSetOp(9, "Quick Response");
                                     }
                                 } else {
@@ -317,11 +317,11 @@ function rebuildchatbox(): void {
             int16 = 0;
         }
         if (int4 == 1) {
-            switch (chatGettypebyline(int18)) {
+            switch (chatGethistorytype(int18)) {
                 case 3:
                 case 7:
                 case 18:
-                    varcstr_276 = removetags(chatLineGetName(int18));
+                    varcstr_276 = removetags(unknownCommand5019(int18));
                     int4 = 0;
                     break;
             }

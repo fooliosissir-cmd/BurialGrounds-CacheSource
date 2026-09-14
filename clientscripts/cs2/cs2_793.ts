@@ -47,8 +47,8 @@ function cs2_793(intArg0: component, intArg1: number, intArg2: number, strArg0: 
         ccSetSize(48, 52, 0, 0);
         ccSetPosition(int5, int6, 0, 0);
         ccSetGraphic(Graphic.km_shoptile_0);
-        ccHookMouseEnter(hook(cs2_6114, "Ii1", [event_com, int34, false]));
-        ccHookMouseExit(hook(cs2_6114, "Ii1", [event_com, int34, true]));
+        ccSetOnMouseOver(hook(cs2_6114, "Ii1", [event_com, int34, false]));
+        ccSetOnMouseLeave(hook(cs2_6114, "Ii1", [event_com, int34, true]));
         ccCreate(intArg0, 5, int34);
         int34 = int34 + 1;
         ccSetSize(48, 52, 0, 0);
@@ -73,12 +73,12 @@ function cs2_793(intArg0: component, intArg1: number, intArg2: number, strArg0: 
         str5 = enumOp(type_obj, type_string, Enum.enum_1187, int33);
         int32 = enumOp(type_obj, type_int, Enum.lore_levels_enum, int33);
         if (int8 == 1) {
-            ccSetOnMouseOver(hook(cs2_770, "iIIisoioioioioioioioioioi", [event_comsubid, Component.interface_672.component_672_24, Component.interface_672.component_672_16, int32, str5, int12, 1, int13, int23, int14, int24, int15, int25, int16, int26, int17, int27, int18, int28, int19, int29, int20, int30, int21, int31]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_672.component_672_24]));
+            ccSetOnMouseRepeat(hook(cs2_770, "iIIisoioioioioioioioioioi", [event_comsubid, Component.interface_672.component_672_24, Component.interface_672.component_672_16, int32, str5, int12, 1, int13, int23, int14, int24, int15, int25, int16, int26, int17, int27, int18, int28, int19, int29, int20, int30, int21, int31]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_672.component_672_24]));
         } else {
             str5 = "You do not have access to this type of summoning pouch.";
-            ccSetOnMouseOver(hook(cs2_800, "iIIis", [event_comsubid, Component.interface_672.component_672_24, Component.interface_672.component_672_16, int32, str5]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_672.component_672_24]));
+            ccSetOnMouseRepeat(hook(cs2_800, "iIIis", [event_comsubid, Component.interface_672.component_672_24, Component.interface_672.component_672_16, int32, str5]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_672.component_672_24]));
         }
         int34 = int34 + 1;
         ccCreate(intArg0, 5, int34);

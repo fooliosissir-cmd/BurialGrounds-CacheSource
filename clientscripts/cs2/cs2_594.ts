@@ -15,38 +15,38 @@ function cs2_594(intArg0: number, intArg1: obj, intArg2: number, intArg3: number
         ifSetText("+1", Component.interface_105.component_105_160);
         ifSetOp(1, "Add 1", Component.interface_105.component_105_160);
         str2 = "Add 1 to quantity";
-        ifSetOnMouseOver(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_160);
+        ifSetOnMouseRepeat(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_160);
         ifSetText("+10", Component.interface_105.component_105_162);
         ifSetOp(1, "Add 10", Component.interface_105.component_105_162);
         str2 = "Add 10 to quantity";
-        ifSetOnMouseOver(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_162);
+        ifSetOnMouseRepeat(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_162);
         ifSetText("+100", Component.interface_105.component_105_164);
         ifSetOp(1, "Add 100", Component.interface_105.component_105_164);
         str2 = "Add 100 to quantity";
-        ifSetOnMouseOver(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_164);
+        ifSetOnMouseRepeat(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_164);
         ifSetText("+1K", Component.interface_105.component_105_166);
         ifSetOp(1, "Add 1000", Component.interface_105.component_105_166);
         str2 = "Add 1,000 to quantity";
-        ifSetOnMouseOver(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_166);
+        ifSetOnMouseRepeat(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_166);
     } else {
         ifSetText("Sell Offer", Component.interface_105.component_105_134);
         ifSetGraphic(Graphic.grand_exchange_misc_graphics_6, Component.interface_105.component_105_135);
         ifSetText("1", Component.interface_105.component_105_160);
         ifSetOp(1, "Sell 1", Component.interface_105.component_105_160);
         str2 = "Sell 1";
-        ifSetOnMouseOver(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_160);
+        ifSetOnMouseRepeat(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_160);
         ifSetText("10", Component.interface_105.component_105_162);
         ifSetOp(1, "Sell 10", Component.interface_105.component_105_162);
         str2 = "Sell 10";
-        ifSetOnMouseOver(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_162);
+        ifSetOnMouseRepeat(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_162);
         ifSetText("100", Component.interface_105.component_105_164);
         ifSetOp(1, "Sell 100", Component.interface_105.component_105_164);
         str2 = "Sell 100";
-        ifSetOnMouseOver(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_164);
+        ifSetOnMouseRepeat(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_164);
         ifSetText("ALL", Component.interface_105.component_105_166);
         ifSetOp(1, "Sell All", Component.interface_105.component_105_166);
         str2 = "Sell all";
-        ifSetOnMouseOver(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_166);
+        ifSetOnMouseRepeat(hook(cs2_649, "IIsii", [event_com, Component.interface_105.component_105_210, str2, 25, 300]), Component.interface_105.component_105_166);
     }
 
     if (intArg1 == -1) {

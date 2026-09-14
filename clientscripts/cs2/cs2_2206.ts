@@ -4,6 +4,6 @@
 // cs2_2206
 
 function cs2_2206(): void {
-    logout();
+    lobbyLeaveLobby();
     proc_loginscreen_setactivemenu(11);
 }

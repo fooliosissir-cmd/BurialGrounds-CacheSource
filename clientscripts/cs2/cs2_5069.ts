@@ -30,9 +30,9 @@ function cs2_5069(intArg0: Enum, intArg1: component, intArg2: number, intArg3: n
         ccSetTextShadow<1>(true);
         ccSetTextAlign<1>(0, 1, 0);
         ccSetText<1>(enumOp(type_int, type_string, intArg0, int5));
-        ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
-        ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xDFCFBF)]));
-        ccSetOnOpt(hook(cs2_5071, "iiig", [event_opindex, intArg2, int5, intArg0]));
+        ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
+        ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xDFCFBF)]));
+        ccSetOnOp(hook(cs2_5071, "iiig", [event_opindex, intArg2, int5, intArg0]));
         int6 = int6 + 15;
         int5 = int5 + 1;
     }

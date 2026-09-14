@@ -8,7 +8,7 @@ function cs2_4770(intArg0: component, intArg1: number, intArg2: number, intArg3:
     let int7: number = 38;
     let int8: graphic = Graphic.aif_icon_frame_1;
     let int9: graphic = gameframe_skin_graphic(Graphic.aif_window_stone_header_fill);
-    let int10: number = loadClanVarbit<2580>() - loadClanVarbit<2633>();
+    let int10: number = pushVarClanBit<2580>() - pushVarClanBit<2633>();
     let str0: string = "";
 
     if (intArg2 < 1 || intArg2 > 900) {
@@ -26,11 +26,11 @@ function cs2_4770(intArg0: component, intArg1: number, intArg2: number, intArg3:
     }
     ccSetfill(true);
     ccSetOp(1, "Details for");
-    ccSetOnOpt(hook(cs2_4776, "iii", [intArg2, int6, intArg5]));
+    ccSetOnOp(hook(cs2_4776, "iii", [intArg2, int6, intArg5]));
     ccSetOnVarcTransmit(hook(cs2_4773, "iiiY", [intArg2, int6, intArg5], [1560]));
     let int18: number = intArg1 + 1;
-    ccHookMouseEnter(hook(cs2_4779, "Iii", [intArg0, int18, 1]));
-    ccHookMouseExit(hook(cs2_4779, "Iii", [intArg0, int18, 0]));
+    ccSetOnMouseOver(hook(cs2_4779, "Iii", [intArg0, int18, 1]));
+    ccSetOnMouseLeave(hook(cs2_4779, "Iii", [intArg0, int18, 0]));
     ccSetdraggable(intArg0, -1);
     ccSetdragrenderbehaviour(3);
     ccSetdragdeadzone(8);
@@ -136,23 +136,23 @@ function cs2_4770(intArg0: component, intArg1: number, intArg2: number, intArg3:
             } else if (int14 > 1) {
                 str0 = "This building owes double upkeep this tick.";
             }
-            ccHookMouseEnter(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
-            ccSetOnMouseOver(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
-            ccHookMouseExit(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
-        } else if (cs2_4787(loadClanVarbit<2580>()) == 0) {
+            ccSetOnMouseOver(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
+            ccSetOnMouseRepeat(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
+            ccSetOnMouseLeave(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
+        } else if (cs2_4787(pushVarClanBit<2580>()) == 0) {
             ccSetHide(false);
             ccSetPosition(5, 12 + int7 * int6, 2, 0);
             ccSetSize(15, 15, 0, 0);
             ccSetGraphic(Graphic.aif_button_group_1_0);
             str0 = "You need more members to visit your citadel this week to avoid this building degrading.";
-            ccHookMouseEnter(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
-            ccSetOnMouseOver(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
-            ccHookMouseExit(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
+            ccSetOnMouseOver(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
+            ccSetOnMouseRepeat(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
+            ccSetOnMouseLeave(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
         } else if (int14 > 1) {
             str0 = "This building owes double upkeep this tick.";
-            ccHookMouseEnter(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
-            ccSetOnMouseOver(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
-            ccHookMouseExit(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
+            ccSetOnMouseOver(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
+            ccSetOnMouseRepeat(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
+            ccSetOnMouseLeave(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
         }
     } else if (intArg2 == 601) {
         if (cs2_4785() == 0) {
@@ -161,40 +161,40 @@ function cs2_4770(intArg0: component, intArg1: number, intArg2: number, intArg3:
             ccSetSize(15, 15, 0, 0);
             ccSetGraphic(Graphic.aif_button_group_1_0);
             str0 = "You lack some skill plot prerequisites to build this upgrade.";
-            ccHookMouseEnter(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
-            ccSetOnMouseOver(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
-            ccHookMouseExit(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
-        } else if (cs2_4786(loadClanVarbit<2580>()) == 0) {
+            ccSetOnMouseOver(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
+            ccSetOnMouseRepeat(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
+            ccSetOnMouseLeave(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
+        } else if (cs2_4786(pushVarClanBit<2580>()) == 0) {
             ccSetHide(false);
             ccSetPosition(60, 12 + int7 * int6, 2, 0);
             ccSetSize(15, 15, 0, 0);
             ccSetGraphic(Graphic.aif_button_group_1_0);
             str0 = "You need more members to visit your citadel this week to build this upgrade.";
-            ccHookMouseEnter(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
-            ccSetOnMouseOver(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
-            ccHookMouseExit(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
+            ccSetOnMouseOver(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
+            ccSetOnMouseRepeat(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
+            ccSetOnMouseLeave(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
         } else {
             ccSetHide(true);
         }
     } else if (intArg2 > 600) {
-        if (cs2_4787(loadClanVarbit<2580>()) == 0) {
+        if (cs2_4787(pushVarClanBit<2580>()) == 0) {
             ccSetHide(false);
             ccSetPosition(60, 12 + int7 * int6, 2, 0);
             ccSetSize(15, 15, 0, 0);
             ccSetGraphic(Graphic.aif_button_group_1_0);
             str0 = "Cannot upgrade: not enough full members have visited to perform upkeep.";
-            ccHookMouseEnter(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
-            ccSetOnMouseOver(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
-            ccHookMouseExit(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
+            ccSetOnMouseOver(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
+            ccSetOnMouseRepeat(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
+            ccSetOnMouseLeave(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
         } else if (int10 < int12) {
             ccSetHide(false);
             ccSetPosition(60, 12 + int7 * int6, 2, 0);
             ccSetSize(15, 15, 0, 0);
             ccSetGraphic(Graphic.aif_button_group_1_0);
             str0 = "Cannot upgrade: citadel walls will be too low tier. You will still be charged!";
-            ccHookMouseEnter(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
-            ccSetOnMouseOver(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
-            ccHookMouseExit(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
+            ccSetOnMouseOver(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
+            ccSetOnMouseRepeat(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
+            ccSetOnMouseLeave(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
         } else if (intArg2 == 603 || intArg2 == 602) {
             if (varc_clan_build_core_jobs == 0) {
                 varc_clan_build_core_jobs = 1;
@@ -204,9 +204,9 @@ function cs2_4770(intArg0: component, intArg1: number, intArg2: number, intArg3:
                 ccSetSize(15, 15, 0, 0);
                 ccSetGraphic(Graphic.aif_button_group_1_0);
                 str0 = "Cannot upgrade: You may upgrade only one of storehouse or battlefield per week.";
-                ccHookMouseEnter(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
-                ccSetOnMouseOver(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
-                ccHookMouseExit(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
+                ccSetOnMouseOver(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
+                ccSetOnMouseRepeat(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
+                ccSetOnMouseLeave(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
             }
         } else if (intArg2 >= 604 && intArg2 <= 615) {
             if (varc_clan_build_plot_jobs < 2) {
@@ -217,9 +217,9 @@ function cs2_4770(intArg0: component, intArg1: number, intArg2: number, intArg3:
                 ccSetSize(15, 15, 0, 0);
                 ccSetGraphic(Graphic.aif_button_group_1_0);
                 str0 = "Cannot upgrade: You may upgrade only two skilling plots per week.";
-                ccHookMouseEnter(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
-                ccSetOnMouseOver(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
-                ccHookMouseExit(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
+                ccSetOnMouseOver(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 1]));
+                ccSetOnMouseRepeat(hook(clientscript_clan_build_tooltip, "sIi", [str0, intArg0, event_comsubid]));
+                ccSetOnMouseLeave(hook(cs2_4781, "Iii", [intArg0, event_comsubid, 0]));
             }
         } else {
             ccSetHide(true);
@@ -236,11 +236,11 @@ function cs2_4770(intArg0: component, intArg1: number, intArg2: number, intArg3:
         ccSetPosition(5, 12 + int7 * int6, 2, 0);
         ccSetSize(15, 15, 0, 0);
         ccSetGraphic(Graphic.aif_button_group_1_3);
-        ccHookMouseEnter(hook(cs2_4780, "Iii", [intArg0, event_comsubid, 1]));
-        ccSetOnMouseOver(hook(clientscript_clan_build_tooltip, "sIi", [str3, intArg0, event_comsubid]));
-        ccHookMouseExit(hook(cs2_4780, "Iii", [intArg0, event_comsubid, 0]));
+        ccSetOnMouseOver(hook(cs2_4780, "Iii", [intArg0, event_comsubid, 1]));
+        ccSetOnMouseRepeat(hook(clientscript_clan_build_tooltip, "sIi", [str3, intArg0, event_comsubid]));
+        ccSetOnMouseLeave(hook(cs2_4780, "Iii", [intArg0, event_comsubid, 0]));
         ccSetOp(1, "Cancel");
-        ccSetOnOpt(hook(clientscript_deltooltip, "I", [Component.interface_1115.component_1115_186]));
+        ccSetOnOp(hook(clientscript_deltooltip, "I", [Component.interface_1115.component_1115_186]));
     } else {
         ccSetHide(true);
     }

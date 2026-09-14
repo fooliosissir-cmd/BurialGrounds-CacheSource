@@ -34,7 +34,7 @@ function cs2_5782(): void {
                 int9 = Component.interface_1056.component_1056_98;
                 int7 = Component.interface_1056.component_1056_97;
                 int10 = Component.interface_1056.component_1056_96;
-                ifSetOnOpt(hook(cs2_3976, "iii", [varbit_8587, 1, event_opindex]), int10);
+                ifSetOnOp(hook(cs2_3976, "iii", [varbit_8587, 1, event_opindex]), int10);
                 break;
             case 1:
                 int1 = varbit_8588;
@@ -43,7 +43,7 @@ function cs2_5782(): void {
                 int9 = Component.interface_1056.component_1056_141;
                 int7 = Component.interface_1056.component_1056_140;
                 int10 = Component.interface_1056.component_1056_137;
-                ifSetOnOpt(hook(cs2_3976, "iii", [varbit_8588, 2, event_opindex]), int10);
+                ifSetOnOp(hook(cs2_3976, "iii", [varbit_8588, 2, event_opindex]), int10);
                 break;
             case 2:
                 int1 = varbit_8589;
@@ -52,7 +52,7 @@ function cs2_5782(): void {
                 int9 = Component.interface_1056.component_1056_146;
                 int7 = Component.interface_1056.component_1056_145;
                 int10 = Component.interface_1056.component_1056_142;
-                ifSetOnOpt(hook(cs2_3976, "iii", [varbit_8589, 3, event_opindex]), int10);
+                ifSetOnOp(hook(cs2_3976, "iii", [varbit_8589, 3, event_opindex]), int10);
                 break;
             case 3:
                 int1 = varbit_8590;
@@ -61,7 +61,7 @@ function cs2_5782(): void {
                 int9 = Component.interface_1056.component_1056_151;
                 int7 = Component.interface_1056.component_1056_150;
                 int10 = Component.interface_1056.component_1056_147;
-                ifSetOnOpt(hook(cs2_3976, "iii", [varbit_8590, 4, event_opindex]), int10);
+                ifSetOnOp(hook(cs2_3976, "iii", [varbit_8590, 4, event_opindex]), int10);
                 break;
             case 4:
                 int1 = varbit_8591;
@@ -70,7 +70,7 @@ function cs2_5782(): void {
                 int9 = Component.interface_1056.component_1056_156;
                 int7 = Component.interface_1056.component_1056_155;
                 int10 = Component.interface_1056.component_1056_152;
-                ifSetOnOpt(hook(cs2_3976, "iii", [varbit_8591, 5, event_opindex]), int10);
+                ifSetOnOp(hook(cs2_3976, "iii", [varbit_8591, 5, event_opindex]), int10);
                 break;
             case 5:
                 int1 = varbit_8592;
@@ -79,13 +79,13 @@ function cs2_5782(): void {
                 int9 = Component.interface_1056.component_1056_162;
                 int7 = Component.interface_1056.component_1056_161;
                 int10 = Component.interface_1056.component_1056_157;
-                ifSetOnOpt(hook(cs2_3976, "iii", [varbit_8592, 6, event_opindex]), int10);
+                ifSetOnOp(hook(cs2_3976, "iii", [varbit_8592, 6, event_opindex]), int10);
                 break;
         }
         if (varbit_8577 == int2 + 1 && cs2_3999(varbit_8576) == 0) {
             int1 = varbit_8576;
             int0 = enumOp(type_int, type_struct, Enum.enum_3483, varbit_8576);
-            ifSetOnOpt(hook(cs2_3976, "iii", [varbit_8576, int12, event_opindex]), int10);
+            ifSetOnOp(hook(cs2_3976, "iii", [varbit_8576, int12, event_opindex]), int10);
         }
         int0 = task_get_data(structParam(int0, Param.param_1268));
         str0 = " -" + "<br>";
@@ -97,11 +97,11 @@ function cs2_5782(): void {
         if (int0 != -1) {
             cs2_5796(int1, 1, int4, -1, -1, int9, -1, int7);
             if (cs2_3999(int1) == 1) {
-                ifSetOnMouseOver(noHook(""), int10);
+                ifSetOnMouseRepeat(noHook(""), int10);
                 ifSetOp(1, "", int10);
                 ifSetOp(2, "", int10);
             } else {
-                ifSetOnMouseOver(hook(cs2_3981, "Is", [int10, str0]), int10);
+                ifSetOnMouseRepeat(hook(cs2_3981, "Is", [int10, str0]), int10);
                 ifSetOp(1, "Summary", int10);
                 if (varp_tutorial < 1000 || varbit_task_priority_mode == 1) {
                     ifSetOp(2, "", int10);

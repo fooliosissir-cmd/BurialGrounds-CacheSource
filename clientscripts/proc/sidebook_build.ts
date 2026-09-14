@@ -275,9 +275,9 @@ function proc_sidebook_build(intArg0: component, intArg1: component, intArg2: co
             ccSetText(str0);
             if (int5 > 0) {
                 ccSetOp(1, "Go");
-                ccSetOnOpt(hook(cs2_2065, "iiIII", [event_opindex, int5, intArg0, intArg1, intArg2]));
-                ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
-                ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFF981F)]));
+                ccSetOnOp(hook(cs2_2065, "iiIII", [event_opindex, int5, intArg0, intArg1, intArg2]));
+                ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+                ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFF981F)]));
             }
         }
         int4 = int4 + 1;

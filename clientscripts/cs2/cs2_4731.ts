@@ -8,7 +8,7 @@ function cs2_4731(intArg0: number, intArg1: number): void {
     let int5: number = camGetAngleYa() + (varc_1653 - intArg0) * 2;
     let int6: number = camGetAngleXa() - (varc_1654 - intArg1);
 
-    if (int3 == 1 && varc_173 != 1 && (varbit_cutscene_status != 1 || (varbit_cutscene_status == 1 && varbit_10196 == 1)) && camModeisfollowplayer() == 1) {
+    if (int3 == 1 && varc_173 != 1 && (varbit_cutscene_status != 1 || (varbit_cutscene_status == 1 && varbit_10196 == 1)) && cam2IsEnabled() == 1) {
         camForceAngle(int6, int5);
     }
     varc_1653 = intArg0;

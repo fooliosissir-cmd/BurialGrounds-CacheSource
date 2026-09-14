@@ -36,8 +36,8 @@ function clan_signpost_populate_side(intArg0: component, intArg1: component, int
             str0 = "This clan is flagged as an ally.";
             break;
     }
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1116.component_1116_51, Component.interface_1116.component_1116_591, -1, str0, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]), Component.interface_1116.component_1116_591);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1116.component_1116_51]), Component.interface_1116.component_1116_591);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1116.component_1116_51, Component.interface_1116.component_1116_591, -1, str0, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]), Component.interface_1116.component_1116_591);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1116.component_1116_51]), Component.interface_1116.component_1116_591);
     cs2_5106();
 
     if (intArg6 == true) {

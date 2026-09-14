@@ -37,7 +37,7 @@ function cs2_4436(intArg0: component, intArg1: number): void {
     cs2_4470();
     cs2_5395();
     let str0: string = "Leave your clan chat channel.";
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1110.component_1110_124, event_com, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xF5B241), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1110.component_1110_82);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1110.component_1110_124, event_com, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xF5B241), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1110.component_1110_82);
     ifSetOp(1, "Leave Clan Chat channel", Component.interface_1110.component_1110_82);
     let int12: number = 0;
     let str1: string = "";
@@ -56,11 +56,11 @@ function cs2_4436(intArg0: component, intArg1: number): void {
     ifSetSize(int21, 0, 0, 1, int4);
     ifSetSize(int21, 0, 0, 1, int5);
     ifSetHide(false, int9);
-    ifSetLinkActiveClanChannel(hook(clan_chat_list_refresh, "i", [-1]), intArg0);
+    ifSetOnClanChannelTransmit(hook(clan_chat_list_refresh, "i", [-1]), intArg0);
     ifSetText(activeClanChannelGetClanName(), Component.interface_1110.component_1110_27);
     ifSetText("", Component.interface_1110.component_1110_62);
     ifSetHide(true, Component.interface_1110.component_1110_67);
-    let int22: number = activeClanChannelGetUserSlot(removetags(chatPlayerNameUnfiltered()));
+    let int22: number = activeClanChannelGetUserSlot(removetags(chatPlayerName()));
 
     if (int22 == -1) {
         return;
@@ -80,7 +80,7 @@ function cs2_4436(intArg0: component, intArg1: number): void {
         ccSetColour(colour(0xA4997D));
         ccSetTextFont(Graphic.verdana_11pt_regular);
         ccSetTextShadow(true);
-        if (compare(str2, removetags(chatPlayerNameUnfiltered())) != 0) {
+        if (compare(str2, removetags(chatPlayerName())) != 0) {
             ccSetOpBase(str2);
             if (friendTest(str2) == 1) {
                 ccSetOp(1, "Message");
@@ -94,7 +94,7 @@ function cs2_4436(intArg0: component, intArg1: number): void {
             if (int23 >= 100) {
                 ccSetOp(9, "Temp-ban");
             }
-            ccSetOnOpt(hook(clan_chat_list_op, "sii", [str2, event_opindex, int25]));
+            ccSetOnOp(hook(clan_chat_list_op, "sii", [str2, event_opindex, int25]));
         }
         str1 = "\xa0\xa0\xa0" + str2;
         if (stringWidth(str1, Graphic.verdana_11pt_regular) > int20) {
@@ -102,8 +102,8 @@ function cs2_4436(intArg0: component, intArg1: number): void {
                 str1 = subString(str1, 0, stringLength(str1) - 1);
             }
             str1 = str1 + "...";
-            ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_1110.component_1110_124, event_com, event_comsubid, str2, event_mousex, event_mousey]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1110.component_1110_124]));
+            ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_1110.component_1110_124, event_com, event_comsubid, str2, event_mousex, event_mousey]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1110.component_1110_124]));
         }
         ccSetText(str1);
         ccSetTextShadow(true);
@@ -132,15 +132,15 @@ function cs2_4436(intArg0: component, intArg1: number): void {
                 }
                 ccSetSize(24, 12, 0, 0);
                 ccSetPosition(2, int12 + 1, 0, 0);
-                ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_1110.component_1110_124, event_com, event_comsubid, str4, event_mousex, event_mousey]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1110.component_1110_124]));
+                ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_1110.component_1110_124, event_com, event_comsubid, str4, event_mousex, event_mousey]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1110.component_1110_124]));
             }
         } else {
             int16 = 0;
         }
         if (int21 < int17) {
-            ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_1110.component_1110_124, event_com, event_comsubid, str4, event_mousex, event_mousey]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1110.component_1110_124]));
+            ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_1110.component_1110_124, event_com, event_comsubid, str4, event_mousex, event_mousey]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1110.component_1110_124]));
             str3 = "...";
         }
         ccCreate(int4, 4, ifGetNextSubId(int4));
@@ -155,8 +155,8 @@ function cs2_4436(intArg0: component, intArg1: number): void {
         } else {
             ccSetColour(colour(0xFFFF64));
         }
-        ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_1110.component_1110_124, event_com, event_comsubid, str4, event_mousex, event_mousey]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1110.component_1110_124]));
+        ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_1110.component_1110_124, event_com, event_comsubid, str4, event_mousex, event_mousey]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1110.component_1110_124]));
         ccCreate(int3, 5, ifGetNextSubId(int3));
         if (int18 == 127) {
             ccSetPosition(3, 3, 0, 0);
@@ -170,7 +170,7 @@ function cs2_4436(intArg0: component, intArg1: number): void {
         ccSetPosition(0, 0, 2, 0);
         ccSetSize(9, int13, 0, 0);
         ccSetGraphic(gameframe_skin_graphic(Graphic.aif_browngrad_whole_btn_1));
-        ccSetOnOpt(hook(cs2_4317, "Ii", [event_com, event_comsubid]));
+        ccSetOnOp(hook(cs2_4317, "Ii", [event_com, event_comsubid]));
         ccSetOp(1, "Show options");
         int25 = int25 + 1;
     }

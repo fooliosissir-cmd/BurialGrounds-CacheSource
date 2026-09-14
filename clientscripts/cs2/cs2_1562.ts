@@ -4,7 +4,7 @@
 // cs2_1562
 
 function cs2_1562(): void {
-    if (ifGetTop(49414144, -1) == 1) {
+    if (minimenuopen(49414144, -1) == 1) {
         return;
     }
     ifSetOnTimer(noHook(""), Component.interface_754.component_754_0);

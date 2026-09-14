@@ -9,12 +9,12 @@ function cs2_5008(): number {
     let int2: number = 0;
 
     if (activeClanSettingsFindAffined() == 1) {
-        int0 = activeClanSettingsGetAffinedSlot(chatPlayerNameUnfiltered());
+        int0 = activeClanSettingsGetAffinedSlot(chatPlayerName());
         if (int0 < 0) {
             return 0;
         }
         int1 = activeClanSettingsGetAffinedRank(int0);
-        int2 = loadClanVar<2132>() - dateMinutes();
+        int2 = pushVarClan<2132>() - dateMinutes();
         if (int2 < 360) {
             if (int1 < 126) {
                 return 0;

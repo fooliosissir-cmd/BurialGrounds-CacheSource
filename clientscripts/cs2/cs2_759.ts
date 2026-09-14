@@ -205,8 +205,8 @@ function cs2_759(intArg0: component, intArg1: number, intArg2: number, strArg0: 
             ccSetSize(48, 52, 0, 0);
             ccSetPosition(int33, int34, 0, 0);
             ccSetGraphic(Graphic.km_shoptile_0);
-            ccSetOnMouseOver(hook(graphic_swapper_dynamic, "Iid", [event_com, int35, int37]));
-            ccHookMouseExit(hook(graphic_swapper_dynamic, "Iid", [event_com, int35, int38]));
+            ccSetOnMouseRepeat(hook(graphic_swapper_dynamic, "Iid", [event_com, int35, int37]));
+            ccSetOnMouseLeave(hook(graphic_swapper_dynamic, "Iid", [event_com, int35, int38]));
             int35 = int35 + 1;
             ccCreate(intArg0, 5, int35);
             int35 = int35 + 1;
@@ -229,14 +229,14 @@ function cs2_759(intArg0: component, intArg1: number, intArg2: number, strArg0: 
                 lore_interface_inv_draw_slot(enumOp(type_int, type_obj, Enum.lore_null_enum, int6), int32, intArg0, int35, strArg0, strArg1, strArg2, strArg3, strArg4, strArg5);
             }
             if (int32 == Obj.lore_pouch_grey) {
-                ccSetOnMouseOver(hook(lore_blanktip, "iIIis", [event_comsubid, Component.interface_79.component_79_31, Component.interface_79.component_79_16, int31, str6]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_79.component_79_31]));
+                ccSetOnMouseRepeat(hook(lore_blanktip, "iIIis", [event_comsubid, Component.interface_79.component_79_31, Component.interface_79.component_79_16, int31, str6]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_79.component_79_31]));
             } else {
                 str6 = enumOp(type_obj, type_string, Enum.enum_1187, int32);
                 int31 = enumOp(type_obj, type_int, Enum.lore_levels_enum, int32);
                 [int11, int12, int13, int14, int15, int16, int17, int18, int19, int20, int21, int22, int23, int24, int25, int26, int27, int28, int29, int30] = cs2_767(int32);
-                ccSetOnMouseOver(hook(cs2_770, "iIIisoioioioioioioioioioi", [event_comsubid, Component.interface_79.component_79_31, Component.interface_79.component_79_16, int31, str6, int11, 1, int12, int22, int13, int23, int14, int24, int15, int25, int16, int26, int17, int27, int18, int28, int19, int29, int20, int30]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_79.component_79_31]));
+                ccSetOnMouseRepeat(hook(cs2_770, "iIIisoioioioioioioioioioi", [event_comsubid, Component.interface_79.component_79_31, Component.interface_79.component_79_16, int31, str6, int11, 1, int12, int22, int13, int23, int14, int24, int15, int25, int16, int26, int17, int27, int18, int28, int19, int29, int20, int30]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_79.component_79_31]));
             }
             int35 = int35 + 1;
             ccCreate(intArg0, 5, int35);

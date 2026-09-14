@@ -10,7 +10,7 @@ function graphics_options_detailget(intArg0: struct): number {
         case Struct.struct_831:
             return bool_to_int(detailGetGrounddecorOn());
         case Struct.struct_833:
-            return detailGetIdleanimsMany();
+            return detailGetIdleanims();
         case Struct.struct_834:
             return bool_to_int(detailGetFlickeringOn());
         case Struct.struct_836:
@@ -24,7 +24,7 @@ function graphics_options_detailget(intArg0: struct): number {
         case Struct.struct_840:
             return bool_to_int(detailGetFogOn());
         case Struct.struct_841:
-            return detailGetAntialiasingPreview();
+            return detailGetAntialiasing();
         case Struct.struct_842:
             return detailGetParticles();
         case Struct.struct_843:
@@ -34,7 +34,7 @@ function graphics_options_detailget(intArg0: struct): number {
         case Struct.struct_845:
             return varc_178;
         case Struct.struct_908:
-            return detailGetCpu();
+            return detailGetCpuusage();
         case Struct.struct_963:
             return bool_to_int(detailGetTexturing());
         case Struct.struct_1009:

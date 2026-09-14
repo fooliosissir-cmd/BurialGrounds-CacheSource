@@ -65,21 +65,21 @@ function cs2_2695(intArg0: component, intArg1: number, intArg2: number, intArg3:
             ccSetPosition(0, int24, 1, 0);
             ccSetTextAlign(1, 1, 0);
             ccSetTextFont(Graphic.p11_full);
-            ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x26527B)]));
+            ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x26527B)]));
             if (intArg5 != Struct.struct_1009) {
                 if (int25 < int23) {
                     ccSetColour(colour(0xEBE0BC));
-                    ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xEBE0BC)]));
+                    ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xEBE0BC)]));
                 } else {
                     ccSetColour(colour(0x00B1E1));
-                    ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x00B1E1)]));
+                    ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x00B1E1)]));
                 }
             } else if (int25 > 0) {
                 ccSetColour(colour(0xEBE0BC));
-                ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xEBE0BC)]));
+                ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xEBE0BC)]));
             } else {
                 ccSetColour(colour(0x00B1E1));
-                ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x00B1E1)]));
+                ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x00B1E1)]));
             }
             if (int21 != -1) {
                 ccSetText(enumOp(type_int, type_string, int21, int26));
@@ -125,8 +125,8 @@ function cs2_2695(intArg0: component, intArg1: number, intArg2: number, intArg3:
 
     if (ccFind(intArg0, intArg1) == 1) {
         ccSetOnClick(hook(cs2_2696, "IiiiiJiiiii", [intArg0, intArg1, intArg2, intArg3, intArg4, intArg5, intArg6, intArg7, intArg8, intArg9, intArg10]));
-        ccHookMouseEnter(hook(cs2_2691, "Ii1ii1", [event_com, intArg2, true, intArg3, colour(0x80786D), false]));
-        ccHookMouseExit(hook(cs2_2691, "Ii1ii1", [event_com, intArg2, false, intArg3, colour(0x5F5B52), false]));
+        ccSetOnMouseOver(hook(cs2_2691, "Ii1ii1", [event_com, intArg2, true, intArg3, colour(0x80786D), false]));
+        ccSetOnMouseLeave(hook(cs2_2691, "Ii1ii1", [event_com, intArg2, false, intArg3, colour(0x5F5B52), false]));
         if (ccFind<1>(intArg0, intArg3) == 1) {
             ccSetColour<1>(colour(0xB2AA9F));
             if (int28 == 1) {

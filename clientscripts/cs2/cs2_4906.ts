@@ -21,11 +21,11 @@ function cs2_4906(intArg0: number): void {
 
     if (clanProfileFind() == 1) {
         if (varc_clan_stronghold_main_map_next_week == 0) {
-            int1 = cs2_5116(loadClanVarbit<2598>(), loadClanVarbit<2580>());
-            int2 = cs2_5117(loadClanVarbit<2598>(), loadClanVarbit<2580>());
+            int1 = cs2_5116(pushVarClanBit<2598>(), pushVarClanBit<2580>());
+            int2 = cs2_5117(pushVarClanBit<2598>(), pushVarClanBit<2580>());
         } else {
-            int1 = cs2_5116(loadClanVarbit<2074>(), loadClanVarbit<2580>());
-            int2 = cs2_5117(loadClanVarbit<2074>(), loadClanVarbit<2580>());
+            int1 = cs2_5116(pushVarClanBit<2074>(), pushVarClanBit<2580>());
+            int2 = cs2_5117(pushVarClanBit<2074>(), pushVarClanBit<2580>());
         }
         if (int1 == -1) {
             return;

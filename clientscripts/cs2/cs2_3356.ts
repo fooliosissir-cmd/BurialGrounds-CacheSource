@@ -13,7 +13,7 @@ function cs2_3356(intArg0: component, intArg1: number, intArg2: number): void {
         ifSetGraphic(enumOp(type_int, type_graphic, Enum.enum_796, intArg1), intArg0);
         ifSetOutline(0, intArg0);
         ifSetGraphicShadow(0, intArg0);
-        ifSetOnOpt(noHook(""), intArg0);
+        ifSetOnOp(noHook(""), intArg0);
         ifClearops(intArg0);
         return;
     }
@@ -25,6 +25,6 @@ function cs2_3356(intArg0: component, intArg1: number, intArg2: number): void {
     ifClearops(intArg0);
     ifSetOp(10, "Examine" + "<col=ff9040>", intArg0);
     ifSetOpBase("<col=ff9040>" + ocName(int3), intArg0);
-    ifSetOnMouseOver(hook(cs2_5495, "o", [int3]), intArg0);
-    hookMouseExit(hook(cs2_5495, "o", [-1]), intArg0);
+    ifSetOnMouseRepeat(hook(cs2_5495, "o", [int3]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_5495, "o", [-1]), intArg0);
 }

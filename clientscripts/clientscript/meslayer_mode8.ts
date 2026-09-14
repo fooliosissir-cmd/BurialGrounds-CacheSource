@@ -24,7 +24,7 @@ function meslayer_mode8(strArg0: string): void {
         ccSetText("Last name entered: " + varcstr_201);
         ccSetOp(1, "Use:");
         ccSetOpBase("<col=ff9040>" + removetags(varcstr_201) + "</col>");
-        ccSetOnOpt(hook(meslayer_lastname, "iiIis", [varc_meslayermode, event_opindex, event_com, event_comsubid, varcstr_201]));
+        ccSetOnOp(hook(meslayer_lastname, "iiIis", [varc_meslayermode, event_opindex, event_com, event_comsubid, varcstr_201]));
     } else {
         varcstr_201 = "";
         varc_1026 = 1;

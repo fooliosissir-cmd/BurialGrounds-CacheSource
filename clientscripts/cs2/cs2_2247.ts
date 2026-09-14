@@ -27,7 +27,7 @@ function cs2_2247(): void {
     while (int0 < enumGetoutputcount(int6)) {
         ccCreate(Component.interface_940.component_940_2, 5, int4);
         ccSetOp(1, ocName(structParam(enumOp(type_int, type_struct, int6, int0), Param.param_1070)));
-        ccSetOnOpt(hook(cs2_2250, "i", [int4]));
+        ccSetOnOp(hook(cs2_2250, "i", [int4]));
         int5 = int4;
         int4 = int4 + 1;
         ccSetGraphic(Graphic.km_shoptile_1);
@@ -42,8 +42,8 @@ function cs2_2247(): void {
         ccSetGraphic(Graphic.km_shoptile_0);
         ccSetSize(48, 52, 0, 0);
         ccSetPosition(int1 * 60 + 2, int2 * 67 + 1, 0, 0);
-        ccSetOnMouseOver(hook(cs2_2248, "i", [int5]));
-        ccHookMouseExit(hook(cs2_2249, "i", [int5]));
+        ccSetOnMouseRepeat(hook(cs2_2248, "i", [int5]));
+        ccSetOnMouseLeave(hook(cs2_2249, "i", [int5]));
         ccCreate(Component.interface_940.component_940_2, 5, int4);
         int4 = int4 + 1;
         ccSetGraphic(Graphic.km_shopitems_4);

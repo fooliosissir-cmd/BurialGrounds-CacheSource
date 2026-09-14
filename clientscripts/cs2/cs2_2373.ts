@@ -70,11 +70,11 @@ function cs2_2373(intArg0: component, intArg1: number): void {
                 } else {
                     ccSetOutline(1);
                 }
-                ccSetOnOpt(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
+                ccSetOnOp(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
                 ccSetOnTargetEnter(hook(cs2_2372, "Ii", [intArg0, int2]));
-                ccSetOnOp(hook(cs2_2372, "Ii", [intArg0, -1]));
-                ccSetOnMouseOver(hook(cs2_5495, "o", [int4]));
-                ccHookMouseExit(hook(cs2_5495, "o", [-1]));
+                ccSetOnTargetLeave(hook(cs2_2372, "Ii", [intArg0, -1]));
+                ccSetOnMouseRepeat(hook(cs2_5495, "o", [int4]));
+                ccSetOnMouseLeave(hook(cs2_5495, "o", [-1]));
             } else {
                 ccSetSize(32, 32, 0, 0);
                 ccSetPosition(...cs2_788(int3, 2, 2), 0, 0);

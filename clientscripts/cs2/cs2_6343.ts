@@ -4,5 +4,5 @@
 // cs2_6343
 
 function cs2_6343(): void {
-    openurlNoLogin("forum", "forums.ws", 0);
+    openurl("forum", "forums.ws", 0);
 }

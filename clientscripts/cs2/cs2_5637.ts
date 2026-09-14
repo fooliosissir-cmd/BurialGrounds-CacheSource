@@ -4,7 +4,7 @@
 // cs2_5637
 
 function cs2_5637(): void {
-    createCreaterequest(16);
-    logout();
+    createStepReached(16);
+    lobbyLeaveLobby();
     proc_loginscreen_setactivemenu(12);
 }

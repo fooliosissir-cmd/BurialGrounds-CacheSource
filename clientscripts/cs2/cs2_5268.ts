@@ -10,9 +10,9 @@ function cs2_5268(intArg0: number, strArg0: string, strArg1: string): void {
     ccCreate(Component.interface_1137.component_1137_109, 4, int1);
     ccSetText(strArg0);
     strArg1 = append(strArg1, "<col=800000>" + textSwitch(intArg0, " Teams: Yes.", " Teams: No."));
-    ccSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_1137.component_1137_6, strArg1, 25, 519]));
+    ccSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_1137.component_1137_6, strArg1, 25, 519]));
     ccSetSize(8100, 20, 2, 0);
-    ccSetOnOpt(hook(cs2_5267, "", []));
+    ccSetOnOp(hook(cs2_5267, "", []));
 
     if (int1 % 2 == 0) {
         ccSetPosition(2, int2, 0, 0);
@@ -22,8 +22,8 @@ function cs2_5268(intArg0: number, strArg0: string, strArg1: string): void {
     ccSetTextFont(Graphic.p11_full);
     ccSetColour(colour(0x00FF00));
     ccSetTextShadow(true);
-    ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
-    ccHookMouseExit(hook(cs2_1949, "IiiI", [event_com, event_comsubid, colour(0x00FF00), Component.interface_1137.component_1137_6]));
+    ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+    ccSetOnMouseLeave(hook(cs2_1949, "IiiI", [event_com, event_comsubid, colour(0x00FF00), Component.interface_1137.component_1137_6]));
     ccSetOp(1, "Select");
 
     if (int1 >= 10 && int1 % 2 == 0) {

@@ -27,8 +27,8 @@ function meslayer_mode1(strArg0: string): void {
     ifSetOnKey(hook(meslayer_onkey, "iz", [event_keycode, event_keychar]), Component.interface_752.component_752_5);
     ccDeleteAll(Component.interface_752.component_752_3);
     ifSetColour(colour(0x000080), Component.interface_752.component_752_5);
-    ifSetOnMouseOver(hook(text_colour_swapper, "Ii", [event_com, colour(0xFFFFFF)]), Component.interface_752.component_752_5);
-    hookMouseExit(hook(text_colour_swapper, "Ii", [event_com, colour(0x000080)]), Component.interface_752.component_752_5);
+    ifSetOnMouseRepeat(hook(text_colour_swapper, "Ii", [event_com, colour(0xFFFFFF)]), Component.interface_752.component_752_5);
+    ifSetOnMouseLeave(hook(text_colour_swapper, "Ii", [event_com, colour(0x000080)]), Component.interface_752.component_752_5);
     cs2_1188();
     ifSetHide(true, Component.interface_752.component_752_6);
     ifSetOnTimer(noHook(""), Component.interface_752.component_752_5);

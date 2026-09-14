@@ -50,11 +50,11 @@ function cs2_59(intArg0: number): void {
                 ccSetdragrenderbehaviour<1>(2);
                 ccSetdragdeadzone<1>(5);
                 ccSetdragdeadtime<1>(5);
-                ccSetOnOpt<1>(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
+                ccSetOnOp<1>(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
                 ccSetOnDragComplete<1>(hook(cs2_744, "IiIii", [event_com, event_comsubid, event_com2, event_comsubid2, intArg0]));
             }
-            ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int4]));
-            ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int3]));
+            ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int4]));
+            ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int3]));
         }
         int1 = int1 + max(ccGetWidth(), ccGetWidth<1>()) + 10;
         int5 = int5 + 1;
@@ -130,7 +130,7 @@ function cs2_59(intArg0: number): void {
                     ccSetdragrenderbehaviour(2);
                     ccSetdragdeadzone(5);
                     ccSetdragdeadtime(5);
-                    ccSetOnOpt(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
+                    ccSetOnOp(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
                     ccSetOnDragComplete(hook(cs2_744, "IiIii", [event_com, event_comsubid, event_com2, event_comsubid2, intArg0]));
                     int6 = int6 + 1;
                     if (int6 >= int14) {
@@ -141,8 +141,8 @@ function cs2_59(intArg0: number): void {
                     ccSetSize<1>(36, 36, 0, 0);
                     ccSetPosition<1>(int10, int11, 0, 0);
                     ccSetGraphic<1>(int3);
-                    ccHookMouseEnter<1>(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int4]));
-                    ccHookMouseExit<1>(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int3]));
+                    ccSetOnMouseOver<1>(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int4]));
+                    ccSetOnMouseLeave<1>(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int3]));
                 }
             } else {
                 ccSetHide(true);
@@ -272,11 +272,11 @@ function cs2_59(intArg0: number): void {
                 ccSetTextFont(Graphic.p11_full);
                 ccSetTextAlign(1, 1, 0);
                 ccSetColour(colour(0xEFB063));
-                ccHookMouseEnter(hook(cs2_743, "Ii1", [event_com, event_comsubid, true]));
-                ccHookMouseExit(hook(cs2_743, "Ii1", [event_com, event_comsubid, false]));
+                ccSetOnMouseOver(hook(cs2_743, "Ii1", [event_com, event_comsubid, true]));
+                ccSetOnMouseLeave(hook(cs2_743, "Ii1", [event_com, event_comsubid, false]));
                 ccSetText(str1);
                 ccSetOp(1, "Select");
-                ccSetOnOpt(hook(cs2_747, "isi", [event_opindex, str1, intArg0]));
+                ccSetOnOp(hook(cs2_747, "isi", [event_opindex, str1, intArg0]));
                 int7 = int7 + ccGetHeight();
             } else if (ccFind<1>(Component.interface_18.component_18_29, intArg0) == 1) {
                 ccSetText<1>(str1);

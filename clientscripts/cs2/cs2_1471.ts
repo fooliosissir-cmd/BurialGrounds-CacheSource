@@ -5,7 +5,7 @@
 
 function cs2_1471(): void {
     ifClearops(Component.interface_762.component_762_17);
-    ifSetOnOpt(noHook(""), Component.interface_762.component_762_17);
+    ifSetOnOp(noHook(""), Component.interface_762.component_762_17);
     varc_190 = 0;
 
     if (varc_188 == 0) {

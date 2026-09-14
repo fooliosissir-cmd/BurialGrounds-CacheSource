@@ -10,7 +10,7 @@ function clan_chat_onload(): void {
 
     if (activeClanChannelFindAffined() == 1) {
         varc_client_timer = 0;
-        ifSetOnClanChannelTransmit(hook(clan_chat_onclantransmit, "I", [event_com]), int0);
+        ifSetOnClanTransmit(hook(clan_chat_onclantransmit, "I", [event_com]), int0);
         ifSetOnFriendTransmit(hook(clan_chat_onclantransmit, "I", [event_com]), int0);
         ifSetScrollSize(0, 0, int0);
         ifSetScrollPos(0, 0, int0);

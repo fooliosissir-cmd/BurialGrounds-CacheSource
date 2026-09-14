@@ -14,7 +14,7 @@ function cs2_2246(intArg0: component, intArg1: component, intArg2: number, intAr
     ifSetHide(true, intArg1);
     ifSetObject(int4, invGetNum(94, intArg3), intArg0);
     ifClearops(intArg0);
-    ifSetOnOpt(hook(cs2_1620, "Iiiii", [event_com, -1, 100, 0, 8]), intArg0);
+    ifSetOnOp(hook(cs2_1620, "Iiiii", [event_com, -1, 100, 0, 8]), intArg0);
 
     if (ocParam(int4, Param.rand_item) > 0) {
         if (ocParam(int4, Param.rand_bound) > 0 || ocParam(int4, Param.rand_bound_ammo) > 0) {

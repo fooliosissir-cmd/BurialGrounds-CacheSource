@@ -6,10 +6,10 @@
 function cs2_5394(): number {
     let int0: number = -1;
 
-    if (compare(varcstr_clan_channel_selected_name, removetags(chatPlayerNameUnfiltered())) == 0) {
+    if (compare(varcstr_clan_channel_selected_name, removetags(chatPlayerName())) == 0) {
         return 1;
     }
-    let int1: number = activeClanChannelGetUserSlot(removetags(chatPlayerNameUnfiltered()));
+    let int1: number = activeClanChannelGetUserSlot(removetags(chatPlayerName()));
 
     if (int1 >= 0) {
         int0 = activeClanChannelGetUserRank(int1);

@@ -10,7 +10,7 @@ function poh_furniture_create_closebutton(intArg0: component): void {
         ifSetPauseText("Back", intArg0);
     } else {
         ifSetOp(1, "Close", intArg0);
-        ifSetOnOpt(hook(closebutton_click, "", []), intArg0);
+        ifSetOnOp(hook(closebutton_click, "", []), intArg0);
         ifSetPauseText("", intArg0);
     }
     ifSetOnVarcTransmit(hook(poh_furniture_create_closebutton, "IY", [intArg0], [841]), intArg0);

@@ -12,11 +12,11 @@ function qip_digsite_cert_name(intArg0: component, intArg1: component): void {
             str0 = subString(str0, 0, stringLength(str0) - 1);
         }
         str0 = str0 + "...";
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [event_com, intArg1, varcstr_210, 25, 5000]), intArg0);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [intArg1]), intArg0);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [event_com, intArg1, varcstr_210, 25, 5000]), intArg0);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [intArg1]), intArg0);
     } else {
-        ifSetOnMouseOver(noHook(""), intArg0);
-        hookMouseExit(noHook(""), intArg0);
+        ifSetOnMouseRepeat(noHook(""), intArg0);
+        ifSetOnMouseLeave(noHook(""), intArg0);
     }
     ifSetText(str0, intArg0);
 }

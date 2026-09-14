@@ -19,8 +19,8 @@ function cs2_4771(intArg0: component, intArg1: number): number {
     }
     ccSetfill(true);
     let int5: number = intArg1 + 1;
-    ccHookMouseEnter(hook(cs2_4779, "Iii", [intArg0, int5, 1]));
-    ccHookMouseExit(hook(cs2_4779, "Iii", [intArg0, int5, 0]));
+    ccSetOnMouseOver(hook(cs2_4779, "Iii", [intArg0, int5, 1]));
+    ccSetOnMouseLeave(hook(cs2_4779, "Iii", [intArg0, int5, 0]));
     intArg1 = intArg1 + 1;
     ccCreate(intArg0, 5, intArg1);
     ccSetGraphic(int4);

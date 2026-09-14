@@ -38,7 +38,7 @@ function meslayer_mode9(strArg0: string): void {
         ccSetText("Last entered: " + varcstr_stringdialog_suggested_string);
         ccSetOp(1, "Use:");
         ccSetOpBase("<col=ff9040>" + removetags(varcstr_stringdialog_suggested_string) + "</col>");
-        ccSetOnOpt(hook(meslayer_lastname, "iiIis", [varc_meslayermode, event_opindex, event_com, event_comsubid, varcstr_stringdialog_suggested_string]));
+        ccSetOnOp(hook(meslayer_lastname, "iiIis", [varc_meslayermode, event_opindex, event_com, event_comsubid, varcstr_stringdialog_suggested_string]));
         varcstr_stringdialog_suggested_string = "";
     }
     cs2_1188();

@@ -4,7 +4,7 @@
 // cs2_1420
 
 function cs2_1420(): number {
-    if (varc_173 != 1 && (varbit_cutscene_status != 1 || (varbit_cutscene_status == 1 && varbit_10196 == 1)) && camModeisfollowplayer() == 1) {
+    if (varc_173 != 1 && (varbit_cutscene_status != 1 || (varbit_cutscene_status == 1 && varbit_10196 == 1)) && cam2IsEnabled() == 1) {
         return 1;
     } else {
         return 0;

@@ -133,45 +133,45 @@ function cs2_391(): void {
             break;
     }
     ccDeleteAll(Component.interface_1028.component_1028_115);
-    hookMouseEnter(noHook(""), int0);
-    hookMouseExit(hook(cs2_382, "", []), int0);
+    ifSetOnMouseOver(noHook(""), int0);
+    ifSetOnMouseLeave(hook(cs2_382, "", []), int0);
     cs2_376(Component.interface_1028.component_1028_115, int0, -1, colour(0xDFBA38), colour(0xC37C00), 0, 0);
 
     if (int0 != Component.interface_1028.component_1028_116) {
-        hookMouseEnter(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_116);
-        hookMouseExit(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_116);
+        ifSetOnMouseOver(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_116);
+        ifSetOnMouseLeave(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_116);
     }
-    ifSetOnMouseOver(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_116), event_com, -1, event_mousex]), Component.interface_1028.component_1028_116);
+    ifSetOnMouseRepeat(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_116), event_com, -1, event_mousex]), Component.interface_1028.component_1028_116);
 
     if (int0 != Component.interface_1028.component_1028_117) {
-        hookMouseEnter(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_117);
-        hookMouseExit(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_117);
+        ifSetOnMouseOver(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_117);
+        ifSetOnMouseLeave(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_117);
     }
-    ifSetOnMouseOver(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_117), event_com, -1, event_mousex]), Component.interface_1028.component_1028_117);
+    ifSetOnMouseRepeat(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_117), event_com, -1, event_mousex]), Component.interface_1028.component_1028_117);
 
     if (int0 != Component.interface_1028.component_1028_121) {
-        hookMouseEnter(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_121);
-        hookMouseExit(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_121);
+        ifSetOnMouseOver(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_121);
+        ifSetOnMouseLeave(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_121);
     }
-    ifSetOnMouseOver(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_121), event_com, -1, event_mousex]), Component.interface_1028.component_1028_121);
+    ifSetOnMouseRepeat(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_121), event_com, -1, event_mousex]), Component.interface_1028.component_1028_121);
 
     if (int0 != Component.interface_1028.component_1028_118) {
-        hookMouseEnter(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_118);
-        hookMouseExit(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_118);
+        ifSetOnMouseOver(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_118);
+        ifSetOnMouseLeave(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_118);
     }
-    ifSetOnMouseOver(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_118), event_com, -1, event_mousex]), Component.interface_1028.component_1028_118);
+    ifSetOnMouseRepeat(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_118), event_com, -1, event_mousex]), Component.interface_1028.component_1028_118);
 
     if (int0 != Component.interface_1028.component_1028_119) {
-        hookMouseEnter(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_119);
-        hookMouseExit(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_119);
+        ifSetOnMouseOver(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_119);
+        ifSetOnMouseLeave(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_119);
     }
-    ifSetOnMouseOver(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_119), event_com, -1, event_mousex]), Component.interface_1028.component_1028_119);
+    ifSetOnMouseRepeat(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_119), event_com, -1, event_mousex]), Component.interface_1028.component_1028_119);
 
     if (int0 != Component.interface_1028.component_1028_120) {
-        hookMouseEnter(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_120);
-        hookMouseExit(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_120);
+        ifSetOnMouseOver(hook(cs2_375, "IIiiiii", [Component.interface_1028.component_1028_115, event_com, -1, colour(0xBFA549), colour(0xBFA549), 0, 6]), Component.interface_1028.component_1028_120);
+        ifSetOnMouseLeave(hook(cs2_377, "Ii", [Component.interface_1028.component_1028_115, 6]), Component.interface_1028.component_1028_120);
     }
-    ifSetOnMouseOver(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_120), event_com, -1, event_mousex]), Component.interface_1028.component_1028_120);
+    ifSetOnMouseRepeat(hook(cs2_378, "sIii", [ifGetOp(1, Component.interface_1028.component_1028_120), event_com, -1, event_mousex]), Component.interface_1028.component_1028_120);
     let int11: number = 0;
     let int12: number = 0;
     let int13: number = 0;
@@ -213,14 +213,14 @@ function cs2_391(): void {
                 if (stringLength(str1) > 0) {
                     str0 = str0 + " " + str1;
                 }
-                ccHookMouseExit(hook(cs2_382, "", []));
+                ccSetOnMouseLeave(hook(cs2_382, "", []));
             } else {
-                ccSetOnOpt(hook(cs2_355, "iKi", [event_opindex, int16, int4]));
-                ccHookMouseEnter(hook(cs2_373, "Iiii1", [event_com, event_comsubid, int12 + 1, 2, true]));
-                ccHookMouseExit(hook(cs2_373, "Iiii1", [event_com, event_comsubid, int12 + 1, 2, false]));
+                ccSetOnOp(hook(cs2_355, "iKi", [event_opindex, int16, int4]));
+                ccSetOnMouseOver(hook(cs2_373, "Iiii1", [event_com, event_comsubid, int12 + 1, 2, true]));
+                ccSetOnMouseLeave(hook(cs2_373, "Iiii1", [event_com, event_comsubid, int12 + 1, 2, false]));
             }
             if (stringLength(str1) > 0) {
-                ccSetOnMouseOver(hook(cs2_378, "sIii", [str1, event_com, event_comsubid, event_mousex]));
+                ccSetOnMouseRepeat(hook(cs2_378, "sIii", [str1, event_com, event_comsubid, event_mousex]));
             }
             int13 = ccGetY();
             int11 = int11 + 1;
@@ -280,14 +280,14 @@ function cs2_391(): void {
             if (int10 == int20) {
                 int17 = int11;
                 int18 = ccGetY();
-                ccHookMouseExit(hook(cs2_382, "", []));
+                ccSetOnMouseLeave(hook(cs2_382, "", []));
             } else {
-                ccSetOnOpt(hook(cs2_357, "iii", [event_opindex, int20, int9]));
-                ccHookMouseEnter(hook(cs2_375, "IIiiiii", [event_com, event_com, event_comsubid, colour(0xBFA549), colour(0xBFA549), 1, int21]));
-                ccHookMouseExit(hook(cs2_377, "Ii", [event_com, int21]));
+                ccSetOnOp(hook(cs2_357, "iii", [event_opindex, int20, int9]));
+                ccSetOnMouseOver(hook(cs2_375, "IIiiiii", [event_com, event_com, event_comsubid, colour(0xBFA549), colour(0xBFA549), 1, int21]));
+                ccSetOnMouseLeave(hook(cs2_377, "Ii", [event_com, int21]));
             }
             if (stringLength(str1) > 0) {
-                ccSetOnMouseOver(hook(cs2_381, "sIii", [str1, event_com, event_comsubid, event_mousey]));
+                ccSetOnMouseRepeat(hook(cs2_381, "sIii", [str1, event_com, event_comsubid, event_mousey]));
             }
             int11 = int11 + 1;
         }

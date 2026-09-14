@@ -109,8 +109,8 @@ function chompybird_hats_init(intArg0: component, intArg1: component): void {
             ccSetOp(10, "Examine");
             str0 = cs2_2332(str0, "<br>", " ");
             ccSetOpBase("<col=ff9040>" + str0);
-            ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, Graphic.graphic_897]));
-            ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, Graphic.tradebacking]));
+            ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, Graphic.graphic_897]));
+            ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, Graphic.tradebacking]));
         }
         int2 = int2 + 1;
     }

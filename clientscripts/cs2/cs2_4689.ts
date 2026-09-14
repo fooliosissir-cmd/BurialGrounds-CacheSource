@@ -20,8 +20,8 @@ function cs2_4689(): void {
     ifSetText(enumOp(type_int, type_string, Enum.loy_boost_name, 4), Component.interface_551.component_551_69);
     ifSetGraphic(Graphic.aif_loyalty_icon_1_3, Component.interface_551.component_551_71);
     ifSetText(tostring(enumOp(type_int, type_int, Enum.loy_boost_cost, 4)), Component.interface_551.component_551_70);
-    ifSetOnMouseOver(hook(cs2_4692, "Ii", [event_com, 80]), Component.interface_551.component_551_10);
-    ifSetOnMouseOver(hook(cs2_4692, "Ii", [event_com, 129]), Component.interface_551.component_551_36);
-    ifSetOnMouseOver(hook(cs2_4692, "Ii", [event_com, 31]), Component.interface_551.component_551_50);
-    ifSetOnMouseOver(hook(cs2_4692, "Ii", [event_com, 80]), Component.interface_551.component_551_64);
+    ifSetOnMouseRepeat(hook(cs2_4692, "Ii", [event_com, 80]), Component.interface_551.component_551_10);
+    ifSetOnMouseRepeat(hook(cs2_4692, "Ii", [event_com, 129]), Component.interface_551.component_551_36);
+    ifSetOnMouseRepeat(hook(cs2_4692, "Ii", [event_com, 31]), Component.interface_551.component_551_50);
+    ifSetOnMouseRepeat(hook(cs2_4692, "Ii", [event_com, 80]), Component.interface_551.component_551_64);
 }

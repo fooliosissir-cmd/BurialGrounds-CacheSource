@@ -10,15 +10,15 @@ function proc_quickchat_enter_search(intArg0: component, intArg1: component, int
 
     while (ccFind(intArg0, int4) == 1) {
         if (int4 == intArg2) {
-            ccHookMouseEnter(noHook(""));
-            ccHookMouseExit(noHook(""));
+            ccSetOnMouseOver(noHook(""));
+            ccSetOnMouseLeave(noHook(""));
             if (ccFind<1>(intArg1, int4) == 1) {
                 ccSetHide<1>(false);
                 ccSetColour<1>(colour(0x969777));
             }
         } else {
-            ccHookMouseEnter(hook(cs2_1082, "iIi", [intArg3 - 1, intArg1, int4]));
-            ccHookMouseExit(hook(cs2_1083, "iIi", [intArg3 - 1, intArg1, int4]));
+            ccSetOnMouseOver(hook(cs2_1082, "iIi", [intArg3 - 1, intArg1, int4]));
+            ccSetOnMouseLeave(hook(cs2_1083, "iIi", [intArg3 - 1, intArg1, int4]));
             if (ccFind<1>(intArg1, int4) == 1) {
                 ccSetHide<1>(true);
             }
@@ -33,7 +33,7 @@ function proc_quickchat_enter_search(intArg0: component, intArg1: component, int
     if (varc_126 == 1) {
         str0 = "To " + varcstr_27 + ": " + "<col=800000>" + str0;
     } else if (varc_126 == 2) {
-        str0 = "[" + "<col=0000ff>" + fcGetChatDisplayName() + "<col=000000>" + "]: " + "<col=800000>" + str0;
+        str0 = "[" + "<col=0000ff>" + clanGetChatDisplayName() + "<col=000000>" + "]: " + "<col=800000>" + str0;
     } else if (varc_126 == 8) {
         if (activeClanChannelFindAffined() == 1) {
             str0 = "[" + "<col=0000ff>" + activeClanChannelGetClanName() + "<col=000000>" + "]: " + "<col=800000>" + str0;

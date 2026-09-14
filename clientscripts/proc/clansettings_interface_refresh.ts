@@ -13,18 +13,18 @@ function proc_clansettings_interface_refresh(): void {
         } else if (activeClanSettingsGetallowunaffined() == 0) {
             int1 = 0;
         }
-        int0 = loadClanSettingVar();
+        int0 = pushVarClanSetting();
         int0 = int0 / 10 + 72;
         cs2_4501(Component.interface_1096.component_1096_228, enumOp(type_int, type_string, Enum.clansettings_timezone_enum, int0));
         cs2_4501(Component.interface_1096.component_1096_355, enumOp(type_int, type_string, Enum.clan_core_int_to_filter_rank_plus_1, varc_1516));
-        cs2_4501(Component.interface_1096.component_1096_196, enumOp(type_int, type_string, Enum.clan_permissions_guest_access, loadClanSettingVarbit<292>()));
+        cs2_4501(Component.interface_1096.component_1096_196, enumOp(type_int, type_string, Enum.clan_permissions_guest_access, pushVarClanSettingBit<292>()));
         cs2_4329(Component.interface_1096.component_1096_304);
-        if (loadClanSettingVarbit<6>() == 0) {
+        if (pushVarClanSettingBit<6>() == 0) {
             cs2_4501(Component.interface_1096.component_1096_279, "Not set");
         } else {
-            cs2_4501(Component.interface_1096.component_1096_279, enumOp(type_int, type_string, Enum.clan_noticeboard_event_world, loadClanSettingVarbit<6>()));
+            cs2_4501(Component.interface_1096.component_1096_279, enumOp(type_int, type_string, Enum.clan_noticeboard_event_world, pushVarClanSettingBit<6>()));
         }
-        if (loadClanSettingVarbit<5>() == 1) {
+        if (pushVarClanSettingBit<5>() == 1) {
             if (cs2_4292() == 1) {
                 ifSetHide(false, Component.interface_1096.component_1096_247);
                 ifSetHide(true, Component.interface_1096.component_1096_249);
@@ -47,7 +47,7 @@ function proc_clansettings_interface_refresh(): void {
             ifSetHide(true, Component.interface_1096.component_1096_248);
             ifSetHide(false, Component.interface_1096.component_1096_250);
         }
-        if (loadClanSettingVarbit<4>() == 1) {
+        if (pushVarClanSettingBit<4>() == 1) {
             if (cs2_4292() == 1) {
                 ifSetHide(false, Component.interface_1096.component_1096_243);
                 ifSetHide(true, Component.interface_1096.component_1096_245);
@@ -117,8 +117,8 @@ function proc_clansettings_interface_refresh(): void {
             ifSetHide(false, Component.interface_1096.component_1096_772);
         }
         if (clanProfileFind() == 1) {
-            cs2_4501(Component.interface_1096.component_1096_211, enumOp(type_int, type_string, Enum.clan_signpost_viewing_permission, loadClanVar<2811>()));
-            cs2_4501(Component.interface_1096.component_1096_196, enumOp(type_int, type_string, Enum.clan_permissions_guest_access, loadClanSettingVarbit<292>()));
+            cs2_4501(Component.interface_1096.component_1096_211, enumOp(type_int, type_string, Enum.clan_signpost_viewing_permission, pushVarClan<2811>()));
+            cs2_4501(Component.interface_1096.component_1096_196, enumOp(type_int, type_string, Enum.clan_permissions_guest_access, pushVarClanSettingBit<292>()));
         } else {
             cs2_4501(Component.interface_1096.component_1096_211, "N/A");
             cs2_4501(Component.interface_1096.component_1096_196, "N/A");

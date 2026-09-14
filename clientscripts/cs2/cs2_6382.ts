@@ -19,9 +19,9 @@ function cs2_6382(): void {
         ifSetHide(false, Component.interface_906.component_906_533);
         ifSetHide(true, Component.interface_906.component_906_540);
     }
-    ifSetOnOpt(hook(cs2_6342, "", []), Component.interface_906.component_906_509);
-    ifSetOnOpt(hook(cs2_6344, "", []), Component.interface_906.component_906_517);
-    ifSetOnOpt(hook(cs2_6343, "", []), Component.interface_906.component_906_525);
-    ifSetOnOpt(hook(cs2_6345, "", []), Component.interface_906.component_906_533);
-    ifSetOnOpt(hook(cs2_6346, "", []), Component.interface_906.component_906_540);
+    ifSetOnOp(hook(cs2_6342, "", []), Component.interface_906.component_906_509);
+    ifSetOnOp(hook(cs2_6344, "", []), Component.interface_906.component_906_517);
+    ifSetOnOp(hook(cs2_6343, "", []), Component.interface_906.component_906_525);
+    ifSetOnOp(hook(cs2_6345, "", []), Component.interface_906.component_906_533);
+    ifSetOnOp(hook(cs2_6346, "", []), Component.interface_906.component_906_540);
 }

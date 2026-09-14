@@ -15,11 +15,11 @@ function cs2_3336(intArg0: number, intArg1: number, intArg2: number, intArg3: nu
     let int5: number = max(1, intArg1 - intArg0);
     let int6: number = 255 / int5 + 1;
 
-    if (ifGetHide(Component.interface_1216.component_1216_1) == 1 && detailGetActiveToolkit() != 0) {
+    if (ifGetHide(Component.interface_1216.component_1216_1) == 1 && detailGetToolkit() != 0) {
         ifSetHide(false, Component.interface_1216.component_1216_1);
     }
 
-    if (ifGetHide(Component.interface_1216.component_1216_17) == 1 && detailGetActiveToolkit() != 0) {
+    if (ifGetHide(Component.interface_1216.component_1216_17) == 1 && detailGetToolkit() != 0) {
         ifSetHide(false, Component.interface_1216.component_1216_17);
     }
 

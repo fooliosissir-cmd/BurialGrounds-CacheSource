@@ -10,8 +10,8 @@ function cs2_787(intArg0: component): void {
     cs2_2373(intArg0, -1);
     cs2_2947();
     cs2_680(Component.interface_667.component_667_62);
-    hookMouseEnter(hook(cs2_95, "I", [event_com]), Component.interface_667.component_667_62);
-    hookMouseExit(hook(cs2_93, "I", [event_com]), Component.interface_667.component_667_62);
+    ifSetOnMouseOver(hook(cs2_95, "I", [event_com]), Component.interface_667.component_667_62);
+    ifSetOnMouseLeave(hook(cs2_93, "I", [event_com]), Component.interface_667.component_667_62);
     ifSetOnVarcStrTransmit(hook(cs2_2782, "Y", [], [321, 322, 323, 324, 325]), intArg0);
 
     if (varbit_4894 == 1) {
@@ -20,8 +20,8 @@ function cs2_787(intArg0: component): void {
         ifSetHide(true, Component.interface_667.component_667_46);
     }
     cs2_2957(Component.interface_667.component_667_47);
-    hookMouseEnter(hook(cs2_1413, "I", [event_com]), Component.interface_667.component_667_47);
-    hookMouseExit(hook(cs2_1414, "I", [event_com]), Component.interface_667.component_667_47);
+    ifSetOnMouseOver(hook(cs2_1413, "I", [event_com]), Component.interface_667.component_667_47);
+    ifSetOnMouseLeave(hook(cs2_1414, "I", [event_com]), Component.interface_667.component_667_47);
     ifSetOnVarTransmit(hook(cs2_2371, "Y", [], [1248]), intArg0);
     ifSetOnMiscTransmit(hook(cs2_690, "", []), 43712534);
     ifSetOnMiscTransmit(hook(cs2_690, "", []), 49938555);

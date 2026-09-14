@@ -101,7 +101,7 @@ function cs2_5275(intArg0: number): void {
                 ccSetOp(1, "Information");
                 ccSetGraphicShadow(3153952);
                 ccSetOutline(1);
-                ccSetOnOpt(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
+                ccSetOnOp(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
             } else {
                 ccSetSize(32, 32, 0, 0);
                 ccSetPosition(...cs2_788(int2, 2, 2), 0, 0);

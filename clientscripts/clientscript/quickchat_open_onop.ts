@@ -19,7 +19,7 @@ function quickchat_open_onop(intArg0: number): void {
         cs2_1558(false);
         return;
     } else if (intArg0 == 4) {
-        if (fcGetChatCount() > 0) {
+        if (clanGetChatCount() > 0) {
             quickchat_open(2, "");
         } else {
             varc_chat_view = 0;

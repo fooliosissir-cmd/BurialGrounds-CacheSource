@@ -18,10 +18,10 @@ function cs2_3008(intArg0: component, intArg1: component, intArg2: component, in
     ifSetGraphic(Graphic.graphic_2670, intArg5);
     ifSetSize(13, 30, 0, 0, intArg6);
     ifSetGraphic(int9, intArg6);
-    hookMouseExit(hook(cs2_4164, "IdIdIdId", [intArg1, int7, intArg2, int8, intArg6, int9, intArg3, int10]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_4164, "IdIdIdId", [intArg1, int7, intArg2, int8, intArg6, int9, intArg3, int10]), intArg0);
     int7 = Graphic.graphic_4673;
     int8 = Graphic.graphic_4674;
     int9 = Graphic.graphic_4675;
     int10 = Graphic.graphic_4676;
-    hookMouseEnter(hook(cs2_4164, "IdIdIdId", [intArg1, int7, intArg2, int8, intArg6, int9, intArg3, int10]), intArg0);
+    ifSetOnMouseOver(hook(cs2_4164, "IdIdIdId", [intArg1, int7, intArg2, int8, intArg6, int9, intArg3, int10]), intArg0);
 }

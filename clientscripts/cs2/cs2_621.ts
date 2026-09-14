@@ -31,7 +31,7 @@ function cs2_621(): void {
             } else {
                 str0 = "Minimum total value of sale";
             }
-            ifSetOnMouseOver(hook(cs2_649, "IIsii", [Component.interface_105.component_105_185, Component.interface_105.component_105_210, str0, 25, 300]), Component.interface_105.component_105_185);
+            ifSetOnMouseRepeat(hook(cs2_649, "IIsii", [Component.interface_105.component_105_185, Component.interface_105.component_105_210, str0, 25, 300]), Component.interface_105.component_105_185);
             str0 = tostringLocalised(stockmarketGetoffercount(varp_1112) * stockmarketGetofferprice(varp_1112), 1);
             ifSetText(str0 + " gp", Component.interface_105.component_105_185);
         } else {
@@ -56,7 +56,7 @@ function cs2_621(): void {
                 }
                 str0 = "Minimum total value of sale";
             }
-            ifSetOnMouseOver(hook(cs2_649, "IIsii", [Component.interface_105.component_105_185, Component.interface_105.component_105_210, str0, 25, 300]), Component.interface_105.component_105_185);
+            ifSetOnMouseRepeat(hook(cs2_649, "IIsii", [Component.interface_105.component_105_185, Component.interface_105.component_105_210, str0, 25, 300]), Component.interface_105.component_105_185);
             if (varp_1111 > 0) {
                 if (varp_1110 > 2147483647 / varp_1111) {
                     ifSetText("Too high!", Component.interface_105.component_105_185);

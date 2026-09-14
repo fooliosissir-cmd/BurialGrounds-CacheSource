@@ -43,12 +43,12 @@ function cs2_5176(): void {
                 int23 = int18;
             }
             ccSetGraphic(int23);
-            ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int19]));
-            ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int23]));
+            ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int19]));
+            ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int23]));
             ccSetOnClick(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int20]));
             ccSetOnRelease(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int23]));
             ccSetOp(1, "Goal details");
-            ccSetOnOpt(hook(cs2_5179, "i", [int25]));
+            ccSetOnOp(hook(cs2_5179, "i", [int25]));
             int10 = int10 + 1;
             ccCreate(Component.interface_1122.component_1122_82, 5, int10);
             ccSetPosition(int9, 0, 0, 0);
@@ -199,12 +199,12 @@ function cs2_5176(): void {
             } else {
                 int24 = 1;
             }
-            ccHookMouseEnter(hook(cs2_5177, "ii", [int12, 2]));
-            ccHookMouseExit(hook(cs2_5177, "ii", [int12, int24]));
+            ccSetOnMouseOver(hook(cs2_5177, "ii", [int12, 2]));
+            ccSetOnMouseLeave(hook(cs2_5177, "ii", [int12, int24]));
             ccSetOnClick(hook(cs2_5177, "ii", [int12, 3]));
             ccSetOnRelease(hook(cs2_5177, "ii", [int12, int24]));
             ccSetOp(1, "Goal details");
-            ccSetOnOpt(hook(cs2_5179, "i", [int25]));
+            ccSetOnOp(hook(cs2_5179, "i", [int25]));
             int9 = int9 + int2 + int5;
         }
         if (cs2_5200(int25) == 1) {
@@ -235,13 +235,13 @@ function cs2_5176(): void {
                 int23 = int18;
             }
             ccSetGraphic(int23);
-            ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int19]));
-            ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int23]));
+            ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int19]));
+            ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int23]));
             ccSetOnClick(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int20]));
             ccSetOnRelease(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int23]));
             ccSetOp(1, "Goal details");
             if (varc_hcape_current_tier > 3) {
-                ccSetOnOpt(hook(cs2_5179, "i", [int25]));
+                ccSetOnOp(hook(cs2_5179, "i", [int25]));
                 int10 = int10 + 1;
                 ccCreate(Component.interface_1122.component_1122_82, 5, int10);
                 ccSetGraphic(structParam(int26, Param.hcape_goal_image));
@@ -255,7 +255,7 @@ function cs2_5176(): void {
                     ccSetGraphic(Graphic.aif_herald_cape_icons_26);
                 }
             } else {
-                ccSetOnOpt(hook(cs2_5179, "i", [13]));
+                ccSetOnOp(hook(cs2_5179, "i", [13]));
                 int10 = int10 + 1;
                 ccCreate(Component.interface_1122.component_1122_82, 5, int10);
                 ccSetGraphic(Graphic.aif_herald_cape_icons_15);

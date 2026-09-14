@@ -43,19 +43,19 @@ function shop_draw_item(intArg0: inv, intArg1: number, intArg2: number, intArg3:
 
     if (intArg0 == varp_shop_last_viewed_inventory && intArg1 == varp_shop_last_viewed_slot) {
         ccSetGraphic(int17);
-        ccHookMouseEnter(hook(clientscript_shop_item_hover, "iiiIi", [intArg3, 1, 1, event_com, event_comsubid]));
-        ccHookMouseExit(hook(clientscript_shop_item_hover, "iiiIi", [intArg3, 1, 0, event_com, event_comsubid]));
+        ccSetOnMouseOver(hook(clientscript_shop_item_hover, "iiiIi", [intArg3, 1, 1, event_com, event_comsubid]));
+        ccSetOnMouseLeave(hook(clientscript_shop_item_hover, "iiiIi", [intArg3, 1, 0, event_com, event_comsubid]));
     } else {
         ccSetGraphic(int16);
-        ccHookMouseEnter(hook(clientscript_shop_item_hover, "iiiIi", [intArg3, 0, 1, event_com, event_comsubid]));
-        ccHookMouseExit(hook(clientscript_shop_item_hover, "iiiIi", [intArg3, 0, 0, event_com, event_comsubid]));
+        ccSetOnMouseOver(hook(clientscript_shop_item_hover, "iiiIi", [intArg3, 0, 1, event_com, event_comsubid]));
+        ccSetOnMouseLeave(hook(clientscript_shop_item_hover, "iiiIi", [intArg3, 0, 0, event_com, event_comsubid]));
     }
     ccSetPosition(int14 + 2, int13 + 2, 0, 0);
     ccSetOpBase("<col=ff981f>" + ocName(int18) + "</col>");
     ccSetOp(1, "Info");
 
     if (intArg0 == varp_shopfreebie) {
-        ccSetOnOpt(hook(clientscript_shop_item_info, "vi", [varp_shopfreebie, intArg1]));
+        ccSetOnOp(hook(clientscript_shop_item_info, "vi", [varp_shopfreebie, intArg1]));
         ccSetOp(2, "Take 1");
         ccSetOp(3, "Take 5");
         if (int18 == Obj.obj_36) {
@@ -66,7 +66,7 @@ function shop_draw_item(intArg0: inv, intArg1: number, intArg2: number, intArg3:
         ccSetOp(6, "Take 500");
         ccSetOp(7, "Take All");
     } else if (intArg0 == Inv.inv) {
-        ccSetOnOpt(hook(clientscript_shop_item_info, "vi", [Inv.inv, intArg1]));
+        ccSetOnOp(hook(clientscript_shop_item_info, "vi", [Inv.inv, intArg1]));
         ccSetOp(2, "Sell 1");
         ccSetOp(3, "Sell 5");
         if (int18 == Obj.obj_36) {
@@ -77,7 +77,7 @@ function shop_draw_item(intArg0: inv, intArg1: number, intArg2: number, intArg3:
         ccSetOp(6, "Sell 500");
         ccSetOp(7, "");
     } else {
-        ccSetOnOpt(hook(clientscript_shop_item_info, "vi", [varp_shop, intArg1]));
+        ccSetOnOp(hook(clientscript_shop_item_info, "vi", [varp_shop, intArg1]));
         ccSetOp(2, "Buy 1");
         ccSetOp(3, "Buy 5");
         if (int18 == Obj.obj_36) {
@@ -96,9 +96,9 @@ function shop_draw_item(intArg0: inv, intArg1: number, intArg2: number, intArg3:
             str0 = ocName(int18);
         }
         if (varp_shopfreebie == -1 || intArg0 == varp_shopfreebie || intArg0 == Inv.inv) {
-            ccSetOnMouseOver(hook(cs2_6090, "iiisIi", [ccGetY(), event_mousex, event_mousey, str0, event_com, intArg1]));
+            ccSetOnMouseRepeat(hook(cs2_6090, "iiisIi", [ccGetY(), event_mousex, event_mousey, str0, event_com, intArg1]));
         } else {
-            ccSetOnMouseOver(hook(cs2_6090, "iiisIi", [ccGetY() + 28, event_mousex, event_mousey, str0, event_com, intArg1]));
+            ccSetOnMouseRepeat(hook(cs2_6090, "iiisIi", [ccGetY() + 28, event_mousex, event_mousey, str0, event_com, intArg1]));
         }
         ccCreate(int5, 4, intArg1);
     } else {
@@ -182,9 +182,9 @@ function shop_draw_item(intArg0: inv, intArg1: number, intArg2: number, intArg3:
     str0 = obj_warning_arg(int18);
 
     if (varp_shopfreebie == -1 || intArg0 == varp_shopfreebie || intArg0 == Inv.inv) {
-        ccSetOnMouseOver(hook(cs2_6090, "iiisIi", [ccGetY(), event_mousex, event_mousey, str0, event_com, intArg1]));
+        ccSetOnMouseRepeat(hook(cs2_6090, "iiisIi", [ccGetY(), event_mousex, event_mousey, str0, event_com, intArg1]));
     } else {
-        ccSetOnMouseOver(hook(cs2_6090, "iiisIi", [ccGetY() + 28, event_mousex, event_mousey, str0, event_com, intArg1]));
+        ccSetOnMouseRepeat(hook(cs2_6090, "iiisIi", [ccGetY() + 28, event_mousex, event_mousey, str0, event_com, intArg1]));
     }
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1265.component_1265_89]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1265.component_1265_89]));
 }

@@ -13,9 +13,9 @@ function proc_autosetup(intArg0: number): void {
     } else {
         varc_1240 = 3;
         varc_1277 = 0;
-        detailToolkit(int1, 1);
+        detailToolkitDefault(int1, 1);
         if (intArg0 == 3) {
-            if (hasBase64url() == 1) {
+            if (hasSignonKey() == 1) {
                 proc_loginscreen_setactivemenu(5);
                 ifSetOnTimer(hook(cs2_3381, "Ii", [Component.interface_975.component_975_44, 0]), Component.interface_975.component_975_44);
             } else if (userflowflags(1) == true) {

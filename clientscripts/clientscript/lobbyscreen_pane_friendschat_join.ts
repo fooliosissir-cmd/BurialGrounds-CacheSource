@@ -4,8 +4,8 @@
 // [clientscript,lobbyscreen_pane_friendschat_join]
 
 function lobbyscreen_pane_friendschat_join(): void {
-    if (fcGetChatCount() > 0) {
-        fcLeaveChat();
+    if (clanGetChatCount() > 0) {
+        clanLeaveChat();
     } else {
         lobbyscreen_input("Join Chat Channel", "", 5, "", "");
     }

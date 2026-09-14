@@ -62,9 +62,9 @@ function cs2_4994(): void {
         int25 = cs2_4953(int18);
         int26 = cs2_4953(int19);
         int27 = cs2_4953(int20);
-        ifSetText("Tier " + tostring(loadClanVarbit<2580>()), Component.interface_1261.component_1261_187);
-        ifSetText("Tier " + tostring(loadClanVarbit<2581>()), Component.interface_1261.component_1261_195);
-        ifSetText("Tier " + tostring(loadClanVarbit<2582>()), Component.interface_1261.component_1261_203);
+        ifSetText("Tier " + tostring(pushVarClanBit<2580>()), Component.interface_1261.component_1261_187);
+        ifSetText("Tier " + tostring(pushVarClanBit<2581>()), Component.interface_1261.component_1261_195);
+        ifSetText("Tier " + tostring(pushVarClanBit<2582>()), Component.interface_1261.component_1261_203);
         ifSetText("Tier " + tostring(int7), Component.interface_1261.component_1261_211);
         ifSetText("Tier " + tostring(int8), Component.interface_1261.component_1261_219);
         ifSetText("Tier " + tostring(int9), Component.interface_1261.component_1261_227);

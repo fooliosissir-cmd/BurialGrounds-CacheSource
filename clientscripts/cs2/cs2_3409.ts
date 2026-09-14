@@ -9,5 +9,5 @@ function cs2_3409(intArg0: component): void {
     cs2_3408(intArg0, str0);
     ifSetSize(stringWidth(str0, Graphic.p12_full), ifGetHeight(intArg0), 0, 0, intArg0);
     ifSetText("<u=64c8fa>" + str0 + "</u>", intArg0);
-    ifSetOnOpt(hook(cs2_3410, "", []), intArg0);
+    ifSetOnOp(hook(cs2_3410, "", []), intArg0);
 }

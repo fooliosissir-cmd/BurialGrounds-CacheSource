@@ -4,7 +4,7 @@
 // [clientscript,chatdefault_updatechatbox_minimenu_timer]
 
 function chatdefault_updatechatbox_minimenu_timer(intArg0: boolean): void {
-    if (ifGetTop(49283081, -1) == 1) {
+    if (minimenuopen(49283081, -1) == 1) {
         return;
     }
     ifSetOnTimer(noHook(""), Component.interface_752.component_752_9);

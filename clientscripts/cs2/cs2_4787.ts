@@ -8,37 +8,37 @@ function cs2_4787(intArg0: number): number {
         case 0:
             return 1;
         case 1:
-            if (loadClanVar<2136>() > 4) {
+            if (pushVarClan<2136>() > 4) {
                 return 1;
             }
             break;
         case 2:
-            if (loadClanVar<2136>() > 4) {
+            if (pushVarClan<2136>() > 4) {
                 return 1;
             }
             break;
         case 3:
-            if (loadClanVar<2136>() > 9) {
+            if (pushVarClan<2136>() > 9) {
                 return 1;
             }
             break;
         case 4:
-            if (loadClanVar<2136>() > 14) {
+            if (pushVarClan<2136>() > 14) {
                 return 1;
             }
             break;
         case 5:
-            if (loadClanVar<2136>() > 19) {
+            if (pushVarClan<2136>() > 19) {
                 return 1;
             }
             break;
         case 6:
-            if (loadClanVar<2136>() > 24) {
+            if (pushVarClan<2136>() > 24) {
                 return 1;
             }
             break;
         case 7:
-            if (loadClanVar<2136>() > 34) {
+            if (pushVarClan<2136>() > 34) {
                 return 1;
             }
             break;

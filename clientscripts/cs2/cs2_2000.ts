@@ -4,7 +4,7 @@
 // cs2_2000
 
 function cs2_2000(intArg0: number, intArg1: number, intArg2: number): void {
-    let int3: number = invTotalcat(intArg0, intArg1);
+    let int3: number = invStockBase(intArg0, intArg1);
 
     if (int3 == intArg2) {
         mesTyped(0, 0, "Passed inventory test");

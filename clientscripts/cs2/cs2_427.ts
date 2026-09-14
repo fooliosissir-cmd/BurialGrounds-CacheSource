@@ -95,91 +95,91 @@ function cs2_427(intArg0: number): void {
         ifSetHide(true, Component.interface_1024.component_1024_2);
         if (int4 != 0) {
             ifSetPosition(ifGetX(Component.interface_1024.component_1024_8), 102, 0, 0, Component.interface_1024.component_1024_8);
-            ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_65);
+            ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_65);
         } else if (int5 != 0) {
             ifSetPosition(ifGetX(Component.interface_1024.component_1024_9), 102, 0, 0, Component.interface_1024.component_1024_9);
-            ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_48);
+            ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_48);
         } else if (int6 != 0) {
             ifSetPosition(ifGetX(Component.interface_1024.component_1024_10), 102, 0, 0, Component.interface_1024.component_1024_10);
-            ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_31);
+            ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_31);
         } else if (int7 != 0) {
             ifSetPosition(ifGetX(Component.interface_1024.component_1024_11), 102, 0, 0, Component.interface_1024.component_1024_11);
-            ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_14);
+            ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_14);
         }
     } else if (int1 == 2) {
         ifSetHide(false, Component.interface_1024.component_1024_1);
         ifSetHide(true, Component.interface_1024.component_1024_2);
         if (int4 != 0) {
             ifSetPosition(ifGetX(Component.interface_1024.component_1024_8), 60, 0, 0, Component.interface_1024.component_1024_8);
-            ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 111]), Component.interface_1024.component_1024_65);
+            ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 111]), Component.interface_1024.component_1024_65);
             int2 = int2 + 1;
         }
         if (int5 != 0) {
             if (int2 == 0) {
                 ifSetPosition(ifGetX(Component.interface_1024.component_1024_9), 60, 0, 0, Component.interface_1024.component_1024_9);
-                ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 111]), Component.interface_1024.component_1024_48);
+                ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 111]), Component.interface_1024.component_1024_48);
             } else {
                 ifSetPosition(ifGetX(Component.interface_1024.component_1024_9), 145, 0, 0, Component.interface_1024.component_1024_9);
-                ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 49]), Component.interface_1024.component_1024_48);
+                ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 49]), Component.interface_1024.component_1024_48);
             }
             int2 = int2 + 1;
         }
         if (int6 != 0) {
             if (int2 == 0) {
                 ifSetPosition(ifGetX(Component.interface_1024.component_1024_10), 60, 0, 0, Component.interface_1024.component_1024_10);
-                ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 111]), Component.interface_1024.component_1024_31);
+                ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 111]), Component.interface_1024.component_1024_31);
             } else {
                 ifSetPosition(ifGetX(Component.interface_1024.component_1024_10), 145, 0, 0, Component.interface_1024.component_1024_10);
-                ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 49]), Component.interface_1024.component_1024_31);
+                ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 49]), Component.interface_1024.component_1024_31);
             }
             int2 = int2 + 1;
         }
         if (int7 != 0) {
             ifSetPosition(ifGetX(Component.interface_1024.component_1024_11), 145, 0, 0, Component.interface_1024.component_1024_11);
-            ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 49]), Component.interface_1024.component_1024_14);
+            ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 49]), Component.interface_1024.component_1024_14);
         }
     } else if (int1 == 1) {
         ifSetHide(false, Component.interface_1024.component_1024_1);
         ifSetHide(true, Component.interface_1024.component_1024_2);
         if (int4 != 0) {
             ifSetPosition(ifGetX(Component.interface_1024.component_1024_8), 41, 0, 0, Component.interface_1024.component_1024_8);
-            ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 92]), Component.interface_1024.component_1024_65);
+            ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 92]), Component.interface_1024.component_1024_65);
             int2 = int2 + 1;
         }
         if (int5 != 0) {
             if (int2 == 0) {
                 ifSetPosition(ifGetX(Component.interface_1024.component_1024_9), 41, 0, 0, Component.interface_1024.component_1024_9);
-                ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 92]), Component.interface_1024.component_1024_48);
+                ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 92]), Component.interface_1024.component_1024_48);
             } else {
                 ifSetPosition(ifGetX(Component.interface_1024.component_1024_9), 102, 0, 0, Component.interface_1024.component_1024_9);
-                ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_48);
+                ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_48);
             }
             int2 = int2 + 1;
         }
         if (int6 != 0) {
             if (int2 == 1) {
                 ifSetPosition(ifGetX(Component.interface_1024.component_1024_10), 102, 0, 0, Component.interface_1024.component_1024_10);
-                ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_31);
+                ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 6]), Component.interface_1024.component_1024_31);
             } else {
                 ifSetPosition(ifGetX(Component.interface_1024.component_1024_10), 163, 0, 0, Component.interface_1024.component_1024_10);
-                ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 67]), Component.interface_1024.component_1024_31);
+                ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 67]), Component.interface_1024.component_1024_31);
             }
             int2 = int2 + 1;
         }
         if (int7 != 0) {
             ifSetPosition(ifGetX(Component.interface_1024.component_1024_11), 163, 0, 0, Component.interface_1024.component_1024_11);
-            ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 67]), Component.interface_1024.component_1024_31);
+            ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 67]), Component.interface_1024.component_1024_31);
         }
     } else {
         ifSetHide(false, Component.interface_1024.component_1024_1);
         ifSetHide(true, Component.interface_1024.component_1024_2);
         ifSetPosition(ifGetX(Component.interface_1024.component_1024_8), 29, 0, 0, Component.interface_1024.component_1024_8);
-        ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 80]), Component.interface_1024.component_1024_65);
+        ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 80]), Component.interface_1024.component_1024_65);
         ifSetPosition(ifGetX(Component.interface_1024.component_1024_9), 78, 0, 0, Component.interface_1024.component_1024_9);
-        ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 129]), Component.interface_1024.component_1024_48);
+        ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 129]), Component.interface_1024.component_1024_48);
         ifSetPosition(ifGetX(Component.interface_1024.component_1024_10), 127, 0, 0, Component.interface_1024.component_1024_10);
-        ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 31]), Component.interface_1024.component_1024_31);
+        ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 31]), Component.interface_1024.component_1024_31);
         ifSetPosition(ifGetX(Component.interface_1024.component_1024_11), 176, 0, 0, Component.interface_1024.component_1024_11);
-        ifSetOnMouseOver(hook(cs2_432, "Ii", [event_com, 80]), Component.interface_1024.component_1024_14);
+        ifSetOnMouseRepeat(hook(cs2_432, "Ii", [event_com, 80]), Component.interface_1024.component_1024_14);
     }
 }

@@ -19,49 +19,49 @@ function cs2_5169(intArg0: number): number {
         }
         switch (int1) {
             case 1:
-                int3 = loadClanVarbit<2616>();
+                int3 = pushVarClanBit<2616>();
                 break;
             case 2:
-                int3 = loadClanVarbit<2614>();
+                int3 = pushVarClanBit<2614>();
                 break;
             case 3:
-                int3 = loadClanVarbit<2615>();
+                int3 = pushVarClanBit<2615>();
                 break;
             case 4:
-                int3 = loadClanVarbit<2602>();
+                int3 = pushVarClanBit<2602>();
                 break;
             case 5:
-                int3 = loadClanVarbit<2603>();
+                int3 = pushVarClanBit<2603>();
                 break;
             case 6:
-                int3 = loadClanVarbit<2604>();
+                int3 = pushVarClanBit<2604>();
                 break;
             case 7:
-                int3 = loadClanVarbit<2605>();
+                int3 = pushVarClanBit<2605>();
                 break;
             case 8:
-                int3 = loadClanVarbit<2606>();
+                int3 = pushVarClanBit<2606>();
                 break;
             case 9:
-                int3 = loadClanVarbit<2607>();
+                int3 = pushVarClanBit<2607>();
                 break;
             case 10:
-                int3 = loadClanVarbit<2608>();
+                int3 = pushVarClanBit<2608>();
                 break;
             case 11:
-                int3 = loadClanVarbit<2609>();
+                int3 = pushVarClanBit<2609>();
                 break;
             case 12:
-                int3 = loadClanVarbit<2610>();
+                int3 = pushVarClanBit<2610>();
                 break;
             case 13:
-                int3 = loadClanVarbit<2611>();
+                int3 = pushVarClanBit<2611>();
                 break;
             case 14:
-                int3 = loadClanVarbit<2612>();
+                int3 = pushVarClanBit<2612>();
                 break;
             case 15:
-                int3 = loadClanVarbit<2613>();
+                int3 = pushVarClanBit<2613>();
                 break;
         }
         if (int3 > 0) {

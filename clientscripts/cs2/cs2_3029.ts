@@ -4,7 +4,7 @@
 // cs2_3029
 
 function cs2_3029(intArg0: component, intArg1: component, intArg2: component, intArg3: component, intArg4: component, intArg5: component): void {
-    if (ifGetTop(intArg3, -1) == 1) {
+    if (minimenuopen(intArg3, -1) == 1) {
         ifSetOnTimer(hook(cs2_3028, "IIIIII", [intArg0, intArg1, intArg2, intArg3, intArg4, intArg5]), intArg4);
         return;
     } else {
@@ -50,8 +50,8 @@ function cs2_3029(intArg0: component, intArg1: component, intArg2: component, in
             } else {
                 ccSetColour(colour(0x292016));
             }
-            ccHookMouseEnter(hook(cs2_3030, "Ii", [intArg3, int7]));
-            ccHookMouseExit(hook(cs2_3035, "", []));
+            ccSetOnMouseOver(hook(cs2_3030, "Ii", [intArg3, int7]));
+            ccSetOnMouseLeave(hook(cs2_3035, "", []));
             if (stringLength(str1) > 0) {
                 int16 = stringWidth("Last known as: " + str1, Graphic.p11_full) + 8;
                 if (int16 > ifGetWidth(Component.interface_909.component_909_19)) {
@@ -59,7 +59,7 @@ function cs2_3029(intArg0: component, intArg1: component, intArg2: component, in
                 } else {
                     str3 = "Last known as: " + str1;
                 }
-                ccSetOnMouseOver(hook(cs2_2467, "IisiiIIIf", [event_com, event_comsubid, str3, event_mousex, event_mousey, Component.interface_909.component_909_41, Component.interface_909.component_909_32, Component.interface_909.component_909_35, Graphic.p11_full]));
+                ccSetOnMouseRepeat(hook(cs2_2467, "IisiiIIIf", [event_com, event_comsubid, str3, event_mousex, event_mousey, Component.interface_909.component_909_41, Component.interface_909.component_909_32, Component.interface_909.component_909_35, Graphic.p11_full]));
             }
             ccSetOpBase(str0);
             if (int9 > 0) {
@@ -70,7 +70,7 @@ function cs2_3029(intArg0: component, intArg1: component, intArg2: component, in
                 ccSetOp(4, "Join");
             }
             ccSetOp(10, "Delete");
-            ccSetOnOpt(hook(cs2_3039, "iisi", [event_opindex, int9, str0, int7]));
+            ccSetOnOp(hook(cs2_3039, "iisi", [event_opindex, int9, str0, int7]));
             cc_add_graphic(intArg1, int7, 14, 14, 5, int8 + 1, -1, false, false, false, 0);
             if (compare(str1, "") != 0) {
                 ccSetGraphic(Graphic.friends_changed_name);

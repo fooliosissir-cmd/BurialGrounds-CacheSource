@@ -21,9 +21,9 @@ function cs2_4908(intArg0: number): void {
 
     if (clanProfileFind() == 1) {
         if (varc_clan_stronghold_main_map_next_week == 0) {
-            int12 = cs2_5116(loadClanVarbit<2598>(), loadClanVarbit<2580>());
+            int12 = cs2_5116(pushVarClanBit<2598>(), pushVarClanBit<2580>());
         } else {
-            int12 = cs2_5116(loadClanVarbit<2074>(), loadClanVarbit<2580>());
+            int12 = cs2_5116(pushVarClanBit<2074>(), pushVarClanBit<2580>());
         }
         if (int12 == -1) {
             return;
@@ -42,14 +42,14 @@ function cs2_4908(intArg0: number): void {
         }
         int9 = cs2_4961(intArg0, 3);
         int10 = cs2_4953(int9);
-        if ((int6 == 6 || int6 == 6 || int6 == 5) && (loadClanVarbit<2148>() == int5 || loadClanVarbit<2165>() == int5 || loadClanVarbit<2182>() == int5)) {
+        if ((int6 == 6 || int6 == 6 || int6 == 5) && (pushVarClanBit<2148>() == int5 || pushVarClanBit<2165>() == int5 || pushVarClanBit<2182>() == int5)) {
             int13 = Graphic.aif_clan_building_icons_2;
         }
         if (int10 > 0) {
             int13 = Graphic.aif_clan_building_icons_2;
         }
         if (int6 == 5) {
-            if (loadClanVarbit<2148>() == int5 || loadClanVarbit<2165>() == int5 || loadClanVarbit<2182>() == int5) {
+            if (pushVarClanBit<2148>() == int5 || pushVarClanBit<2165>() == int5 || pushVarClanBit<2182>() == int5) {
                 ifSetGraphic(Graphic.aif_custom_spot_pins_1_2, cs2_5216(intArg0));
                 ifSetOp(2, "", cs2_4972(intArg0));
             } else if (int4 > 0) {

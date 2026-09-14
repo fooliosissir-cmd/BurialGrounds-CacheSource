@@ -5,8 +5,8 @@
 
 function chat_op(intArg0: number, intArg1: number, strArg0: string): void {
     strArg0 = removetags(strArg0);
-    let str1: string = removetags(chatLineGetcrownedname(intArg1));
-    let int2: number = chatGettypebyline(intArg1);
+    let str1: string = removetags(chatGethistoryname(intArg1));
+    let int2: number = chatGethistorytype(intArg1);
 
     switch (intArg0) {
         case 1:
@@ -48,15 +48,15 @@ function chat_op(intArg0: number, intArg1: number, strArg0: string): void {
             break;
         case 9:
             if (int2 == 17) {
-                quickchat_respond(4, chatLineGetcrownedname(intArg1), chatLineGetQuickChatId(intArg1));
+                quickchat_respond(4, chatGethistoryname(intArg1), chatGethistoryphrase(intArg1));
             } else if (int2 == 18) {
-                quickchat_respond(5, chatLineGetcrownedname(intArg1), chatLineGetQuickChatId(intArg1));
+                quickchat_respond(5, chatGethistoryname(intArg1), chatGethistoryphrase(intArg1));
             } else if (int2 == 20) {
-                quickchat_respond(6, chatLineGetcrownedname(intArg1), chatLineGetQuickChatId(intArg1));
+                quickchat_respond(6, chatGethistoryname(intArg1), chatGethistoryphrase(intArg1));
             } else if (int2 == 42) {
-                quickchat_respond(9, chatLineGetcrownedname(intArg1), chatLineGetQuickChatId(intArg1));
+                quickchat_respond(9, chatGethistoryname(intArg1), chatGethistoryphrase(intArg1));
             } else if (int2 == 45) {
-                quickchat_respond(11, chatLineGetcrownedname(intArg1), chatLineGetQuickChatId(intArg1));
+                quickchat_respond(11, chatGethistoryname(intArg1), chatGethistoryphrase(intArg1));
             }
             break;
         case 10:

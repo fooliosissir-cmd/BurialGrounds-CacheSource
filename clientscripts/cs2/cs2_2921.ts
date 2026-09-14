@@ -12,7 +12,7 @@ function cs2_2921(strArg0: string, intArg0: number, intArg1: number): void {
         cs2_3161(0);
     }
     ifSetOnKey(hook(cs2_3398, "izI", [event_keycode, event_keychar, event_com]), Component.interface_979.component_979_0);
-    ifSetOnOpt(hook(cs2_3399, "", []), Component.interface_979.component_979_9);
+    ifSetOnOp(hook(cs2_3399, "", []), Component.interface_979.component_979_9);
     let int2: number = 100;
     let int3: number = 0;
     let int4: number = 0;
@@ -27,24 +27,24 @@ function cs2_2921(strArg0: string, intArg0: number, intArg1: number): void {
     ifSetScrollPos(0, 0, Component.interface_979.component_979_27);
 
     while (int2 >= 0) {
-        int4 = chatGettypebyline(int2);
-        if (int4 != 0 && int4 != 4 && int4 != 27 && int4 != 28 && int4 != 29 && int4 != 43 && int4 != 103 && int4 != 104 && int4 != 26 && int4 != 30 && int4 != 31 && int4 != 115 && compare(chatLineGetcrownedname(int2), "") != 0 && compare(chatGetbyline(int2), "") != 0) {
+        int4 = chatGethistorytype(int2);
+        if (int4 != 0 && int4 != 4 && int4 != 27 && int4 != 28 && int4 != 29 && int4 != 43 && int4 != 103 && int4 != 104 && int4 != 26 && int4 != 30 && int4 != 31 && int4 != 115 && compare(chatGethistoryname(int2), "") != 0 && compare(chatGethistorymessage(int2), "") != 0) {
             if (int4 != 6 && int4 != 19) {
                 if (int4 == 41 || int4 == 44 || int4 == 9) {
-                    if (compare(removetags(chatLineGetcrownedname(int2)), chatPlayerName()) != 0 && int4 != 6 && int4 != 19) {
+                    if (compare(removetags(chatGethistoryname(int2)), chatPlayerNameUnfiltered()) != 0 && int4 != 6 && int4 != 19) {
                         int6 = 0;
                     } else {
                         int6 = 14798;
                     }
-                    str1 = "<col=$text_colour>" + "[" + "</col>" + "<col=8888ff>" + chatGetClan(int2) + "</col>" + "<col=$text_colour>" + "]" + chatLineGetcrownedname(int2) + ": " + chatGetbyline(int2);
+                    str1 = "<col=$text_colour>" + "[" + "</col>" + "<col=8888ff>" + chatGethistoryclan(int2) + "</col>" + "<col=$text_colour>" + "]" + chatGethistoryname(int2) + ": " + chatGethistorymessage(int2);
                 } else {
-                    str1 = " " + chatLineGetcrownedname(int2) + ": " + chatGetbyline(int2);
+                    str1 = " " + chatGethistoryname(int2) + ": " + chatGethistorymessage(int2);
                 }
             } else {
-                str1 = "To " + chatLineGetcrownedname(int2) + ": " + chatGetbyline(int2);
+                str1 = "To " + chatGethistoryname(int2) + ": " + chatGethistorymessage(int2);
             }
             int5 = paraheight(str1, ifGetWidth(Component.interface_979.component_979_27) - 10, Graphic.p12_full);
-            if (compare(removetags(chatLineGetcrownedname(int2)), chatPlayerName()) != 0 && int4 != 6 && int4 != 19) {
+            if (compare(removetags(chatGethistoryname(int2)), chatPlayerNameUnfiltered()) != 0 && int4 != 6 && int4 != 19) {
                 int7 = 1;
                 ccCreate(Component.interface_979.component_979_26, 3, ifGetNextSubId(Component.interface_979.component_979_26));
                 ccSetPosition(2, int3 * 15 + 1, 0, 0);
@@ -52,25 +52,25 @@ function cs2_2921(strArg0: string, intArg0: number, intArg1: number): void {
                 ccSetColour(colour(0x606060));
                 ccSetTrans(255);
                 ccSetfill(true);
-                ccHookMouseEnter(hook(cs2_3392, "i", [event_comsubid]));
-                ccHookMouseExit(hook(cs2_3393, "i", [event_comsubid]));
+                ccSetOnMouseOver(hook(cs2_3392, "i", [event_comsubid]));
+                ccSetOnMouseLeave(hook(cs2_3393, "i", [event_comsubid]));
                 ccCreate(Component.interface_979.component_979_25, 3, ifGetNextSubId(Component.interface_979.component_979_25));
                 ccSetPosition(2, int3 * 15 + 1, 0, 0);
                 ccSetSize(4, int5 * 15, 1, 0);
                 ccSetColour(colour(0x494949));
                 ccSetTrans(255);
                 ccSetfill(true);
-                ccHookMouseEnter(hook(cs2_3394, "i", [event_comsubid]));
+                ccSetOnMouseOver(hook(cs2_3394, "i", [event_comsubid]));
             }
             ccCreate(Component.interface_979.component_979_27, 4, ifGetNextSubId(Component.interface_979.component_979_27));
             ccSetPosition(5, int3 * 15, 0, 0);
             ccSetSize(10, int5 * 15, 1, 0);
             ccSetText(str1);
             ccSetColour(colour(0x666678));
-            if (compare(removetags(chatLineGetcrownedname(int2)), chatPlayerName()) != 0 && int4 != 6 && int4 != 19) {
-                ccSetOpBase(removetags(chatLineGetcrownedname(int2)));
+            if (compare(removetags(chatGethistoryname(int2)), chatPlayerNameUnfiltered()) != 0 && int4 != 6 && int4 != 19) {
+                ccSetOpBase(removetags(chatGethistoryname(int2)));
                 ccSetOp(1, "Report");
-                ccSetOnOpt(hook(cs2_3396, "i", [event_comsubid]));
+                ccSetOnOp(hook(cs2_3396, "i", [event_comsubid]));
                 ccSetColour(colour(0xFFFFFF));
             }
             ccSetTextFont(Graphic.p12_full);

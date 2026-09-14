@@ -89,7 +89,7 @@ function cs2_2570(): void {
             ifSetText("", enumOp(type_int, type_component, Enum.enum_2424, int1));
             ifSetGraphic(-1, enumOp(type_int, type_component, Enum.enum_2427, int1));
             ifSetGraphic(-1, enumOp(type_int, type_component, Enum.enum_2426, int1));
-            ifSetOnOpt(noHook(""), enumOp(type_int, type_component, Enum.enum_2422, int1));
+            ifSetOnOp(noHook(""), enumOp(type_int, type_component, Enum.enum_2422, int1));
             ifClearops(enumOp(type_int, type_component, Enum.enum_2422, int1));
             int1 = int1 + 1;
         }

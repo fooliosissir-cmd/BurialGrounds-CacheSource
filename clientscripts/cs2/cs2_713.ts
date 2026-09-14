@@ -28,8 +28,8 @@ function cs2_713(intArg0: component, intArg1: component, intArg2: component, int
         }
         ifSetOpBase("<col=ff9040>" + "Duration" + "</col>", intArg2);
         cs2_679(intArg3);
-        ifSetOnMouseOver(hook(cs2_94, "I", [intArg3]), intArg3);
-        hookMouseExit(hook(cs2_92, "I", [intArg3]), intArg3);
+        ifSetOnMouseRepeat(hook(cs2_94, "I", [intArg3]), intArg3);
+        ifSetOnMouseLeave(hook(cs2_92, "I", [intArg3]), intArg3);
     } else {
         ifSetObjectNonum(-1, 0, intArg1);
         ifSetText("", intArg2);
@@ -38,8 +38,8 @@ function cs2_713(intArg0: component, intArg1: component, intArg2: component, int
         ifSetOpBase("", intArg1);
         ifSetOpBase("", intArg2);
         ccDeleteAll(intArg3);
-        ifSetOnMouseOver(noHook(""), intArg3);
-        hookMouseExit(noHook(""), intArg3);
+        ifSetOnMouseRepeat(noHook(""), intArg3);
+        ifSetOnMouseLeave(noHook(""), intArg3);
     }
     int7 = invotherGetobj(541, 0);
 

@@ -17,6 +17,6 @@ function cs2_3077(intArg0: component, intArg1: graphic, intArg2: graphic, intArg
     cc_add_graphic(intArg0, 5, 16, 32, 0, 0, intArg3, true, false, false, 0);
     ccSetPosition(0, 0, 2, 0);
     ccSetHide(true);
-    hookMouseEnter(hook(cs2_3078, "I", [intArg0]), intArg0);
-    hookMouseExit(hook(cs2_3080, "I", [intArg0]), intArg0);
+    ifSetOnMouseOver(hook(cs2_3078, "I", [intArg0]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_3080, "I", [intArg0]), intArg0);
 }

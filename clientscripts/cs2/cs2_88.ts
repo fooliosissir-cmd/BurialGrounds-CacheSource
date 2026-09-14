@@ -27,7 +27,7 @@ function cs2_88(intArg0: number, intArg1: number, strArg0: string): void {
             ignoreAdd(strArg0);
             break;
         case 9:
-            quickchat_respond(5, strArg0, chatLineGetQuickChatId(intArg1));
+            quickchat_respond(5, strArg0, chatGethistoryphrase(intArg1));
             break;
         case 10:
             varcstr_snapshot_name = strArg0;

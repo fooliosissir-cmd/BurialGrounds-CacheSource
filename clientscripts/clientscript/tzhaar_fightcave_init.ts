@@ -22,5 +22,5 @@ function tzhaar_fightcave_init(intArg0: component, intArg1: component, intArg2: 
     ifSetHide(false, intArg2);
     ifSetOnTimer(hook(cs2_1228, "IIIi", [intArg0, intArg1, intArg2, clientClock()]), intArg0);
     ifSetOp(1, "Dismiss", intArg1);
-    ifSetOnOpt(hook(cs2_1229, "iIII", [event_opindex, intArg0, intArg1, intArg2]), intArg1);
+    ifSetOnOp(hook(cs2_1229, "iIII", [event_opindex, intArg0, intArg1, intArg2]), intArg1);
 }

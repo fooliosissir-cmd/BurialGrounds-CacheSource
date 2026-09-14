@@ -15,9 +15,9 @@ function worldmap_setuptext(strArg0: string, intArg0: number, intArg1: number, i
     if (intArg5 != -1) {
         ccSetOpBase("<col=ff9040>" + strArg1 + "</col>");
         ccSetOp(1, strArg2);
-        ccSetOnOpt(hook(worldmap_op, "iIc", [event_opindex, event_com, intArg5]));
+        ccSetOnOp(hook(worldmap_op, "iIc", [event_opindex, event_com, intArg5]));
     } else {
         ccSetOp(1, "");
-        ccSetOnOpt(noHook(""));
+        ccSetOnOp(noHook(""));
     }
 }

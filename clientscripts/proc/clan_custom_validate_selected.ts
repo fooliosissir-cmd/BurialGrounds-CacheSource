@@ -64,10 +64,10 @@ function clan_custom_validate_selected(intArg0: number): number {
             int4 = enumOp(type_int, type_enum, int1, 3);
             if (int2 != -1) {
                 if (int8 > 0 && int8 <= enumGetoutputcount(int2)) {
-                    if (loadClanVarbit<2580>() >= structParam(enumOp(type_int, type_struct, int2, int8), Param.clan_custom_if_tier)) {
+                    if (pushVarClanBit<2580>() >= structParam(enumOp(type_int, type_struct, int2, int8), Param.clan_custom_if_tier)) {
                         if (int3 != -1) {
                             if (int9 > 0 && int9 <= enumGetoutputcount(int3)) {
-                                if (loadClanVarbit<2580>() < structParam(enumOp(type_int, type_struct, int3, int9), Param.clan_custom_if_tier)) {
+                                if (pushVarClanBit<2580>() < structParam(enumOp(type_int, type_struct, int3, int9), Param.clan_custom_if_tier)) {
                                     return 2;
                                 }
                             } else {
@@ -76,7 +76,7 @@ function clan_custom_validate_selected(intArg0: number): number {
                         }
                         if (int4 != -1) {
                             if (int10 > 0 && int10 <= enumGetoutputcount(int4)) {
-                                if (loadClanVarbit<2580>() < structParam(enumOp(type_int, type_struct, int4, int10), Param.clan_custom_if_tier)) {
+                                if (pushVarClanBit<2580>() < structParam(enumOp(type_int, type_struct, int4, int10), Param.clan_custom_if_tier)) {
                                     return 2;
                                 }
                             } else {

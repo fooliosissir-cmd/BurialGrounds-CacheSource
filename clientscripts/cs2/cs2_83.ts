@@ -106,6 +106,6 @@ function cs2_83(intArg0: component, intArg1: component, intArg2: component, intA
     cs2_176(Component.interface_982.component_982_64, 16, intArg19, intArg11, intArg20, intArg21, intArg14, intArg17);
     cs2_176(Component.interface_982.component_982_65, 17, intArg19, intArg11, intArg20, intArg21, intArg14, intArg17);
     cs2_176(Component.interface_982.component_982_66, 18, intArg19, intArg11, intArg20, intArg21, intArg14, intArg17);
-    ifSetOnOpt(hook(cs2_3417, "iiIIIIII", [event_opindex, 0, intArg19, intArg11, intArg20, intArg21, intArg14, intArg17]), intArg18);
+    ifSetOnOp(hook(cs2_3417, "iiIIIIII", [event_opindex, 0, intArg19, intArg11, intArg20, intArg21, intArg14, intArg17]), intArg18);
     ifSetOnVarTransmit(hook(cs2_2734, "IIIIIIY", [intArg19, intArg11, intArg20, intArg21, intArg14, intArg17], [287, 1438]), intArg0);
 }

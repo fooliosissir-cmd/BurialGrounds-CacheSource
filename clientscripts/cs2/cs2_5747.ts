@@ -79,20 +79,20 @@ function cs2_5747(intArg0: struct, intArg1: number, intArg2: number, intArg3: nu
     } else {
         str0 = "Requirements not met.";
     }
-    ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1239.component_1239_10, Component.interface_1239.component_1239_8, intArg3, str0, 175, -1, -1, -1, 12, 3, int5, event_mousex, event_mousey]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1239.component_1239_10]));
+    ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1239.component_1239_10, Component.interface_1239.component_1239_8, intArg3, str0, 175, -1, -1, -1, 12, 3, int5, event_mousex, event_mousey]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1239.component_1239_10]));
     intArg3 = intArg3 + 1;
     ccCreate(Component.interface_1239.component_1239_8, 5, intArg3);
     ccSetSize(456, 51, 0, 0);
     ccSetPosition((2 * 12 + 434 + 5) * (intArg4 % 1) + 5, (51 + 3) * (intArg4 / 1), 0, 0);
     ccSetOp(1, "Select");
     ccSetOpBase(append("<col=00ff00>", structParam(intArg0, Param.task_name)));
-    ccHookMouseEnter(hook(cs2_5748, "i", [event_comsubid]));
+    ccSetOnMouseOver(hook(cs2_5748, "i", [event_comsubid]));
 
     if (intArg2 == 0) {
-        ccHookMouseExit(hook(cs2_5749, "i", [event_comsubid]));
+        ccSetOnMouseLeave(hook(cs2_5749, "i", [event_comsubid]));
     } else {
-        ccHookMouseExit(hook(cs2_5750, "i", [event_comsubid]));
+        ccSetOnMouseLeave(hook(cs2_5750, "i", [event_comsubid]));
     }
     intArg3 = intArg3 + 1;
     intArg4 = intArg4 + 1;

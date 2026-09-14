@@ -12,11 +12,11 @@ function lobbyscreen_pane_friendschat_load(intArg0: number): void {
     ifSetScrollSize(0, 0, Component.interface_589.component_589_23);
     ifSetScrollPos(0, 0, Component.interface_589.component_589_23);
     proc_scrollbar_vertical(Component.interface_589.component_589_24, Component.interface_589.component_589_23, Graphic.scrollbar_dragger_v2_3, Graphic.scrollbar_dragger_v2_0, Graphic.scrollbar_dragger_v2_1, Graphic.scrollbar_dragger_v2_2, Graphic.scrollbar_v2_0, Graphic.scrollbar_v2_1);
-    ifSetOnClanChannelTransmit(hook(clientscript_lobbyscreen_pane_friendschat_build, "IIIIII", [Component.interface_589.component_589_55, Component.interface_589.component_589_56, Component.interface_589.component_589_57, Component.interface_589.component_589_53, Component.interface_589.component_589_51, Component.interface_589.component_589_52]), Component.interface_589.component_589_51);
+    ifSetOnClanTransmit(hook(clientscript_lobbyscreen_pane_friendschat_build, "IIIIII", [Component.interface_589.component_589_55, Component.interface_589.component_589_56, Component.interface_589.component_589_57, Component.interface_589.component_589_53, Component.interface_589.component_589_51, Component.interface_589.component_589_52]), Component.interface_589.component_589_51);
     ifSetOnFriendTransmit(hook(clientscript_lobbyscreen_pane_friendschat_build, "IIIIII", [Component.interface_589.component_589_55, Component.interface_589.component_589_56, Component.interface_589.component_589_57, Component.interface_589.component_589_53, Component.interface_589.component_589_51, Component.interface_589.component_589_52]), Component.interface_589.component_589_51);
     proc_lobbyscreen_pane_friendschat_build(Component.interface_589.component_589_55, Component.interface_589.component_589_56, Component.interface_589.component_589_57, Component.interface_589.component_589_53, Component.interface_589.component_589_51, Component.interface_589.component_589_52);
 
-    if (fcGetChatCount() > 0) {
+    if (clanGetChatCount() > 0) {
         ifSetText("Leave chat channel", Component.interface_589.component_589_41);
         ifSetOp(1, "Leave chat channel", Component.interface_589.component_589_39);
     } else {

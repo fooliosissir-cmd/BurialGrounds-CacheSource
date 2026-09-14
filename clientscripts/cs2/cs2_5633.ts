@@ -4,7 +4,7 @@
 // cs2_5633
 
 function cs2_5633(): void {
-    let int0: number = createReply();
+    let int0: number = createConnectReply();
 
     if (int0 == -3) {
         return;

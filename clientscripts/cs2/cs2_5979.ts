@@ -32,8 +32,8 @@ function cs2_5979(intArg0: component): void {
     ccSetSize(4, 4, 1, 1);
     ccSetColour(colour(0xFFFFFF));
     ccSetfill(true);
-    ccHookMouseEnter(hook(cc_settrans, "Iii", [event_com, int1, 128]));
-    ccHookMouseExit(hook(cc_settrans, "Iii", [event_com, int1, 255]));
+    ccSetOnMouseOver(hook(cc_settrans, "Iii", [event_com, int1, 128]));
+    ccSetOnMouseLeave(hook(cc_settrans, "Iii", [event_com, int1, 255]));
     ccSetTrans(255);
     int1 = ifGetNextSubId(intArg0);
     ccCreate(intArg0, 3, int1);

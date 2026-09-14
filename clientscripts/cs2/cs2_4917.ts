@@ -7,8 +7,8 @@ function cs2_4917(): void {
     if (clanProfileFind() == 1) {
         ifSetOnVarClanTransmit(hook(cs2_4918, "", []), 82509875);
         ifSetOnVarClanTransmit(hook(cs2_4918, "", []), 82641041);
-        varbit_clan_stronghold_main_selected_layout_varp = loadClanVarbit<2074>();
-        varbit_clan_stronghold_main_selected_daynight_varp = loadClanVarbit<2075>();
+        varbit_clan_stronghold_main_selected_layout_varp = pushVarClanBit<2074>();
+        varbit_clan_stronghold_main_selected_daynight_varp = pushVarClanBit<2075>();
         cs2_5974();
         cs2_4991();
         cs2_4900();

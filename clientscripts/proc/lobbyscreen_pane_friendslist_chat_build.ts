@@ -4,7 +4,7 @@
 // [proc,lobbyscreen_pane_friendslist_chat_build]
 
 function proc_lobbyscreen_pane_friendslist_chat_build(intArg0: component): void {
-    if (ifGetTop(59572276, -1) == 1) {
+    if (minimenuopen(59572276, -1) == 1) {
         ifSetOnTimer(hook(clientscript_lobbyscreen_pane_friendslist_chat_build, "I", [intArg0]), intArg0);
         return;
     }
@@ -18,9 +18,9 @@ function proc_lobbyscreen_pane_friendslist_chat_build(intArg0: component): void 
     let int4: number = 1;
 
     while (int2 < 100) {
-        int3 = chatGettypebyline(int2);
-        str1 = chatLineGetcrownedname(int2);
-        str2 = chatLineGetName(int2);
+        int3 = chatGethistorytype(int2);
+        str1 = chatGethistoryname(int2);
+        str2 = unknownCommand5019(int2);
         switch (int3) {
             case 0:
             case 4:
@@ -30,40 +30,40 @@ function proc_lobbyscreen_pane_friendslist_chat_build(intArg0: component): void 
             case 26:
             case 30:
             case 31:
-                int1 = lobbyscreen_pane_friendslist_chat_line(int1, chatGetbyline(int2), 0, "", "", int3);
+                int1 = lobbyscreen_pane_friendslist_chat_line(int1, chatGethistorymessage(int2), 0, "", "", int3);
                 break;
             case 3:
-                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "From " + str1 + ": " + str0 + chatGetbyline(int2), 1, str1, str2, int3);
+                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "From " + str1 + ": " + str0 + chatGethistorymessage(int2), 1, str1, str2, int3);
                 if (int4 == 1) {
                     int4 = 0;
                     varcstr_276 = str2;
                 }
                 break;
             case 5:
-                int1 = lobbyscreen_pane_friendslist_chat_line(int1, str0 + chatGetbyline(int2), 0, str1, str2, int3);
+                int1 = lobbyscreen_pane_friendslist_chat_line(int1, str0 + chatGethistorymessage(int2), 0, str1, str2, int3);
                 break;
             case 6:
-                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "To " + str1 + ": " + str0 + chatGetbyline(int2), 1, str1, str2, int3);
+                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "To " + str1 + ": " + str0 + chatGethistorymessage(int2), 1, str1, str2, int3);
                 break;
             case 7:
-                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "From " + str1 + ": " + str0 + chatGetbyline(int2), 1, str1, str2, int3);
+                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "From " + str1 + ": " + str0 + chatGethistorymessage(int2), 1, str1, str2, int3);
                 if (int4 == 1) {
                     int4 = 0;
                     varcstr_276 = str2;
                 }
                 break;
             case 18:
-                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "From " + str1 + ": " + str0 + chatGetbyline(int2), 1, str1, str2, int3);
+                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "From " + str1 + ": " + str0 + chatGethistorymessage(int2), 1, str1, str2, int3);
                 if (int4 == 1) {
                     int4 = 0;
                     varcstr_276 = str2;
                 }
                 break;
             case 19:
-                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "To " + str1 + ": " + str0 + chatGetbyline(int2), 1, str1, str2, int3);
+                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "To " + str1 + ": " + str0 + chatGethistorymessage(int2), 1, str1, str2, int3);
                 break;
             case 115:
-                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "<col=ff0000>" + chatGetbyline(int2) + "</col>", 0, "", "", int3);
+                int1 = lobbyscreen_pane_friendslist_chat_line(int1, "<col=ff0000>" + chatGethistorymessage(int2) + "</col>", 0, "", "", int3);
                 break;
         }
         int2 = int2 + 1;

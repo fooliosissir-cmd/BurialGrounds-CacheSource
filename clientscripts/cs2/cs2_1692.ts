@@ -14,8 +14,8 @@ function cs2_1692(intArg0: component, intArg1: number, intArg2: number): [number
     ccSetfill(true);
     ccSetColour(colour(0x000000));
     ccSetTrans(255);
-    ccHookMouseEnter(hook(cc_settrans, "Iii", [event_com, event_comsubid, 200]));
-    ccHookMouseExit(hook(cc_settrans, "Iii", [event_com, event_comsubid, 255]));
+    ccSetOnMouseOver(hook(cc_settrans, "Iii", [event_com, event_comsubid, 200]));
+    ccSetOnMouseLeave(hook(cc_settrans, "Iii", [event_com, event_comsubid, 255]));
     ccSetOp(1, "Take");
     ccSetOp(10, "Examine");
     ccSetOpBase("<col=ff9040>" + ocName(structParam(int3, Param.poh_bookcase_obj)));

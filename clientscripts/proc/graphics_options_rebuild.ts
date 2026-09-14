@@ -110,8 +110,8 @@ function proc_graphics_options_rebuild(intArg0: number, intArg1: number, intArg2
         ccSetSize<1>(16, 16, 0, 0);
         ccSetPosition<1>(1, 0, 2, 1);
         ccSetGraphic<1>(Graphic.graphic_2554);
-        ccHookMouseEnter(hook(cs2_2691, "Ii1ii1", [event_com, ccGetId<1>(), true, int8, colour(0x80786D), true]));
-        ccHookMouseExit(hook(cs2_2691, "Ii1ii1", [event_com, ccGetId<1>(), false, int8, colour(0x5F5B52), true]));
+        ccSetOnMouseOver(hook(cs2_2691, "Ii1ii1", [event_com, ccGetId<1>(), true, int8, colour(0x80786D), true]));
+        ccSetOnMouseLeave(hook(cs2_2691, "Ii1ii1", [event_com, ccGetId<1>(), false, int8, colour(0x5F5B52), true]));
         ccSetOnClick(hook(cs2_2695, "IiiiiJiiiii", [event_com, event_comsubid, ccGetId<1>(), int8, -1, Struct.struct_845, intArg2, intArg3, intArg0, intArg1, intArg4]));
     }
     graphics_options_manual_setup_buttons(intArg4, false);

@@ -30,12 +30,12 @@ function meslayer_mode10(): void {
     if (varc_last_clanchannelowner_init == 1 && stringLength(varcstr_last_clanchannelowner) > 0) {
         ccSetText("Last name entered: " + varcstr_last_clanchannelowner);
     } else {
-        varcstr_last_clanchannelowner = removetags(chatPlayerName());
+        varcstr_last_clanchannelowner = removetags(chatPlayerNameUnfiltered());
         varc_last_clanchannelowner_init = 1;
         ccSetText("Your name: " + varcstr_last_clanchannelowner);
     }
     ccSetOp(1, "Use:");
     ccSetOpBase("<col=ff9040>" + removetags(varcstr_last_clanchannelowner) + "</col>");
-    ccSetOnOpt(hook(meslayer_lastname, "iiIis", [varc_meslayermode, event_opindex, event_com, event_comsubid, varcstr_last_clanchannelowner]));
+    ccSetOnOp(hook(meslayer_lastname, "iiIis", [varc_meslayermode, event_opindex, event_com, event_comsubid, varcstr_last_clanchannelowner]));
     cs2_1188();
 }

@@ -5,6 +5,6 @@
 
 function proc_loginscreen_link(strArg0: string, strArg1: string, intArg0: boolean): void {
     if (compare(strArg0, "") != 0 && compare(strArg1, "") != 0) {
-        openurl("loginapplet/loginapplet.ws?ssl=1&expired=0&mod=" + strArg0 + "&dest=" + strArg1, intArg0);
+        openurlNoLogin("loginapplet/loginapplet.ws?ssl=1&expired=0&mod=" + strArg0 + "&dest=" + strArg1, intArg0);
     }
 }

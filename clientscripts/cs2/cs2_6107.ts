@@ -23,6 +23,6 @@ function cs2_6107(): void {
     ifSetText("N/A", Component.interface_1265.component_1265_204);
     ifSetHide(true, Component.interface_1265.component_1265_63);
     ifSetGraphic(-1, Component.interface_1265.component_1265_42);
-    ifSetOnMouseOver(noHook(""), Component.interface_1265.component_1265_42);
+    ifSetOnMouseRepeat(noHook(""), Component.interface_1265.component_1265_42);
     cs2_6094();
 }

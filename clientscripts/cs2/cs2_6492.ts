@@ -78,8 +78,8 @@ function cs2_6492(): void {
                 if (varbit_11248 == int1 && varbit_11247 != int1) {
                     str0 = "This is your original colour for the set.";
                 }
-                ccSetOnMouseOver(hook(cs2_5334, "IiIsii", [int2, 0, Component.mtxrecol_equip.tooltip_layer, str0, 25, 500]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.mtxrecol_equip.tooltip_layer]));
+                ccSetOnMouseRepeat(hook(cs2_5334, "IiIsii", [int2, 0, Component.mtxrecol_equip.tooltip_layer, str0, 25, 500]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.mtxrecol_equip.tooltip_layer]));
                 int0 = -1;
                 int3 = 0;
             }

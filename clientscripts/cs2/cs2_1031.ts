@@ -4,5 +4,5 @@
 // cs2_1031
 
 function cs2_1031(): void {
-    openurlNoLogin("rswiki", "en/Information_for_Parents", 0);
+    openurl("rswiki", "en/Information_for_Parents", 0);
 }

@@ -41,7 +41,7 @@ function cs2_1799(intArg0: component, intArg1: component): void {
         ccSetSize<1>(8, 17 + ccGetHeight(), 1, 0);
         ccSetTrans<1>(255);
         ccSetOp<1>(1, structParam(int4, Param.clanwars_arena_name));
-        ccSetOnOpt<1>(hook(cs2_1833, "ii", [event_opindex, int2]));
+        ccSetOnOp<1>(hook(cs2_1833, "ii", [event_opindex, int2]));
         int3 = int3 + ccGetHeight<1>();
         if (int2 < 4) {
             int3 = int3 + 3;

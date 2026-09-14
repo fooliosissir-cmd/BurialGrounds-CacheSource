@@ -10,11 +10,11 @@ function cs2_5354(intArg0: component, intArg1: number, intArg2: graphic, intArg3
         }
         ccSetGraphic(intArg2);
         if (intArg2 == intArg3) {
-            ccHookMouseEnter(hook(graphic_swapper_child, "Iid", [intArg0, intArg1, intArg3]));
-            ccHookMouseExit(hook(graphic_swapper_child, "Iid", [intArg0, intArg1, intArg4]));
+            ccSetOnMouseOver(hook(graphic_swapper_child, "Iid", [intArg0, intArg1, intArg3]));
+            ccSetOnMouseLeave(hook(graphic_swapper_child, "Iid", [intArg0, intArg1, intArg4]));
         } else {
-            ccHookMouseEnter(hook(graphic_swapper_child, "Iid", [intArg0, intArg1, intArg5]));
-            ccHookMouseExit(hook(graphic_swapper_child, "Iid", [intArg0, intArg1, intArg6]));
+            ccSetOnMouseOver(hook(graphic_swapper_child, "Iid", [intArg0, intArg1, intArg5]));
+            ccSetOnMouseLeave(hook(graphic_swapper_child, "Iid", [intArg0, intArg1, intArg6]));
         }
     }
 }

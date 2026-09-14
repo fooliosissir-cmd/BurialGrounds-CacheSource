@@ -62,10 +62,10 @@ function cs2_5081(intArg0: component, intArg1: number, intArg2: Enum, intArg3: n
             ccSetColour(colour(0xEFB063));
             ccSetTextShadow(false);
             ccSetText(enumOp(type_int, type_string, intArg2, int8));
-            ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
-            ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xEFB063)]));
+            ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+            ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xEFB063)]));
             ccSetOp(1, "Select");
-            ccSetOnOpt(hook(cs2_5084, "I", [intArg0]));
+            ccSetOnOp(hook(cs2_5084, "I", [intArg0]));
             int10 = int10 + ccGetHeight();
         } else {
             ccCreate(Component.clan_field_setup.dropdown_options, 3, ifGetNextSubId(Component.clan_field_setup.dropdown_options));

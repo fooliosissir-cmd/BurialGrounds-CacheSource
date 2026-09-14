@@ -4,13 +4,13 @@
 // [clientscript,lobbyscreen_pane_friendschat_keyboard]
 
 function lobbyscreen_pane_friendschat_keyboard(intArg0: number, intArg1: number): void {
-    if (fcGetChatCount() <= 0 || userDetailQuickChat() == 1 || lobbyscreen_report_abuse_open() == 1) {
+    if (clanGetChatCount() <= 0 || userDetailQuickChat() == 1 || lobbyscreen_report_abuse_open() == 1) {
         return;
     }
 
     switch (intArg0) {
         case 84:
-            if (fcGetChatCount() > 0) {
+            if (clanGetChatCount() > 0) {
                 if (stringLength(varcstr_lobbyscreen_input_friendschat) > 0) {
                     chatSetMode(1);
                     chatSendpublic(varcstr_lobbyscreen_input_friendschat);

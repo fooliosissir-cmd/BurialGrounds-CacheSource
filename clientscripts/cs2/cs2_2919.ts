@@ -4,7 +4,7 @@
 // cs2_2919
 
 function cs2_2919(intArg0: boolean, intArg1: number): void {
-    let int2: number = detailGetActiveToolkit();
+    let int2: number = detailGetToolkit();
 
     if (intArg0 == false) {
         proc_graphics_options_rebuild(int2, getWindowMode(), ...graphics_options_reviewoptions(int2), intArg1);

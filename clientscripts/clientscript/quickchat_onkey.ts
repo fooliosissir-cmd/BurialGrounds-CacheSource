@@ -55,8 +55,8 @@ function quickchat_onkey(intArg0: number, intArg1: number, intArg2: component, i
                 proc_quickchat_enter_search(enumOp(type_int, type_component, Enum.enum_1550, intArg3), enumOp(type_int, type_component, Enum.enum_1551, intArg3), varc_128, intArg3 + 1);
             }
         } else if (intArg4 != -1) {
-            int8 = chatCatGetDesc(intArg4);
-            int9 = chatCatGetSubCatCount(intArg4);
+            int8 = chatCatGetSubCatCount(intArg4);
+            int9 = chatCatGetPhraseCount(intArg4);
             if (varc_128 == int8 + int9) {
                 if (intArg3 == 0 && cs2_1036() != -1 && ccFind(enumOp(type_int, type_component, Enum.enum_1550, intArg3), varc_128) == 1) {
                     proc_quickchat_menu_select(enumOp(type_int, type_component, Enum.enum_1550, intArg3), enumOp(type_int, type_component, Enum.enum_1551, intArg3), varc_128, intArg2, intArg3 + 1, cs2_1036());
@@ -100,8 +100,8 @@ function quickchat_onkey(intArg0: number, intArg1: number, intArg2: component, i
     let int12: number = -1;
 
     if (intArg4 != -1) {
-        int8 = chatCatGetDesc(intArg4);
-        int9 = chatCatGetSubCatCount(intArg4);
+        int8 = chatCatGetSubCatCount(intArg4);
+        int9 = chatCatGetPhraseCount(intArg4);
         if (intArg3 == 0 && compare("X", appendChar("", intArg1)) == 0 && cs2_1036() != -1) {
             int10 = int8 + int9;
             if (ccFind(enumOp(type_int, type_component, Enum.enum_1550, intArg3), int10) == 1) {

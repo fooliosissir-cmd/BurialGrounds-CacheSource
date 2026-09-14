@@ -4,7 +4,7 @@
 // cs2_196
 
 function cs2_196(): void {
-    if (compare(subString(chatPlayerNameUnfiltered(), 0, 1), "#") == 0) {
+    if (compare(subString(chatPlayerName(), 0, 1), "#") == 0) {
         return;
     }
 

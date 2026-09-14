@@ -81,8 +81,8 @@ function cs2_186(intArg0: component, intArg1: component, intArg2: graphic, intAr
     ccSettiling(false);
     ccSetAlpha(true);
     ccSetOnHold(hook(cs2_187, "II", [intArg0, intArg1]));
-    ccHookMouseEnter(hook(graphic_swapper_dynamic, "Iid", [event_com, 6, intArg10]));
-    ccHookMouseExit(hook(graphic_swapper_dynamic, "Iid", [event_com, 6, intArg8]));
+    ccSetOnMouseOver(hook(graphic_swapper_dynamic, "Iid", [event_com, 6, intArg10]));
+    ccSetOnMouseLeave(hook(graphic_swapper_dynamic, "Iid", [event_com, 6, intArg8]));
     ccSetOnClick(hook(graphic_swapper_dynamic, "Iid", [event_com, 6, intArg12]));
     ccCreate(intArg0, 5, 7);
     ccSetPosition(0, 0, 0, 2);
@@ -91,8 +91,8 @@ function cs2_186(intArg0: component, intArg1: component, intArg2: graphic, intAr
     ccSettiling(false);
     ccSetAlpha(true);
     ccSetOnHold(hook(cs2_189, "II", [intArg0, intArg1]));
-    ccHookMouseEnter(hook(graphic_swapper_dynamic, "Iid", [event_com, 7, intArg11]));
-    ccHookMouseExit(hook(graphic_swapper_dynamic, "Iid", [event_com, 7, intArg9]));
+    ccSetOnMouseOver(hook(graphic_swapper_dynamic, "Iid", [event_com, 7, intArg11]));
+    ccSetOnMouseLeave(hook(graphic_swapper_dynamic, "Iid", [event_com, 7, intArg9]));
     ccSetOnClick(hook(graphic_swapper_dynamic, "Iid", [event_com, 7, intArg13]));
     ifSetOnScrollWheel(hook(cs2_5506, "IIi", [intArg0, intArg1, event_mousey]), intArg0);
     ifSetOnScrollWheel(hook(cs2_5506, "IIi", [intArg0, intArg1, event_mousey]), intArg1);
