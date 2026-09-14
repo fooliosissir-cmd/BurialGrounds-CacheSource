@@ -33,6 +33,6 @@ function proc_clan_signpost_populate_slot(intArg0: number, strArg0: string, intA
     ifSetColour(hsvtorgb(intArg4), intArg18);
     ifSetColour(hsvtorgb(intArg5), intArg19);
     ifSetColour(hsvtorgb(intArg6), intArg20);
-    ifSetOnOpt(hook(cs2_5111, "i1", [intArg0, intArg8]), intArg14);
+    ifSetOnOp(hook(cs2_5111, "i1", [intArg0, intArg8]), intArg14);
     ifSetHide(true, intArg13);
 }

@@ -6,12 +6,12 @@
 function proc_lobby_popup_close(): void {
     ifClearops(Component.interface_906.component_906_253);
     ifClearops(Component.interface_906.component_906_258);
-    ifSetOnOpt(noHook(""), Component.interface_906.component_906_253);
-    ifSetOnOpt(noHook(""), Component.interface_906.component_906_258);
-    hookMouseEnter(noHook(""), Component.interface_906.component_906_258);
-    hookMouseExit(noHook(""), Component.interface_906.component_906_258);
-    hookMouseEnter(noHook(""), Component.interface_906.component_906_253);
-    hookMouseExit(noHook(""), Component.interface_906.component_906_253);
+    ifSetOnOp(noHook(""), Component.interface_906.component_906_253);
+    ifSetOnOp(noHook(""), Component.interface_906.component_906_258);
+    ifSetOnMouseOver(noHook(""), Component.interface_906.component_906_258);
+    ifSetOnMouseLeave(noHook(""), Component.interface_906.component_906_258);
+    ifSetOnMouseOver(noHook(""), Component.interface_906.component_906_253);
+    ifSetOnMouseLeave(noHook(""), Component.interface_906.component_906_253);
     ifSetPosition(6, 5, 0, 2, Component.interface_906.component_906_253);
     ifSetPosition(6, 5, 0, 2, Component.interface_906.component_906_258);
     ifSetText("", Component.interface_906.component_906_257);

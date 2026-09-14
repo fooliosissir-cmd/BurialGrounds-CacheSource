@@ -39,7 +39,7 @@ function cs2_5308(): void {
             ccSetOp(1, structParam(int2, Param.clan_theatre_prop_name));
         } else {
             ccSetOnTargetEnter(hook(clan_theatre_prop_select, "i", [event_comsubid]));
-            ccSetOnOp(hook(graphic_swapper, "Id", [event_com, int4]));
+            ccSetOnTargetLeave(hook(graphic_swapper, "Id", [event_com, int4]));
             if (int3 == 1) {
                 ccSettargetverb(structParam(int2, Param.clan_theatre_prop_name));
             } else if (int3 == 2) {
@@ -49,9 +49,9 @@ function cs2_5308(): void {
             }
             ccSettargetcursors(Cursor.cursor_target, -1);
         }
-        ccHookMouseEnter(hook(graphic_swapper, "Id", [event_com, int5]));
-        ccSetOnMouseOver(hook(cs2_5334, "IiIsii", [Component.interface_823.component_823_3, int0, Component.interface_823.component_823_15, str0, 20, 200]));
-        ccHookMouseExit(hook(cs2_299, "IId", [Component.interface_823.component_823_15, event_com, int4]));
+        ccSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int5]));
+        ccSetOnMouseRepeat(hook(cs2_5334, "IiIsii", [Component.interface_823.component_823_3, int0, Component.interface_823.component_823_15, str0, 20, 200]));
+        ccSetOnMouseLeave(hook(cs2_299, "IId", [Component.interface_823.component_823_15, event_com, int4]));
         ccCreate(Component.interface_823.component_823_4, 5, int0);
         ccSetGraphic(structParam(int2, Param.clan_theatre_prop_gfx));
         ccSetSize(50, 50, 0, 0);

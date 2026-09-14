@@ -29,12 +29,12 @@ function worldmap_createline(intArg0: component, intArg1: number, intArg2: numbe
         ccSetOpBase<1>("<col=ff9040>" + str0 + "</col>");
         ccSetOp(1, "Highlight");
         ccSetOp<1>(1, "Highlight");
-        ccSetOnOpt(hook(worldmap_flashelementcategory, "y", [int4]));
-        ccSetOnOpt<1>(hook(worldmap_flashelementcategory, "y", [int4]));
-        ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [intArg0, ccGetId<1>(), colour(0xFFFFFF)]));
-        ccHookMouseEnter<1>(hook(cc_text_colour_swapper, "Iii", [intArg0, ccGetId<1>(), colour(0xFFFFFF)]));
-        ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [intArg0, ccGetId<1>(), colour(0xAFAFAF)]));
-        ccHookMouseExit<1>(hook(cc_text_colour_swapper, "Iii", [intArg0, ccGetId<1>(), colour(0xAFAFAF)]));
+        ccSetOnOp(hook(worldmap_flashelementcategory, "y", [int4]));
+        ccSetOnOp<1>(hook(worldmap_flashelementcategory, "y", [int4]));
+        ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [intArg0, ccGetId<1>(), colour(0xFFFFFF)]));
+        ccSetOnMouseOver<1>(hook(cc_text_colour_swapper, "Iii", [intArg0, ccGetId<1>(), colour(0xFFFFFF)]));
+        ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [intArg0, ccGetId<1>(), colour(0xAFAFAF)]));
+        ccSetOnMouseLeave<1>(hook(cc_text_colour_swapper, "Iii", [intArg0, ccGetId<1>(), colour(0xAFAFAF)]));
     }
     return intArg2 + ccGetHeight();
 }

@@ -10,8 +10,8 @@ function cs2_4170(intArg0: component, intArg1: component, intArg2: number, strAr
     ccSetSize(0, 0, 1, 1);
     ccSetPosition(0, 0, 1, 1);
     ccSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_0));
-    ccSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, event_comsubid, intArg1, strArg0, 25, 200]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [intArg1]));
+    ccSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, event_comsubid, intArg1, strArg0, 25, 200]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [intArg1]));
     ccCreate(intArg0, 5, 1);
     cs2_4172(intArg2);
     ccSetOnInvTransmit(hook(cs2_4171, "IiiY", [event_com, event_comsubid, intArg2], [94]));

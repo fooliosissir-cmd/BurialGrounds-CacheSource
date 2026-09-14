@@ -20,6 +20,6 @@ function cs2_3168(intArg0: component, intArg1: number, intArg2: number, intArg3:
             int6 = 0;
         }
         ifSetPosition(int5, int6, 0, 0, Component.interface_912.component_912_30);
-        ccSetOnMouseOver(noHook(""));
+        ccSetOnMouseRepeat(noHook(""));
     }
 }

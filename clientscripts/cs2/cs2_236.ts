@@ -4,5 +4,5 @@
 // cs2_236
 
 function cs2_236(): void {
-    openurlNoLogin("bugtracker_v4", "index.html", 0);
+    openurl("bugtracker_v4", "index.html", 0);
 }

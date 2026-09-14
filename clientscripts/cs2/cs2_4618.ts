@@ -11,13 +11,13 @@ function cs2_4618(intArg0: number, intArg1: number): [number, number] {
     let int3: number = intArg1;
     let int4: number = 0;
 
-    if (loadClanSettingVarbit<5>() == 1) {
-        int4 = max(loadClanSettingVar(), 0 - loadClanSettingVar());
+    if (pushVarClanSettingBit<5>() == 1) {
+        int4 = max(pushVarClanSetting(), 0 - pushVarClanSetting());
     }
     int3 = intArg1 / 10 * 60 + intArg1 % 10 * 10;
 
-    if (loadClanSettingVarbit<5>() == 1) {
-        if (loadClanSettingVar() < 0) {
+    if (pushVarClanSettingBit<5>() == 1) {
+        if (pushVarClanSetting() < 0) {
             if (int3 + int4 >= 1440) {
                 int2 = int2 + 1;
                 int3 = int3 + int4 - 1440;

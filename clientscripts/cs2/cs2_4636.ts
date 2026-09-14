@@ -8,7 +8,7 @@ function cs2_4636(): void {
     let int1: component = Component.interface_596.component_596_44;
     let int2: component = Component.interface_596.component_596_57;
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         int0 = Component.interface_975.component_975_49;
         int1 = Component.interface_975.component_975_44;
     }

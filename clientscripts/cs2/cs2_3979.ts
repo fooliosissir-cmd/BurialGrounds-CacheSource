@@ -11,9 +11,9 @@ function cs2_3979(intArg0: number, intArg1: component): void {
     str0 = append(str0, structParam(int2, Param.task_details));
 
     if (cs2_3999(intArg0) == 0) {
-        ifSetOnMouseOver(hook(cs2_3981, "Is", [intArg1, str0]), intArg1);
+        ifSetOnMouseRepeat(hook(cs2_3981, "Is", [intArg1, str0]), intArg1);
     } else {
-        ifSetOnMouseOver(noHook(""), intArg1);
+        ifSetOnMouseRepeat(noHook(""), intArg1);
     }
 
     switch (intArg1) {

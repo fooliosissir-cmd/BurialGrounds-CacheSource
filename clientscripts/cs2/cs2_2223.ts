@@ -34,7 +34,7 @@ function cs2_2223(): void {
     ifSetSize(int2, ifGetHeight(Component.interface_669.component_669_8), 0, 0, Component.interface_669.component_669_8);
     ifSetPosition(ifGetX(Component.interface_669.component_669_7) + ifGetWidth(Component.interface_669.component_669_7) + stringWidth(" ", Graphic.verdana_11pt_regular), ifGetY(Component.interface_669.component_669_8), 0, 0, Component.interface_669.component_669_8);
     ifSetPosition(ifGetX(Component.interface_669.component_669_8) + ifGetWidth(Component.interface_669.component_669_8) + stringWidth(" ", Graphic.verdana_11pt_regular), ifGetY(Component.interface_669.component_669_9), 0, 0, Component.interface_669.component_669_9);
-    let [int3, int4] = getmachineuid();
+    let [int3, int4] = userflowflagsOp();
 
     if (varc_1407 < 13) {
         ifSetHide(true, Component.interface_669.component_669_14);
@@ -57,6 +57,6 @@ function cs2_2223(): void {
         str0 = "Continue";
         ifSetOnClick(hook(cs2_5636, "", []), Component.interface_669.component_669_39);
     }
-    createCreaterequest(15);
+    createStepReached(15);
     proc_loginscreen_setactivemenu(8);
 }

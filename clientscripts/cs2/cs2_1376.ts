@@ -14,5 +14,5 @@ function cs2_1376(intArg0: number, intArg1: component, intArg2: component): void
         ifSetSize(0, 0, 1, 1, intArg1);
     }
     worldmap_overlay_clear(intArg1);
-    ifSetOnOpt(hook(cs2_1375, "II", [intArg1, intArg2]), Component.interface_755.component_755_5);
+    ifSetOnOp(hook(cs2_1375, "II", [intArg1, intArg2]), Component.interface_755.component_755_5);
 }

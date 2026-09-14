@@ -24,8 +24,8 @@ function cs2_257(): void {
     ccSetText(cs2_1668(varc_fishcomp_result_fish));
     ccSetTextAlign(1, 1, 0);
     let str0: string = ccGetText() + ": The type of fish";
-    ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 1, event_mousex, event_mousey]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
+    ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 1, event_mousex, event_mousey]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
     ifSetSize(ifGetWidth(Component.interface_919.component_919_60), int1, 0, 0, Component.interface_919.component_919_60);
     ccCreate(Component.interface_919.component_919_60, 4, ifGetNextSubId(Component.interface_919.component_919_60));
 
@@ -40,8 +40,8 @@ function cs2_257(): void {
     ccSetText(cs2_276(varc_fishcomp_result_habitat));
     ccSetTextAlign(1, 1, 0);
     str0 = ccGetText() + ": The habitat in which you caught the fish";
-    ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 1, event_mousex, event_mousey]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
+    ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 1, event_mousex, event_mousey]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
     ifSetSize(ifGetWidth(Component.interface_919.component_919_61), int1, 0, 0, Component.interface_919.component_919_61);
     ccCreate(Component.interface_919.component_919_61, 4, ifGetNextSubId(Component.interface_919.component_919_61));
 
@@ -56,8 +56,8 @@ function cs2_257(): void {
     ccSetText(tostring(varc_fishcomp_result_weight));
     ccSetTextAlign(1, 1, 0);
     str0 = ccGetText() + ": The weight of the fish";
-    ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 1, event_mousex, event_mousey]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
+    ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 1, event_mousex, event_mousey]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
     ifSetSize(ifGetWidth(Component.interface_919.component_919_62), int1, 0, 0, Component.interface_919.component_919_62);
     ccCreate(Component.interface_919.component_919_62, 5, ifGetNextSubId(Component.interface_919.component_919_62));
     ccSetSize(20, 20, 0, 0);
@@ -105,8 +105,8 @@ function cs2_257(): void {
     } else {
         str0 = "You do not know which bait was used to catch this big fish";
     }
-    ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
+    ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
     ifSetSize(ifGetWidth(Component.interface_919.component_919_63), int1, 0, 0, Component.interface_919.component_919_63);
     ccCreate(Component.interface_919.component_919_63, 4, ifGetNextSubId(Component.interface_919.component_919_63));
 
@@ -126,8 +126,8 @@ function cs2_257(): void {
         str0 = "You do not know which hook was used to catch this big fish";
     }
     ccSetTextAlign(1, 1, 0);
-    ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
+    ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
     ifSetSize(ifGetWidth(Component.interface_919.component_919_64), int1, 0, 0, Component.interface_919.component_919_64);
     ccCreate(Component.interface_919.component_919_64, 4, ifGetNextSubId(Component.interface_919.component_919_64));
 
@@ -147,8 +147,8 @@ function cs2_257(): void {
         str0 = "You do not know which weights were used to catch this big fish";
     }
     ccSetTextAlign(1, 1, 0);
-    ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
+    ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
     ifSetSize(ifGetWidth(Component.interface_919.component_919_65), int1, 0, 0, Component.interface_919.component_919_65);
     ccCreate(Component.interface_919.component_919_65, 4, ifGetNextSubId(Component.interface_919.component_919_65));
 
@@ -175,8 +175,8 @@ function cs2_257(): void {
     if (varc_fishcomp_result_big_fish == 2) {
         str0 = "You helped a contestant to catch this big fish";
     }
-    ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
+    ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_919.component_919_24, event_com, -1, str0, 200, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_919.component_919_24]));
 
     if (ifGetHeight(Component.interface_919.component_919_47) == 200) {
         proc_scrollbar_vertical(Component.interface_919.component_919_58, Component.interface_919.component_919_59, Graphic.aif_scrollbar_dragger_2_3, Graphic.aif_scrollbar_dragger_2_0, Graphic.aif_scrollbar_dragger_2_1, Graphic.aif_scrollbar_dragger_2_2, Graphic.aif_scrollbar_arrow_2_1, Graphic.aif_scrollbar_arrow_2_0);

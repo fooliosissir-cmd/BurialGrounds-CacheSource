@@ -6,9 +6,9 @@
 function cs2_2645(intArg0: component): void {
     if (varc_842 == 1) {
         ifSetText("Next page", intArg0);
-        ifSetOnOpt(hook(cs2_2641, "", []), Component.interface_860.component_860_20);
+        ifSetOnOp(hook(cs2_2641, "", []), Component.interface_860.component_860_20);
     } else if (varc_842 == 2) {
         ifSetText("Previous page", intArg0);
-        ifSetOnOpt(hook(cs2_2640, "", []), Component.interface_860.component_860_20);
+        ifSetOnOp(hook(cs2_2640, "", []), Component.interface_860.component_860_20);
     }
 }

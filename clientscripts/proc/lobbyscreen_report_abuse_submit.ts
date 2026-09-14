@@ -9,7 +9,7 @@ function proc_lobbyscreen_report_abuse_submit(intArg0: number): void {
     }
     proc_lobbyscreen_report_abuse_stage2_close();
 
-    if (stringLength(varcstr_lobbyscreen_report_abuse_name) > 0 && ignoreTest(varcstr_lobbyscreen_report_abuse_name) == 0 && compare(varcstr_lobbyscreen_report_abuse_name, chatPlayerName()) != 0) {
+    if (stringLength(varcstr_lobbyscreen_report_abuse_name) > 0 && ignoreTest(varcstr_lobbyscreen_report_abuse_name) == 0 && compare(varcstr_lobbyscreen_report_abuse_name, chatPlayerNameUnfiltered()) != 0) {
         if (intArg0 == 5) {
             varc_lobbyscreen_report_abuse_bug = 1;
         }

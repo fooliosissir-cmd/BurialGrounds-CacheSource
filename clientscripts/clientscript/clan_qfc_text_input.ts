@@ -16,7 +16,7 @@ function clan_qfc_text_input(intArg0: component, intArg1: number, intArg2: numbe
         case 99:
         case 102:
         case 103:
-            if (keyheldAlt() == 0) {
+            if (keyheldShift() == 0) {
                 return;
             }
             cs2_1553(intArg2, varc_qfc_input_caret_varc, varcstr_qfc_input_varc);
@@ -27,7 +27,7 @@ function clan_qfc_text_input(intArg0: component, intArg1: number, intArg2: numbe
             }
             break;
         default:
-            if (intArg2 == 67 && keyheldShift() == 1) {
+            if (intArg2 == 67 && keyheldCtrl() == 1) {
                 cs2_4367();
                 return;
             }

@@ -27,8 +27,8 @@ function cs2_2020(intArg0: number, strArg0: string, intArg1: number, intArg2: co
     ccSetText(strArg0);
     ifSetSize(intArg1, 26, 0, 0, intArg2);
     ifSetHide(false, intArg2);
-    hookMouseEnter(hook(cs2_2021, "I1", [event_com, true]), intArg2);
-    hookMouseExit(hook(cs2_2021, "I1", [event_com, false]), intArg2);
+    ifSetOnMouseOver(hook(cs2_2021, "I1", [event_com, true]), intArg2);
+    ifSetOnMouseLeave(hook(cs2_2021, "I1", [event_com, false]), intArg2);
 
     if (intArg0 == -1) {
         ifClearops(intArg2);
@@ -37,6 +37,6 @@ function cs2_2020(intArg0: number, strArg0: string, intArg1: number, intArg2: co
     } else {
         ifSetOp(1, strArg0, intArg2);
         ifSetPauseText("", intArg2);
-        ifSetOnOpt(hook(cs2_2022, "ii", [event_opindex, intArg0]), intArg2);
+        ifSetOnOp(hook(cs2_2022, "ii", [event_opindex, intArg0]), intArg2);
     }
 }

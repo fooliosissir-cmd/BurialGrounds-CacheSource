@@ -34,9 +34,9 @@ function cs2_4722(intArg0: number, intArg1: number): [number, string] {
     let int28: struct = -1;
 
     if (clanProfileFind() == 1) {
-        int2 = loadClanVarbit<2580>();
-        int3 = loadClanVarbit<2581>();
-        int4 = loadClanVarbit<2582>();
+        int2 = pushVarClanBit<2580>();
+        int3 = pushVarClanBit<2581>();
+        int4 = pushVarClanBit<2582>();
         int22 = 4;
         while (int22 <= 15) {
             int24 = cs2_4949(int22);

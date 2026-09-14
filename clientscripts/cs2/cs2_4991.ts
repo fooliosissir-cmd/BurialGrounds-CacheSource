@@ -10,7 +10,7 @@ function cs2_4991(): void {
     let int1: number = 0;
 
     if (clanProfileFind() == 1) {
-        int0 = loadClanVarbit<2580>();
+        int0 = pushVarClanBit<2580>();
         ifSetHide(false, Component.interface_1261.component_1261_36);
         ifSetHide(false, Component.interface_1261.component_1261_37);
         ifSetHide(false, Component.interface_1261.component_1261_38);

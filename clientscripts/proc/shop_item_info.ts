@@ -91,8 +91,8 @@ function proc_shop_item_info(intArg0: inv, intArg1: number): void {
             int6 = Component.interface_1265.component_1265_21;
         }
         if (ccFind(int6, varc_1880) == 1) {
-            ccHookMouseEnter(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 1, event_com, event_comsubid]));
-            ccHookMouseExit(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 0, event_com, event_comsubid]));
+            ccSetOnMouseOver(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 1, event_com, event_comsubid]));
+            ccSetOnMouseLeave(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 0, event_com, event_comsubid]));
             if (varbit_shop_verbose_mode == 0) {
                 ccSetGraphic(Graphic.graphic_10448);
             } else {
@@ -112,8 +112,8 @@ function proc_shop_item_info(intArg0: inv, intArg1: number): void {
             ifSetHide(false, Component.shop_side.select_reticule);
         }
         if (ccFind(int6, intArg1) == 1 && (intArg0 != Inv.inv || varp_shop_filter == 1)) {
-            ccHookMouseEnter(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 1, 1, event_com, event_comsubid]));
-            ccHookMouseExit(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 1, 0, event_com, event_comsubid]));
+            ccSetOnMouseOver(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 1, 1, event_com, event_comsubid]));
+            ccSetOnMouseLeave(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 1, 0, event_com, event_comsubid]));
             if (varbit_shop_verbose_mode == 0) {
                 ccSetGraphic(Graphic.graphic_10451);
             } else {
@@ -125,8 +125,8 @@ function proc_shop_item_info(intArg0: inv, intArg1: number): void {
     }
     let str0: string = obj_warning_arg(int2);
     deltooltip_action(Component.interface_1265.component_1265_89);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1265.component_1265_89]), Component.interface_1265.component_1265_42);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1265.component_1265_89]), Component.interface_1265.component_1265_41);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1265.component_1265_89]), Component.interface_1265.component_1265_42);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1265.component_1265_89]), Component.interface_1265.component_1265_41);
 
     if (compare(str0, "") != 0) {
         if (compare(varcstr_26, "") != 0) {
@@ -136,13 +136,13 @@ function proc_shop_item_info(intArg0: inv, intArg1: number): void {
             str0 = append(str0, "<br>" + varcstr_34);
         }
         ifSetGraphic(Graphic.km_shopitems_0, Component.interface_1265.component_1265_42);
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1265.component_1265_89, event_com, -1, str0, 160, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1265.component_1265_42);
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1265.component_1265_89, event_com, -1, str0, 160, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1265.component_1265_41);
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1265.component_1265_89, event_com, -1, str0, 160, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1265.component_1265_39);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1265.component_1265_89, event_com, -1, str0, 160, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1265.component_1265_42);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1265.component_1265_89, event_com, -1, str0, 160, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1265.component_1265_41);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1265.component_1265_89, event_com, -1, str0, 160, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1265.component_1265_39);
     } else {
         ifSetGraphic(-1, Component.interface_1265.component_1265_42);
-        ifSetOnMouseOver(noHook(""), Component.interface_1265.component_1265_42);
-        ifSetOnMouseOver(noHook(""), Component.interface_1265.component_1265_41);
-        ifSetOnMouseOver(noHook(""), Component.interface_1265.component_1265_39);
+        ifSetOnMouseRepeat(noHook(""), Component.interface_1265.component_1265_42);
+        ifSetOnMouseRepeat(noHook(""), Component.interface_1265.component_1265_41);
+        ifSetOnMouseRepeat(noHook(""), Component.interface_1265.component_1265_39);
     }
 }

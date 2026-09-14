@@ -15,8 +15,8 @@ function cs2_6094(): void {
     while (int2 < 40) {
         if (ccFind(int0, int2) == 1) {
             ccSetGraphic(int1);
-            ccHookMouseEnter(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 1, event_com, event_comsubid]));
-            ccHookMouseExit(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 0, event_com, event_comsubid]));
+            ccSetOnMouseOver(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 1, event_com, event_comsubid]));
+            ccSetOnMouseLeave(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 0, event_com, event_comsubid]));
         }
         int2 = int2 + 1;
     }
@@ -26,8 +26,8 @@ function cs2_6094(): void {
     while (int2 < 40) {
         if (ccFind(int0, int2) == 1) {
             ccSetGraphic(int1);
-            ccHookMouseEnter(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 1, event_com, event_comsubid]));
-            ccHookMouseExit(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 0, event_com, event_comsubid]));
+            ccSetOnMouseOver(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 1, event_com, event_comsubid]));
+            ccSetOnMouseLeave(hook(clientscript_shop_item_hover, "iiiIi", [varbit_shop_verbose_mode, 0, 0, event_com, event_comsubid]));
         }
         int2 = int2 + 1;
     }

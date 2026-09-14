@@ -27,8 +27,8 @@ function cs2_5227(): void {
         int1 = 0;
     }
     let str0: string = "Teleport to the keep.";
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, Component.interface_1259.component_1259_174, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int1, event_mousex, event_mousey]), Component.interface_1259.component_1259_174);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), Component.interface_1259.component_1259_174);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, Component.interface_1259.component_1259_174, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int1, event_mousex, event_mousey]), Component.interface_1259.component_1259_174);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), Component.interface_1259.component_1259_174);
     ifSetOp(1, "Teleport to keep", Component.interface_1259.component_1259_174);
     int1 = 2;
 
@@ -36,8 +36,8 @@ function cs2_5227(): void {
         int1 = 0;
     }
     str0 = "Teleport to the town square.";
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, Component.interface_1259.component_1259_177, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int1, event_mousex, event_mousey]), Component.interface_1259.component_1259_177);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), Component.interface_1259.component_1259_177);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, Component.interface_1259.component_1259_177, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int1, event_mousex, event_mousey]), Component.interface_1259.component_1259_177);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), Component.interface_1259.component_1259_177);
     ifSetOp(1, "Teleport to town square", Component.interface_1259.component_1259_177);
     int1 = 2;
 
@@ -45,8 +45,8 @@ function cs2_5227(): void {
         int1 = 0;
     }
     str0 = "Teleport to the portal.";
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, Component.interface_1259.component_1259_175, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int1, event_mousex, event_mousey]), Component.interface_1259.component_1259_175);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), Component.interface_1259.component_1259_175);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, Component.interface_1259.component_1259_175, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int1, event_mousex, event_mousey]), Component.interface_1259.component_1259_175);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), Component.interface_1259.component_1259_175);
     ifSetOp(1, "Teleport to portal", Component.interface_1259.component_1259_175);
     int1 = 2;
 
@@ -54,8 +54,8 @@ function cs2_5227(): void {
         int1 = 0;
     }
     str0 = "Teleport to the welcome area.";
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, Component.interface_1259.component_1259_176, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int1, event_mousex, event_mousey]), Component.interface_1259.component_1259_176);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), Component.interface_1259.component_1259_176);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, Component.interface_1259.component_1259_176, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int1, event_mousex, event_mousey]), Component.interface_1259.component_1259_176);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), Component.interface_1259.component_1259_176);
     ifSetOp(1, "Teleport to welcome area", Component.interface_1259.component_1259_176);
     int1 = 2;
 
@@ -63,7 +63,7 @@ function cs2_5227(): void {
         int1 = 0;
     }
     str0 = "Teleport to the battlefield.";
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, Component.interface_1259.component_1259_178, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int1, event_mousex, event_mousey]), Component.interface_1259.component_1259_178);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), Component.interface_1259.component_1259_178);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, Component.interface_1259.component_1259_178, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int1, event_mousex, event_mousey]), Component.interface_1259.component_1259_178);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), Component.interface_1259.component_1259_178);
     ifSetOp(1, "Teleport to welcome area", Component.interface_1259.component_1259_176);
 }

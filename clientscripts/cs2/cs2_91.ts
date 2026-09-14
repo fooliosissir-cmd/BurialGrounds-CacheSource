@@ -4,7 +4,7 @@
 // cs2_91
 
 function cs2_91(intArg0: number): number {
-    switch (chatGettypebyline(intArg0)) {
+    switch (chatGethistorytype(intArg0)) {
         case 7:
             return 1;
         case 3:
@@ -12,7 +12,7 @@ function cs2_91(intArg0: number): number {
             if (chatGetFilterPrivate() == 0) {
                 return 1;
             }
-            if (chatGetFilterPrivate() == 1 && friendTest(chatLineGetName(intArg0)) == 1) {
+            if (chatGetFilterPrivate() == 1 && friendTest(unknownCommand5019(intArg0)) == 1) {
                 return 1;
             }
             return 0;

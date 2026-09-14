@@ -8,7 +8,7 @@ function quickchat_open(intArg0: number, strArg0: string): void {
         return;
     }
 
-    if (intArg0 == 2 && compare("", fcGetChatDisplayName()) == 0) {
+    if (intArg0 == 2 && compare("", clanGetChatDisplayName()) == 0) {
         mes("You need to be in a Friends Chat channel to use Friends Channel Quick Chat.");
         return;
     }

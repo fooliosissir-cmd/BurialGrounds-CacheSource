@@ -23,38 +23,38 @@ function cs2_5279(intArg0: component): void {
 
     if (int1 == true) {
         ifSetText("Theatre Options", intArg0);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 1, false]), Component.interface_388.component_388_99);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 2, false]), Component.interface_388.component_388_112);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 3, false]), Component.interface_388.component_388_126);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 4, false]), Component.interface_388.component_388_140);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 5, false]), Component.interface_388.component_388_154);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 6, false]), Component.interface_388.component_388_168);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 7, false]), Component.interface_388.component_388_182);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 8, false]), Component.interface_388.component_388_196);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 1, true]), Component.interface_388.component_388_14);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 2, true]), Component.interface_388.component_388_27);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 3, true]), Component.interface_388.component_388_40);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 4, true]), Component.interface_388.component_388_53);
-        ifSetOnOpt(hook(cs2_5293, "ii1", [event_opindex, 5, true]), Component.interface_388.component_388_66);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 1, false]), Component.interface_388.component_388_99);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 2, false]), Component.interface_388.component_388_112);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 3, false]), Component.interface_388.component_388_126);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 4, false]), Component.interface_388.component_388_140);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 5, false]), Component.interface_388.component_388_154);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 6, false]), Component.interface_388.component_388_168);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 7, false]), Component.interface_388.component_388_182);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 8, false]), Component.interface_388.component_388_196);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 1, true]), Component.interface_388.component_388_14);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 2, true]), Component.interface_388.component_388_27);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 3, true]), Component.interface_388.component_388_40);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 4, true]), Component.interface_388.component_388_53);
+        ifSetOnOp(hook(cs2_5293, "ii1", [event_opindex, 5, true]), Component.interface_388.component_388_66);
     } else {
         if (varbit_clan_keep_theatre_backdrop_varp == 0 || varbit_clan_keep_theatre_map_col_varp == 0) {
             ifSetText("Waiting on technician to select options...", intArg0);
         } else {
             ifSetText("Waiting on technician to unlock theatre...", intArg0);
         }
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_99);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_112);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_126);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_140);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_154);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_168);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_182);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_196);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_14);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_27);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_40);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_53);
-        ifSetOnOpt(noHook(""), Component.interface_388.component_388_66);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_99);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_112);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_126);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_140);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_154);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_168);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_182);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_196);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_14);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_27);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_40);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_53);
+        ifSetOnOp(noHook(""), Component.interface_388.component_388_66);
     }
     cs2_4532(intArg0);
 }

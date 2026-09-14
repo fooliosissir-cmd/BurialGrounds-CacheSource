@@ -35,9 +35,9 @@ function cs2_1674(intArg0: number): [number, number] {
 
     if (intArg0 != 0) {
         ccSetOp(1, str0);
-        ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
-        ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
-        ccSetOnOpt(hook(champions_onop, "iii", [event_opindex, 0, intArg0]));
+        ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
+        ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
+        ccSetOnOp(hook(champions_onop, "iii", [event_opindex, 0, intArg0]));
     }
     int3 = int3 + ccGetHeight();
     let int5: number = 1;
@@ -68,9 +68,9 @@ function cs2_1674(intArg0: number): [number, number] {
             ccSetfill(true);
             if (int2 != intArg0) {
                 ccSetOp(1, str0);
-                ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
-                ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
-                ccSetOnOpt(hook(champions_onop, "iii", [event_opindex, int2, intArg0]));
+                ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
+                ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
+                ccSetOnOp(hook(champions_onop, "iii", [event_opindex, int2, intArg0]));
             }
             int3 = int3 + ccGetHeight();
             int5 = int5 + 1;

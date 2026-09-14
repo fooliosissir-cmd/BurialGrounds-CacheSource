@@ -4,7 +4,7 @@
 // [clientscript,friends_chat_onclantransmit]
 
 function friends_chat_onclantransmit(intArg0: component): void {
-    if (ifGetTop(72679429, -1) == 1) {
+    if (minimenuopen(72679429, -1) == 1) {
         ifSetOnTimer(hook(friends_chat_minimenu_timer, "", []), Component.interface_1109.component_1109_5);
         return;
     }

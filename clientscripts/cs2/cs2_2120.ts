@@ -31,9 +31,9 @@ function cs2_2120(intArg0: number, intArg1: component, intArg2: number, intArg3:
             ccSetPosition(0, 0, 0, 0);
             ccSetGraphic(int6);
             ccSetHide(false);
-            ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int6]));
+            ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int6]));
             int6 = Graphic.graphic_834;
-            ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int6]));
+            ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int6]));
             ccSetOp(1, "Confirm");
             return;
         } else {

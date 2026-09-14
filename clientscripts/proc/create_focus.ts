@@ -4,11 +4,11 @@
 // [proc,create_focus]
 
 function proc_create_focus(intArg0: number, intArg1: number): void {
-    if (createReply() == -3) {
+    if (createConnectReply() == -3) {
         return;
     }
 
-    if (createGetEmail() == -3) {
+    if (createReply() == -3) {
         return;
     }
 

@@ -4,8 +4,8 @@
 // cs2_4155
 
 function cs2_4155(intArg0: component, intArg1: graphic, intArg2: graphic, intArg3: graphic, intArg4: graphic, intArg5: graphic, intArg6: graphic): void {
-    hookMouseEnter(hook(cs2_4159, "Iii", [event_com, 0, 0]), intArg0);
-    hookMouseExit(hook(cs2_4159, "Iii", [event_com, 255, 0]), intArg0);
+    ifSetOnMouseOver(hook(cs2_4159, "Iii", [event_com, 0, 0]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_4159, "Iii", [event_com, 255, 0]), intArg0);
     ccDeleteAll(intArg0);
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
     ccSetPosition(0, 0, 1, 1);

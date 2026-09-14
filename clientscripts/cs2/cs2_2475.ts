@@ -26,7 +26,7 @@ function cs2_2475(intArg0: component, intArg1: component, intArg2: number, intAr
             ccSetTextFont(Graphic.p12_full);
             ccSetTextAlign(0, 1, 0);
             ccSetOp(1, "Select");
-            ccSetOnOpt(hook(cs2_2143, "Ii", [event_com, event_comsubid]));
+            ccSetOnOp(hook(cs2_2143, "Ii", [event_com, event_comsubid]));
             if (player_prefix_check(int5) == 1) {
                 ccSetColour(colour(0x11FF00));
             } else {

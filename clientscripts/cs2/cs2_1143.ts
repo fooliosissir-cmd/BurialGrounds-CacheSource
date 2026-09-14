@@ -11,8 +11,8 @@ function cs2_1143(strArg0: string, intArg0: graphic, strArg1: string, strArg2: s
         ifSetText(strArg0, Component.interface_884.component_884_26);
         ifSetHide(false, Component.interface_884.component_884_7);
         ifSetOp(1, strArg0, Component.interface_884.component_884_7);
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [Component.interface_884.component_884_7, Component.interface_884.component_884_14, strArg1, 25, 190]), Component.interface_884.component_884_7);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_7);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [Component.interface_884.component_884_7, Component.interface_884.component_884_14, strArg1, 25, 190]), Component.interface_884.component_884_7);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_7);
         int4 = int4 + 1;
         ifSetPosition(...cs2_6031(int4), 0, 0, Component.interface_884.component_884_7);
     } else {
@@ -25,8 +25,8 @@ function cs2_1143(strArg0: string, intArg0: graphic, strArg1: string, strArg2: s
         ifSetText(strArg2, Component.interface_884.component_884_22);
         ifSetHide(false, Component.interface_884.component_884_8);
         ifSetOp(1, strArg2, Component.interface_884.component_884_8);
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [Component.interface_884.component_884_8, Component.interface_884.component_884_14, strArg3, 25, 190]), Component.interface_884.component_884_8);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_8);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [Component.interface_884.component_884_8, Component.interface_884.component_884_14, strArg3, 25, 190]), Component.interface_884.component_884_8);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_8);
         int4 = int4 + 1;
         ifSetPosition(...cs2_6031(int4), 0, 0, Component.interface_884.component_884_8);
     } else {
@@ -39,8 +39,8 @@ function cs2_1143(strArg0: string, intArg0: graphic, strArg1: string, strArg2: s
         ifSetText(strArg4, Component.interface_884.component_884_20);
         ifSetHide(false, Component.interface_884.component_884_9);
         ifSetOp(1, strArg4, Component.interface_884.component_884_9);
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [Component.interface_884.component_884_9, Component.interface_884.component_884_14, strArg5, 25, 190]), Component.interface_884.component_884_9);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_9);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [Component.interface_884.component_884_9, Component.interface_884.component_884_14, strArg5, 25, 190]), Component.interface_884.component_884_9);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_9);
         int4 = int4 + 1;
         ifSetPosition(...cs2_6031(int4), 0, 0, Component.interface_884.component_884_9);
     } else {
@@ -53,8 +53,8 @@ function cs2_1143(strArg0: string, intArg0: graphic, strArg1: string, strArg2: s
         ifSetText(strArg6, Component.interface_884.component_884_17);
         ifSetHide(false, Component.interface_884.component_884_10);
         ifSetOp(1, strArg6, Component.interface_884.component_884_10);
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [Component.interface_884.component_884_10, Component.interface_884.component_884_14, strArg7, 25, 190]), Component.interface_884.component_884_10);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_10);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [Component.interface_884.component_884_10, Component.interface_884.component_884_14, strArg7, 25, 190]), Component.interface_884.component_884_10);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_10);
         int4 = int4 + 1;
         ifSetPosition(...cs2_6031(int4), 0, 0, Component.interface_884.component_884_10);
     } else {
@@ -62,7 +62,7 @@ function cs2_1143(strArg0: string, intArg0: graphic, strArg1: string, strArg2: s
         ifSetHide(true, Component.interface_884.component_884_10);
     }
     let str8: string = "When active, you will automatically fight back if attacked.";
-    ifSetOnMouseOver(hook(cs2_38, "IIsii", [Component.interface_884.component_884_11, Component.interface_884.component_884_14, str8, 25, 190]), Component.interface_884.component_884_11);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_11);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_4);
+    ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [Component.interface_884.component_884_11, Component.interface_884.component_884_14, str8, 25, 190]), Component.interface_884.component_884_11);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_11);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_884.component_884_14]), Component.interface_884.component_884_4);
 }

@@ -8,66 +8,66 @@ function proc_love_puzzle_update(): void {
 
     if (int0 > 0) {
         ifSetObjectAlwaysNum(enumOp(type_int, type_obj, Enum.love_puzzle_pieces_1, 1), int0, Component.interface_991.component_991_7);
-        ifSetOnOpt(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_7);
+        ifSetOnOp(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_7);
         ifSetOp(1, "Select", Component.interface_991.component_991_7);
     } else {
         ifSetObjectNonum(-1, 0, Component.interface_991.component_991_7);
-        ifSetOnOpt(noHook(""), Component.interface_991.component_991_7);
+        ifSetOnOp(noHook(""), Component.interface_991.component_991_7);
         ifClearops(Component.interface_991.component_991_7);
     }
     int0 = 2 - love_puzzle_used_1(2);
 
     if (int0 > 0) {
         ifSetObjectAlwaysNum(enumOp(type_int, type_obj, Enum.love_puzzle_pieces_1, 2), int0, Component.interface_991.component_991_8);
-        ifSetOnOpt(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_8);
+        ifSetOnOp(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_8);
         ifSetOp(1, "Select", Component.interface_991.component_991_8);
     } else {
         ifSetObjectNonum(-1, 0, Component.interface_991.component_991_8);
-        ifSetOnOpt(noHook(""), Component.interface_991.component_991_8);
+        ifSetOnOp(noHook(""), Component.interface_991.component_991_8);
         ifClearops(Component.interface_991.component_991_8);
     }
     int0 = 2 - love_puzzle_used_1(3);
 
     if (int0 > 0) {
         ifSetObjectAlwaysNum(enumOp(type_int, type_obj, Enum.love_puzzle_pieces_1, 3), int0, Component.interface_991.component_991_9);
-        ifSetOnOpt(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_9);
+        ifSetOnOp(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_9);
         ifSetOp(1, "Select", Component.interface_991.component_991_9);
     } else {
         ifSetObjectNonum(-1, 0, Component.interface_991.component_991_9);
-        ifSetOnOpt(noHook(""), Component.interface_991.component_991_9);
+        ifSetOnOp(noHook(""), Component.interface_991.component_991_9);
         ifClearops(Component.interface_991.component_991_9);
     }
     int0 = 2 - love_puzzle_used_2(1);
 
     if (int0 > 0) {
         ifSetObjectAlwaysNum(enumOp(type_int, type_obj, Enum.love_puzzle_pieces_2, 1), int0, Component.interface_991.component_991_17);
-        ifSetOnOpt(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_17);
+        ifSetOnOp(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_17);
         ifSetOp(1, "Select", Component.interface_991.component_991_17);
     } else {
         ifSetObjectNonum(-1, 0, Component.interface_991.component_991_17);
-        ifSetOnOpt(noHook(""), Component.interface_991.component_991_17);
+        ifSetOnOp(noHook(""), Component.interface_991.component_991_17);
         ifClearops(Component.interface_991.component_991_17);
     }
     int0 = 4 - love_puzzle_used_2(2);
 
     if (int0 > 0) {
         ifSetObjectAlwaysNum(enumOp(type_int, type_obj, Enum.love_puzzle_pieces_2, 2), int0, Component.interface_991.component_991_18);
-        ifSetOnOpt(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_18);
+        ifSetOnOp(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_18);
         ifSetOp(1, "Select", Component.interface_991.component_991_18);
     } else {
         ifSetObjectNonum(-1, 0, Component.interface_991.component_991_18);
-        ifSetOnOpt(noHook(""), Component.interface_991.component_991_18);
+        ifSetOnOp(noHook(""), Component.interface_991.component_991_18);
         ifClearops(Component.interface_991.component_991_18);
     }
     int0 = 2 - love_puzzle_used_2(3);
 
     if (int0 > 0) {
         ifSetObjectAlwaysNum(enumOp(type_int, type_obj, Enum.love_puzzle_pieces_2, 3), int0, Component.interface_991.component_991_19);
-        ifSetOnOpt(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_19);
+        ifSetOnOp(hook(love_puzzle_sourceclick, "i", [event_opindex]), Component.interface_991.component_991_19);
         ifSetOp(1, "Select", Component.interface_991.component_991_19);
     } else {
         ifSetObjectNonum(-1, 0, Component.interface_991.component_991_19);
-        ifSetOnOpt(noHook(""), Component.interface_991.component_991_19);
+        ifSetOnOp(noHook(""), Component.interface_991.component_991_19);
         ifClearops(Component.interface_991.component_991_19);
     }
     ccDeleteAll(Component.interface_991.component_991_13);
@@ -83,7 +83,7 @@ function proc_love_puzzle_update(): void {
         ccSetObjectNonum(enumOp(type_int, type_obj, Enum.love_puzzle_pieces_1, int0), 1);
         if (int0 > 0) {
             ccSetOp(1, "Remove tile");
-            ccSetOnOpt(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 150, 0, 10]));
+            ccSetOnOp(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 150, 0, 10]));
             ccSetdragdeadzone(5);
             ccSetdragdeadtime(5);
             ccSetdragrenderbehaviour(2);
@@ -109,7 +109,7 @@ function proc_love_puzzle_update(): void {
         ccSetObjectNonum(enumOp(type_int, type_obj, Enum.love_puzzle_pieces_2, int0), 1);
         if (int0 > 0) {
             ccSetOp(1, "Remove tile");
-            ccSetOnOpt(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 125, 0, 8]));
+            ccSetOnOp(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 125, 0, 8]));
             ccSetdragdeadzone(5);
             ccSetdragdeadtime(5);
             ccSetdragrenderbehaviour(2);

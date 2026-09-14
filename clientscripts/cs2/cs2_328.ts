@@ -36,7 +36,7 @@ function cs2_328(intArg0: component): void {
         ccSetPosition(int1, int2, 0, 0);
         ccSetGraphic(gameframe_skin_graphic(Graphic.miscgraphics_10));
         ccSetOp(1, "Select" + "<col=ff9040>");
-        ccSetOnOpt(hook(cs2_331, "Ii", [event_com, event_comsubid]));
+        ccSetOnOp(hook(cs2_331, "Ii", [event_com, event_comsubid]));
         int3 = int3 + 1;
         int2 = 28 + int2;
     }
@@ -53,7 +53,7 @@ function cs2_328(intArg0: component): void {
         ccSetTextShadow(false);
         ccSetTextAlign(0, 1, 0);
         ccSetOp(1, "Select" + "<col=ff9040>");
-        ccSetOnOpt(hook(cs2_331, "Ii", [event_com, int3 - int4]));
+        ccSetOnOp(hook(cs2_331, "Ii", [event_com, int3 - int4]));
         int3 = int3 + 1;
         int5 = int5 + 1;
         int2 = 28 + int2;

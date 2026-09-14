@@ -4,7 +4,7 @@
 // [proc,partnercheck]
 
 function partnercheck(intArg0: number): number {
-    let int1: number = chatGettypebyline(intArg0);
+    let int1: number = chatGethistorytype(intArg0);
 
     if (varc_chat_view == 5 && stringLength(varcstr_partnername) > 0) {
         switch (int1) {
@@ -17,11 +17,11 @@ function partnercheck(intArg0: number): number {
             case 18:
             case 19:
             case 42:
-                if (compare(removetags(chatLineGetName(intArg0)), removetags(varcstr_partnername)) == 0 || compare(removetags(chatLineGetName(intArg0)), removetags(chatPlayerNameUnfiltered())) == 0) {
+                if (compare(removetags(unknownCommand5019(intArg0)), removetags(varcstr_partnername)) == 0 || compare(removetags(unknownCommand5019(intArg0)), removetags(chatPlayerName())) == 0) {
                     if (chatGetFilterTrade() == 0) {
                         return 1;
                     }
-                    if (chatGetFilterTrade() == 1 && friendTest(chatLineGetName(intArg0)) == 1) {
+                    if (chatGetFilterTrade() == 1 && friendTest(unknownCommand5019(intArg0)) == 1) {
                         return 1;
                     }
                     if (int1 == 1 || int1 == 7) {

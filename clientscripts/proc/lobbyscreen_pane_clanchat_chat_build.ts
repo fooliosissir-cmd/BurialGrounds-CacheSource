@@ -6,7 +6,7 @@
 function proc_lobbyscreen_pane_clanchat_chat_build(intArg0: component): void {
     cs2_4548();
 
-    if (ifGetTop(59768852, -1) == 1) {
+    if (minimenuopen(59768852, -1) == 1) {
         ifSetOnTimer(hook(clientscript_lobbyscreen_pane_clanchat_chat_build, "I", [intArg0]), intArg0);
         return;
     }
@@ -20,23 +20,23 @@ function proc_lobbyscreen_pane_clanchat_chat_build(intArg0: component): void {
     let str3: string = "";
 
     while (int1 < 100) {
-        int3 = chatGettypebyline(int1);
-        str2 = chatLineGetcrownedname(int1);
-        str3 = chatLineGetName(int1);
+        int3 = chatGethistorytype(int1);
+        str2 = chatGethistoryname(int1);
+        str3 = unknownCommand5019(int1);
         switch (int3) {
             case 43:
             case 26:
-                int2 = lobbyscreen_pane_clanchat_chat_line(int2, chatGetbyline(int1), 0, "", "", int3);
+                int2 = lobbyscreen_pane_clanchat_chat_line(int2, chatGethistorymessage(int1), 0, "", "", int3);
                 break;
             case 41:
             case 44:
-                int2 = lobbyscreen_pane_clanchat_chat_line(int2, "[" + str0 + chatGetClan(int1) + "</col>" + "] " + str2 + ": " + str1 + chatGetbyline(int1), 1, str2, str3, int3);
+                int2 = lobbyscreen_pane_clanchat_chat_line(int2, "[" + str0 + chatGethistoryclan(int1) + "</col>" + "] " + str2 + ": " + str1 + chatGethistorymessage(int1), 1, str2, str3, int3);
                 break;
             case 42:
-                int2 = lobbyscreen_pane_clanchat_chat_line(int2, "[" + str0 + chatGetClan(int1) + "</col>" + "] " + str2 + ": " + str1 + chatGetbyline(int1), 1, str2, str3, int3);
+                int2 = lobbyscreen_pane_clanchat_chat_line(int2, "[" + str0 + chatGethistoryclan(int1) + "</col>" + "] " + str2 + ": " + str1 + chatGethistorymessage(int1), 1, str2, str3, int3);
                 break;
             case 115:
-                int2 = lobbyscreen_pane_clanchat_chat_line(int2, "<col=ff0000>" + chatGetbyline(int1) + "</col>", 0, "", "", int3);
+                int2 = lobbyscreen_pane_clanchat_chat_line(int2, "<col=ff0000>" + chatGethistorymessage(int1) + "</col>", 0, "", "", int3);
                 break;
         }
         int1 = int1 + 1;

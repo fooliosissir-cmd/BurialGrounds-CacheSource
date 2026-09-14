@@ -70,14 +70,14 @@ function cs2_297(intArg0: coord, intArg1: coord, intArg2: boolean, intArg3: colo
         ccSetColour<1>(int27);
         ccSetfill(true);
         ccSetfill<1>(true);
-        ccHookMouseEnter(hook(cs2_301, "1Iiiii", [true, intArg5, int12, int13, int14, intArg3]));
-        ccHookMouseEnter<1>(hook(cs2_301, "1Iiiii", [true, intArg5, int12, int13, int14, intArg3]));
-        ccHookMouseExit(hook(cs2_301, "1Iiiii", [false, intArg5, int12, int13, int14, int27]));
-        ccHookMouseExit<1>(hook(cs2_301, "1Iiiii", [false, intArg5, int12, int13, int14, int27]));
+        ccSetOnMouseOver(hook(cs2_301, "1Iiiii", [true, intArg5, int12, int13, int14, intArg3]));
+        ccSetOnMouseOver<1>(hook(cs2_301, "1Iiiii", [true, intArg5, int12, int13, int14, intArg3]));
+        ccSetOnMouseLeave(hook(cs2_301, "1Iiiii", [false, intArg5, int12, int13, int14, int27]));
+        ccSetOnMouseLeave<1>(hook(cs2_301, "1Iiiii", [false, intArg5, int12, int13, int14, int27]));
         ccSetOp(1, "Scroll map");
         ccSetOp<1>(1, "Scroll map");
-        ccSetOnOpt(hook(cs2_302, "ic1", [event_opindex, intArg1, intArg2]));
-        ccSetOnOpt<1>(hook(cs2_302, "ic1", [event_opindex, intArg0, intArg2]));
+        ccSetOnOp(hook(cs2_302, "ic1", [event_opindex, intArg1, intArg2]));
+        ccSetOnOp<1>(hook(cs2_302, "ic1", [event_opindex, intArg0, intArg2]));
     }
 
     if (ccFind(intArg5, int14) == 1) {

@@ -14,7 +14,7 @@ function clan_chat_kick(strArg0: string): void {
             return;
         }
         int0 = activeClanChannelGetUserRank(int3);
-        int1 = activeClanChannelGetUserSlot(removetags(chatPlayerNameUnfiltered()));
+        int1 = activeClanChannelGetUserSlot(removetags(chatPlayerName()));
         if (int1 >= 0) {
             if (int1 == int3) {
                 mesTyped(43, 0, "You cannot temporarily ban yourself.");

@@ -5,8 +5,8 @@
 
 function cs2_5740(intArg0: component): void {
     ifSetText("", intArg0);
-    ifSetOnMouseOver(noHook(""), intArg0);
-    hookMouseExit(noHook(""), intArg0);
+    ifSetOnMouseRepeat(noHook(""), intArg0);
+    ifSetOnMouseLeave(noHook(""), intArg0);
     ifClearops(intArg0);
     ifSetHide(true, intArg0);
 }

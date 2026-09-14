@@ -17,29 +17,29 @@ function cs2_4973(intArg0: number): graphic {
             case 3:
                 return Graphic.aif_clan_building_icons_3;
             case 4:
-                return cs2_4974(loadClanVarbit<2553>());
+                return cs2_4974(pushVarClanBit<2553>());
             case 5:
-                return cs2_4974(loadClanVarbit<2554>());
+                return cs2_4974(pushVarClanBit<2554>());
             case 6:
-                return cs2_4974(loadClanVarbit<2555>());
+                return cs2_4974(pushVarClanBit<2555>());
             case 7:
-                return cs2_4974(loadClanVarbit<2556>());
+                return cs2_4974(pushVarClanBit<2556>());
             case 8:
-                return cs2_4974(loadClanVarbit<2557>());
+                return cs2_4974(pushVarClanBit<2557>());
             case 9:
-                return cs2_4974(loadClanVarbit<2558>());
+                return cs2_4974(pushVarClanBit<2558>());
             case 10:
-                return cs2_4974(loadClanVarbit<2560>());
+                return cs2_4974(pushVarClanBit<2560>());
             case 11:
-                return cs2_4974(loadClanVarbit<2561>());
+                return cs2_4974(pushVarClanBit<2561>());
             case 12:
-                return cs2_4974(loadClanVarbit<2562>());
+                return cs2_4974(pushVarClanBit<2562>());
             case 13:
-                return cs2_4974(loadClanVarbit<2563>());
+                return cs2_4974(pushVarClanBit<2563>());
             case 14:
-                return cs2_4974(loadClanVarbit<2564>());
+                return cs2_4974(pushVarClanBit<2564>());
             case 15:
-                return cs2_4974(loadClanVarbit<2565>());
+                return cs2_4974(pushVarClanBit<2565>());
             case 16:
             case 17:
             case 18:

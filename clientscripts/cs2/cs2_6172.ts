@@ -19,14 +19,14 @@ function cs2_6172(intArg0: number, intArg1: number): number {
         ccSetSize(84, 78, 0, 0);
         ccSetPosition(int3, int4, 0, 0);
         ccSetnoclickthrough(true);
-        ccHookMouseEnter(hook(graphic_swapper_child, "Iid", [event_com, event_comsubid, int5]));
-        ccHookMouseExit(hook(rcsiphonxp_item_mouseleave, "Ii", [event_com, event_comsubid]));
-        ccSetOnMouseOver(hook(cs2_568, "IiIsii", [Component.interface_1273.component_1273_14, intArg0, Component.interface_1273.component_1273_18, str0, 5, 300]));
+        ccSetOnMouseOver(hook(graphic_swapper_child, "Iid", [event_com, event_comsubid, int5]));
+        ccSetOnMouseLeave(hook(rcsiphonxp_item_mouseleave, "Ii", [event_com, event_comsubid]));
+        ccSetOnMouseRepeat(hook(cs2_568, "IiIsii", [Component.interface_1273.component_1273_14, intArg0, Component.interface_1273.component_1273_18, str0, 5, 300]));
         ccSetOp(1, "Buy 1");
         ccSetOp(2, "Buy 2");
         ccSetOp(3, "Buy 5");
         ccSetOp(4, "Buy 10");
-        ccSetOnOpt(hook(rcsiphonxp_select_item, "iI", [intArg0, event_com]));
+        ccSetOnOp(hook(rcsiphonxp_select_item, "iI", [intArg0, event_com]));
         if (structParam(int2, Param.rcsiphonxp_has_name2) == 0) {
             ccSetOpBase(structParam(int2, Param.rcsiphonxp_name));
             ccCreate(Component.interface_1273.component_1273_14, 4, intArg1);

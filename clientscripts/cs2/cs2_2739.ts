@@ -30,11 +30,11 @@ function cs2_2739(intArg0: component, intArg1: number): void {
             } else {
                 ccSetOutline(1);
             }
-            ccSetOnOpt(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
+            ccSetOnOp(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
             ccSetOnTargetEnter(hook(cs2_2738, "Ii", [intArg0, int7]));
-            ccSetOnOp(hook(cs2_2738, "Ii", [intArg0, -1]));
-            ccSetOnMouseOver(hook(cs2_5495, "o", [int3]));
-            ccHookMouseExit(hook(cs2_5495, "o", [-1]));
+            ccSetOnTargetLeave(hook(cs2_2738, "Ii", [intArg0, -1]));
+            ccSetOnMouseRepeat(hook(cs2_5495, "o", [int3]));
+            ccSetOnMouseLeave(hook(cs2_5495, "o", [-1]));
         } else {
             ccSetHide(true);
         }

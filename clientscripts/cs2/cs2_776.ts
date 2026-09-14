@@ -30,7 +30,7 @@ function cs2_776(): void {
         }
         str2 = tostring(int2) + "." + tostring(int3) + "x";
         str0 = "Multiplier: " + "<col=ff0000>" + str2 + "</col>" + "<br>" + "Elapsed: " + "<col=ff0000>" + str1 + "</col>" + "<br>" + "Bonus: " + "<col=ff0000>" + tostring(varp_1878 / 10) + "xp" + "</col>";
-        ifSetOnMouseOver(hook(cs2_5647, "s", [str0]), Component.interface_1215.component_1215_1);
-        hookMouseExit(hook(cs2_5648, "", []), Component.interface_1215.component_1215_1);
+        ifSetOnMouseRepeat(hook(cs2_5647, "s", [str0]), Component.interface_1215.component_1215_1);
+        ifSetOnMouseLeave(hook(cs2_5648, "", []), Component.interface_1215.component_1215_1);
     }
 }

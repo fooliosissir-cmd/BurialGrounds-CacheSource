@@ -45,9 +45,9 @@ function cs2_24(intArg0: obj, intArg1: obj, intArg2: graphic, strArg0: string, i
             ccSetObject(intArg1, -1);
             if (varbit_skill_guide_skill_v2 == 21 && varbit_skill_guide_subsection_v2 != 10) {
                 ccSetOp(1, "Check protection price");
-                ccSetOnOpt(hook(cs2_1865, "io", [event_opindex, intArg1]));
-                ccHookMouseEnter(hook(cs2_1862, "Ii", [event_com, event_comsubid]));
-                ccHookMouseExit(hook(cs2_1863, "Ii", [event_com, event_comsubid]));
+                ccSetOnOp(hook(cs2_1865, "io", [event_opindex, intArg1]));
+                ccSetOnMouseOver(hook(cs2_1862, "Ii", [event_com, event_comsubid]));
+                ccSetOnMouseLeave(hook(cs2_1863, "Ii", [event_com, event_comsubid]));
             }
         }
     } else {

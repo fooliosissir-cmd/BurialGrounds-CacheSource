@@ -29,7 +29,7 @@ function cs2_2732(intArg0: component, intArg1: number, intArg2: number, intArg3:
         ccSetGraphic(int4);
     } else {
         ccSetGraphic(int5);
-        hookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId(), int4]), intArg0);
-        hookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId(), int5]), intArg0);
+        ifSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId(), int4]), intArg0);
+        ifSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId(), int5]), intArg0);
     }
 }

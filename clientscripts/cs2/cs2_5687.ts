@@ -29,6 +29,6 @@ function cs2_5687(intArg0: number, intArg1: number): number {
     ccSetSize(530, 100, 0, 0);
     ccSetText("New unlocks below!" + "<br>" + "Click here to return to the normal skillguide");
     ccSetOp(1, "Continue");
-    ccSetOnOpt(hook(cs2_5688, "i", [intArg1]));
+    ccSetOnOp(hook(cs2_5688, "i", [intArg1]));
     return intArg0 + 105;
 }

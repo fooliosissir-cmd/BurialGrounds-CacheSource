@@ -25,7 +25,7 @@ function cs2_2117(intArg0: number, intArg1: number, intArg2: number, intArg3: co
         ccSetOp(10, "Examine");
         ccSetOpBase("<col=ff9040>" + ocName(invGetobj(307, intArg0)) + "</col>");
     }
-    ccSetOnOpt(hook(cs2_2120, "iIiII", [event_opindex, intArg3, intArg0, intArg4, intArg5]));
+    ccSetOnOp(hook(cs2_2120, "iIiII", [event_opindex, intArg3, intArg0, intArg4, intArg5]));
     ccCreate(intArg3, 5, intArg0 * 7 + 1);
     ccSetSize(159, 32, 0, 0);
     ccSettiling(true);

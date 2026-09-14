@@ -9,14 +9,14 @@ function cs2_9(intArg0: component, intArg1: component, intArg2: component): void
         ifSetHide(false, intArg1);
         ifSetHide(false, intArg2);
         cs2_680(intArg0);
-        hookMouseEnter(hook(cs2_95, "I", [intArg0]), intArg0);
-        hookMouseExit(hook(cs2_93, "I", [intArg0]), intArg0);
+        ifSetOnMouseOver(hook(cs2_95, "I", [intArg0]), intArg0);
+        ifSetOnMouseLeave(hook(cs2_93, "I", [intArg0]), intArg0);
     } else {
         ccDeleteAll(intArg0);
         ifSetHide(true, intArg0);
         ifSetHide(true, intArg1);
         ifSetHide(true, intArg2);
-        hookMouseEnter(noHook(""), intArg0);
-        hookMouseExit(noHook(""), intArg0);
+        ifSetOnMouseOver(noHook(""), intArg0);
+        ifSetOnMouseLeave(noHook(""), intArg0);
     }
 }

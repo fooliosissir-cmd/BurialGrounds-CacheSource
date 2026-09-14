@@ -4,5 +4,5 @@
 // cs2_6342
 
 function cs2_6342(): void {
-    openurlNoLogin("www", "index.ws", 0);
+    openurl("www", "index.ws", 0);
 }

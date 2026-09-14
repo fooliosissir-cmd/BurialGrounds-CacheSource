@@ -17,8 +17,8 @@ function cs2_1450(): void {
         }
         ccSetOutline(1);
         ccSetGraphicShadow(3355443);
-        ccSetOnMouseOver(hook(cs2_1480, "Ii", [Component.interface_762.component_762_95, int0]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_762.component_762_99]));
+        ccSetOnMouseRepeat(hook(cs2_1480, "Ii", [Component.interface_762.component_762_95, int0]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_762.component_762_99]));
         int0 = int0 + 1;
     }
 }

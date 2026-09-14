@@ -27,7 +27,7 @@ function notes_build(strArg0: string, intArg0: number, intArg1: number, intArg2:
     ccSetOp(2, "Edit");
     ccSetOp(3, "Colour");
     ccSetOp(4, "Delete");
-    ccSetOnOpt(hook(clientscript_notes_click, "ii", [event_opindex, intArg1]));
+    ccSetOnOp(hook(clientscript_notes_click, "ii", [event_opindex, intArg1]));
     ccSetdragdeadzone(14);
     return intArg0 + int4;
 }

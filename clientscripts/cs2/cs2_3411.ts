@@ -7,7 +7,7 @@ function cs2_3411(): void {
     varc_1240 = 3;
     varc_1277 = 0;
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         proc_loginscreen_setactivemenu(5);
         if (varc_1273 == 1) {
             return;

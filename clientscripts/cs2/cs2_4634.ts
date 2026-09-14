@@ -4,8 +4,8 @@
 // cs2_4634
 
 function cs2_4634(intArg0: number): void {
-    if (createReply() == 2) {
-        logout();
+    if (createConnectReply() == 2) {
+        lobbyLeaveLobby();
     }
     let int1: number = -1;
     proc_loginscreen_setactivemenu(11);
@@ -25,7 +25,7 @@ function cs2_4634(intArg0: number): void {
     let int6: component = Component.interface_596.component_596_58;
     let int7: component = Component.interface_596.component_596_44;
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         int6 = Component.interface_975.component_975_49;
         int7 = Component.interface_975.component_975_44;
     }
@@ -37,7 +37,7 @@ function cs2_4634(intArg0: number): void {
     varc_login_reply_last = -3;
     lobbyEnterLobbySocialNetwork(int1);
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         ifSetOnTimer(hook(login_reply, "i", [intArg0]), Component.interface_975.component_975_26);
     } else {
         ifSetOnTimer(hook(login_reply, "i", [intArg0]), Component.interface_596.component_596_6);

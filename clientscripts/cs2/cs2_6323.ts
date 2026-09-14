@@ -13,7 +13,7 @@ function cs2_6323(): void {
         ifSetOp(1, "Remove", int0);
         ifSetOp(10, "Examine", int0);
         ifSetOpBase(cs2_4033(int1) + ocName(int1), int0);
-        ifSetOnOpt(hook(cs2_1620, "Iiiii", [int0, ccGetId(), 150, 0, 10]), int0);
+        ifSetOnOp(hook(cs2_1620, "Iiiii", [int0, ccGetId(), 150, 0, 10]), int0);
     } else {
         ccSetObjectNonum(Obj.carni_treasurechest, 1);
         ccSetTrans(100);
@@ -21,6 +21,6 @@ function cs2_6323(): void {
         ifClearops(int0);
         ifSetOp(1, "What is this?", int0);
         ifSetOpBase("", int0);
-        ifSetOnOpt(noHook(""), int0);
+        ifSetOnOp(noHook(""), int0);
     }
 }

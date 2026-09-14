@@ -8,6 +8,6 @@ function cs2_3169(intArg0: component, intArg1: number): void {
     ifSetHide(true, Component.interface_912.component_912_30);
 
     if (ccFind(intArg0, intArg1) == 1) {
-        ccSetOnMouseOver(noHook(""));
+        ccSetOnMouseRepeat(noHook(""));
     }
 }

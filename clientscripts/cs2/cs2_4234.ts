@@ -16,7 +16,7 @@ function cs2_4234(intArg0: component, intArg1: component, intArg2: component, in
     } else {
         ifSet2dangle(32768, intArg2);
         ifSet2dangle(32768, intArg1);
-        ifSetOnOpt(hook(cs2_4233, "IIIi", [intArg0, intArg1, intArg2, intArg4]), intArg0);
+        ifSetOnOp(hook(cs2_4233, "IIIi", [intArg0, intArg1, intArg2, intArg4]), intArg0);
         ifSetOnTimer(noHook(""), intArg0);
     }
 }

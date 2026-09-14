@@ -5,5 +5,5 @@
 
 function cs2_5295(intArg0: component, intArg1: component): void {
     ifSetHide(true, intArg1);
-    ifSetOnOp(noHook(""), intArg0);
+    ifSetOnTargetLeave(noHook(""), intArg0);
 }

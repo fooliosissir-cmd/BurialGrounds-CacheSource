@@ -27,8 +27,8 @@ function cs2_798(intArg0: component, intArg1: number, intArg2: number, strArg0: 
         ccSetSize(48, 52, 0, 0);
         ccSetPosition(int5, int6, 0, 0);
         ccSetGraphic(Graphic.km_shoptile_0);
-        ccHookMouseEnter(hook(cs2_6114, "Ii1", [event_com, int15, false]));
-        ccHookMouseExit(hook(cs2_6114, "Ii1", [event_com, int15, true]));
+        ccSetOnMouseOver(hook(cs2_6114, "Ii1", [event_com, int15, false]));
+        ccSetOnMouseLeave(hook(cs2_6114, "Ii1", [event_com, int15, true]));
         ccCreate(intArg0, 5, int15);
         int15 = int15 + 1;
         ccSetSize(48, 52, 0, 0);
@@ -54,12 +54,12 @@ function cs2_798(intArg0: component, intArg1: number, intArg2: number, strArg0: 
         str5 = enumOp(type_obj, type_string, Enum.enum_1187, int13);
         int14 = enumOp(type_obj, type_int, Enum.lore_levels_enum, int12);
         if (int8 == 1) {
-            ccSetOnMouseOver(hook(cs2_770, "iIIisoioioioioioioioioioi", [event_comsubid, Component.interface_666.component_666_23, Component.interface_666.component_666_16, int14, str5, Obj.obj_12526, 1, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_666.component_666_23]));
+            ccSetOnMouseRepeat(hook(cs2_770, "iIIisoioioioioioioioioioi", [event_comsubid, Component.interface_666.component_666_23, Component.interface_666.component_666_16, int14, str5, Obj.obj_12526, 1, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0, -1, 0]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_666.component_666_23]));
         } else {
             str5 = "You do not have access to this type of scroll.";
-            ccSetOnMouseOver(hook(cs2_800, "iIIis", [event_comsubid, Component.interface_666.component_666_23, Component.interface_666.component_666_16, int14, str5]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_666.component_666_23]));
+            ccSetOnMouseRepeat(hook(cs2_800, "iIIis", [event_comsubid, Component.interface_666.component_666_23, Component.interface_666.component_666_16, int14, str5]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_666.component_666_23]));
         }
         int15 = int15 + 1;
         ccCreate(intArg0, 5, int15);

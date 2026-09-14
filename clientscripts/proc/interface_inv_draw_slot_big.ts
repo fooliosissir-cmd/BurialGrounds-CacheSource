@@ -35,8 +35,8 @@ function interface_inv_draw_slot_big(intArg0: inv, intArg1: number, intArg2: com
             }
             ccSetGraphicShadow(3153952);
             ccSetOutline(1);
-            ccSetOnMouseOver(hook(cs2_5495, "o", [invGetobj(intArg0, intArg1)]));
-            ccHookMouseExit(hook(cs2_5495, "o", [-1]));
+            ccSetOnMouseRepeat(hook(cs2_5495, "o", [invGetobj(intArg0, intArg1)]));
+            ccSetOnMouseLeave(hook(cs2_5495, "o", [-1]));
         } else {
             ccSetObjectNonum(-1, 0);
             ccClearops();

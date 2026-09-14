@@ -23,13 +23,13 @@ function cs2_652(intArg0: number, intArg1: number, intArg2: number, intArg3: num
         }
         if (intArg7 != -1) {
             if (intArg8 == 1) {
-                ccSetOnMouseOver(hook(cs2_648, "IiIsii", [intArg5, intArg6, intArg7, str0, 25, 106]));
+                ccSetOnMouseRepeat(hook(cs2_648, "IiIsii", [intArg5, intArg6, intArg7, str0, 25, 106]));
             } else if (intArg8 == 2) {
-                ccSetOnMouseOver(hook(cs2_649, "IIsii", [intArg5, intArg7, str0, 25, 106]));
+                ccSetOnMouseRepeat(hook(cs2_649, "IIsii", [intArg5, intArg7, str0, 25, 106]));
             } else {
-                ccSetOnMouseOver(hook(cs2_568, "IiIsii", [intArg5, intArg6, intArg7, str0, 25, 106]));
+                ccSetOnMouseRepeat(hook(cs2_568, "IiIsii", [intArg5, intArg6, intArg7, str0, 25, 106]));
             }
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [intArg7]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [intArg7]));
         }
     }
     let int9: number = intArg0 + 1;

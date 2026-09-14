@@ -30,7 +30,7 @@ function cs2_661(intArg0: component, intArg1: component, intArg2: graphic, intAr
         }
         strArg0 = append(strArg0, " (" + tostring(varbit_4288) + " Special Move points)");
         lore_updateicon_v2(Component.interface_662.component_662_74, intArg2, intArg3, intArg4, intArg5, intArg6, intArg7, intArg8, intArg9, intArg10, intArg11, intArg12);
-        ccSetOnMouseOver(hook(cs2_10, "IIissoioioioi", [event_com, Component.interface_662.component_662_73, intArg4, strArg0, strArg1, intArg5, intArg6, intArg7, intArg8, intArg9, intArg10, intArg11, intArg12]));
-        ccHookMouseExit(hook(lore_deltooltip, "I", [Component.interface_662.component_662_73]));
+        ccSetOnMouseRepeat(hook(cs2_10, "IIissoioioioi", [event_com, Component.interface_662.component_662_73, intArg4, strArg0, strArg1, intArg5, intArg6, intArg7, intArg8, intArg9, intArg10, intArg11, intArg12]));
+        ccSetOnMouseLeave(hook(lore_deltooltip, "I", [Component.interface_662.component_662_73]));
     }
 }

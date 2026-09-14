@@ -9,8 +9,8 @@ function cs2_2962(intArg0: component, intArg1: component, intArg2: component, in
         ifSetOnTimer(hook(cs2_1249, "III", [intArg0, intArg2, intArg1]), intArg0);
         varc_177 = 0;
         ifSetOnClick(hook(cs2_2713, "IIIIII", [intArg0, intArg1, intArg2, intArg3, intArg4, intArg5]), intArg3);
-        ifSetOnMouseOver(hook(cs2_2961, "II1", [intArg4, intArg5, true]), intArg3);
-        hookMouseExit(hook(cs2_2961, "II1", [intArg4, intArg5, false]), intArg3);
+        ifSetOnMouseRepeat(hook(cs2_2961, "II1", [intArg4, intArg5, true]), intArg3);
+        ifSetOnMouseLeave(hook(cs2_2961, "II1", [intArg4, intArg5, false]), intArg3);
         ifSetGraphic(Graphic.graphic_2703, intArg4);
         varc_986 = 0;
     }

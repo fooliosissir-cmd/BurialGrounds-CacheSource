@@ -18,18 +18,18 @@ function cs2_1447(intArg0: number): void {
     }
 
     if (intArg0 > 0) {
-        ifSetOnOpt(hook(cs2_1446, "i", [intArg0 - 1]), Component.interface_767.component_767_64);
+        ifSetOnOp(hook(cs2_1446, "i", [intArg0 - 1]), Component.interface_767.component_767_64);
         ifSetTrans(0, Component.interface_767.component_767_64);
     } else {
-        ifSetOnOpt(noHook(""), Component.interface_767.component_767_64);
+        ifSetOnOp(noHook(""), Component.interface_767.component_767_64);
         ifSetTrans(200, Component.interface_767.component_767_64);
     }
 
     if (intArg0 < int1 - 1) {
-        ifSetOnOpt(hook(cs2_1446, "i", [intArg0 + 1]), Component.interface_767.component_767_63);
+        ifSetOnOp(hook(cs2_1446, "i", [intArg0 + 1]), Component.interface_767.component_767_63);
         ifSetTrans(0, Component.interface_767.component_767_63);
     } else {
-        ifSetOnOpt(noHook(""), Component.interface_767.component_767_63);
+        ifSetOnOp(noHook(""), Component.interface_767.component_767_63);
         ifSetTrans(200, Component.interface_767.component_767_63);
     }
     ifSetText("Page " + tostring(intArg0 + 1) + " of " + tostring(int1), Component.interface_767.component_767_62);

@@ -35,8 +35,8 @@ function cs2_1417(intArg0: component): void {
     }
 
     if (int2 != -1) {
-        ifSetText(npcParam(int2, Param.conq_unit_name), Component.interface_1017.component_1017_241);
-        ifSetSize(stringWidth(npcParam(int2, Param.conq_unit_name), Graphic.welcome_font_tiny) + 10, ifGetHeight(Component.interface_1017.component_1017_226), 0, 0, Component.interface_1017.component_1017_226);
+        ifSetText(ncParam(int2, Param.conq_unit_name), Component.interface_1017.component_1017_241);
+        ifSetSize(stringWidth(ncParam(int2, Param.conq_unit_name), Graphic.welcome_font_tiny) + 10, ifGetHeight(Component.interface_1017.component_1017_226), 0, 0, Component.interface_1017.component_1017_226);
         int3 = int3 + ifGetWidth(intArg0) - 3;
         int4 = int4 - ifGetHeight(intArg0);
         if (int3 + ifGetWidth(Component.interface_1017.component_1017_226) >= ifGetX(Component.interface_1017.component_1017_31) + ifGetWidth(Component.interface_1017.component_1017_31)) {

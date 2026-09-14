@@ -6,16 +6,16 @@
 function cs2_6344(): void {
     switch (mapLang()) {
         case 0:
-            openurlNoLogin("rswiki", "en/Customer_Support", 0);
+            openurl("rswiki", "en/Customer_Support", 0);
             break;
         case 2:
-            openurlNoLogin("rswiki", "fr/Service_client\xe8le", 0);
+            openurl("rswiki", "fr/Service_client\xe8le", 0);
             break;
         case 1:
-            openurlNoLogin("rswiki", "de/Kundenbetreuung", 0);
+            openurl("rswiki", "de/Kundenbetreuung", 0);
             break;
         case 3:
-            openurlNoLogin("rswiki", "pt/Suporte_ao_Cliente", 0);
+            openurl("rswiki", "pt/Suporte_ao_Cliente", 0);
             break;
     }
 }

@@ -47,8 +47,8 @@ function cs2_3989(intArg0: number, intArg1: number, intArg2: number): number {
                     int13 = gameframe_skin_graphic(Graphic.graphic_4042);
                 }
                 ccSetGraphic(int14);
-                ccHookMouseEnter(hook(cs2_4013, "id", [event_comsubid, int13]));
-                ccHookMouseExit(hook(cs2_4013, "id", [event_comsubid, int14]));
+                ccSetOnMouseOver(hook(cs2_4013, "id", [event_comsubid, int13]));
+                ccSetOnMouseLeave(hook(cs2_4013, "id", [event_comsubid, int14]));
                 ccSetSize(70 + 2, 56 + 1, 0, 0);
                 ccSetPosition(int16 - 1, int18 - 1, 0, 0);
                 ccSetOp(1, "Summary for");
@@ -60,12 +60,12 @@ function cs2_3989(intArg0: number, intArg1: number, intArg2: number): number {
                     }
                 }
                 ccSetOpBase(str0);
-                ccSetOnOpt(hook(cs2_3990, "iii", [intArg0, event_comsubid, event_opindex]));
+                ccSetOnOp(hook(cs2_3990, "iii", [intArg0, event_comsubid, event_opindex]));
                 if (cs2_3999(intArg0) == 0) {
                     str1 = " -" + "<br>";
                     str1 = append(structParam(int3, Param.task_name), str1);
                     str1 = append(str1, structParam(int3, Param.task_details));
-                    ccSetOnMouseOver(hook(cs2_3998, "iiisIi", [ccGetY(), event_mousex, event_mousey, str1, event_com, event_comsubid]));
+                    ccSetOnMouseRepeat(hook(cs2_3998, "iiisIi", [ccGetY(), event_mousex, event_mousey, str1, event_com, event_comsubid]));
                 }
                 if (cs2_3994(intArg0) == 1 && intArg0 != 4094) {
                     varc_1422 = int11;

@@ -76,9 +76,9 @@ function cs2_4028(intArg0: component): number {
     let int2: graphic = Graphic.aif_close_1_1;
     ccSetGraphic(int1);
     ccSetTrans(125);
-    ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int2]));
-    ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int1]));
+    ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int2]));
+    ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int1]));
     ccSetOp(1, "Close");
-    ccSetOnOpt(hook(closebutton_click, "", []));
+    ccSetOnOp(hook(closebutton_click, "", []));
     return ccGetId();
 }

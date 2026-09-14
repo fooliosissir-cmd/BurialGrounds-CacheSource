@@ -4,7 +4,7 @@
 // [clientscript,meslayer_mode15]
 
 function meslayer_mode15(): void {
-    if (fcGetChatCount() > 0 && fcGetChatRank() >= fcGetChatMinKick()) {
+    if (clanGetChatCount() > 0 && clanGetChatRank() >= clanGetChatMinKick()) {
         if (varc_has_displayname_client == 0) {
             return;
         }

@@ -5,7 +5,7 @@
 
 function cs2_48(): void {
     if (varc_last_clanchannelowner_attempttorejoin == 1 && varc_last_clanchannelowner_init == 1 && stringLength(varcstr_last_clanchannelowner) > 0) {
-        fcJoinChat(varcstr_last_clanchannelowner);
+        clanJoinChat(varcstr_last_clanchannelowner);
         varc_last_clanchannelowner_attempttorejoin = 2;
     }
 }

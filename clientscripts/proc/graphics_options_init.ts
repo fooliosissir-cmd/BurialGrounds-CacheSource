@@ -4,7 +4,7 @@
 // [proc,graphics_options_init]
 
 function proc_graphics_options_init(intArg0: number): void {
-    let int1: number = detailGetActiveToolkit();
+    let int1: number = detailGetToolkit();
 
     proc_graphics_options_rebuild(int1, getWindowMode(), ...graphics_options_reviewoptions(int1), intArg0);
 }

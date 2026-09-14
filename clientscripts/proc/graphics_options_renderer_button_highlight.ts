@@ -14,7 +14,7 @@ function proc_graphics_options_renderer_button_highlight(intArg0: component, int
         if (ccFind(intArg0, 2) == 1) {
             ccSetGraphic(Graphic.set_but_end_2_4);
         }
-    } else if (detailGetActiveToolkit() == intArg1) {
+    } else if (detailGetToolkit() == intArg1) {
         if (ccFind(intArg0, 0) == 1) {
             ccSetGraphic(Graphic.set_but_fill_2_2);
         }

@@ -7,12 +7,12 @@ function cs2_6(intArg0: component, intArg1: component, intArg2: graphic, intArg3
     ifSetOpBase("<col=00ff00>" + strArg0, intArg0);
     cs2_21(intArg0, intArg2, intArg3, intArg4, intArg5, intArg6, intArg7, intArg8, intArg9, intArg10, intArg11, intArg12, intArg13);
     ifSetClickMask(false, intArg0);
-    ifSetOnMouseOver(hook(cs2_10, "IIissoioioioi", [intArg0, intArg1, intArg4, strArg0, strArg1, intArg6, intArg7, intArg8, intArg9, intArg10, intArg11, intArg12, intArg13]), intArg0);
-    hookMouseExit(hook(magic_deltooltip, "I", [intArg1]), intArg0);
+    ifSetOnMouseRepeat(hook(cs2_10, "IIissoioioioi", [intArg0, intArg1, intArg4, strArg0, strArg1, intArg6, intArg7, intArg8, intArg9, intArg10, intArg11, intArg12, intArg13]), intArg0);
+    ifSetOnMouseLeave(hook(magic_deltooltip, "I", [intArg1]), intArg0);
 
     if (ifGetTargetMask(intArg0) != 0) {
         ifSetOnTargetEnter(hook(magic_entertargetmode, "I", [intArg0]), intArg0);
-        ifSetOnOp(hook(magic_leavetargetmode, "I", [intArg0]), intArg0);
+        ifSetOnTargetLeave(hook(magic_leavetargetmode, "I", [intArg0]), intArg0);
     }
     ifSetOnInvTransmit(hook(cs2_16, "Iddi1oioioioiY", [intArg0, intArg2, intArg3, intArg4, intArg5, intArg6, intArg7, intArg8, intArg9, intArg10, intArg11, intArg12, intArg13], [93]), intArg0);
     ifSetOnStatTransmit(hook(cs2_16, "Iddi1oioioioiY", [intArg0, intArg2, intArg3, intArg4, intArg5, intArg6, intArg7, intArg8, intArg9, intArg10, intArg11, intArg12, intArg13], [6]), intArg0);

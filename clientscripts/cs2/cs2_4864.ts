@@ -90,70 +90,70 @@ function cs2_4864(): void {
         int23 = int23 - int31;
         int22 = int22 - int30;
         int21 = int21 - int29;
-        int39 = loadClanVar<2744>();
+        int39 = pushVarClan<2744>();
         if (int39 > 0) {
-            switch (loadClanVar<2744>()) {
+            switch (pushVarClan<2744>()) {
                 case 1:
-                    int24 = loadClanVar<2734>();
+                    int24 = pushVarClan<2734>();
                     break;
                 case 2:
-                    int24 = loadClanVar<2735>();
+                    int24 = pushVarClan<2735>();
                     break;
                 case 3:
-                    int24 = loadClanVar<2736>();
+                    int24 = pushVarClan<2736>();
                     break;
                 case 4:
-                    int24 = loadClanVar<2737>();
+                    int24 = pushVarClan<2737>();
                     break;
                 case 5:
-                    int24 = loadClanVar<2738>();
+                    int24 = pushVarClan<2738>();
                     break;
                 case 6:
-                    int24 = loadClanVar<2739>();
+                    int24 = pushVarClan<2739>();
                     break;
                 case 7:
-                    int24 = loadClanVar<2740>();
+                    int24 = pushVarClan<2740>();
                     break;
                 case 9:
-                    int24 = loadClanVar<2742>();
+                    int24 = pushVarClan<2742>();
                     break;
                 case 8:
-                    int24 = loadClanVar<2741>();
+                    int24 = pushVarClan<2741>();
                     break;
                 case 10:
-                    int24 = loadClanVar<2743>();
+                    int24 = pushVarClan<2743>();
                     break;
             }
             str1 = tostring(int24) + " " + enumOp(type_int, type_string, Enum.clan_resources_int2string, int39);
         } else {
             str1 = "No target set";
         }
-        array0[0] = max(loadClanVar<2724>() / 100, int12 + int18);
-        array0[1] = max(loadClanVar<2725>() / 100, int13 + int19);
-        array0[2] = max(loadClanVar<2728>() / 100, int14 + int20);
-        array0[3] = max(loadClanVar<2730>() / 100, int15 + int21);
-        array0[4] = max(loadClanVar<2732>() / 100, int16 + int22);
-        array0[5] = max(loadClanVar<2731>() / 100, int17 + int23);
-        array0[6] = max(loadClanVar<2726>() / 100, loadClanVar<2736>());
-        array0[7] = max(loadClanVar<2727>() / 100, loadClanVar<2737>());
-        array0[8] = max(loadClanVar<2729>() / 100, loadClanVar<2739>());
-        array0[9] = max(loadClanVar<2733>() / 100, loadClanVar<2743>());
+        array0[0] = max(pushVarClan<2724>() / 100, int12 + int18);
+        array0[1] = max(pushVarClan<2725>() / 100, int13 + int19);
+        array0[2] = max(pushVarClan<2728>() / 100, int14 + int20);
+        array0[3] = max(pushVarClan<2730>() / 100, int15 + int21);
+        array0[4] = max(pushVarClan<2732>() / 100, int16 + int22);
+        array0[5] = max(pushVarClan<2731>() / 100, int17 + int23);
+        array0[6] = max(pushVarClan<2726>() / 100, pushVarClan<2736>());
+        array0[7] = max(pushVarClan<2727>() / 100, pushVarClan<2737>());
+        array0[8] = max(pushVarClan<2729>() / 100, pushVarClan<2739>());
+        array0[9] = max(pushVarClan<2733>() / 100, pushVarClan<2743>());
         while (int42 < 10) {
             if (array0[int42] > int43) {
                 int43 = array0[int42];
             }
             int42 = int42 + 1;
         }
-        cs2_4866(1, loadClanVar<2724>(), int12, int18, int26, int43);
-        cs2_4866(2, loadClanVar<2725>(), int13, int19, int27, int43);
-        cs2_4866(3, loadClanVar<2726>(), 0, 0, 0, int43);
-        cs2_4866(4, loadClanVar<2727>(), 0, 0, 0, int43);
-        cs2_4866(5, loadClanVar<2728>(), int14, int20, int28, int43);
-        cs2_4866(6, loadClanVar<2729>(), 0, 0, 0, int43);
-        cs2_4866(7, loadClanVar<2730>(), int15, int21, int29, int43);
-        cs2_4866(8, loadClanVar<2731>(), int17, int23, int31, int43);
-        cs2_4866(9, loadClanVar<2732>(), int16, int22, int30, int43);
-        cs2_4866(10, loadClanVar<2733>(), 0, 0, 0, int43);
+        cs2_4866(1, pushVarClan<2724>(), int12, int18, int26, int43);
+        cs2_4866(2, pushVarClan<2725>(), int13, int19, int27, int43);
+        cs2_4866(3, pushVarClan<2726>(), 0, 0, 0, int43);
+        cs2_4866(4, pushVarClan<2727>(), 0, 0, 0, int43);
+        cs2_4866(5, pushVarClan<2728>(), int14, int20, int28, int43);
+        cs2_4866(6, pushVarClan<2729>(), 0, 0, 0, int43);
+        cs2_4866(7, pushVarClan<2730>(), int15, int21, int29, int43);
+        cs2_4866(8, pushVarClan<2731>(), int17, int23, int31, int43);
+        cs2_4866(9, pushVarClan<2732>(), int16, int22, int30, int43);
+        cs2_4866(10, pushVarClan<2733>(), 0, 0, 0, int43);
         ifSetText(str1, Component.interface_1260.component_1260_280);
         switch (varbit_clan_stronghold_main_selected_resource) {
             case 1:
@@ -192,34 +192,34 @@ function cs2_4864(): void {
         }
         switch (varbit_clan_stronghold_main_selected_resource) {
             case 1:
-                int40 = loadClanVar<2734>();
+                int40 = pushVarClan<2734>();
                 break;
             case 2:
-                int40 = loadClanVar<2735>();
+                int40 = pushVarClan<2735>();
                 break;
             case 3:
-                int40 = loadClanVar<2736>();
+                int40 = pushVarClan<2736>();
                 break;
             case 4:
-                int40 = loadClanVar<2737>();
+                int40 = pushVarClan<2737>();
                 break;
             case 5:
-                int40 = loadClanVar<2738>();
+                int40 = pushVarClan<2738>();
                 break;
             case 6:
-                int40 = loadClanVar<2739>();
+                int40 = pushVarClan<2739>();
                 break;
             case 7:
-                int40 = loadClanVar<2740>();
+                int40 = pushVarClan<2740>();
                 break;
             case 8:
-                int40 = loadClanVar<2741>();
+                int40 = pushVarClan<2741>();
                 break;
             case 9:
-                int40 = loadClanVar<2742>();
+                int40 = pushVarClan<2742>();
                 break;
             case 10:
-                int40 = loadClanVar<2743>();
+                int40 = pushVarClan<2743>();
                 break;
         }
         if (int40 > 0) {
@@ -243,16 +243,16 @@ function cs2_4864(): void {
                 ifSetGraphic(Graphic.aif_checkbox_small_3, Component.interface_1260.component_1260_87);
             }
             str3 = "Toggle whether this skill plot will lock when the resource target is reached. It will automatically unlock once all resource targets are hit.";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str3, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]), Component.interface_1260.component_1260_87);
-            hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_87);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str3, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]), Component.interface_1260.component_1260_87);
+            ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_87);
             str3 = "Toggle whether this skill plot is locked. If this is checked, the plot will stay locked until manually unlocked.";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str3, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]), Component.interface_1260.component_1260_89);
-            hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_89);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str3, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 3, event_mousex, event_mousey]), Component.interface_1260.component_1260_89);
+            ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_89);
             ifSetHide(false, Component.interface_1260.component_1260_288);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str5, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1260.component_1260_287);
-            hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_287);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str5, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1260.component_1260_287);
+            ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_287);
             if (cs2_5224(-1) == 1) {
-                if (cs2_5214(varbit_clan_stronghold_main_selected_resource) <= loadClanVarbit<2580>()) {
+                if (cs2_5214(varbit_clan_stronghold_main_selected_resource) <= pushVarClanBit<2580>()) {
                     ifSetHide(true, Component.interface_1260.component_1260_288);
                 } else {
                     ifSetHide(false, Component.interface_1260.component_1260_288);
@@ -262,20 +262,20 @@ function cs2_4864(): void {
                 ifSetHide(false, Component.interface_1260.component_1260_288);
                 str4 = "You do not have permission from your clan to set resource targets.";
             }
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str4, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1260.component_1260_288);
-            hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_288);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str4, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1260.component_1260_288);
+            ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_288);
         } else {
             ifSetText("Select a resource for more information.", Component.interface_1260.component_1260_85);
             ifSetGraphic(Graphic.aif_checkbox_small_5, Component.interface_1260.component_1260_91);
             ifSetHide(false, Component.interface_1260.component_1260_288);
             str4 = "Please select a resource from the left to view options.";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str4, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1260.component_1260_288);
-            hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_288);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str4, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1260.component_1260_288);
+            ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_288);
             ifSetGraphic(Graphic.aif_checkbox_small_7, Component.interface_1260.component_1260_91);
             str3 = "Please select a resource from the left to view options.";
             ifSetOp(1, "", Component.interface_1260.component_1260_91);
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str3, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1260.component_1260_91);
-            hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_91);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1260.component_1260_324, event_com, -1, str3, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1260.component_1260_91);
+            ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1260.component_1260_324]), Component.interface_1260.component_1260_91);
         }
     }
 }

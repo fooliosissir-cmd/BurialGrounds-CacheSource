@@ -45,17 +45,17 @@ function cs2_1593(intArg0: number): void {
     let int22: number = 0;
     let int23: number = ifGetHeight(int8) / int17;
     let int24: number = 0;
-    let int25: number = fcGetChatCount();
+    let int25: number = clanGetChatCount();
 
     if (int25 > 0) {
         ifSetHide(true, Component.interface_1109.component_1109_15);
         while (int11 < int25) {
             int16 = int11;
             int22 = int11 * int17;
-            str1 = fcGetChatUserName(int11);
-            str2 = fcGetChatUserNameUnfiltered(int11);
-            int20 = fcGetChatUserWorld(int11);
-            int21 = fcGetChatUserRank(int11);
+            str1 = clanGetChatUserName(int11);
+            str2 = clanGetChatUserNameUnfiltered(int11);
+            int20 = clanGetChatUserWorld(int11);
+            int21 = clanGetChatUserRank(int11);
             ccCreate(int3, 4, int11);
             ccSetTextAlign(0, 1, 0);
             ccSetPosition(0, int22, 0, 0);
@@ -63,15 +63,15 @@ function cs2_1593(intArg0: number): void {
             ccSetColour(colour(0xA4997D));
             ccSetTextFont(Graphic.verdana_11pt_regular);
             ccSetTextShadow(false);
-            ccSetOnOpt(hook(friendschat_list_op, "ssii", [str1, str2, event_opindex, int11]));
+            ccSetOnOp(hook(friendschat_list_op, "ssii", [str1, str2, event_opindex, int11]));
             str0 = "\xa0\xa0" + str1;
             if (stringWidth(str0, Graphic.verdana_11pt_regular) > int13) {
                 while (stringWidth(str0 + "...", Graphic.verdana_11pt_regular) > int13 && stringLength(str0) > 0) {
                     str0 = subString(str0, 0, stringLength(str0) - 1);
                 }
                 str0 = str0 + "...";
-                ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_1109.component_1109_34, event_com, event_comsubid, str1, event_mousex, event_mousey]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1109.component_1109_34]));
+                ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_1109.component_1109_34, event_com, event_comsubid, str1, event_mousex, event_mousey]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1109.component_1109_34]));
             }
             ccSetText(str0);
             cs2_1595(int11, str1, str2);
@@ -112,15 +112,15 @@ function cs2_1593(intArg0: number): void {
                     }
                     ccSetSize(24, 12, 0, 0);
                     ccSetPosition(2, int22 + 3, 0, 0);
-                    ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_1109.component_1109_34, event_com, event_comsubid, str4, event_mousex, event_mousey]));
-                    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1109.component_1109_34]));
+                    ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_1109.component_1109_34, event_com, event_comsubid, str4, event_mousex, event_mousey]));
+                    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1109.component_1109_34]));
                 }
             } else {
                 int18 = 0;
             }
             if (int14 < int19) {
-                ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_1109.component_1109_34, event_com, event_comsubid, str4, event_mousex, event_mousey]));
-                ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1109.component_1109_34]));
+                ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_1109.component_1109_34, event_com, event_comsubid, str4, event_mousex, event_mousey]));
+                ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1109.component_1109_34]));
                 str3 = "...";
             }
             ccCreate(int5, 4, ifGetNextSubId(int5));
@@ -137,16 +137,16 @@ function cs2_1593(intArg0: number): void {
             } else {
                 ccSetColour(colour(0xFFFF64));
             }
-            ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_1109.component_1109_34, event_com, event_comsubid, str4, event_mousex, event_mousey]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1109.component_1109_34]));
+            ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_1109.component_1109_34, event_com, event_comsubid, str4, event_mousex, event_mousey]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1109.component_1109_34]));
             ccCreate(int4, 5, ifGetNextSubId(int4));
             ccSetPosition(1, int11 * int17 + 5, 0, 0);
             ccSetSize(9, 9, 0, 0);
             ccSetGraphic(cs2_1599(int21));
             int11 = int11 + 1;
         }
-        str3 = "Talking in: " + "<col=ffff64>" + fcGetChatDisplayName();
-        str1 = "Owner: " + "<col=ffff64>" + fcGetchatownername();
+        str3 = "Talking in: " + "<col=ffff64>" + clanGetChatDisplayName();
+        str1 = "Owner: " + "<col=ffff64>" + clanGetchatownername();
         int12 = ifGetWidth(Component.interface_1109.component_1109_1);
         if (stringWidth(str3, Graphic.p11_full) > int12) {
             while (stringWidth(str3 + "...", Graphic.p11_full) > int12 && stringLength(str3) > 0) {
@@ -164,12 +164,12 @@ function cs2_1593(intArg0: number): void {
         }
         ifSetText(str3 + "<br>" + str1, Component.interface_1109.component_1109_1);
         if (int24 == 1) {
-            str3 = "Talking in: " + fcGetChatDisplayName() + "<br>" + "Owner: " + fcGetchatownername();
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1109.component_1109_34, event_com, -1, str3, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1109.component_1109_1);
-            hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1109.component_1109_34]), Component.interface_1109.component_1109_1);
+            str3 = "Talking in: " + clanGetChatDisplayName() + "<br>" + "Owner: " + clanGetchatownername();
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1109.component_1109_34, event_com, -1, str3, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 2, event_mousex, event_mousey]), Component.interface_1109.component_1109_1);
+            ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1109.component_1109_34]), Component.interface_1109.component_1109_1);
         } else {
-            ifSetOnMouseOver(noHook(""), Component.interface_1109.component_1109_1);
-            hookMouseExit(noHook(""), Component.interface_1109.component_1109_1);
+            ifSetOnMouseRepeat(noHook(""), Component.interface_1109.component_1109_1);
+            ifSetOnMouseLeave(noHook(""), Component.interface_1109.component_1109_1);
         }
         ifSetOp(1, "Leave chat", Component.interface_1109.component_1109_26);
         ifSetGraphic(Graphic.aif_clanchat_icons_3, Component.interface_1109.component_1109_27);
@@ -181,8 +181,8 @@ function cs2_1593(intArg0: number): void {
         ifSetGraphic(Graphic.aif_clanchat_icons_2, Component.interface_1109.component_1109_27);
         ifSetHide(true, int1);
         ifClearops(int1);
-        ifSetOnMouseOver(noHook(""), Component.interface_1109.component_1109_1);
-        hookMouseExit(noHook(""), Component.interface_1109.component_1109_1);
+        ifSetOnMouseRepeat(noHook(""), Component.interface_1109.component_1109_1);
+        ifSetOnMouseLeave(noHook(""), Component.interface_1109.component_1109_1);
     }
     let int26: number = ifGetScrollY(int8);
     let int27: number = max(int11, int23) * int17;

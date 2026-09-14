@@ -13,7 +13,7 @@ function quickchat_phrase_objdialog(intArg0: number, intArg1: number): void {
     if (varc_126 == 1) {
         str0 = "To " + varcstr_27 + ": " + "<col=800000>" + str0;
     } else if (varc_126 == 2) {
-        str0 = "[" + "<col=0000ff>" + fcGetChatDisplayName() + "<col=000000>" + "]: " + "<col=800000>" + str0;
+        str0 = "[" + "<col=0000ff>" + clanGetChatDisplayName() + "<col=000000>" + "]: " + "<col=800000>" + str0;
     } else if (varc_126 == 8) {
         if (activeClanChannelFindAffined() == 1) {
             str0 = "[" + "<col=0000ff>" + activeClanChannelGetClanName() + "<col=000000>" + "]: " + "<col=800000>" + str0;

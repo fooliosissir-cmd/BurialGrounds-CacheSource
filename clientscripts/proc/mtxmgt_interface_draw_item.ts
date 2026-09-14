@@ -56,9 +56,9 @@ function mtxmgt_interface_draw_item(intArg0: struct, intArg1: number, intArg2: n
     } else {
         ccSetOp(2, "");
     }
-    ccSetOnOpt(hook(cs2_6480, "Ii", [event_com, event_comsubid]));
-    ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId(), int6]));
-    ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId(), int5]));
+    ccSetOnOp(hook(cs2_6480, "Ii", [event_com, event_comsubid]));
+    ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId(), int6]));
+    ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId(), int5]));
     let str0: string = structParam(intArg0, Param.param_2533);
     ccCreate(int3, 4, int4 + 1);
     ccSetText(str0);

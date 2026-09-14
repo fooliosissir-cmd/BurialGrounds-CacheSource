@@ -4,9 +4,9 @@
 // cs2_4030
 
 function cs2_4030(): void {
-    lobbyEntergame();
+    createConnectrequest();
 
-    if (stringLength(getCustomStringParam()) > 0) {
+    if (stringLength(createGetEmail()) > 0) {
         proc_create_focus(7, 1);
     } else {
         proc_create_focus(6, 1);

@@ -7,7 +7,7 @@ function cs2_1229(intArg0: number, intArg1: component, intArg2: component, intAr
     if (intArg0 != 1) {
         return;
     }
-    ifSetOnOpt(noHook(""), intArg2);
+    ifSetOnOp(noHook(""), intArg2);
     ifSetOnTimer(noHook(""), intArg1);
     ifClearops(intArg2);
     ifSetHide(true, intArg2);

@@ -16,6 +16,6 @@ function cs2_1461(intArg0: number): void {
     ifClearops(int1);
     ifSetOnClick(hook(cs2_1481, "", []), int1);
     let str0: string = "Drag an item here to create a new tab";
-    ifSetOnMouseOver(hook(cs2_38, "IIsii", [event_com, Component.interface_762.component_762_121, str0, 25, 150]), int1);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_762.component_762_121]), int1);
+    ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [event_com, Component.interface_762.component_762_121, str0, 25, 150]), int1);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_762.component_762_121]), int1);
 }

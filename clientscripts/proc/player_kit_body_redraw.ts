@@ -113,14 +113,14 @@ function player_kit_body_redraw(): void {
             int13 = int12;
         } else {
             ccSetGraphic(Graphic.options_radio_buttons_0);
-            ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
-            ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
-            ccHookMouseEnter<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
-            ccHookMouseExit<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
+            ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
+            ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
+            ccSetOnMouseOver<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
+            ccSetOnMouseLeave<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
             ccSetOp(1, str0);
             ccSetOp<1>(1, str0);
-            ccSetOnOpt(hook(cs2_1514, "iKi", [event_opindex, int11, int2]));
-            ccSetOnOpt<1>(hook(cs2_1514, "iKi", [event_opindex, int11, int2]));
+            ccSetOnOp(hook(cs2_1514, "iKi", [event_opindex, int11, int2]));
+            ccSetOnOp<1>(hook(cs2_1514, "iKi", [event_opindex, int11, int2]));
         }
         int9 = int9 + 1;
         int12 = int12 + 19;
@@ -174,8 +174,8 @@ function player_kit_body_redraw(): void {
         ccSetfill(true);
         ccSetPosition(int16 * ccGetWidth() + int15, int12, 0, 0);
         ccSetColour(enumOp(type_int, type_int, int5, int9));
-        ccSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, event_comsubid, Component.interface_729.component_729_23, str0, 0, 512]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_729.component_729_23]));
+        ccSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, event_comsubid, Component.interface_729.component_729_23, str0, 0, 512]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_729.component_729_23]));
         ccCreate<1>(Component.interface_729.component_729_17, 5, ifGetNextSubId(Component.interface_729.component_729_17));
         ccSetSize<1>(ccGetWidth(), ccGetHeight(), 0, 0);
         ccSetPosition<1>(ccGetX(), ccGetY(), 0, 0);
@@ -185,11 +185,11 @@ function player_kit_body_redraw(): void {
         } else {
             int17 = Graphic.graphic_1041;
             ccSetGraphic<1>(int17);
-            ccHookMouseExit<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int17]));
+            ccSetOnMouseLeave<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int17]));
             int17 = Graphic.graphic_1042;
-            ccHookMouseEnter<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int17]));
+            ccSetOnMouseOver<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int17]));
             ccSetOp<1>(1, str0);
-            ccSetOnOpt<1>(hook(player_kit_body_colourbutton, "iii", [event_opindex, int18, int7]));
+            ccSetOnOp<1>(hook(player_kit_body_colourbutton, "iii", [event_opindex, int18, int7]));
         }
         int9 = int9 + 1;
         if (int16 < int14 - 1) {

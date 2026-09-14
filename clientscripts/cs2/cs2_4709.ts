@@ -30,17 +30,17 @@ function cs2_4709(intArg0: Enum, intArg1: Enum, intArg2: number, intArg3: number
         ccSetTextShadow(false);
         ccSetTextFont(intArg16);
         ccSetOp(1, "Select");
-        ccSetOnOpt(hook(cs2_4713, "gi", [intArg0, event_comsubid]));
+        ccSetOnOp(hook(cs2_4713, "gi", [intArg0, event_comsubid]));
         if (int25 > intArg4) {
             ccSetColour(intArg14);
-            ccHookMouseExit(hook(cs2_1354, "Iii", [intArg7, int26, intArg14]));
+            ccSetOnMouseLeave(hook(cs2_1354, "Iii", [intArg7, int26, intArg14]));
             ccSetOnClick(hook(cs2_4715, "IIIIiisi", [intArg6, intArg7, intArg8, intArg5, int24, int23, str0, intArg14]));
         } else {
             ccSetColour(intArg13);
-            ccHookMouseExit(hook(cs2_1354, "Iii", [intArg7, int26, intArg13]));
+            ccSetOnMouseLeave(hook(cs2_1354, "Iii", [intArg7, int26, intArg13]));
             ccSetOnClick(hook(cs2_4715, "IIIIiisi", [intArg6, intArg7, intArg8, intArg5, int24, int23, str0, intArg13]));
         }
-        ccHookMouseEnter(hook(cs2_1353, "Iii", [intArg7, int26, intArg15]));
+        ccSetOnMouseOver(hook(cs2_1353, "Iii", [intArg7, int26, intArg15]));
         int25 = int25 + 1;
     }
 

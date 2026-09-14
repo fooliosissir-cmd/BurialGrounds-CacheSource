@@ -5,7 +5,7 @@
 
 function cs2_4788(): number {
     if (cs2_4785() == 1) {
-        return cs2_4786(loadClanVarbit<2580>());
+        return cs2_4786(pushVarClanBit<2580>());
     }
     return 0;
 }

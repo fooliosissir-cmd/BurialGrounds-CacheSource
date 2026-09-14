@@ -105,7 +105,7 @@ function cs2_5355(intArg0: struct, intArg1: number): void {
             ccSetSize(int8, int9, 0, 0);
             ccSetPosition(int11, 0, 0, 0);
             ccSetOp(1, "Select");
-            ccSetOnOpt(hook(cs2_5358, "iI", [int4, Component.interface_1143.component_1143_52]));
+            ccSetOnOp(hook(cs2_5358, "iI", [int4, Component.interface_1143.component_1143_52]));
             int4 = int4 + 1;
         }
         ccCreate(Component.interface_1143.component_1143_52, 5, int3);
@@ -113,8 +113,8 @@ function cs2_5355(intArg0: struct, intArg1: number): void {
         ccSetSize(int8, int9, 0, 0);
         ccSetPosition(int11, 0, 0, 0);
         if (int2 > 1) {
-            ccHookMouseEnter(hook(cs2_5356, "iIJ", [int3, Component.interface_1143.component_1143_52, int7]));
-            ccHookMouseExit(hook(cs2_5357, "iI", [int3, Component.interface_1143.component_1143_52]));
+            ccSetOnMouseOver(hook(cs2_5356, "iIJ", [int3, Component.interface_1143.component_1143_52, int7]));
+            ccSetOnMouseLeave(hook(cs2_5357, "iI", [int3, Component.interface_1143.component_1143_52]));
         }
         int3 = int3 + 1;
         ccCreate(Component.interface_1143.component_1143_52, 5, int3);

@@ -50,8 +50,8 @@ function game_settings_rebuild(): void {
         ccSetGraphic(Graphic.graphic_2554);
         int6 = ccGetId();
         if (ccFind(int0, int4) == 1) {
-            ccHookMouseEnter(hook(cs2_2691, "Ii1ii1", [event_com, int6, true, int5, colour(0x80786D), true]));
-            ccHookMouseExit(hook(cs2_2691, "Ii1ii1", [event_com, int6, false, int5, colour(0x5F5B52), true]));
+            ccSetOnMouseOver(hook(cs2_2691, "Ii1ii1", [event_com, int6, true, int5, colour(0x80786D), true]));
+            ccSetOnMouseLeave(hook(cs2_2691, "Ii1ii1", [event_com, int6, false, int5, colour(0x5F5B52), true]));
         }
         int2 = int2 + 20;
         int1 = int1 + 1;

@@ -4,5 +4,5 @@
 // cs2_6345
 
 function cs2_6345(): void {
-    openurlNoLogin("clan-hiscores", "landing.ws", 0);
+    openurl("clan-hiscores", "landing.ws", 0);
 }

@@ -13,7 +13,7 @@ function lobbyscreen_pane_clanchat_load(intArg0: number): void {
     ifSetScrollPos(0, 0, Component.interface_912.component_912_20);
     proc_scrollbar_vertical(Component.interface_912.component_912_21, Component.interface_912.component_912_20, Graphic.scrollbar_dragger_v2_3, Graphic.scrollbar_dragger_v2_0, Graphic.scrollbar_dragger_v2_1, Graphic.scrollbar_dragger_v2_2, Graphic.scrollbar_v2_0, Graphic.scrollbar_v2_1);
     ifSetOnClanSettingsTransmit(hook(clientscript_lobbyscreen_pane_clanchat_build, "IIIIII", [Component.interface_912.component_912_49, Component.interface_912.component_912_50, Component.interface_912.component_912_51, Component.interface_912.component_912_47, Component.interface_912.component_912_45, Component.interface_912.component_912_46]), Component.interface_912.component_912_45);
-    ifSetLinkActiveClanChannel(hook(clientscript_lobbyscreen_pane_clanchat_build, "IIIIII", [Component.interface_912.component_912_49, Component.interface_912.component_912_50, Component.interface_912.component_912_51, Component.interface_912.component_912_47, Component.interface_912.component_912_45, Component.interface_912.component_912_46]), Component.interface_912.component_912_45);
+    ifSetOnClanChannelTransmit(hook(clientscript_lobbyscreen_pane_clanchat_build, "IIIIII", [Component.interface_912.component_912_49, Component.interface_912.component_912_50, Component.interface_912.component_912_51, Component.interface_912.component_912_47, Component.interface_912.component_912_45, Component.interface_912.component_912_46]), Component.interface_912.component_912_45);
 
     if (activeClanChannelFindAffined() == 1) {
         ifSetHide(true, Component.interface_912.component_912_39);

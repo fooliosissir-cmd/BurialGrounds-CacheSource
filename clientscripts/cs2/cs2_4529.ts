@@ -34,8 +34,8 @@ function cs2_4529(intArg0: component, intArg1: component, intArg2: struct): void
         ccSetGraphic(int5);
         ccSetTrans(255);
         if (int3 == 2) {
-            hookMouseEnter(hook(cs2_4159, "Iii", [event_com, 0, 0]), intArg0);
-            hookMouseExit(hook(cs2_4159, "Iii", [event_com, 1, 0]), intArg0);
+            ifSetOnMouseOver(hook(cs2_4159, "Iii", [event_com, 0, 0]), intArg0);
+            ifSetOnMouseLeave(hook(cs2_4159, "Iii", [event_com, 1, 0]), intArg0);
         } else if (int3 == 3) {
             ifSetOnClick(hook(cs2_4162, "I", [event_com]), intArg0);
             ifSetOnDrag(hook(cs2_4162, "I", [event_com]), intArg0);

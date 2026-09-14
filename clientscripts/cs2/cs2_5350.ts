@@ -184,8 +184,8 @@ function cs2_5350(intArg0: number, intArg1: component): void {
             ccSetPosition(int23 - int30, int24, 2, 0);
             ccSetSize(int30 * 3, int31, 0, 0);
             ccSetOp(1, str2);
-            ccHookMouseEnter(hook(cs2_5360, "Iiii1", [int8, int21 + 1, int21, int21 - 1, true]));
-            ccHookMouseExit(hook(cs2_5360, "Iiii1", [int8, int21 + 1, int21, int21 - 1, false]));
+            ccSetOnMouseOver(hook(cs2_5360, "Iiii1", [int8, int21 + 1, int21, int21 - 1, true]));
+            ccSetOnMouseLeave(hook(cs2_5360, "Iiii1", [int8, int21 + 1, int21, int21 - 1, false]));
             ccCreate(int8, 5, int21);
             int21 = int21 + 1;
             ccSetPosition(int23, int24, 2, 0);

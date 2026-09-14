@@ -23,11 +23,11 @@ function cs2_2705(intArg0: boolean, intArg1: number, intArg2: number, intArg3: n
     let int6: number = 0;
 
     if (intArg0 == true) {
-        detailToolkit(detailGetActiveToolkit(), 1);
+        detailToolkitDefault(detailGetToolkit(), 1);
         if (getWindowMode() != 3) {
             setDefaultWindowMode(getWindowMode());
         }
-        detailAntialiasingDefault(detailGetAntialiasingPreview());
+        detailAntialiasingDefault(detailGetAntialiasing());
         if (testBit(intArg1, 1) == 1) {
             varc_994 = 2;
         }
@@ -37,18 +37,18 @@ function cs2_2705(intArg0: boolean, intArg1: number, intArg2: number, intArg3: n
         if (testBit(intArg1, 0) == 1) {
             autosetupBlackflaglast();
             if (intArg4 == false) {
-                int6 = detailGetToolkit();
-                changeRender(int6);
+                int6 = detailGetToolkitDefault();
+                detailToolkit(int6);
                 cs2_2593(int6);
             }
         } else {
-            int6 = detailGetActiveToolkit();
+            int6 = detailGetToolkit();
         }
         if (testBit(intArg1, 1) == 1 && getWindowMode() != getDefaultWindowMode()) {
             setWindowMode(getDefaultWindowMode());
         }
         if (testBit(intArg1, 2) == 1) {
-            detailAntialiasing(detailGetAntialiasing());
+            detailAntialiasing(detailGetAntialiasingDefault());
         }
         if (testBit(intArg1, 3) == 1) {
             detailBloom(0);
@@ -71,7 +71,7 @@ function cs2_2705(intArg0: boolean, intArg1: number, intArg2: number, intArg3: n
     }
 
     if (intArg2 != 1) {
-        int6 = detailGetActiveToolkit();
+        int6 = detailGetToolkit();
         if (intArg2 == 2) {
             ifSetHide(true, Component.interface_906.component_906_57);
             if (intArg5 == true) {
@@ -85,7 +85,7 @@ function cs2_2705(intArg0: boolean, intArg1: number, intArg2: number, intArg3: n
                 lobbyscreen_input_full("", "The change of detail mode has been cancelled." + "<br>" + "<br>" + "Perhaps different graphical settings would work better for you?", 0, -1, "", "", 0);
             }
         } else if (intArg2 == 3) {
-            if (hasBase64url() == 1) {
+            if (hasSignonKey() == 1) {
                 proc_loginscreen_setactivemenu(5);
                 if (varc_1273 == 1) {
                     return;

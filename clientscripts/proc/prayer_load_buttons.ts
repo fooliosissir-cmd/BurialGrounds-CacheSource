@@ -56,10 +56,10 @@ function proc_prayer_load_buttons(intArg0: component): void {
         if (varc_181 == 0) {
             ccSetOp(1, "Activate" + "<col=ff9040>");
             ccSetOnVarTransmit(hook(prayer_varupdate, "IIiY", [event_com, Component.interface_271.component_271_7, int4], [1395, 1582]));
-            ccSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, event_comsubid, Component.interface_271.component_271_49, str0, 25, 190]));
+            ccSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, event_comsubid, Component.interface_271.component_271_49, str0, 25, 190]));
         }
         ccSetOnStatTransmit(hook(prayer_statupdate, "iddIiY", [int13, int12, int11, event_com, event_comsubid], [5]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_271.component_271_49]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_271.component_271_49]));
         int4 = int4 + 1;
         if (int4 % int1 == 0) {
             int6 = int5;

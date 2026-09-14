@@ -37,7 +37,7 @@ function cs2_5791(): void {
             ifSetText(enumOp(type_int, type_string, Enum.enum_5482, int0), Component.interface_1220.component_1220_10);
             ifSetColour(colour(0xE5B051), Component.interface_1220.component_1220_10);
             str1 = tostring(int1) + " of " + tostring(int2) + " Tasks done in this stage.";
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1220.component_1220_28, event_com, -1, str1, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1220.component_1220_0);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1220.component_1220_28, event_com, -1, str1, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1220.component_1220_0);
         }
         cs2_4531(Component.interface_1220.component_1220_21);
     } else {

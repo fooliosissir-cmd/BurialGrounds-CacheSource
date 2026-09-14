@@ -31,11 +31,11 @@ function cs2_5977(): void {
             varc_clan_stronghold_main_map_next_week = 0;
         }
         if (varc_clan_stronghold_main_map_next_week == 0) {
-            int1 = loadClanVarbit<2598>();
+            int1 = pushVarClanBit<2598>();
         } else {
-            int1 = loadClanVarbit<2074>();
+            int1 = pushVarClanBit<2074>();
         }
-        int0 = loadClanVarbit<2580>();
+        int0 = pushVarClanBit<2580>();
         int2 = clan_stronghold_main_get_map_graphic(1, int1, int0);
         if (int2 == -1) {
             return;

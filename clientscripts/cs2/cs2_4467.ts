@@ -8,7 +8,7 @@ function cs2_4467(): number {
     let int1: number = -1;
 
     if (activeClanChannelFindAffined() == 1) {
-        int1 = activeClanChannelGetUserSlot(removetags(chatPlayerNameUnfiltered()));
+        int1 = activeClanChannelGetUserSlot(removetags(chatPlayerName()));
         if (int1 >= 0) {
             int0 = activeClanChannelGetUserRank(int1);
             if (int0 >= activeClanChannelGetRankKick()) {

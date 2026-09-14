@@ -196,17 +196,17 @@ function lobby_worldswitcher_timer(): void {
             }
             cc_add_text(int12, int36, ifGetWidth(int12) - 10, 20, 5, int37, str6, int21, Graphic.p11_full, 0, 1, 0, true);
             cc_add_text(int13, int36, ifGetWidth(int13), 20, 0, int37, "", colour(0x000000), Graphic.p11_full, 0, 1, 0, true);
-            ccHookMouseEnter(hook(cs2_3131, "Iii", [int13, int36, int31]));
-            ccHookMouseExit(hook(cs2_3133, "", []));
+            ccSetOnMouseOver(hook(cs2_3131, "Iii", [int13, int36, int31]));
+            ccSetOnMouseLeave(hook(cs2_3133, "", []));
             ccSetOp(1, "Select");
             ccSetOpBase("World " + tostring(int31));
-            ccSetOnOpt(hook(cs2_3129, "iiis", [event_opindex, int36, int31, str5]));
+            ccSetOnOp(hook(cs2_3129, "iiis", [event_opindex, int36, int31, str5]));
             cc_add_text(int14, int36, ifGetWidth(int14), 20, 0, int37, "", colour(0x000000), Graphic.p11_full, 0, 1, 0, true);
-            ccHookMouseEnter(hook(cs2_3130, "IIii", [int4, int14, int36, int31]));
-            ccHookMouseExit(hook(cs2_3132, "Iii", [int4, int36, int31]));
+            ccSetOnMouseOver(hook(cs2_3130, "IIii", [int4, int14, int36, int31]));
+            ccSetOnMouseLeave(hook(cs2_3132, "Iii", [int4, int36, int31]));
             ccSetOp(1, "Alter");
             ccSetOpBase("Favourite");
-            ccSetOnOpt(hook(cs2_3128, "iii", [event_opindex, int36, int31]));
+            ccSetOnOp(hook(cs2_3128, "iii", [event_opindex, int36, int31]));
             if (int31 == mapWorld()) {
                 ifSetHide(false, Component.interface_910.component_910_67);
                 ifSetPosition(0, int37, 0, 0, Component.interface_910.component_910_67);

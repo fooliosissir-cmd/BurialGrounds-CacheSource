@@ -22,12 +22,12 @@ function cs2_5228(intArg0: number): void {
             if (ifGetY(int2) > ifGetHeight(int3) / 2) {
                 int4 = 0;
             }
-            ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, int2, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int4, event_mousex, event_mousey]), int2);
-            hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), int2);
+            ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1259.component_1259_57, int2, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int4, event_mousex, event_mousey]), int2);
+            ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1259.component_1259_57]), int2);
             ifSetOp(1, "Teleport to " + enumOp(type_int, type_string, Enum.enum_4287, int1), int2);
             return;
         }
     }
-    ifSetOnMouseOver(noHook(""), int2);
-    hookMouseExit(noHook(""), int2);
+    ifSetOnMouseRepeat(noHook(""), int2);
+    ifSetOnMouseLeave(noHook(""), int2);
 }

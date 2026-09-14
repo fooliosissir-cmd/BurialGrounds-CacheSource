@@ -7,29 +7,29 @@ function cs2_4978(intArg0: number): number {
     if (clanProfileFind() == 1) {
         switch (intArg0) {
             case 4:
-                return loadClanVarbit<2076>();
+                return pushVarClanBit<2076>();
             case 5:
-                return loadClanVarbit<2077>();
+                return pushVarClanBit<2077>();
             case 6:
-                return loadClanVarbit<2078>();
+                return pushVarClanBit<2078>();
             case 7:
-                return loadClanVarbit<2079>();
+                return pushVarClanBit<2079>();
             case 8:
-                return loadClanVarbit<2080>();
+                return pushVarClanBit<2080>();
             case 9:
-                return loadClanVarbit<2081>();
+                return pushVarClanBit<2081>();
             case 10:
-                return loadClanVarbit<2082>();
+                return pushVarClanBit<2082>();
             case 11:
-                return loadClanVarbit<2083>();
+                return pushVarClanBit<2083>();
             case 12:
-                return loadClanVarbit<2084>();
+                return pushVarClanBit<2084>();
             case 13:
-                return loadClanVarbit<2085>();
+                return pushVarClanBit<2085>();
             case 14:
-                return loadClanVarbit<2086>();
+                return pushVarClanBit<2086>();
             case 15:
-                return loadClanVarbit<2087>();
+                return pushVarClanBit<2087>();
         }
     }
     return -1;

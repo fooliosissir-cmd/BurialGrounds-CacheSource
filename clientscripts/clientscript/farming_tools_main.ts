@@ -202,8 +202,8 @@ function farming_tools_main(intArg0: component, intArg1: component, intArg2: obj
     if (int5 > 0) {
         ifSetTrans(0, intArg0);
         ifSetGraphic(int6, intArg1);
-        hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int7]), intArg1);
-        hookMouseExit(hook(graphic_swapper, "Id", [event_com, int6]), intArg1);
+        ifSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int7]), intArg1);
+        ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int6]), intArg1);
     } else {
         ifSetTrans(175, intArg0);
         ifSetGraphic(Graphic.graphic_6016, intArg1);

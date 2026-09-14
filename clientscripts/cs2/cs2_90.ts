@@ -4,7 +4,7 @@
 // cs2_90
 
 function cs2_90(intArg0: number, intArg1: number): number {
-    switch (chatGettypebyline(intArg0)) {
+    switch (chatGethistorytype(intArg0)) {
         case -1:
             return 0;
         case 0:
@@ -32,7 +32,7 @@ function cs2_90(intArg0: number, intArg1: number): number {
             if (chatGetFilterPublic() == 0) {
                 return 1;
             }
-            if (chatGetFilterPublic() == 1 && friendTest(chatLineGetName(intArg0)) == 1) {
+            if (chatGetFilterPublic() == 1 && friendTest(unknownCommand5019(intArg0)) == 1) {
                 return 1;
             }
             return 0;
@@ -44,7 +44,7 @@ function cs2_90(intArg0: number, intArg1: number): number {
             if (chatGetFilterPrivate() == 0) {
                 return 1;
             }
-            if (chatGetFilterPrivate() == 1 && friendTest(chatLineGetName(intArg0)) == 1) {
+            if (chatGetFilterPrivate() == 1 && friendTest(unknownCommand5019(intArg0)) == 1) {
                 return 1;
             }
             return 0;
@@ -61,7 +61,7 @@ function cs2_90(intArg0: number, intArg1: number): number {
             if (chatGetFilterTrade() == 0) {
                 return 1;
             }
-            if (chatGetFilterTrade() == 1 && friendTest(chatLineGetName(intArg0)) == 1) {
+            if (chatGetFilterTrade() == 1 && friendTest(unknownCommand5019(intArg0)) == 1) {
                 return 1;
             }
             return 0;
@@ -88,7 +88,7 @@ function cs2_90(intArg0: number, intArg1: number): number {
             if (varp_1054 == 0) {
                 return 1;
             }
-            if (varp_1054 == 1 && friendTest(chatLineGetName(intArg0)) == 1) {
+            if (varp_1054 == 1 && friendTest(unknownCommand5019(intArg0)) == 1) {
                 return 1;
             }
             return 0;
@@ -97,7 +97,7 @@ function cs2_90(intArg0: number, intArg1: number): number {
             if (varp_2159 == 0) {
                 return 1;
             }
-            if (varp_2159 == 1 && friendTest(chatLineGetName(intArg0)) == 1) {
+            if (varp_2159 == 1 && friendTest(unknownCommand5019(intArg0)) == 1) {
                 return 1;
             }
             return 0;
@@ -105,7 +105,7 @@ function cs2_90(intArg0: number, intArg1: number): number {
             if (varp_1055 == 0) {
                 return 1;
             }
-            if (varp_1055 == 1 && friendTest(chatLineGetName(intArg0)) == 1) {
+            if (varp_1055 == 1 && friendTest(unknownCommand5019(intArg0)) == 1) {
                 return 1;
             }
             return 0;
@@ -126,7 +126,7 @@ function cs2_90(intArg0: number, intArg1: number): number {
             }
             return 0;
         case 119:
-            if (chatGetFilterTrade() >= 2 || ignoreTest(chatLineGetcrownedname(intArg0)) == 1) {
+            if (chatGetFilterTrade() >= 2 || ignoreTest(chatGethistoryname(intArg0)) == 1) {
                 return 0;
             }
             break;

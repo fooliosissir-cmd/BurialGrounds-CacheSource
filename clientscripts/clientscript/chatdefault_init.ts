@@ -8,7 +8,7 @@ function chatdefault_init(): void {
 
     ifSetOnKey(hook(chatdefault_onkey, "iz", [event_keycode, event_keychar]), Component.interface_137.component_137_55);
     ifSetOnChatTransmit(hook(clientscript_chatdefault_updatechatbox, "1", [true]), Component.interface_751.component_751_3);
-    ifSetOnClanChannelTransmit(hook(clientscript_chatdefault_updatechatbox, "1", [true]), Component.interface_751.component_751_3);
+    ifSetOnClanTransmit(hook(clientscript_chatdefault_updatechatbox, "1", [true]), Component.interface_751.component_751_3);
     ifSetOnFriendTransmit(hook(clientscript_chatdefault_updatechatbox, "1", [false]), Component.interface_751.component_751_3);
     ifSetOnMiscTransmit(hook(cs2_82, "", []), 49217539);
     ifSetOnVarcStrTransmit(hook(cs2_710, "Y", [], [0]), Component.interface_751.component_751_3);

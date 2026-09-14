@@ -18,7 +18,7 @@ function cs2_4723(intArg0: number, intArg1: number): [number, string] {
     let int13: struct = -1;
 
     if (clanProfileFind() == 1) {
-        int13 = enumOp(type_int, type_struct, Enum.clan_build_reqs_walls, loadClanVarbit<2580>());
+        int13 = enumOp(type_int, type_struct, Enum.clan_build_reqs_walls, pushVarClanBit<2580>());
         if (int13 != -1) {
             int2 = structParam(int13, Param.clan_build_req_wall_tier);
             int3 = structParam(int13, Param.clan_build_req_warehouse_tier);

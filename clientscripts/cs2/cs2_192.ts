@@ -20,7 +20,7 @@ function cs2_192(): void {
             int0 = 99;
         }
         while (int0 >= 0) {
-            int1 = chatGettypebyline(int0);
+            int1 = chatGethistorytype(int0);
             if (cs2_90(int0, 0) == 1 && partnercheck(int0) == 0) {
                 switch (int1) {
                     case 0:
@@ -85,7 +85,7 @@ function cs2_192(): void {
                         cs2_180(7);
                         break;
                     case 115:
-                        if (stringLength(chatGetbyline(int0)) > 1) {
+                        if (stringLength(chatGethistorymessage(int0)) > 1) {
                             cs2_180(1);
                         }
                         break;

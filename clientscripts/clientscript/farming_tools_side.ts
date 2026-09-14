@@ -68,8 +68,8 @@ function farming_tools_side(intArg0: component, intArg1: component, intArg2: obj
     if (int5 > 0) {
         ifSetTrans(0, intArg0);
         ifSetGraphic(int10, intArg1);
-        hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int11]), intArg1);
-        hookMouseExit(hook(graphic_swapper, "Id", [event_com, int10]), intArg1);
+        ifSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int11]), intArg1);
+        ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int10]), intArg1);
     } else {
         ifSetTrans(175, intArg0);
         ifSetGraphic(Graphic.graphic_6016, intArg1);

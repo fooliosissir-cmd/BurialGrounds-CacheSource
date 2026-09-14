@@ -5,8 +5,8 @@
 
 function cs2_4892(): void {
     if (clanProfileFind() == 1) {
-        varbit_clan_stronghold_main_selected_layout_varp = loadClanVarbit<2074>();
-        varbit_clan_stronghold_main_selected_daynight_varp = loadClanVarbit<2075>();
+        varbit_clan_stronghold_main_selected_layout_varp = pushVarClanBit<2074>();
+        varbit_clan_stronghold_main_selected_daynight_varp = pushVarClanBit<2075>();
         cs2_5974();
         cs2_5975();
     }

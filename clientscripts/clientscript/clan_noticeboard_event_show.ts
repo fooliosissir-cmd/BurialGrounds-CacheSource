@@ -8,7 +8,7 @@ function clan_noticeboard_event_show(intArg0: number, intArg1: component, intArg
     ifSetGraphic(Graphic.aif_notetabs_1, intArg1);
 
     if (longArg0 != -1n) {
-        ifSetOnOpt(hook(cs2_4330, "\xa7", [longArg0]), Component.interface_1099.component_1099_155);
+        ifSetOnOp(hook(cs2_4330, "\xa7", [longArg0]), Component.interface_1099.component_1099_155);
         ifSetHide(true, Component.interface_1099.component_1099_158);
     } else {
         ifClearops(Component.interface_1099.component_1099_155);

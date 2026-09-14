@@ -10,7 +10,7 @@ function lobbyscreen_chat_count(): [number, number, number] {
     let int3: number = 0;
 
     while (int3 < 100) {
-        switch (chatGettypebyline(int3)) {
+        switch (chatGethistorytype(int3)) {
             case 3:
             case 7:
             case 18:

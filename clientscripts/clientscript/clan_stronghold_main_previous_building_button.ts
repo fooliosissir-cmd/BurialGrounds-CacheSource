@@ -13,7 +13,7 @@ function clan_stronghold_main_previous_building_button(): void {
     let int6: number = 100;
 
     if (clanProfileFind() == 1) {
-        int3 = loadClanVarbit<2580>();
+        int3 = pushVarClanBit<2580>();
         int4 = 0;
         while (int4 == 0 && int6 > 0) {
             int6 = int6 - 1;
@@ -53,7 +53,7 @@ function clan_stronghold_main_previous_building_button(): void {
                     int1 = 5;
                     break;
             }
-            if (int4 == 0 && cs2_4979(int1) <= loadClanVarbit<2580>()) {
+            if (int4 == 0 && cs2_4979(int1) <= pushVarClanBit<2580>()) {
                 int4 = 1;
             }
             int0 = int1;

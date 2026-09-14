@@ -111,6 +111,6 @@ function cs2_5462(intArg0: number, intArg1: number): void {
         varc_dom_battle_current_z = varc_dom_battle_current_z + 24;
     }
     cs2_5464();
-    ccSetOnMouseOver(hook(cs2_568, "IiIsii", [event_com, intArg1, Component.dom_battle_overlay.tooltip, str0, 10, 100]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.dom_battle_overlay.tooltip]));
+    ccSetOnMouseRepeat(hook(cs2_568, "IiIsii", [event_com, intArg1, Component.dom_battle_overlay.tooltip, str0, 10, 100]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.dom_battle_overlay.tooltip]));
 }

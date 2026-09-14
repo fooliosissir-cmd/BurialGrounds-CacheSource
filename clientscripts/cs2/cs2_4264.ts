@@ -5,6 +5,6 @@
 
 function cs2_4264(intArg0: component): void {
     ifSetColour(colour(0xFF0000), intArg0);
-    hookMouseEnter(hook(cs2_4265, "Ii", [intArg0, colour(0xDD7F7F)]), intArg0);
-    hookMouseExit(hook(cs2_4265, "Ii", [intArg0, colour(0xFF0000)]), intArg0);
+    ifSetOnMouseOver(hook(cs2_4265, "Ii", [intArg0, colour(0xDD7F7F)]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_4265, "Ii", [intArg0, colour(0xFF0000)]), intArg0);
 }

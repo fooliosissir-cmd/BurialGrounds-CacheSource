@@ -6,8 +6,8 @@
 function cs2_2222(intArg0: number): void {
     switch (intArg0) {
         case 13:
-            logout();
-            createCreaterequest(18);
+            lobbyLeaveLobby();
+            createStepReached(18);
             proc_loginscreen_setactivemenu(11);
             break;
         case 84:

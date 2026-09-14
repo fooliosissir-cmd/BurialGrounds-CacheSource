@@ -48,12 +48,12 @@ function cs2_485(intArg0: component): void {
         ifSetHide(false, Component.interface_1015.component_1015_135);
         ifSetHide(true, Component.interface_1015.component_1015_115);
     } else {
-        ifSetGraphic(npcParam(int1, Param.conq_unit_icon), Component.interface_1015.component_1015_2);
-        ifSetText(npcParam(int1, Param.conq_unit_name), Component.interface_1015.component_1015_0);
-        ifSetText("Movement: " + tostring(npcParam(int1, Param.conq_unit_movement)), Component.interface_1015.component_1015_138);
-        ifSetText("Damage: " + tostring(npcParam(int1, Param.conq_unit_damage) * 100), Component.interface_1015.component_1015_139);
-        ifSetText("Health: " + tostring(npcParam(int1, Param.conq_unit_health) * 100), Component.interface_1015.component_1015_140);
-        ifSetText("Range: " + tostring(npcParam(int1, Param.conq_unit_range)), Component.interface_1015.component_1015_141);
-        ifSetText("Cost: " + tostring(npcParam(int1, Param.conq_unit_cost)), Component.interface_1015.component_1015_142);
+        ifSetGraphic(ncParam(int1, Param.conq_unit_icon), Component.interface_1015.component_1015_2);
+        ifSetText(ncParam(int1, Param.conq_unit_name), Component.interface_1015.component_1015_0);
+        ifSetText("Movement: " + tostring(ncParam(int1, Param.conq_unit_movement)), Component.interface_1015.component_1015_138);
+        ifSetText("Damage: " + tostring(ncParam(int1, Param.conq_unit_damage) * 100), Component.interface_1015.component_1015_139);
+        ifSetText("Health: " + tostring(ncParam(int1, Param.conq_unit_health) * 100), Component.interface_1015.component_1015_140);
+        ifSetText("Range: " + tostring(ncParam(int1, Param.conq_unit_range)), Component.interface_1015.component_1015_141);
+        ifSetText("Cost: " + tostring(ncParam(int1, Param.conq_unit_cost)), Component.interface_1015.component_1015_142);
     }
 }

@@ -8,7 +8,7 @@ function cs2_4464(): number {
 
     if (activeClanSettingsFindAffined() == 1) {
         if (activeClanChannelFindAffined() == 1) {
-            int0 = activeClanSettingsGetAffinedSlot(removetags(chatPlayerNameUnfiltered()));
+            int0 = activeClanSettingsGetAffinedSlot(removetags(chatPlayerName()));
             if (int0 != -1 && activeClanChannelGetUserRank(int0) >= activeClanSettingsGetRankKick()) {
                 return 1;
             }

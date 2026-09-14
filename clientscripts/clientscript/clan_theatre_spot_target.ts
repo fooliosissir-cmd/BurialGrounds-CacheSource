@@ -5,5 +5,5 @@
 
 function clan_theatre_spot_target(intArg0: component, intArg1: component): void {
     ifSetHide(false, intArg1);
-    ifSetOnOp(hook(cs2_5295, "II", [intArg0, intArg1]), intArg0);
+    ifSetOnTargetLeave(hook(cs2_5295, "II", [intArg0, intArg1]), intArg0);
 }

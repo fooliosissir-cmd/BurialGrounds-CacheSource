@@ -46,19 +46,19 @@ function cs2_4717(intArg0: component, intArg1: number, intArg2: component, intAr
                 str1 = "Curtsy";
                 ccSetOp(1, "Curtsy");
                 ccSetOp(2, "Bow");
-                ccSetOnMouseOver(hook(cs2_568, "IiIsii", [event_com, event_comsubid, intArg2, str1, 25, 190]));
+                ccSetOnMouseRepeat(hook(cs2_568, "IiIsii", [event_com, event_comsubid, intArg2, str1, 25, 190]));
             } else {
                 ccSetOp(1, "Bow");
                 ccSetOp(2, "Curtsy");
                 str1 = "Bow";
-                ccSetOnMouseOver(hook(cs2_568, "IiIsii", [event_com, event_comsubid, intArg2, str1, 25, 190]));
+                ccSetOnMouseRepeat(hook(cs2_568, "IiIsii", [event_com, event_comsubid, intArg2, str1, 25, 190]));
             }
         } else {
             ccSetOp(1, str0);
-            ccSetOnMouseOver(hook(cs2_568, "IiIsii", [event_com, event_comsubid, intArg2, str0, 25, 190]));
+            ccSetOnMouseRepeat(hook(cs2_568, "IiIsii", [event_com, event_comsubid, intArg2, str0, 25, 190]));
         }
         ccSetGraphic(int8);
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [intArg2]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [intArg2]));
         int6 = int6 + 1;
     }
     emotes2_sort(Component.interface_590.component_590_8, Component.interface_590.component_590_7, intArg3, -5, 10, int12);

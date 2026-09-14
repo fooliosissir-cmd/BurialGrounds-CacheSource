@@ -163,19 +163,19 @@ function proc_ql4_sort(intArg0: number, intArg1: number, intArg2: number, intArg
                             ccSetOp(2, "");
                         }
                     }
-                    ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+                    ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
                     if (array0[int10] == int26) {
                         ccSetColour(colour(0x00FFFF));
-                        ccHookMouseExit(hook(cs2_1949, "IiiI", [event_com, event_comsubid, colour(0x00FFFF), int9]));
+                        ccSetOnMouseLeave(hook(cs2_1949, "IiiI", [event_com, event_comsubid, colour(0x00FFFF), int9]));
                     } else if (array1[int10] == 0) {
                         ccSetColour(colour(0xFF0000));
-                        ccHookMouseExit(hook(cs2_1949, "IiiI", [event_com, event_comsubid, colour(0xFF0000), int9]));
+                        ccSetOnMouseLeave(hook(cs2_1949, "IiiI", [event_com, event_comsubid, colour(0xFF0000), int9]));
                     } else if (array1[int10] == 1) {
                         ccSetColour(colour(0xFFFF00));
-                        ccHookMouseExit(hook(cs2_1949, "IiiI", [event_com, event_comsubid, colour(0xFFFF00), int9]));
+                        ccSetOnMouseLeave(hook(cs2_1949, "IiiI", [event_com, event_comsubid, colour(0xFFFF00), int9]));
                     } else {
                         ccSetColour(colour(0x00FF00));
-                        ccHookMouseExit(hook(cs2_1949, "IiiI", [event_com, event_comsubid, colour(0x00FF00), int9]));
+                        ccSetOnMouseLeave(hook(cs2_1949, "IiiI", [event_com, event_comsubid, colour(0x00FF00), int9]));
                     }
                     int24 = int24 + ccGetHeight();
                     int13 = int13 + 1;

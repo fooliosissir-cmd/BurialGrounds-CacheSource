@@ -16,7 +16,7 @@ function cs2_2142(strArg0: string, intArg0: number, intArg1: number, intArg2: nu
     ccSetTextFont(Graphic.p12_full);
     ccSetTextShadow(false);
     ccSetOp(1, "Teleport");
-    ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x645028)]));
-    ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x46320A)]));
+    ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x645028)]));
+    ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x46320A)]));
     return int3 * int4 + 5;
 }

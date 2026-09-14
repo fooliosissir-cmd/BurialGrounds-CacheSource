@@ -29,9 +29,9 @@ function worldmap_setupgraphic(intArg0: graphic, intArg1: graphic, intArg2: grap
     if (intArg10 != -1) {
         ccSetOpBase("<col=ff9040>" + strArg0 + "</col>");
         ccSetOp(1, strArg1);
-        ccSetOnOpt(hook(worldmap_op, "iIc", [event_opindex, event_com, intArg10]));
+        ccSetOnOp(hook(worldmap_op, "iIc", [event_opindex, event_com, intArg10]));
     } else {
         ccSetOp(1, "");
-        ccSetOnOpt(noHook(""));
+        ccSetOnOp(noHook(""));
     }
 }

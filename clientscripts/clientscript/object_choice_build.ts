@@ -153,12 +153,12 @@ function object_choice_build(): void {
         ifSetSize(int0, 0, 0, 1, Component.interface_1179.component_1179_10);
         ifSetScrollSize(int2, 0, Component.interface_1179.component_1179_10);
         ifSetScrollPos(varc_93, 0, Component.interface_1179.component_1179_10);
-        ifSetOnMouseOver(hook(object_choice_scroller, "Idi", [event_com, int5, -4]), Component.interface_1179.component_1179_8);
-        ifSetOnMouseOver(hook(object_choice_scroller, "Idi", [event_com, int6, 4]), Component.interface_1179.component_1179_9);
+        ifSetOnMouseRepeat(hook(object_choice_scroller, "Idi", [event_com, int5, -4]), Component.interface_1179.component_1179_8);
+        ifSetOnMouseRepeat(hook(object_choice_scroller, "Idi", [event_com, int6, 4]), Component.interface_1179.component_1179_9);
         ifSetOnHold(hook(object_choice_scroller, "Idi", [event_com, int5, -6]), 77266952);
         ifSetOnHold(hook(object_choice_scroller, "Idi", [event_com, int6, 6]), 77266953);
-        hookMouseExit(hook(graphic_swapper, "Id", [event_com, int3]), Component.interface_1179.component_1179_8);
-        hookMouseExit(hook(graphic_swapper, "Id", [event_com, int4]), Component.interface_1179.component_1179_9);
+        ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int3]), Component.interface_1179.component_1179_8);
+        ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int4]), Component.interface_1179.component_1179_9);
         cs2_5533();
     } else {
         ifSetSize(int2, 0, 0, 1, Component.interface_1179.component_1179_10);

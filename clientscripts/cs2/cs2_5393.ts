@@ -8,10 +8,10 @@ function cs2_5393(): number {
     let int1: number = -1;
 
     if (activeClanChannelFindAffined() == 1) {
-        if (compare(varcstr_clan_channel_selected_name, removetags(chatPlayerNameUnfiltered())) == 0) {
+        if (compare(varcstr_clan_channel_selected_name, removetags(chatPlayerName())) == 0) {
             return 1;
         }
-        int1 = activeClanChannelGetUserSlot(removetags(chatPlayerNameUnfiltered()));
+        int1 = activeClanChannelGetUserSlot(removetags(chatPlayerName()));
         if (int1 >= 0) {
             int0 = activeClanChannelGetUserRank(int1);
             if (cs2_5963(int0) == 1) {

@@ -47,7 +47,7 @@ function objdialog_dosearch(strArg0: string): void {
         ccSetText(ocName(int4));
         ccSetTextFont(Graphic.p12_full);
         ccSetTextShadow(false);
-        ccHookMouseEnter(hook(objdialog_highlight, "io", [int3, int4]));
+        ccSetOnMouseOver(hook(objdialog_highlight, "io", [int3, int4]));
         ccSetOnClick(hook(objdialog_select, "o", [int4]));
         int4 = ocFindNext();
         int3 = int3 + 1;

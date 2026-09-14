@@ -28,11 +28,11 @@ function lobbyscreen_pane_friendschat_chat_line(intArg0: number, strArg0: string
 
     if (intArg1 == 1) {
         ccSetOpBase(removetags(strArg1));
-        ccSetOnOpt(hook(lobbyscreen_pane_friendschat_chat_op, "iss", [event_opindex, str3, strArg2]));
+        ccSetOnOp(hook(lobbyscreen_pane_friendschat_chat_op, "iss", [event_opindex, str3, strArg2]));
         switch (intArg2) {
             case 9:
             case 20:
-                if (compare(removetags(chatPlayerNameUnfiltered()), removetags(strArg2)) != 0) {
+                if (compare(removetags(chatPlayerName()), removetags(strArg2)) != 0) {
                     if (friendTest(removetags(strArg2)) == 0 && ignoreTest(removetags(strArg2)) == 0) {
                         ccSetOp(1, "Add friend");
                         ccSetOp(2, "Add ignore");

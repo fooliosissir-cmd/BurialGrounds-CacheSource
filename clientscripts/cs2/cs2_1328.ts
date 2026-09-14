@@ -28,7 +28,7 @@ function cs2_1328(intArg0: number): void {
         if (ifGetHide(Component.interface_906.component_906_213) == 0) {
             int1 = 4;
         }
-        if (keyheldAlt() == 0) {
+        if (keyheldShift() == 0) {
             switch (int1) {
                 case 0:
                     proc_lobbyscreen_tabswitch(1);

@@ -4,7 +4,7 @@
 // [clientscript,friends_chat_minimenu_timer]
 
 function friends_chat_minimenu_timer(): void {
-    if (ifGetTop(72679429, -1) == 1) {
+    if (minimenuopen(72679429, -1) == 1) {
         return;
     }
     ifSetOnTimer(noHook(""), Component.interface_1109.component_1109_5);

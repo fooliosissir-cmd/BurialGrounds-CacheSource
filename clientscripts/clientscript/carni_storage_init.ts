@@ -16,7 +16,7 @@ function carni_storage_init(intArg0: component): void {
         ccCreate(intArg0, 5, int2);
         ccSetSize(36, 32, 0, 0);
         ccSetGraphicShadow(3153952);
-        ccSetOnOpt(hook(cs2_1620, "Iiiii", [intArg0, int2, 100, 0, 8]));
+        ccSetOnOp(hook(cs2_1620, "Iiiii", [intArg0, int2, 100, 0, 8]));
         ccSetOp(1, "Take");
         ccSetOp(10, "Examine");
         int3 = enumOp(type_int, type_obj, Enum.carni_storage_item, int2);

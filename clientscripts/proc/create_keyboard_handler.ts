@@ -4,11 +4,11 @@
 // [proc,create_keyboard_handler]
 
 function create_keyboard_handler(intArg0: number, intArg1: number): void {
-    if (createReply() == -3) {
+    if (createConnectReply() == -3) {
         return;
     }
 
-    if (createGetEmail() == -3) {
+    if (createReply() == -3) {
         return;
     }
 
@@ -32,7 +32,7 @@ function create_keyboard_handler(intArg0: number, intArg1: number): void {
                     if (varc_175 >= clientClock()) {
                         return;
                     }
-                    if (intArg0 == 80 && keyheldAlt() == 1) {
+                    if (intArg0 == 80 && keyheldShift() == 1) {
                         proc_create_focus(15, 1);
                     } else {
                         proc_create_focus(14, 1);
@@ -67,7 +67,7 @@ function create_keyboard_handler(intArg0: number, intArg1: number): void {
                     if (varc_175 >= clientClock()) {
                         return;
                     }
-                    if (intArg0 == 80 && keyheldAlt() == 1) {
+                    if (intArg0 == 80 && keyheldShift() == 1) {
                         proc_create_focus(6, 1);
                     } else {
                         proc_create_focus(7, 1);
@@ -102,7 +102,7 @@ function create_keyboard_handler(intArg0: number, intArg1: number): void {
                     if (varc_175 >= clientClock()) {
                         return;
                     }
-                    if (intArg0 == 80 && keyheldAlt() == 1) {
+                    if (intArg0 == 80 && keyheldShift() == 1) {
                         proc_create_focus(14, 1);
                     } else {
                         proc_create_focus(8, 1);
@@ -135,7 +135,7 @@ function create_keyboard_handler(intArg0: number, intArg1: number): void {
                     if (varc_175 >= clientClock()) {
                         return;
                     }
-                    if (intArg0 == 80 && keyheldAlt() == 1) {
+                    if (intArg0 == 80 && keyheldShift() == 1) {
                         proc_create_focus(7, 1);
                     } else {
                         proc_create_focus(15, 1);
@@ -168,7 +168,7 @@ function create_keyboard_handler(intArg0: number, intArg1: number): void {
                     if (varc_175 >= clientClock()) {
                         return;
                     }
-                    if (intArg0 == 80 && keyheldAlt() == 1) {
+                    if (intArg0 == 80 && keyheldShift() == 1) {
                         proc_create_focus(8, 1);
                     } else if (intArg0 == 84 && stringLength(varcstr_122) > 0 && stringLength(varcstr_326) > 0 && stringLength(varcstr_124) > 0 && stringLength(varcstr_125) > 0 && varc_1407 != 0) {
                         cs2_2967(0);

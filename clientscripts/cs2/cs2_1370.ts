@@ -59,7 +59,7 @@ function cs2_1370(intArg0: component, intArg1: component, intArg2: number, intAr
                 break;
         }
         if (intArg3 == 1 && int15 < 200) {
-            [int5, int6] = worldMapGetConfigSize();
+            [int5, int6] = worldMapGetSize();
             [int9, int10] = [ifGetWidth(intArg1), ifGetHeight(intArg1)];
             if (int5 > 0 && int6 > 0) {
                 [int7, int8] = worldMapGetDisplayPosition();

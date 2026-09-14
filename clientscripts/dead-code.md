@@ -144,7 +144,7 @@ and neither is the default `return` every script ends with.
 - **dead store**
 
 ```ts
-  str1 = removetags(chatLineGetcrownedname(intArg1));
+  str1 = removetags(chatGethistoryname(intArg1));
 ```
 
 ## [clientscript,meslayer_onkey] (script 112)
@@ -1108,37 +1108,37 @@ and neither is the default `return` every script ends with.
 - **empty branch** - both arms are empty
 
 ```ts
-  browserIssupported() != 0
+  videoAdvertHasFinished() != 0
 ```
 
 - **empty branch** - both arms are empty
 
 ```ts
-  browserAgecheck(5) != 1
+  videoAdvertPlay(5) != 1
 ```
 
 - **empty branch** - both arms are empty
 
 ```ts
-  browserAgecheck(1) != 1
+  videoAdvertPlay(1) != 1
 ```
 
 - **empty branch** - both arms are empty
 
 ```ts
-  browserAgecheck(2) != 1
+  videoAdvertPlay(2) != 1
 ```
 
 - **empty branch** - both arms are empty
 
 ```ts
-  browserAgecheck(3) != 1
+  videoAdvertPlay(3) != 1
 ```
 
 - **empty branch** - both arms are empty
 
 ```ts
-  browserAgecheck(4) != 1
+  videoAdvertPlay(4) != 1
 ```
 
 ## [proc,ql4_init_general] (script 2160)
@@ -1184,7 +1184,7 @@ and neither is the default `return` every script ends with.
 - **unused result** - no result is read
 
 ```ts
-  [int3, int4] = getmachineuid();
+  [int3, int4] = userflowflagsOp();
 ```
 
 - **dead store**
@@ -2386,7 +2386,7 @@ and neither is the default `return` every script ends with.
 - **dead store**
 
 ```ts
-  int13 = loadClanVarbit<2581>();
+  int13 = pushVarClanBit<2581>();
 ```
 
 ## cs2_4880 (script 4880)
@@ -2514,7 +2514,7 @@ and neither is the default `return` every script ends with.
 - **dead store**
 
 ```ts
-  int3 = loadClanVarbit<2580>();
+  int3 = pushVarClanBit<2580>();
 ```
 
 ## [clientscript,clan_stronghold_main_previous_building_button] (script 5006)
@@ -2522,7 +2522,7 @@ and neither is the default `return` every script ends with.
 - **dead store**
 
 ```ts
-  int3 = loadClanVarbit<2580>();
+  int3 = pushVarClanBit<2580>();
 ```
 
 ## cs2_5145 (script 5145)

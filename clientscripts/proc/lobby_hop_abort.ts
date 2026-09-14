@@ -6,7 +6,7 @@
 function proc_lobby_hop_abort(): void {
     if (varc_loginscreen_hopblocked_time > 0) {
         if (varc_lobby_video_ad_started == 1) {
-            browserRefresh();
+            videoAdvertForceRemove();
             varc_lobby_video_ad_started = 0;
         }
         cs2_3064(1);

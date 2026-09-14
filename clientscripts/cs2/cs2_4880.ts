@@ -115,8 +115,8 @@ function cs2_4880(intArg0: component): void {
     if (int2 == 0) {
         ifSetHide(true, ifGetParentLayer(intArg0));
         if (int11 != -1) {
-            ifSetOnMouseOver(hook(cs2_4882, "Isi", [event_com, str0, int3]), int11);
+            ifSetOnMouseRepeat(hook(cs2_4882, "Isi", [event_com, str0, int3]), int11);
         }
     }
-    ifSetOnMouseOver(hook(cs2_4882, "Isi", [event_com, str0, int3]), intArg0);
+    ifSetOnMouseRepeat(hook(cs2_4882, "Isi", [event_com, str0, int3]), intArg0);
 }

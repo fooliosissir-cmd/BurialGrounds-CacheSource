@@ -7,7 +7,7 @@ function lobbyscreen_input_clear(): void {
     ifSetText("", Component.interface_906.component_906_164);
     ifSetText("", Component.interface_906.component_906_166);
     ifSetOnKey(noHook(""), Component.interface_906.component_906_166);
-    ifSetOnOpt(noHook(""), Component.interface_906.component_906_170);
+    ifSetOnOp(noHook(""), Component.interface_906.component_906_170);
     ifSetText("Ok", Component.interface_906.component_906_174);
     ifSetOp(1, "Ok", Component.interface_906.component_906_174);
     ifSetText("Close", Component.interface_906.component_906_176);

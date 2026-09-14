@@ -4,5 +4,5 @@
 // cs2_4683
 
 function cs2_4683(): void {
-    openurlNoLogin("rswiki", "en/Installing_Java", 0);
+    openurl("rswiki", "en/Installing_Java", 0);
 }

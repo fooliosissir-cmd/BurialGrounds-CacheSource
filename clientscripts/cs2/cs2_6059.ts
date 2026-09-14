@@ -4,7 +4,7 @@
 // cs2_6059
 
 function cs2_6059(): void {
-    if (browserIsPageOpen("1066") == 1 && browserHasPlugin("1066") == 1) {
-        browserSetPage("1066");
+    if (boostAdvertExists("1066") == 1 && boostAdvertAvailable("1066") == 1) {
+        boostAdvertLaunch("1066");
     }
 }

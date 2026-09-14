@@ -4,5 +4,5 @@
 // cs2_1867
 
 function cs2_1867(): void {
-    openurlNoLogin("services", "information_for_parents", 0);
+    openurl("services", "information_for_parents", 0);
 }

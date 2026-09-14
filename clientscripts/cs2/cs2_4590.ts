@@ -13,7 +13,7 @@ function cs2_4590(): [number, number, number, number, number, number] {
 
     if (activeClanChannelFindAffined() == 1) {
         int2 = activeClanChannelGetranktalk();
-        int0 = activeClanChannelGetUserSlot(removetags(chatPlayerNameUnfiltered()));
+        int0 = activeClanChannelGetUserSlot(removetags(chatPlayerName()));
         if (int0 >= 0) {
             int1 = activeClanChannelGetUserRank(int0);
         }
@@ -21,7 +21,7 @@ function cs2_4590(): [number, number, number, number, number, number] {
 
     if (activeClanChannelFindListened() == 1) {
         int5 = activeClanChannelGetranktalk();
-        int3 = activeClanChannelGetUserSlot(removetags(chatPlayerNameUnfiltered()));
+        int3 = activeClanChannelGetUserSlot(removetags(chatPlayerName()));
         if (int3 >= 0) {
             int4 = activeClanChannelGetUserRank(int3);
         }

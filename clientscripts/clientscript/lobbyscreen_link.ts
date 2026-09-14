@@ -9,6 +9,6 @@ function lobbyscreen_link(intArg0: boolean, strArg0: string, strArg1: string): v
         varc_lobby_lightbox_clock = clientClock();
         ifSetOnTimer(hook(cs2_6032, "", []), Component.interface_906.component_906_236);
     } else if (compare(strArg0, "") != 0 && compare(strArg1, "") != 0) {
-        openurlNoLogin(strArg0, strArg1, intArg0);
+        openurl(strArg0, strArg1, intArg0);
     }
 }

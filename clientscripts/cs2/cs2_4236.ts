@@ -5,5 +5,5 @@
 
 function cs2_4236(intArg0: component): void {
     ifSetOnTargetEnter(hook(cs2_4239, "", []), intArg0);
-    ifSetOnOp(hook(cs2_4240, "", []), intArg0);
+    ifSetOnTargetLeave(hook(cs2_4240, "", []), intArg0);
 }

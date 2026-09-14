@@ -9,5 +9,5 @@ function cs2_2650(): void {
     if (gender() == 1) {
         int0 = Enum.enum_3872;
     }
-    ifSetSize(stringWidth(enumOp(type_int, type_string, int0, varp_1442) + chatPlayerName() + "<img=3>" + ":", Graphic.p12_full), ifGetHeight(Component.interface_137.component_137_53), 0, 0, Component.interface_137.component_137_53);
+    ifSetSize(stringWidth(enumOp(type_int, type_string, int0, varp_1442) + chatPlayerNameUnfiltered() + "<img=3>" + ":", Graphic.p12_full), ifGetHeight(Component.interface_137.component_137_53), 0, 0, Component.interface_137.component_137_53);
 }

@@ -55,16 +55,16 @@ function cs2_4851(intArg0: component, intArg1: component, intArg2: component, in
             ccSetfill(true);
             if (int8 % 2 == 0) {
                 ccSetColour(colour(0x201F1A));
-                ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x201F1A)]));
+                ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x201F1A)]));
             } else {
                 ccSetColour(colour(0x1A1712));
-                ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x1A1712)]));
+                ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x1A1712)]));
             }
             ccSetPosition(0, int9, 0, 0);
             if (clan_custom_slot_disabled(varbit_clan_custom_stronghold_current_slot_varp) == 0) {
-                ccSetOnOpt(hook(cs2_4803, "i", [int8]));
+                ccSetOnOp(hook(cs2_4803, "i", [int8]));
                 ccSetOp(1, "Select");
-                ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x453D30)]));
+                ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x453D30)]));
             }
             if (int14 == int7) {
                 ifSetHide(false, Component.interface_1258.component_1258_201);
@@ -90,15 +90,15 @@ function cs2_4851(intArg0: component, intArg1: component, intArg2: component, in
         ccSetfill(true);
         if (int8 % 2 == 0) {
             ccSetColour(colour(0x201F1A));
-            ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x201F1A)]));
+            ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x201F1A)]));
         } else {
             ccSetColour(colour(0x1A1712));
-            ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x1A1712)]));
+            ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x1A1712)]));
         }
         ccSetPosition(0, int9, 0, 0);
-        ccSetOnOpt(hook(cs2_4803, "i", [int8]));
+        ccSetOnOp(hook(cs2_4803, "i", [int8]));
         ccSetOp(1, "Select");
-        ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x453D30)]));
+        ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x453D30)]));
         ifSetHide(false, Component.interface_1258.component_1258_201);
         ifSetPosition(0, int9, 0, 0, Component.interface_1258.component_1258_201);
         ccCreate(intArg2, 4, int8);

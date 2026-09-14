@@ -5,10 +5,10 @@
 
 function cs2_4002(): void {
     if (getWindowMode() >= 2) {
-        if (ifIsOpen(48889885, 917) == 1) {
+        if (ifHasSubModal(48889885, 917) == 1) {
             return;
         }
-    } else if (ifIsOpen(35913772, 917) == 1) {
+    } else if (ifHasSubModal(35913772, 917) == 1) {
         return;
     }
     let str0: string = "Progress:  ";

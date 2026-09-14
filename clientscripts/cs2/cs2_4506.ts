@@ -30,7 +30,7 @@ function cs2_4506(intArg0: component, intArg1: component, intArg2: component): v
     while (int6 >= 0) {
         if (ccFind(intArg0, int6) == 1 && stringLength(ccGetText()) > 0) {
             ccSetOp(1, "Select");
-            ccSetOnOpt(hook(cs2_4507, "iII", [event_comsubid, intArg0, intArg1]));
+            ccSetOnOp(hook(cs2_4507, "iII", [event_comsubid, intArg0, intArg1]));
         }
         int6 = int6 - 1;
     }

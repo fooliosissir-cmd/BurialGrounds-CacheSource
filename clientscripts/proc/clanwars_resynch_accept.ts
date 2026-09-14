@@ -8,8 +8,8 @@ function clanwars_resynch_accept(): void {
         cs2_1801();
         if (varc_clanwars_rulevarc_accept == false) {
             cs2_1363(Component.interface_791.component_791_143);
-            ifSetOnMouseOver(hook(cs2_95, "I", [event_com]), Component.interface_791.component_791_143);
-            hookMouseExit(hook(cs2_97, "I", [event_com]), Component.interface_791.component_791_143);
+            ifSetOnMouseRepeat(hook(cs2_95, "I", [event_com]), Component.interface_791.component_791_143);
+            ifSetOnMouseLeave(hook(cs2_97, "I", [event_com]), Component.interface_791.component_791_143);
             if (varc_259 == 0) {
                 ifSetText("Accept", Component.interface_791.component_791_146);
                 ifSetTextFont(Graphic.b12_full, Component.interface_791.component_791_146);
@@ -19,8 +19,8 @@ function clanwars_resynch_accept(): void {
             }
         } else {
             cs2_1360(Component.interface_791.component_791_143);
-            ifSetOnMouseOver(noHook(""), Component.interface_791.component_791_143);
-            hookMouseExit(noHook(""), Component.interface_791.component_791_143);
+            ifSetOnMouseRepeat(noHook(""), Component.interface_791.component_791_143);
+            ifSetOnMouseLeave(noHook(""), Component.interface_791.component_791_143);
             ifSetText("Waiting for opponent...", Component.interface_791.component_791_146);
             ifSetTextFont(Graphic.p12_full, Component.interface_791.component_791_146);
         }

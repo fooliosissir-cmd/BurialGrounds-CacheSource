@@ -36,7 +36,7 @@ function cs2_828(): void {
                 ccSetOpBase<1>(enumString(Enum.enum_1345, int0));
                 ccSetTextShadow(false);
                 ccSetTextFont(Graphic.p11_full);
-                ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+                ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
                 ccSetSize<1>(12, 12, 0, 0);
                 if (int2 == 0) {
                     ifSetParamInt(Param.param_1133, int0, Component.interface_187.component_187_4);

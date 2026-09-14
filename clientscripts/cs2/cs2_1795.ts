@@ -10,16 +10,16 @@ function cs2_1795(intArg0: component, intArg1: component): void {
     if (varbit_clanwars_ffatype == 1) {
         if (varbit_cws_warning_31 == 1) {
             ifSetGraphic(int3, intArg1);
-            ifSetOnOpt(hook(graphic_swapper, "Id", [intArg1, int2]), intArg0);
+            ifSetOnOp(hook(graphic_swapper, "Id", [intArg1, int2]), intArg0);
         } else {
             ifSetGraphic(int2, intArg1);
-            ifSetOnOpt(hook(graphic_swapper, "Id", [intArg1, int3]), intArg0);
+            ifSetOnOp(hook(graphic_swapper, "Id", [intArg1, int3]), intArg0);
         }
     } else if (varbit_cws_warning_22 == 1) {
         ifSetGraphic(int3, intArg1);
-        ifSetOnOpt(hook(graphic_swapper, "Id", [intArg1, int2]), intArg0);
+        ifSetOnOp(hook(graphic_swapper, "Id", [intArg1, int2]), intArg0);
     } else {
         ifSetGraphic(int2, intArg1);
-        ifSetOnOpt(hook(graphic_swapper, "Id", [intArg1, int3]), intArg0);
+        ifSetOnOp(hook(graphic_swapper, "Id", [intArg1, int3]), intArg0);
     }
 }

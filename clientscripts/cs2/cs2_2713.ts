@@ -5,8 +5,8 @@
 
 function cs2_2713(intArg0: component, intArg1: component, intArg2: component, intArg3: component, intArg4: component, intArg5: component): void {
     ifSetOnClick(noHook(""), intArg3);
-    ifSetOnMouseOver(noHook(""), intArg3);
-    ifSetOnMouseOver(noHook(""), intArg3);
+    ifSetOnMouseRepeat(noHook(""), intArg3);
+    ifSetOnMouseRepeat(noHook(""), intArg3);
     let int6: coord = -1;
     let int7: colour = colour(0x000000);
 

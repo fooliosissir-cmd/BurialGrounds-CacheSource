@@ -4,15 +4,15 @@
 // cs2_2697
 
 function cs2_2697(intArg0: number, intArg1: number): void {
-    if (intArg0 == detailGetActiveToolkit()) {
+    if (intArg0 == detailGetToolkit()) {
         return;
     }
-    changeRender(intArg0);
-    let int2: number = detailGetActiveToolkit();
+    detailToolkit(intArg0);
+    let int2: number = detailGetToolkit();
     cs2_2593(int2);
 
     if (intArg0 != int2) {
-        detailToolkit(int2, 1);
+        detailToolkitDefault(int2, 1);
         graphics_options_message(intArg1, 1, "RuneScape was unable to enter that display mode." + "<br>" + "<br>" + "Please visit our website for more information.", "", "");
         cs2_3387(int2, getWindowMode(), ...graphics_options_reviewoptions(int2), intArg1);
     }
@@ -21,6 +21,6 @@ function cs2_2697(intArg0: number, intArg1: number): void {
     if (int2 == 1 || int2 == 3) {
         cs2_2700(1, intArg1, false, true);
     } else {
-        detailToolkit(int2, 0);
+        detailToolkitDefault(int2, 0);
     }
 }

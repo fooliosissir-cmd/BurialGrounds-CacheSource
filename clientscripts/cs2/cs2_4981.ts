@@ -57,12 +57,12 @@ function cs2_4981(intArg0: number, intArg1: number, intArg2: struct, intArg3: st
     ifSetHide(true, Component.interface_1261.component_1261_362);
 
     if (clanProfileFind() == 1 && activeClanSettingsFindAffined() == 1) {
-        int18 = activeClanSettingsGetAffinedSlot(chatPlayerNameUnfiltered());
+        int18 = activeClanSettingsGetAffinedSlot(chatPlayerName());
         if (int18 < 0) {
             return;
         }
         int19 = activeClanSettingsGetAffinedRank(int18);
-        int22 = loadClanVar<2132>() - dateMinutes();
+        int22 = pushVarClan<2132>() - dateMinutes();
         if (int22 < 360 && int19 < 126) {
             int23 = 1;
         }
@@ -242,17 +242,17 @@ function cs2_4981(intArg0: number, intArg1: number, intArg2: struct, intArg3: st
             ifSetHide(false, Component.interface_1261.component_1261_288);
             ifSetHide(false, Component.interface_1261.component_1261_296);
         }
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str2, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_272);
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str4, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_280);
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str3, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_288);
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str5, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_296);
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str6, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_355);
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str7, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_362);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_272);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_280);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_288);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_296);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_355);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_362);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str2, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_272);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str4, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_280);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str3, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_288);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str5, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_296);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str6, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_355);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_102, event_com, -1, str7, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1261.component_1261_362);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_272);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_280);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_288);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_296);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_355);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_102]), Component.interface_1261.component_1261_362);
     }
 }

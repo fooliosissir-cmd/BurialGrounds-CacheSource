@@ -73,7 +73,7 @@ function meslayer_onkey(intArg0: number, intArg1: number): void {
                 } else if (varc_meslayermode == 10) {
                     varcstr_last_clanchannelowner = escape(varcstr_meslayerinput);
                     varc_last_clanchannelowner_init = 1;
-                    fcJoinChat(varcstr_meslayerinput);
+                    clanJoinChat(varcstr_meslayerinput);
                 } else if (varc_meslayermode == 15) {
                     friendschat_kick(varcstr_meslayerinput);
                 } else if (varc_meslayermode == 16) {
@@ -106,7 +106,7 @@ function meslayer_onkey(intArg0: number, intArg1: number): void {
         case 99:
         case 102:
         case 103:
-            if (keyheldAlt() == 0) {
+            if (keyheldShift() == 0) {
                 return;
             }
             varc_1029 = cs2_1553(intArg0, varc_1029, varcstr_meslayerinput);

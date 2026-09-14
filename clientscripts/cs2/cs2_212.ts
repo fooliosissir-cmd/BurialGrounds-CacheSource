@@ -5,6 +5,6 @@
 
 function cs2_212(strArg0: string): void {
     if (compare(strArg0, "") != 0) {
-        openurl(strArg0, true);
+        openurlNoLogin(strArg0, true);
     }
 }

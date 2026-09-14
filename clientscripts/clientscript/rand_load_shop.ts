@@ -71,8 +71,8 @@ function rand_load_shop(intArg0: component): void {
         ccSetOp(5, "Buy 50");
         ccSetOp(6, "Buy 250");
         ccSetOp(10, "Examine");
-        ccHookMouseEnter(hook(cs2_2261, "Ii1", [event_com, int3 + 1, false]));
-        ccHookMouseExit(hook(cs2_2261, "Ii1", [event_com, int3 + 1, true]));
+        ccSetOnMouseOver(hook(cs2_2261, "Ii1", [event_com, int3 + 1, false]));
+        ccSetOnMouseLeave(hook(cs2_2261, "Ii1", [event_com, int3 + 1, true]));
         ccCreate(intArg0, 5, int3 + 1);
         ccSetSize(48, 52, 0, 0);
         ccSetPosition(int4, int5, 0, 0);
@@ -138,8 +138,8 @@ function rand_load_shop(intArg0: component): void {
         ccSetOp(5, "Buy 50");
         ccSetOp(6, "Buy 250");
         ccSetOp(10, "Examine");
-        ccHookMouseEnter(hook(cs2_2261, "Ii1", [event_com, int3 + 1, false]));
-        ccHookMouseExit(hook(cs2_2261, "Ii1", [event_com, int3 + 1, true]));
+        ccSetOnMouseOver(hook(cs2_2261, "Ii1", [event_com, int3 + 1, false]));
+        ccSetOnMouseLeave(hook(cs2_2261, "Ii1", [event_com, int3 + 1, true]));
         ccCreate(intArg0, 5, int3 + 1);
         ccSetSize(48, 52, 0, 0);
         ccSetPosition(int4, int5, 0, 0);

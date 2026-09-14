@@ -23,14 +23,14 @@ function cs2_4319(intArg0: number, intArg1: number): void {
             ifSetvflip(false, int6);
             ifSetvflip(false, int7);
             ifSetOp(1, "Hide", int8);
-            ifSetOnOpt(hook(cs2_4319, "ii", [0, 1]), int8);
+            ifSetOnOp(hook(cs2_4319, "ii", [0, 1]), int8);
         } else {
             ifSetHide(true, Component.interface_1096.component_1096_70);
             int3 = int3 - 6;
             ifSetvflip(true, int6);
             ifSetvflip(true, int7);
             ifSetOp(1, "Show", int8);
-            ifSetOnOpt(hook(cs2_4319, "ii", [0, 0]), int8);
+            ifSetOnOp(hook(cs2_4319, "ii", [0, 0]), int8);
         }
         int3 = min(int3, 224);
         int3 = max(int3, 115);

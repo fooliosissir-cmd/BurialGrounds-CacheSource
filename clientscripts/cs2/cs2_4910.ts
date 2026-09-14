@@ -24,8 +24,8 @@ function cs2_4910(intArg0: component): void {
     ccSetPosition(0, 0, 1, 1);
     ccSetSize(int1, int2, 0, 0);
     ccSetGraphic(Graphic.aif_teleport_button_1_1);
-    ccHookMouseEnter(hook(cs2_4410, "Iii", [intArg0, int3, 0]));
-    ccHookMouseExit(hook(cs2_4410, "Iii", [intArg0, int3, 1]));
+    ccSetOnMouseOver(hook(cs2_4410, "Iii", [intArg0, int3, 0]));
+    ccSetOnMouseLeave(hook(cs2_4410, "Iii", [intArg0, int3, 1]));
     ccSetTrans(255);
     ccCreate(intArg0, 5, ifGetNextSubId(intArg0));
     ccSetPosition(0, 0, 1, 1);

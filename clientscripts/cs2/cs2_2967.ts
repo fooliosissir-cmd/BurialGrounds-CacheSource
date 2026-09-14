@@ -40,12 +40,12 @@ function cs2_2967(intArg0: number): void {
 
     if (int4 == 1 && int5 == 1 && int1 == 1 && int2 == 1 && int3 == 1 && int6 == 1) {
         if (varc_1407 < 13) {
-            createStepReached();
+            createSetUnder13();
             cs2_4038();
         } else if (createUnder13() == 1) {
             cs2_4038();
         } else {
-            sendSignupFormPacket(varcstr_122, varcstr_124, varc_1407, varc_1411);
+            createCreateRequest(varcstr_122, varcstr_124, varc_1407, varc_1411);
             ifSetOnTimer(hook(cs2_3220, "", []), Component.interface_673.component_673_26);
         }
     } else {

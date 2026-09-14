@@ -4,7 +4,7 @@
 // [clientscript,friends_chat_onload]
 
 function friends_chat_onload(intArg0: component, intArg1: number): void {
-    ifSetOnClanChannelTransmit(hook(friends_chat_onclantransmit, "I", [event_com]), intArg0);
+    ifSetOnClanTransmit(hook(friends_chat_onclantransmit, "I", [event_com]), intArg0);
     ifSetOnFriendTransmit(hook(friends_chat_onclantransmit, "I", [event_com]), intArg0);
     cs2_1600();
     ccDeleteAll(Component.interface_1109.component_1109_4);

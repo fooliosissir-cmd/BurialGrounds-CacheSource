@@ -30,7 +30,7 @@ function friendschat_kick(strArg0: string): void {
         strArg0 = subString(strArg0, 0, int0 - 1);
         int0 = stringLength(strArg0);
     }
-    let str1: string = lowercase(removetags(chatPlayerNameUnfiltered()));
+    let str1: string = lowercase(removetags(chatPlayerName()));
     int0 = stringLength(str1);
     str1 = cs2_2332(str1, "_", "\xa0");
     str1 = cs2_2332(str1, "-", "\xa0");
@@ -61,7 +61,7 @@ function friendschat_kick(strArg0: string): void {
             friendschat_kick_mes("You cannot kick or ban yourself.");
             return;
         }
-        fcKickUser(strArg0);
+        clanKickUser(strArg0);
         strArg0 = cs2_1814(strArg0);
         chatSetMode(1);
         chatSendpublic("[Attempting to kick/ban user from this Friends Chat.]");

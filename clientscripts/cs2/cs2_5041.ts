@@ -93,6 +93,6 @@ function cs2_5041(intArg0: struct, intArg1: number, intArg2: number, intArg3: nu
             }
             break;
     }
-    ccSetOnMouseOver(hook(clan_field_editor_tooltip, "Iisii", [event_com, event_comsubid, str0, event_mousex, event_mousey]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1111.component_1111_119]));
+    ccSetOnMouseRepeat(hook(clan_field_editor_tooltip, "Iisii", [event_com, event_comsubid, str0, event_mousex, event_mousey]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1111.component_1111_119]));
 }

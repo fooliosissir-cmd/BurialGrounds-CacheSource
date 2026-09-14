@@ -56,10 +56,10 @@ function cs2_298(intArg0: coord, intArg1: coord, intArg2: boolean, intArg3: colo
         ccSetSize(intArg4, intArg4, 0, 0);
         ccSetColour(int25);
         ccSetfill(true);
-        ccHookMouseEnter(hook(cs2_301, "1Iiiii", [true, intArg5, int11, -1, int12, intArg3]));
-        ccHookMouseExit(hook(cs2_301, "1Iiiii", [false, intArg5, int11, -1, int12, int25]));
+        ccSetOnMouseOver(hook(cs2_301, "1Iiiii", [true, intArg5, int11, -1, int12, intArg3]));
+        ccSetOnMouseLeave(hook(cs2_301, "1Iiiii", [false, intArg5, int11, -1, int12, int25]));
         ccSetOp(1, "Scroll map");
-        ccSetOnOpt(hook(cs2_302, "ic1", [event_opindex, intArg1, intArg2]));
+        ccSetOnOp(hook(cs2_302, "ic1", [event_opindex, intArg1, intArg2]));
     }
 
     if (ccFind(intArg5, int12) == 1) {

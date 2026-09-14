@@ -17,6 +17,6 @@ function cs2_1460(intArg0: number, intArg1: number): void {
     ifSetOp(2, "Collapse tab " + tostring(intArg0), int2);
     ifSetOnClick(noHook(""), int2);
     let str0: string = "Click here to select tab " + tostring(intArg0);
-    ifSetOnMouseOver(hook(cs2_38, "IIsii", [event_com, Component.interface_762.component_762_121, str0, 25, 150]), int2);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_762.component_762_121]), int2);
+    ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [event_com, Component.interface_762.component_762_121, str0, 25, 150]), int2);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_762.component_762_121]), int2);
 }

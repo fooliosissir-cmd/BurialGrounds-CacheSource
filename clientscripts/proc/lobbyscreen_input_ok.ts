@@ -51,13 +51,13 @@ function proc_lobbyscreen_input_ok(intArg0: number, strArg0: string): void {
                 }
                 break;
             case 5:
-                if (fcGetChatCount() <= 0 && stringLength(varcstr_lobbyscreen_input) > 0) {
-                    fcJoinChat(varcstr_lobbyscreen_input);
+                if (clanGetChatCount() <= 0 && stringLength(varcstr_lobbyscreen_input) > 0) {
+                    clanJoinChat(varcstr_lobbyscreen_input);
                 }
                 break;
             case 6:
                 varc_lobbyscreen_report_abuse_bug = 0;
-                openurlNoLogin("bugtracker_v4", "index.html", 0);
+                openurl("bugtracker_v4", "index.html", 0);
                 break;
             case 7:
                 if (stringLength(varcstr_lobbyscreen_input) > 0) {
@@ -65,7 +65,7 @@ function proc_lobbyscreen_input_ok(intArg0: number, strArg0: string): void {
                 }
                 break;
             case 9:
-                if (fcGetChatCount() > 0 && stringLength(varcstr_lobbyscreen_input) > 0) {
+                if (clanGetChatCount() > 0 && stringLength(varcstr_lobbyscreen_input) > 0) {
                     friendschat_kick(varcstr_lobbyscreen_input);
                 }
                 break;

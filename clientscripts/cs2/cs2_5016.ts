@@ -11,7 +11,7 @@ function cs2_5016(intArg0: number): void {
     let int5: number = -1;
 
     if (clanProfileFind() == 1) {
-        int1 = cs2_5116(loadClanVarbit<2598>(), loadClanVarbit<2580>());
+        int1 = cs2_5116(pushVarClanBit<2598>(), pushVarClanBit<2580>());
         if (int1 == -1) {
             return;
         }

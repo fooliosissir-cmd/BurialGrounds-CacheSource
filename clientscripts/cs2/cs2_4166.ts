@@ -31,7 +31,7 @@ function cs2_4166(intArg0: component, intArg1: component, intArg2: number, intAr
     ccSetColour(colour(0xFF981F));
     ccSetTextShadow(true);
     ccSetText(strArg0);
-    hookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId(), colour(0xFFFFFF)]), intArg0);
-    ifSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, -1, intArg1, strArg1, 25, 200]), intArg0);
-    hookMouseExit(hook(cs2_4167, "IiI", [event_com, ccGetId(), intArg1]), intArg0);
+    ifSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId(), colour(0xFFFFFF)]), intArg0);
+    ifSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, -1, intArg1, strArg1, 25, 200]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_4167, "IiI", [event_com, ccGetId(), intArg1]), intArg0);
 }

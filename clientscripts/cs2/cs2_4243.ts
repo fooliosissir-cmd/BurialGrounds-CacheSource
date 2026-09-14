@@ -44,8 +44,8 @@ function cs2_4243(intArg0: Enum): number {
             int12 = gameframe_skin_graphic(Graphic.graphic_4041);
             int11 = gameframe_skin_graphic(Graphic.graphic_4042);
             ccSetGraphic(int12);
-            ccHookMouseEnter(hook(cs2_4013, "id", [event_comsubid, int11]));
-            ccHookMouseExit(hook(cs2_4013, "id", [event_comsubid, int12]));
+            ccSetOnMouseOver(hook(cs2_4013, "id", [event_comsubid, int11]));
+            ccSetOnMouseLeave(hook(cs2_4013, "id", [event_comsubid, int12]));
             ccSetSize(70 + 2, 56 + 1, 0, 0);
             ccSetPosition(int14 - 1, int15 - 1, 0, 0);
             ccSetOp(1, "Summary for");
@@ -57,12 +57,12 @@ function cs2_4243(intArg0: Enum): number {
                 }
             }
             ccSetOpBase(str0);
-            ccSetOnOpt(hook(cs2_3990, "iii", [int2, event_comsubid, event_opindex]));
+            ccSetOnOp(hook(cs2_3990, "iii", [int2, event_comsubid, event_opindex]));
             if (cs2_3999(int2) == 0) {
                 str1 = " -" + "<br>";
                 str1 = append(structParam(int4, Param.task_name), str1);
                 str1 = append(str1, structParam(int4, Param.task_details));
-                ccSetOnMouseOver(hook(cs2_3998, "iiisIi", [ccGetY(), event_mousex, event_mousey, str1, event_com, event_comsubid]));
+                ccSetOnMouseRepeat(hook(cs2_3998, "iiisIi", [ccGetY(), event_mousex, event_mousey, str1, event_com, event_comsubid]));
             }
             if (cs2_3994(int2) == 1 && int2 != 4094) {
                 varc_1422 = int9;
@@ -121,18 +121,18 @@ function cs2_4243(intArg0: Enum): number {
             int12 = Graphic.graphic_4043;
             int11 = Graphic.graphic_4043;
             ccSetGraphic(int12);
-            ccHookMouseEnter(hook(cs2_4013, "id", [event_comsubid, int11]));
-            ccHookMouseExit(hook(cs2_4013, "id", [event_comsubid, int12]));
+            ccSetOnMouseOver(hook(cs2_4013, "id", [event_comsubid, int11]));
+            ccSetOnMouseLeave(hook(cs2_4013, "id", [event_comsubid, int12]));
             ccSetSize(70 + 2, 56 + 1, 0, 0);
             ccSetPosition(int14 - 1, int15 - 1, 0, 0);
             ccSetOp(1, "Summary for");
             ccSetOpBase(str0);
-            ccSetOnOpt(hook(cs2_3990, "iii", [int2, event_comsubid, event_opindex]));
+            ccSetOnOp(hook(cs2_3990, "iii", [int2, event_comsubid, event_opindex]));
             if (cs2_3999(int2) == 0) {
                 str1 = " -" + "<br>";
                 str1 = append(structParam(int4, Param.task_name), str1);
                 str1 = append(str1, structParam(int4, Param.task_details));
-                ccSetOnMouseOver(hook(cs2_3998, "iiisIi", [ccGetY(), event_mousex, event_mousey, str1, event_com, event_comsubid]));
+                ccSetOnMouseRepeat(hook(cs2_3998, "iiisIi", [ccGetY(), event_mousex, event_mousey, str1, event_com, event_comsubid]));
             }
             if (cs2_3994(int2) == 1 && int2 != 4094) {
                 varc_1422 = int9;

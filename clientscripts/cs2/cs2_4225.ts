@@ -4,6 +4,6 @@
 // cs2_4225
 
 function cs2_4225(): void {
-    ifSetOnMouseOver(noHook(""), Component.interface_1215.component_1215_1);
-    hookMouseExit(hook(cs2_5648, "", []), Component.interface_1215.component_1215_1);
+    ifSetOnMouseRepeat(noHook(""), Component.interface_1215.component_1215_1);
+    ifSetOnMouseLeave(hook(cs2_5648, "", []), Component.interface_1215.component_1215_1);
 }

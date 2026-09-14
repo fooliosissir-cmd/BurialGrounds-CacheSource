@@ -13,7 +13,7 @@ function wornitems_slot(intArg0: component, intArg1: number): void {
         ifSetGraphic(gameframe_skin_graphic(enumOp(type_int, type_graphic, Enum.enum_796, intArg1)), intArg0);
         ifSetOutline(0, intArg0);
         ifSetGraphicShadow(0, intArg0);
-        ifSetOnOpt(noHook(""), intArg0);
+        ifSetOnOp(noHook(""), intArg0);
         ifClearops(intArg0);
         return;
     }
@@ -22,7 +22,7 @@ function wornitems_slot(intArg0: component, intArg1: number): void {
     ifSetObject(int2, invGetNum(94, intArg1), intArg0);
     ifSetOutline(1, intArg0);
     ifSetGraphicShadow(3153952, intArg0);
-    ifSetOnOpt(hook(cs2_1620, "Iiiii", [event_com, -1, 100, 0, 8]), intArg0);
+    ifSetOnOp(hook(cs2_1620, "Iiiii", [event_com, -1, 100, 0, 8]), intArg0);
     ifClearops(intArg0);
 
     if (ocParam(int2, Param.hide_remove_op) != 1 && (ocParam(int2, Param.param_1430) == 0 || (playerMember() != 1 && ocMembers(int2) != 0))) {
@@ -55,6 +55,6 @@ function wornitems_slot(intArg0: component, intArg1: number): void {
     }
     ifSetOp(10, "Examine", intArg0);
     ifSetOpBase("<col=ff9040>" + ocName(int2), intArg0);
-    ifSetOnMouseOver(hook(cs2_5495, "o", [int2]), intArg0);
-    hookMouseExit(hook(cs2_5495, "o", [-1]), intArg0);
+    ifSetOnMouseRepeat(hook(cs2_5495, "o", [int2]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_5495, "o", [-1]), intArg0);
 }

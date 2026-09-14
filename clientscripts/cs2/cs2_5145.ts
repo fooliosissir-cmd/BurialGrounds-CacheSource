@@ -4,7 +4,7 @@
 // cs2_5145
 
 function cs2_5145(intArg0: number): number {
-    let int1: number = activeClanSettingsGetAffinedSlot(removetags(chatPlayerNameUnfiltered()));
+    let int1: number = activeClanSettingsGetAffinedSlot(removetags(chatPlayerName()));
 
     if (int1 < 0) {
         return 0;
@@ -16,7 +16,7 @@ function cs2_5145(intArg0: number): number {
     let int2: number = 0;
 
     if (clanProfileFind() == 1) {
-        int2 = loadClanVar<2132>() - dateMinutes();
+        int2 = pushVarClan<2132>() - dateMinutes();
         if (int2 < 360 && intArg0 < 126) {
             return 0;
         }
@@ -24,15 +24,15 @@ function cs2_5145(intArg0: number): number {
 
     switch (intArg0) {
         case 100:
-            return loadClanSettingVarbit<248>();
+            return pushVarClanSettingBit<248>();
         case 101:
-            return loadClanSettingVarbit<249>();
+            return pushVarClanSettingBit<249>();
         case 102:
-            return loadClanSettingVarbit<250>();
+            return pushVarClanSettingBit<250>();
         case 103:
-            return loadClanSettingVarbit<251>();
+            return pushVarClanSettingBit<251>();
         case 125:
-            return loadClanSettingVarbit<252>();
+            return pushVarClanSettingBit<252>();
         case 126:
             return 1;
         case 127:

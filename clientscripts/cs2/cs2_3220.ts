@@ -4,7 +4,7 @@
 // cs2_3220
 
 function cs2_3220(): void {
-    let int0: number = createGetEmail();
+    let int0: number = createReply();
 
     if (int0 == -3) {
         return;
@@ -15,7 +15,7 @@ function cs2_3220(): void {
     let str1: string = "passwordchoice.ws";
 
     if (int0 == 2) {
-        browserClose();
+        notifyAccountcreated();
         cs2_2223();
     } else {
         switch (int0) {

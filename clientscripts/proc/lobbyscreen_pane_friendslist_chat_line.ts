@@ -27,14 +27,14 @@ function lobbyscreen_pane_friendslist_chat_line(intArg0: number, strArg0: string
 
     if (intArg1 == 1) {
         ccSetOpBase(removetags(strArg1));
-        ccSetOnOpt(hook(lobbyscreen_pane_friendslist_chat_op, "iss", [event_opindex, strArg1, strArg2]));
+        ccSetOnOp(hook(lobbyscreen_pane_friendslist_chat_op, "iss", [event_opindex, strArg1, strArg2]));
         switch (intArg2) {
             case 3:
             case 6:
             case 7:
             case 18:
                 str3 = removetags(strArg2);
-                if (compare(removetags(chatPlayerNameUnfiltered()), str3) != 0) {
+                if (compare(removetags(chatPlayerName()), str3) != 0) {
                     if (friendTest(str3) == 0 && ignoreTest(str3) == 0) {
                         ccSetOp(1, "Add friend");
                         ccSetOp(2, "Add ignore");

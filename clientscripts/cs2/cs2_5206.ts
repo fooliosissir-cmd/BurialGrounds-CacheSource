@@ -63,12 +63,12 @@ function cs2_5206(): void {
                 ccSetGraphic(-1);
             } else if (structParam(int16, Param.param_1885) == 0 || cs2_5200(structParam(int16, Param.param_1885)) == 1) {
                 ccSetGraphic(int6);
-                ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int7]));
-                ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int6]));
+                ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int7]));
+                ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int6]));
                 ccSetOnClick(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int8]));
                 ccSetOnRelease(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int6]));
                 ccSetOp(1, "Select crest");
-                ccSetOnOpt(hook(cs2_5207, "Iii", [event_com, event_comsubid, int13]));
+                ccSetOnOp(hook(cs2_5207, "Iii", [event_com, event_comsubid, int13]));
                 int14 = int14 + 1;
                 ccCreate(Component.interface_1122.component_1122_87, 5, int14);
                 ccSetPosition(int4, int5, 0, 0);

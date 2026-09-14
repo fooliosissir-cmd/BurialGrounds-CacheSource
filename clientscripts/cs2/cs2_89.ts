@@ -4,7 +4,7 @@
 // cs2_89
 
 function cs2_89(): void {
-    if (ifGetTop(49414144, -1) == 1) {
+    if (minimenuopen(49414144, -1) == 1) {
         ifSetOnTimer(hook(cs2_1562, "", []), Component.interface_754.component_754_0);
         return;
     }
@@ -23,7 +23,7 @@ function cs2_89(): void {
         }
         int0 = 1;
         ifClearops(Component.interface_754.component_754_5);
-        ifSetOnOpt(noHook(""), Component.interface_754.component_754_5);
+        ifSetOnOp(noHook(""), Component.interface_754.component_754_5);
         ifSetTextShadow(true, Component.interface_754.component_754_5);
     }
     let int4: number = 0;
@@ -37,30 +37,30 @@ function cs2_89(): void {
                 int1 = enumOp(type_int, type_component, Enum.enum_580, int0);
                 ifSetColour(int6, int1);
                 ifSetTextShadow(int7, int1);
-                int5 = chatGettypebyline(int4);
+                int5 = chatGethistorytype(int4);
                 switch (int5) {
                     case 3:
                     case 7:
                     case 18:
-                        ifSetText("From " + chatLineGetcrownedname(int4) + ": " + chatGetbyline(int4), int1);
+                        ifSetText("From " + chatGethistoryname(int4) + ": " + chatGethistorymessage(int4), int1);
                         break;
                     case 5:
-                        ifSetText(chatGetbyline(int4), int1);
+                        ifSetText(chatGethistorymessage(int4), int1);
                         break;
                     case 6:
                     case 19:
-                        ifSetText("To " + chatLineGetcrownedname(int4) + ": " + chatGetbyline(int4), int1);
+                        ifSetText("To " + chatGethistoryname(int4) + ": " + chatGethistorymessage(int4), int1);
                         break;
                 }
                 ifClearops(int1);
-                ifSetOnOpt(hook(cs2_88, "isi", [event_opindex, chatLineGetName(int4), int4]), int1);
+                ifSetOnOp(hook(cs2_88, "isi", [event_opindex, unknownCommand5019(int4), int4]), int1);
                 switch (int5) {
                     case 3:
                     case 6:
                     case 7:
-                        ifSetOpBase("<col=ffffff>" + removetags(chatLineGetcrownedname(int4)), int1);
-                        if (compare(removetags(chatPlayerName()), removetags(chatLineGetcrownedname(int4))) != 0) {
-                            if (friendTest(chatLineGetName(int4)) == 1) {
+                        ifSetOpBase("<col=ffffff>" + removetags(chatGethistoryname(int4)), int1);
+                        if (compare(removetags(chatPlayerNameUnfiltered()), removetags(chatGethistoryname(int4))) != 0) {
+                            if (friendTest(unknownCommand5019(int4)) == 1) {
                                 if (mapQuickChat() == 0 && userDetailQuickChat() == 0) {
                                     ifSetOp(7, "Message", int1);
                                 }
@@ -75,11 +75,11 @@ function cs2_89(): void {
                         break;
                     case 18:
                     case 19:
-                        ifSetOpBase("<col=ffffff>" + removetags(chatLineGetcrownedname(int4)), int1);
-                        if (compare(removetags(chatPlayerName()), removetags(chatLineGetcrownedname(int4))) == 0) {
+                        ifSetOpBase("<col=ffffff>" + removetags(chatGethistoryname(int4)), int1);
+                        if (compare(removetags(chatPlayerNameUnfiltered()), removetags(chatGethistoryname(int4))) == 0) {
                             break;
                         }
-                        if (friendTest(chatLineGetName(int4)) == 1) {
+                        if (friendTest(unknownCommand5019(int4)) == 1) {
                             if (mapQuickChat() == 0 && userDetailQuickChat() == 0) {
                                 ifSetOp(7, "Message", int1);
                             }
@@ -87,14 +87,14 @@ function cs2_89(): void {
                             ifSetOp(7, "Add friend", int1);
                             ifSetOp(8, "Add ignore", int1);
                         }
-                        if (int5 != 18 || chatPhraseGetautoresponsecount(chatLineGetQuickChatId(int4)) <= 0) {
+                        if (int5 != 18 || chatPhraseGetautoresponsecount(chatGethistoryphrase(int4)) <= 0) {
                             break;
                         }
                         if (varc_132 == -1) {
-                            varc_132 = chatLineGetQuickChatId(int4);
-                            varcstr_29 = chatLineGetcrownedname(int4);
+                            varc_132 = chatGethistoryphrase(int4);
+                            varcstr_29 = chatGethistoryname(int4);
                             varc_133 = 5;
-                            if (friendTest(chatLineGetName(int4)) == 1) {
+                            if (friendTest(unknownCommand5019(int4)) == 1) {
                                 ifSetOp(9, "Quick Response", int1);
                             }
                         } else {

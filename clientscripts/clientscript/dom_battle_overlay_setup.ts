@@ -5,7 +5,7 @@
 
 function dom_battle_overlay_setup(): void {
     let str0: string = "";
-    let str1: string = chatPlayerName();
+    let str1: string = chatPlayerNameUnfiltered();
     let int0: number = 0;
     let int1: struct = enumOp(type_int, type_struct, Enum.dom_special_boss_id_to_struct, varbit_dom_special_match);
 

@@ -11,12 +11,12 @@ function cs2_1583(intArg0: component, strArg0: string, intArg1: component): void
         while (parawidth(str1 + "... ", 2147483647, Graphic.p12_full) > int2) {
             str1 = subString(str1, 0, stringLength(str1) - 1);
         }
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [event_com, intArg1, strArg0, 25, 5000]), intArg0);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [intArg1]), intArg0);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [event_com, intArg1, strArg0, 25, 5000]), intArg0);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [intArg1]), intArg0);
         strArg0 = str1 + "...";
     } else {
-        ifSetOnMouseOver(noHook(""), intArg0);
-        hookMouseExit(noHook(""), intArg0);
+        ifSetOnMouseRepeat(noHook(""), intArg0);
+        ifSetOnMouseLeave(noHook(""), intArg0);
     }
     ifSetText(strArg0, intArg0);
 }

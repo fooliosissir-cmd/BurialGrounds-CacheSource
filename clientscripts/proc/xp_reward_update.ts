@@ -21,8 +21,8 @@ function proc_xp_reward_update(intArg0: stat, intArg1: component, intArg2: compo
     if (int3 != varc_xp_reward_currentchoice) {
         ccSetGraphic(int6);
         if (int4 == 1) {
-            ccHookMouseEnter(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int7]));
-            ccHookMouseExit(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int6]));
+            ccSetOnMouseOver(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int7]));
+            ccSetOnMouseLeave(hook(cc_graphic_swapper, "Iid", [event_com, event_comsubid, int6]));
         }
     } else {
         ccSetGraphic(Graphic.aif_ring_btn_1_2);
@@ -33,5 +33,5 @@ function proc_xp_reward_update(intArg0: stat, intArg1: component, intArg2: compo
     ccSetGraphic<1>(enumOp(type_int, type_graphic, int5, int3));
     ccSetOp(1, "Choose");
     ccSetOpBase(enumOp(type_stat, type_string, Enum.stat_to_string, intArg0));
-    ccSetOnOpt(hook(xp_reward_choose, "SiII", [intArg0, int3, intArg1, intArg2]));
+    ccSetOnOp(hook(xp_reward_choose, "SiII", [intArg0, int3, intArg1, intArg2]));
 }

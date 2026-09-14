@@ -16,12 +16,12 @@ function cs2_2879(intArg0: number, intArg1: number, intArg2: number): number {
         ccSetTextAlign(0, 1, 0);
         if (varbit_4388 == intArg1 && varbit_playlist_mode == 1) {
             ccSetColour(colour(0xFFFF66));
-            ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFF66)]));
+            ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFF66)]));
         } else {
             ccSetColour(colour(0x00FFFF));
-            ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x00FFFF)]));
+            ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x00FFFF)]));
         }
-        ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+        ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
         ccSetText(enumString(Enum.enum_1345, intArg1));
         ccSetSize(150, 15, 0, 0);
         ccSetOp(1, "Play");
@@ -37,9 +37,9 @@ function cs2_2879(intArg0: number, intArg1: number, intArg2: number): number {
         ccSetPosition<1>(2, intArg2 + 1, 0, 0);
         ccSetOp<1>(2, "Remove");
         ccSetGraphic<1>(Graphic.music_icons_new_1);
-        ccSetOnOpt<1>(hook(cs2_2885, "Iiiiii", [event_com, event_comsubid, 150, 0, 20, event_opindex]));
-        ccSetOnMouseOver<1>(hook(cs2_1160, "IiIsii", [Component.interface_187.component_187_9, event_comsubid, Component.interface_187.component_187_17, str0, 25, 189]));
-        ccHookMouseExit<1>(hook(clientscript_deltooltip, "I", [Component.interface_187.component_187_17]));
+        ccSetOnOp<1>(hook(cs2_2885, "Iiiiii", [event_com, event_comsubid, 150, 0, 20, event_opindex]));
+        ccSetOnMouseRepeat<1>(hook(cs2_1160, "IiIsii", [Component.interface_187.component_187_9, event_comsubid, Component.interface_187.component_187_17, str0, 25, 189]));
+        ccSetOnMouseLeave<1>(hook(clientscript_deltooltip, "I", [Component.interface_187.component_187_17]));
         ccSetOnClick<1>(hook(clientscript_deltooltip, "I", [Component.interface_187.component_187_17]));
     }
     return intArg2 + 15;

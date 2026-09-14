@@ -125,8 +125,8 @@ function cs2_6556(intArg0: number): void {
         ifSetGraphic(Graphic.aif_buy_button_group_3_0, int6);
         ifSetOnClick(hook(graphic_swapper, "Id", [event_com, int1]), int6);
         ifSetOnRelease(hook(graphic_swapper, "Id", [event_com, int2]), int6);
-        hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int3]), int6);
-        hookMouseExit(hook(graphic_swapper, "Id", [event_com, int4]), int6);
+        ifSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int3]), int6);
+        ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int4]), int6);
     } else if (int5 == 1) {
         if (intArg0 == 0 || intArg0 == 8 || intArg0 == 23 || intArg0 == 24 || intArg0 == 25) {
             ifSetOp(1, "", int6);
@@ -134,8 +134,8 @@ function cs2_6556(intArg0: number): void {
             ifSetGraphic(Graphic.aif_buy_button_group_3_1, int6);
             ifSetOnClick(noHook(""), int6);
             ifSetOnRelease(noHook(""), int6);
-            hookMouseEnter(noHook(""), int6);
-            hookMouseExit(noHook(""), int6);
+            ifSetOnMouseOver(noHook(""), int6);
+            ifSetOnMouseLeave(noHook(""), int6);
         } else if (intArg0 == 1 || intArg0 == 9 || intArg0 == 16) {
             int1 = Graphic.aif_buy_button_group_3_3;
             int2 = Graphic.aif_buy_button_group_3_1;
@@ -146,8 +146,8 @@ function cs2_6556(intArg0: number): void {
             ifSetGraphic(Graphic.aif_buy_button_group_3_1, int6);
             ifSetOnClick(hook(graphic_swapper, "Id", [event_com, int1]), int6);
             ifSetOnRelease(hook(graphic_swapper, "Id", [event_com, int2]), int6);
-            hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int3]), int6);
-            hookMouseExit(hook(graphic_swapper, "Id", [event_com, int4]), int6);
+            ifSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int3]), int6);
+            ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int4]), int6);
         } else {
             int1 = Graphic.aif_buy_button_group_3_3;
             int2 = Graphic.aif_buy_button_group_3_1;
@@ -158,8 +158,8 @@ function cs2_6556(intArg0: number): void {
             ifSetGraphic(Graphic.aif_buy_button_group_3_1, int6);
             ifSetOnClick(hook(graphic_swapper, "Id", [event_com, int1]), int6);
             ifSetOnRelease(hook(graphic_swapper, "Id", [event_com, int2]), int6);
-            hookMouseEnter(hook(graphic_swapper, "Id", [event_com, int3]), int6);
-            hookMouseExit(hook(graphic_swapper, "Id", [event_com, int4]), int6);
+            ifSetOnMouseOver(hook(graphic_swapper, "Id", [event_com, int3]), int6);
+            ifSetOnMouseLeave(hook(graphic_swapper, "Id", [event_com, int4]), int6);
         }
     }
 }

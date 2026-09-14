@@ -18,8 +18,8 @@ function cs2_2726(intArg0: component, intArg1: number, intArg2: number): void {
     ccSetObject(enumOp(type_int, type_obj, Enum.toolbelt_rand_keys_objects, intArg1), -1);
     ccSetPosition(int9, int10, 0, 0);
     let str0: string = ocName(enumOp(type_int, type_obj, Enum.toolbelt_rand_keys_objects, intArg1));
-    ccSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_945.component_945_33, event_com, -1, str0, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 1, event_mousex, event_mousey]));
-    ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_945.component_945_33]));
+    ccSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_945.component_945_33, event_com, -1, str0, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 1, event_mousex, event_mousey]));
+    ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_945.component_945_33]));
     let int11: number = int7 * (int3 + int6) + int6;
     let int12: number = int8 * (int4 + int6) + int6;
     ifSetSize(int11, int12, 0, 0, Component.interface_945.component_945_20);

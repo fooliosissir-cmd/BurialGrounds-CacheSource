@@ -5,7 +5,7 @@
 
 function cursors_login(): void {
     setdefaultcursors(Cursor.cursor_default, Cursor.cursor_blank);
-    pop2Int(46, -1);
+    sethardcodedopcursors(46, -1);
 
     if (varc_987 == true || varc_987 == false) {
         detailCustomcursors(varc_987);

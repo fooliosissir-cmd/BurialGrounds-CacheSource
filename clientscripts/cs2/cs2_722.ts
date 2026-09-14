@@ -16,7 +16,7 @@ function cs2_722(): void {
         int0 = ifGetWidth(Component.interface_746.component_746_52);
         int1 = ifGetHeight(Component.interface_746.component_746_52);
         int2 = (int0 - 512) / 2;
-        if (ifIsOpen(48889885, 762) == 1) {
+        if (ifHasSubModal(48889885, 762) == 1) {
             if (varbit_bank_show_equipscreen == 1) {
                 ifSetSize(10, 10, 0, 0, Component.interface_746.component_746_29);
             } else {
@@ -43,12 +43,12 @@ function cs2_722(): void {
             int3 = 165;
         }
         ifSetPosition(int2, int3, 2, 2, Component.interface_746.component_746_29);
-        if (ifIsOpen(48889867, 667) == 1) {
+        if (ifHasSubModal(48889867, 667) == 1) {
             ifSetSize(512, 334, 0, 0, Component.interface_746.component_746_11);
             ifSetPosition(int2, max((int1 - 334) / 2, int3), 2, 2, Component.interface_746.component_746_11);
             ifSetSize(219, 164, 1, 1, Component.interface_746.component_746_12);
             ifSetPosition(0, 0, 0, 0, Component.interface_746.component_746_12);
-        } else if (ifIsOpen(48889868, 667) == 1) {
+        } else if (ifHasSubModal(48889868, 667) == 1) {
             ifSetSize(512, 334, 0, 0, Component.interface_746.component_746_12);
             ifSetPosition(int2, max((int1 - 334) / 2, int3), 2, 2, Component.interface_746.component_746_12);
             ifSetSize(0, 0, 1, 1, Component.interface_746.component_746_11);
@@ -148,7 +148,7 @@ function cs2_722(): void {
             ifSetPosition(180, 0, 0, 0, Component.interface_746.component_746_164);
             ifSetPosition(210, 0, 0, 0, Component.interface_746.component_746_166);
         }
-    } else if (ifIsOpen(35913772, 762) == 1 && varbit_bank_show_equipscreen == 1) {
+    } else if (ifHasSubModal(35913772, 762) == 1 && varbit_bank_show_equipscreen == 1) {
         ifSetSize(10, 10, 0, 0, Component.interface_548.component_548_44);
         ifSendtofront(Component.interface_548.component_548_30);
         ifSendtofront(Component.interface_548.component_548_31);

@@ -29,8 +29,8 @@ function cs2_5121(): void {
             int2 = Graphic.aif_checkbox_small_1;
             int3 = Graphic.aif_checkbox_small_0;
             if (ccFind(Component.interface_1119.component_1119_11, int0 * 3) == 1 && ccGetHide() == 0) {
-                ccHookMouseEnter(hook(cs2_5122, "Iidi", [event_com, event_comsubid, int2, colour(0xFFFFFF)]));
-                ccHookMouseExit(hook(cs2_5122, "Iidi", [event_com, event_comsubid, int3, colour(0xDFDFCF)]));
+                ccSetOnMouseOver(hook(cs2_5122, "Iidi", [event_com, event_comsubid, int2, colour(0xFFFFFF)]));
+                ccSetOnMouseLeave(hook(cs2_5122, "Iidi", [event_com, event_comsubid, int3, colour(0xDFDFCF)]));
                 if (ccFind<1>(Component.interface_1119.component_1119_11, int0 * 3 + 1) == 1) {
                     ccSetGraphic<1>(int3);
                 }
@@ -42,8 +42,8 @@ function cs2_5121(): void {
             int2 = Graphic.aif_checkbox_small_5;
             int3 = Graphic.aif_checkbox_small_4;
             if (ccFind(Component.interface_1119.component_1119_11, int0 * 3) == 1 && ccGetHide() == 0) {
-                ccHookMouseEnter(hook(cs2_5122, "Iidi", [event_com, event_comsubid, int2, colour(0xFFFFFF)]));
-                ccHookMouseExit(hook(cs2_5122, "Iidi", [event_com, event_comsubid, int3, colour(0xCFBFAF)]));
+                ccSetOnMouseOver(hook(cs2_5122, "Iidi", [event_com, event_comsubid, int2, colour(0xFFFFFF)]));
+                ccSetOnMouseLeave(hook(cs2_5122, "Iidi", [event_com, event_comsubid, int3, colour(0xCFBFAF)]));
                 if (ccFind<1>(Component.interface_1119.component_1119_11, int0 * 3 + 1) == 1) {
                     ccSetGraphic<1>(int3);
                 }

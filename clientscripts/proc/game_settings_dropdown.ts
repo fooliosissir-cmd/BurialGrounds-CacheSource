@@ -19,8 +19,8 @@ function game_settings_dropdown(intArg0: number): void {
         ccSetColour(colour(0xEBE0BC));
         ccSetText(game_settings_value_text(intArg0, int3));
         ccSetOp(intArg0 + 1, "Select");
-        ccHookMouseEnter(hook(cs2_2691, "Ii1ii1", [event_com, int3, true, int3, colour(0xFFFFFF), true]));
-        ccHookMouseExit(hook(cs2_2691, "Ii1ii1", [event_com, int3, false, int3, colour(0xEBE0BC), true]));
+        ccSetOnMouseOver(hook(cs2_2691, "Ii1ii1", [event_com, int3, true, int3, colour(0xFFFFFF), true]));
+        ccSetOnMouseLeave(hook(cs2_2691, "Ii1ii1", [event_com, int3, false, int3, colour(0xEBE0BC), true]));
         int3 = int3 + 1;
     }
     ifSetHide(false, int1);

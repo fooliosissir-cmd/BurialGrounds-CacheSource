@@ -7,7 +7,7 @@ function login_popup_throbber(): void {
     varc_1882 = 1;
     let int0: component = Component.interface_596.component_596_12;
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         int0 = Component.interface_975.component_975_3;
     }
     let int1: number = login_getreply();

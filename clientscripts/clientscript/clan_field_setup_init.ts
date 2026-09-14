@@ -118,8 +118,8 @@ function clan_field_setup_init(intArg0: component): void {
             ccSetText<1>("");
             int9 = int9 + 33;
             if (varc_demomode_create == 1) {
-                ccHookMouseEnter(hook(clan_field_setup_highlight, "Iii", [event_com, int1, 0]));
-                ccHookMouseExit(hook(clan_field_setup_highlight, "Iii", [event_com, int1, 1]));
+                ccSetOnMouseOver(hook(clan_field_setup_highlight, "Iii", [event_com, int1, 0]));
+                ccSetOnMouseLeave(hook(clan_field_setup_highlight, "Iii", [event_com, int1, 1]));
                 ccSetOnRelease(hook(clan_field_setup_highlight, "Iii", [event_com, int1, 255]));
                 if (int3 == Enum.clan_field_rules_layout) {
                     ccSetOnClick(hook(cs2_5081, "Iigiiii", [event_com, int1, int3, array0[int1], min(array0[int1 + 1] - array0[int1], varbit_clan_field_initiatordata), int10, int8]));

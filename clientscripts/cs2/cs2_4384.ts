@@ -7,7 +7,7 @@ function cs2_4384(intArg0: number, intArg1: number, intArg2: number): [graphic, 
     let int3: graphic = enumOp(type_int, type_graphic, Enum.clan_motif_int2gfx, intArg0);
     let int4: graphic = enumOp(type_int, type_graphic, Enum.clan_motif_int2gfx, intArg1);
 
-    if (intArg2 == 1 && (loadClanSettingVarbit<10>() == 1 || activeClanSettingsGetAffinedCount() < 5)) {
+    if (intArg2 == 1 && (pushVarClanSettingBit<10>() == 1 || activeClanSettingsGetAffinedCount() < 5)) {
         int3 = Graphic.clan_icon_generic_runestone_r;
         int4 = Graphic.clan_icon_generic_runestone_s;
     } else {

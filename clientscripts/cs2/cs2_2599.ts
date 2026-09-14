@@ -55,16 +55,16 @@ function cs2_2599(): void {
 
     if (varc_928 <= varbit_mob_invest) {
         ifSetGraphic(Graphic.mob_exchange_tick_0, Component.interface_292.component_292_123);
-        ifSetOnOpt(hook(cs2_2605, "", []), Component.interface_292.component_292_122);
+        ifSetOnOp(hook(cs2_2605, "", []), Component.interface_292.component_292_122);
         ifSetOp(1, "Apply changes", Component.interface_292.component_292_122);
-        hookMouseEnter(hook(cs2_94, "I", [event_com]), Component.interface_292.component_292_122);
+        ifSetOnMouseOver(hook(cs2_94, "I", [event_com]), Component.interface_292.component_292_122);
         ifSetColour(colour(0xFF9935), Component.interface_292.component_292_126);
         ifSetOnClick(noHook(""), Component.interface_292.component_292_122);
     } else {
         ifSetGraphic(Graphic.mob_exchange_tick_1, Component.interface_292.component_292_123);
-        ifSetOnOpt(noHook(""), Component.interface_292.component_292_122);
+        ifSetOnOp(noHook(""), Component.interface_292.component_292_122);
         ifClearops(Component.interface_292.component_292_122);
-        hookMouseEnter(noHook(""), Component.interface_292.component_292_122);
+        ifSetOnMouseOver(noHook(""), Component.interface_292.component_292_122);
         ifSetColour(colour(0xFF1111), Component.interface_292.component_292_126);
         ifSetOnClick(hook(cs2_2606, "I", [event_com]), Component.interface_292.component_292_122);
     }
@@ -83,16 +83,16 @@ function cs2_2599(): void {
 
     if (varbit_mob_invest >= int0 && int0 > 0) {
         ifSetColour(colour(0xFF9935), Component.interface_292.component_292_124);
-        ifSetOnOpt(hook(cs2_2603, "", []), Component.interface_292.component_292_119);
+        ifSetOnOp(hook(cs2_2603, "", []), Component.interface_292.component_292_119);
         ifSetOp(1, "Resupply all", Component.interface_292.component_292_119);
-        hookMouseEnter(hook(cs2_94, "I", [event_com]), Component.interface_292.component_292_119);
+        ifSetOnMouseOver(hook(cs2_94, "I", [event_com]), Component.interface_292.component_292_119);
         ifSetOnClick(noHook(""), Component.interface_292.component_292_119);
     } else {
         ifSetText("Resupply all", Component.interface_292.component_292_124);
         ifSetColour(colour(0x666666), Component.interface_292.component_292_124);
-        ifSetOnOpt(noHook(""), Component.interface_292.component_292_119);
+        ifSetOnOp(noHook(""), Component.interface_292.component_292_119);
         ifClearops(Component.interface_292.component_292_119);
-        hookMouseEnter(noHook(""), Component.interface_292.component_292_119);
+        ifSetOnMouseOver(noHook(""), Component.interface_292.component_292_119);
         ifSetOnClick(hook(cs2_2606, "I", [event_com]), Component.interface_292.component_292_119);
     }
 }

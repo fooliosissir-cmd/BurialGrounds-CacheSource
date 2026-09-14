@@ -20,7 +20,7 @@ function gravestone_shop_createbutton(intArg0: component, intArg1: graphic, intA
     ccSetfill(true);
     ccSetOp(1, "Choose");
     ccSetOpBase("<col=ff9040>" + enumOp(type_int, type_string, Enum.gravestone_name, intArg1) + "</col>");
-    ccSetOnOpt(hook(gravestone_shop_select, "iIiIIII", [intArg1, intArg0, event_comsubid, intArg3, intArg4, intArg5, intArg6]));
+    ccSetOnOp(hook(gravestone_shop_select, "iIiIIII", [intArg1, intArg0, event_comsubid, intArg3, intArg4, intArg5, intArg6]));
     ccCreate(intArg0, 6, intArg2 * 6 + 1);
     ccSetSize(164, 146, 0, 0);
     ccSetPosition(int7, int8, 0, 0);

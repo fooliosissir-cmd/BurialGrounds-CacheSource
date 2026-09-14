@@ -14,13 +14,13 @@ function cs2_3397(): void {
         ifSetTrans(0, Component.interface_979.component_979_11);
         ifSetTrans(0, Component.interface_979.component_979_12);
         ifSetTrans(0, Component.interface_979.component_979_13);
-        hookMouseEnter(hook(cs2_3071, "IdIdId", [Component.interface_979.component_979_10, int0, Component.interface_979.component_979_11, int1, Component.interface_979.component_979_12, int0]), Component.interface_979.component_979_9);
+        ifSetOnMouseOver(hook(cs2_3071, "IdIdId", [Component.interface_979.component_979_10, int0, Component.interface_979.component_979_11, int1, Component.interface_979.component_979_12, int0]), Component.interface_979.component_979_9);
     } else {
         ifSetText("Report : Select Player", Component.interface_979.component_979_40);
         ifSetTrans(100, Component.interface_979.component_979_10);
         ifSetTrans(100, Component.interface_979.component_979_11);
         ifSetTrans(100, Component.interface_979.component_979_12);
         ifSetTrans(100, Component.interface_979.component_979_13);
-        hookMouseEnter(noHook(""), Component.interface_979.component_979_9);
+        ifSetOnMouseOver(noHook(""), Component.interface_979.component_979_9);
     }
 }

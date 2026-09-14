@@ -40,7 +40,7 @@ function cs2_5754(intArg0: Enum, intArg1: number, strArg0: string, intArg2: numb
                 ccSetTextFont(Graphic.verdana_11pt_regular);
                 ccSetColour(colour(0xEFB063));
                 ccSetTextShadow(true);
-                ccHookMouseEnter(hook(cs2_4502, "IIi", [intArg6, intArg7, event_comsubid]));
+                ccSetOnMouseOver(hook(cs2_4502, "IIi", [intArg6, intArg7, event_comsubid]));
                 int12 = 1 + int12;
             }
             int10 = int10 + ccGetHeight();

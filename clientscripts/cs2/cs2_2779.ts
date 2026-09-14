@@ -9,8 +9,8 @@ function cs2_2779(intArg0: number, intArg1: number, strArg0: string, intArg2: nu
     }
     ifClearops(Component.interface_906.component_906_253);
     ifClearops(Component.interface_906.component_906_258);
-    ifSetOnOpt(noHook(""), Component.interface_906.component_906_253);
-    ifSetOnOpt(noHook(""), Component.interface_906.component_906_258);
+    ifSetOnOp(noHook(""), Component.interface_906.component_906_253);
+    ifSetOnOp(noHook(""), Component.interface_906.component_906_258);
     let int8: number = intArg7;
 
     if (intArg4 == 1) {

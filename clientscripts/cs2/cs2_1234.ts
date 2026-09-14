@@ -4,7 +4,7 @@
 // cs2_1234
 
 function cs2_1234(intArg0: number): void {
-    if (keyheldAlt() == 1) {
+    if (keyheldShift() == 1) {
         return;
     }
 

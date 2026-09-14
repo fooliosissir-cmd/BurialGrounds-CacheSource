@@ -4,7 +4,7 @@
 // cs2_6014
 
 function cs2_6014(intArg0: number): number {
-    let int1: number = activeClanSettingsGetAffinedSlot(removetags(chatPlayerNameUnfiltered()));
+    let int1: number = activeClanSettingsGetAffinedSlot(removetags(chatPlayerName()));
 
     if (int1 < 0) {
         return 0;
@@ -16,27 +16,27 @@ function cs2_6014(intArg0: number): number {
 
     switch (intArg0) {
         case 0:
-            return loadClanSettingVarbit<167>();
+            return pushVarClanSettingBit<167>();
         case 1:
-            return loadClanSettingVarbit<168>();
+            return pushVarClanSettingBit<168>();
         case 2:
-            return loadClanSettingVarbit<169>();
+            return pushVarClanSettingBit<169>();
         case 3:
-            return loadClanSettingVarbit<170>();
+            return pushVarClanSettingBit<170>();
         case 4:
-            return loadClanSettingVarbit<171>();
+            return pushVarClanSettingBit<171>();
         case 5:
-            return loadClanSettingVarbit<172>();
+            return pushVarClanSettingBit<172>();
         case 100:
-            return loadClanSettingVarbit<173>();
+            return pushVarClanSettingBit<173>();
         case 101:
-            return loadClanSettingVarbit<174>();
+            return pushVarClanSettingBit<174>();
         case 102:
-            return loadClanSettingVarbit<175>();
+            return pushVarClanSettingBit<175>();
         case 103:
-            return loadClanSettingVarbit<176>();
+            return pushVarClanSettingBit<176>();
         case 125:
-            return loadClanSettingVarbit<177>();
+            return pushVarClanSettingBit<177>();
         case 126:
             return 1;
         case 127:

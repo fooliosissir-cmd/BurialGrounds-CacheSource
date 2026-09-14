@@ -5,8 +5,8 @@
 
 function cs2_4334(intArg0: component, intArg1: component): void {
     if (activeClanSettingsGetAffinedCount() >= 5) {
-        ifSetColour(hsvtorgb(loadClanSettingVar<18>()), intArg0);
-        ifSetColour(hsvtorgb(loadClanSettingVar<19>()), intArg1);
+        ifSetColour(hsvtorgb(pushVarClanSetting<18>()), intArg0);
+        ifSetColour(hsvtorgb(pushVarClanSetting<19>()), intArg1);
     } else {
         ifSetColour(hsvtorgb(42550), intArg0);
         ifSetColour(hsvtorgb(39382), intArg1);

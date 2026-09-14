@@ -40,14 +40,14 @@ function player_kit_feet_redraw(): void {
             int6 = int5;
         } else {
             ccSetGraphic(Graphic.options_radio_buttons_0);
-            ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
-            ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
-            ccHookMouseEnter<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
-            ccHookMouseExit<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
+            ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
+            ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
+            ccSetOnMouseOver<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFFFFFF)]));
+            ccSetOnMouseLeave<1>(hook(cc_text_colour_swapper, "Iii", [event_com, ccGetId<1>(), colour(0xFF981F)]));
             ccSetOp(1, str0);
             ccSetOp<1>(1, str0);
-            ccSetOnOpt(hook(cs2_1507, "iK", [event_opindex, int4]));
-            ccSetOnOpt<1>(hook(cs2_1507, "iK", [event_opindex, int4]));
+            ccSetOnOp(hook(cs2_1507, "iK", [event_opindex, int4]));
+            ccSetOnOp<1>(hook(cs2_1507, "iK", [event_opindex, int4]));
         }
         int2 = int2 + 1;
         int5 = int5 + 19;
@@ -91,8 +91,8 @@ function player_kit_feet_redraw(): void {
         ccSetfill(true);
         ccSetPosition(int8 * ccGetWidth(), int5, 0, 0);
         ccSetColour(enumOp(type_int, type_int, Enum.player_kit_feet_colours, int2));
-        ccSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, event_comsubid, Component.interface_728.component_728_18, str0, 0, 512]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_728.component_728_18]));
+        ccSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, event_comsubid, Component.interface_728.component_728_18, str0, 0, 512]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_728.component_728_18]));
         ccCreate<1>(Component.interface_728.component_728_12, 5, ifGetNextSubId(Component.interface_728.component_728_12));
         ccSetSize<1>(ccGetWidth(), ccGetHeight(), 0, 0);
         ccSetPosition<1>(ccGetX(), ccGetY(), 0, 0);
@@ -102,11 +102,11 @@ function player_kit_feet_redraw(): void {
         } else {
             int9 = Graphic.graphic_1041;
             ccSetGraphic<1>(int9);
-            ccHookMouseExit<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int9]));
+            ccSetOnMouseLeave<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int9]));
             int9 = Graphic.graphic_1042;
-            ccHookMouseEnter<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int9]));
+            ccSetOnMouseOver<1>(hook(cc_graphic_swapper, "Iid", [event_com, ccGetId<1>(), int9]));
             ccSetOp<1>(1, str0);
-            ccSetOnOpt<1>(hook(player_kit_feet_colourbutton, "ii", [event_opindex, int10]));
+            ccSetOnOp<1>(hook(player_kit_feet_colourbutton, "ii", [event_opindex, int10]));
         }
         int2 = int2 + 1;
         if (int8 < int7 - 1) {

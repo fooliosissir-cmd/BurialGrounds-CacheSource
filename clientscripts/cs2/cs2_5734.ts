@@ -61,8 +61,8 @@ function cs2_5734(): void {
         int3 = int3 + 10;
         int4 = int4 + int3;
         str2 = "Click the stats button on the bottom right of the screen to check all your current stats.";
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1237.component_1237_14, Component.interface_1237.component_1237_20, -1, str2, 175, -1, -1, -1, 12, 3, int5, event_mousex, event_mousey]), Component.interface_1237.component_1237_20);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1237.component_1237_14]), Component.interface_1237.component_1237_20);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1237.component_1237_14, Component.interface_1237.component_1237_20, -1, str2, 175, -1, -1, -1, 12, 3, int5, event_mousex, event_mousey]), Component.interface_1237.component_1237_20);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1237.component_1237_14]), Component.interface_1237.component_1237_20);
     } else {
         ifSetHide(true, Component.interface_1237.component_1237_18);
         int3 = 0;

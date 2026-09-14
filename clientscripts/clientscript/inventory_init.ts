@@ -19,12 +19,12 @@ function inventory_init(intArg0: component, intArg1: boolean): void {
             if (int4 < int2) {
                 ccSetGraphicShadow(3153952);
                 ccSetOnTargetEnter(hook(inventory_targetmode, "1Ii", [true, event_com, event_comsubid]));
-                ccSetOnOp(hook(inventory_targetmode, "1Ii", [false, event_com, event_comsubid]));
+                ccSetOnTargetLeave(hook(inventory_targetmode, "1Ii", [false, event_com, event_comsubid]));
                 ccSetdragrenderbehaviour(2);
                 ccSetdragdeadzone(5);
                 ccSetdragdeadtime(5);
                 ccSetOnDragComplete(hook(inventory_drag, "IiIi", [event_com, event_comsubid, event_com2, event_comsubid2]));
-                ccSetOnOpt(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
+                ccSetOnOp(hook(cs2_1620, "Iiiii", [event_com, event_comsubid, 100, 0, 8]));
             } else {
                 ccSetColour(colour(0x000000));
                 ccSetTrans(255);
@@ -55,8 +55,8 @@ function inventory_init(intArg0: component, intArg1: boolean): void {
                 }
                 inventory_setophelds(int8);
                 ccSetdraggable(intArg0, -1);
-                ccSetOnMouseOver(hook(cs2_5495, "o", [int8]));
-                ccHookMouseExit(hook(cs2_5495, "o", [-1]));
+                ccSetOnMouseRepeat(hook(cs2_5495, "o", [int8]));
+                ccSetOnMouseLeave(hook(cs2_5495, "o", [-1]));
             } else {
                 ccSetHide(true);
                 ccSetOnVarTransmit(noHook(""));

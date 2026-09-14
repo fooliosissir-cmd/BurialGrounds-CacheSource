@@ -51,7 +51,7 @@ function cs2_1902(intArg0: component, intArg1: component, intArg2: component): v
             ccSetText(chatPhraseGetText(int7));
             ccSetTextFont(Graphic.p12_full);
             ccSetTextShadow(false);
-            ccHookMouseEnter(hook(cs2_1906, "iI", [int6, intArg1]));
+            ccSetOnMouseOver(hook(cs2_1906, "iI", [int6, intArg1]));
             ccSetOnClick(hook(clientscript_quickchat_phrase, "Iei", [intArg0, int7, 0]));
             int6 = int6 + 1;
         }

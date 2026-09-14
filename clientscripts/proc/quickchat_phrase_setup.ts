@@ -4,12 +4,12 @@
 // [proc,quickchat_phrase_setup]
 
 function quickchat_phrase_setup(intArg0: component, intArg1: number): void {
-    let int2: number = chatPhraseGetdynamiccommand(intArg1);
+    let int2: number = chatPhraseGetdynamiccommandcount(intArg1);
     let int3: number = 0;
 
     if (int2 > 0) {
         while (varc_134 < int2 && varc_134 < 10) {
-            int3 = chatPhraseGetdynamiccommandparamEnum(intArg1, varc_134);
+            int3 = chatPhraseGetdynamiccommand(intArg1, varc_134);
             if (int3 == 0) {
                 quickchat_phrase_listdialog(intArg1);
                 return;

@@ -8,7 +8,7 @@ function cs2_4291(): void {
     ifSetOnVarcTransmit(hook(clientscript_clansettings_list_build, "Y", [], [1516]), Component.interface_1096.component_1096_38);
     ifSetOnTimer(hook(cs2_4319, "ii", [0, 1]), Component.interface_1096.component_1096_52);
     ifSetOnClanSettingsTransmit(hook(clientscript_clansettings_interface_refresh, "", []), Component.interface_1096.component_1096_52);
-    ifSetLinkActiveClanChannel(hook(clientscript_clansettings_interface_refresh, "", []), Component.interface_1096.component_1096_52);
+    ifSetOnClanChannelTransmit(hook(clientscript_clansettings_interface_refresh, "", []), Component.interface_1096.component_1096_52);
     ifSetOnVarcTransmit(hook(cs2_118, "Y", [], [1500, 1501, 1502, 1503]), Component.interface_1096.component_1096_52);
     ifSetOnVarcStrTransmit(hook(cs2_118, "Y", [], [347]), Component.interface_1096.component_1096_52);
 
@@ -58,8 +58,8 @@ function cs2_4291(): void {
     }
 
     if (clanProfileFind() == 1) {
-        cs2_4499(Enum.clan_signpost_viewing_permission, 0, enumOp(type_int, type_string, Enum.clan_signpost_viewing_permission, loadClanVar<2811>()), -1, 4, Component.interface_1096.component_1096_211, Component.interface_1096.component_1096_221, Component.interface_1096.component_1096_223, Component.interface_1096.component_1096_222, Component.interface_1096.component_1096_340);
-        cs2_4499(Enum.clan_permissions_guest_access, 0, enumOp(type_int, type_string, Enum.clan_permissions_guest_access, loadClanSettingVarbit<292>()), -1, 4, Component.interface_1096.component_1096_196, Component.interface_1096.component_1096_206, Component.interface_1096.component_1096_208, Component.interface_1096.component_1096_207, Component.interface_1096.component_1096_340);
+        cs2_4499(Enum.clan_signpost_viewing_permission, 0, enumOp(type_int, type_string, Enum.clan_signpost_viewing_permission, pushVarClan<2811>()), -1, 4, Component.interface_1096.component_1096_211, Component.interface_1096.component_1096_221, Component.interface_1096.component_1096_223, Component.interface_1096.component_1096_222, Component.interface_1096.component_1096_340);
+        cs2_4499(Enum.clan_permissions_guest_access, 0, enumOp(type_int, type_string, Enum.clan_permissions_guest_access, pushVarClanSettingBit<292>()), -1, 4, Component.interface_1096.component_1096_196, Component.interface_1096.component_1096_206, Component.interface_1096.component_1096_208, Component.interface_1096.component_1096_207, Component.interface_1096.component_1096_340);
     } else {
         cs2_4499(Enum.clan_signpost_viewing_permission, 0, "N/A", -1, 4, Component.interface_1096.component_1096_211, Component.interface_1096.component_1096_221, Component.interface_1096.component_1096_223, Component.interface_1096.component_1096_222, Component.interface_1096.component_1096_340);
         cs2_4499(Enum.clan_permissions_guest_access, 0, "N/A", -1, 4, Component.interface_1096.component_1096_196, Component.interface_1096.component_1096_206, Component.interface_1096.component_1096_208, Component.interface_1096.component_1096_207, Component.interface_1096.component_1096_340);

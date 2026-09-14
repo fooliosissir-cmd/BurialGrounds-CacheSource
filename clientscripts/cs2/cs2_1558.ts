@@ -52,7 +52,7 @@ function cs2_1558(intArg0: boolean): void {
     } else if (varc_1651 == 1) {
         ifSetText("Friends Chat" + "<img=3>" + ":", Component.interface_137.component_137_53);
     } else {
-        ifSetText(chatPlayerName() + "<img=3>" + ":", Component.interface_137.component_137_53);
+        ifSetText(chatPlayerNameUnfiltered() + "<img=3>" + ":", Component.interface_137.component_137_53);
     }
 
     if (getWindowMode() >= 2) {
@@ -72,7 +72,7 @@ function cs2_1558(intArg0: boolean): void {
     varc_1028 = max(min(varc_1028, stringLength(escape(varcstr_1))), 0);
     cs2_1555(0);
 
-    if (stringLength(chatPlayerName()) > 0) {
+    if (stringLength(chatPlayerNameUnfiltered()) > 0) {
         ifSetOnTimer(noHook(""), Component.interface_137.component_137_57);
     } else {
         ifSetOnTimer(hook(cs2_4308, "1", [intArg0]), Component.interface_137.component_137_57);

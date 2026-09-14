@@ -6,7 +6,7 @@
 function clientscript_lobby_popup_close(): void {
     proc_lobby_popup_close();
 
-    if (userDetailLobbyPlayage() == 0 || compare(subString(chatPlayerNameUnfiltered(), 0, 1), "#") == 0) {
+    if (userDetailLobbyPlayage() == 0 || compare(subString(chatPlayerName(), 0, 1), "#") == 0) {
         proc_lobbyscreen_leavelobby();
     }
 }

@@ -25,7 +25,7 @@ function meslayer_lastname(intArg0: number, intArg1: number, intArg2: component,
         resumeStringDialog(varcstr_meslayerinput);
         proc_meslayer_close(0);
     } else if (varc_meslayermode == 10) {
-        fcJoinChat(varcstr_meslayerinput);
+        clanJoinChat(varcstr_meslayerinput);
         proc_meslayer_close(0);
     }
 }

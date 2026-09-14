@@ -17,14 +17,14 @@ function cs2_5059(intArg0: component, intArg1: number, intArg2: number): void {
             ccSetGraphic(Graphic.aif_button_group_2_8);
         }
         if (ccFind(intArg0, int3) == 1) {
-            ccHookMouseEnter(noHook(""));
-            ccHookMouseExit(noHook(""));
+            ccSetOnMouseOver(noHook(""));
+            ccSetOnMouseLeave(noHook(""));
         }
         if (ifGetHide(Component.interface_1111.component_1111_18) == 1) {
             cs2_5063(intArg0, intArg1, false);
             if (ccFind(intArg0, int3 + 1) == 1) {
-                ccHookMouseEnter(hook(cs2_5061, "Ii11", [event_com, intArg1, true, false]));
-                ccHookMouseExit(hook(cs2_5061, "Ii11", [event_com, intArg1, false, false]));
+                ccSetOnMouseOver(hook(cs2_5061, "Ii11", [event_com, intArg1, true, false]));
+                ccSetOnMouseLeave(hook(cs2_5061, "Ii11", [event_com, intArg1, false, false]));
             }
         } else {
             if (ccFind(intArg0, int3 + 5) == 1) {
@@ -40,20 +40,20 @@ function cs2_5059(intArg0: component, intArg1: number, intArg2: number): void {
                 ccSetGraphic(Graphic.aif_settings_icon_0);
             }
             if (ccFind(intArg0, int3 + 1) == 1) {
-                ccHookMouseEnter(noHook(""));
-                ccHookMouseExit(noHook(""));
+                ccSetOnMouseOver(noHook(""));
+                ccSetOnMouseLeave(noHook(""));
             }
         }
     } else {
         cs2_5062(intArg0, intArg1, false);
         cs2_5063(intArg0, intArg1, false);
         if (ccFind(intArg0, int3) == 1) {
-            ccHookMouseEnter(hook(cs2_5060, "Ii1", [event_com, intArg1, true]));
-            ccHookMouseExit(hook(cs2_5060, "Ii1", [event_com, intArg1, false]));
+            ccSetOnMouseOver(hook(cs2_5060, "Ii1", [event_com, intArg1, true]));
+            ccSetOnMouseLeave(hook(cs2_5060, "Ii1", [event_com, intArg1, false]));
         }
         if (ccFind(intArg0, int3 + 1) == 1) {
-            ccHookMouseEnter(hook(cs2_5061, "Ii11", [event_com, intArg1, true, true]));
-            ccHookMouseExit(hook(cs2_5061, "Ii11", [event_com, intArg1, false, true]));
+            ccSetOnMouseOver(hook(cs2_5061, "Ii11", [event_com, intArg1, true, true]));
+            ccSetOnMouseLeave(hook(cs2_5061, "Ii11", [event_com, intArg1, false, true]));
         }
     }
 }

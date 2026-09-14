@@ -73,7 +73,7 @@ function cs2_5055(intArg0: number, strArg0: string, intArg1: Enum, intArg2: comp
                 ccSetPosition(0, int9, 0, 0);
                 ccSetTrans(255);
                 ccSetOp(1, "Select");
-                ccSetOnOpt(hook(clan_field_editor_menu_select, "ii1", [event_opindex, int7, false]));
+                ccSetOnOp(hook(clan_field_editor_menu_select, "ii1", [event_opindex, int7, false]));
                 ccSetHide(false);
             }
             if (ccFind(intArg3, int7 * 12 + 1) == 1) {
@@ -81,7 +81,7 @@ function cs2_5055(intArg0: number, strArg0: string, intArg1: Enum, intArg2: comp
                 ccSetPosition(0, int9, 2, 0);
                 ccSetTrans(255);
                 ccSetOp(1, "Select & open settings");
-                ccSetOnOpt(hook(clan_field_editor_menu_select, "ii1", [event_opindex, int7, true]));
+                ccSetOnOp(hook(clan_field_editor_menu_select, "ii1", [event_opindex, int7, true]));
                 ccSetHide(false);
             }
             if (ccFind(intArg3, int7 * 12 + 2) == 1) {

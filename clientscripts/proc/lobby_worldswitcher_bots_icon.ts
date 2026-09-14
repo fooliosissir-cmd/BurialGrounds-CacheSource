@@ -11,6 +11,6 @@ function lobby_worldswitcher_bots_icon(intArg0: component, intArg1: number, intA
         ccSetHide(true);
         return;
     }
-    ccHookMouseEnter(hook(cs2_3149, "Iis", [intArg0, intArg1, "Bots are allowed on this world."]));
-    ccHookMouseExit(hook(cs2_3153, "Ii", [intArg0, intArg1]));
+    ccSetOnMouseOver(hook(cs2_3149, "Iis", [intArg0, intArg1, "Bots are allowed on this world."]));
+    ccSetOnMouseLeave(hook(cs2_3153, "Ii", [intArg0, intArg1]));
 }

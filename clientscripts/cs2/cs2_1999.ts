@@ -15,9 +15,9 @@ function cs2_1999(intArg0: component, intArg1: boolean, intArg2: number, intArg3
 
     if (intArg3 == 1) {
         if (varc_lobby_video_ad_started == 1) {
-            if (browserIssupported() != 0) {
+            if (videoAdvertHasFinished() != 0) {
             }
-            if (browserIssupported() == 1) {
+            if (videoAdvertHasFinished() == 1) {
                 proc_lobbyscreen_load(intArg1, intArg2);
                 ifSetOnTimer(noHook(""), intArg0);
                 detailSoundVol(intArg4);
@@ -30,29 +30,29 @@ function cs2_1999(intArg0: component, intArg1: boolean, intArg2: number, intArg3
             }
         } else {
             if (playerMember() == 0 && int11 > 0 && int11 < int12) {
-                if (browserAgecheck(5) != 1) {
+                if (videoAdvertPlay(5) != 1) {
                 }
                 varc_lobby_video_ad_started = 1;
                 cs2_5874();
                 return;
             }
             if (dateRuneday() <= int9 + 30) {
-                if (browserAgecheck(1) != 1) {
+                if (videoAdvertPlay(1) != 1) {
                 }
                 varc_lobby_video_ad_started = 1;
                 cs2_5874();
             } else if (dateRuneday() <= int9 + 182) {
-                if (browserAgecheck(2) != 1) {
+                if (videoAdvertPlay(2) != 1) {
                 }
                 varc_lobby_video_ad_started = 1;
                 cs2_5874();
             } else if (dateRuneday() <= int9 + 365) {
-                if (browserAgecheck(3) != 1) {
+                if (videoAdvertPlay(3) != 1) {
                 }
                 varc_lobby_video_ad_started = 1;
                 cs2_5874();
             } else {
-                if (browserAgecheck(4) != 1) {
+                if (videoAdvertPlay(4) != 1) {
                 }
                 varc_lobby_video_ad_started = 1;
                 cs2_5874();

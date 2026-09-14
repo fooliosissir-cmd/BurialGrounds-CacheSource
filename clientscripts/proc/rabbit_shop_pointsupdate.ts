@@ -39,7 +39,7 @@ function proc_rabbit_shop_pointsupdate(): void {
         ccSetGraphic(Graphic.km_shoptile_0);
         if (int6 == Obj.obj_11209) {
             ccSetOp(1, "Trade points for XP");
-            ccSetOnOpt(hook(comp_sethide, "1I", [false, Component.interface_686.component_686_9]));
+            ccSetOnOp(hook(comp_sethide, "1I", [false, Component.interface_686.component_686_9]));
         } else {
             ccSetOpBase("<col=ff981f>" + ocName(int6) + "</col>");
             ccSetOp(1, "Value");
@@ -51,8 +51,8 @@ function proc_rabbit_shop_pointsupdate(): void {
             }
             ccSetOp(10, "Examine");
         }
-        ccHookMouseEnter(hook(cc_settrans, "Iii", [event_com, ccGetId() + 1, 0]));
-        ccHookMouseExit(hook(cc_settrans, "Iii", [event_com, ccGetId() + 1, 255]));
+        ccSetOnMouseOver(hook(cc_settrans, "Iii", [event_com, ccGetId() + 1, 0]));
+        ccSetOnMouseLeave(hook(cc_settrans, "Iii", [event_com, ccGetId() + 1, 255]));
         ccCreate(Component.interface_686.component_686_6, 5, ifGetNextSubId(Component.interface_686.component_686_6));
         ccSetSize(48, 52, 0, 0);
         ccSetPosition(int2, int3, 0, 0);

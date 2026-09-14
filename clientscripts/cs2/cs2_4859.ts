@@ -8,7 +8,7 @@ function cs2_4859(): void {
 
     if (clanProfileFind() == 1) {
         cs2_4855();
-        int0 = cs2_5116(loadClanVarbit<2598>(), loadClanVarbit<2580>());
+        int0 = cs2_5116(pushVarClanBit<2598>(), pushVarClanBit<2580>());
         if (int0 == -1) {
             return;
         }

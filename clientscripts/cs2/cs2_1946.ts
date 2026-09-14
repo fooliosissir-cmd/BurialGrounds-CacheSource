@@ -7,7 +7,7 @@ function cs2_1946(): void {
     let int0: number = 0;
     let str0: string = "";
 
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_810.component_810_5]), Component.interface_810.component_810_10);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_810.component_810_5]), Component.interface_810.component_810_10);
 
     if (varc_589 == 99999992) {
         ifSetText("You abandon the game!", Component.interface_810.component_810_81);
@@ -16,7 +16,7 @@ function cs2_1946(): void {
         ifSetText("", Component.interface_810.component_810_32);
         ifSetText("", Component.interface_810.component_810_33);
         str0 = "The awards tab is not available when you leave a game early.";
-        ifSetOnMouseOver(hook(cs2_38, "IIsii", [Component.interface_810.component_810_10, Component.interface_810.component_810_5, str0, 25, 189]), Component.interface_810.component_810_10);
+        ifSetOnMouseRepeat(hook(cs2_38, "IIsii", [Component.interface_810.component_810_10, Component.interface_810.component_810_5, str0, 25, 189]), Component.interface_810.component_810_10);
     } else {
         if (varc_588 == 1) {
             ifSetText(tostring(varc_597), Component.interface_810.component_810_32);

@@ -17,7 +17,7 @@ function login_popup_full(intArg0: number, intArg1: number, strArg0: string, int
     let int18: component = Component.interface_596.component_596_63;
     let int19: component = Component.interface_596.component_596_64;
 
-    if (hasBase64url() == 1) {
+    if (hasSignonKey() == 1) {
         int8 = Component.interface_975.component_975_26;
         int9 = Component.interface_975.component_975_1;
         int10 = Component.interface_975.component_975_4;

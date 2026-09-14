@@ -29,8 +29,8 @@ function cs2_5683(intArg0: number): void {
         ifSetSize(150, int1, 0, 0, Component.interface_1218.component_1218_7);
         while (int3 < int6) {
             ccCreate(Component.interface_1218.component_1218_161, 4, int4);
-            ccHookMouseEnter(hook(cs2_5708, "i", [int4]));
-            ccHookMouseExit(hook(cs2_5709, "i", [int4]));
+            ccSetOnMouseOver(hook(cs2_5708, "i", [int4]));
+            ccSetOnMouseLeave(hook(cs2_5709, "i", [int4]));
             ccSetOnClick(hook(cs2_5710, "ii", [intArg0, int4]));
             int4 = int4 + 1;
             ccSetPosition(0, int5, 0, 0);

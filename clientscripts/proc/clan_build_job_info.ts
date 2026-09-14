@@ -29,133 +29,133 @@ function clan_build_job_info(intArg0: number): [graphic, string, number, number,
             case 1:
                 str0 = "Stronghold";
                 int1 = Graphic.aif_clan_skill_plot_icons_8;
-                int6 = loadClanVarbit<2580>();
-                int7 = min(loadClanVarbit<2633>(), int6 - 1);
-                int2 = loadClanVarbit<2600>() + loadClanVarbit<2616>();
+                int6 = pushVarClanBit<2580>();
+                int7 = min(pushVarClanBit<2633>(), int6 - 1);
+                int2 = pushVarClanBit<2600>() + pushVarClanBit<2616>();
                 break;
             case 2:
                 str0 = "Storehouse";
                 int1 = Graphic.aif_clan_skill_plot_icons_9;
-                int6 = loadClanVarbit<2581>();
-                int7 = min(loadClanVarbit<2631>(), int6 - 1);
-                int2 = loadClanVarbit<2596>() + loadClanVarbit<2614>();
+                int6 = pushVarClanBit<2581>();
+                int7 = min(pushVarClanBit<2631>(), int6 - 1);
+                int2 = pushVarClanBit<2596>() + pushVarClanBit<2614>();
                 break;
             case 3:
                 str0 = "Battlefield";
                 int1 = Graphic.aif_clan_skill_plot_icons_7;
-                int6 = loadClanVarbit<2582>();
-                int7 = min(loadClanVarbit<2632>(), int6 - 1);
-                int2 = loadClanVarbit<2597>() + loadClanVarbit<2615>();
+                int6 = pushVarClanBit<2582>();
+                int7 = min(pushVarClanBit<2632>(), int6 - 1);
+                int2 = pushVarClanBit<2597>() + pushVarClanBit<2615>();
                 break;
             case 4:
                 switch (int5) {
                     case 1:
-                        int8 = loadClanVarbit<2553>();
-                        int6 = loadClanVarbit<2567>();
+                        int8 = pushVarClanBit<2553>();
+                        int6 = pushVarClanBit<2567>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2617>(), int6 - int13);
-                        int2 = loadClanVarbit<2584>() + loadClanVarbit<2602>();
+                        int7 = min(pushVarClanBit<2617>(), int6 - int13);
+                        int2 = pushVarClanBit<2584>() + pushVarClanBit<2602>();
                         break;
                     case 2:
-                        int8 = loadClanVarbit<2554>();
-                        int6 = loadClanVarbit<2568>();
+                        int8 = pushVarClanBit<2554>();
+                        int6 = pushVarClanBit<2568>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2618>(), int6 - int13);
-                        int2 = loadClanVarbit<2585>() + loadClanVarbit<2603>();
+                        int7 = min(pushVarClanBit<2618>(), int6 - int13);
+                        int2 = pushVarClanBit<2585>() + pushVarClanBit<2603>();
                         break;
                     case 3:
-                        int8 = loadClanVarbit<2555>();
-                        int6 = loadClanVarbit<2569>();
+                        int8 = pushVarClanBit<2555>();
+                        int6 = pushVarClanBit<2569>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2620>(), int6 - int13);
-                        int2 = loadClanVarbit<2586>() + loadClanVarbit<2604>();
+                        int7 = min(pushVarClanBit<2620>(), int6 - int13);
+                        int2 = pushVarClanBit<2586>() + pushVarClanBit<2604>();
                         break;
                     case 4:
-                        int8 = loadClanVarbit<2556>();
-                        int6 = loadClanVarbit<2570>();
+                        int8 = pushVarClanBit<2556>();
+                        int6 = pushVarClanBit<2570>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2621>(), int6 - int13);
-                        int2 = loadClanVarbit<2587>() + loadClanVarbit<2605>();
+                        int7 = min(pushVarClanBit<2621>(), int6 - int13);
+                        int2 = pushVarClanBit<2587>() + pushVarClanBit<2605>();
                         break;
                     case 5:
-                        int8 = loadClanVarbit<2557>();
-                        int6 = loadClanVarbit<2571>();
+                        int8 = pushVarClanBit<2557>();
+                        int6 = pushVarClanBit<2571>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2622>(), int6 - int13);
-                        int2 = loadClanVarbit<2588>() + loadClanVarbit<2606>();
+                        int7 = min(pushVarClanBit<2622>(), int6 - int13);
+                        int2 = pushVarClanBit<2588>() + pushVarClanBit<2606>();
                         break;
                     case 6:
-                        int8 = loadClanVarbit<2558>();
-                        int6 = loadClanVarbit<2572>();
+                        int8 = pushVarClanBit<2558>();
+                        int6 = pushVarClanBit<2572>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2623>(), int6 - int13);
-                        int2 = loadClanVarbit<2589>() + loadClanVarbit<2607>();
+                        int7 = min(pushVarClanBit<2623>(), int6 - int13);
+                        int2 = pushVarClanBit<2589>() + pushVarClanBit<2607>();
                         break;
                     case 7:
-                        int8 = loadClanVarbit<2560>();
-                        int6 = loadClanVarbit<2573>();
+                        int8 = pushVarClanBit<2560>();
+                        int6 = pushVarClanBit<2573>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2624>(), int6 - int13);
-                        int2 = loadClanVarbit<2590>() + loadClanVarbit<2608>();
+                        int7 = min(pushVarClanBit<2624>(), int6 - int13);
+                        int2 = pushVarClanBit<2590>() + pushVarClanBit<2608>();
                         break;
                     case 8:
-                        int8 = loadClanVarbit<2561>();
-                        int6 = loadClanVarbit<2574>();
+                        int8 = pushVarClanBit<2561>();
+                        int6 = pushVarClanBit<2574>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2625>(), int6 - int13);
-                        int2 = loadClanVarbit<2591>() + loadClanVarbit<2609>();
+                        int7 = min(pushVarClanBit<2625>(), int6 - int13);
+                        int2 = pushVarClanBit<2591>() + pushVarClanBit<2609>();
                         break;
                     case 9:
-                        int8 = loadClanVarbit<2562>();
-                        int6 = loadClanVarbit<2576>();
+                        int8 = pushVarClanBit<2562>();
+                        int6 = pushVarClanBit<2576>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2626>(), int6 - int13);
-                        int2 = loadClanVarbit<2592>() + loadClanVarbit<2610>();
+                        int7 = min(pushVarClanBit<2626>(), int6 - int13);
+                        int2 = pushVarClanBit<2592>() + pushVarClanBit<2610>();
                         break;
                     case 10:
-                        int8 = loadClanVarbit<2563>();
-                        int6 = loadClanVarbit<2577>();
+                        int8 = pushVarClanBit<2563>();
+                        int6 = pushVarClanBit<2577>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2627>(), int6 - int13);
-                        int2 = loadClanVarbit<2593>() + loadClanVarbit<2611>();
+                        int7 = min(pushVarClanBit<2627>(), int6 - int13);
+                        int2 = pushVarClanBit<2593>() + pushVarClanBit<2611>();
                         break;
                     case 11:
-                        int8 = loadClanVarbit<2564>();
-                        int6 = loadClanVarbit<2578>();
+                        int8 = pushVarClanBit<2564>();
+                        int6 = pushVarClanBit<2578>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2629>(), int6 - int13);
-                        int2 = loadClanVarbit<2594>() + loadClanVarbit<2612>();
+                        int7 = min(pushVarClanBit<2629>(), int6 - int13);
+                        int2 = pushVarClanBit<2594>() + pushVarClanBit<2612>();
                         break;
                     case 12:
-                        int8 = loadClanVarbit<2565>();
-                        int6 = loadClanVarbit<2579>();
+                        int8 = pushVarClanBit<2565>();
+                        int6 = pushVarClanBit<2579>();
                         if (int8 == 1) {
                             int13 = 1;
                         }
-                        int7 = min(loadClanVarbit<2630>(), int6 - int13);
-                        int2 = loadClanVarbit<2595>() + loadClanVarbit<2613>();
+                        int7 = min(pushVarClanBit<2630>(), int6 - int13);
+                        int2 = pushVarClanBit<2595>() + pushVarClanBit<2613>();
                         break;
                     default:
                         mes("Clan Build Tick : No skill plot found with index " + tostring(int5) + ". Please report this as a bug, quoting this line.");
@@ -167,16 +167,16 @@ function clan_build_job_info(intArg0: number): [graphic, string, number, number,
             case 5:
                 switch (int5) {
                     case 1:
-                        int8 = loadClanVarbit<2139>();
-                        int6 = loadClanVarbit<2140>();
+                        int8 = pushVarClanBit<2139>();
+                        int6 = pushVarClanBit<2140>();
                         break;
                     case 2:
-                        int8 = loadClanVarbit<2156>();
-                        int6 = loadClanVarbit<2157>();
+                        int8 = pushVarClanBit<2156>();
+                        int6 = pushVarClanBit<2157>();
                         break;
                     case 3:
-                        int8 = loadClanVarbit<2173>();
-                        int6 = loadClanVarbit<2174>();
+                        int8 = pushVarClanBit<2173>();
+                        int6 = pushVarClanBit<2174>();
                         break;
                     default:
                         mes("Clan Build Tick : No cosmetic job slot found with index " + tostring(int5) + ". Please report this as a bug, quoting this line.");

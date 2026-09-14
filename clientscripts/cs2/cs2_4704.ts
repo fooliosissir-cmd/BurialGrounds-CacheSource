@@ -89,7 +89,7 @@ function cs2_4704(): void {
         case 28:
             break;
         case 29:
-            switch (loginReply()) {
+            switch (loginDisallowResult()) {
                 case 0:
                     mes("You must have a Combat Level of at least 20 (not including Summoning) to enter a PvP world.");
                     break;

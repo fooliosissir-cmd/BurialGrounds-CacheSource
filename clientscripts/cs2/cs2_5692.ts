@@ -16,8 +16,8 @@ function cs2_5692(intArg0: number, intArg1: number, intArg2: struct): void {
         ccSetSize<1>(25, 25, 0, 0);
         ccSetGraphic<1>(Graphic.aif_locked_button_icon);
         ccSetPosition<1>(13, intArg1 + 9, 0, 0);
-        ccHookMouseEnter<1>(hook(cs2_5693, "i1", [event_comsubid, true]));
-        ccHookMouseExit<1>(hook(cs2_5694, "", []));
+        ccSetOnMouseOver<1>(hook(cs2_5693, "i1", [event_comsubid, true]));
+        ccSetOnMouseLeave<1>(hook(cs2_5694, "", []));
     } else if (structParam(intArg2, Param.skillguide_item) == -1) {
         ccSetGraphic<1>(structParam(intArg2, Param.param_2214));
     } else {
@@ -41,8 +41,8 @@ function cs2_5692(intArg0: number, intArg1: number, intArg2: struct): void {
         ccCreate<1>(Component.interface_1218.component_1218_72, 4, ifGetNextSubId(Component.interface_1218.component_1218_72));
         ccSetPosition<1>(80, intArg1 + 5, 0, 0);
         ccSetSize<1>(32, 32, 0, 0);
-        ccHookMouseEnter<1>(hook(cs2_5693, "i1", [event_comsubid, false]));
-        ccHookMouseExit<1>(hook(cs2_5694, "", []));
+        ccSetOnMouseOver<1>(hook(cs2_5693, "i1", [event_comsubid, false]));
+        ccSetOnMouseLeave<1>(hook(cs2_5694, "", []));
     }
     ccCreate<1>(Component.interface_1218.component_1218_72, 4, ifGetNextSubId(Component.interface_1218.component_1218_72));
     ccSetPosition<1>(100, intArg1 + 8, 0, 0);

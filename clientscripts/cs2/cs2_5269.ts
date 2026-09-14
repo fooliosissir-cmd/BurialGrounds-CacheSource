@@ -9,8 +9,8 @@ function cs2_5269(intArg0: number, intArg1: number, intArg2: number, intArg3: nu
     let int30: number = 0;
 
     ifSetText(strArg0, Component.interface_1137.component_1137_43);
-    ifSetOnMouseOver(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_1137.component_1137_6, strArg1, 25, 519]), Component.interface_1137.component_1137_30);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1137.component_1137_6]), Component.interface_1137.component_1137_6);
+    ifSetOnMouseRepeat(hook(cs2_1160, "IiIsii", [event_com, -1, Component.interface_1137.component_1137_6, strArg1, 25, 519]), Component.interface_1137.component_1137_30);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1137.component_1137_6]), Component.interface_1137.component_1137_6);
     ifSetText(tostring(intArg25), Component.interface_1137.component_1137_48);
     ifSetText(tostring(intArg26 + intArg27), Component.interface_1137.component_1137_39);
     ccDeleteAll(Component.interface_1137.component_1137_28);

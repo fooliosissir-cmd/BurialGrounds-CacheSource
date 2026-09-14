@@ -4,5 +4,5 @@
 // cs2_4104
 
 function cs2_4104(): void {
-    openurl("golden_joystick.ws", true);
+    openurlNoLogin("golden_joystick.ws", true);
 }

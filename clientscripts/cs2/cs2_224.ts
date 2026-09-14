@@ -5,7 +5,7 @@
 
 function cs2_224(): void {
     let int0: number = ifGetHide(Component.interface_594.component_594_61);
-    let str0: string = removetags(chatPlayerNameUnfiltered());
+    let str0: string = removetags(chatPlayerName());
     let str1: string = "";
 
     if (int0 == 1) {
@@ -26,8 +26,8 @@ function cs2_224(): void {
     ifSetScrollPos(0, 0, Component.interface_594.component_594_94);
 
     while (int1 >= 0) {
-        int3 = chatGettypebyline(int1);
-        if (int3 != 0 && int3 != 4 && int3 != 27 && int3 != 28 && int3 != 29 && int3 != 43 && int3 != 103 && int3 != 104 && int3 != 26 && int3 != 30 && int3 != 31 && compare(chatLineGetcrownedname(int1), "") != 0 && compare(chatGetbyline(int1), "") != 0) {
+        int3 = chatGethistorytype(int1);
+        if (int3 != 0 && int3 != 4 && int3 != 27 && int3 != 28 && int3 != 29 && int3 != 43 && int3 != 103 && int3 != 104 && int3 != 26 && int3 != 30 && int3 != 31 && compare(chatGethistoryname(int1), "") != 0 && compare(chatGethistorymessage(int1), "") != 0) {
             if (int3 != 6 && int3 != 19) {
                 if (int3 == 41 || int3 == 44 || int3 == 9) {
                     if (compare(str0, str1) != 0 && int3 != 6 && int3 != 19) {
@@ -35,15 +35,15 @@ function cs2_224(): void {
                     } else {
                         int5 = 14798;
                     }
-                    str3 = "<col=$text_colour>" + "[" + "</col>" + "<col=0000ff>" + chatGetClan(int1) + "</col>" + "<col=$text_colour>" + "]" + chatLineGetcrownedname(int1) + ": " + chatGetbyline(int1);
+                    str3 = "<col=$text_colour>" + "[" + "</col>" + "<col=0000ff>" + chatGethistoryclan(int1) + "</col>" + "<col=$text_colour>" + "]" + chatGethistoryname(int1) + ": " + chatGethistorymessage(int1);
                 } else {
-                    str3 = " " + chatLineGetcrownedname(int1) + ": " + chatGetbyline(int1);
+                    str3 = " " + chatGethistoryname(int1) + ": " + chatGethistorymessage(int1);
                 }
             } else {
-                str3 = "To " + chatLineGetcrownedname(int1) + ": " + chatGetbyline(int1);
+                str3 = "To " + chatGethistoryname(int1) + ": " + chatGethistorymessage(int1);
             }
             int4 = paraheight(str3, ifGetWidth(Component.interface_594.component_594_94) - 5, Graphic.p12_full);
-            if (compare(removetags(chatLineGetcrownedname(int1)), chatPlayerName()) != 0 && int3 != 6 && int3 != 19) {
+            if (compare(removetags(chatGethistoryname(int1)), chatPlayerNameUnfiltered()) != 0 && int3 != 6 && int3 != 19) {
                 int6 = 1;
                 ccCreate(Component.interface_594.component_594_93, 3, ifGetNextSubId(Component.interface_594.component_594_93));
                 ccSetPosition(0, int2 * 15 + 2, 0, 0);
@@ -51,26 +51,26 @@ function cs2_224(): void {
                 ccSetColour(colour(0x678AB0));
                 ccSetTrans(255);
                 ccSetfill(true);
-                ccHookMouseEnter(hook(cs2_237, "i", [event_comsubid]));
-                ccHookMouseExit(hook(cs2_238, "i", [event_comsubid]));
+                ccSetOnMouseOver(hook(cs2_237, "i", [event_comsubid]));
+                ccSetOnMouseLeave(hook(cs2_238, "i", [event_comsubid]));
                 ccCreate(Component.interface_594.component_594_92, 3, ifGetNextSubId(Component.interface_594.component_594_92));
                 ccSetPosition(0, int2 * 15 + 2, 0, 0);
                 ccSetSize(450, int4 * 15, 0, 0);
                 ccSetColour(colour(0x678AB0));
                 ccSetTrans(255);
                 ccSetfill(true);
-                ccHookMouseEnter(hook(clientscript_snapshot_selected_highlight, "i", [event_comsubid]));
+                ccSetOnMouseOver(hook(clientscript_snapshot_selected_highlight, "i", [event_comsubid]));
             }
             ccCreate(Component.interface_594.component_594_94, 4, ifGetNextSubId(Component.interface_594.component_594_94));
             ccSetPosition(5, int2 * 15, 0, 0);
             ccSetSize(5, 15 * int4, 1, 0);
             ccSetText(str3);
             ccSetColour(colour(0x777777));
-            str1 = removetags(chatLineGetName(int1));
+            str1 = removetags(unknownCommand5019(int1));
             if (compare(str0, str1) != 0 && int3 != 6 && int3 != 19) {
                 ccSetOpBase(str1);
                 ccSetOp(1, "Report");
-                ccSetOnOpt(hook(cs2_234, "i", [event_comsubid]));
+                ccSetOnOp(hook(cs2_234, "i", [event_comsubid]));
                 ccSetColour(colour(0x000000));
             }
             ccSetTextFont(Graphic.p12_full);

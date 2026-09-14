@@ -14,8 +14,8 @@ function cs2_2136(intArg0: component): void {
     ccSetColour(colour(0x342E10));
     ccSetTextShadow(false);
     ccSetText(enumOp(type_int, type_string, Enum.macro_certers_text, varbit_macro_certer_a));
-    ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
-    ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x342E10)]));
+    ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+    ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x342E10)]));
     ccSetOp(1, "Select");
     ccCreate(intArg0, 4, 1);
     ccSetSize(200, 32, 0, 0);
@@ -25,8 +25,8 @@ function cs2_2136(intArg0: component): void {
     ccSetColour(colour(0x342E10));
     ccSetTextShadow(false);
     ccSetText(enumOp(type_int, type_string, Enum.macro_certers_text, varbit_macro_certer_b));
-    ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
-    ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x342E10)]));
+    ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+    ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x342E10)]));
     ccSetOp(1, "Select");
     ccCreate(intArg0, 4, 2);
     ccSetSize(200, 32, 0, 0);
@@ -36,8 +36,8 @@ function cs2_2136(intArg0: component): void {
     ccSetColour(colour(0x342E10));
     ccSetTextShadow(false);
     ccSetText(enumOp(type_int, type_string, Enum.macro_certers_text, varbit_macro_certer_c));
-    ccHookMouseEnter(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
-    ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x342E10)]));
+    ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFFFFFF)]));
+    ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x342E10)]));
     ccSetOp(1, "Select");
     ccCreate<1>(intArg0, 6, 3);
     ccSetSize<1>(226, 144, 0, 0);
@@ -88,8 +88,8 @@ function cs2_2136(intArg0: component): void {
     ccSetPosition(349, varbit_macro_certer_ignorebits_2 + 148, 0, 0);
     ccSethflip(true);
     ccSetGraphic(Graphic.world_select_refresh_arrow);
-    ccHookMouseEnter(hook(cc_settrans, "Iii", [event_com, event_comsubid, 125]));
-    ccHookMouseExit(hook(cc_settrans, "Iii", [event_com, event_comsubid, 0]));
+    ccSetOnMouseOver(hook(cc_settrans, "Iii", [event_com, event_comsubid, 125]));
+    ccSetOnMouseLeave(hook(cc_settrans, "Iii", [event_com, event_comsubid, 0]));
     ccSetOp(1, "Change spin");
-    ccSetOnOpt(hook(cs2_2139, "iIiii", [event_opindex, intArg0, ccGetId<1>(), int2, int3]));
+    ccSetOnOp(hook(cs2_2139, "iIiii", [event_opindex, intArg0, ccGetId<1>(), int2, int3]));
 }

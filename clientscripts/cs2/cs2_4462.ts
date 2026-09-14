@@ -34,7 +34,7 @@ function cs2_4462(): void {
             ccSetTextShadow(true);
             ccSetOpBase("<col=ffffff>" + str0);
             ccSetOp(1, "Remove ban");
-            ccSetOnOpt(hook(cs2_4580, "", []));
+            ccSetOnOp(hook(cs2_4580, "", []));
             ccSetTextAlign(0, 0, 0);
             if (int0 % 2 != 0) {
                 ccCreate(int6, 3, ifGetNextSubId(int6));

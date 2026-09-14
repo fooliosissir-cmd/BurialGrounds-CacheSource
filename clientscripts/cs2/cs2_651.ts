@@ -31,11 +31,11 @@ function cs2_651(intArg0: number): void {
     ccSetTrans(255);
     cs2_584(int1, str0);
     let int9: number = ifGetNextSubId(int1);
-    hookMouseEnter(hook(cs2_629, "i", [intArg0]), int1);
-    hookMouseExit(hook(cs2_631, "i", [intArg0]), int1);
+    ifSetOnMouseOver(hook(cs2_629, "i", [intArg0]), int1);
+    ifSetOnMouseLeave(hook(cs2_631, "i", [intArg0]), int1);
 
     if (stockmarketIsofferempty(intArg0) == 1) {
-        ifSetOnOpt(noHook(""), int1);
+        ifSetOnOp(noHook(""), int1);
         ifSetOp(1, "", int1);
         ifSetOp(2, "", int1);
         if (intArg0 >= 2) {
@@ -96,8 +96,8 @@ function cs2_651(intArg0: number): void {
         ccSetObject(int7, int5);
         ccSetGraphicShadow(0);
         str0 = tostringLocalised(int5, 1);
-        ccSetOnMouseOver(hook(cs2_648, "IiIsii", [int1, int9, int13, str0, 25, 106]));
-        ccHookMouseExit(hook(clientscript_deltooltip, "I", [int13]));
+        ccSetOnMouseRepeat(hook(cs2_648, "IiIsii", [int1, int9, int13, str0, 25, 106]));
+        ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [int13]));
         int9 = int9 + 1;
         ccCreate(int1, 4, int9);
         ccSetPosition(48, 30, 0, 0);

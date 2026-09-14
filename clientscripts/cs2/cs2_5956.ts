@@ -9,34 +9,34 @@ function cs2_5956(intArg0: number): number {
     if (clanProfileFind() == 1) {
         switch (intArg0) {
             case 1:
-                int1 = loadClanVarbit<2835>();
+                int1 = pushVarClanBit<2835>();
                 break;
             case 2:
-                int1 = loadClanVarbit<2836>();
+                int1 = pushVarClanBit<2836>();
                 break;
             case 3:
-                int1 = loadClanVarbit<2839>();
+                int1 = pushVarClanBit<2839>();
                 break;
             case 4:
-                int1 = loadClanVarbit<2837>();
+                int1 = pushVarClanBit<2837>();
                 break;
             case 5:
-                int1 = loadClanVarbit<2842>();
+                int1 = pushVarClanBit<2842>();
                 break;
             case 6:
-                int1 = loadClanVarbit<2838>();
+                int1 = pushVarClanBit<2838>();
                 break;
             case 7:
-                int1 = loadClanVarbit<2843>();
+                int1 = pushVarClanBit<2843>();
                 break;
             case 8:
-                int1 = loadClanVarbit<2841>();
+                int1 = pushVarClanBit<2841>();
                 break;
             case 9:
-                int1 = loadClanVarbit<2840>();
+                int1 = pushVarClanBit<2840>();
                 break;
             case 10:
-                int1 = loadClanVarbit<2844>();
+                int1 = pushVarClanBit<2844>();
                 break;
         }
         return int1;

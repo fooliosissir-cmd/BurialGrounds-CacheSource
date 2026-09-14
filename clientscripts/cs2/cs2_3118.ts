@@ -37,14 +37,14 @@ function cs2_3118(intArg0: number, intArg1: component, intArg2: number, intArg3:
         cc_add_graphic(intArg1, 4, 13, 12, ifGetX(Component.interface_910.component_910_68) + (ifGetWidth(Component.interface_910.component_910_68) - 13) / 2, 4, int17, false, false, false, 0);
         cc_add_text(intArg1, 5, ifGetWidth(intArg1) - (ifGetX(Component.interface_910.component_910_70) + 2), 20, ifGetX(Component.interface_910.component_910_70) + 2, 0, "World " + tostring(intArg0) + " is running in a different language or is unavailable.", int14, Graphic.p11_full, 0, 1, 0, true);
         cc_add_text(intArg1, 6, ifGetWidth(Component.interface_910.component_910_77), 20, ifGetX(Component.interface_910.component_910_77), 0, "", colour(0x000000), Graphic.p11_full, 0, 1, 0, true);
-        ccHookMouseEnter(hook(cs2_3121, "I", [intArg1]));
-        ccHookMouseExit(hook(cs2_3123, "I", [intArg1]));
+        ccSetOnMouseOver(hook(cs2_3121, "I", [intArg1]));
+        ccSetOnMouseLeave(hook(cs2_3123, "I", [intArg1]));
         cc_add_text(intArg1, 7, ifGetWidth(Component.interface_910.component_910_78), 20, ifGetX(Component.interface_910.component_910_78), 0, "", colour(0x000000), Graphic.p11_full, 0, 1, 0, true);
-        ccHookMouseEnter(hook(cs2_3120, "I", [intArg1]));
-        ccHookMouseExit(hook(cs2_3122, "I", [intArg1]));
+        ccSetOnMouseOver(hook(cs2_3120, "I", [intArg1]));
+        ccSetOnMouseLeave(hook(cs2_3122, "I", [intArg1]));
         ccSetOp(1, "Remove");
         ccSetOpBase("Favourite");
-        ccSetOnOpt(hook(cs2_3134, "i", [intArg0]));
+        ccSetOnOp(hook(cs2_3134, "i", [intArg0]));
         return;
     }
     cc_add_rect(intArg1, 0, ifGetWidth(intArg1), 20, 0, 0, int16, true, 0);
@@ -71,17 +71,17 @@ function cs2_3118(intArg0: number, intArg1: component, intArg2: number, intArg3:
     cc_add_graphic(intArg1, 11, 17, 17, ifGetX(Component.interface_910.component_910_75) + (ifGetWidth(Component.interface_910.component_910_75) - 17) / 2, 1, int15, false, false, false, 0);
     cc_add_text(intArg1, 12, ifGetWidth(Component.interface_910.component_910_75) - 10, 20, ifGetX(Component.interface_910.component_910_76) + 5, 0, tostring(int11), int14, Graphic.p11_full, 0, 1, 0, true);
     cc_add_text(intArg1, 13, ifGetWidth(Component.interface_910.component_910_77), 20, ifGetX(Component.interface_910.component_910_77), 0, "", colour(0x000000), Graphic.p11_full, 0, 1, 0, true);
-    ccHookMouseEnter(hook(cs2_3121, "I", [intArg1]));
-    ccHookMouseExit(hook(cs2_3123, "I", [intArg1]));
+    ccSetOnMouseOver(hook(cs2_3121, "I", [intArg1]));
+    ccSetOnMouseLeave(hook(cs2_3123, "I", [intArg1]));
     ccSetOp(1, "Select");
     ccSetOpBase("World " + tostring(intArg0));
-    ccSetOnOpt(hook(cs2_3129, "iiis", [event_opindex, intArg2, intArg0, str2]));
+    ccSetOnOp(hook(cs2_3129, "iiis", [event_opindex, intArg2, intArg0, str2]));
     cc_add_text(intArg1, 14, ifGetWidth(Component.interface_910.component_910_78), 20, ifGetX(Component.interface_910.component_910_78), 0, "", colour(0x000000), Graphic.p11_full, 0, 1, 0, true);
-    ccHookMouseEnter(hook(cs2_3120, "I", [intArg1]));
-    ccHookMouseExit(hook(cs2_3122, "I", [intArg1]));
+    ccSetOnMouseOver(hook(cs2_3120, "I", [intArg1]));
+    ccSetOnMouseLeave(hook(cs2_3122, "I", [intArg1]));
     ccSetOp(1, "Remove");
     ccSetOpBase("Favourite");
-    ccSetOnOpt(hook(cs2_3134, "i", [intArg0]));
+    ccSetOnOp(hook(cs2_3134, "i", [intArg0]));
     lobby_worldswitcher_bots_icon(intArg1, 15, ifGetX(Component.interface_910.component_910_74) - 24, 2, 0, int8);
     lobby_worldswitcher_customcache_icon(intArg1, 16, ifGetX(Component.interface_910.component_910_74) - 44, 2, 0, int8);
 }

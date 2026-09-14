@@ -35,10 +35,10 @@ function cs2_2719(intArg0: component, strArg0: string, intArg1: number, strArg1:
     ccSetText(strArg0);
     cs2_2722(intArg0, false, intArg2);
     ifSetOp(1, strArg0, intArg0);
-    hookMouseEnter(hook(cs2_2721, "I11", [intArg0, true, intArg2]), intArg0);
+    ifSetOnMouseOver(hook(cs2_2721, "I11", [intArg0, true, intArg2]), intArg0);
 
     if (stringLength(strArg1) > 0) {
-        ifSetOnMouseOver(hook(cs2_378, "sIii", [strArg1, event_com, -1, event_mousex]), intArg0);
+        ifSetOnMouseRepeat(hook(cs2_378, "sIii", [strArg1, event_com, -1, event_mousex]), intArg0);
     }
-    hookMouseExit(hook(cs2_2721, "I11", [intArg0, false, intArg2]), intArg0);
+    ifSetOnMouseLeave(hook(cs2_2721, "I11", [intArg0, false, intArg2]), intArg0);
 }

@@ -5,6 +5,6 @@
 
 function cs2_4430(intArg0: component, intArg1: component): void {
     ifSetGraphic(Graphic.aif_clanchat_icons_2, intArg1);
-    ifSetOnOp(noHook(""), intArg0);
+    ifSetOnTargetLeave(noHook(""), intArg0);
     ifSetHide(true, Component.interface_1110.component_1110_86);
 }

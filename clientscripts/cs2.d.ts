@@ -288,10 +288,16 @@ type StringParam =
 
 /** `ACTIVECHATPHRASE_PREPARE` (opcode 187) */
 declare function activeChatPhrasePrepare<Operand = void>(arg0: number | boolean): void;
-/** `ACTIVECHATPHRASE_SEND` (opcode 329) */
-declare function activeChatPhraseSend<Operand = void>(): void;
+/** `ACTIVECHATPHRASE_SENDCLAN` (opcode 922) */
+declare function activeChatPhraseSendClan<Operand = void>(): void;
+/** `ACTIVECHATPHRASE_SENDCLANCHANNEL_AFFINED` (opcode 285) */
+declare function activeChatPhraseSendClanChannelAffined<Operand = void>(): void;
+/** `ACTIVECHATPHRASE_SENDCLANCHANNEL_LISTENED` (opcode 663) */
+declare function activeChatPhraseSendClanChannelListened<Operand = void>(): void;
 /** `ACTIVECHATPHRASE_SENDPRIVATE` (opcode 909) */
 declare function activeChatPhraseSendprivate<Operand = void>(arg0: string): void;
+/** `ACTIVECHATPHRASE_SENDPUBLIC` (opcode 329) */
+declare function activeChatPhraseSendpublic<Operand = void>(): void;
 /** `ACTIVECHATPHRASE_SETDYNAMICINT` (opcode 109) */
 declare function activeChatPhraseSetdynamicint<Operand = void>(arg0: number | boolean, arg1: number | boolean): void;
 /** `ACTIVECHATPHRASE_SETDYNAMICOBJ` (opcode 217) */
@@ -396,26 +402,16 @@ declare function basGetAnimReady<Operand = void>(arg0: number | boolean): number
 declare function baseColour<Operand = void>(arg0: number | boolean, arg1: number | boolean): void;
 /** `BASEIDKIT` (opcode 613) */
 declare function baseIdkit<Operand = void>(arg0: number | boolean, arg1: number | boolean): void;
-/** `BROWSER_AGECHECK` (opcode 766) */
-declare function browserAgecheck<Operand = void>(arg0: number | boolean): number;
-/** `BROWSER_CLOSE` (opcode 477) */
-declare function browserClose<Operand = void>(): void;
-/** `BROWSER_FOCUS` (opcode 576) */
-declare function browserFocus<Operand = void>(): void;
-/** `BROWSER_HASPLUGIN` (opcode 337) */
-declare function browserHasPlugin<Operand = void>(arg0: string): number;
-/** `BROWSER_ISPAGEOPEN` (opcode 420) */
-declare function browserIsPageOpen<Operand = void>(arg0: string): number;
-/** `BROWSER_ISSUPPORTED` (opcode 106) */
-declare function browserIssupported<Operand = void>(): number;
-/** `BROWSER_OPEN` (opcode 672) */
-declare function browserOpen<Operand = void>(): void;
-/** `BROWSER_REFRESH` (opcode 507) */
-declare function browserRefresh<Operand = void>(): void;
-/** `BROWSER_SETPAGE` (opcode 63) */
-declare function browserSetPage<Operand = void>(arg0: string): void;
+/** `BOOST_ADVERT_AVAILABLE` (opcode 337) */
+declare function boostAdvertAvailable<Operand = void>(arg0: string): number;
+/** `BOOST_ADVERT_EXISTS` (opcode 420) */
+declare function boostAdvertExists<Operand = void>(arg0: string): number;
+/** `BOOST_ADVERT_LAUNCH` (opcode 63) */
+declare function boostAdvertLaunch<Operand = void>(arg0: string): void;
 /** `BUG_REPORT` (opcode 558) */
 declare function bugReport<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean): void;
+/** `CAM2_ISENABLED` (opcode 151) */
+declare function cam2IsEnabled<Operand = void>(): number;
 /** `CAM_DEC_X` (opcode 868) */
 declare function camDecX<Operand = void>(): void;
 /** `CAM_DEC_Y` (opcode 8) */
@@ -436,8 +432,6 @@ declare function camIncX<Operand = void>(): void;
 declare function camIncY<Operand = void>(): void;
 /** `CAM_LOOKAT` (opcode 99) */
 declare function camLookat<Operand = void>(arg0: coord | boolean, arg1: number | boolean, arg2: number | boolean, arg3: number | boolean): void;
-/** `CAM_MODEISFOLLOWPLAYER` (opcode 151) */
-declare function camModeisfollowplayer<Operand = void>(): number;
 /** `CAM_MOVEALONG` (opcode 107) */
 declare function camMovealong<Operand = void>(arg0: number | boolean, arg1: number | boolean, arg2: number | boolean, arg3: number | boolean, arg4: number | boolean, arg5: number | boolean): void;
 /** `CAM_MOVETO` (opcode 570) */
@@ -532,12 +526,6 @@ declare function ccGetgraphicdimensions<Operand = void>(): [number, number];
 declare function ccGetmodelxof<Operand = void>(): number;
 /** `CC_GETMODELYOF` (opcode 728) */
 declare function ccGetmodelyof<Operand = void>(): number;
-/** `CC_HOOK_MOUSE_ENTER` (opcode 1) */
-declare function ccHookMouseEnter<Operand = void>(callback: unknown): void;
-/** `CC_HOOK_MOUSE_EXIT` (opcode 665) */
-declare function ccHookMouseExit<Operand = void>(callback: unknown): void;
-/** `CC_ISOPEN` (opcode 331) */
-declare function ccIsOpen<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `CC_LOADENTITYMODEL` (opcode 740) */
 declare function ccLoadEntityModel<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `CC_NPC_SETCUSTOMBODYMODEL` (opcode 588) */
@@ -636,11 +624,15 @@ declare function ccSetOnInvTransmit<Operand = void>(callback: unknown): void;
 declare function ccSetOnKey<Operand = void>(callback: unknown): void;
 /** `CC_SETONMISCTRANSMIT` (opcode 841) */
 declare function ccSetOnMiscTransmit<Operand = void>(callback: unknown): void;
-/** `CC_SETONMOUSEOVER` (opcode 207) */
+/** `CC_SETONMOUSELEAVE` (opcode 665) */
+declare function ccSetOnMouseLeave<Operand = void>(callback: unknown): void;
+/** `CC_SETONMOUSEOVER` (opcode 1) */
 declare function ccSetOnMouseOver<Operand = void>(callback: unknown): void;
-/** `CC_SETONOP` (opcode 892) */
+/** `CC_SETONMOUSEREPEAT` (opcode 207) */
+declare function ccSetOnMouseRepeat<Operand = void>(callback: unknown): void;
+/** `CC_SETONOP` (opcode 457) */
 declare function ccSetOnOp<Operand = void>(callback: unknown): void;
-/** `CC_SETONOPT` (opcode 457) */
+/** `CC_SETONOPT` (opcode 525) */
 declare function ccSetOnOpt<Operand = void>(callback: unknown): void;
 /** `CC_SETONRELEASE` (opcode 374) */
 declare function ccSetOnRelease<Operand = void>(callback: unknown): void;
@@ -654,7 +646,7 @@ declare function ccSetOnStatTransmit<Operand = void>(callback: unknown): void;
 declare function ccSetOnStockTransmit<Operand = void>(callback: unknown): void;
 /** `CC_SETONTARGETENTER` (opcode 991) */
 declare function ccSetOnTargetEnter<Operand = void>(callback: unknown): void;
-/** `CC_SETONTARGETLEAVE` (opcode 525) */
+/** `CC_SETONTARGETLEAVE` (opcode 892) */
 declare function ccSetOnTargetLeave<Operand = void>(callback: unknown): void;
 /** `CC_SETONTIMER` (opcode 957) */
 declare function ccSetOnTimer<Operand = void>(callback: unknown): void;
@@ -762,8 +754,6 @@ declare function ccSettextantimacro<Operand = void>(arg0: boolean | boolean): vo
 declare function ccSettiling<Operand = void>(arg0: boolean | boolean): void;
 /** `CC_SETVFLIP` (opcode 599) */
 declare function ccSetvflip<Operand = void>(arg0: boolean | boolean): void;
-/** `CHANGE_RENDER` (opcode 348) */
-declare function changeRender<Operand = void>(arg0: number | boolean): void;
 /** `CHAR_ISALPHA` (opcode 801) */
 declare function charIsAlpha<Operand = void>(arg0: number | boolean): number;
 /** `CHAR_ISALPHANUMERIC` (opcode 150) */
@@ -780,40 +770,40 @@ declare function charTouppercase<Operand = void>(arg0: number | boolean): number
 declare function chatCatFindphrasebyshortcut<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `CHATCAT_FINDSUBCATBYSHORTCUT` (opcode 208) */
 declare function chatCatFindsubcatbyshortcut<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
-/** `CHATCAT_GETDESC` (opcode 946) */
-declare function chatCatGetDesc<Operand = void>(arg0: number | boolean): number;
+/** `CHATCAT_GETDESC` (opcode 927) */
+declare function chatCatGetDesc<Operand = void>(arg0: number | boolean): string;
 /** `CHATCAT_GETPHRASE` (opcode 604) */
 declare function chatCatGetPhrase<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
+/** `CHATCAT_GETPHRASECOUNT` (opcode 10) */
+declare function chatCatGetPhraseCount<Operand = void>(arg0: number | boolean): number;
 /** `CHATCAT_GETPHRASESHORTCUT` (opcode 994) */
 declare function chatCatGetPhraseShortcut<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `CHATCAT_GETSUBCAT` (opcode 988) */
 declare function chatCatGetSubCat<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
-/** `CHATCAT_GETSUBCATCOUNT` (opcode 10) */
+/** `CHATCAT_GETSUBCATCOUNT` (opcode 946) */
 declare function chatCatGetSubCatCount<Operand = void>(arg0: number | boolean): number;
 /** `CHATCAT_GETSUBCATSHORTCUT` (opcode 713) */
 declare function chatCatGetSubCatShortcut<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
-/** `CHAT_GETCLAN` (opcode 622) */
-declare function chatGetClan<Operand = void>(arg0: number | boolean): string;
 /** `CHAT_GETFILTER_PRIVATE` (opcode 792) */
 declare function chatGetFilterPrivate<Operand = void>(): number;
 /** `CHAT_GETFILTER_PUBLIC` (opcode 860) */
 declare function chatGetFilterPublic<Operand = void>(): number;
 /** `CHAT_GETFILTER_TRADE` (opcode 839) */
 declare function chatGetFilterTrade<Operand = void>(): number;
-/** `CHAT_GETBYLINE` (opcode 231) */
-declare function chatGetbyline<Operand = void>(arg0: number | boolean): string;
+/** `CHAT_GETHISTORYCLAN` (opcode 622) */
+declare function chatGethistoryclan<Operand = void>(arg0: number | boolean): string;
 /** `CHAT_GETHISTORYLENGTH` (opcode 961) */
 declare function chatGethistorylength<Operand = void>(): number;
-/** `CHAT_GETTYPEBYLINE` (opcode 681) */
-declare function chatGettypebyline<Operand = void>(arg0: number | boolean): number;
-/** `CHATLINE_GETNAME` (opcode 462) */
-declare function chatLineGetName<Operand = void>(arg0: number | boolean): string;
-/** `CHATLINE_GETQUICKCHATID` (opcode 335) */
-declare function chatLineGetQuickChatId<Operand = void>(arg0: number | boolean): number;
-/** `CHATLINE_GETCROWNEDNAME` (opcode 789) */
-declare function chatLineGetcrownedname<Operand = void>(arg0: number | boolean): string;
-/** `CHATLINE_GETCYCLES20MS` (opcode 272) */
-declare function chatLineGetcycles20ms<Operand = void>(arg0: number | boolean): number;
+/** `CHAT_GETHISTORYMESSAGE` (opcode 231) */
+declare function chatGethistorymessage<Operand = void>(arg0: number | boolean): string;
+/** `CHAT_GETHISTORYNAME` (opcode 789) */
+declare function chatGethistoryname<Operand = void>(arg0: number | boolean): string;
+/** `CHAT_GETHISTORYPHRASE` (opcode 335) */
+declare function chatGethistoryphrase<Operand = void>(arg0: number | boolean): number;
+/** `CHAT_GETHISTORYTYPE` (opcode 681) */
+declare function chatGethistorytype<Operand = void>(arg0: number | boolean): number;
+/** `CHAT_GETPREVUID` (opcode 272) */
+declare function chatGetprevuid<Operand = void>(arg0: number | boolean): number;
 /** `CHATLINE_GETEFFECTFLAGS` (opcode 482) */
 declare function chatLineGeteffectflags<Operand = void>(arg0: number | boolean): number;
 /** `CHATLINE_GETSIMPLENAME` (opcode 867) */
@@ -832,13 +822,15 @@ declare function chatPhraseGetText<Operand = void>(arg0: number | boolean): stri
 declare function chatPhraseGetautoresponse<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `CHATPHRASE_GETAUTORESPONSECOUNT` (opcode 958) */
 declare function chatPhraseGetautoresponsecount<Operand = void>(arg0: number | boolean): number;
-/** `CHATPHRASE_GETDYNAMICCOMMAND` (opcode 795) */
-declare function chatPhraseGetdynamiccommand<Operand = void>(arg0: number | boolean): number;
-/** `CHATPHRASE_GETDYNAMICCOMMANDPARAM_ENUM` (opcode 324) */
-declare function chatPhraseGetdynamiccommandparamEnum<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
-/** `CHAT_PLAYERNAME` (opcode 292) */
+/** `CHATPHRASE_GETDYNAMICCOMMAND` (opcode 324) */
+declare function chatPhraseGetdynamiccommand<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
+/** `CHATPHRASE_GETDYNAMICCOMMANDCOUNT` (opcode 795) */
+declare function chatPhraseGetdynamiccommandcount<Operand = void>(arg0: number | boolean): number;
+/** `CHATPHRASE_GETDYNAMICCOMMANDPARAM_ENUM` (opcode 349) */
+declare function chatPhraseGetdynamiccommandparamEnum<Operand = void>(arg0: number | boolean, arg1: number | boolean, arg2: number | boolean): number;
+/** `CHAT_PLAYERNAME` (opcode 309) */
 declare function chatPlayerName<Operand = void>(): string;
-/** `CHAT_PLAYERNAME_UNFILTERED` (opcode 309) */
+/** `CHAT_PLAYERNAME_UNFILTERED` (opcode 292) */
 declare function chatPlayerNameUnfiltered<Operand = void>(): string;
 /** `CHAT_SENDABUSEREPORT` (opcode 257) */
 declare function chatSendAbuseReport<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean, arg3: number | string | bigint | boolean): void;
@@ -850,8 +842,34 @@ declare function chatSendpublic<Operand = void>(arg0: string): void;
 declare function chatSetFilter<Operand = void>(arg0: number | boolean, arg1: number | boolean, arg2: number | boolean): void;
 /** `CHAT_SETMODE` (opcode 118) */
 declare function chatSetMode<Operand = void>(arg0: number | boolean): void;
-/** `CHECK_JAVA_VERSION` (opcode 826) */
-declare function checkJavaVersion<Operand = void>(): number;
+/** `CLAN_GETCHATCOUNT` (opcode 1002) */
+declare function clanGetChatCount<Operand = void>(): number;
+/** `CLAN_GETCHATDISPLAYNAME` (opcode 765) */
+declare function clanGetChatDisplayName<Operand = void>(): string;
+/** `CLAN_GETCHATMINKICK` (opcode 346) */
+declare function clanGetChatMinKick<Operand = void>(): number;
+/** `CLAN_GETCHATRANK` (opcode 854) */
+declare function clanGetChatRank<Operand = void>(): number;
+/** `CLAN_GETCHATUSERNAME` (opcode 699) */
+declare function clanGetChatUserName<Operand = void>(arg0: number | boolean): string;
+/** `CLAN_GETCHATUSERNAME_UNFILTERED` (opcode 580) */
+declare function clanGetChatUserNameUnfiltered<Operand = void>(arg0: number | boolean): string;
+/** `CLAN_GETCHATUSERRANK` (opcode 394) */
+declare function clanGetChatUserRank<Operand = void>(arg0: number | boolean): number;
+/** `CLAN_GETCHATUSERWORLD` (opcode 587) */
+declare function clanGetChatUserWorld<Operand = void>(arg0: number | boolean): number;
+/** `CLAN_GETCHATUSERWORLDNAME` (opcode 943) */
+declare function clanGetChatUserWorldName<Operand = void>(arg0: number | boolean): string;
+/** `CLAN_GETCHATOWNERNAME` (opcode 338) */
+declare function clanGetchatownername<Operand = void>(): string;
+/** `CLAN_ISSELF` (opcode 802) */
+declare function clanIsself<Operand = void>(arg0: number | boolean): number;
+/** `CLAN_JOINCHAT` (opcode 293) */
+declare function clanJoinChat<Operand = void>(arg0: string): void;
+/** `CLAN_KICKUSER` (opcode 421) */
+declare function clanKickUser<Operand = void>(arg0: string): void;
+/** `CLAN_LEAVECHAT` (opcode 682) */
+declare function clanLeaveChat<Operand = void>(): void;
 /** `CLANPROFILE_FIND` (opcode 559) */
 declare function clanProfileFind<Operand = void>(): number;
 /** `CLANFORUMQFC_TOSTRING` (opcode 454) */
@@ -876,16 +894,22 @@ declare function coordY<Operand = void>(arg0: coord | boolean): number;
 declare function coordZ<Operand = void>(arg0: coord | boolean): number;
 /** `CREATE_AVAILABLEREQUEST` (opcode 654) */
 declare function createAvailablerequest<Operand = void>(arg0: string): void;
-/** `CREATE_CREATEREQUEST` (opcode 684) */
-declare function createCreaterequest<Operand = void>(arg0: number | boolean): void;
+/** `CREATE_CONNECT_REPLY` (opcode 498) */
+declare function createConnectReply<Operand = void>(): number;
+/** `CREATE_CONNECTREQUEST` (opcode 362) */
+declare function createConnectrequest<Operand = void>(): void;
+/** `CREATE_CREATEREQUEST` (opcode 686) */
+declare function createCreateRequest<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean, arg3: number | string | bigint | boolean): void;
 /** `CREATE_EMAIL_VALIDATE_REPLY` (opcode 742) */
 declare function createEmailValidateReply<Operand = void>(): number;
-/** `CREATE_GET_EMAIL` (opcode 92) */
-declare function createGetEmail<Operand = void>(): number;
-/** `CREATE_REPLY` (opcode 498) */
+/** `CREATE_GET_EMAIL` (opcode 357) */
+declare function createGetEmail<Operand = void>(): string;
+/** `CREATE_REPLY` (opcode 92) */
 declare function createReply<Operand = void>(): number;
-/** `CREATE_STEP_REACHED` (opcode 885) */
-declare function createStepReached<Operand = void>(): void;
+/** `CREATE_SETUNDER13` (opcode 885) */
+declare function createSetUnder13<Operand = void>(): void;
+/** `CREATE_STEP_REACHED` (opcode 684) */
+declare function createStepReached<Operand = void>(arg0: number | boolean): void;
 /** `CREATE_UNDER13` (opcode 569) */
 declare function createUnder13<Operand = void>(): number;
 /** `DATE_ISLEAPYEAR` (opcode 877) */
@@ -924,12 +948,10 @@ declare function detailCustomcursors<Operand = void>(arg0: number | boolean): vo
 declare function detailFlickeringOn<Operand = void>(arg0: number | boolean): void;
 /** `DETAIL_FOG_ON` (opcode 685) */
 declare function detailFogOn<Operand = void>(arg0: number | boolean): void;
-/** `DETAILGET_ACTIVETOOLKIT` (opcode 725) */
-declare function detailGetActiveToolkit<Operand = void>(): number;
-/** `DETAILGET_ANTIALIASING` (opcode 458) */
+/** `DETAILGET_ANTIALIASING` (opcode 782) */
 declare function detailGetAntialiasing<Operand = void>(): number;
-/** `DETAILGET_ANTIALIASINGPREVIEW` (opcode 782) */
-declare function detailGetAntialiasingPreview<Operand = void>(): number;
+/** `DETAILGET_ANTIALIASING_DEFAULT` (opcode 458) */
+declare function detailGetAntialiasingDefault<Operand = void>(): number;
 /** `DETAILGET_BGSOUNDVOL` (opcode 919) */
 declare function detailGetBgsoundvol<Operand = void>(): number;
 /** `DETAILGET_BLOOM` (opcode 752) */
@@ -942,12 +964,12 @@ declare function detailGetBuildArea<Operand = void>(): number;
 declare function detailGetCanchoosesafemode<Operand = void>(): number;
 /** `DETAILGET_CHOSESAFEMODE` (opcode 423) */
 declare function detailGetChosesafemode<Operand = void>(): number;
-/** `DETAILGET_CPU` (opcode 804) */
-declare function detailGetCpu<Operand = void>(): number;
-/** `DETAILGET_CPUUSAGE` (opcode 30) */
+/** `DETAILGET_CPUUSAGE` (opcode 804) */
 declare function detailGetCpuusage<Operand = void>(): number;
 /** `DETAILGET_CUSTOMCURSORS` (opcode 387) */
 declare function detailGetCustomcursors<Operand = void>(): number;
+/** `DETAILGET_DEFAULTTOOLKIT` (opcode 240) */
+declare function detailGetDefaultToolkit<Operand = void>(): number;
 /** `DETAILGET_FLICKERING_ON` (opcode 585) */
 declare function detailGetFlickeringOn<Operand = void>(): number;
 /** `DETAILGET_FOG_ON` (opcode 193) */
@@ -958,9 +980,9 @@ declare function detailGetGroundblending<Operand = void>(): number;
 declare function detailGetGrounddecorOn<Operand = void>(): number;
 /** `DETAILGET_HARDSHADOWS` (opcode 390) */
 declare function detailGetHardshadows<Operand = void>(): number;
-/** `DETAILGET_IDLEANIMS` (opcode 254) */
+/** `DETAILGET_IDLEANIMS` (opcode 794) */
 declare function detailGetIdleanims<Operand = void>(): number;
-/** `DETAILGET_IDLEANIMS_MANY` (opcode 794) */
+/** `DETAILGET_IDLEANIMS_MANY` (opcode 254) */
 declare function detailGetIdleanimsMany<Operand = void>(): number;
 /** `DETAILGET_LIGHTDETAIL_HIGH` (opcode 891) */
 declare function detailGetLightdetailHigh<Operand = void>(): number;
@@ -990,9 +1012,9 @@ declare function detailGetSpotshadowsOn<Operand = void>(): number;
 declare function detailGetStereo<Operand = void>(): number;
 /** `DETAILGET_TEXTURING` (opcode 418) */
 declare function detailGetTexturing<Operand = void>(): number;
-/** `DETAILGET_TOOLKIT` (opcode 734) */
+/** `DETAILGET_TOOLKIT` (opcode 725) */
 declare function detailGetToolkit<Operand = void>(): number;
-/** `DETAILGET_TOOLKIT_DEFAULT` (opcode 240) */
+/** `DETAILGET_TOOLKIT_DEFAULT` (opcode 734) */
 declare function detailGetToolkitDefault<Operand = void>(): number;
 /** `DETAILGET_WATERDETAIL_HIGH` (opcode 487) */
 declare function detailGetWaterDetailHigh<Operand = void>(): number;
@@ -1034,8 +1056,10 @@ declare function detailSpotshadowsOn<Operand = void>(arg0: number | boolean): vo
 declare function detailStereo<Operand = void>(arg0: number | boolean): void;
 /** `DETAIL_TEXTURING` (opcode 218) */
 declare function detailTexturing<Operand = void>(arg0: number | boolean): void;
-/** `DETAIL_TOOLKIT` (opcode 261) */
-declare function detailToolkit<Operand = void>(arg0: number | boolean, arg1: number | boolean): void;
+/** `DETAIL_TOOLKIT` (opcode 348) */
+declare function detailToolkit<Operand = void>(arg0: number | boolean): void;
+/** `DETAIL_TOOLKIT_DEFAULT` (opcode 261) */
+declare function detailToolkitDefault<Operand = void>(arg0: number | boolean, arg1: number | boolean): void;
 /** `DETAIL_WATERDETAIL_HIGH` (opcode 232) */
 declare function detailWaterDetailHigh<Operand = void>(arg0: number | boolean): void;
 /** `DETAILCANMOD_ANTIALIASING` (opcode 621) */
@@ -1046,6 +1070,8 @@ declare function detailcanmodBloom<Operand = void>(): number;
 declare function detailcanmodBuildArea<Operand = void>(): number;
 /** `DETAILCANMOD_CHARSHADOWS` (opcode 129) */
 declare function detailcanmodCharshadows<Operand = void>(): number;
+/** `DETAILCANMOD_DEFAULTTOOLKIT` (opcode 258) */
+declare function detailcanmodDefaultToolkit<Operand = void>(): number;
 /** `DETAILCANMOD_FOG` (opcode 563) */
 declare function detailcanmodFog<Operand = void>(): number;
 /** `DETAILCANMOD_GROUNDBLENDING` (opcode 504) */
@@ -1062,9 +1088,7 @@ declare function detailcanmodSkydetail<Operand = void>(): number;
 declare function detailcanmodSpotshadows<Operand = void>(): number;
 /** `DETAILCANMOD_TEXTURING` (opcode 938) */
 declare function detailcanmodTexturing<Operand = void>(): number;
-/** `DETAILCANMOD_TOOLKIT` (opcode 850) */
-declare function detailcanmodToolkit<Operand = void>(): number;
-/** `DETAILCANMOD_TOOLKIT_DEFAULT` (opcode 258) */
+/** `DETAILCANMOD_TOOLKIT_DEFAULT` (opcode 850) */
 declare function detailcanmodToolkitDefault<Operand = void>(): number;
 /** `DETAILCANMOD_WATERDETAIL` (opcode 635) */
 declare function detailcanmodWaterDetail<Operand = void>(): number;
@@ -1076,6 +1100,8 @@ declare function detailcansetBloom<Operand = void>(arg0: number | boolean): numb
 declare function detailcansetBuildArea<Operand = void>(arg0: number | boolean): number;
 /** `DETAILCANSET_CHARSHADOWS` (opcode 1001) */
 declare function detailcansetCharshadows<Operand = void>(arg0: number | boolean): number;
+/** `DETAILCANSET_DEFAULTTOOLKIT` (opcode 779) */
+declare function detailcansetDefaultToolkit<Operand = void>(arg0: number | boolean): number;
 /** `DETAILCANSET_FOG` (opcode 409) */
 declare function detailcansetFog<Operand = void>(arg0: number | boolean): number;
 /** `DETAILCANSET_GROUNDBLENDING` (opcode 865) */
@@ -1086,15 +1112,13 @@ declare function detailcansetGrounddecor<Operand = void>(arg0: number | boolean)
 declare function detailcansetMaxScreenSize<Operand = void>(arg0: number | boolean): number;
 /** `DETAILCANSET_PARTICLES` (opcode 876) */
 declare function detailcansetParticles<Operand = void>(arg0: number | boolean): number;
-/** `DETAILCANSET_RENDERER` (opcode 616) */
-declare function detailcansetRenderer<Operand = void>(arg0: number | boolean): number;
 /** `DETAILCANSET_SKYDETAIL` (opcode 53) */
 declare function detailcansetSkydetail<Operand = void>(arg0: number | boolean): number;
 /** `DETAILCANSET_SPOTSHADOWS` (opcode 58) */
 declare function detailcansetSpotshadows<Operand = void>(arg0: number | boolean): number;
 /** `DETAILCANSET_TEXTURING` (opcode 33) */
 declare function detailcansetTexturing<Operand = void>(arg0: number | boolean): number;
-/** `DETAILCANSET_TOOLKIT_DEFAULT` (opcode 779) */
+/** `DETAILCANSET_TOOLKIT_DEFAULT` (opcode 616) */
 declare function detailcansetToolkitDefault<Operand = void>(arg0: number | boolean): number;
 /** `DETAILCANSET_WATERDETAIL` (opcode 442) */
 declare function detailcansetWaterDetail<Operand = void>(arg0: number | boolean): number;
@@ -1126,34 +1150,6 @@ declare function enumOp<Operand = void>(arg0: number | boolean, arg1: number | b
 declare function enumString<Operand = void>(arg0: Enum | boolean, arg1: number | boolean): string;
 /** `ESCAPE` (opcode 49) */
 declare function escape<Operand = void>(arg0: string): string;
-/** `FC_GETCHATCOUNT` (opcode 1002) */
-declare function fcGetChatCount<Operand = void>(): number;
-/** `FC_GETCHATDISPLAYNAME` (opcode 765) */
-declare function fcGetChatDisplayName<Operand = void>(): string;
-/** `FC_GETCHATMINKICK` (opcode 346) */
-declare function fcGetChatMinKick<Operand = void>(): number;
-/** `FC_GETCHATRANK` (opcode 854) */
-declare function fcGetChatRank<Operand = void>(): number;
-/** `FC_GETCHATUSERNAME` (opcode 699) */
-declare function fcGetChatUserName<Operand = void>(arg0: number | boolean): string;
-/** `FC_GETCHATUSERNAME_UNFILTERED` (opcode 580) */
-declare function fcGetChatUserNameUnfiltered<Operand = void>(arg0: number | boolean): string;
-/** `FC_GETCHATUSERRANK` (opcode 394) */
-declare function fcGetChatUserRank<Operand = void>(arg0: number | boolean): number;
-/** `FC_GETCHATUSERWORLD` (opcode 587) */
-declare function fcGetChatUserWorld<Operand = void>(arg0: number | boolean): number;
-/** `FC_GETCHATUSERWORLDNAME` (opcode 943) */
-declare function fcGetChatUserWorldName<Operand = void>(arg0: number | boolean): string;
-/** `FC_GETCHATOWNERNAME` (opcode 338) */
-declare function fcGetchatownername<Operand = void>(): string;
-/** `FC_ISSELF` (opcode 802) */
-declare function fcIsself<Operand = void>(arg0: number | boolean): number;
-/** `FC_JOINCHAT` (opcode 293) */
-declare function fcJoinChat<Operand = void>(arg0: string): void;
-/** `FC_KICKUSER` (opcode 421) */
-declare function fcKickUser<Operand = void>(arg0: string): void;
-/** `FC_LEAVECHAT` (opcode 682) */
-declare function fcLeaveChat<Operand = void>(): void;
 /** `FORMAT_DATETIME_FROM_MINUTES` (opcode 339) */
 declare function formatDateTimeFromMinutes<Operand = void>(arg0: number | boolean): string;
 /** `FORMATMINIMENU` (opcode 6) */
@@ -1206,8 +1202,6 @@ declare function getActiveMinimenuEntry<Operand = void>(): [number, string, stri
 declare function getColTag<Operand = void>(arg0: number | boolean): string;
 /** `GET_CURRENTCURSOR` (opcode 980) */
 declare function getCurrentcursor<Operand = void>(): number;
-/** `GETCUSTOMSTRINGPARAM` (opcode 357) */
-declare function getCustomStringParam<Operand = void>(): string;
 /** `GETDEFAULTWINDOWMODE` (opcode 617) */
 declare function getDefaultWindowMode<Operand = void>(): number;
 /** `GET_DISPLAYNAME_WITHEXTRAS` (opcode 812) */
@@ -1262,16 +1256,10 @@ declare function getclipboard<Operand = void>(): string;
 declare function getdirectorypickerresult<Operand = void>(): [number, string];
 /** `GETHOSTNAME` (opcode 951) */
 declare function gethostname<Operand = void>(): string;
-/** `GETMACHINEUID` (opcode 391) */
-declare function getmachineuid<Operand = void>(): [number, number];
 /** `GETPREFERENCEFILE` (opcode 973) */
 declare function getpreferencefile<Operand = void>(arg0: number | boolean): [string, string];
-/** `HAS_BASE64URL` (opcode 447) */
-declare function hasBase64url<Operand = void>(): number;
-/** `HOOK_MOUSE_ENTER` (opcode 968) */
-declare function hookMouseEnter<Operand = void>(callback: unknown, component: number): void;
-/** `HOOK_MOUSE_EXIT` (opcode 600) */
-declare function hookMouseExit<Operand = void>(callback: unknown, component: number): void;
+/** `HAS_SIGNONKEY` (opcode 447) */
+declare function hasSignonKey<Operand = void>(): number;
 /** `HSVTORGB` (opcode 586) */
 declare function hsvtorgb<Operand = void>(arg0: number | boolean): number;
 /** `IF_CALLONRESIZE` (opcode 197) */
@@ -1376,8 +1364,6 @@ declare function ifGetScrollY<Operand = void>(arg0: component | boolean): number
 declare function ifGetTargetMask<Operand = void>(arg0: component | boolean): number;
 /** `IF_GETTEXT` (opcode 748) */
 declare function ifGetText<Operand = void>(arg0: component | boolean): string;
-/** `IF_GETTOP` (opcode 61) */
-declare function ifGetTop<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `IF_GETTRANS` (opcode 912) */
 declare function ifGetTrans<Operand = void>(arg0: component | boolean): number;
 /** `IF_GETWIDTH` (opcode 263) */
@@ -1400,8 +1386,10 @@ declare function ifGetmodelxof<Operand = void>(arg0: component | boolean): numbe
 declare function ifGetmodelyof<Operand = void>(arg0: component | boolean): number;
 /** `IF_HASSUB` (opcode 888) */
 declare function ifHasSub<Operand = void>(arg0: component | boolean): number;
-/** `IF_ISOPEN` (opcode 448) */
-declare function ifIsOpen<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
+/** `IF_HASSUBMODAL` (opcode 448) */
+declare function ifHasSubModal<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
+/** `IF_HASSUBOVERLAY` (opcode 331) */
+declare function ifHasSubOverlay<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `IF_NPC_SETCUSTOMBODYMODEL` (opcode 941) */
 declare function ifNpcSetCustomBodyModel<Operand = void>(arg0: number | boolean, arg1: number | boolean, arg2: component | boolean): void;
 /** `IF_NPC_SETCUSTOMHEADMODEL` (opcode 948) */
@@ -1434,8 +1422,6 @@ declare function ifSetGraphic<Operand = void>(arg0: graphic | boolean, arg1: com
 declare function ifSetGraphicShadow<Operand = void>(arg0: number | boolean, arg1: component | boolean): void;
 /** `IF_SETHIDE` (opcode 590) */
 declare function ifSetHide<Operand = void>(arg0: boolean | boolean, arg1: component | boolean): void;
-/** `IF_SETLINKACTIVECLANCHANNEL` (opcode 111) */
-declare function ifSetLinkActiveClanChannel<Operand = void>(callback: unknown, component: number): void;
 /** `IF_SETMODEL` (opcode 488) */
 declare function ifSetModel<Operand = void>(arg0: model | boolean, arg1: component | boolean): void;
 /** `IF_SETMODELANGLE` (opcode 605) */
@@ -1476,10 +1462,12 @@ declare function ifSetObjectWearColNonum<Operand = void>(arg0: obj | boolean, ar
 declare function ifSetOnCamFinished<Operand = void>(callback: unknown, component: number): void;
 /** `IF_SETONCHATTRANSMIT` (opcode 683) */
 declare function ifSetOnChatTransmit<Operand = void>(callback: unknown, component: number): void;
-/** `IF_SETONCLANCHANNELTRANSMIT` (opcode 625) */
+/** `IF_SETONCLANCHANNELTRANSMIT` (opcode 111) */
 declare function ifSetOnClanChannelTransmit<Operand = void>(callback: unknown, component: number): void;
 /** `IF_SETONCLANSETTINGSTRANSMIT` (opcode 401) */
 declare function ifSetOnClanSettingsTransmit<Operand = void>(callback: unknown, component: number): void;
+/** `IF_SETONCLANTRANSMIT` (opcode 625) */
+declare function ifSetOnClanTransmit<Operand = void>(callback: unknown, component: number): void;
 /** `IF_SETONCLICK` (opcode 881) */
 declare function ifSetOnClick<Operand = void>(callback: unknown, component: number): void;
 /** `IF_SETONCLICKREPEAT` (opcode 287) */
@@ -1498,11 +1486,15 @@ declare function ifSetOnInvTransmit<Operand = void>(callback: unknown, component
 declare function ifSetOnKey<Operand = void>(callback: unknown, component: number): void;
 /** `IF_SETONMISCTRANSMIT` (opcode 416) */
 declare function ifSetOnMiscTransmit<Operand = void>(callback: unknown, component: number): void;
-/** `IF_SETONMOUSEOVER` (opcode 753) */
+/** `IF_SETONMOUSELEAVE` (opcode 600) */
+declare function ifSetOnMouseLeave<Operand = void>(callback: unknown, component: number): void;
+/** `IF_SETONMOUSEOVER` (opcode 968) */
 declare function ifSetOnMouseOver<Operand = void>(callback: unknown, component: number): void;
-/** `IF_SETONOP` (opcode 770) */
+/** `IF_SETONMOUSEREPEAT` (opcode 753) */
+declare function ifSetOnMouseRepeat<Operand = void>(callback: unknown, component: number): void;
+/** `IF_SETONOP` (opcode 172) */
 declare function ifSetOnOp<Operand = void>(callback: unknown, component: number): void;
-/** `IF_SETONOPT` (opcode 172) */
+/** `IF_SETONOPT` (opcode 508) */
 declare function ifSetOnOpt<Operand = void>(callback: unknown, component: number): void;
 /** `IF_SETONRELEASE` (opcode 382) */
 declare function ifSetOnRelease<Operand = void>(callback: unknown, component: number): void;
@@ -1516,7 +1508,7 @@ declare function ifSetOnStatTransmit<Operand = void>(callback: unknown, componen
 declare function ifSetOnStockTransmit<Operand = void>(callback: unknown, component: number): void;
 /** `IF_SETONTARGETENTER` (opcode 758) */
 declare function ifSetOnTargetEnter<Operand = void>(callback: unknown, component: number): void;
-/** `IF_SETONTARGETLEAVE` (opcode 508) */
+/** `IF_SETONTARGETLEAVE` (opcode 770) */
 declare function ifSetOnTargetLeave<Operand = void>(callback: unknown, component: number): void;
 /** `IF_SETONTIMER` (opcode 300) */
 declare function ifSetOnTimer<Operand = void>(callback: unknown, component: number): void;
@@ -1648,10 +1640,10 @@ declare function invGetNum<Operand = void>(arg0: number | boolean, arg1: number 
 declare function invGetobj<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `INV_SIZE` (opcode 157) */
 declare function invSize<Operand = void>(arg0: number | boolean): number;
+/** `INV_STOCKBASE` (opcode 192) */
+declare function invStockBase<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `INV_TOTAL` (opcode 485) */
 declare function invTotal<Operand = void>(arg0: inv | boolean, arg1: obj | boolean): number;
-/** `INV_TOTALCAT` (opcode 192) */
-declare function invTotalcat<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `INV_TOTALPARAM` (opcode 696) */
 declare function invTotalparam<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `INV_TOTALPARAM_STACK` (opcode 524) */
@@ -1678,56 +1670,46 @@ declare function isTargetedEntity<Operand = void>(): number;
 declare function itemFindParamInt<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean, arg3: number | string | bigint | boolean): number;
 /** `ITEM_FIND_PARAMSTR` (opcode 264) */
 declare function itemFindParamStr<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean, arg3: number | string | bigint | boolean): number;
-/** `KEYHELD_ALT` (opcode 334) */
+/** `JAVA_VERSION_SUPPORTED` (opcode 826) */
+declare function javaVersionSupported<Operand = void>(): number;
+/** `KEYHELD_ALT` (opcode 290) */
 declare function keyheldAlt<Operand = void>(): number;
-/** `KEYHELD_CTRL` (opcode 290) */
+/** `KEYHELD_CTRL` (opcode 759) */
 declare function keyheldCtrl<Operand = void>(): number;
-/** `KEYHELD_SHIFT` (opcode 759) */
+/** `KEYHELD_SHIFT` (opcode 334) */
 declare function keyheldShift<Operand = void>(): number;
-/** `LOAD_CLAN_SETTING_VAR` (opcode 73) */
-declare function loadClanSettingVar<Operand = void>(): number;
-/** `LOAD_CLAN_SETTING_VAR_LONG` (opcode 83) */
-declare function loadClanSettingVarLong<Operand = void>(): bigint;
-/** `LOAD_CLAN_SETTING_VAR_STRING` (opcode 910) */
-declare function loadClanSettingVarString<Operand = void>(): string;
-/** `LOAD_CLAN_SETTING_VARBIT` (opcode 147) */
-declare function loadClanSettingVarbit<Operand = void>(): number;
-/** `LOAD_CLAN_VAR` (opcode 717) */
-declare function loadClanVar<Operand = void>(): number;
 /** `LOAD_CLAN_VAR_LONG` (opcode 215) */
 declare function loadClanVarLong<Operand = void>(): bigint;
 /** `LOAD_CLAN_VAR_STRING` (opcode 995) */
 declare function loadClanVarString<Operand = void>(): string;
-/** `LOAD_CLAN_VARBIT` (opcode 220) */
-declare function loadClanVarbit<Operand = void>(): number;
 /** `LOBBY_ENTERLOBBY` (opcode 19) */
 declare function lobbyEnterLobby<Operand = void>(arg0: string, arg1: string): void;
 /** `LOBBY_ENTERLOBBYREPLY` (opcode 945) */
 declare function lobbyEnterLobbyReply<Operand = void>(): number;
 /** `LOBBY_ENTERLOBBY_SOCIAL_NETWORK` (opcode 506) */
 declare function lobbyEnterLobbySocialNetwork<Operand = void>(arg0: number | boolean): void;
-/** `LOBBY_ENTERGAME` (opcode 362) */
+/** `LOBBY_ENTERGAME` (opcode 182) */
 declare function lobbyEntergame<Operand = void>(): void;
 /** `LOBBY_ENTERGAMEREPLY` (opcode 422) */
 declare function lobbyEntergamereply<Operand = void>(): number;
-/** `LOBBY_LEAVELOBBY` (opcode 182) */
+/** `LOBBY_LEAVELOBBY` (opcode 242) */
 declare function lobbyLeaveLobby<Operand = void>(): void;
 /** `LOGIN_CANCEL` (opcode 509) */
 declare function loginCancel<Operand = void>(): void;
 /** `LOGIN_CONTINUE` (opcode 273) */
 declare function loginContinue<Operand = void>(): void;
-/** `LOGIN_HANDSHAKE_CODE` (opcode 44) */
-declare function loginHandshakeCode<Operand = void>(): number;
+/** `LOGIN_DISALLOWRESULT` (opcode 551) */
+declare function loginDisallowResult<Operand = void>(): number;
+/** `LOGIN_DISALLOWTRIGGER` (opcode 917) */
+declare function loginDisallowTrigger<Operand = void>(): number;
+/** `LOGIN_HOPTIME` (opcode 9) */
+declare function loginHopTime<Operand = void>(): number;
 /** `LOGIN_INPROGRESS` (opcode 875) */
 declare function loginInprogress<Operand = void>(): number;
 /** `LOGIN_LAST_TRANSFER_REPLY` (opcode 666) */
 declare function loginLastTransferReply<Operand = void>(): [number, number, number];
-/** `LOGIN_QUEUE_POSITION` (opcode 9) */
+/** `LOGIN_QUEUE_POSITION` (opcode 44) */
 declare function loginQueuePosition<Operand = void>(): number;
-/** `LOGIN_REPLY` (opcode 551) */
-declare function loginReply<Operand = void>(): number;
-/** `LOGIN_REPLY_EXTRAINFO` (opcode 917) */
-declare function loginReplyExtrainfo<Operand = void>(): number;
 /** `LOGIN_REPLY_WORLD_ALT` (opcode 1003) */
 declare function loginReplyWorldAlt<Operand = void>(): number;
 /** `LOGIN_REQUEST` (opcode 831) */
@@ -1736,8 +1718,6 @@ declare function loginRequest<Operand = void>(arg0: string, arg1: string): void;
 declare function loginRequestSocialNetwork<Operand = void>(arg0: number | boolean): void;
 /** `LOGIN_RESETREPLY` (opcode 171) */
 declare function loginResetReply<Operand = void>(): void;
-/** `LOGOUT` (opcode 242) */
-declare function logout<Operand = void>(): void;
 /** `LOWERCASE` (opcode 556) */
 declare function lowercase<Operand = void>(arg0: string): string;
 /** `MAP_ISOWNER` (opcode 214) */
@@ -1754,10 +1734,10 @@ declare function mapWorld<Operand = void>(): number;
 declare function max<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `MEC_CATEGORY` (opcode 976) */
 declare function mecCategory<Operand = void>(arg0: mapelement | boolean): number;
-/** `MEC_PARAM` (opcode 230) */
-declare function mecParam<Operand = void>(arg0: mapelement | boolean, arg1: param | boolean): any;
 /** `MEC_GRAPHIC` (opcode 631) */
 declare function mecGraphic<Operand = void>(arg0: mapelement | boolean): number;
+/** `MEC_PARAM` (opcode 230) */
+declare function mecParam<Operand = void>(arg0: mapelement | boolean, arg1: param | boolean): any;
 /** `MEC_TEXT` (opcode 985) */
 declare function mecText<Operand = void>(arg0: mapelement | boolean): string;
 /** `MEC_TEXTSIZE` (opcode 757) */
@@ -1770,14 +1750,20 @@ declare function mesTyped<Operand = void>(arg0: number | string | bigint | boole
 declare function min<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `MINIMENU_SETMAXENTRIES` (opcode 964) */
 declare function minimenuSetmaxentries<Operand = void>(arg0: number | boolean): void;
+/** `MINIMENUOPEN` (opcode 61) */
+declare function minimenuopen<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `MOVECOORD` (opcode 48) */
 declare function moveCoord<Operand = void>(arg0: coord | boolean, arg1: number | boolean, arg2: number | boolean, arg3: number | boolean): number;
+/** `NC_PARAM` (opcode 425) */
+declare function ncParam<Operand = void>(arg0: npc | boolean, arg1: param | boolean): any;
 /** `NOOP` (opcode 429) */
 declare function noop<Operand = void>(): void;
 /** `NOT` (opcode 534) */
 declare function not<Operand = void>(arg0: number | boolean): number;
-/** `NPC_PARAM` (opcode 425) */
-declare function npcParam<Operand = void>(arg0: npc | boolean, arg1: param | boolean): any;
+/** `NOTIFY_ACCOUNTCREATED` (opcode 477) */
+declare function notifyAccountcreated<Operand = void>(): void;
+/** `NOTIFY_ACCOUNTCREATESTARTED` (opcode 672) */
+declare function notifyAccountcreatestarted<Operand = void>(): void;
 /** `NPC_TYPE` (opcode 974) */
 declare function npcType<Operand = void>(): number;
 /** `OBJECT_PARAM` (opcode 935) */
@@ -1826,10 +1812,10 @@ declare function opCount<Operand = void>(): number;
 declare function opPlayer<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean): void;
 /** `OPENDIRECTORYPICKER` (opcode 400) */
 declare function opendirectorypicker<Operand = void>(arg0: string): void;
-/** `OPENURL` (opcode 355) */
-declare function openurl<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean): void;
-/** `OPENURL_NOLOGIN` (opcode 577) */
-declare function openurlNoLogin<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean): void;
+/** `OPENURL` (opcode 577) */
+declare function openurl<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean): void;
+/** `OPENURL_NOLOGIN` (opcode 355) */
+declare function openurlNoLogin<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean): void;
 /** `OPENURL_SHIM` (opcode 343) */
 declare function openurlShim<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean, arg3: number | string | bigint | boolean): void;
 /** `OPPLAYERT` (opcode 637) */
@@ -1848,22 +1834,24 @@ declare function playerdemo<Operand = void>(): number;
 declare function playermod<Operand = void>(): number;
 /** `PLAYERMODLEVEL` (opcode 718) */
 declare function playermodlevel<Operand = void>(): number;
-/** `POP_2_INT` (opcode 65) */
-declare function pop2Int<Operand = void>(arg0: number | boolean, arg1: number | boolean): void;
 /** `POW` (opcode 645) */
 declare function pow<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
 /** `PROFILE_CPU` (opcode 930) */
 declare function profileCpu<Operand = void>(): number;
-/** `QC_GETNAME` (opcode 927) */
-declare function qcGetName<Operand = void>(arg0: number | boolean): string;
-/** `QC_GETPHRASEVALUE` (opcode 349) */
-declare function qcGetPhraseValue<Operand = void>(arg0: number | boolean, arg1: number | boolean, arg2: number | boolean): number;
-/** `QC_SENDCLANCHATMESSAGE` (opcode 285) */
-declare function qcSendClanChatMessage<Operand = void>(): void;
-/** `QC_SENDFRIENDSCHATMESSAGE` (opcode 922) */
-declare function qcSendfriendschatmessage<Operand = void>(): void;
-/** `QC_SENDGUESTCLANCHATMESSAGE` (opcode 663) */
-declare function qcSendguestclanchatmessage<Operand = void>(): void;
+/** `PROFILE_TOOLKIT` (opcode 30) */
+declare function profileToolkit<Operand = void>(): number;
+/** `PUSH_VARCLAN` (opcode 717) */
+declare function pushVarClan<Operand = void>(): number;
+/** `PUSH_VARCLANBIT` (opcode 220) */
+declare function pushVarClanBit<Operand = void>(): number;
+/** `PUSH_VARCLANSETTING` (opcode 73) */
+declare function pushVarClanSetting<Operand = void>(): number;
+/** `PUSH_VARCLANSETTINGBIT` (opcode 147) */
+declare function pushVarClanSettingBit<Operand = void>(): number;
+/** `PUSH_VARCLANSETTING_LONG` (opcode 83) */
+declare function pushVarClanSettingLong<Operand = void>(): bigint;
+/** `PUSH_VARCLANSETTING_STRING` (opcode 910) */
+declare function pushVarClanSettingString<Operand = void>(): string;
 /** `QUEST_ALLREQMET` (opcode 152) */
 declare function questAllreqmet<Operand = void>(): void;
 /** `QUEST_FINISHED` (opcode 963) */
@@ -1948,8 +1936,6 @@ declare function runweightVisible<Operand = void>(): number;
 declare function scale<Operand = void>(arg0: number | boolean, arg1: number | boolean, arg2: number | boolean): number;
 /** `SELF_PLAYER_UID` (opcode 554) */
 declare function selfPlayerUid<Operand = void>(): number;
-/** `SEND_SIGNUP_FORM_PACKET` (opcode 686) */
-declare function sendSignupFormPacket<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean, arg3: number | string | bigint | boolean): void;
 /** `SEQ_PARAM` (opcode 404) */
 declare function seqParam<Operand = void>(arg0: seq | boolean, arg1: param | boolean): any;
 /** `SETBIT` (opcode 119) */
@@ -1964,6 +1950,8 @@ declare function setGender<Operand = void>(arg0: number | boolean): void;
 declare function setWindowMode<Operand = void>(arg0: number | boolean): void;
 /** `SETDEFAULTCURSORS` (opcode 110) */
 declare function setdefaultcursors<Operand = void>(arg0: cursor | boolean, arg1: cursor | boolean): void;
+/** `SETHARDCODEDOPCURSORS` (opcode 65) */
+declare function sethardcodedopcursors<Operand = void>(arg0: number | boolean, arg1: number | boolean): void;
 /** `SETOBJ` (opcode 925) */
 declare function setobj<Operand = void>(arg0: number | boolean, arg1: number | boolean): void;
 /** `SETRECOLPALETTE` (opcode 234) */
@@ -2052,6 +2040,8 @@ declare function textSwitch<Operand = void>(arg0: number | string | bigint | boo
 declare function tostring<Operand = void>(arg0: number | boolean): string;
 /** `TOSTRING_LOCALISED` (opcode 280) */
 declare function tostringLocalised<Operand = void>(arg0: number | boolean, arg1: number | boolean): string;
+/** `UNKNOWN_COMMAND_5019` (opcode 462) */
+declare function unknownCommand5019<Operand = void>(arg0: number | boolean): string;
 /** `UNUSED_CLAN_OP` (opcode 104) */
 declare function unusedClanOp<Operand = void>(arg0: number | boolean): void;
 /** `UNUSED_LOGIN_GLOBAL_BOOL` (opcode 643) */
@@ -2092,10 +2082,20 @@ declare function userDetailLobbyRecoveryday<Operand = void>(): number;
 declare function userDetailLobbyUnreadmessages<Operand = void>(): number;
 /** `USERDETAIL_QUICKCHAT` (opcode 201) */
 declare function userDetailQuickChat<Operand = void>(): number;
+/** `USERFLOWFLAGS` (opcode 391) */
+declare function userflowflagsOp<Operand = void>(): [number, number];
 /** `VALIDATECACHEDIRECTORY` (opcode 521) */
 declare function validatecachedirectory<Operand = void>(arg0: string): number;
+/** `VIDEO_ADVERT_ALLOW_SKIP` (opcode 576) */
+declare function videoAdvertAllowSkip<Operand = void>(): void;
+/** `VIDEO_ADVERT_FORCE_REMOVE` (opcode 507) */
+declare function videoAdvertForceRemove<Operand = void>(): void;
+/** `VIDEO_ADVERT_HAS_FINISHED` (opcode 106) */
+declare function videoAdvertHasFinished<Operand = void>(): number;
 /** `VIDEOADVERT_ISSUPPORTED` (opcode 548) */
 declare function videoAdvertIssupported<Operand = void>(): number;
+/** `VIDEO_ADVERT_PLAY` (opcode 766) */
+declare function videoAdvertPlay<Operand = void>(arg0: number | boolean): number;
 /** `VIEWPORT_CLAMPFOV` (opcode 47) */
 declare function viewportClampfov<Operand = void>(arg0: number | boolean, arg1: number | boolean, arg2: number | boolean, arg3: number | boolean): void;
 /** `VIEWPORT_GETZOOM` (opcode 403) */
@@ -2144,8 +2144,8 @@ declare function worldMapFlashelement<Operand = void>(arg0: mapelement | boolean
 declare function worldMapFlashelementcategory<Operand = void>(arg0: number | boolean): void;
 /** `WORLDMAP_GETCONFIGORIGIN` (opcode 405) */
 declare function worldMapGetConfigOrigin<Operand = void>(arg0: worldmap | boolean): [number, number];
-/** `WORLDMAP_GETCONFIGSIZE` (opcode 16) */
-declare function worldMapGetConfigSize<Operand = void>(): [number, number];
+/** `WORLDMAP_GETCONFIGSIZE` (opcode 306) */
+declare function worldMapGetConfigSize<Operand = void>(arg0: worldmap | boolean): [number, number];
 /** `WORLDMAP_GETCONFIGZOOM` (opcode 923) */
 declare function worldMapGetConfigZoom<Operand = void>(arg0: worldmap | boolean): number;
 /** `WORLDMAP_GETDISPLAYCOORD` (opcode 603) */
@@ -2156,8 +2156,8 @@ declare function worldMapGetDisplayPosition<Operand = void>(): [number, number];
 declare function worldMapGetMap<Operand = void>(arg0: coord | boolean): number;
 /** `WORLDMAP_GETMAPNAME` (opcode 726) */
 declare function worldMapGetMapName<Operand = void>(arg0: worldmap | boolean): string;
-/** `WORLDMAP_GETSIZE` (opcode 306) */
-declare function worldMapGetSize<Operand = void>(arg0: worldmap | boolean): [number, number];
+/** `WORLDMAP_GETSIZE` (opcode 16) */
+declare function worldMapGetSize<Operand = void>(): [number, number];
 /** `WORLDMAP_GETZOOM` (opcode 731) */
 declare function worldMapGetZoom<Operand = void>(): number;
 /** `WORLDMAP_GETCURRENTMAP` (opcode 775) */

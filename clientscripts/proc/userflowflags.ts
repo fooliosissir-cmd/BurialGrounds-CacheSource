@@ -7,7 +7,7 @@ function userflowflags(intArg0: number): boolean {
     if (intArg0 < 0 || intArg0 > 63) {
         return false;
     }
-    let [int1, int2] = getmachineuid();
+    let [int1, int2] = userflowflagsOp();
 
     if (intArg0 < 32) {
         return int_to_bool(testBit(int2, intArg0));

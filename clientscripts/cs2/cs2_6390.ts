@@ -32,8 +32,8 @@ function cs2_6390(): void {
         int2 = Graphic.graphic_11729;
     }
     ifSetGraphic(int0, Component.interface_1307.component_1307_28);
-    hookMouseExit(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_28, int0]), Component.interface_1307.component_1307_28);
-    hookMouseEnter(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_28, int1]), Component.interface_1307.component_1307_28);
+    ifSetOnMouseLeave(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_28, int0]), Component.interface_1307.component_1307_28);
+    ifSetOnMouseOver(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_28, int1]), Component.interface_1307.component_1307_28);
     ifSetOnRelease(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_28, int1]), Component.interface_1307.component_1307_28);
     ifSetOnClick(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_28, int2]), Component.interface_1307.component_1307_28);
     ifSetHide(int3, Component.interface_1307.component_1307_29);
@@ -50,8 +50,8 @@ function cs2_6390(): void {
         int2 = Graphic.graphic_11735;
     }
     ifSetGraphic(int0, Component.interface_1307.component_1307_45);
-    hookMouseExit(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_45, int0]), Component.interface_1307.component_1307_45);
-    hookMouseEnter(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_45, int1]), Component.interface_1307.component_1307_45);
+    ifSetOnMouseLeave(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_45, int0]), Component.interface_1307.component_1307_45);
+    ifSetOnMouseOver(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_45, int1]), Component.interface_1307.component_1307_45);
     ifSetOnRelease(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_45, int1]), Component.interface_1307.component_1307_45);
     ifSetOnClick(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_45, int2]), Component.interface_1307.component_1307_45);
     ifSetHide(int3, Component.interface_1307.component_1307_46);
@@ -68,8 +68,8 @@ function cs2_6390(): void {
         int2 = Graphic.graphic_11732;
     }
     ifSetGraphic(int0, Component.interface_1307.component_1307_47);
-    hookMouseExit(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_47, int0]), Component.interface_1307.component_1307_47);
-    hookMouseEnter(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_47, int1]), Component.interface_1307.component_1307_47);
+    ifSetOnMouseLeave(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_47, int0]), Component.interface_1307.component_1307_47);
+    ifSetOnMouseOver(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_47, int1]), Component.interface_1307.component_1307_47);
     ifSetOnRelease(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_47, int1]), Component.interface_1307.component_1307_47);
     ifSetOnClick(hook(graphic_swapper, "Id", [Component.interface_1307.component_1307_47, int2]), Component.interface_1307.component_1307_47);
     ifSetHide(int3, Component.interface_1307.component_1307_48);

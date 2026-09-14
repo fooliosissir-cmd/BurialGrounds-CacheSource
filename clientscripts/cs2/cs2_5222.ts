@@ -35,6 +35,6 @@ function cs2_5222(intArg0: number): void {
     if (ifGetX(int4) < ifGetWidth(int5) / 2 - 50) {
         int6 = 1;
     }
-    ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_153, int3, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int6, event_mousex, event_mousey]), int3);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_153]), int3);
+    ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1261.component_1261_153, int3, -1, str0, 120, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, int6, event_mousex, event_mousey]), int3);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1261.component_1261_153]), int3);
 }

@@ -33,14 +33,14 @@ function cs2_1348(intArg0: Enum, intArg1: number, intArg2: component, intArg3: g
         ccSetTextFont(intArg10);
         if (int19 >= intArg1) {
             ccSetColour(intArg8);
-            ccHookMouseExit(hook(cs2_1354, "Iii", [intArg4, int20, intArg8]));
+            ccSetOnMouseLeave(hook(cs2_1354, "Iii", [intArg4, int20, intArg8]));
             ccSetOnClick(hook(cs2_1350, "IIIIiisi", [intArg2, intArg4, intArg5, intArg6, intArg11, intArg12, str0, intArg8]));
         } else {
             ccSetColour(intArg7);
-            ccHookMouseExit(hook(cs2_1354, "Iii", [intArg4, int20, intArg7]));
+            ccSetOnMouseLeave(hook(cs2_1354, "Iii", [intArg4, int20, intArg7]));
             ccSetOnClick(hook(cs2_1350, "IIIIiisi", [intArg2, intArg4, intArg5, intArg6, intArg11, intArg12, str0, intArg7]));
         }
-        ccHookMouseEnter(hook(cs2_1353, "Iii", [intArg4, int20, intArg9]));
+        ccSetOnMouseOver(hook(cs2_1353, "Iii", [intArg4, int20, intArg9]));
         int19 = int19 + 1;
     }
 

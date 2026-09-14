@@ -11,7 +11,7 @@ function cs2_4362(intArg0: number, intArg1: component, intArg2: component, intAr
     let int12: Enum = enumOp(type_int, type_enum, Enum.enum_3689, intArg6);
     let str0: string = fromDate(intArg4) + " at " + enumOp(type_int, type_string, Enum.clan_noticeboard_event_time, intArg5);
 
-    if (loadClanSettingVarbit<5>() == 0) {
+    if (pushVarClanSettingBit<5>() == 0) {
         str0 = str0 + " Game Time";
     } else {
         str0 = str0 + " Clan Local Time";
@@ -26,7 +26,7 @@ function cs2_4362(intArg0: number, intArg1: component, intArg2: component, intAr
     if (intArg11 == 1) {
         str0 = str0 + "<br>" + "Attendance is mandatory";
     }
-    ifSetOnOpt(hook(clan_noticeboard_event_show, "is\xa7Iiiiii", [intArg0, str0, longArg0, intArg2, intArg4, intArg5, intArg9, intArg8, intArg6]), intArg1);
+    ifSetOnOp(hook(clan_noticeboard_event_show, "is\xa7Iiiiii", [intArg0, str0, longArg0, intArg2, intArg4, intArg5, intArg9, intArg8, intArg6]), intArg1);
     ifSetGraphic(enumOp(type_int, type_graphic, Enum.clan_noticeboard_event_type_graphic, intArg6), intArg3);
     ifSetGraphic(Graphic.aif_notetabs_0, intArg2);
 }

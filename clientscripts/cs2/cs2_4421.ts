@@ -9,7 +9,7 @@ function cs2_4421(intArg0: component, intArg1: component, intArg2: number, intAr
 
     if (intArg2 >= dateRuneday() && intArg5 > 0 && intArg4 > 0 && intArg6 > 0) {
         str0 = fromDate(intArg2) + "<br>" + enumOp(type_int, type_string, Enum.clan_noticeboard_event_time, intArg3);
-        if (loadClanSettingVarbit<5>() == 0) {
+        if (pushVarClanSettingBit<5>() == 0) {
             str0 = str0 + " Game time:";
         } else {
             str0 = str0 + " Clan time:";
@@ -30,7 +30,7 @@ function cs2_4421(intArg0: component, intArg1: component, intArg2: number, intAr
         ifSetText(str0, intArg1);
         if (longArg0 != -1n) {
             ifSetHide(false, Component.interface_1107.component_1107_136);
-            ifSetOnOpt(hook(cs2_4330, "\xa7", [longArg0]), Component.interface_1107.component_1107_136);
+            ifSetOnOp(hook(cs2_4330, "\xa7", [longArg0]), Component.interface_1107.component_1107_136);
         } else {
             ifSetOnClick(noHook(""), Component.interface_1107.component_1107_136);
             ifSetHide(true, Component.interface_1107.component_1107_52);

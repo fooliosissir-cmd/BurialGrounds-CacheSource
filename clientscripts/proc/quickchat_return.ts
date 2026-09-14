@@ -31,8 +31,8 @@ function proc_quickchat_return(intArg0: component, intArg1: number): void {
     int4 = enumOp(type_int, type_component, Enum.enum_1551, intArg1);
 
     while (ccFind(int3, int2) == 1) {
-        ccHookMouseEnter(hook(cs2_1082, "iIi", [intArg1, int4, int2]));
-        ccHookMouseExit(hook(cs2_1083, "iIi", [intArg1, int4, int2]));
+        ccSetOnMouseOver(hook(cs2_1082, "iIi", [intArg1, int4, int2]));
+        ccSetOnMouseLeave(hook(cs2_1083, "iIi", [intArg1, int4, int2]));
         if (ccFind<1>(int4, int2) == 1) {
             ccSetHide<1>(true);
         }

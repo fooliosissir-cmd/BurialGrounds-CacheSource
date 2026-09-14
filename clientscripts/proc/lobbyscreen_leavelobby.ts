@@ -5,5 +5,5 @@
 
 function proc_lobbyscreen_leavelobby(): void {
     worldListPingworlds(false);
-    logout();
+    lobbyLeaveLobby();
 }

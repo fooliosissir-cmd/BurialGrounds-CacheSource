@@ -63,7 +63,7 @@ function ignore_update(): void {
         ccSetText(str2);
         ccSetOpBase("<col=ffffff>" + str0);
         ccSetOp(1, "Remove");
-        ccSetOnOpt(hook(ignore_op, "s", [ignoreGetNameUnfiltered(int5)]));
+        ccSetOnOp(hook(ignore_op, "s", [ignoreGetNameUnfiltered(int5)]));
         if (int6 == 1) {
             int7 = stringWidth("Last known as: " + str1, Graphic.verdana_11pt_regular) + 8;
             if (int7 > ifGetWidth(Component.interface_550.component_550_4)) {
@@ -71,8 +71,8 @@ function ignore_update(): void {
             } else {
                 str3 = "Last known as: " + str1;
             }
-            ccSetOnMouseOver(hook(cs2_1594, "IIisii", [Component.interface_550.component_550_51, event_com, event_comsubid, str3, event_mousex, event_mousey]));
-            ccHookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_550.component_550_51]));
+            ccSetOnMouseRepeat(hook(cs2_1594, "IIisii", [Component.interface_550.component_550_51, event_com, event_comsubid, str3, event_mousex, event_mousey]));
+            ccSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_550.component_550_51]));
         }
         ccCreate(Component.interface_550.component_550_4, 5, int8 + 1);
         ccSetGraphic(Graphic.friends_changed_name);

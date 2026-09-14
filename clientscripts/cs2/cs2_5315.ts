@@ -33,9 +33,9 @@ function cs2_5315(intArg0: component, intArg1: component, intArg2: component, in
         ccSetSize(12, 13, 0, 0);
         ccSetPosition(138, 1 + int5 * int6, 0, 0);
         int10 = Graphic.aif_audio_buttons_1_1;
-        ccHookMouseEnter(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
+        ccSetOnMouseOver(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
         int10 = Graphic.aif_audio_buttons_1_0;
-        ccHookMouseExit(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
+        ccSetOnMouseLeave(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
         if (int9 < 0) {
             ccSetHide(true);
         }
@@ -45,9 +45,9 @@ function cs2_5315(intArg0: component, intArg1: component, intArg2: component, in
         ccSetSize(12, 13, 0, 0);
         ccSetPosition(151, 1 + int5 * int6, 0, 0);
         int10 = Graphic.aif_audio_buttons_1_7;
-        ccHookMouseEnter(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
+        ccSetOnMouseOver(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
         int10 = Graphic.aif_audio_buttons_1_6;
-        ccHookMouseExit(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
+        ccSetOnMouseLeave(hook(graphic_swapper_dynamic, "Iid", [event_com, event_comsubid, int10]));
         if (int9 < 0) {
             ccSetHide(true);
         }

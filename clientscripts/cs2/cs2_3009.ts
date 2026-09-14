@@ -13,6 +13,6 @@ function cs2_3009(intArg0: component, intArg1: component, intArg2: component, in
     ifSetGraphic(Graphic.graphic_2673, intArg5);
     ifSetSize(13, 88, 0, 0, intArg6);
     ifSetGraphic(Graphic.graphic_4683, intArg6);
-    hookMouseEnter(noHook(""), intArg0);
-    hookMouseExit(noHook(""), intArg0);
+    ifSetOnMouseOver(noHook(""), intArg0);
+    ifSetOnMouseLeave(noHook(""), intArg0);
 }

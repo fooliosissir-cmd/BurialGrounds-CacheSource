@@ -12,14 +12,14 @@ function graphics_options_renderer_buttons(intArg0: number, intArg1: number): vo
     let int2: boolean = true;
     let int3: boolean = true;
     let int4: boolean = true;
-    if (detailcanmodToolkit() == 1) {
+    if (detailcanmodToolkitDefault() == 1) {
         if (detailGetCanchoosesafemode() == 1 || intArg0 == 0) {
             int2 = false;
         }
-        if (detailcansetRenderer(1) < 3) {
+        if (detailcansetToolkitDefault(1) < 3) {
             int3 = false;
         }
-        if (detailcansetRenderer(3) < 3) {
+        if (detailcansetToolkitDefault(3) < 3) {
             int4 = false;
         }
     } else {

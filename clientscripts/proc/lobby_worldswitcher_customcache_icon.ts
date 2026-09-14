@@ -11,6 +11,6 @@ function lobby_worldswitcher_customcache_icon(intArg0: component, intArg1: numbe
         ccSetHide(true);
         return;
     }
-    ccHookMouseEnter(hook(cs2_3149, "Iis", [intArg0, intArg1, "This world serves its own game files. Your client fetches them when you join and switches back when you leave."]));
-    ccHookMouseExit(hook(cs2_3153, "Ii", [intArg0, intArg1]));
+    ccSetOnMouseOver(hook(cs2_3149, "Iis", [intArg0, intArg1, "This world serves its own game files. Your client fetches them when you join and switches back when you leave."]));
+    ccSetOnMouseLeave(hook(cs2_3153, "Ii", [intArg0, intArg1]));
 }

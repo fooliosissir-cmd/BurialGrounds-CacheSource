@@ -20,7 +20,7 @@ function cs2_5959(): void {
 
     if (compare(str0, "") != 0) {
         cs2_4408(Component.interface_1257.component_1257_55);
-        ifSetOnMouseOver(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1257.component_1257_84, Component.interface_1257.component_1257_55, -1, str0, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1257.component_1257_55);
-        hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_1257.component_1257_84]), Component.interface_1257.component_1257_55);
+        ifSetOnMouseRepeat(hook(cs2_4538, "IIisifdiiiiii", [Component.interface_1257.component_1257_84, Component.interface_1257.component_1257_55, -1, str0, 180, Graphic.verdana_11pt_regular, Graphic.verdana_11pt_regular, colour(0xFFFFFF), 13, 4, 0, event_mousex, event_mousey]), Component.interface_1257.component_1257_55);
+        ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_1257.component_1257_84]), Component.interface_1257.component_1257_55);
     }
 }

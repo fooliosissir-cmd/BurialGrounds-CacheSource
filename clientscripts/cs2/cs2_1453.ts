@@ -29,6 +29,6 @@ function cs2_1453(intArg0: number): void {
     ccSetdragdeadtime(5);
     ccSetOnDrag(hook(cs2_1454, "i", [event_mousey]));
     ccSetOnDragComplete(hook(cs2_1482, "I", [event_com2]));
-    ccSetOnMouseOver(hook(cs2_5495, "o", [int1]));
-    ccHookMouseExit(hook(cs2_5495, "o", [-1]));
+    ccSetOnMouseRepeat(hook(cs2_5495, "o", [int1]));
+    ccSetOnMouseLeave(hook(cs2_5495, "o", [-1]));
 }

@@ -6,8 +6,8 @@
 function cs2_5413(): void {
     let str0: string = "Shows a 'Report' option when right-clicking on other players or chat.";
 
-    ifSetOnMouseOver(hook(cs2_5332, "IIsii", [event_com, Component.interface_261.component_261_31, str0, 25, 180]), Component.interface_261.component_261_28);
-    hookMouseExit(hook(clientscript_deltooltip, "I", [Component.interface_261.component_261_31]), Component.interface_261.component_261_28);
+    ifSetOnMouseRepeat(hook(cs2_5332, "IIsii", [event_com, Component.interface_261.component_261_31, str0, 25, 180]), Component.interface_261.component_261_28);
+    ifSetOnMouseLeave(hook(clientscript_deltooltip, "I", [Component.interface_261.component_261_31]), Component.interface_261.component_261_28);
     varc_tooltip_built = 0;
 
     if (varbit_snapshot_right_click_enabled == 1) {

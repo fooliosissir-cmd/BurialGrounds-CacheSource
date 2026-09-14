@@ -9,7 +9,7 @@ function proc_quickchat_phrase(intArg0: component, intArg1: number, intArg2: num
     }
     varc_134 = 0;
 
-    if (chatPhraseGetdynamiccommand(intArg1) > 0) {
+    if (chatPhraseGetdynamiccommandcount(intArg1) > 0) {
         quickchat_phrase_setup(intArg0, intArg1);
     } else {
         quickchat_phrase_send(intArg1);

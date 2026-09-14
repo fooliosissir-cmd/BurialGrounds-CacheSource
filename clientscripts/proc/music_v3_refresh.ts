@@ -46,8 +46,8 @@ function music_v3_refresh(): void {
                     if (int3 == 0 || stringIndexofString(str0, varcstr_196, 0) != -1) {
                         ccSetOp(2, "Unlock hint");
                         ccSetColour(colour(0xFF0000));
-                        ccHookMouseExit(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFF0000)]));
-                        ccSetOnOpt<1>(noHook(""));
+                        ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0xFF0000)]));
+                        ccSetOnOp<1>(noHook(""));
                         ccSetHide(false);
                         ccSetPosition(15, int4, 0, 0);
                         ccSetPosition<1>(2, int4 + 1, 0, 0);

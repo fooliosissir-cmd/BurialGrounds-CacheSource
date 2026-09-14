@@ -7,7 +7,7 @@ function cs2_4715(intArg0: component, intArg1: component, intArg2: component, in
     if (ccFind(intArg3, intArg4) == 1) {
         ccSetText(strArg0);
         ccSetColour(intArg6);
-        ccHookMouseExit(hook(cs2_1354, "Iii", [intArg3, intArg4, intArg6]));
+        ccSetOnMouseLeave(hook(cs2_1354, "Iii", [intArg3, intArg4, intArg6]));
     }
     cs2_4714(intArg3, intArg0, intArg1, intArg2, intArg5);
 }

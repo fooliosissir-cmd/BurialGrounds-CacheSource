@@ -262,7 +262,7 @@ function chatdefault_onkey(intArg0: number, intArg1: number): void {
             }
             if (varc_1651 == 1) {
                 if (cs2_4730(int9, int10, int11, int6, int7, int8) == 0) {
-                    if (compare("", fcGetChatDisplayName()) == 0) {
+                    if (compare("", clanGetChatDisplayName()) == 0) {
                         varcstr_1 = "";
                         varc_chat_view = 0;
                         varc_1651 = 0;
@@ -398,7 +398,7 @@ function chatdefault_onkey(intArg0: number, intArg1: number): void {
                             varcstr_1 = "";
                             return;
                         }
-                    } else if (compare("", fcGetChatDisplayName()) == 0) {
+                    } else if (compare("", clanGetChatDisplayName()) == 0) {
                         varcstr_1 = "";
                         varc_chat_view = 0;
                         varc_1651 = 0;
@@ -425,7 +425,7 @@ function chatdefault_onkey(intArg0: number, intArg1: number): void {
         case 99:
         case 102:
         case 103:
-            if (keyheldAlt() == 0) {
+            if (keyheldShift() == 0) {
                 return;
             }
             varc_1028 = cs2_1553(intArg0, varc_1028, varcstr_1);

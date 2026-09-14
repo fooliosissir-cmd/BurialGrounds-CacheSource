@@ -156,8 +156,8 @@ function skillguide_initialise(): void {
         }
         ccSetSize(540, 40, 0, 0);
         ccSetPosition(5, 5, 0, 0);
-        ccHookMouseEnter(hook(cs2_5695, "i", [event_comsubid]));
-        ccHookMouseExit(hook(cs2_5696, "i", [event_comsubid]));
+        ccSetOnMouseOver(hook(cs2_5695, "i", [event_comsubid]));
+        ccSetOnMouseLeave(hook(cs2_5696, "i", [event_comsubid]));
         ccSetOnClick(hook(cs2_5697, "iJs", [event_comsubid, int9, structParam(int9, Param.skillguide_info)]));
         array0[int6] = int6;
         int6 = int6 + 1;

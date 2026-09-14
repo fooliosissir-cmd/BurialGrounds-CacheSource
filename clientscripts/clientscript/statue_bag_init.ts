@@ -40,7 +40,7 @@ function statue_bag_init(intArg0: component): void {
         }
         ccSetOp(5, "Examine" + "<col=ff9040>");
         ccSetOpBase("<col=ff981f>" + enumOp(type_int, type_string, Enum.statue_bag_int2string, int1) + " Piece");
-        ccSetOnOpt(hook(cs2_3679, "Ii", [event_com, int1]));
+        ccSetOnOp(hook(cs2_3679, "Ii", [event_com, int1]));
         int1 = int1 + 1;
     }
 }

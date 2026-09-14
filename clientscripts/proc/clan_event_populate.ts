@@ -8,38 +8,38 @@ function clan_event_populate(): void {
     ifSetHide(false, Component.interface_1107.component_1107_58);
     ifSetHide(false, Component.interface_1107.component_1107_59);
 
-    switch (loadClanSettingVarbit<130>()) {
+    switch (pushVarClanSettingBit<130>()) {
         case 1:
-            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, loadClanSettingVarbit<98>(), loadClanSettingVarbit<106>(), loadClanSettingVarbit<82>(), loadClanSettingVarbit<90>(), loadClanSettingVarbit<74>(), loadClanSettingVarbit<114>(), loadClanSettingVar<65>(), loadClanSettingVarbit<132>(), loadClanSettingVarLong<122>());
+            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, pushVarClanSettingBit<98>(), pushVarClanSettingBit<106>(), pushVarClanSettingBit<82>(), pushVarClanSettingBit<90>(), pushVarClanSettingBit<74>(), pushVarClanSettingBit<114>(), pushVarClanSetting<65>(), pushVarClanSettingBit<132>(), pushVarClanSettingLong<122>());
             break;
         case 2:
-            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, loadClanSettingVarbit<99>(), loadClanSettingVarbit<107>(), loadClanSettingVarbit<83>(), loadClanSettingVarbit<91>(), loadClanSettingVarbit<75>(), loadClanSettingVarbit<115>(), loadClanSettingVar<66>(), loadClanSettingVarbit<133>(), loadClanSettingVarLong<123>());
+            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, pushVarClanSettingBit<99>(), pushVarClanSettingBit<107>(), pushVarClanSettingBit<83>(), pushVarClanSettingBit<91>(), pushVarClanSettingBit<75>(), pushVarClanSettingBit<115>(), pushVarClanSetting<66>(), pushVarClanSettingBit<133>(), pushVarClanSettingLong<123>());
             break;
         case 3:
-            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, loadClanSettingVarbit<100>(), loadClanSettingVarbit<108>(), loadClanSettingVarbit<84>(), loadClanSettingVarbit<92>(), loadClanSettingVarbit<76>(), loadClanSettingVarbit<116>(), loadClanSettingVar<67>(), loadClanSettingVarbit<134>(), loadClanSettingVarLong<124>());
+            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, pushVarClanSettingBit<100>(), pushVarClanSettingBit<108>(), pushVarClanSettingBit<84>(), pushVarClanSettingBit<92>(), pushVarClanSettingBit<76>(), pushVarClanSettingBit<116>(), pushVarClanSetting<67>(), pushVarClanSettingBit<134>(), pushVarClanSettingLong<124>());
             break;
         case 4:
-            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, loadClanSettingVarbit<101>(), loadClanSettingVarbit<109>(), loadClanSettingVarbit<85>(), loadClanSettingVarbit<93>(), loadClanSettingVarbit<77>(), loadClanSettingVarbit<117>(), loadClanSettingVar<68>(), loadClanSettingVarbit<135>(), loadClanSettingVarLong<125>());
+            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, pushVarClanSettingBit<101>(), pushVarClanSettingBit<109>(), pushVarClanSettingBit<85>(), pushVarClanSettingBit<93>(), pushVarClanSettingBit<77>(), pushVarClanSettingBit<117>(), pushVarClanSetting<68>(), pushVarClanSettingBit<135>(), pushVarClanSettingLong<125>());
             break;
         case 5:
-            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, loadClanSettingVarbit<102>(), loadClanSettingVarbit<110>(), loadClanSettingVarbit<86>(), loadClanSettingVarbit<94>(), loadClanSettingVarbit<78>(), loadClanSettingVarbit<118>(), loadClanSettingVar<69>(), loadClanSettingVarbit<136>(), loadClanSettingVarLong<126>());
+            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, pushVarClanSettingBit<102>(), pushVarClanSettingBit<110>(), pushVarClanSettingBit<86>(), pushVarClanSettingBit<94>(), pushVarClanSettingBit<78>(), pushVarClanSettingBit<118>(), pushVarClanSetting<69>(), pushVarClanSettingBit<136>(), pushVarClanSettingLong<126>());
             break;
         case 6:
-            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, loadClanSettingVarbit<103>(), loadClanSettingVarbit<111>(), loadClanSettingVarbit<87>(), loadClanSettingVarbit<95>(), loadClanSettingVarbit<79>(), loadClanSettingVarbit<119>(), loadClanSettingVar<70>(), loadClanSettingVarbit<137>(), loadClanSettingVarLong<127>());
+            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, pushVarClanSettingBit<103>(), pushVarClanSettingBit<111>(), pushVarClanSettingBit<87>(), pushVarClanSettingBit<95>(), pushVarClanSettingBit<79>(), pushVarClanSettingBit<119>(), pushVarClanSetting<70>(), pushVarClanSettingBit<137>(), pushVarClanSettingLong<127>());
             break;
         case 7:
-            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, loadClanSettingVarbit<104>(), loadClanSettingVarbit<112>(), loadClanSettingVarbit<88>(), loadClanSettingVarbit<96>(), loadClanSettingVarbit<80>(), loadClanSettingVarbit<120>(), loadClanSettingVar<71>(), loadClanSettingVarbit<138>(), loadClanSettingVarLong<128>());
+            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, pushVarClanSettingBit<104>(), pushVarClanSettingBit<112>(), pushVarClanSettingBit<88>(), pushVarClanSettingBit<96>(), pushVarClanSettingBit<80>(), pushVarClanSettingBit<120>(), pushVarClanSetting<71>(), pushVarClanSettingBit<138>(), pushVarClanSettingLong<128>());
             break;
         case 8:
-            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, loadClanSettingVarbit<105>(), loadClanSettingVarbit<113>(), loadClanSettingVarbit<89>(), loadClanSettingVarbit<97>(), loadClanSettingVarbit<81>(), loadClanSettingVarbit<121>(), loadClanSettingVar<72>(), loadClanSettingVarbit<139>(), loadClanSettingVarLong<129>());
+            cs2_4421(Component.interface_1107.component_1107_50, Component.interface_1107.component_1107_51, pushVarClanSettingBit<105>(), pushVarClanSettingBit<113>(), pushVarClanSettingBit<89>(), pushVarClanSettingBit<97>(), pushVarClanSettingBit<81>(), pushVarClanSettingBit<121>(), pushVarClanSetting<72>(), pushVarClanSettingBit<139>(), pushVarClanSettingLong<129>());
             break;
         default:
-            hookMouseEnter(noHook(""), Component.interface_1107.component_1107_54);
-            hookMouseExit(noHook(""), Component.interface_1107.component_1107_54);
-            hookMouseEnter(noHook(""), Component.interface_1107.component_1107_56);
-            hookMouseExit(noHook(""), Component.interface_1107.component_1107_55);
-            hookMouseEnter(noHook(""), Component.interface_1107.component_1107_56);
-            hookMouseExit(noHook(""), Component.interface_1107.component_1107_56);
+            ifSetOnMouseOver(noHook(""), Component.interface_1107.component_1107_54);
+            ifSetOnMouseLeave(noHook(""), Component.interface_1107.component_1107_54);
+            ifSetOnMouseOver(noHook(""), Component.interface_1107.component_1107_56);
+            ifSetOnMouseLeave(noHook(""), Component.interface_1107.component_1107_55);
+            ifSetOnMouseOver(noHook(""), Component.interface_1107.component_1107_56);
+            ifSetOnMouseLeave(noHook(""), Component.interface_1107.component_1107_56);
             ifSetText("Events (none)", Component.interface_1107.component_1107_60);
             ifSetHide(true, Component.interface_1107.component_1107_58);
             ifSetHide(true, Component.interface_1107.component_1107_59);

@@ -10,7 +10,7 @@ function clanwars_overlay_status(intArg0: component, intArg1: component, intArg2
     let int19: number = 0;
 
     if (varc_271 == 1) {
-        ifSetText(fcGetChatDisplayName() + ":", intArg3);
+        ifSetText(clanGetChatDisplayName() + ":", intArg3);
     } else {
         ifSetText("This clan:", intArg3);
     }

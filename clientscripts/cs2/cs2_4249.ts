@@ -29,7 +29,7 @@ function cs2_4249(strArg0: string, strArg1: string, intArg0: component, intArg1:
             if (intArg4 != -1) {
                 ifSetSize(stringWidth(ifGetText(intArg4), ifGetfontmetrics(intArg4)) + 10, ifGetHeight(intArg3), 0, 0, intArg3);
             }
-            ifSetOnOpt(hook(cs2_4250, "II", [intArg3, intArg2]), intArg3);
+            ifSetOnOp(hook(cs2_4250, "II", [intArg3, intArg2]), intArg3);
         }
     } else {
         ifSetHide(false, intArg2);
