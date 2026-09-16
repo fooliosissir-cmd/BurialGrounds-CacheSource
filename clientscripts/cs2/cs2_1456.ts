@@ -8,7 +8,7 @@ function cs2_1456(): void {
     let int1: number = 8;
     let int2: number = 5;
     let int3: number = 0;
-    let int4: number = invSize(95);
+    let int4: number = invSize(Inv.bank);
 
     cs2_1464();
     let [int5, int6] = cs2_1467(int3);
@@ -21,12 +21,16 @@ function cs2_1456(): void {
         }
         while (int0 < int6) {
             if (ccFind(Component.interface_762.component_762_95, int0) == 1) {
-                ccSetPosition(int1, int2, 0, 0);
-                ccSetHide(false);
-                int1 = int1 + 44;
-                if (int1 >= 44 * 10) {
-                    int1 = 8;
-                    int2 = int2 + 44;
+                if (invGetobj(Inv.bank, int0) != -1) {
+                    ccSetPosition(int1, int2, 0, 0);
+                    ccSetHide(false);
+                    int1 = int1 + 44;
+                    if (int1 >= 44 * 10) {
+                        int1 = 8;
+                        int2 = int2 + 44;
+                    }
+                } else {
+                    int0 = 1000;
                 }
             }
             int0 = int0 + 1;
