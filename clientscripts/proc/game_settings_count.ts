@@ -4,5 +4,5 @@
 // [proc,game_settings_count]
 
 function game_settings_count(): number {
-    return 1;
+    return 2;
 }

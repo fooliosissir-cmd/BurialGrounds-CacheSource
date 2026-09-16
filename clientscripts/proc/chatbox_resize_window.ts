@@ -31,5 +31,6 @@ function chatbox_resize_window(): void {
     int5 = int5 + 4;
     ifSetPosition(0, int5, 0, 0, int0);
     ifSetPosition(0, ifGetY(int1) - 88, 0, 0, Component.interface_746.component_746_25);
+    ifSetPosition(0, 26 + ifGetHeight(int1), 0, 2, Component.interface_746.buff_bar);
     rebuildchatbox();
 }

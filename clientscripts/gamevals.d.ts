@@ -156278,7 +156278,7 @@ declare namespace Inv {
     /** inv 673 */ const inv_673: number;
 }
 
-/** Revision-727 graphic ids by Jagex dev-name (12106 named of 12106). */
+/** Revision-727 graphic ids by Jagex dev-name (12115 named of 12115). */
 declare namespace Graphic {
     /** graphic 0 */ const emotes_40: number;
     /** graphic 1 */ const feathers_round_long: number;
@@ -168734,9 +168734,18 @@ declare namespace Graphic {
     /** graphic 12451 */ const master_skillcape_invention_cloth_alpha: number;
     /** graphic 12452 */ const master_skillcape_invention_base_alpha: number;
     /** graphic 12453 */ const master_skillcape_invention_alpha: number;
+    /** graphic 12454 */ const buff_bar_thermal_flask: number;
+    /** graphic 12455 */ const buff_bar_saltwater_flask: number;
+    /** graphic 12456 */ const buff_bar_farming: number;
+    /** graphic 12457 */ const buff_bar_firemaking: number;
+    /** graphic 12458 */ const buff_bar_hunter: number;
+    /** graphic 12459 */ const buff_bar_stunned: number;
+    /** graphic 12460 */ const buff_bar_bound: number;
+    /** graphic 12461 */ const buff_bar_teleport_block: number;
+    /** graphic 12462 */ const buff_bar_anti_dragonfire: number;
 }
 
-/** Revision-727 interface ids by Jagex dev-name (1321 named of 1321). */
+/** Revision-727 interface ids by Jagex dev-name (1323 named of 1323). */
 declare namespace Interface {
     /** interface 0 */ const _100guide_eggs_overlay: number;
     /** interface 1 */ const _100guide_flour_overlay: number;
@@ -170060,6 +170069,7 @@ declare namespace Interface {
     /** interface 1319 */ const interface_1319: number;
     /** interface 1320 */ const interface_1320: number;
     /** interface 1321 */ const game_settings: number;
+    /** interface 1322 */ const buff_bar: number;
 }
 
 /** Revision-727 sound ids by Jagex dev-name (10084 named of 10084). */
@@ -256471,7 +256481,7 @@ declare namespace Model {
 }
 
 /** Revision-727 interface components: `Component.<interface>.<component>` is the packed `(iface << 16) | comp`,
-  * and `Component.<interface>.IFACE` the interface id (65239 named components across 1321 interfaces). */
+  * and `Component.<interface>.IFACE` the interface id (65312 named components across 1323 interfaces). */
 declare namespace Component {
     /** 100guide_eggs_overlay, interface 0. */
     namespace _100guide_eggs_overlay {
@@ -279640,6 +279650,7 @@ declare namespace Component {
         /** component 548:422 */ const component_548_422: number;
         /** component 548:423 */ const component_548_423: number;
         /** component 548:424 */ const component_548_424: number;
+        /** component 548:425 */ const buff_bar: number;
     }
     /** interface_549, interface 549. */
     namespace interface_549 {
@@ -287885,6 +287896,7 @@ declare namespace Component {
         /** component 746:455 */ const component_746_455: number;
         /** component 746:456 */ const component_746_456: number;
         /** component 746:457 */ const component_746_457: number;
+        /** component 746:458 */ const buff_bar: number;
     }
     /** interface_747, interface 747. */
     namespace interface_747 {
@@ -327038,5 +327050,95 @@ declare namespace Component {
         /** component 1321:25 */ const dropdown: number;
         /** component 1321:26 */ const dropdown_background: number;
         /** component 1321:27 */ const dropdown_border: number;
+    }
+    /** buff_bar, interface 1322. */
+    namespace buff_bar {
+        /** interface id 1322 */ const IFACE: number;
+        /** component 1322:0 */ const root: number;
+        /** component 1322:1 */ const slot_1_icon: number;
+        /** component 1322:2 */ const slot_2_icon: number;
+        /** component 1322:3 */ const slot_3_icon: number;
+        /** component 1322:4 */ const slot_4_icon: number;
+        /** component 1322:5 */ const slot_5_icon: number;
+        /** component 1322:6 */ const slot_6_icon: number;
+        /** component 1322:7 */ const slot_7_icon: number;
+        /** component 1322:8 */ const slot_8_icon: number;
+        /** component 1322:9 */ const slot_9_icon: number;
+        /** component 1322:10 */ const slot_10_icon: number;
+        /** component 1322:11 */ const slot_11_icon: number;
+        /** component 1322:12 */ const slot_12_icon: number;
+        /** component 1322:13 */ const slot_13_icon: number;
+        /** component 1322:14 */ const slot_14_icon: number;
+        /** component 1322:15 */ const slot_15_icon: number;
+        /** component 1322:16 */ const slot_16_icon: number;
+        /** component 1322:17 */ const slot_17_icon: number;
+        /** component 1322:18 */ const slot_18_icon: number;
+        /** component 1322:19 */ const slot_19_icon: number;
+        /** component 1322:20 */ const slot_20_icon: number;
+        /** component 1322:21 */ const slot_21_icon: number;
+        /** component 1322:22 */ const slot_22_icon: number;
+        /** component 1322:23 */ const slot_23_icon: number;
+        /** component 1322:24 */ const slot_24_icon: number;
+        /** component 1322:25 */ const slot_25_icon: number;
+        /** component 1322:26 */ const slot_26_icon: number;
+        /** component 1322:27 */ const slot_27_icon: number;
+        /** component 1322:28 */ const slot_28_icon: number;
+        /** component 1322:29 */ const slot_1_sprite: number;
+        /** component 1322:30 */ const slot_2_sprite: number;
+        /** component 1322:31 */ const slot_3_sprite: number;
+        /** component 1322:32 */ const slot_4_sprite: number;
+        /** component 1322:33 */ const slot_5_sprite: number;
+        /** component 1322:34 */ const slot_6_sprite: number;
+        /** component 1322:35 */ const slot_7_sprite: number;
+        /** component 1322:36 */ const slot_8_sprite: number;
+        /** component 1322:37 */ const slot_9_sprite: number;
+        /** component 1322:38 */ const slot_10_sprite: number;
+        /** component 1322:39 */ const slot_11_sprite: number;
+        /** component 1322:40 */ const slot_12_sprite: number;
+        /** component 1322:41 */ const slot_13_sprite: number;
+        /** component 1322:42 */ const slot_14_sprite: number;
+        /** component 1322:43 */ const slot_15_sprite: number;
+        /** component 1322:44 */ const slot_16_sprite: number;
+        /** component 1322:45 */ const slot_17_sprite: number;
+        /** component 1322:46 */ const slot_18_sprite: number;
+        /** component 1322:47 */ const slot_19_sprite: number;
+        /** component 1322:48 */ const slot_20_sprite: number;
+        /** component 1322:49 */ const slot_21_sprite: number;
+        /** component 1322:50 */ const slot_22_sprite: number;
+        /** component 1322:51 */ const slot_23_sprite: number;
+        /** component 1322:52 */ const slot_24_sprite: number;
+        /** component 1322:53 */ const slot_25_sprite: number;
+        /** component 1322:54 */ const slot_26_sprite: number;
+        /** component 1322:55 */ const slot_27_sprite: number;
+        /** component 1322:56 */ const slot_28_sprite: number;
+        /** component 1322:57 */ const slot_1_timer: number;
+        /** component 1322:58 */ const slot_2_timer: number;
+        /** component 1322:59 */ const slot_3_timer: number;
+        /** component 1322:60 */ const slot_4_timer: number;
+        /** component 1322:61 */ const slot_5_timer: number;
+        /** component 1322:62 */ const slot_6_timer: number;
+        /** component 1322:63 */ const slot_7_timer: number;
+        /** component 1322:64 */ const slot_8_timer: number;
+        /** component 1322:65 */ const slot_9_timer: number;
+        /** component 1322:66 */ const slot_10_timer: number;
+        /** component 1322:67 */ const slot_11_timer: number;
+        /** component 1322:68 */ const slot_12_timer: number;
+        /** component 1322:69 */ const slot_13_timer: number;
+        /** component 1322:70 */ const slot_14_timer: number;
+        /** component 1322:71 */ const slot_15_timer: number;
+        /** component 1322:72 */ const slot_16_timer: number;
+        /** component 1322:73 */ const slot_17_timer: number;
+        /** component 1322:74 */ const slot_18_timer: number;
+        /** component 1322:75 */ const slot_19_timer: number;
+        /** component 1322:76 */ const slot_20_timer: number;
+        /** component 1322:77 */ const slot_21_timer: number;
+        /** component 1322:78 */ const slot_22_timer: number;
+        /** component 1322:79 */ const slot_23_timer: number;
+        /** component 1322:80 */ const slot_24_timer: number;
+        /** component 1322:81 */ const slot_25_timer: number;
+        /** component 1322:82 */ const slot_26_timer: number;
+        /** component 1322:83 */ const slot_27_timer: number;
+        /** component 1322:84 */ const slot_28_timer: number;
+        /** component 1322:85 */ const tooltip: number;
     }
 }
