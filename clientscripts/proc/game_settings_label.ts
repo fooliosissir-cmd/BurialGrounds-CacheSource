@@ -7,6 +7,8 @@ function game_settings_label(intArg0: number): string {
     switch (intArg0) {
         case 0:
             return "Interface skin";
+        case 1:
+            return "Buff bar";
     }
     return "";
 }
