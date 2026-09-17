@@ -43,9 +43,7 @@ function cs2_5486(): void {
             cs2_5488(str5);
             break;
         case 1:
-            if (varc_1691 != -1) {
-                cs2_5488(str5);
-            } else if (int4 != -1) {
+            if (int4 != -1) {
                 if (int6 == 1) {
                     str6 = invOtherGetTooltip(int4, int5);
                 } else {
@@ -54,6 +52,8 @@ function cs2_5486(): void {
                 if (compare(str6, "") != 0) {
                     str5 = str6;
                 }
+            }
+            if (varc_1691 != -1 || int4 != -1) {
                 cs2_5488(str5);
             } else {
                 tli_optext_close();
