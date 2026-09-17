@@ -10,6 +10,7 @@ function cs2_5486(): void {
     let [int0, str0, str1, str2] = getActiveMinimenuEntry();
     let [int1, int2] = getMinimenuLength();
     let [int3, str3, str4] = getMinimenuTarget();
+    let [int4, int5, int6] = getActiveMinimenuInvslot();
 
     if (int3 == 1 && int1 < 2) {
         str1 = str3;
@@ -28,6 +29,7 @@ function cs2_5486(): void {
         tli_optext_close();
     }
     let str5: string = str0;
+    let str6: string = "";
 
     if (compare(str1, "") != 0) {
         str5 = str5 + " " + str1 + " " + str2;
@@ -42,6 +44,16 @@ function cs2_5486(): void {
             break;
         case 1:
             if (varc_1691 != -1) {
+                cs2_5488(str5);
+            } else if (int4 != -1) {
+                if (int6 == 1) {
+                    str6 = invOtherGetTooltip(int4, int5);
+                } else {
+                    str6 = invGetTooltip(int4, int5);
+                }
+                if (compare(str6, "") != 0) {
+                    str5 = str6;
+                }
                 cs2_5488(str5);
             } else {
                 tli_optext_close();

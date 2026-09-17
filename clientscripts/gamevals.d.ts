@@ -279651,6 +279651,8 @@ declare namespace Component {
         /** component 548:423 */ const component_548_423: number;
         /** component 548:424 */ const component_548_424: number;
         /** component 548:425 */ const buff_bar: number;
+        /** component 548:426 */ const tooltip_layer: number;
+        /** component 548:427 */ const tooltip: number;
     }
     /** interface_549, interface 549. */
     namespace interface_549 {
