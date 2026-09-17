@@ -1828,6 +1828,8 @@ declare function openurlShim<Operand = void>(arg0: number | string | bigint | bo
 declare function opplayert<Operand = void>(arg0: string): void;
 /** `PARAHEIGHT` (opcode 469) */
 declare function paraheight<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean): number;
+/** `PARAHEIGHT_EXTRA` (opcode 1009) */
+declare function paraheightExtra<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean): number;
 /** `PARAWIDTH` (opcode 43) */
 declare function parawidth<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean): number;
 /** `PLAYERMEMBER` (opcode 262) */
