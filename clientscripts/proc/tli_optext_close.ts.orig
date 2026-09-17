@@ -5,9 +5,9 @@
 
 function tli_optext_close(): void {
     varc_1690 = -1;
-    let [int0, int1] = tli_optext_host();
-    ifSetHide(true, int0);
-    ifSetSize(0, 0, 0, 0, int0);
+    let [comp0, comp1] = tli_optext_host();
+    ifSetHide(true, comp0);
+    ifSetSize(0, 0, 0, 0, comp0);
     varc_1688 = 0;
     varc_1691 = -1;
     varcstr_305 = "";

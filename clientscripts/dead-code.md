@@ -2691,6 +2691,22 @@ and neither is the default `return` every script ends with.
   [int1, int2] = getMinimenuLength();
 ```
 
+## [proc,tli_optext_close] (script 5487)
+
+- **unused result** - targets int slot 1
+
+```ts
+  [int0, int1] = tli_optext_host();
+```
+
+## cs2_5488 (script 5488)
+
+- **unused result** - targets int slot 4
+
+```ts
+  [int3, int4] = tli_optext_host();
+```
+
 ## [proc,tli_optext_build_tooltip] (script 5490)
 
 - **dead store**

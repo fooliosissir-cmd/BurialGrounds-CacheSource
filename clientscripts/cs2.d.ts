@@ -1198,6 +1198,8 @@ declare function fullScreenModeCount<Operand = void>(): number;
 declare function gender<Operand = void>(): number;
 /** `GET_ACTIVE_MINIMENU_ENTRY` (opcode 115) */
 declare function getActiveMinimenuEntry<Operand = void>(): [number, string, string, string];
+/** `GET_ACTIVE_MINIMENU_INVSLOT` (opcode 1008) */
+declare function getActiveMinimenuInvslot<Operand = void>(): [number, number, number];
 /** `GET_COL_TAG` (opcode 874) */
 declare function getColTag<Operand = void>(arg0: number | boolean): string;
 /** `GET_CURRENTCURSOR` (opcode 980) */
@@ -1636,8 +1638,12 @@ declare function interpolate<Operand = void>(arg0: number | boolean, arg1: numbe
 declare function invFreespace<Operand = void>(arg0: number | boolean): number;
 /** `INV_GETNUM` (opcode 138) */
 declare function invGetNum<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
+/** `INV_GETTOOLTIP` (opcode 1006) */
+declare function invGetTooltip<Operand = void>(arg0: inv | boolean, arg1: number | boolean): string;
 /** `INV_GETOBJ` (opcode 180) */
 declare function invGetobj<Operand = void>(arg0: number | boolean, arg1: number | boolean): number;
+/** `INV_OTHER_GETTOOLTIP` (opcode 1007) */
+declare function invOtherGetTooltip<Operand = void>(arg0: inv | boolean, arg1: number | boolean): string;
 /** `INV_SIZE` (opcode 157) */
 declare function invSize<Operand = void>(arg0: number | boolean): number;
 /** `INV_STOCKBASE` (opcode 192) */
@@ -1822,6 +1828,8 @@ declare function openurlShim<Operand = void>(arg0: number | string | bigint | bo
 declare function opplayert<Operand = void>(arg0: string): void;
 /** `PARAHEIGHT` (opcode 469) */
 declare function paraheight<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean): number;
+/** `PARAHEIGHT_EXTRA` (opcode 1009) */
+declare function paraheightExtra<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean): number;
 /** `PARAWIDTH` (opcode 43) */
 declare function parawidth<Operand = void>(arg0: number | string | bigint | boolean, arg1: number | string | bigint | boolean, arg2: number | string | bigint | boolean): number;
 /** `PLAYERMEMBER` (opcode 262) */

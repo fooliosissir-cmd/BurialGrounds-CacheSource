@@ -19,9 +19,9 @@ function cs2_5489(intArg0: number, intArg1: number): void {
             break;
     }
     let int3: number = 20;
-    let [int4, int5] = tli_optext_host();
-    ifSetSize(intArg0, intArg1, 0, 0, int4);
-    let int6: number = min(getMouseX() + int2, ifGetWidth(int5) - intArg0);
-    let int7: number = min(getMouseY() + int3, ifGetHeight(int5) - intArg1);
-    ifSetPosition(int6, int7, 0, 0, int4);
+    let [comp6, comp7] = tli_optext_host();
+    ifSetSize(intArg0, intArg1, 0, 0, comp6);
+    let int4: number = min(getMouseX() + int2, ifGetWidth(comp7) - intArg0);
+    let int5: number = min(getMouseY() + int3, ifGetHeight(comp7) - intArg1);
+    ifSetPosition(int4, int5, 0, 0, comp6);
 }
