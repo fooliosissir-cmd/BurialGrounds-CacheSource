@@ -12,14 +12,14 @@ function cs2_1465(): void {
     let int2: number = varc_1038;
     let int3: number = varc_192 - int2;
     let int4: number = (int0 - int2) * -1;
-    let int5: number = int3 - (713 - 1);
+    let int5: number = int3 - int1;
 
     ifSetHide(false, Component.interface_762.component_762_22);
     ifSetHide(true, Component.interface_762.component_762_23);
 
     if (int5 > 0) {
         int2 = int2 + int5;
-        int3 = 713 - 1;
+        int3 = int1;
         if (int5 == 1) {
             str0 = "Total number of " + "<col=ba1626>" + "free" + "</col>" + " bank slots used" + "<br>" + "<col=ba1626>" + "Note: this includes an overflow of 1 member item" + "</col>";
         } else {

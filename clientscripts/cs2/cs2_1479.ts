@@ -19,21 +19,22 @@ function cs2_1479(strArg0: string): number {
         ifSetText("Bank of RuneScape (search: '" + strArg0 + "')", Component.interface_762.component_762_47);
         ifSetHide(true, Component.interface_762.component_762_118);
     }
-    let int0: number = invSize(95);
+    let str1: string = "Withdraw-" + tostring(varp_1249);
+    let int0: number = invSize(Inv.bank);
     let int1: number = 0;
     let int2: number = 0;
     ifSetScrollPos(0, 0, Component.interface_762.component_762_95);
 
     while (int1 < int0) {
-        if (stringIndexofString(lowercase(ocName(invGetobj(95, int1))), lowercase(strArg0), 0) != -1) {
-            if (ccFind(Component.interface_762.component_762_95, int1) == 1) {
+        if (ccFind(Component.interface_762.component_762_95, int1) == 1) {
+            if (invGetobj(Inv.bank, int1) != -1 && stringIndexofString(lowercase(ocName(invGetobj(Inv.bank, int1))), lowercase(strArg0), 0) != -1) {
+                cs2_1453(int1, str1);
                 ccSetPosition(44 * (int2 % 10) + 8, int2 / 10 * 44 + 5, 0, 0);
                 ccSetHide(false);
                 int2 = int2 + 1;
+            } else {
+                ccSetHide(true);
             }
-        } else if (ccFind(Component.interface_762.component_762_95, int1) == 1) {
-            ccSetPosition(0, 0, 0, 0);
-            ccSetHide(true);
         }
         int1 = int1 + 1;
     }

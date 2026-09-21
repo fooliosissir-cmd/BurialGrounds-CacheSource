@@ -9,7 +9,6 @@ function cs2_1500(intArg0: number, intArg1: number): void {
             if (varc_188 == 1) {
                 cs2_1474();
             }
-            cs2_1455();
             cs2_1457(...cs2_1467(intArg1));
             cs2_1463(intArg1);
             ifSetScrollPos(0, cs2_704(intArg1), Component.interface_762.component_762_95);

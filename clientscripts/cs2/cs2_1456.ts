@@ -4,24 +4,25 @@
 // cs2_1456
 
 function cs2_1456(): void {
+    let str0: string = "Withdraw-" + tostring(varp_1249);
     let int0: number = 0;
     let int1: number = 8;
     let int2: number = 5;
     let int3: number = 0;
-    let int4: number = invSize(Inv.bank);
 
     cs2_1464();
-    let [int5, int6] = cs2_1467(int3);
+    let [int4, int5] = cs2_1467(int3);
 
     while (int3 <= 9) {
-        int0 = int5;
+        int0 = int4;
         if (int3 != 0) {
             ifSetHide(false, enumOp(type_int, type_component, Enum.enum_1611, int3));
             ifSetPosition(int1 - 2, int2 - 2, 0, 0, enumOp(type_int, type_component, Enum.enum_1611, int3));
         }
-        while (int0 < int6) {
+        while (int0 < int5) {
             if (ccFind(Component.interface_762.component_762_95, int0) == 1) {
                 if (invGetobj(Inv.bank, int0) != -1) {
+                    cs2_1453(int0, str0);
                     ccSetPosition(int1, int2, 0, 0);
                     ccSetHide(false);
                     int1 = int1 + 44;
@@ -30,7 +31,7 @@ function cs2_1456(): void {
                         int2 = int2 + 44;
                     }
                 } else {
-                    int0 = 1000;
+                    ccSetHide(true);
                 }
             }
             int0 = int0 + 1;
@@ -46,8 +47,8 @@ function cs2_1456(): void {
         } else {
             int3 = int3 + 1;
         }
-        [int5, int6] = cs2_1467(int3);
-        if (int5 == int6) {
+        [int4, int5] = cs2_1467(int3);
+        if (int4 == int5) {
             int3 = 100;
         }
         if (enumOp(type_int, type_component, Enum.enum_1610, int3) != -1) {

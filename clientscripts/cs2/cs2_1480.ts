@@ -3,10 +3,17 @@
 /// <reference path="../vars.d.ts" />
 // cs2_1480
 
-function cs2_1480(intArg0: component, intArg1: number): void {
-    if (varc_188 == 0) {
+function cs2_1480(intArg0: number): void {
+    if (intArg0 == -1) {
+        varc_1691 = -1;
+        varc_1692 = -1;
         deltooltip_action(Component.interface_762.component_762_99);
         return;
     }
-    cs2_569(intArg0, intArg1, Component.interface_762.component_762_99, "Item is in tab " + tostring(cs2_1468(intArg1)), 25, 150);
+    varc_1691 = invGetobj(Inv.bank, intArg0);
+    varc_1692 = -1;
+
+    if (varc_188 == 1) {
+        cs2_569(Component.interface_762.component_762_95, intArg0, Component.interface_762.component_762_99, "Item is in tab " + tostring(cs2_1468(intArg0)), 25, 150);
+    }
 }

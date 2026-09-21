@@ -16,7 +16,7 @@ function cs2_1467(intArg0: number): [number, number] {
     }
 
     if (intArg0 == 1) {
-        return [0, 800];
+        return [0, invSize(Inv.bank)];
     }
     int1 = 0;
     int2 = varbit_4885;

@@ -3,32 +3,39 @@
 /// <reference path="../vars.d.ts" />
 // cs2_1453
 
-function cs2_1453(intArg0: number): void {
-    let int1: obj = invGetobj(95, intArg0);
+function cs2_1453(intArg0: number, strArg0: string): void {
+    let int1: obj = invGetobj(Inv.bank, intArg0);
+    let int2: number = invGetNum(Inv.bank, intArg0);
 
-    ccClearops();
-    ccSetOpBase("<col=ff981f>" + ocName(invGetobj(95, intArg0)));
-    if (invGetNum(95, intArg0) == 0) {
+    ccSetOpBase("<col=ff981f>" + ocName(int1));
+
+    if (int2 == 0) {
         ccSetObjectNonum(int1, 0);
         ccSetTrans(128);
-        ccSetOp(9, "Release");
+        if (stringLength(ccGetOp(9)) == 0) {
+            ccSetOp(1, "");
+            ccSetOp(2, "");
+            ccSetOp(3, "");
+            ccSetOp(4, "");
+            ccSetOp(5, "");
+            ccSetOp(6, "");
+            ccSetOp(7, "");
+            ccSetOp(9, "Release");
+        }
     } else {
-        ccSetObject(int1, invGetNum(95, intArg0));
+        ccSetObject(int1, int2);
         ccSetTrans(0);
-        ccSetOp(1, "Withdraw-1");
-        ccSetOp(2, "Withdraw-5");
-        ccSetOp(3, "Withdraw-10");
-        ccSetOp(4, "Withdraw-" + tostring(varp_1249));
-        ccSetOp(5, "Withdraw-X");
-        ccSetOp(6, "Withdraw-All");
-        ccSetOp(7, "Withdraw-All but one");
+        if (stringLength(ccGetOp(9)) == 0) {
+            ccSetOp(4, strArg0);
+        } else {
+            ccSetOp(1, "Withdraw-1");
+            ccSetOp(2, "Withdraw-5");
+            ccSetOp(3, "Withdraw-10");
+            ccSetOp(4, strArg0);
+            ccSetOp(5, "Withdraw-X");
+            ccSetOp(6, "Withdraw-All");
+            ccSetOp(7, "Withdraw-All but one");
+            ccSetOp(9, "");
+        }
     }
-    ccSetOp(10, "Examine" + "<col=ff9040>");
-    ccSetdraggable(Component.interface_762.component_762_0, -1);
-    ccSetdragdeadzone(5);
-    ccSetdragdeadtime(5);
-    ccSetOnDrag(hook(cs2_1454, "i", [event_mousey]));
-    ccSetOnDragComplete(hook(cs2_1482, "I", [event_com2]));
-    ccSetOnMouseRepeat(hook(cs2_5495, "o", [int1]));
-    ccSetOnMouseLeave(hook(cs2_5495, "o", [-1]));
 }

@@ -4,7 +4,7 @@
 // cs2_1248
 
 function cs2_1248(): number {
-    let int0: number = 800;
+    let int0: number = invSize(Inv.bank);
 
     if (cs2_3287() == 0) {
         int0 = int0 - 20;

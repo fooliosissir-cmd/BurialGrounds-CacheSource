@@ -9,11 +9,11 @@ function cs2_1665(intArg0: component, intArg1: component, intArg2: component, in
     let int6: number = varc_1038;
     let int7: number = varc_192 - int6;
     let int8: number = (int4 - int6) * -1;
-    let int9: number = int7 - (713 - 1);
+    let int9: number = int7 - int5;
 
     if (int9 > 0) {
         int6 = int6 + int9;
-        int7 = 713 - 1;
+        int7 = int5;
     } else if (int8 > 0) {
         int7 = int7 + int8;
         int6 = int4;
