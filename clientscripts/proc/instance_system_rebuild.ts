@@ -18,7 +18,7 @@ function instance_system_rebuild(): void {
         ccSetColour(colour(0xEBE0BC));
         ccSetTextShadow(true);
         ccSetText(instance_system_row_label(int1));
-        instance_system_stepper(int0, 120, int2, 26, int1 * 2 + 1, "-");
+        instance_system_stepper(int0, 120, int2, Graphic.set_but_end_2_0, int1 * 2 + 1, "-");
         ccCreate(int0, 3, ifGetNextSubId(int0));
         ccSetSize(112, 26, 0, 0);
         ccSetPosition(150, int2, 0, 0);
@@ -37,7 +37,7 @@ function instance_system_rebuild(): void {
         ccSetColour(colour(0xEBE0BC));
         ccSetTextShadow(true);
         ccSetText(instance_system_row_value(int1));
-        instance_system_stepper(int0, 266, int2, 26, int1 * 2 + 2, "+");
+        instance_system_stepper(int0, 266, int2, Graphic.set_but_end_2_3, int1 * 2 + 2, "+");
         int2 = int2 + 28;
         int1 = int1 + 1;
     }
@@ -45,7 +45,7 @@ function instance_system_rebuild(): void {
     let int3: component = Component.instance_system.buttons;
     ccDeleteAll(int3);
     let int4: number = (ifGetWidth(int3) - 32) / 3;
-    instance_system_stepper(int3, 0, 0, int4, 1, "Start");
-    instance_system_stepper(int3, int4 + 16, 0, int4, 2, "Join");
-    instance_system_stepper(int3, int4 * 2 + 32, 0, int4, 3, "Rejoin");
+    instance_system_button(int3, 0, 0, int4, 1, "Start");
+    instance_system_button(int3, int4 + 16, 0, int4, 2, "Join");
+    instance_system_button(int3, int4 * 2 + 32, 0, int4, 3, "Rejoin");
 }

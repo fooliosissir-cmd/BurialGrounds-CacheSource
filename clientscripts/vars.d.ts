@@ -10134,6 +10134,8 @@ declare let varc_1992: number;
 declare let varc_instance_row_count: number;
 /** varc 1994 */
 declare let varc_instance_practice_mode: number;
+/** varc 1995 */
+declare let varc_instance_revision: number;
 /** varcstr 0 */
 declare let varcstr_partnername: string;
 /** varcstr 1 */
