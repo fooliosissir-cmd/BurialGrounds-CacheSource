@@ -4,8 +4,8 @@
   "source": "rs3-949 gameval names crosswalked onto the 727 cache; see gamevals/CONTRACT.md",
   "date": "2026-08-31",
   "coverage": {
-    "cache_ids": 6615,
-    "named": 1722,
+    "cache_ids": 6621,
+    "named": 1728,
     "placeholder": 4893,
     "by_channel": {
       "brute": 94,
@@ -6642,6 +6642,12 @@
     "6616": "[proc,buff_bar_slot_sprite]",
     "6617": "[proc,buff_bar_slot_desc]",
     "6618": "[clientscript,game_settings_toggle_hover]",
-    "6619": "[proc,tli_optext_host]"
+    "6619": "[proc,tli_optext_host]",
+    "6620": "[clientscript,instance_system_init]",
+    "6621": "[proc,instance_system_rebuild]",
+    "6622": "[proc,instance_system_stepper]",
+    "6623": "[proc,instance_system_row_label]",
+    "6624": "[proc,instance_system_row_value]",
+    "6625": "[proc,instance_system_checkbox]"
   }
 }

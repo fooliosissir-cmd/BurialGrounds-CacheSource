@@ -170070,6 +170070,7 @@ declare namespace Interface {
     /** interface 1320 */ const interface_1320: number;
     /** interface 1321 */ const game_settings: number;
     /** interface 1322 */ const buff_bar: number;
+    /** interface 1323 */ const instance_system: number;
 }
 
 /** Revision-727 sound ids by Jagex dev-name (10084 named of 10084). */
@@ -327142,5 +327143,40 @@ declare namespace Component {
         /** component 1322:83 */ const slot_27_timer: number;
         /** component 1322:84 */ const slot_28_timer: number;
         /** component 1322:85 */ const tooltip: number;
+    }
+    namespace instance_system {
+        /** interface id 1323 */ const IFACE: number;
+        /** component 1323:0 */ const popup_fill: number;
+        /** component 1323:1 */ const popup_left: number;
+        /** component 1323:2 */ const popup_right: number;
+        /** component 1323:3 */ const popup_bottom: number;
+        /** component 1323:4 */ const window: number;
+        /** component 1323:5 */ const frame: number;
+        /** component 1323:6 */ const content: number;
+        /** component 1323:7 */ const background: number;
+        /** component 1323:8 */ const frame_body: number;
+        /** component 1323:9 */ const frame_body_bottom: number;
+        /** component 1323:10 */ const frame_top: number;
+        /** component 1323:11 */ const frame_top_left: number;
+        /** component 1323:12 */ const frame_top_right: number;
+        /** component 1323:13 */ const frame_left: number;
+        /** component 1323:14 */ const frame_right: number;
+        /** component 1323:15 */ const frame_bottom: number;
+        /** component 1323:16 */ const frame_bottom_left: number;
+        /** component 1323:17 */ const frame_bottom_right: number;
+        /** component 1323:18 */ const close_button: number;
+        /** component 1323:19 */ const title: number;
+        /** component 1323:20 */ const popup: number;
+        /** component 1323:21 */ const popup_body: number;
+        /** component 1323:22 */ const popup_scrollbar: number;
+        /** component 1323:23 */ const rows: number;
+        /** component 1323:24 */ const requirements_label: number;
+        /** component 1323:25 */ const requirements_value: number;
+        /** component 1323:26 */ const portrait_frame: number;
+        /** component 1323:27 */ const portrait: number;
+        /** component 1323:28 */ const boss_name: number;
+        /** component 1323:29 */ const practice_label: number;
+        /** component 1323:30 */ const practice_checkbox: number;
+        /** component 1323:31 */ const buttons: number;
     }
 }
