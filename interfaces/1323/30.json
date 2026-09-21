@@ -2,8 +2,8 @@
   "id": 86704158,
   "type": 5,
   "contentType": 0,
-  "basePositionX": 450,
-  "basePositionY": 190,
+  "basePositionX": 457,
+  "basePositionY": 219,
   "baseWidth": 14,
   "baseHeight": 14,
   "horizontalSizeMode": 0,
@@ -54,18 +54,7 @@
   "lineMirrored": false,
   "clickable": false,
   "name": "",
-  "options": [
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "  "
-  ],
+  "options": ["Toggle", "", "", "", "", "", "", "", "", "  "],
   "anInt4708": 0,
   "anInt4795": 0,
   "anInt4860": 0,
@@ -73,10 +62,9 @@
   "anInt4698": -1,
   "anInt4839": -1,
   "anInt4761": -1,
-  "setting": {
-    "setting": 0,
-    "anInt7413": -1
-  },
-  "hasScript": false,
-  "stringId": ""
+  "setting": {"setting": 2, "anInt7413": -1},
+  "hasScript": true,
+  "stringId": "",
+  "onMouseOver": {"script": 6630, "args": [1]},
+  "onMouseLeaveScript": {"script": 6630, "args": [0]}
 }

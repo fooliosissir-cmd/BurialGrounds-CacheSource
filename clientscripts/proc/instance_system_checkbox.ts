@@ -3,9 +3,15 @@
 /// <reference path="../vars.d.ts" />
 // [proc,instance_system_checkbox]
 
-function instance_system_checkbox(): number {
+function instance_system_checkbox(intArg0: boolean): graphic {
     if (varc_instance_practice_mode == 1) {
-        return Graphic.check_box_2_2;
+        if (intArg0 == true) {
+            return gameframe_skin_graphic(Graphic.check_box_2_3);
+        }
+        return gameframe_skin_graphic(Graphic.check_box_2_2);
     }
-    return Graphic.check_box_2_0;
+    if (intArg0 == true) {
+        return gameframe_skin_graphic(Graphic.check_box_2_1);
+    }
+    return gameframe_skin_graphic(Graphic.check_box_2_0);
 }
