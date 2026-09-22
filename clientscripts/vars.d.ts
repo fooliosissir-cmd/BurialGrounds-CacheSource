@@ -10136,6 +10136,8 @@ declare let varc_instance_row_count: number;
 declare let varc_instance_practice_mode: number;
 /** varc 1995 */
 declare let varc_instance_revision: number;
+/** varc 1996 */
+declare let varc_instance_boss_npc: number;
 /** varcstr 0 */
 declare let varcstr_partnername: string;
 /** varcstr 1 */

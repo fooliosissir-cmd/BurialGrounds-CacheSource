@@ -17,7 +17,7 @@ function instance_system_rebuild(): void {
         ccSetColour(colour(0xFF981F));
         ccSetTextShadow(true);
         ccSetText(instance_system_row_label(int1));
-        instance_system_stepper(int0, 118, int2, Graphic.set_but_end_2_0, Graphic.set_but_end_2_1, int1 * 2 + 1, "-", "Decrease");
+        instance_system_stepper(int0, 118, int2, Graphic.set_but_end_2_0, Graphic.set_but_end_2_1, "-", "Decrease");
         ccCreate(int0, 3, ifGetNextSubId(int0));
         ccSetSize(110, 26, 0, 0);
         ccSetPosition(146, int2, 0, 0);
@@ -36,16 +36,17 @@ function instance_system_rebuild(): void {
         ccSetColour(colour(0xFFFFFF));
         ccSetTextShadow(true);
         ccSetText(instance_system_row_value(int1));
-        instance_system_stepper(int0, 258, int2, Graphic.set_but_end_2_3, Graphic.set_but_end_2_4, int1 * 2 + 2, "+", "Increase");
+        instance_system_stepper(int0, 258, int2, Graphic.set_but_end_2_3, Graphic.set_but_end_2_4, "+", "Increase");
         int2 = int2 + 34;
         int1 = int1 + 1;
     }
     ifSetGraphic(instance_system_checkbox(false), Component.instance_system.practice_checkbox);
+    ifSetNpcModel(varc_instance_boss_npc, Component.instance_system.portrait);
     let int3: component = Component.instance_system.buttons;
     ccDeleteAll(int3);
     let int4: number = (ifGetWidth(int3) - 24) * 3 / 10;
     let int5: number = ifGetWidth(int3) - 24 - int4 * 2;
-    instance_system_button(int3, 0, 0, int5, 1, "Start", true);
-    instance_system_button(int3, int5 + 12, 0, int4, 2, "Join", false);
-    instance_system_button(int3, int5 + int4 + 24, 0, int4, 3, "Rejoin", false);
+    instance_system_button(int3, 0, 0, int5, "Start", true);
+    instance_system_button(int3, int5 + 12, 0, int4, "Join", false);
+    instance_system_button(int3, int5 + int4 + 24, 0, int4, "Rejoin", false);
 }
