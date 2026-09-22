@@ -1,7 +1,13 @@
 {
   "id": 38811,
-  "modelIds": [[41081]],
-  "modelTypes": [10],
+  "modelIds": [
+    [
+      41081
+    ]
+  ],
+  "modelTypes": [
+    10
+  ],
   "name": "Passage",
   "sizeX": 5,
   "sizeY": 3,
@@ -12,7 +18,14 @@
   "delayShading": false,
   "offsetMultiplier": 64,
   "brightness": 20,
-  "options": ["Go-through", "Peek-in", null, null, null, "Examine"],
+  "options": [
+    "Go-through",
+    "Peek-in",
+    "Start instance",
+    "Join instance",
+    "Rejoin-last instance",
+    "Examine"
+  ],
   "contrast": 75,
   "mirrored": false,
   "castsShadow": true,
@@ -68,7 +81,17 @@
   "dynamicTint": false,
   "stringId": "",
   "singleAnimation": -1,
-  "rawOptions": ["Go-through", "Peek-in", null, null, null, null, null, null, null, null],
-  "opcodeOrder": [19, 15, 14, 29, 39, 27, 30, 31, 1, 2, 103],
+  "rawOptions": [
+    "Go-through",
+    "Peek-in",
+    "Start instance",
+    "Join instance",
+    "Rejoin-last instance",
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
   "block": 24
 }

@@ -1,7 +1,13 @@
 {
   "id": 26427,
-  "modelIds": [[28098]],
-  "modelTypes": [0],
+  "modelIds": [
+    [
+      28098
+    ]
+  ],
+  "modelTypes": [
+    0
+  ],
   "name": "Big door",
   "sizeX": 1,
   "sizeY": 1,
@@ -12,7 +18,14 @@
   "delayShading": false,
   "offsetMultiplier": 64,
   "brightness": 25,
-  "options": ["Open", null, null, null, null, "Examine"],
+  "options": [
+    "Open",
+    "Start instance",
+    "Join instance",
+    "Rejoin-last instance",
+    null,
+    "Examine"
+  ],
   "contrast": 125,
   "mirrored": false,
   "castsShadow": false,
@@ -68,7 +81,17 @@
   "dynamicTint": false,
   "stringId": "",
   "singleAnimation": -1,
-  "rawOptions": ["Open", null, null, null, null, null, null, null, null, null],
-  "opcodeOrder": [29, 39, 19, 30, 75, 64, 1, 2, 99, 23, 170],
+  "rawOptions": [
+    "Open",
+    "Start instance",
+    "Join instance",
+    "Rejoin-last instance",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
   "block": 24
 }
