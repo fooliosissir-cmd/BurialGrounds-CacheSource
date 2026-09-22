@@ -10132,8 +10132,6 @@ declare let varc_1991: number;
 declare let varc_1992: number;
 /** varc 1993 */
 declare let varc_instance_row_count: number;
-/** varc 1994 */
-declare let varc_instance_practice_mode: number;
 /** varc 1995 */
 declare let varc_instance_revision: number;
 /** varc 1996 */

@@ -327175,8 +327175,6 @@ declare namespace Component {
         /** component 1323:26 */ const portrait_frame: number;
         /** component 1323:27 */ const portrait: number;
         /** component 1323:28 */ const boss_name: number;
-        /** component 1323:29 */ const practice_label: number;
-        /** component 1323:30 */ const practice_checkbox: number;
-        /** component 1323:31 */ const buttons: number;
+        /** component 1323:29 */ const buttons: number;
     }
 }

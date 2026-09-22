@@ -40,7 +40,6 @@ function instance_system_rebuild(): void {
         int2 = int2 + 34;
         int1 = int1 + 1;
     }
-    ifSetGraphic(instance_system_checkbox(false), Component.instance_system.practice_checkbox);
     ifSetNpcModel(varc_instance_boss_npc, Component.instance_system.portrait);
     let int3: component = Component.instance_system.buttons;
     ccDeleteAll(int3);
