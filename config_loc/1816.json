@@ -1,7 +1,13 @@
 {
   "id": 1816,
-  "modelIds": [[37458]],
-  "modelTypes": [10],
+  "modelIds": [
+    [
+      37458
+    ]
+  ],
+  "modelTypes": [
+    10
+  ],
   "name": "Lever",
   "sizeX": 2,
   "sizeY": 1,
@@ -12,10 +18,29 @@
   "delayShading": true,
   "offsetMultiplier": 64,
   "brightness": 25,
-  "options": ["Pull", null, null, null, null, "Examine"],
+  "options": [
+    "Pull",
+    "Start instance",
+    "Join instance",
+    "Rejoin-last instance",
+    null,
+    "Examine"
+  ],
   "contrast": 75,
-  "originalColours": [21530, 21534, 21539, 21543, 21547],
-  "modifiedColours": [7054, 6930, 6806, 6682, 6558],
+  "originalColours": [
+    21530,
+    21534,
+    21539,
+    21543,
+    21547
+  ],
+  "modifiedColours": [
+    7054,
+    6930,
+    6806,
+    6682,
+    6558
+  ],
   "mirrored": false,
   "castsShadow": true,
   "modelSizeX": 128,
@@ -70,7 +95,17 @@
   "dynamicTint": false,
   "stringId": "",
   "singleAnimation": -1,
-  "rawOptions": ["Pull", null, null, null, null, null, null, null, null, null],
-  "opcodeOrder": [19, 30, 14, 29, 39, 22, 21, 40, 1, 2, 103],
+  "rawOptions": [
+    "Pull",
+    "Start instance",
+    "Join instance",
+    "Rejoin-last instance",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
   "block": 24
 }

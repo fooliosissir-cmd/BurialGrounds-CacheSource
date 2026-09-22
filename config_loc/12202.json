@@ -1,7 +1,13 @@
 {
   "id": 12202,
-  "modelIds": [[12031]],
-  "modelTypes": [22],
+  "modelIds": [
+    [
+      12031
+    ]
+  ],
+  "modelTypes": [
+    22
+  ],
   "name": "Mole hill",
   "sizeX": 1,
   "sizeY": 1,
@@ -12,7 +18,14 @@
   "delayShading": false,
   "offsetMultiplier": 64,
   "brightness": 0,
-  "options": ["Dig", null, null, null, null, "Examine"],
+  "options": [
+    "Dig",
+    "Start instance",
+    "Join instance",
+    "Rejoin-last instance",
+    null,
+    "Examine"
+  ],
   "contrast": 0,
   "mirrored": false,
   "castsShadow": true,
@@ -68,7 +81,17 @@
   "dynamicTint": false,
   "stringId": "",
   "singleAnimation": -1,
-  "rawOptions": ["Dig", null, null, null, null, null, null, null, null, null],
-  "opcodeOrder": [21, 17, 19, 30, 1, 2, 103],
+  "rawOptions": [
+    "Dig",
+    "Start instance",
+    "Join instance",
+    "Rejoin-last instance",
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+  ],
   "block": 16
 }
