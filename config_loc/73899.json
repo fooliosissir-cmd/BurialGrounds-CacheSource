@@ -1,74 +1,32 @@
 {
-  "id": 1817,
+  "id": 73899,
   "modelIds": [
     [
-      9228
+      4566
     ]
   ],
   "modelTypes": [
     10
   ],
-  "name": "Lever",
+  "name": "Ladder",
   "sizeX": 1,
   "sizeY": 1,
-  "blocksSky": false,
-  "solid": 1,
+  "blocksSky": true,
+  "solid": 2,
   "interactive": 1,
-  "contouredGround": 1,
-  "delayShading": false,
+  "contouredGround": 0,
+  "delayShading": true,
   "offsetMultiplier": 64,
-  "brightness": 25,
+  "brightness": 0,
   "options": [
-    "Pull",
-    null,
+    "Climb-up",
+    "Leave instance",
     null,
     null,
     null,
     "Examine"
   ],
-  "contrast": 75,
-  "originalColours": [
-    8370,
-    9389,
-    10283,
-    10270,
-    10267,
-    21528,
-    10275,
-    10293,
-    10277,
-    10280,
-    10265,
-    10262,
-    10260,
-    21522,
-    6670
-  ],
-  "modifiedColours": [
-    57,
-    49,
-    41,
-    37,
-    28,
-    18,
-    44,
-    57,
-    41,
-    48,
-    22,
-    18,
-    16,
-    12,
-    22
-  ],
-  "originalTextureColours": [
-    176,
-    710
-  ],
-  "modifiedTextureColours": [
-    83,
-    72
-  ],
+  "contrast": 0,
   "mirrored": false,
   "castsShadow": true,
   "modelSizeX": 128,
@@ -94,12 +52,12 @@
   "isMembers": false,
   "aBoolean3056": false,
   "aBoolean2998": false,
-  "anInt2987": -1,
-  "anInt3008": -1,
+  "anInt2987": 0,
+  "anInt3008": 52,
   "anInt3038": -1,
   "anInt3013": -1,
   "anInt2958": 0,
-  "mapscene": -1,
+  "mapscene": 7,
   "culling": 0,
   "anInt3024": 255,
   "invertMapScene": false,
@@ -124,8 +82,8 @@
   "stringId": "",
   "singleAnimation": -1,
   "rawOptions": [
-    "Pull",
-    null,
+    "Climb-up",
+    "Leave instance",
     null,
     null,
     null,
@@ -135,5 +93,5 @@
     null,
     null
   ],
-  "block": 16
+  "block": 24
 }
