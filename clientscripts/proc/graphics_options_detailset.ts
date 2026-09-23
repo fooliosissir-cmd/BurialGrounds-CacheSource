@@ -30,7 +30,10 @@ function graphics_options_detailset(intArg0: struct, intArg1: number, intArg2: n
             detailLightdetailHigh(int_to_bool(intArg1));
             break;
         case Struct.struct_839:
-            detailWaterDetailHigh(int_to_bool(intArg1));
+            if (graphics_options_detailavailable(intArg0, intArg1) == false) {
+                return 0;
+            }
+            detailWaterDetailHigh(intArg1);
             break;
         case Struct.struct_840:
             if (intArg1 == 0 && detailGetToolkit() == 0) {
