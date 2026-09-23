@@ -20,7 +20,7 @@ function graphics_options_detailget(intArg0: struct): number {
         case Struct.struct_838:
             return bool_to_int(detailGetLightdetailHigh());
         case Struct.struct_839:
-            return bool_to_int(detailGetWaterDetailHigh());
+            return detailGetWaterDetailHigh();
         case Struct.struct_840:
             return bool_to_int(detailGetFogOn());
         case Struct.struct_841:

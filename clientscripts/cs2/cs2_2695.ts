@@ -81,6 +81,11 @@ function cs2_2695(intArg0: component, intArg1: number, intArg2: number, intArg3:
                 ccSetColour(colour(0x00B1E1));
                 ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x00B1E1)]));
             }
+            if (graphics_options_detailavailable(intArg5, int26) == false) {
+                ccSetColour(colour(0x646464));
+                ccSetOnMouseOver(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x646464)]));
+                ccSetOnMouseLeave(hook(cc_text_colour_swapper, "Iii", [event_com, event_comsubid, colour(0x646464)]));
+            }
             if (int21 != -1) {
                 ccSetText(enumOp(type_int, type_string, int21, int26));
             } else {

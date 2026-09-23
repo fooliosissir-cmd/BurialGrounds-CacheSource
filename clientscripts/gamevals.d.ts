@@ -141601,6 +141601,7 @@ declare namespace Enum {
     /** enum 6049 */ const toolbelt_hatchet_objects: number;
     /** enum 6050 */ const toolbelt_machete_objects: number;
     /** enum 6051 */ const toolbelt_secateurs_objects: number;
+    /** enum 6052 */ const ogl_top_ultra_high_low: number;
 }
 
 /** Revision-727 struct ids by Jagex dev-name (11406 named of 11406). */
