@@ -10,13 +10,13 @@ function cs2_2699(intArg0: number, intArg1: struct, intArg2: number, intArg3: nu
         if (intArg1 == Struct.struct_845) {
             intArg5 = getDefaultWindowMode();
             setWindowMode(intArg5);
-            graphics_options_message(intArg6, 0, "RuneScape was unable to change to that resolution." + "<br>" + "<br>" + "Please visit our website for more information.", "", "");
+            graphics_options_message(intArg6, 0, "Burial Grounds could not use that resolution. Your previous resolution has been restored.", "", "");
         } else if (intArg1 == Struct.struct_1009) {
             cs2_3413(intArg6);
         } else if (intArg1 == Struct.struct_839) {
             graphics_options_message(intArg6, 1, "Ultra water detail uses water shaders that only the Modern OpenGL renderer supports.", "", "");
         } else {
-            graphics_options_message(intArg6, 1, "RuneScape was unable to implement that setting." + "<br>" + "<br>" + "Please visit our website for more information.", "", "");
+            graphics_options_message(intArg6, 1, "Burial Grounds could not apply that setting. Your previous setting has been restored.", "", "");
         }
     } else if (autosetupGetLevel() != 0) {
         autosetupSetCustom();
