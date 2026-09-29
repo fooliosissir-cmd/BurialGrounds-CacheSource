@@ -26,6 +26,84 @@ function proc_loginscreen_load(intArg0: component, intArg1: component, intArg2: 
     ifSetvflip(true, Component.interface_744.component_744_74);
     ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_4), Component.interface_744.component_744_4);
     ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_4), Component.interface_744.component_744_6);
+
+    // Burial Grounds owns the login presentation. Remove the stock revision-727
+    // title collage/logo and build a restrained Greyhaven entry scene using
+    // native interface primitives and fonts only.
+    ifSetHide(true, Component.interface_744.component_744_8);
+    ifSetHide(true, Component.interface_744.component_744_9);
+    ifSetHide(true, Component.interface_744.component_744_10);
+    ifSetHide(true, Component.interface_744.component_744_11);
+    ifSetHide(true, Component.interface_744.component_744_12);
+    ifSetHide(true, Component.interface_744.component_744_13);
+    ifSetHide(true, Component.interface_744.component_744_14);
+    ifSetHide(true, Component.interface_744.component_744_15);
+    ifSetHide(true, Component.interface_744.component_744_23);
+
+    ccDeleteAll(Component.interface_744.component_744_21);
+
+    // Full login backdrop.
+    ccCreate(Component.interface_744.component_744_21, 3, 0);
+    ccSetSize(0, 0, 1, 1);
+    ccSetPosition(0, 0, 0, 0);
+    ccSetfill(true);
+    ccSetColour(colour(0x171512));
+    ccSetTrans(0);
+
+    // Greyhaven lore panel.
+    ccCreate(Component.interface_744.component_744_21, 3, 1);
+    ccSetSize(300, 316, 0, 0);
+    ccSetPosition(30, 94, 0, 0);
+    ccSetfill(true);
+    ccSetColour(colour(0x211E1A));
+    ccSetTrans(0);
+
+    ccCreate(Component.interface_744.component_744_21, 3, 2);
+    ccSetSize(4, 316, 0, 0);
+    ccSetPosition(30, 94, 0, 0);
+    ccSetfill(true);
+    ccSetColour(colour(0x756B57));
+    ccSetTrans(0);
+
+    ccCreate(Component.interface_744.component_744_21, 4, 3);
+    ccSetSize(250, 42, 0, 0);
+    ccSetPosition(52, 120, 0, 0);
+    ccSetTextFont(Graphic.welcome_font_large);
+    ccSetTextAlign(0, 1, 0);
+    ccSetColour(colour(0xEBE0BC));
+    ccSetText("GREYHAVEN");
+
+    ccCreate(Component.interface_744.component_744_21, 4, 4);
+    ccSetSize(250, 22, 0, 0);
+    ccSetPosition(54, 166, 0, 0);
+    ccSetTextFont(Graphic.b12_full);
+    ccSetTextAlign(0, 1, 0);
+    ccSetColour(colour(0xA6C68A));
+    ccSetText("BURIAL GROUNDS");
+
+    ccCreate(Component.interface_744.component_744_21, 4, 5);
+    ccSetSize(248, 92, 0, 0);
+    ccSetPosition(54, 210, 0, 0);
+    ccSetTextFont(Graphic.welcome_font_small);
+    ccSetTextAlign(0, 0, 0);
+    ccSetColour(colour(0xC9BE9D));
+    ccSetText("The road begins again at Greyhaven.<br><br>Sign in to continue your journey.");
+
+    ccCreate(Component.interface_744.component_744_21, 3, 6);
+    ccSetSize(248, 1, 0, 0);
+    ccSetPosition(54, 326, 0, 0);
+    ccSetfill(true);
+    ccSetColour(colour(0x655D4E));
+    ccSetTrans(0);
+
+    ccCreate(Component.interface_744.component_744_21, 4, 7);
+    ccSetSize(248, 44, 0, 0);
+    ccSetPosition(54, 340, 0, 0);
+    ccSetTextFont(Graphic.p11_full);
+    ccSetTextAlign(0, 0, 0);
+    ccSetColour(colour(0x8E8672));
+    ccSetText("Your username is remembered on this device.");
+
     detailLoadingscreentype(random(36));
 
     if (varc_176 <= 0) {
