@@ -264285,6 +264285,11 @@ declare namespace Component {
         /** component 182:13 */ const component_182_13: number;
         /** component 182:14 */ const component_182_14: number;
         /** component 182:15 */ const component_182_15: number;
+        /** component 182:16 */ const adventure_switch_layer: number;
+        /** component 182:17 */ const adventure_switch_middle: number;
+        /** component 182:18 */ const adventure_switch_left: number;
+        /** component 182:19 */ const adventure_switch_right: number;
+        /** component 182:20 */ const adventure_switch_button: number;
     }
     /** interface_183, interface 183. */
     namespace interface_183 {
