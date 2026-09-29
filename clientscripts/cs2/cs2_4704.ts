@@ -17,13 +17,13 @@ function cs2_4704(): void {
             mes("Your password has been updated. Please leave the world and log in again.");
             break;
         case 4:
-            mes("Your account has been disabled. Check your Message Centre for details.");
+            mes("Your account has been disabled. Contact Burial Grounds staff for details.");
             break;
         case 5:
             mes("Your account has not logged out from its last session. Try again in a few minutes.");
             break;
         case 6:
-            mes("RuneScape has been updated! Please try again in a few minutes.");
+            mes("Burial Grounds has been updated. Please restart the client.");
             break;
         case 7:
             mes("This world is full. Please try back later.");
@@ -41,7 +41,7 @@ function cs2_4704(): void {
             mes("Your password is an extremely common choice, and is not secure. You must change it.");
             break;
         case 12:
-            mes("You need a member's account to log in to this world.");
+            mes("This world is not available for this account.");
             break;
         case 13:
             mes("Could not complete login. Please try back later.");
@@ -55,13 +55,13 @@ function cs2_4704(): void {
             mes("Too many incorrect logins from your address. Please wait 5 minutes before trying again.");
             break;
         case 17:
-            mes("You are standing in a members-only area. To play on this world, move to a free area first.");
+            mes("Your current location is not available on the selected world.");
             break;
         case 18:
-            mes("Your account has been locked. If you have not received an account recovery email, please select 'Recover Account'.");
+            mes("Your account has been locked. Contact Burial Grounds staff if you need help restoring access.");
             break;
         case 19:
-            mes("Fullscreen is currently a members-only feature. To log in, either exit fullscreen via the options menu or use a member's account.");
+            mes("Unable to enter the selected display mode while logging in.");
             break;
         case 20:
             mes("Invalid loginserver requested. Please try back later.");
@@ -114,12 +114,12 @@ function cs2_4704(): void {
             }
             break;
         case 30:
-            mes("This is not a member's account. Please choose a 'free' world from the website to play on this account.");
+            mes("This world is not available for this account.");
             break;
         case 31:
             break;
         case 32:
-            mes("Your account has negative membership credit. Please log into the billing system to add credit to your account.");
+            mes("This account cannot enter the selected world.");
             break;
         case 33:
             break;
@@ -138,7 +138,7 @@ function cs2_4704(): void {
             mes("The instance you tried to join no longer exists. Please try back later.");
             break;
         case 40:
-            mes("You need a member's account to log in to this instance.");
+            mes("This instance is not available for this account.");
             break;
         case 41:
             mes("The instance you tried to join is full. Please try back later.");
@@ -151,7 +151,7 @@ function cs2_4704(): void {
             mes("Our systems are currently unavailable. Please try again in a few minutes.");
             break;
         case 48:
-            mes("Client token failure - please reload this page.");
+            mes("Session validation failed. Return to the login screen and try again.");
             break;
         case 45:
             switch (int2) {
