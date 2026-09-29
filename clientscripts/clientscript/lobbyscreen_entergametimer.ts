@@ -30,17 +30,12 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
         cs2_5874();
         varc_login_reply_last = 21;
         cs2_3064(0);
-        if (varc_loginscreen_hopblocked_time == 0 && varc_lobby_video_ad_started == 0) {
+        if (varc_loginscreen_hopblocked_time == 0) {
             varc_loginscreen_hopblocked_time = loginHopTime();
-            if (playerMember() == 0 && videoAdvertPlay(6) == 1) {
-                varc_lobby_video_ad_started = 1;
-            }
+            varc_lobby_video_ad_started = 0;
         }
         if (varc_loginscreen_hopblocked_time > 0) {
             varc_loginscreen_hopblocked_time = varc_loginscreen_hopblocked_time - 1;
-            if (varc_lobby_video_ad_started == 1 && varc_loginscreen_hopblocked_time == 0 && videoAdvertHasFinished() == 0) {
-                videoAdvertAllowSkip();
-            }
         }
         if (varc_loginscreen_hopblocked_time <= 0 && (varc_lobby_video_ad_started == 0 || videoAdvertHasFinished() == 1)) {
             if (worldListFetch() == 0) {
@@ -54,11 +49,7 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
                 }
             }
             ifSetOnTimer(noHook(""), intArg0);
-            if (varc_lobby_video_ad_started == 1) {
-                videoAdvertForceRemove();
-                varc_lobby_video_ad_started = 0;
-            }
-            if (varc_lobby_video_ad_started == 0 || videoAdvertHasFinished() == 1) {
+            if (varc_lobby_video_ad_started == 0) {
                 detailSoundVol(intArg2);
                 detailMusicVol(intArg3);
                 detailBgsoundvol(intArg4);
@@ -258,7 +249,7 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
             str4 = "Our systems are currently unavailable. Please try again in a few minutes.";
             break;
         case 35:
-            str4 = "Your session has expired. Please click 'Back' in your browser to renew it.";
+            str4 = "Your session has expired. Return to the login screen and sign in again.";
             str7 = "Close";
             str8 = "Close";
             break;
@@ -270,72 +261,45 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
         case 6:
             int13 = 0;
             int15 = Graphic.loadingwheel_11;
-            str4 = "RuneScape has been updated! Please reload this page.";
+            str4 = "Burial Grounds has been updated. Please restart the client.";
             break;
         case 4:
-            str4 = "Your account has been disabled. Check your Message Centre for details.";
-            int16 = 1;
-            str5 = "Message Centre";
-            str6 = "Message Centre";
+            str4 = "Your account has been disabled. Contact Burial Grounds staff for details.";
             break;
         case 11:
-            str4 = "Your password is an extremely common choice, and is not secure. You must change it before you can log in.";
-            int16 = 1;
-            str5 = "Change Password";
-            str6 = "Change Password";
+            str4 = "Your password must be changed before you can log in.";
             break;
         case 18:
             int15 = Graphic.loadingwheel_13;
-            str4 = "Your account has been locked. If you have not received an account recovery email, please select 'Recover Account'.";
-            int16 = 1;
-            str5 = "Recover Account";
-            str6 = "Recover Account";
+            str4 = "Your account has been locked. Contact Burial Grounds staff if you need help restoring access.";
             break;
         case 31:
-            str4 = "You must change your account's display name before you can log in.";
-            int16 = 1;
-            str5 = "Change Display Name";
-            str6 = "Change Display Name";
+            str4 = "Your display name must be updated before you can log in.";
             break;
         case 30:
-            str4 = "This is not a member's account. Please choose a 'free' world from the website to play on this account.";
-            int16 = 1;
-            str5 = "Subscribe";
-            str6 = "Subscribe";
+            str4 = "This world is not available for this account.";
             break;
         case 19:
-            str4 = "Fullscreen is currently a members-only feature. To log in, either exit fullscreen via the options menu or use a member's account.";
-            int16 = 1;
-            str5 = "Subscribe";
-            str6 = "Subscribe";
+            str4 = "Unable to enter the selected display mode while logging in.";
             break;
         case 12:
             int13 = 0;
             int15 = Graphic.loadingwheel_8;
-            str4 = "You need a member's account to log in to this world. Please subscribe or use a different world.";
-            int16 = 1;
-            str5 = "Subscribe";
-            str6 = "Subscribe";
+            str4 = "This world is not available for this account.";
             break;
         case 40:
             int13 = 0;
             int15 = Graphic.loadingwheel_8;
-            str4 = "You need a member's account to log in to this instance. Please subscribe or use a different world.";
-            int16 = 1;
-            str5 = "Subscribe";
-            str6 = "Subscribe";
+            str4 = "This instance is not available for this account.";
             break;
         case 32:
-            str4 = "Your account has negative membership credit. Please log into the billing system to add credit to your account.";
-            int16 = 1;
-            str5 = "Add Credit";
-            str6 = "Add Credit";
+            str4 = "This account cannot enter the selected world.";
             break;
         case 47:
             str4 = "You need to validate your email address to log in.";
             break;
         case 48:
-            str4 = "Your game session has now ended." + "<br>" + "<br>" + "To play again, please close your browser tab/window and wait 5 minutes before reloading the game. ";
+            str4 = "Your game session has ended. Return to the login screen to play again.";
             break;
         default:
             str4 = "Unexpected server response. Please try using a different world.";
