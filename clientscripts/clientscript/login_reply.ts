@@ -80,16 +80,11 @@ function login_reply(intArg0: number): void {
         return;
     }
     proc_login_popup_close();
-    let int7: number = 0;
-    let str1: string = "";
-
     // Burial Grounds does not use RuneScape video-advert login gates.
     if (int1 == 1) {
-        proc_login_popup_close();
         loginContinue();
         return;
     }
-    proc_login_popup_close();
 
     if (hasSignonKey() == 1) {
         ifSetText("Play Game", int2);
