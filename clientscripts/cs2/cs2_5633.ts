@@ -30,7 +30,7 @@ function cs2_5633(): void {
                 int7 = 6;
                 int1 = 0;
                 int3 = Graphic.loadingwheel_11;
-                str0 = "RuneScape has been updated! Please reload this page.";
+                str0 = "Burial Grounds has been updated. Please restart the client.";
                 break;
             case -5:
                 int7 = -5;
