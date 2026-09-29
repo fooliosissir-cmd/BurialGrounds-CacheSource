@@ -13,7 +13,7 @@ function proc_lobbyscreen_entergame(intArg0: component): void {
     let int22: number = max(8, int20 / 96);
     let int25: number = 0;
 
-    if (ccFind(Component.interface_906.component_906_335, 0) == 1) {
+    if (intArg0 == Component.interface_906.component_906_186 && ccFind(Component.interface_906.component_906_335, 0) == 1) {
         if (ccGetWidth() == 1) {
             int25 = 1;
         } else {
