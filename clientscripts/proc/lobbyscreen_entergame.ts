@@ -11,41 +11,44 @@ function proc_lobbyscreen_entergame(intArg0: component): void {
     let int20: number = ifGetWidth(Component.interface_906.component_906_335);
     let int21: number = ifGetHeight(Component.interface_906.component_906_335);
     let int22: number = max(8, int20 / 96);
+    let int25: number = 0;
 
     if (ccFind(Component.interface_906.component_906_335, 0) == 1) {
-        let int23: number = ccGetX();
+        if (ccGetWidth() == 1) {
+            int25 = 1;
+        } else {
+            let int23: number = ccGetX();
 
-        if (int23 > 0 - int20 / 2 - 24) {
-            ccSetPosition(int23 - int22, 0, 0, 0);
+            if (int23 > 0 - int20 / 2 - 24) {
+                ccSetPosition(int23 - int22, 0, 0, 0);
 
-            if (ccFind(Component.interface_906.component_906_335, 1) == 1) {
-                ccSetPosition(ccGetX() + int22, 0, 0, 0);
+                if (ccFind(Component.interface_906.component_906_335, 1) == 1) {
+                    ccSetPosition(ccGetX() + int22, 0, 0, 0);
+                }
+                if (ccFind(Component.interface_906.component_906_335, 2) == 1) {
+                    ccSetPosition(ccGetX() - int22, 0, 0, 0);
+                }
+                if (ccFind(Component.interface_906.component_906_335, 3) == 1) {
+                    ccSetPosition(ccGetX() + int22, 0, 0, 0);
+                }
+                if (ccFind(Component.interface_906.component_906_335, 4) == 1) {
+                    ccSetTrans(min(255, ccGetTrans() + 7));
+                }
+                if (ccFind(Component.interface_906.component_906_335, 5) == 1) {
+                    ccSetTrans(min(255, ccGetTrans() + 8));
+                }
+                return;
             }
-            if (ccFind(Component.interface_906.component_906_335, 2) == 1) {
-                ccSetPosition(ccGetX() - int22, 0, 0, 0);
-            }
-            if (ccFind(Component.interface_906.component_906_335, 3) == 1) {
-                ccSetPosition(ccGetX() + int22, 0, 0, 0);
-            }
-            if (ccFind(Component.interface_906.component_906_335, 4) == 1) {
-                ccSetTrans(min(255, ccGetTrans() + 7));
-            }
-            if (ccFind(Component.interface_906.component_906_335, 5) == 1) {
-                ccSetTrans(min(255, ccGetTrans() + 8));
-            }
-            return;
+
+            ccDeleteAll(Component.interface_906.component_906_335);
+            ccCreate(Component.interface_906.component_906_335, 3, 0);
+            ccSetSize(1, 1, 0, 0);
+            ccSetPosition(0, 0, 0, 0);
+            ccSetfill(true);
+            ccSetColour(colour(0x000000));
+            ccSetTrans(255);
+            int25 = 1;
         }
-
-        // Doors have cleared the viewport. Leave a tiny invisible marker so
-        // this call can continue into the real lobbyEntergame path without
-        // immediately starting the animation a second time.
-        ccDeleteAll(Component.interface_906.component_906_335);
-        ccCreate(Component.interface_906.component_906_335, 3, 9);
-        ccSetSize(1, 1, 0, 0);
-        ccSetPosition(0, 0, 0, 0);
-        ccSetfill(true);
-        ccSetColour(colour(0x000000));
-        ccSetTrans(255);
     }
 
     if (varc_login_reply_last == 42 || varc_login_reply_last == 43) {
@@ -95,7 +98,7 @@ function proc_lobbyscreen_entergame(intArg0: component): void {
 
     // First successful Enter World press: play a one-second Greyhaven gate
     // transition before handing control to the native lobby login.
-    if (ccFind(Component.interface_906.component_906_335, 9) == 0) {
+    if (int25 == 0) {
         ccDeleteAll(Component.interface_906.component_906_335);
         ifSetTrans(255, Component.interface_906.component_906_336);
 
@@ -159,7 +162,7 @@ function proc_lobbyscreen_entergame(intArg0: component): void {
     }
 
     // Transition marker is no longer needed once the real login begins.
-    if (ccFind(Component.interface_906.component_906_335, 9) == 1) {
+    if (int25 == 1 && ccFind(Component.interface_906.component_906_335, 0) == 1) {
         ccDelete();
     }
 
