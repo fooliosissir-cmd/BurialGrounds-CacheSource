@@ -83,28 +83,8 @@ function login_reply(intArg0: number): void {
     let int7: number = 0;
     let str1: string = "";
 
+    // Burial Grounds does not use RuneScape video-advert login gates.
     if (int1 == 1) {
-        ifSetText("Logging in...", int2);
-        ifSetText("Logging in...", int3);
-        ifSetOnClick(noHook(""), int4);
-        int7 = (500 - varc_201) / 50;
-        if (varc_202 == 0) {
-            if (int7 == 1) {
-                str1 = "Could not display video advertisement. Login will continue in 1 second.";
-            } else {
-                str1 = "Could not display video advertisement. Login will continue in " + tostring(int7) + " seconds";
-            }
-        } else if (varc_201 < 500) {
-            if (int7 == 1) {
-                str1 = "Displaying video advertisement. Login will continue in 1 second.";
-            } else {
-                str1 = "Displaying video advertisement. Login will continue in " + tostring(int7) + " seconds.";
-            }
-        } else {
-            str1 = "Displaying video advertisement. Login will continue in 0 seconds.";
-        }
-        login_popup(int1, 0, str1, 0, Graphic.loadingwheel_12, 0, -1, "", 0, "");
-        varc_201 = varc_201 + 1;
         proc_login_popup_close();
         loginContinue();
         return;
@@ -275,7 +255,7 @@ function login_reply(intArg0: number): void {
             str2 = "Our systems are currently unavailable. Please try again in a few minutes.";
             break;
         case 35:
-            str2 = "Your session has expired. Please click 'Back' in your browser to renew it.";
+            str2 = "Your session has expired. Return to the login screen and sign in again.";
             str4 = "Close";
             break;
         case 14:
@@ -286,71 +266,45 @@ function login_reply(intArg0: number): void {
         case 6:
             int8 = 0;
             int10 = Graphic.loadingwheel_11;
-            str2 = "RuneScape has been updated! Please reload this page.";
+            str2 = "Burial Grounds has been updated. Please restart the client.";
             break;
         case 3:
-            if (varc_1414 == 1) {
-                str2 = "Invalid username or password." + "<br>" + "<br>" + "For accounts created after the 24th of November 2010, please use your email address to login. Otherwise please login with your username.";
-            } else if (varc_1414 == 2) {
-                str2 = "Invalid email or password." + "<br>" + "<br>" + "For accounts created after the 24th of November 2010, please use your email address to login. Otherwise please login with your username.";
-            } else {
-                str2 = "Invalid login or password." + "<br>" + "<br>" + "For accounts created after the 24th of November 2010, please use your email address to login. Otherwise please login with your username.";
-            }
+            str2 = "Invalid username or password.";
             str4 = "Try Again";
-            int11 = 1;
-            str3 = "Forgotten your password?";
             break;
         case 4:
-            str2 = "Your account has been disabled. Check your message centre for details.";
-            int11 = 1;
-            str3 = "Message Centre";
+            str2 = "Your account has been disabled. Contact Burial Grounds staff for details.";
             break;
         case 11:
-            str2 = "Your password is an extremely common choice, and is not secure. You must change it before you can login.";
-            int11 = 1;
-            str3 = "Change Password";
+            str2 = "Your password must be changed before you can log in.";
             break;
         case 18:
             int10 = Graphic.loadingwheel_13;
-            str2 = "Your account has been locked. If you have not received an account recovery email, please select 'Recover Account'.";
-            int11 = 1;
-            str3 = "Recover Account";
+            str2 = "Your account has been locked. Contact Burial Grounds staff if you need help restoring access.";
             break;
         case 30:
-            str2 = "This is not a member's account; please choose a 'free' world from the website to play on this account.";
-            int11 = 1;
-            str3 = "Subscribe";
+            str2 = "This world is not available for this account.";
             break;
         case 31:
-            str2 = "You must change your account's display name before you can login.";
-            int11 = 1;
-            str3 = "Change Display Name";
+            str2 = "Your display name must be updated before you can log in.";
             break;
         case 19:
-            str2 = "Fullscreen is currently a members-only feature. To log in, exit fullscreen via the options menu or use a member's account.";
-            int11 = 1;
-            str3 = "Subscribe";
+            str2 = "Unable to enter the selected display mode while logging in.";
             break;
         case 12:
-            str2 = "You need a member's account to log in to this world. Please subscribe or use a different world.";
-            int11 = 1;
-            str3 = "Subscribe";
+            str2 = "This world is not available for this account.";
             break;
         case 40:
-            str2 = "You need a member's account to log in to this world. Please subscribe or use a different world.";
-            int11 = 1;
-            str3 = "Subscribe";
+            str2 = "This instance is not available for this account.";
             break;
         case 32:
-            str2 = "Your account has negative membership credit. Please log into the billing system to add credit to your account.";
-            int11 = 1;
-            str3 = "Add Credit";
+            str2 = "This account cannot enter the selected world.";
             break;
         case 47:
             str2 = "You need to validate your email address to log in.";
             break;
         case 48:
-            str2 = "Your game session has now ended." + "<br>" + "<br>" + "To play again, please close your browser tab/window and wait 5 minutes before reloading the game. ";
+            str2 = "Your game session has ended. Return to the login screen to play again.";
             break;
         default:
             str2 = "Unexpected server response. Please try using a different world.";
