@@ -13,7 +13,7 @@ function cs2_2697(intArg0: number, intArg1: number): void {
 
     if (intArg0 != int2) {
         detailToolkitDefault(int2, 1);
-        graphics_options_message(intArg1, 1, "RuneScape was unable to enter that display mode." + "<br>" + "<br>" + "Please visit our website for more information.", "", "");
+        graphics_options_message(intArg1, 1, "Burial Grounds could not switch to that display mode. Your previous display mode has been restored.", "", "");
         cs2_3387(int2, getWindowMode(), ...graphics_options_reviewoptions(int2), intArg1);
     }
     cs2_3387(int2, getWindowMode(), ...graphics_options_reviewoptions(int2), intArg1);
