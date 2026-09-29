@@ -14,7 +14,7 @@ function graphics_options_setwindowmode(intArg0: number, intArg1: number, intArg
         int5 = getWindowMode();
         setDefaultWindowMode(int5);
         if (intArg0 != int5) {
-            graphics_options_message(intArg4, 0, "RuneScape was unable to enter that display mode." + "<br>" + "<br>" + "Please visit our website for more information.", "", "");
+            graphics_options_message(intArg4, 0, "Burial Grounds could not switch to that display mode. Your previous display mode has been restored.", "", "");
             proc_graphics_options_rebuild(intArg3, int5, intArg1, intArg2, intArg4);
             return;
         }
@@ -22,11 +22,6 @@ function graphics_options_setwindowmode(intArg0: number, intArg1: number, intArg
         if (intArg0 >= 2 && int5 >= 2) {
             varc_994 = 2;
         }
-        return;
-    }
-
-    if (playerMember() == 0) {
-        graphics_options_message(intArg4, 0, "Fullscreen mode is only available to RuneScape members." + "<br>" + "<br>" + "Please visit the RuneScape website to learn about other benefits of membership.", "Members' benefits", "members_benefits.ws");
         return;
     }
 
