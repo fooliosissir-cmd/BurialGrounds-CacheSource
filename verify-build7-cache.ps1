@@ -15,9 +15,11 @@ Write-Host "===================================================" -ForegroundColo
 Write-Host ""
 
 if ([string]::IsNullOrWhiteSpace($ServerPath)) {
+    $parent = Split-Path -Parent $Tree
     $candidates = @(
-        (Join-Path (Split-Path -Parent $Tree) "BurialGrounds-Server"),
-        (Join-Path (Split-Path -Parent $Tree) "Server"),
+        $parent,
+        (Join-Path $parent "BurialGrounds-Server"),
+        (Join-Path $parent "Server"),
         "C:\DarkanDev\Server"
     )
     foreach ($candidate in $candidates) {
