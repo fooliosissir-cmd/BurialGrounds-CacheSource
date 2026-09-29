@@ -11,7 +11,7 @@
   "horizontalPositionMode": 1,
   "verticalPositionMode": 0,
   "parent": 4,
-  "hidden": false,
+  "hidden": true,
   "disableHover": false,
   "scrollWidth": 0,
   "scrollHeight": 0,
@@ -61,10 +61,36 @@
   "anInt4698": -1,
   "anInt4839": -1,
   "anInt4761": -1,
-  "setting": {"setting": 0, "anInt7413": -1},
-  "onMouseOver": {"script": 3962, "args": [39059501, 39059509, 3793, 1]},
-  "onMouseLeaveScript": {"script": 3962, "args": [39059501, 39059509, 3793, 0]},
-  "onClick": {"script": 2931, "args": ["accountappeal", "passwordchoice.ws", 1]},
+  "setting": {
+    "setting": 0,
+    "anInt7413": -1
+  },
+  "onMouseOver": {
+    "script": 3962,
+    "args": [
+      39059501,
+      39059509,
+      3793,
+      1
+    ]
+  },
+  "onMouseLeaveScript": {
+    "script": 3962,
+    "args": [
+      39059501,
+      39059509,
+      3793,
+      0
+    ]
+  },
+  "onClick": {
+    "script": 2931,
+    "args": [
+      "accountappeal",
+      "passwordchoice.ws",
+      1
+    ]
+  },
   "hasScript": true,
   "stringId": ""
 }
