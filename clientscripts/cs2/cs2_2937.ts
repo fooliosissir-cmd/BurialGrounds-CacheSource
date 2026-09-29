@@ -27,8 +27,8 @@ function cs2_2937(): void {
     // These were RuneScape web-account actions and have no Burial Grounds
     // destination. Do not leave dead/external controls in the custom client.
     ifSetHide(true, Component.interface_596.component_596_45);
-    ifSetHide(true, Component.interface_596.component_596_52);
-    ifSetHide(true, Component.interface_596.component_596_59);
+    ifSetHide(true, Component.interface_596.create_account_caption);
+    ifSetHide(true, Component.interface_596.create_account_button);
 
     // Give the real Enter button a little more visual weight now that the
     // obsolete account/recovery controls are gone.
