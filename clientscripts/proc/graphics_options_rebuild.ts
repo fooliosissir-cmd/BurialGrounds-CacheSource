@@ -64,55 +64,14 @@ function proc_graphics_options_rebuild(intArg0: number, intArg1: number, intArg2
     ifSetOnClick(hook(clientscript_autosetup, "i", [intArg4]), Component.interface_978.component_978_1);
     cs2_1149(1, intArg1, Component.interface_978.component_978_12, Component.interface_978.component_978_21, Component.interface_978.component_978_22, intArg2, intArg3, intArg0, intArg4);
     cs2_1149(2, intArg1, Component.interface_978.component_978_13, Component.interface_978.component_978_19, Component.interface_978.component_978_20, intArg2, intArg3, intArg0, intArg4);
-    cs2_1149(3, intArg1, Component.interface_978.component_978_14, Component.interface_978.component_978_17, Component.interface_978.component_978_18, intArg2, intArg3, intArg0, intArg4);
+
+    // Burial Grounds currently supports only Standard and Resizable. Keep the
+    // revision-727 fullscreen implementation out of the player-facing UI until
+    // its renderer/display-mode transition has been stabilized.
+    ifSetHide(true, Component.interface_978.component_978_14);
+    ifSetHide(true, Component.interface_978.component_978_16);
+
     ifSetHide(true, int6);
     ifSetOnClick(noHook(""), int5);
-
-    if (varc_178 < 0) {
-        varc_178 = max(fullScreenLastMode(), 0);
-    }
-
-    if (varc_178 >= fullScreenModeCount()) {
-        varc_178 = 0;
-    }
-    let int7: component = Component.interface_978.component_978_16;
-    ccDeleteAll(int7);
-    ccCreate(int7, 3, ifGetNextSubId(int7));
-    ccSetSize(0, 0, 1, 1);
-    ccSetPosition(0, 0, 1, 1);
-    ccSetfill(true);
-    ccSetColour(colour(0x2E2B26));
-    ccCreate<1>(int7, 3, ifGetNextSubId(int7));
-    ccSetSize<1>(0, 0, 1, 1);
-    ccSetPosition<1>(0, 0, 1, 0);
-    ccSetfill<1>(false);
-    ccSetColour<1>(colour(0x5F5B52));
-    let int8: number = ccGetId<1>();
-    ccCreate<1>(int7, 4, ifGetNextSubId(int7));
-    ccSetTextFont<1>(Graphic.p11_full);
-    ccSetTextAlign<1>(1, 1, 0);
-
-    if (fullScreenModeCount() <= 0) {
-        ccSetSize<1>(0, 0, 1, 1);
-        ccSetPosition<1>(0, 0, 1, 1);
-        ccSetColour<1>(colour(0xEBE0BC));
-        ccSetText<1>("N/A");
-    } else {
-        ccSetSize<1>(21, 0, 1, 1);
-        ccSetPosition<1>(2, 0, 0, 1);
-        if (varc_178 < fullScreenModeCount() - 1) {
-            ccSetColour<1>(colour(0xEBE0BC));
-        } else {
-            ccSetColour<1>(colour(0x00B1E1));
-        }
-        ccSetText<1>(graphics_options_resolutions(varc_178));
-        ccCreate<1>(int7, 5, ifGetNextSubId(int7));
-        ccSetSize<1>(16, 16, 0, 0);
-        ccSetPosition<1>(1, 0, 2, 1);
-        ccSetGraphic<1>(Graphic.graphic_2554);
-        ccSetOnMouseOver(hook(cs2_2691, "Ii1ii1", [event_com, ccGetId<1>(), true, int8, colour(0x80786D), true]));
-        ccSetOnMouseLeave(hook(cs2_2691, "Ii1ii1", [event_com, ccGetId<1>(), false, int8, colour(0x5F5B52), true]));
-        ccSetOnClick(hook(cs2_2695, "IiiiiJiiiii", [event_com, event_comsubid, ccGetId<1>(), int8, -1, Struct.struct_845, intArg2, intArg3, intArg0, intArg1, intArg4]));
-    }
     graphics_options_manual_setup_buttons(intArg4, false);
 }
