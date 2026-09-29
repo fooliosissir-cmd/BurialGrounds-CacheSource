@@ -4,6 +4,12 @@
 // [proc,loginscreen_setactivemenu_full]
 
 function proc_loginscreen_setactivemenu_full(intArg0: number, intArg1: boolean, intArg2: boolean): void {
+    // Burial Grounds does not expose the revision-727 account-creation web flow.
+    // Any legacy state that attempts to open it is redirected to the real login.
+    if (intArg0 == 7 || intArg0 == 8) {
+        intArg0 = 11;
+    }
+
     let int3: number = login_getreply();
 
     if (intArg1 == false && (int3 == -3 || int3 == 21 || int3 == 1)) {
