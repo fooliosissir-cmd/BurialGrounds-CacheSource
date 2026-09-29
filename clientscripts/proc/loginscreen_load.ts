@@ -104,7 +104,7 @@ function proc_loginscreen_load(intArg0: component, intArg1: component, intArg2: 
     ccSetColour(colour(0x8E8672));
     ccSetText("Your username is remembered on this device.");
 
-    detailLoadingscreentype(random(36));
+    detailLoadingscreentype(0);
 
     if (varc_176 <= 0) {
         varc_176 = (random(5) + 1) * 10;
