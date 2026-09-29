@@ -9,7 +9,7 @@ function proc_graphics_options_rebuild(intArg0: number, intArg1: number, intArg2
 
     switch (intArg4) {
         case 1:
-            ifSetText("Graphics Options", Component.interface_742.component_742_19);
+            ifSetText("Burial Grounds Settings", Component.interface_742.component_742_19);
             ifOpenSubClient(Component.interface_742.component_742_6, Interface.interface_978);
             int5 = Component.interface_742.component_742_4;
             int6 = Component.interface_742.component_742_20;
