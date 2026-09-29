@@ -33,7 +33,8 @@ function proc_loginscreen_load(intArg0: component, intArg1: component, intArg2: 
     }
     ifSetOnResize(hook(clientscript_login_resize, "", []), Component.interface_744.component_744_17);
     cs2_3964();
-    varcstr_32 = "";
+    // Preserve the username restored by the Burial Grounds client across launches.
+    // Passwords are never persisted and are always cleared when the login screen loads.
     varcstr_33 = "";
     videoAdvertForceRemove();
     varc_loginscreen_pvp_warned = 0;
