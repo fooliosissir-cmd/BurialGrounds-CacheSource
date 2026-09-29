@@ -11,7 +11,7 @@
   "horizontalPositionMode": 0,
   "verticalPositionMode": 0,
   "parent": 51,
-  "hidden": false,
+  "hidden": true,
   "disableHover": false,
   "scrollWidth": 0,
   "scrollHeight": 0,
@@ -54,7 +54,18 @@
   "lineMirrored": false,
   "clickable": false,
   "name": "",
-  "options": ["Clan Chat", "", "", "", "", "", "", "", "", " "],
+  "options": [
+    "Clan Chat",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    " "
+  ],
   "anInt4708": 0,
   "anInt4795": 0,
   "anInt4860": 0,
@@ -62,8 +73,16 @@
   "anInt4698": -1,
   "anInt4839": -1,
   "anInt4761": -1,
-  "setting": {"setting": 1026, "anInt7413": -1},
-  "params": {"script": 3059, "args": [5]},
+  "setting": {
+    "setting": 1026,
+    "anInt7413": -1
+  },
+  "params": {
+    "script": 3059,
+    "args": [
+      5
+    ]
+  },
   "hasScript": true,
   "stringId": ""
 }
