@@ -2,6 +2,7 @@
 /// <reference path="../gamevals.d.ts" />
 /// <reference path="../vars.d.ts" />
 // cs2_5488
+// Burial Grounds: size standard text with the client-supported line-count opcode.
 
 function cs2_5488(strArg0: string): void {
     let int0: number = 0;
@@ -18,7 +19,7 @@ function cs2_5488(strArg0: string): void {
         int2 = paraheight(strArg0, int1, Graphic.b12_full) * 28;
     } else {
         int1 = parawidth(strArg0, 1000000, Graphic.b12_full);
-        int2 = paraheight(strArg0, int1, Graphic.b12_full) * 14 + paraheightExtra(strArg0, int1, Graphic.b12_full);
+        int2 = paraheight(strArg0, int1, Graphic.b12_full) * 14;
     }
     tli_optext_build_tooltip(int3, strArg0, int1, int2);
     let int5: number = int1 + 15;
