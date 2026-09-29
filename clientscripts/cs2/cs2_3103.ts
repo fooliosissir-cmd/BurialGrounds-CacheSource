@@ -7,6 +7,13 @@ function cs2_3103(): void {
     cs2_3102();
     lobby_worldswitcher_drawlist();
 
+    // Reclaim the space previously reserved for favourites/sort headers so the
+    // two Burial Grounds world cards become the visual focus.
+    ifSetPosition(0, 24, 0, 0, Component.interface_910.component_910_62);
+    ifSetSize(16, 24, 1, 1, Component.interface_910.component_910_62);
+    ifSetPosition(0, 24, 2, 0, Component.interface_910.component_910_86);
+    ifSetSize(16, 24, 0, 1, Component.interface_910.component_910_86);
+
     // Keep the selector practical while giving it Burial Grounds language.
     ifSetText("World", Component.interface_910.component_910_54);
     ifSetText("Players", Component.interface_910.component_910_31);
