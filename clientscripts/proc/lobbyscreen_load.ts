@@ -26,6 +26,16 @@ function proc_lobbyscreen_load(intArg0: boolean, intArg1: number): void {
     ifSetGraphic(Graphic.battle_title_widescreen_5, Component.interface_906.component_906_268);
     ifSetGraphic(Graphic.battle_title_widescreen_7, Component.interface_906.component_906_269);
     ifSetGraphic(Graphic.battle_title_widescreen_8, Component.interface_906.component_906_270);
+
+    // Burial Grounds owns the lobby shell; never show the stock 727 title collage.
+    ifSetHide(true, Component.interface_906.component_906_263);
+    ifSetHide(true, Component.interface_906.component_906_264);
+    ifSetHide(true, Component.interface_906.component_906_265);
+    ifSetHide(true, Component.interface_906.component_906_266);
+    ifSetHide(true, Component.interface_906.component_906_267);
+    ifSetHide(true, Component.interface_906.component_906_268);
+    ifSetHide(true, Component.interface_906.component_906_269);
+    ifSetHide(true, Component.interface_906.component_906_270);
     ifSetGraphic(Graphic.corner_flourish_0, Component.interface_906.component_906_272);
     ifSetGraphic(Graphic.corner_flourish_0, Component.interface_906.component_906_274);
     ifSetGraphic(Graphic.corner_flourish_0, Component.interface_906.component_906_277);
