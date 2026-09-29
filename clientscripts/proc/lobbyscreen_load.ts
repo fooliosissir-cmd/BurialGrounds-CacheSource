@@ -53,8 +53,8 @@ function proc_lobbyscreen_load(intArg0: boolean, intArg1: number): void {
     cs2_3064(1);
     varcstr_lobbyscreen_input = "";
     varc_loginscreen_pvp_warned = 0;
-    mes("Welcome to the RuneScape Lobby.");
-    mesTyped(43, 0, "Welcome to the RuneScape Lobby.");
+    mes("Welcome to Burial Grounds.");
+    mesTyped(43, 0, "Welcome to Burial Grounds.");
 
     if (userDetailQuickChat() == 1) {
         mes("Users restricted to quick-chat cannot send messages from the Lobby.");
@@ -62,11 +62,6 @@ function proc_lobbyscreen_load(intArg0: boolean, intArg1: number): void {
     }
     toplevel_minimenu_setup();
     ifSetOnKey(hook(cs2_1328, "i", [event_keycode]), Component.interface_906.component_906_0);
-    let str0: string = cs2_2781();
-
-    if (stringLength(str0) > 0) {
-        cs2_2779(-3000, 0, str0 + "<br>" + " ", 0, Graphic.loadingwheel_8, 1, 0, "Re-Subscribe Now", "Re-Subscribe Now", 1, "Close", "Close", 350);
-    }
     ifSetOnTimer(hook(cs2_1868, "I", [Component.interface_906.component_906_33]), Component.interface_906.component_906_33);
     proc_lobby_resize();
     ifSetOnTimer(hook(lobbyscreen_blackout_timer, "I", [Component.interface_906.component_906_336]), Component.interface_906.component_906_335);
