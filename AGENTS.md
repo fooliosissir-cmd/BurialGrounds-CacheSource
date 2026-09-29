@@ -4,6 +4,7 @@ These rules are non-negotiable for all player-facing client work.
 
 ## Visual ownership
 - Every visible player-facing surface must look intentionally built for Burial Grounds.
+- Loading screens and progress indicators are part of that ownership: do not restore stock RuneScape loading art or generic loading bars. Keep the Greyhaven/Burial Grounds loading treatment custom and lore-consistent.
 - This includes launcher/start flow, login, Settings, lobby, world selection/entry, notices, errors, and other visible menus.
 - Reuse the revision-727 frame, border, font, sprite, and layout language where practical. Do not replace working native controls with generic operating-system UI.
 - Do not use JOptionPane, default Swing dialogs, stock Android dialogs, placeholder panels, or other default-looking UI for player-facing flows.
