@@ -4,7 +4,7 @@
 // [proc,friend_init]
 
 function proc_friend_init(): void {
-    ifSetText("Friends List" + "<br>" + "RuneScape " + tostring(mapWorld()), Component.interface_550.component_550_18);
+    ifSetText("Friends List" + "<br>" + "Burial Grounds - World " + tostring(mapWorld()), Component.interface_550.component_550_18);
     ifSetOnFriendTransmit(hook(friend_transmit, "", []), Component.interface_550.component_550_6);
     ifSetScrollSize(0, 0, Component.interface_550.component_550_10);
     ifSetScrollPos(0, 0, Component.interface_550.component_550_10);
