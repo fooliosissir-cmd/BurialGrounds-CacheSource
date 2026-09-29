@@ -34,7 +34,7 @@ function proc_loginscreen_setactivemenu_full(intArg0: number, intArg1: boolean, 
         ifSetHide(false, Component.interface_744.component_744_27);
     } else {
         ifCloseSubClient(48758811);
-        ifSetHide(false, Component.interface_744.component_744_23);
+        ifSetHide(true, Component.interface_744.component_744_23);
         ifSetHide(true, Component.interface_744.component_744_27);
     }
 
@@ -71,7 +71,7 @@ function proc_loginscreen_setactivemenu_full(intArg0: number, intArg1: boolean, 
     if (intArg0 == 7 || intArg0 == 8) {
         ifSetHide(true, Component.interface_744.component_744_23);
     } else {
-        ifSetHide(false, Component.interface_744.component_744_23);
+        ifSetHide(true, Component.interface_744.component_744_23);
     }
     let int4: graphic = Graphic.graphic_4120;
     let int5: graphic = Graphic.graphic_4125;
@@ -97,7 +97,7 @@ function proc_loginscreen_setactivemenu_full(intArg0: number, intArg1: boolean, 
         varc_loginscreen_focus = 13;
     } else {
         if (varc_1090 == 6 && intArg0 != 5) {
-            ifSetHide(false, Component.interface_744.component_744_23);
+            ifSetHide(true, Component.interface_744.component_744_23);
         }
         ifSetHide(true, Component.interface_744.component_744_50);
         ifSetOnResize(noHook(""), Component.interface_744.component_744_50);
