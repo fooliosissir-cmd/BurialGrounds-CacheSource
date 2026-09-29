@@ -37,7 +37,7 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
         if (varc_loginscreen_hopblocked_time > 0) {
             varc_loginscreen_hopblocked_time = varc_loginscreen_hopblocked_time - 1;
         }
-        if (varc_loginscreen_hopblocked_time <= 0 && (varc_lobby_video_ad_started == 0 || videoAdvertHasFinished() == 1)) {
+        if (varc_loginscreen_hopblocked_time <= 0) {
             if (worldListFetch() == 0) {
                 varc_loginscreen_hopblocked_time = 1;
                 return;
@@ -49,13 +49,11 @@ function lobbyscreen_entergametimer(intArg0: component, intArg1: number, intArg2
                 }
             }
             ifSetOnTimer(noHook(""), intArg0);
-            if (varc_lobby_video_ad_started == 0) {
-                detailSoundVol(intArg2);
-                detailMusicVol(intArg3);
-                detailBgsoundvol(intArg4);
-                detailSpeechvol(intArg5);
-                detailLoginVol(intArg6);
-            }
+            detailSoundVol(intArg2);
+            detailMusicVol(intArg3);
+            detailBgsoundvol(intArg4);
+            detailSpeechvol(intArg5);
+            detailLoginVol(intArg6);
             proc_lobbyscreen_entergame(intArg0);
             return;
         }
