@@ -7,12 +7,12 @@ function proc_login_resize(): void {
     let int0: number = 0;
 
     if (getWindowMode() < 2) {
-        ifSetPosition(0, 16, 1, 1, Component.interface_596.component_596_5);
+        ifSetPosition(150, 16, 1, 1, Component.interface_596.component_596_5);
         ifSetPosition(0, 16, 1, 1, Component.interface_596.component_596_6);
         ifSetSize(0, 0, 1, 1, Component.interface_744.component_744_16);
         ifSetPosition(0, 12, 1, 0, Component.interface_744.component_744_23);
     } else {
-        ifSetPosition(0, 0, 1, 1, Component.interface_596.component_596_5);
+        ifSetPosition(170, 0, 1, 1, Component.interface_596.component_596_5);
         ifSetPosition(0, 0, 1, 1, Component.interface_596.component_596_6);
         ifSetSize(956, 503, 0, 0, Component.interface_744.component_744_16);
         int0 = ifGetY(Component.interface_744.component_744_16);
