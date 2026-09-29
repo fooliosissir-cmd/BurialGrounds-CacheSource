@@ -5,12 +5,14 @@
 
 function proc_lobbyscreen_load(intArg0: boolean, intArg1: number): void {
     cs2_6382();
-    ifSetOnVarTransmit(hook(lobbyscreen_email_validation_timer, "Y", [], [2411]), Component.interface_906.component_906_0);
-    ifSetOnVarTransmit(hook(cs2_5950, "Y", [], [2536]), Component.interface_906.component_906_236);
-
-    if (varbit_evalid_rewards < 1 && userDetailQuickChat() == 0) {
-        ifSetOnVarTransmit(hook(cs2_5937, "Y", [], [2610]), Component.interface_906.component_906_235);
-    }
+    // Burial Grounds owns the lobby experience; disable legacy RuneScape
+    // email-validation, subscription, and free-membership promotion surfaces.
+    ifSetOnVarTransmit(noHook(""), Component.interface_906.component_906_0);
+    ifSetOnVarTransmit(noHook(""), Component.interface_906.component_906_235);
+    ifSetOnVarTransmit(noHook(""), Component.interface_906.component_906_236);
+    ifSetHide(true, Component.interface_906.component_906_32);
+    ifSetHide(true, Component.interface_906.component_906_40);
+    ifSetHide(true, Component.interface_906.component_906_56);
     ifSetTrans(0, Component.interface_906.component_906_336);
 
     if (intArg1 == 0) {
