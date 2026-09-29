@@ -98,7 +98,7 @@ function proc_lobbyscreen_entergame(intArg0: component): void {
 
     // First successful Enter World press: play a one-second Greyhaven gate
     // transition before handing control to the native lobby login.
-    if (int25 == 0) {
+    if (intArg0 == Component.interface_906.component_906_186 && int25 == 0) {
         ccDeleteAll(Component.interface_906.component_906_335);
         ifSetTrans(255, Component.interface_906.component_906_336);
 
