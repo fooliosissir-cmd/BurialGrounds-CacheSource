@@ -24,7 +24,10 @@ These rules are non-negotiable for all player-facing client work.
 
 ## Lobby
 - The post-login lobby is part of the Burial Grounds experience and must be custom.
-- Current primary navigation is: Home, World Select, Friends, Friends Chat, Clan Chat, Settings.
+- The post-login lobby has exactly two primary destinations: Home and World Select.
+- Do not add Friends, Friends Chat, Clan Chat, Settings, account-management, or social-hub tabs to the lobby. Those systems may remain available elsewhere in the client where they already belong.
+- Home and World Select should use a restrained Greyhaven / Burial Grounds lore presentation without renaming basic controls into confusing lore terms.
+- Entering a world may use a very short native Greyhaven gate/door transition, but it must not become a long cinematic or require a video asset.
 - Do not expose legacy RuneScape membership, billing, Message Centre, email-validation rewards, subscription, free-trial, or advertisement surfaces.
 - World selection must remain limited to the configured Burial Grounds Main World and Developer World.
 
