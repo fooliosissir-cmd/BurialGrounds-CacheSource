@@ -4,9 +4,10 @@
 // [proc,lobby_message_of_the_week]
 
 /**
- * Burial Grounds lobby welcome panel.
- * Uses existing interface components and fonts so the lobby remains native
- * to the 727 client while presenting Burial Grounds-owned content.
+ * Burial Grounds lobby Home panel.
+ *
+ * Keep the lore treatment restrained: Greyhaven is the recognizable return
+ * point, while the lobby remains functional and easy to understand.
  */
 function lobby_message_of_the_week(): void {
     ifSetHide(true, Component.interface_908.component_908_15);
@@ -16,8 +17,6 @@ function lobby_message_of_the_week(): void {
     ifSetGraphic(-1, Component.interface_908.component_908_31);
     ifSetGraphic(-1, Component.interface_908.component_908_35);
 
-    // Lore-facing home panel. The layout is intentionally asymmetrical instead
-    // of reproducing the stock centered news card.
     ifSetText("GREYHAVEN", Component.interface_908.component_908_33);
     ifSetSize(300, 38, 0, 0, Component.interface_908.component_908_33);
     ifSetPosition(36, 16, 0, 0, Component.interface_908.component_908_33);
@@ -25,9 +24,9 @@ function lobby_message_of_the_week(): void {
     ifSetTextFont(Graphic.welcome_font_large, Component.interface_908.component_908_33);
     ifSetTextAlign(0, 2, 0, Component.interface_908.component_908_33);
 
-    ifSetText("Return to Greyhaven, choose your world, and continue into Burial Grounds.", Component.interface_908.component_908_32);
+    ifSetText("The road begins again at Greyhaven.<br>Choose World Select when you are ready to continue.", Component.interface_908.component_908_32);
     ifSetPosition(38, 62, 0, 0, Component.interface_908.component_908_32);
-    ifSetSize(330, 58, 0, 0, Component.interface_908.component_908_32);
+    ifSetSize(360, 58, 0, 0, Component.interface_908.component_908_32);
     ifSetColour(colour(0xC9BE9D), Component.interface_908.component_908_32);
     ifSetTextAlign(0, 1, 0, Component.interface_908.component_908_32);
 }
