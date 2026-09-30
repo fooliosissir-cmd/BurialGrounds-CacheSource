@@ -4,9 +4,9 @@
 // [proc,loginscreen_setactivemenu_full]
 
 function proc_loginscreen_setactivemenu_full(intArg0: number, intArg1: boolean, intArg2: boolean): void {
-    // Burial Grounds does not expose the revision-727 account-creation web flow.
-    // Any legacy state that attempts to open it is redirected to the real login.
-    if (intArg0 == 7 || intArg0 == 8) {
+    // Registration uses the lobby's native account-creation protocol. The old
+    // post-registration marketing page is not part of Burial Grounds.
+    if (intArg0 == 8) {
         intArg0 = 11;
     }
 

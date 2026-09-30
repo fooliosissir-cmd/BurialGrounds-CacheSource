@@ -16,7 +16,7 @@ function create_setup(): void {
     ifSetGraphic(gameframe_skin_graphic(Graphic.corner_frame_1_2), Component.interface_673.component_673_109);
     ifSetvflip(false, Component.interface_673.component_673_109);
     ifSethflip(false, Component.interface_673.component_673_109);
-    varc_1411 = 1;
+    varc_1411 = 0;
     ifSetGraphic(gameframe_skin_graphic(Graphic.check_box_2_2), Component.interface_673.component_673_40);
     notifyAccountcreatestarted();
     varcstr_122 = "";

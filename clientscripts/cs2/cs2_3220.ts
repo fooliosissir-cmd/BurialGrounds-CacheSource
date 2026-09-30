@@ -17,6 +17,7 @@ function cs2_3220(): void {
     if (int0 == 2) {
         notifyAccountcreated();
         cs2_2223();
+        return;
     } else {
         switch (int0) {
             case -4:
@@ -35,13 +36,13 @@ function cs2_3220(): void {
                 create_error("You cannot create an account at this time. Please try again later.", Component.interface_673.component_673_93);
                 break;
             case 20:
-                create_error("Email already in use. Try a different email or click " + "<u=ebe0bc>" + "here" + "</u>" + " to recover this account.", Component.interface_673.component_673_93);
+                create_error("Email already in use. Return to login or use a different email.", Component.interface_673.component_673_93);
                 break;
             case 21:
                 create_error("Please enter a valid Email address.", Component.interface_673.component_673_93);
                 break;
             case 37:
-                create_error("RuneScape has been updated. Please reload this page.", Component.interface_673.component_673_93);
+                create_error("Burial Grounds has been updated. Please restart the client.", Component.interface_673.component_673_93);
                 break;
             case 30:
                 int1 = stringLength(varcstr_124);
