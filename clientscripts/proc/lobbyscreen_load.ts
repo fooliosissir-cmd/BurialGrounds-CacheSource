@@ -10,7 +10,11 @@ function proc_lobbyscreen_load(intArg0: boolean, intArg1: number): void {
     ifSetOnVarTransmit(noHook(""), Component.interface_906.component_906_0);
     ifSetOnVarTransmit(noHook(""), Component.interface_906.component_906_235);
     ifSetOnVarTransmit(noHook(""), Component.interface_906.component_906_236);
-    ifSetHide(true, Component.interface_906.component_906_32);
+
+    // Component 906:32 is the main lobby content ancestor (906:53 -> 906:208/209),
+    // so it must remain visible or Home/World Select are hidden with it.
+    ifSetHide(false, Component.interface_906.component_906_32);
+
     ifSetHide(true, Component.interface_906.component_906_40);
     ifSetHide(true, Component.interface_906.component_906_56);
     ifSetTrans(0, Component.interface_906.component_906_336);
