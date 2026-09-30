@@ -2,15 +2,11 @@
   "id": 80001,
   "modelIds": [
     [
-      13150
-    ],
-    [
-      13151
+      1366
     ]
   ],
   "modelTypes": [
-    0,
-    2
+    10
   ],
   "name": "Vael route seal",
   "sizeX": 1,
@@ -22,14 +18,6 @@
   "delayShading": false,
   "offsetMultiplier": 64,
   "brightness": 0,
-  "options": [
-    "Inspect",
-    null,
-    null,
-    null,
-    null,
-    "Examine"
-  ],
   "contrast": 0,
   "mirrored": false,
   "castsShadow": true,
@@ -62,7 +50,7 @@
   "anInt3013": -1,
   "anInt2958": 0,
   "mapscene": -1,
-  "culling": -1,
+  "culling": 0,
   "anInt3024": 255,
   "invertMapScene": false,
   "mapDefinitionId": -1,
@@ -85,6 +73,15 @@
   "dynamicTint": false,
   "stringId": "",
   "singleAnimation": -1,
+  "block": 16,
+  "options": [
+    "Inspect",
+    null,
+    null,
+    null,
+    null,
+    "Examine"
+  ],
   "rawOptions": [
     "Inspect",
     null,
@@ -96,6 +93,5 @@
     null,
     null,
     null
-  ],
-  "block": 16
+  ]
 }
