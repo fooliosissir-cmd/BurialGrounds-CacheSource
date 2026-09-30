@@ -10,6 +10,7 @@
 function lobbyscreen_email_validation_timer(): void {
     // This is the Home content ancestor, not an email-validation surface.
     ifSetHide(false, Component.interface_906.component_906_32);
-    ifSetHide(true, Component.interface_906.component_906_40);
+    // 906:40 also hosts the required first-login character-name form.
+    // Its visibility is controlled by the lobby server.
     ifSetHide(true, Component.interface_906.component_906_56);
 }
