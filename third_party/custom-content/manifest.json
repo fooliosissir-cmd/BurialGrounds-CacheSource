@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "targetRevision": 727,
+  "sources": [
+    {
+      "id": "runesuite-667-718-custom-npc-armor-items",
+      "name": "667/718 Custom NPC, Armor & Item Models",
+      "sourceUrl": "https://runesuite.io/topic/9061-667718-custom-npc-armor-item-models-release/",
+      "sourceRevision": "667/718",
+      "priority": "high",
+      "redistributionStatus": "unverified",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "Shadow Drake",
+        "Fire Drake",
+        "Solak",
+        "Vorkath armour",
+        "Super Shenron",
+        "Custom large raid boss NPC"
+      ],
+      "notes": [
+        "Shadow Drake and Fire Drake are described as using Roc animations.",
+        "Some models are described by the releaser as having been purchased from a third-party model seller.",
+        "Inspect and convert selectively into free 727 ID ranges."
+      ]
+    },
+    {
+      "id": "noxious-718-custom-cache",
+      "name": "Noxious 718 Custom Cache / Models",
+      "sourceUrl": "https://runesuite.io/forum/188-rsps-models/",
+      "backgroundUrl": "https://rune-server.org/threads/noxious-718.706423/",
+      "sourceRevision": "718",
+      "priority": "high",
+      "redistributionStatus": "unverified",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "Custom items",
+        "RS3 models converted/fitted for 718",
+        "Custom NPC/boss/equipment content"
+      ],
+      "notes": [
+        "Use as a selective source/reference cache only.",
+        "Never replace the authoritative Burial Grounds 727 cache with this cache.",
+        "Forum-gated download; redistribution permission not verified."
+      ]
+    },
+    {
+      "id": "ziva-textured-torva-36",
+      "name": "Ziva's Torva Sets Textured — 36 models",
+      "sourceUrl": "https://runesuite.io/forum/188-rsps-models/",
+      "sourceRevision": "667/718",
+      "priority": "medium",
+      "redistributionStatus": "unverified",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "36 textured Torva-related models"
+      ]
+    },
+    {
+      "id": "elder-scythe-718",
+      "name": "Elder Scythe",
+      "sourceRevision": "718",
+      "priority": "medium",
+      "redistributionStatus": "needs-source-verification",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "Custom scythe weapon model"
+      ]
+    },
+    {
+      "id": "custom-zaros-godsword",
+      "name": "Custom Zaros Godsword",
+      "sourceRevision": "cross-revision candidate",
+      "priority": "medium",
+      "redistributionStatus": "needs-source-verification",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "Custom godsword weapon model"
+      ]
+    }
+  ],
+  "assetImportRecordTemplate": {
+    "sourceId": "",
+    "assetName": "",
+    "assetType": "item|npc|object|model|texture|animation|map",
+    "sourceModelIds": [],
+    "sourceConfigIds": [],
+    "targetModelIds727": [],
+    "targetConfigIds727": [],
+    "animationDependencies": [],
+    "textureDependencies": [],
+    "clientDependencies": [],
+    "desktopTest": "not-tested",
+    "androidTest": "not-tested",
+    "developerWorldTest": "not-tested",
+    "productionApproved": false
+  }
+}
