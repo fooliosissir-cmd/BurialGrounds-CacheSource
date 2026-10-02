@@ -8,7 +8,7 @@
       "sourceUrl": "https://runesuite.io/topic/9061-667718-custom-npc-armor-item-models-release/",
       "sourceRevision": "667/718",
       "priority": "high",
-      "redistributionStatus": "unverified",
+      "redistributionStatus": "private-archive-inspected-redistribution-unverified",
       "vendorRawArchive": false,
       "reportedAssets": [
         "Shadow Drake",
@@ -19,10 +19,14 @@
         "Custom large raid boss NPC"
       ],
       "notes": [
+        "User supplied Runesuite_modelrelease.zip through private Library storage; raw archive is not vendored.",
+        "Super Shenron, Solak, Fire Drake Big/Mid/Small, and Shadow Drake Big/Mid/Small decoded cleanly into private GLB staging files on 2026-10-02.",
+        "New_Boss.mqo parses as a Metasequoia source mesh and has a private preview GLB; RuneScape skin/material conversion remains.",
         "Shadow Drake and Fire Drake are described as using Roc animations.",
         "Some models are described by the releaser as having been purchased from a third-party model seller.",
-        "Inspect and convert selectively into free 727 ID ranges."
-      ]
+        "Inspect and convert selectively into free 727 ID ranges; do not redistribute raw bytes until provenance permits it."
+      ],
+      "decodeProgressDoc": "docs/boss-model-decode-progress.md"
     },
     {
       "id": "noxious-718-custom-cache",
