@@ -60,10 +60,10 @@ The textured worn model references material IDs 1513 and 2433, both inside the 7
 ## Developer World preview IDs
 
 Temporary preview item IDs:
-- 30000..30004 — Vorkath set;
-- 30005..30010 — Valk set + wings;
-- 30011 — BOTLG textured-worn preview;
-- 30012 — BOTLG plain-worn comparison.
+- 29952..29956 — Vorkath set;
+- 29957..29962 — Valk set + wings;
+- 29963 — BOTLG textured-worn preview;
+- 29964 — BOTLG plain-worn comparison.
 
 Temporary preview model range:
 - 91000..91029, with 91026 intentionally unused because the source file in that sequence is `settings.dat`, not a model.
@@ -86,3 +86,15 @@ These IDs are preview allocations, not production reservations.
 4. The packed cache resolves every inventory/worn model and every model decodes with drawable geometry.
 5. The real client is used to inspect inventory icon framing, male/female fit, clipping, material appearance and wings/bow alignment.
 6. Only approved pieces receive permanent item/model IDs and final stats/reward sources.
+
+
+## Dense-ID rule discovered during cache verification
+
+Revision 727's item decoder sizes the highest item archive as `archive * 256 + fileCount`.
+Therefore, when a brand-new archive becomes the highest item archive, its preview definitions must
+start at low file id 0 and remain dense. Starting partway through the archive can pack successfully
+but leave those definitions outside the decoder's allocated item table.
+
+The Developer World preview range was corrected from 30000..30012 to **29952..29964** (archive 117,
+files 0..12). Permanent custom item allocation should preserve this rule or update the loader with
+a separately verified sparse-highest-archive fix.
