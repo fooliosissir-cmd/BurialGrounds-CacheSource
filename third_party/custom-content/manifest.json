@@ -77,6 +77,227 @@
       "reportedAssets": [
         "Custom godsword weapon model"
       ]
+    },
+    {
+      "id": "stugger-free-hd-maps",
+      "name": "Stugger Free HD Maps",
+      "sourceUrl": "https://rune-server.org/threads/free-hd-maps.694823/",
+      "sourceRevision": "667/718 HD",
+      "priority": "high",
+      "redistributionStatus": "public-release-review-provenance-recorded",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "Snowy Area V1",
+        "Boss/Raids Room V1",
+        "Boss/Raids Room V1.1",
+        "Home Island V1",
+        "Home Island V1.1",
+        "Resource Dungeon V1",
+        "Edgeville V1.1/V2",
+        "Edgeville V1.2/V3",
+        "Edgeville Remade"
+      ],
+      "notes": [
+        "Direct archive URLs and region notes are recorded in docs/custom-content-source-inventory.md.",
+        "Public archives were downloaded and structurally inventoried by CI; raw archives are not committed."
+      ]
+    },
+    {
+      "id": "venomite-718-semi-custom",
+      "name": "Venomite 718/OSRS Semi-Custom",
+      "sourceUrl": "https://runesuite.io/topic/8110-venomite-718osrssemi-custom/",
+      "sourceRevision": "718",
+      "priority": "high",
+      "redistributionStatus": "forum-gated-unverified",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "3 event bosses",
+        "12 OSRS bosses plus additional content",
+        "100+ custom models",
+        "NPC configurations",
+        "custom interfaces",
+        "685-style item models",
+        "custom maps"
+      ],
+      "notes": [
+        "One of the strongest close-revision candidates.",
+        "Archive bytes not accessible without gated download."
+      ]
+    },
+    {
+      "id": "onyx-matrix-2023-718",
+      "name": "Onyx / Matrix 2023 Full Package",
+      "sourceUrl": "https://runesuite.io/topic/9227-onyxmatrix-2023-full-package/",
+      "sourceRevision": "718",
+      "priority": "high",
+      "redistributionStatus": "forum-gated-unverified",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "full cache",
+        "client",
+        "source",
+        "unique custom bosses",
+        "custom gear"
+      ]
+    },
+    {
+      "id": "wyvern800-custom-raids",
+      "name": "718 Custom RAIDS System",
+      "sourceUrl": "https://github.com/wyvern800/rsps-snippets",
+      "sourceRevision": "718",
+      "priority": "high",
+      "redistributionStatus": "MIT",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "raid encounter architecture",
+        "party raids up to five players",
+        "Anaroth Castle encounter",
+        "Karkath's Temple encounter",
+        "tiered drop structure"
+      ],
+      "notes": [
+        "Pinned source commit d27e3b7f0fea9a8f4255965dd0660b14750b987c.",
+        "Port architecture to Darkan; do not copy old Matrix packet/interface assumptions blindly."
+      ]
+    },
+    {
+      "id": "runesuite-highrev-raid-osrs-models",
+      "name": "667/718 High-Revision Raid/OSRS Model Pack",
+      "sourceUrl": "https://runesuite.io/topic/9062-667718-lots-of-osrs-models-for-high-revision-release/",
+      "sourceRevision": "667/718",
+      "priority": "high",
+      "redistributionStatus": "forum-gated-needs-asset-provenance-review",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "Raid 1/2 equipment",
+        "Ancestral",
+        "colored twisted bows",
+        "Scythe",
+        "Nightmare staves",
+        "Revenant weapons",
+        "Mage Arena II capes",
+        "custom bonds",
+        "mystery-box models",
+        "chest object models"
+      ]
+    },
+    {
+      "id": "mageps-maps-models",
+      "name": "MagePS Organized Maps and Models",
+      "sourceUrl": "https://runesuite.io/topic/6905-mageps-latest-models-and-maps-1012021/",
+      "sourceRevision": "mixed/older",
+      "priority": "medium",
+      "redistributionStatus": "forum-gated-unverified",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "organized custom maps",
+        "organized custom models"
+      ],
+      "notes": [
+        "Some later replies indicate model links may be stale."
+      ]
+    },
+    {
+      "id": "hyperion-718-751-customs",
+      "name": "Hyperion 718/751 Custom Boss Package",
+      "sourceUrl": "https://runesuite.io/topic/8609-hyperion-718751-loading-some-osrs-and-customs/",
+      "sourceRevision": "718/751",
+      "priority": "medium",
+      "redistributionStatus": "forum-gated-unverified",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "custom/OSRS bosses",
+        "working animations for some bosses",
+        "custom items"
+      ],
+      "notes": [
+        "Map/object work was reported unfinished; primarily useful for model/animation relationships."
+      ]
+    },
+    {
+      "id": "yrfate-barrows-island",
+      "name": "Barrows Island",
+      "sourceUrl": "https://github.com/yrfate/public-maps",
+      "sourceRevision": "317/OSRS-era",
+      "priority": "high",
+      "redistributionStatus": "public-repository-no-license-file",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "barrows island/3318.gz",
+        "barrows island/3319.gz",
+        "release text"
+      ],
+      "notes": [
+        "Archive has been structurally inspected and hashed.",
+        "Prefer a 727-native rebuild/remap rather than blind ID import."
+      ]
+    },
+    {
+      "id": "custom-two-floor-boss-map",
+      "name": "Custom Two-Floor Boss Map",
+      "sourceUrl": "https://rune-server.org/threads/custom-map-release-with-concept-enjoy.698707/",
+      "sourceRevision": "OSRS ~180+",
+      "priority": "high",
+      "redistributionStatus": "public-release-needs-archive-inspection",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "boss floor",
+        "four-corner minion wave layout",
+        "searchable casket soul mechanic",
+        "second-floor treasure room"
+      ]
+    },
+    {
+      "id": "custom-manor-map",
+      "name": "Custom Manor Map",
+      "sourceUrl": "https://rune-server.org/threads/custom-manor-map-release-317.701450/",
+      "sourceRevision": "317 / OSRS-667 data environment",
+      "priority": "medium",
+      "redistributionStatus": "public-release-needs-archive-inspection",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "multi-floor manor"
+      ]
+    },
+    {
+      "id": "chanston-free-maps",
+      "name": "Chanston Free Custom Maps",
+      "sourceUrl": "https://rune-server.org/threads/chanstons-free-custom-maps.694788/",
+      "sourceRevision": "317",
+      "priority": "medium",
+      "redistributionStatus": "author-released",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "AhoyPK Donator Zone",
+        "Underground Castlewars"
+      ]
+    },
+    {
+      "id": "four-map-community-release",
+      "name": "Four-Map Community Release",
+      "sourceUrl": "https://rune-server.org/threads/free-map-release-unique-free-custom-maps.697588/",
+      "sourceRevision": "lower revision",
+      "priority": "medium",
+      "redistributionStatus": "public-release-needs-archive-inspection",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "map centered 2600,4685,0",
+        "map centered 2714,4645,0",
+        "map centered 2714,4757,0",
+        "map centered 3094,3493,0"
+      ]
+    },
+    {
+      "id": "runesuite-718-osrs-cache-maps",
+      "name": "718/OSRS Cache Maps",
+      "sourceUrl": "https://runesuite.io/topic/7114-718osrs-cache-maps/",
+      "sourceRevision": "718/OSRS",
+      "priority": "medium",
+      "redistributionStatus": "forum-gated-unverified",
+      "vendorRawArchive": false,
+      "reportedAssets": [
+        "718/OSRS map material"
+      ]
     }
   ],
   "assetImportRecordTemplate": {
@@ -94,5 +315,11 @@
     "androidTest": "not-tested",
     "developerWorldTest": "not-tested",
     "productionApproved": false
-  }
+  },
+  "lastInventoryUpdate": "2026-10-02",
+  "inventoryDocs": [
+    "docs/custom-content-source-inventory.md",
+    "docs/custom-content-unpacked-inventory.md",
+    "docs/generated-public-map-archive-inventory.md"
+  ]
 }
