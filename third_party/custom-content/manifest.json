@@ -14,15 +14,29 @@
         "Shadow Drake",
         "Fire Drake",
         "Solak",
+        "Valkyrie armor and wings",
         "Vorkath armour",
         "Super Shenron",
-        "Custom large raid boss NPC"
+        "Custom large raid boss NPC",
+        "Bow of the Last Guardian"
       ],
       "notes": [
-        "Shadow Drake and Fire Drake are described as using Roc animations.",
-        "Some models are described by the releaser as having been purchased from a third-party model seller.",
-        "Inspect and convert selectively into free 727 ID ranges."
-      ]
+        "Archive bytes were received as a user-provided conversation upload on 2026-10-02 and fully unpacked/hashed.",
+        "Shadow Drake and Fire Drake are described as using Roc animations; no animation files are present in the archive.",
+        "No NPC/item config definitions or standalone image textures are present in the archive.",
+        "New_Boss.mqo is an editable Metasequoia source model with no external image texture paths.",
+        "DatMaker.exe is quarantined and was not executed.",
+        "Raw staging is private; production/public reuse still requires asset-by-asset provenance review.",
+        "Convert selectively into free 727 ID ranges and test in Developer World before merging."
+      ],
+      "inspectionStatus": "inspected",
+      "archiveReceivedDate": "2026-10-02",
+      "archiveSha256": "ce96fc03a19ac1061464df36a404fbddd075ba4b7357aa075711852b1e442258",
+      "archiveSizeBytes": 1285127,
+      "unpackedFileCount": 40,
+      "modelDatCount": 37,
+      "uniqueModelPayloadCount": 33,
+      "privateStagingBranch": "staging/runesuite-modelrelease"
     },
     {
       "id": "noxious-718-custom-cache",
