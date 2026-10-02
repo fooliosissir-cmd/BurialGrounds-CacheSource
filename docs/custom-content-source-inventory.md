@@ -51,12 +51,26 @@ Source: https://rune-server.org/threads/free-hd-maps.694823/
 Map packer: https://rune-server.org/threads/667-718-basic-map-packer.695291/
 
 Useful released maps include:
+- Snowy Area V1
 - Boss/Raids Room V1
 - Boss/Raids Room V1.1
 - Custom Home Island V1
 - Custom Home Island V1.1
 - Custom Resource Dungeon
-- multiple Edgeville revisions
+- Edgeville V1.1 / V2
+- Edgeville V1.2 / V3
+- Edgeville Remade
+
+Verified download/region notes:
+- Snowy Area V1: https://www.dropbox.com/scl/fi/1l3q1e7h1c1yqvwxiorc3/Snow-Area-V1.rar?rlkey=12g55ox1pe8fxlixz8e4020yl&dl=0 — region 13119, center 3296,4064,0.
+- Boss/Raids Room V1: https://www.dropbox.com/scl/fi/35lp6vk0q7jb2q71dplzh/Raids-Room-V1.rar?rlkey=qkemvomlgmlmeinyq77sh1c4e&dl=0 — region 1329, center 352,3168,0.
+- Boss/Raids Room V1.1: https://www.dropbox.com/scl/fi/txne0eog4gy2jqsrstbn2/Raids-Room-V1.1.rar?rlkey=ec97tlt0z19qwml40l1ew5741&dl=0 — expanded reward/exit area and revised combat floor.
+- Home Island V1: https://www.dropbox.com/scl/fi/uucu1kqrejzsu4npeuvtl/Home-Island-V1.rar?rlkey=rdjnu0e4t86jabyj91d2o2ufn&dl=0 — region 11817, spawn 2974,2653,0.
+- Home Island V1.1: https://www.dropbox.com/scl/fi/m35o0royc01yicnnhoc42/Home-Island-V1.1.rar?rlkey=tux0m38hxp53hvwiq5qwopifx&dl=0 — adds Slayer hut, runecrafting altar, expanded thieving and more scenery.
+- Resource Dungeon V1: https://www.dropbox.com/scl/fi/iqumqfzdoepkjjj9wqpgt/Resource-Dungeon-V1.rar?rlkey=v92h2ctoob7ud0wp4kgwjyim4&dl=0 — region 6724, rope at 1700,4381,0; yew/magic trees, fishing, cooking and multiple ore tiers.
+- Edgeville V1.1 / V2: https://www.dropbox.com/scl/fi/mxfzrlsf2gmxhg4udbrdh/Edgeville-V2.rar?rlkey=gqfzkq7scit4tfzlkmc1246m0&dl=0
+- Edgeville V1.2 / V3: https://www.dropbox.com/scl/fi/odbrsrvivfr7j9ktgt8eb/Edgeville-V3.rar?rlkey=z8542e6fr5qp9e7h2yuw1q70p&dl=0 — includes an explicitly posted 718 key set.
+- Edgeville Remade: https://www.dropbox.com/scl/fi/rdip3r3l2kjnkpbp0mnk9/Edgeville-Remade.rar?rlkey=lv39ffig14ndk8dm57b97ltjc&dl=0
 
 Why this matters:
 - The author explicitly designed these around 667/718-era HD map formats.
@@ -237,7 +251,7 @@ Caution:
 ## Supporting tools worth keeping
 
 ### RSPSi-742
-Source: https://github.com/Avexiis/RSPSi-742
+Source: https://github.com/MrSlayerGod/RSPSi-742
 Thread: https://rune-server.org/threads/rspsi-742.708283/
 License: MIT
 
