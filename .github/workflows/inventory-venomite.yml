@@ -164,16 +164,171 @@ jobs:
           echo "- Raw package and extracted payload are not committed." >> "$report"
           echo "- Candidate models/maps/configs still require 727 ID/dependency/provenance review before Developer World packing." >> "$report"
 
+      - name: Unpack nested archives and build focused content index
+        shell: bash
+        run: |
+          set -u
+          root="/tmp/bg-venomite"
+          extract="$root/extracted"
+          nested_report="docs/generated-venomite-nested-archive-inventory.md"
+          content_report="docs/generated-venomite-content-index.md"
+
+          cat > "$nested_report" <<'EOF'
+          # Generated Venomite Nested Archive Inventory
+
+          This inventory continues the temporary unpack of the Venomite source package. Nested archives are extracted only on the GitHub Actions runner and are not committed.
+
+          EOF
+
+          if [ ! -d "$extract" ]; then
+            echo "**Top-level extraction is unavailable; nested inventory could not run.**" >> "$nested_report"
+          else
+            nested_count="$(find "$extract" -type f \( -iname '*.rar' -o -iname '*.zip' -o -iname '*.7z' -o -iname '*.gz' \) | wc -l)"
+            echo "- Nested archive candidates: $nested_count" >> "$nested_report"
+            echo >> "$nested_report"
+
+            find "$extract" -type f \( -iname '*.rar' -o -iname '*.zip' -o -iname '*.7z' -o -iname '*.gz' \) -print0 |
+              sort -z |
+              while IFS= read -r -d '' nested; do
+                rel="${nested#"$extract"/}"
+                bytes="$(stat -c %s "$nested")"
+                sha="$(sha256sum "$nested" | awk '{print $1}')"
+                kind="$(file -b "$nested" | tr '|' '/')"
+                key="$(printf '%s' "$rel" | sha256sum | cut -c1-16)"
+                ndir="$root/nested/$key"
+                mkdir -p "$ndir"
+
+                echo "## $rel" >> "$nested_report"
+                echo >> "$nested_report"
+                echo "- Bytes: $bytes" >> "$nested_report"
+                echo "- SHA-256: $sha" >> "$nested_report"
+                echo "- Type: $kind" >> "$nested_report"
+                echo >> "$nested_report"
+                echo "### Listing sample" >> "$nested_report"
+                echo >> "$nested_report"
+                echo "~~~text" >> "$nested_report"
+                if timeout 5m 7z l -ba "$nested" >"$root/nested-listing-$key.txt" 2>"$root/nested-listing-$key.err"; then
+                  head -180 "$root/nested-listing-$key.txt" >> "$nested_report"
+                else
+                  cat "$root/nested-listing-$key.err" | head -80 >> "$nested_report"
+                fi
+                echo "~~~" >> "$nested_report"
+                echo >> "$nested_report"
+
+                free_kb="$(df -Pk "$root" | awk 'NR==2 {print $4}')"
+                if [ "$free_kb" -lt 3145728 ]; then
+                  echo "**Skipped extraction because less than 3 GiB of runner disk remained.**" >> "$nested_report"
+                  echo >> "$nested_report"
+                  continue
+                fi
+
+                if timeout 10m 7z x -y -o"$ndir" "$nested" >"$root/nested-extract-$key.log" 2>&1; then
+                  nfiles="$(find "$ndir" -type f | wc -l)"
+                  nbytes="$(du -sb "$ndir" | awk '{print $1}')"
+                  echo "- Extraction: success" >> "$nested_report"
+                  echo "- Extracted files: $nfiles" >> "$nested_report"
+                  echo "- Extracted bytes: $nbytes" >> "$nested_report"
+                  echo >> "$nested_report"
+                  echo "### Extracted tree sample" >> "$nested_report"
+                  echo >> "$nested_report"
+                  echo "~~~text" >> "$nested_report"
+                  find "$ndir" -type f -printf '%P\n' | sort | head -300 >> "$nested_report"
+                  echo "~~~" >> "$nested_report"
+                  echo >> "$nested_report"
+                else
+                  echo "- Extraction: failed or timed out" >> "$nested_report"
+                  echo >> "$nested_report"
+                  echo "~~~text" >> "$nested_report"
+                  tail -100 "$root/nested-extract-$key.log" >> "$nested_report"
+                  echo "~~~" >> "$nested_report"
+                  echo >> "$nested_report"
+                fi
+              done
+          fi
+
+          cat > "$content_report" <<'EOF'
+          # Generated Venomite Custom Content Index
+
+          Focused file-level index from the unpacked Venomite 718 source package. This records names and locations only; third-party source/model/cache payloads are not committed.
+
+          EOF
+
+          if [ ! -d "$extract" ]; then
+            echo "**Top-level extraction is unavailable; focused inventory could not run.**" >> "$content_report"
+            exit 0
+          fi
+
+          npcroot="$extract/718-Server/src/main/java/com/rs/game/world/entity/npc"
+
+          echo "## Boss and encounter implementation candidates" >> "$content_report"
+          echo >> "$content_report"
+          echo "~~~text" >> "$content_report"
+          if [ -d "$npcroot" ]; then
+            find "$npcroot" -type f -iname '*.java' -printf '%P\n' |
+              grep -Ei '(boss|cerber|sire|zalcano|venen|vetion|scorpia|fanatic|archaeologist|lava.?dragon|demonic.?gorilla|donkey|madara|wolverine|alchemist|master.?of.?fear|party.?demon|champion|vorago|kalger|queen|jad|har.?aken|shaman|thermo|wildy|wyrm|zombie|superior)' |
+              sort >> "$content_report" || true
+          fi
+          echo "~~~" >> "$content_report"
+          echo >> "$content_report"
+
+          echo "## Unusual/custom NPC class names" >> "$content_report"
+          echo >> "$content_report"
+          echo "~~~text" >> "$content_report"
+          if [ -d "$npcroot" ]; then
+            find "$npcroot" -type f -iname '*.java' -printf '%P\n' |
+              grep -Ei '(others/|FlashMobs/|randomspawns/|wilderness/|zalcano/|sire/|cerber|shaman/|thermo/)' |
+              sort |
+              head -800 >> "$content_report" || true
+          fi
+          echo "~~~" >> "$content_report"
+          echo >> "$content_report"
+
+          echo "## Server NPC data files" >> "$content_report"
+          echo >> "$content_report"
+          echo "~~~text" >> "$content_report"
+          if [ -d "$extract/718-Server/data/npcs" ]; then
+            find "$extract/718-Server/data/npcs" -type f -printf '%P\n' | sort | head -800 >> "$content_report"
+          fi
+          echo "~~~" >> "$content_report"
+          echo >> "$content_report"
+
+          echo "## Server item data files" >> "$content_report"
+          echo >> "$content_report"
+          echo "~~~text" >> "$content_report"
+          if [ -d "$extract/718-Server/data/items" ]; then
+            find "$extract/718-Server/data/items" -type f -printf '%P\n' | sort | head -800 >> "$content_report"
+          fi
+          echo "~~~" >> "$content_report"
+          echo >> "$content_report"
+
+          echo "## Server map/spawn data files" >> "$content_report"
+          echo >> "$content_report"
+          echo "~~~text" >> "$content_report"
+          if [ -d "$extract/718-Server/data/map" ]; then
+            find "$extract/718-Server/data/map" -type f -printf '%P\n' | sort | head -800 >> "$content_report"
+          fi
+          echo "~~~" >> "$content_report"
+          echo >> "$content_report"
+
+          echo "## Custom-interface / model-tool references" >> "$content_report"
+          echo >> "$content_report"
+          echo "~~~text" >> "$content_report"
+          find "$extract/718-Server" -type f -printf '%P\n' |
+            grep -Ei '(interface|model|cache|itemdef|npcdef|objectdef|renderanim)' |
+            sort |
+            head -1000 >> "$content_report" || true
+          echo "~~~" >> "$content_report"
+
       - name: Commit generated inventory
         shell: bash
         run: |
-          if [ -z "$(git status --porcelain -- docs/generated-venomite-package-inventory.md)" ]; then
-            echo "Inventory unchanged."
+          if [ -z "$(git status --porcelain -- docs/generated-venomite-package-inventory.md docs/generated-venomite-nested-archive-inventory.md docs/generated-venomite-content-index.md)" ]; then
+            echo "Inventories unchanged."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add docs/generated-venomite-package-inventory.md
-          git commit -m "docs: inventory Venomite 718 package"
+          git add docs/generated-venomite-package-inventory.md docs/generated-venomite-nested-archive-inventory.md docs/generated-venomite-content-index.md
+          git commit -m "docs: deepen Venomite 718 unpack inventory"
           git pull --rebase origin "${GITHUB_REF_NAME}"
           git push origin "HEAD:${GITHUB_REF_NAME}"
