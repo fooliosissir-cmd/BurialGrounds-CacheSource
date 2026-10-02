@@ -30,7 +30,7 @@ jobs:
       - name: Install inspection tools
         run: |
           sudo apt-get update
-          sudo apt-get install -y megatools p7zip-full file
+          sudo apt-get install -y megatools p7zip-full file unar
 
       - name: Download and inventory Venomite source package
         shell: bash
@@ -222,10 +222,24 @@ jobs:
                   continue
                 fi
 
+                extractor="7z"
                 if timeout 10m 7z x -y -o"$ndir" "$nested" >"$root/nested-extract-$key.log" 2>&1; then
+                  status=0
+                else
+                  rm -rf "$ndir"
+                  mkdir -p "$ndir"
+                  extractor="unar"
+                  if timeout 10m unar -force-overwrite -output-directory "$ndir" "$nested" >"$root/nested-extract-$key-unar.log" 2>&1; then
+                    status=0
+                  else
+                    status=1
+                  fi
+                fi
+
+                if [ "$status" -eq 0 ]; then
                   nfiles="$(find "$ndir" -type f | wc -l)"
                   nbytes="$(du -sb "$ndir" | awk '{print $1}')"
-                  echo "- Extraction: success" >> "$nested_report"
+                  echo "- Extraction: success ($extractor)" >> "$nested_report"
                   echo "- Extracted files: $nfiles" >> "$nested_report"
                   echo "- Extracted bytes: $nbytes" >> "$nested_report"
                   echo >> "$nested_report"
@@ -236,10 +250,11 @@ jobs:
                   echo "~~~" >> "$nested_report"
                   echo >> "$nested_report"
                 else
-                  echo "- Extraction: failed or timed out" >> "$nested_report"
+                  echo "- Extraction: failed or timed out with both 7z and unar" >> "$nested_report"
                   echo >> "$nested_report"
                   echo "~~~text" >> "$nested_report"
-                  tail -100 "$root/nested-extract-$key.log" >> "$nested_report"
+                  tail -60 "$root/nested-extract-$key.log" >> "$nested_report" || true
+                  tail -60 "$root/nested-extract-$key-unar.log" >> "$nested_report" || true
                   echo "~~~" >> "$nested_report"
                   echo >> "$nested_report"
                 fi
