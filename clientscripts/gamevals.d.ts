@@ -25496,7 +25496,7 @@ declare namespace Obj {
     /** obj 25492 */ const urns_smithing5_full: number;
 }
 
-/** Revision-727 npc ids by Jagex dev-name (15662 named of 15662). */
+/** Revision-727 npc ids by Jagex dev-name (15663 named of 15663). */
 declare namespace Npc {
     /** npc 0 */ const hans: number;
     /** npc 1 */ const man: number;
@@ -41160,6 +41160,7 @@ declare namespace Npc {
     /** npc 15659 */ const megagames_cheesewheel_cheese_stationary: number;
     /** npc 15660 */ const megagames_cheesewheel_cheese_rolling: number;
     /** npc 15661 */ const npc_15661: number;
+    /** npc 15662 */ const super_shenron: number;
 }
 
 /** Revision-727 loc ids by Jagex dev-name (73893 named of 73893). */
@@ -182972,7 +182973,7 @@ declare namespace Worldmap {
     /** worldmap 44 */ const carni_sewervariants: number;
 }
 
-/** Revision-727 model ids by Jagex dev-name (73506 named of 73506). */
+/** Revision-727 model ids by Jagex dev-name (73507 named of 73507). */
 declare namespace Model {
     /** model 0 */ const model_0: number;
     /** model 1 */ const model_1: number;
@@ -256480,6 +256481,7 @@ declare namespace Model {
     /** model 73503 */ const njloot_2013_t2: number;
     /** model 73504 */ const njloot_2013_t3: number;
     /** model 73505 */ const njloot_2013_t4: number;
+    /** model 73506 */ const super_shenron: number;
 }
 
 /** Revision-727 interface components: `Component.<interface>.<component>` is the packed `(iface << 16) | comp`,
