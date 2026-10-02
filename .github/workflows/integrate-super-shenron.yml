@@ -111,8 +111,8 @@ jobs:
           python3 -m json.tool config_npc/15662.json >/dev/null
           python3 -m json.tool gamevals/model.json >/dev/null
           python3 -m json.tool gamevals/npc.json >/dev/null
-          grep -q '/** model 73506 */ const super_shenron: number;' clientscripts/gamevals.d.ts
-          grep -q '/** npc 15662 */ const super_shenron: number;' clientscripts/gamevals.d.ts
+          grep -Fq '/** model 73506 */ const super_shenron: number;' clientscripts/gamevals.d.ts
+          grep -Fq '/** npc 15662 */ const super_shenron: number;' clientscripts/gamevals.d.ts
           git diff --check
 
       - name: Commit latest-dev integration
