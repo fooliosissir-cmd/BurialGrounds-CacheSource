@@ -74,3 +74,15 @@ A candidate is not called production-ready until it passes all of these gates:
 6. provenance/reuse status is recorded before any raw third-party bytes are committed or distributed.
 
 The current eight RS models are therefore **decoded and staged**, not yet production-approved bosses. This lets us keep preparing the whole candidate pool before choosing which boss belongs in the game.
+
+
+## Additional definition-only boss pool
+
+A separate previously uploaded custom-client definition corpus was also normalized into a private candidate queue.
+
+- 509 NPC definitions expose an `Attack` option;
+- 264 of those already name one or more explicit custom model IDs;
+- the queue preserves the NPC id, display name, combat-level field, size/scale fields, model IDs, animation fields, copy-from relationships, and source class;
+- examples with explicit models include Solak, Araxxor, Baphomet, Golden Dragon, King Kong, Godzilla, Krampus, Blue Eyes White Dragon, Red Eyes Black Dragon, multiple strykewyrms, and many custom raid/event enemies.
+
+This is **definition decryption/inventory only**. Their foreign model archive bytes are not present in the current private staging inputs, so these 264 explicit-model candidates cannot yet be converted into 727 GLBs. The private staging pack contains both JSON and CSV queues so a future cache/model dump can be matched against the exact required model IDs immediately.
