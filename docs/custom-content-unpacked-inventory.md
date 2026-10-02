@@ -341,6 +341,17 @@ Animation/dependency note:
 
 See `docs/boss-model-decode-progress.md` for hashes, geometry counts and the acceptance pipeline.
 
+First custom-item decode batch:
+- **29 real equipment/weapon models decoded cleanly** with no geometry/index validation errors;
+- Vorkath helm/body/legs/gloves/boots each have inventory plus male/female worn models;
+- Valk helm/body/legs/gloves/boots/wings have inventory/worn coverage, with the supplied single worn body/head/legs variant temporarily reused for both sexes during preview;
+- BOTLG has inventory/drop plus plain and textured worn variants;
+- Valk/BOTLG material ids all fall inside the revision-727 material range; Vorkath models are untextured old-format meshes;
+- the 79-byte Vorkath `settings.dat` is metadata, not a model, and is intentionally excluded from the model count;
+- Developer World preview definitions use temporary item ids 30000..30012 and carry no combat bonuses.
+
+See `docs/custom-item-decode-progress.md` for the full item-model breakdown and Developer World acceptance gates.
+
 ### Burial Grounds fit
 
 Technically strong because the decoded models fall directly inside model layouts supported by the 727 tooling. They are **decoded and privately staged, not production-approved**. Rights must still be checked asset-by-asset before raw third-party bytes are committed or redistributed.
