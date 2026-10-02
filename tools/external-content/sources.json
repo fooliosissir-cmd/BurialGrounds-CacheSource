@@ -1,0 +1,154 @@
+{
+  "schema_version": 1,
+  "generated": "2026-10-02",
+  "target_revision": 727,
+  "policy": {
+    "production_style": "RuneScape/pre-EOC/667-742 visual language",
+    "raw_foreign_cache_replacement": false,
+    "developer_world_first": true,
+    "require_rights_review_before_vendoring": true
+  },
+  "inspected_git_sources": [
+    {
+      "name": "718 Custom RAIDS",
+      "repository": "wyvern800/rsps-snippets",
+      "ref": "d27e3b7f0fea9a8f4255965dd0660b14750b987c",
+      "license": "MIT",
+      "status": "inspected",
+      "useful_paths": [
+        "raids/v1",
+        "raids/v2 (optimal)"
+      ]
+    },
+    {
+      "name": "RSPSi-742",
+      "repository": "MrSlayerGod/RSPSi-742",
+      "ref": "de2bfd2df7794f2a7c0529fb1f7f9936c55e89c3",
+      "license": "MIT",
+      "status": "inspected",
+      "role": "high-revision map editor/reference"
+    },
+    {
+      "name": "Matrix SpawnEditor",
+      "repository": "MrSlayerGod/SpawnEditor",
+      "ref": "9d5c907fe6528ec965adfdb243f20807bd6a6b79",
+      "license": "GPL-3.0",
+      "status": "inspected-reference-only",
+      "role": "NPC/object placement workflow reference"
+    },
+    {
+      "name": "Barrows Island",
+      "repository": "yrfate/public-maps",
+      "ref": "0cdf98aea65af49bb9d7e867ca4fb82c065d7180",
+      "license": "no LICENSE file; repository description says maps uploaded for anyone to use",
+      "status": "archive-inspected",
+      "archive": "barrows island.zip"
+    }
+  ],
+  "public_map_archives": [
+    {
+      "name": "Snowy Area V1",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Boss/Raids Room V1",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Boss/Raids Room V1.1",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Home Island V1",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Home Island V1.1",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Resource Dungeon V1",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Edgeville V1.1 / V2",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Edgeville V1.2 / V3",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Edgeville Remade",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Chanston AhoyPK Donator Zone",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Chanston Underground Castlewars",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Custom Manor",
+      "host": "Dropbox",
+      "status": "queued-for-ci-inventory"
+    },
+    {
+      "name": "Custom two-floor boss map",
+      "host": "MediaFire",
+      "status": "external-link-only"
+    },
+    {
+      "name": "Four-map community release",
+      "host": "Mega",
+      "status": "external-link-only"
+    }
+  ],
+  "gated_or_rights_review_sources": [
+    {
+      "name": "Venomite 718/OSRS semi-custom",
+      "status": "forum-gated"
+    },
+    {
+      "name": "Onyx / Matrix 2023 718",
+      "status": "forum-gated"
+    },
+    {
+      "name": "Noxious 718 cache/models",
+      "status": "forum-gated"
+    },
+    {
+      "name": "667/718 custom NPC armor item models",
+      "status": "forum-gated-rights-review"
+    },
+    {
+      "name": "667/718 high-revision Raid/OSRS model pack",
+      "status": "forum-gated-rights-review"
+    },
+    {
+      "name": "MagePS maps/models",
+      "status": "forum-gated-stale-link-risk"
+    },
+    {
+      "name": "Hyperion 718/751",
+      "status": "forum-gated"
+    },
+    {
+      "name": "718/OSRS cache maps",
+      "status": "forum-gated"
+    }
+  ]
+}
