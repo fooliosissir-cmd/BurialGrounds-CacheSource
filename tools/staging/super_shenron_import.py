@@ -307,7 +307,7 @@ def insert_before_object_close(path: Path, line: str, expected_last: str) -> Non
     needle = expected_last + "\n  }\n}\n"
     if needle not in text:
         raise RuntimeError(f"Expected tail not found in {path}")
-    replacement = expected_last[:-1] + ",\n" + line + "\n  }\n}\n"
+    replacement = expected_last + ",\n" + line + "\n  }\n}\n"
     path.write_text(text.replace(needle, replacement, 1), encoding="utf-8")
 
 
@@ -320,7 +320,7 @@ def patch_gameval(path: Path, old_count: int, new_count: int, old_named: int, ne
     needle = last_line + "\n  }\n}\n"
     if needle not in text:
         raise RuntimeError(f"Catalog tail not found in {path}")
-    text = text.replace(needle, last_line[:-1] + ",\n" + new_line + "\n  }\n}\n", 1)
+    text = text.replace(needle, last_line + ",\n" + new_line + "\n  }\n}\n", 1)
     path.write_text(text, encoding="utf-8")
 
 
