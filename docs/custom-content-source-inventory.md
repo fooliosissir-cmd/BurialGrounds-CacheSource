@@ -274,6 +274,74 @@ What it gives us:
 Use:
 - evaluate concepts/code for accelerating placement of NPCs and objects in Greyhaven without changing our authoritative Darkan spawn architecture.
 
+
+## Lower-revision map releases worth rebuilding into 727
+
+These are not direct 727 imports. They are useful because the authors explicitly released the map layouts and they are built from RuneScape/OSRS-style assets. For Burial Grounds, prefer translating the layout/object choices into our 727 regions rather than forcing low-revision object IDs into the cache.
+
+### Custom Boss Map with two-floor reward concept
+Source: https://rune-server.org/threads/custom-map-release-with-concept-enjoy.698707/
+
+Author-described encounter layout:
+- boss begins on the first floor;
+- damage thresholds can spawn minion waves in four corners;
+- two searchable caskets support a soul mechanic;
+- stairs lead to a second-floor treasure/reward room after the encounter.
+
+Why useful:
+- explicitly released for community use by the map author;
+- layout is immediately adaptable to a Burial Grounds raid/boss encounter;
+- the encounter concept is independent from the low-revision packet/model format.
+
+Compatibility:
+- original map expects OSRS data around revision 180+;
+- for 727, rebuild/remap objects instead of blindly packing the original object IDs.
+
+### Barrows Island map release
+Source: https://rune-server.org/threads/merry-xmas-have-a-free-map-barrows-island.681834/
+
+Reported layout:
+- isolated island version of the Barrows mounds/burrows;
+- ocean surrounding the activity;
+- boat already present for travel;
+- author notes that activity coordinates must be rewired server-side.
+
+Use:
+- strong reference for our planned Barrows rework or a separate crypt-island activity;
+- mostly normal RuneScape visual language, so easier to reinterpret with 727-native objects.
+
+### Custom Manor map release
+Source: https://rune-server.org/threads/custom-manor-map-release-317.701450/
+
+Reported layout:
+- multi-floor manor;
+- public Dropbox map download;
+- created against an OSRS/667-data environment.
+
+Use:
+- possible haunted manor, side-quest estate, mini-dungeon or elite clue-style location after a 727-native rebuild.
+
+### Chanston free map releases
+Source: https://rune-server.org/threads/chanstons-free-custom-maps.694788/
+
+Explicitly released with permission:
+- AhoyPK Donator Zone
+- Underground Castlewars
+
+Use:
+- Underground Castlewars is the more interesting candidate for us: it can be reinterpreted as an underground fort, faction activity or PvE arena.
+- Original files are lower revision, so use layout/design as the primary reusable asset unless object mapping proves clean.
+
+### Four-map community release
+Source: https://rune-server.org/threads/free-map-release-unique-free-custom-maps.697588/
+
+Reported contents:
+- four downloadable custom map regions with coordinates supplied by the author.
+
+Use:
+- inspect visually and retain only layouts that fit Greyhaven/Burial Grounds;
+- rebuild with 727-native objects if the original map/object data is too revision-specific.
+
 ## Visual compatibility rule
 
 - Do not import unrelated low-poly or other-game art simply because its license allows reuse.
