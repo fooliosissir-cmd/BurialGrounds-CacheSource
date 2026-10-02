@@ -55,7 +55,7 @@ This inventory continues the temporary unpack of the Venomite source package. Ne
 2021-03-01 05:23:23 D....            0            0  cache
 ~~~
 
-- Extraction: success
+- Extraction: success (7z)
 - Extracted files: 39
 - Extracted bytes: 882058005
 
@@ -294,7 +294,7 @@ cache/main_file_cache.idx9
 2012-07-06 00:15:08 ....A           48           48  unpacked/1072.txt
 ~~~
 
-- Extraction: success
+- Extraction: success (7z)
 - Extracted files: 2104
 - Extracted bytes: 100906
 
@@ -693,18 +693,74 @@ unpacked/11098.txt
 2019-01-16 17:05:33 D...A            0            0  lib
 ~~~
 
-- Extraction: failed or timed out
+- Extraction: success (unar)
+- Extracted files: 61
+- Extracted bytes: 31959146
+
+### Extracted tree sample
 
 ~~~text
-
-7-Zip 23.01 (x64) : Copyright (c) 1999-2023 Igor Pavlov : 2023-06-20
- 64-bit locale=C.UTF-8 Threads:2 OPEN_MAX:65536
-
-Scanning the drive for archives:
-1 file, 27657855 bytes (27 MiB)
-
-Extracting archive: /tmp/bg-venomite/extracted/718-Server/lib.rar
-timeout: the monitored command dumped core
+lib/FileStore.jar
+lib/FileStore/com/alex/alex.zip
+lib/FileStore/com/alex/io/InputStream.class
+lib/FileStore/com/alex/io/OutputStream.class
+lib/FileStore/com/alex/io/Stream.class
+lib/FileStore/com/alex/store/Archive.class
+lib/FileStore/com/alex/store/ArchiveReference.class
+lib/FileStore/com/alex/store/FileReference.class
+lib/FileStore/com/alex/store/Index.class
+lib/FileStore/com/alex/store/MainFile.class
+lib/FileStore/com/alex/store/ReferenceTable.class
+lib/FileStore/com/alex/store/Store.class
+lib/FileStore/com/alex/util/bzip2/BZip2BlockEntry.class
+lib/FileStore/com/alex/util/bzip2/BZip2Decompressor.class
+lib/FileStore/com/alex/util/crc32/CRC32HGenerator.class
+lib/FileStore/com/alex/util/gzip/GZipCompressor.class
+lib/FileStore/com/alex/util/gzip/GZipDecompressor.class
+lib/FileStore/com/alex/util/whirlpool/Whirlpool.class
+lib/FileStore/com/alex/utils/Constants.class
+lib/FileStore/com/alex/utils/Utils.class
+lib/GTLVote.jar
+lib/JDA-3.8.0_423-withDependencies.jar
+lib/Motivote-server.jar
+lib/RuneTopListSDK_3.2.jar
+lib/RuneTopListV2.1.jar
+lib/RuneTopListV2.jar
+lib/Vote.jar
+lib/collections-generic-4.01.jar
+lib/demorpg.jar
+lib/demorpg/org/apache/tools/bzip2/BZip2Constants.class
+lib/demorpg/org/apache/tools/bzip2/CBZip2InputStream$Data.class
+lib/demorpg/org/apache/tools/bzip2/CBZip2InputStream.class
+lib/demorpg/org/apache/tools/bzip2/CBZip2OutputStream$Data.class
+lib/demorpg/org/apache/tools/bzip2/CBZip2OutputStream.class
+lib/demorpg/org/apache/tools/bzip2/CRC.class
+lib/everythingrs-api.jar
+lib/gson-2.2.2.jar
+lib/gson-2.2.4.jar
+lib/jna-platform-4.1.0.jar
+lib/joda-time-2.1.jar
+lib/joda-time-2.4.jar
+lib/jode-1.1.2-pre1.jar
+lib/jsoup-1.7.3.jar
+lib/log4j-1.2.16.jar
+lib/lombok-edge.jar
+lib/metrik.jar
+lib/motiservice-api-1-0-2.jar
+lib/mysql-5.0.5-bin.jar
+lib/mysql-connector-5.1.22.jar
+lib/mysql-connector-java-5.1.18-bin.jar
+lib/mysql.jar
+lib/netty-3.2.6.Final.jar
+lib/netty-3.4.6.Final.jar
+lib/netty-3.5.0.Final.jar
+lib/netty-3.5.2.Final.jar
+lib/netty-3.6.2.jar
+lib/netty-3.6.5.Final.jar
+lib/netty-3.9.0.Final.jar
+lib/netty-3.9.2.Final.jar
+lib/xpp3-1.1.3.4.C.jar
+lib/xstream-1.4.1.jar
 ~~~
 
 ## 718-Server/lib/FileStore/com/alex/alex.zip
@@ -744,7 +800,7 @@ timeout: the monitored command dumped core
 2011-11-15 23:38:36 .....         2757         1637  utils/Utils.class
 ~~~
 
-- Extraction: success
+- Extraction: success (7z)
 - Extracted files: 18
 - Extracted bytes: 70538
 
