@@ -2,7 +2,7 @@ name: Sync Greyhaven World Map
 
 on:
   push:
-    branches: [dev]
+    branches: [dev, "feature/**"]
     paths:
       - "maps/**/locs.json"
       - "maps/**/terrain.json"
@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: dev
+          ref: ${{ github.ref_name }}
 
       - name: Regenerate Greyhaven world-map area
         run: python3 tools/sync_greyhaven_worldmap.py
@@ -38,4 +38,4 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add worldmapdata/95/4.dat
           git commit -m "Sync Greyhaven world map area"
-          git push origin HEAD:dev
+          git push origin "HEAD:${GITHUB_REF_NAME}"
