@@ -1,0 +1,128 @@
+name: Integrate Super Shenron 727
+
+on:
+  push:
+    branches:
+      - feature/super-shenron-727
+    paths:
+      - .github/workflows/integrate-super-shenron.yml
+
+permissions:
+  contents: write
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: feature/super-shenron-727
+          fetch-depth: 0
+
+      - name: Bring verified Shenron assets forward from staging
+        run: |
+          git fetch origin staging/super-shenron-dev
+          git show origin/staging/super-shenron-dev:models/73506.glb > models/73506.glb
+          git show origin/staging/super-shenron-dev:config_npc/15662.json > config_npc/15662.json
+          mkdir -p third_party/custom-content/runesuite-667-718-custom-npc-armor-items
+          git show origin/staging/super-shenron-dev:third_party/custom-content/runesuite-667-718-custom-npc-armor-items/SHENRON_IMPORT.md > third_party/custom-content/runesuite-667-718-custom-npc-armor-items/SHENRON_IMPORT.md
+
+      - name: Register IDs on latest 727 source
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import hashlib, json, struct
+
+          def append_tail(path, expected_last, new_line):
+              p = Path(path)
+              text = p.read_text()
+              if new_line.strip() in text:
+                  return
+              needle = expected_last + "\n  }\n}\n"
+              if needle not in text:
+                  raise SystemExit(f"tail changed in {path}")
+              p.write_text(text.replace(needle, expected_last + ",\n" + new_line + "\n  }\n}\n", 1))
+
+          append_tail("models/index.json",
+                      '    "73505": {"compression": "gzip"}',
+                      '    "73506": {"compression": "gzip"}')
+
+          p = Path("gamevals/model.json")
+          text = p.read_text()
+          text = text.replace('"cache_ids": 73506', '"cache_ids": 73507', 1)
+          text = text.replace('"named": 196', '"named": 197', 1)
+          p.write_text(text)
+          append_tail("gamevals/model.json",
+                      '    "73505": "njloot_2013_t4"',
+                      '    "73506": "super_shenron"')
+
+          p = Path("gamevals/npc.json")
+          text = p.read_text()
+          text = text.replace('"cache_ids": 15662', '"cache_ids": 15663', 1)
+          text = text.replace('"named": 12965', '"named": 12966', 1)
+          p.write_text(text)
+          append_tail("gamevals/npc.json",
+                      '    "15661": "npc_15661"',
+                      '    "15662": "super_shenron"')
+
+          p = Path("clientscripts/gamevals.d.ts")
+          text = p.read_text()
+          text = text.replace(
+              "/** Revision-727 npc ids by Jagex dev-name (15662 named of 15662). */",
+              "/** Revision-727 npc ids by Jagex dev-name (15663 named of 15663). */",
+              1,
+          )
+          text = text.replace(
+              "    /** npc 15661 */ const npc_15661: number;\n}",
+              "    /** npc 15661 */ const npc_15661: number;\n"
+              "    /** npc 15662 */ const super_shenron: number;\n}",
+              1,
+          )
+          text = text.replace(
+              "/** Revision-727 model ids by Jagex dev-name (73506 named of 73506). */",
+              "/** Revision-727 model ids by Jagex dev-name (73507 named of 73507). */",
+              1,
+          )
+          text = text.replace(
+              "    /** model 73505 */ const njloot_2013_t4: number;\n}",
+              "    /** model 73505 */ const njloot_2013_t4: number;\n"
+              "    /** model 73506 */ const super_shenron: number;\n}",
+              1,
+          )
+          p.write_text(text)
+
+          expected = "2dbf8ebcf01aa034460d73466dd8a80fb8b8ac57e7c0aec3994a48a3c96b2085"
+          data = Path("models/73506.glb").read_bytes()
+          actual = hashlib.sha256(data).hexdigest()
+          if actual != expected:
+              raise SystemExit(f"unexpected Shenron GLB hash: {actual}")
+          if data[:4] != b"glTF":
+              raise SystemExit("73506.glb is not GLB")
+          json_len = struct.unpack_from("<I", data, 12)[0]
+          doc = json.loads(data[20:20+json_len].decode().rstrip())
+          rs = doc["nodes"][0]["extras"]["rs"]
+          if rs["id"] != 73506 or doc["accessors"][0]["count"] != 1394 or doc["accessors"][1]["count"] != 7890:
+              raise SystemExit("Shenron GLB metadata mismatch")
+          PY
+
+      - name: Validate source files
+        run: |
+          python3 -m json.tool models/index.json >/dev/null
+          python3 -m json.tool config_npc/15662.json >/dev/null
+          python3 -m json.tool gamevals/model.json >/dev/null
+          python3 -m json.tool gamevals/npc.json >/dev/null
+          grep -q '/** model 73506 */ const super_shenron: number;' clientscripts/gamevals.d.ts
+          grep -q '/** npc 15662 */ const super_shenron: number;' clientscripts/gamevals.d.ts
+          git diff --check
+
+      - name: Commit latest-dev integration
+        run: |
+          if git diff --quiet --exit-code; then
+            echo "Super Shenron already integrated."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add models/73506.glb models/index.json config_npc/15662.json gamevals/model.json gamevals/npc.json clientscripts/gamevals.d.ts third_party/custom-content/runesuite-667-718-custom-npc-armor-items/SHENRON_IMPORT.md
+          git commit -m "cache: integrate Super Shenron on latest 727 source"
+          git push origin HEAD:feature/super-shenron-727
