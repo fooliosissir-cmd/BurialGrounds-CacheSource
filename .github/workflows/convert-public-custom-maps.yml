@@ -14,7 +14,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: convert-public-custom-maps-\${{ github.ref }}
+  group: convert-public-custom-maps-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
@@ -25,7 +25,7 @@ jobs:
       - name: Checkout dev
         uses: actions/checkout@v4
         with:
-          ref: \${{ github.ref_name }}
+          ref: ${{ github.ref_name }}
           fetch-depth: 0
 
       - name: Install archive tools
@@ -133,5 +133,5 @@ jobs:
             exit 0
           fi
           git commit -m "maps: convert public custom maps to 727 source"
-          git pull --rebase origin "\${GITHUB_REF_NAME}"
-          git push origin "HEAD:\${GITHUB_REF_NAME}"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
