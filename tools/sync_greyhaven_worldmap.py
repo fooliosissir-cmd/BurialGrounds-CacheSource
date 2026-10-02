@@ -5,7 +5,7 @@ import json
 from pathlib import Path
 import struct
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[1]\n# The dev workflow runs this after map-source changes and commits only the derived area file.
 
 def build_area(source: Path) -> bytes:
     area = bytearray([0, 0])
