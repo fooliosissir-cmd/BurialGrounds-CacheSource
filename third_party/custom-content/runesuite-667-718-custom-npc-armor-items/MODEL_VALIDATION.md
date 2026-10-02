@@ -45,3 +45,20 @@ Total: **37/37 passed structural geometry decoding**.
 - Desktop or Android runtime rendering.
 
 Those are the next conversion-test gates. The authoritative 727 cache remains unchanged.
+
+
+## 727 Roc animation dependency resolved
+
+The 727 cache already contains the native Roc family needed for the Drake compatibility test:
+
+- NPC **4972** = Giant Roc, model 19136, size 5, render emote **924**.
+- NPC **14460/14461** are additional Giant Roc definitions using the same model and render emote 924.
+- NPC **4971** = Baby Roc, model 19139, render emote **925**.
+- `config/bas/924.json` provides Giant Roc locomotion: stand sequence **5021**, walk sequence **5022**.
+- `config/bas/925.json` provides Baby Roc locomotion: stand sequence **5029**, walk sequence **5030**.
+- The server's existing Giant Roc combat definition names the combat animations `myarm_roc_flap_attack`, `myarm_roc_defend`, and `myarm_roc_death`.
+- Sequences **5023–5028** sit beside the Giant Roc stand/walk sequences and reference the same 86179xxx/86180xxx frame family, making them the first concrete sequence candidates to validate during the Drake render test.
+
+One cache-source quirk is recorded for the test harness: the file at `config/bas/924.json` currently contains an internal `id` field of 956, and `config/bas/925.json` contains 957. The NPC definitions themselves still point at render-emote keys 924/925, so the test must use the cache path/key rather than assuming the embedded JSON id field is authoritative.
+
+This closes the earlier "find a 727 Roc animation family" research gap. It does **not** yet prove that the imported Drake vertex groups match the 727 Roc skeleton; that requires an actual Developer World animation/render test.
