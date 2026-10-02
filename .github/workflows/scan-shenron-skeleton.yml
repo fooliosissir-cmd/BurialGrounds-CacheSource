@@ -1,0 +1,94 @@
+name: Scan Shenron Skeleton Candidates
+
+on:
+  push:
+    branches:
+      - feature/super-shenron-727
+    paths:
+      - .github/workflows/scan-shenron-skeleton.yml
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compare vertex-skin label sets
+        run: |
+          mkdir -p build
+          python3 - <<'PY'
+          from pathlib import Path
+          import json, struct
+
+          target = {0,1,2,3,5,6,8,9,10,11,14,15,30,34,37,38,42,43,57,58,59,60}
+          names = json.loads(Path("gamevals/model.json").read_text())["entries"]
+
+          def glb_json(path):
+              data = path.read_bytes()
+              if len(data) < 20 or data[:4] != b"glTF":
+                  return None
+              length, kind = struct.unpack_from("<II", data, 12)
+              if kind != 0x4E4F534A:
+                  return None
+              return json.loads(data[20:20+length].decode().rstrip())
+
+          rows = []
+          for path in Path("models").glob("*.glb"):
+              try:
+                  model_id = int(path.stem)
+              except ValueError:
+                  continue
+              if model_id == 73506:
+                  continue
+              try:
+                  doc = glb_json(path)
+                  rs = doc["nodes"][0].get("extras", {}).get("rs", {}) if doc else {}
+                  skins = rs.get("vertexSkins")
+                  if not skins:
+                      continue
+                  labels = set(skins)
+                  union = target | labels
+                  inter = target & labels
+                  jaccard = len(inter) / len(union) if union else 0.0
+                  coverage = len(inter) / len(target)
+                  extra = len(labels - target)
+                  rows.append({
+                      "id": model_id,
+                      "name": names.get(str(model_id), f"model_{model_id}"),
+                      "jaccard": round(jaccard, 6),
+                      "targetCoverage": round(coverage, 6),
+                      "matchedLabels": len(inter),
+                      "targetLabels": len(target),
+                      "candidateLabels": len(labels),
+                      "extraLabels": extra,
+                      "labels": sorted(labels),
+                  })
+              except Exception:
+                  continue
+
+          rows.sort(key=lambda r: (
+              -r["jaccard"],
+              -r["targetCoverage"],
+              r["extraLabels"],
+              abs(r["candidateLabels"] - len(target)),
+              r["id"],
+          ))
+          report = {
+              "target": sorted(target),
+              "candidateCount": len(rows),
+              "exactSetMatches": [r for r in rows if set(r["labels"]) == target],
+              "top": rows[:100],
+          }
+          Path("build/shenron-skeleton-candidates.json").write_text(json.dumps(report, indent=2) + "\n")
+          print(json.dumps(report["top"][:20], indent=2))
+          PY
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shenron-skeleton-candidates
+          path: build/shenron-skeleton-candidates.json
+          if-no-files-found: error
+          retention-days: 14
