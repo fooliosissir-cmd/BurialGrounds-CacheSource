@@ -1,0 +1,59 @@
+name: Integrate converted Custom Mode maps
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [dev]
+    paths:
+      - "tools/integrate_custom_mode_maps.py"
+      - "imports/custom-maps/**"
+      - ".github/workflows/integrate-custom-mode-maps.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: integrate-custom-mode-maps-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  integrate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+      - name: Relocate converted maps into reserved source regions
+        run: python3 tools/integrate_custom_mode_maps.py
+      - name: Validate generated map JSON
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          targets = ["79_200","74_206","79_201","79_202","80_202","81_202","80_200","79_203","79_204","79_205","80_201","80_203"]
+          for target in targets:
+              root=Path("maps")/target
+              assert (root/"terrain.json").is_file(), target
+              assert (root/"locs.json").is_file(), target
+              for p in root.glob("*.json"):
+                  json.loads(p.read_text())
+          json.loads(Path("maps/index.json").read_text())
+          print("Validated", len(targets), "reserved custom map regions")
+          PY
+      - name: Commit reserved map regions
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add maps docs/custom-map-integration-status.md
+          if git diff --cached --quiet; then
+            echo "Integrated maps unchanged."
+            exit 0
+          fi
+          git commit -m "maps: reserve converted Custom Mode regions"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
