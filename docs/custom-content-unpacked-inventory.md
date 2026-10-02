@@ -307,23 +307,41 @@ High potential for boss/model research, but raw asset reuse must be reviewed ind
 
 ## 8. 667/718 custom NPC / armor / item model release
 
-Status: **PARTIAL / HOLD — metadata inspected; archive is gated and some models have third-party purchase provenance**
+Status: **INSPECTED / PRIVATE STAGING — archive bytes received as a user-provided ZIP on 2026-10-02 and fully unpacked**
 
-Reported assets:
-- Shadow Drake
-- Fire Drake
-- Solak
-- Vorkath armour
-- Super Shenron
-- custom large raid-boss NPC
-- additional models
+Verified archive:
+- `Runesuite_modelrelease.zip`
+- ZIP size: 1,285,127 bytes
+- ZIP SHA-256: `ce96fc03a19ac1061464df36a404fbddd075ba4b7357aa075711852b1e442258`
+- 40 files / 4,575,477 unpacked bytes
+- 37 RuneScape model DAT files, 33 unique model payload hashes
+- 1 editable Metasequoia source model: `New_Boss.mqo`
+- bundled `DatMaker.exe` was quarantined and **not executed**
 
-Animation note:
-- Shadow/Fire Drake are described as using Roc animations.
+Verified assets:
+- **Super Shenron** — `80972.dat`, old model format, 1,394 vertices / 2,630 faces.
+- **Solak** — new model format v15, 6,397 vertices / 11,737 faces / 1 texture face.
+- **Shadow Drake / Fire Drake** — six size variants, all new model format v17.
+- **Valkyrie armor + wings** — 11 models, new model format v19.
+- **Vorkath armor** — helm/chest/legs/gloves/boots drop + wear models, old model format.
+- **Bow of the Last Guardian** — drop/wield/textured-wield models; textured wield declares 2 texture faces.
+- **Custom large raid boss** — `New_Boss.mqo`, 266 declared materials and three MQO object layers, each 5,573 vertices / 10,651 triangular faces; no external image texture paths.
+
+Dependency findings:
+- No animation archives/sequences are included in this ZIP.
+- No NPC/item config definitions are included for the bosses or armor.
+- No standalone image textures are included.
+- Shadow/Fire Drake are described by the release metadata as using Roc animations; that linkage must be reconstructed against the 727 cache.
+- Some new-format models reference texture/material IDs that still need 727 compatibility checks.
+
+Private staging artifacts:
+- Full unpacked inventory and SHA-256 list are under `third_party/custom-content/runesuite-667-718-custom-npc-armor-items/`.
+- Super Shenron raw model is staged separately under the private staging branch for conversion work.
+- The authoritative 727 cache has **not** been modified.
 
 ### Burial Grounds fit
 
-Technically promising because it targets 667/718. Rights must be checked asset-by-asset before raw files are committed.
+**Very high technical value.** The pack is close enough to 727 to justify isolated conversion tests. Production/public reuse still needs asset-by-asset provenance review; conversion should use free 727 model/config IDs and a disposable Developer World cache first.
 
 ---
 
@@ -466,19 +484,18 @@ These remain inventory candidates until their downloadable contents and reuse te
 5. Edgeville V1.2
 6. Barrows Island
 
-### First boss/model packages to unpack when archive bytes are available
+### Next boss/model packages to unpack when archive bytes are available
 1. Venomite 718
-2. 667/718 custom NPC/armor/item release
-3. Noxious 718
-4. Onyx 718
-5. 667/718 Raid/OSRS model pack
-6. Hyperion 718/751
+2. Noxious 718
+3. Onyx 718
+4. 667/718 Raid/OSRS model pack
+5. Hyperion 718/751
 
 ---
 
 ## Current hard blocker
 
-GitHub-hosted source trees and binaries can be inspected directly. Several actual map/model archives are hosted on Dropbox, Mega, MediaFire, or behind authenticated RuneSuite downloads. The current connected repository tools expose their release metadata/links but not those archive bytes, so those particular packages cannot be truthfully called "unpacked" yet.
+The uploaded 667/718 NPC/armor/item model release is no longer blocked: it has been fully unpacked and inventoried. Several *other* map/model archives remain hosted on Dropbox, Mega, MediaFire, or behind authenticated RuneSuite downloads. Those other packages cannot be truthfully called "unpacked" until their archive bytes are supplied or otherwise become accessible.
 
 No authentication gate or redistribution restriction should be bypassed.
 
