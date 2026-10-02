@@ -49,62 +49,86 @@
     {
       "name": "Snowy Area V1",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "54ebfcadff74022d79b28378c1f88c04c582f9860f4c02e126d44220b747f188",
+      "bytes": 7100
     },
     {
       "name": "Boss/Raids Room V1",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "cd653fd6fd403290d767c1d45dd34a261e7a00e0e957b7d40142a803423f494f",
+      "bytes": 256358
     },
     {
       "name": "Boss/Raids Room V1.1",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "202baa1efaf68762f3463a4f8e49d3b504a69a3ff16d80c8657bdc615c241754",
+      "bytes": 256927
     },
     {
       "name": "Home Island V1",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "65c4f34cb44be3e074e55aa9ae83fb024cb3c79ae87b076e78e747c75e59d3da",
+      "bytes": 10347
     },
     {
       "name": "Home Island V1.1",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "9f6937bb85e6454c205cb39081a77682e8faecb17082e5a9f9a609321c0e1cf5",
+      "bytes": 11572
     },
     {
       "name": "Resource Dungeon V1",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "f1cfef087c873ed2c0a51d4bb72ea73bf975cb346d020e94128ebedb82a10c29",
+      "bytes": 3153
     },
     {
       "name": "Edgeville V1.1 / V2",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "02b2a11d785f2259b60a5ce5204101e24c13c248ab59b54297d215a6471d6202",
+      "bytes": 16696
     },
     {
       "name": "Edgeville V1.2 / V3",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "7de1ddfece3f7ea062bbc80d831774436b4e15f7eb08768f0aeaafc565c45c41",
+      "bytes": 33196
     },
     {
       "name": "Edgeville Remade",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "0574d0930ff0c1158dabf7b2e95e635c28a202ae183bbbe1a8ae952094b04359",
+      "bytes": 27712
     },
     {
       "name": "Chanston AhoyPK Donator Zone",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "ebfc41629893934ef944c7e8be2185fc2b091e61086b187bd92dfe69e28db3fa",
+      "bytes": 4740
     },
     {
       "name": "Chanston Underground Castlewars",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "899538be991498a83d7068a407e97cb6d82d6a2969ad2a8acf35e65edf769ea1",
+      "bytes": 23713
     },
     {
       "name": "Custom Manor",
       "host": "Dropbox",
-      "status": "queued-for-ci-inventory"
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "f00e4bec37b0636de34ab863efb6e48fb2f04d7fe94a57c048409b88324baf16",
+      "bytes": 6215
     },
     {
       "name": "Custom two-floor boss map",
@@ -115,6 +139,13 @@
       "name": "Four-map community release",
       "host": "Mega",
       "status": "external-link-only"
+    },
+    {
+      "name": "Barrows Island",
+      "host": "GitHub",
+      "status": "ci-downloaded-and-archive-listed",
+      "sha256": "be08aadb074c50864c315a9ee8eb1f73cebd4a0efc50f8078c987b23733ac6c4",
+      "bytes": 7110
     }
   ],
   "gated_or_rights_review_sources": [
@@ -150,5 +181,7 @@
       "name": "718/OSRS cache maps",
       "status": "forum-gated"
     }
-  ]
+  ],
+  "last_ci_inventory_run": 2,
+  "generated_inventory": "docs/generated-public-map-archive-inventory.md"
 }
