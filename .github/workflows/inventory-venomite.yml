@@ -1,0 +1,179 @@
+name: Inventory Venomite 718 package
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - dev
+    paths:
+      - ".github/workflows/inventory-venomite.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: inventory-venomite-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Install inspection tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y megatools p7zip-full file
+
+      - name: Download and inventory Venomite source package
+        shell: bash
+        env:
+          VENOMITE_SOURCE_URL: "https://mega.nz/file/m65TlKDT#m_4DHtbOx3H8h_RVB9KJSZHVDVVksjiuVAsEcSO76Zw"
+        run: |
+          set -u
+          root="/tmp/bg-venomite"
+          pkg="$root/venomite-source.pkg"
+          extract="$root/extracted"
+          report="docs/generated-venomite-package-inventory.md"
+          mkdir -p "$root"
+
+          cat > "$report" <<'EOF'
+          # Generated Venomite 718 Package Inventory
+
+          Generated in a temporary GitHub Actions runner. The raw third-party package and extracted files are not committed. No bundled executable is run.
+
+          EOF
+
+          echo "## Source package" >> "$report"
+          echo >> "$report"
+
+          if ! timeout 20m megatools dl --no-progress --path "$pkg" "$VENOMITE_SOURCE_URL" >"$root/mega.log" 2>&1; then
+            echo "**Download failed or timed out.**" >> "$report"
+            echo >> "$report"
+            echo "~~~text" >> "$report"
+            tail -80 "$root/mega.log" | sed -E 's/(https:\/\/mega\.nz\/file\/[^#[:space:]]+)#[^[:space:]]+/\1#REDACTED/g' >> "$report"
+            echo "~~~" >> "$report"
+            exit 0
+          fi
+
+          if [ ! -f "$pkg" ]; then
+            candidate="$(find "$root" -maxdepth 3 -type f ! -name 'mega.log' | head -1 || true)"
+            if [ -n "$candidate" ]; then
+              pkg="$candidate"
+            fi
+          fi
+
+          if [ ! -f "$pkg" ]; then
+            echo "**Download command completed but no package file was found.**" >> "$report"
+            exit 0
+          fi
+
+          bytes="$(stat -c %s "$pkg")"
+          sha="$(sha256sum "$pkg" | awk '{print $1}')"
+          kind="$(file -b "$pkg" | tr '|' '/')"
+          printf -- '- Bytes: %s\n- SHA-256: %s\n- Detected type: %s\n\n' "$bytes" "$sha" "$kind" >> "$report"
+
+          echo "### Archive listing sample" >> "$report"
+          echo >> "$report"
+          echo "~~~text" >> "$report"
+          if timeout 5m 7z l -ba "$pkg" >"$root/listing.txt" 2>"$root/listing.err"; then
+            head -250 "$root/listing.txt" >> "$report"
+          else
+            echo "7z could not list the package:" >> "$report"
+            head -80 "$root/listing.err" >> "$report"
+          fi
+          echo "~~~" >> "$report"
+          echo >> "$report"
+
+          mkdir -p "$extract"
+          if ! timeout 20m 7z x -y -o"$extract" "$pkg" >"$root/extract.log" 2>&1; then
+            echo "## Extraction status" >> "$report"
+            echo >> "$report"
+            echo "**Extraction failed or timed out.**" >> "$report"
+            echo "~~~text" >> "$report"
+            tail -100 "$root/extract.log" >> "$report"
+            echo "~~~" >> "$report"
+            exit 0
+          fi
+
+          total_files="$(find "$extract" -type f | wc -l)"
+          total_dirs="$(find "$extract" -type d | wc -l)"
+          total_bytes="$(du -sb "$extract" | awk '{print $1}')"
+
+          echo "## Extracted tree summary" >> "$report"
+          echo >> "$report"
+          printf -- '- Files: %s\n- Directories: %s\n- Unpacked bytes: %s\n\n' "$total_files" "$total_dirs" "$total_bytes" >> "$report"
+
+          echo "### File extensions" >> "$report"
+          echo >> "$report"
+          echo '| Extension | Files |' >> "$report"
+          echo '| --- | ---: |' >> "$report"
+          find "$extract" -type f -printf '%f\n' |
+            awk '{
+              n=$0
+              if (n !~ /\./) ext="[none]"
+              else { sub(/^.*\./, "", n); ext=tolower(n) }
+              count[ext]++
+            }
+            END { for (e in count) print count[e], e }' |
+            sort -nr |
+            head -80 |
+            while read -r count ext; do
+              printf '| %s | %s |\n' "$ext" "$count" >> "$report"
+            done
+          echo >> "$report"
+
+          echo "### Top-level tree" >> "$report"
+          echo >> "$report"
+          echo "~~~text" >> "$report"
+          find "$extract" -mindepth 1 -maxdepth 3 -printf '%P\n' | sort | head -400 >> "$report"
+          echo "~~~" >> "$report"
+          echo >> "$report"
+
+          echo "## Custom-content candidate paths" >> "$report"
+          echo >> "$report"
+          echo "~~~text" >> "$report"
+          find "$extract" -type f -printf '%P\n' |
+            grep -Ei '(boss|raid|event|model|npc|item|interface|map|vorkath|zulrah|cerberus|kraken|sire|hydra|olm|tekton|vasa|vespula|verzik|maiden|nightmare|custom)' |
+            sort |
+            head -1200 >> "$report" || true
+          echo "~~~" >> "$report"
+          echo >> "$report"
+
+          echo "## Potential source-code definitions" >> "$report"
+          echo >> "$report"
+          echo "~~~text" >> "$report"
+          find "$extract" -type f \( -iname '*.java' -o -iname '*.kt' -o -iname '*.json' -o -iname '*.txt' \) -size -4M -print0 |
+            xargs -0 grep -IlE '(Boss|boss|Raid|raid|NPC|Npc|npc|custom model|Custom Model)' 2>/dev/null |
+            sed "s#^$extract/##" |
+            sort |
+            head -1000 >> "$report" || true
+          echo "~~~" >> "$report"
+          echo >> "$report"
+
+          echo "## Safety / import status" >> "$report"
+          echo >> "$report"
+          echo "- Inspection only; no third-party executable was run." >> "$report"
+          echo "- Raw package and extracted payload are not committed." >> "$report"
+          echo "- Candidate models/maps/configs still require 727 ID/dependency/provenance review before Developer World packing." >> "$report"
+
+      - name: Commit generated inventory
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- docs/generated-venomite-package-inventory.md)" ]; then
+            echo "Inventory unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/generated-venomite-package-inventory.md
+          git commit -m "docs: inventory Venomite 718 package"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
