@@ -60,6 +60,13 @@ Status: keep as a secondary candidate; verify the original release/download and 
 Use: cross-revision weapon-model candidate/reference.
 Status: secondary candidate; verify source archive and rights before importing.
 
+## Visual compatibility rule
+
+- **Do not use Kenney assets in Burial Grounds.**
+- Do not import unrelated low-poly or other-game art simply because its license allows reuse.
+- Production candidates should match RuneScape's pre-EOC/667-742 visual language closely enough to look native after conversion.
+- Prefer RuneScape/RSPS custom models, maps, NPCs and RS3-to-718 conversions that can be adapted cleanly to revision 727.
+
 ## Burial Grounds import rule
 
 1. Never overwrite the authoritative 727 cache with a foreign cache.
