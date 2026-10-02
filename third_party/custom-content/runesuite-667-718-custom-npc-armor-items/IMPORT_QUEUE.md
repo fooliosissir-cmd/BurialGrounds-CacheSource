@@ -9,15 +9,21 @@ Authoritative 727 cache: untouched
 1. **Super Shenron**
    - Source: `Super Shenron/80972.dat`
    - Geometry: 1,394 vertices / 2,630 faces
-   - Format: old RuneScape model format
+   - Format: old RuneScape model format, with preserved vertex-skin labels.
    - Raw source is staged privately as `raw/Super_Shenron.zip`.
-   - Next gate: allocate a free 727 model ID, create a temporary NPC definition, select a compatible base animation set, and render-test.
+   - 727 cache-source conversion is complete and recorded in `SHENRON_727_CONVERSION.md`.
+   - Target model ID **80972** is verified free on both dev and staging.
+   - Temporary NPC ID **15662** is verified free and stays inside the existing packed NPC archive 122.
+   - Converted payload is staged privately as `converted/Super_Shenron_80972.glb.xz`.
+   - Next gate: choose/verify a compatible animation base and render the temporary NPC in Developer World. Do not promote the model until the animation test passes.
 
 2. **Custom large raid boss**
    - Source: `New_Boss.mqo`
    - Editable MQO source, 266 materials.
    - Main geometry layer: 5,573 vertices / 10,651 triangles.
-   - Next gate: export a RuneScape-compatible model while preserving material/color groups, then test scale/orientation.
+   - The source has now been parsed and rendered; it is an armored berserker/demon-style raid boss, not additional DBZ content.
+   - Inspection details are recorded in `NEW_BOSS_INSPECTION.md`.
+   - Next gate: export a RuneScape-compatible model while preserving material/color and skin-group data, then test scale/orientation.
 
 3. **Solak**
    - Source: `ValkandSolak/solak.dat`
