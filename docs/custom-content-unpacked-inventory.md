@@ -307,23 +307,43 @@ High potential for boss/model research, but raw asset reuse must be reviewed ind
 
 ## 8. 667/718 custom NPC / armor / item model release
 
-Status: **PARTIAL / HOLD — metadata inspected; archive is gated and some models have third-party purchase provenance**
+Status: **INSPECTED / PRIVATE-STAGED / HOLD FOR REDISTRIBUTION**
 
-Reported assets:
-- Shadow Drake
-- Fire Drake
-- Solak
-- Vorkath armour
-- Super Shenron
-- custom large raid-boss NPC
-- additional models
+The user supplied `Runesuite_modelrelease.zip` through private Library storage, so the archive bytes are now available for conversion work without bypassing the original forum/download gate. The raw archive is not committed here.
 
-Animation note:
-- Shadow/Fire Drake are described as using Roc animations.
+Archive contents directly inspected:
+- Super Shenron — `80972.dat`;
+- Solak — `solak.dat`;
+- Fire Drake — Big / Mid / Small model variants;
+- Shadow Drake — Big / Mid / Small model variants;
+- `New_Boss.mqo` custom large raid-boss source mesh;
+- Vorkath armour;
+- Valk armour;
+- BOTLG weapon models.
+
+First boss decode batch:
+- **8 RuneScape `.dat` boss models decoded cleanly** through the old/new model layouts compatible with Darkan's `ModelDecoder`;
+- every decoded model has valid non-empty geometry and in-range triangle indices;
+- private cache-source-compatible GLB staging files, preview GLBs and PNG renders were generated;
+- `New_Boss.mqo` was parsed into a preview GLB but still needs RuneScape skin/material/animation translation;
+- no bundled executable was run.
+
+Decoded bosses currently staged:
+- Super Shenron;
+- Solak;
+- Fire Drake Big / Mid / Small;
+- Shadow Drake Big / Mid / Small.
+
+Animation/dependency note:
+- Shadow/Fire Drake are described by the release as using Roc animations and their skin data survives decoding;
+- Shenron and Solak still need animation/config dependency mapping;
+- material/texture dependencies must be checked before a 727 cache-pack test.
+
+See `docs/boss-model-decode-progress.md` for hashes, geometry counts and the acceptance pipeline.
 
 ### Burial Grounds fit
 
-Technically promising because it targets 667/718. Rights must be checked asset-by-asset before raw files are committed.
+Technically strong because the decoded models fall directly inside model layouts supported by the 727 tooling. They are **decoded and privately staged, not production-approved**. Rights must still be checked asset-by-asset before raw third-party bytes are committed or redistributed.
 
 ---
 
@@ -466,9 +486,9 @@ These remain inventory candidates until their downloadable contents and reuse te
 5. Edgeville V1.2
 6. Barrows Island
 
-### First boss/model packages to unpack when archive bytes are available
-1. Venomite 718
-2. 667/718 custom NPC/armor/item release
+### Boss/model package queue
+1. **667/718 custom NPC/armor/item release — first boss batch decoded and privately staged**
+2. Venomite 718
 3. Noxious 718
 4. Onyx 718
 5. 667/718 Raid/OSRS model pack
@@ -478,11 +498,13 @@ These remain inventory candidates until their downloadable contents and reuse te
 
 ## Current hard blocker
 
-GitHub-hosted source trees and binaries can be inspected directly. Several actual map/model archives are hosted on Dropbox, Mega, MediaFire, or behind authenticated RuneSuite downloads. The current connected repository tools expose their release metadata/links but not those archive bytes, so those particular packages cannot be truthfully called "unpacked" yet.
+The first 667/718 boss-model archive is no longer blocked: the user supplied it privately and its boss models are now decoded/staged.
+
+Other candidate packages are still hosted on Dropbox, Mega, MediaFire, or behind authenticated forum downloads. Those packages remain blocked until their archive bytes are supplied through an authorized source such as a conversation upload, Library file, connected storage, or GitHub-hosted binary.
 
 No authentication gate or redistribution restriction should be bypassed.
 
-Once an archive is available as a conversation upload, Library file, or GitHub-hosted binary, the next pass is:
+For each newly available archive, the next pass is:
 
 1. enumerate every file;
 2. hash every binary;
