@@ -1,6 +1,7 @@
 import hashlib, shutil
 from .codec import *
 from .specs import MAPS,BLOCKED
+from .compat import decode_surface_compat
 
 def find(root,name,exact):
     items=[p for p in (root.rglob(name) if exact else root.rglob('*')) if p.is_file() and (exact or p.as_posix().endswith(name))]
@@ -16,7 +17,7 @@ def convert_region(repo,ext,out,m,r):
     label,region,map_name,land_name,under_name,underland_name,exact,known=r
     root=ext/m[2]
     mp=find(root,map_name,exact); mb=payload(mp)
-    t,ef,mx,tile_bytes=decode_surface(mb,m[1]+'/'+label)
+    t,ef,mx,tile_bytes=decode_surface_compat(mb,m[1]+'/'+label)
     rd=out/m[0]/'maps'/region
     write_json(rd/'terrain.json',terrain_json(region,4,t,ef))
     res={'label':label,'staged_region':region,'source_region_known':known,'output':str(rd.relative_to(repo)),
