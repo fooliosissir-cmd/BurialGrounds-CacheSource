@@ -172,7 +172,13 @@ Status: potentially large pools of custom NPC/item models, but revision fit and 
 ## Newly found high-value sources
 
 ### Venomite 718/OSRS semi-custom release
-Source: https://runesuite.io/topic/8110-venomite-718osrssemi-custom/
+Rune-Server release: https://rune-server.org/threads/venomite-718-osrs-semi-custom.703434/
+RuneSuite mirror/thread: https://runesuite.io/topic/8110-venomite-718osrssemi-custom/
+
+Public package links exposed by the release:
+- Source/server package: https://mega.nz/file/m65TlKDT#m_4DHtbOx3H8h_RVB9KJSZHVDVVksjiuVAsEcSO76Zw
+- Original client package: https://mega.nz/file/7zhW0CYY#6r8lECjoBuz_XEBSYfPzin_uoxPYArNbbFbdCm1dNSg
+- Later fixed client package: https://mega.nz/file/jvYVxDhS#a0MPjZA_kVWbyTf489Tduxzl9GsLtsebOslV_9A5DaU
 
 Reported contents:
 - 3 event bosses
@@ -180,17 +186,23 @@ Reported contents:
 - more than 100 custom models made specifically for the project
 - many NPC configurations
 - custom interfaces
-- mainly revision-685-style item models, which are visually closer to the older RuneScape look than modern RS3 assets
-- some custom maps credited to Patrity
+- mainly revision-685-style item models
+- custom maps credited to Patrity
+
+Important map-format correction:
+- The release author explicitly says the custom maps were made with the **OSRS RSPSi plugin**, not as native 718 maps.
+- Treat those maps as layout/object-conversion candidates for 727, not direct 718 region imports.
 
 Why this is high priority:
-- It is a 718 project and therefore structurally close to Burial Grounds 727.
+- The server itself is 718, so boss/NPC/config code is close to our 727 family.
 - It combines bosses, NPC configs, models and maps in one released project.
 - The older-style item models are a potentially good visual fit.
+- The public MEGA source link means we can attempt a temporary CI unpack/inventory without committing the raw package.
 
 Caution:
 - No explicit open-source/content license was verified.
 - Inspect and selectively port only material whose reuse/redistribution terms are clear.
+- Never execute bundled third-party binaries during inspection.
 
 ### Pat's Maps — explicit free map releases
 Source: https://rune-server.org/threads/pats-maps.685948/
