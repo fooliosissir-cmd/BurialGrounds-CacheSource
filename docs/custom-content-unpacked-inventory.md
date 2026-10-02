@@ -348,7 +348,7 @@ First custom-item decode batch:
 - BOTLG has inventory/drop plus plain and textured worn variants;
 - Valk/BOTLG material ids all fall inside the revision-727 material range; Vorkath models are untextured old-format meshes;
 - the 79-byte Vorkath `settings.dat` is metadata, not a model, and is intentionally excluded from the model count;
-- Developer World preview definitions use temporary item ids 30000..30012 and carry no combat bonuses.
+- Developer World preview definitions use temporary item ids 29952..29964 and carry no combat bonuses.
 
 See `docs/custom-item-decode-progress.md` for the full item-model breakdown and Developer World acceptance gates.
 
