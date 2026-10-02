@@ -1,0 +1,44 @@
+name: Stage Super Shenron
+
+on:
+  push:
+    branches:
+      - staging/super-shenron-dev
+    paths:
+      - tools/staging/super_shenron_import.py
+      - .github/workflows/stage-super-shenron.yml
+
+permissions:
+  contents: write
+
+jobs:
+  stage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: staging/super-shenron-dev
+          fetch-depth: 0
+
+      - name: Build 727 cache-source assets
+        run: python3 tools/staging/super_shenron_import.py
+
+      - name: Validate generated JSON
+        run: |
+          python3 -m json.tool config_npc/15662.json >/dev/null
+          python3 -m json.tool gamevals/model.json >/dev/null
+          python3 -m json.tool gamevals/npc.json >/dev/null
+          python3 -m json.tool models/index.json >/dev/null
+          git diff --check
+
+      - name: Commit generated assets
+        run: |
+          if git diff --quiet --exit-code; then
+            echo "Super Shenron assets are already staged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add models/73506.glb models/index.json config_npc/15662.json gamevals/model.json gamevals/npc.json clientscripts/gamevals.d.ts
+          git commit -m "cache: stage Super Shenron for Developer World"
+          git push origin HEAD:staging/super-shenron-dev
