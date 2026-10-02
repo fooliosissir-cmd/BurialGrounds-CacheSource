@@ -114,7 +114,7 @@ jobs:
       - name: Commit inventory
         shell: bash
         run: |
-          if git diff --quiet -- docs/generated-public-map-archive-inventory.md; then
+          if [ -z "$(git status --porcelain -- docs/generated-public-map-archive-inventory.md)" ]; then
             echo "Inventory unchanged."
             exit 0
           fi
