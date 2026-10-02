@@ -1,0 +1,137 @@
+name: Convert public custom maps to 727 source
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - dev
+    paths:
+      - "tools/convert_public_custom_maps.py"
+      - "tools/custom_map_converter/**"
+      - ".github/workflows/convert-public-custom-maps.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: convert-public-custom-maps-\${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Checkout dev
+        uses: actions/checkout@v4
+        with:
+          ref: \${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Install archive tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y p7zip-full unzip file
+
+      - name: Download and extract approved public map releases
+        shell: bash
+        run: |
+          set -euo pipefail
+          root="/tmp/bg-map-conversion"
+          downloads="$root/downloads"
+          extracted="$root/extracted"
+          mkdir -p "$downloads" "$extracted"
+
+          fetch_extract () {
+            local slug="$1"
+            local url="$2"
+            local filename="$3"
+            local archive="$downloads/$filename"
+            local out="$extracted/$slug"
+            echo "==> $slug"
+            curl -fL --retry 3 --connect-timeout 20 --max-time 180 "$url" -o "$archive"
+            mkdir -p "$out"
+            7z x -y -o"$out" "$archive" >/tmp/extract-"$slug".log
+          }
+
+          fetch_extract "snow-area-v1" \
+            "https://www.dropbox.com/scl/fi/1l3q1e7h1c1yqvwxiorc3/Snow-Area-V1.rar?rlkey=12g55ox1pe8fxlixz8e4020yl&dl=1" \
+            "snow-area-v1.rar"
+          fetch_extract "raids-room-v1.1" \
+            "https://www.dropbox.com/scl/fi/txne0eog4gy2jqsrstbn2/Raids-Room-V1.1.rar?rlkey=ec97tlt0z19qwml40l1ew5741&dl=1" \
+            "raids-room-v1.1.rar"
+          fetch_extract "home-island-v1.1" \
+            "https://www.dropbox.com/scl/fi/m35o0royc01yicnnhoc42/Home-Island-V1.1.rar?rlkey=tux0m38hxp53hvwiq5qwopifx&dl=1" \
+            "home-island-v1.1.rar"
+          fetch_extract "resource-dungeon-v1" \
+            "https://www.dropbox.com/scl/fi/iqumqfzdoepkjjj9wqpgt/Resource-Dungeon-V1.rar?rlkey=v92h2ctoob7ud0wp4kgwjyim4&dl=1" \
+            "resource-dungeon-v1.rar"
+          fetch_extract "edgeville-v2" \
+            "https://www.dropbox.com/scl/fi/mxfzrlsf2gmxhg4udbrdh/Edgeville-V2.rar?rlkey=gqfzkq7scit4tfzlkmc1246m0&dl=1" \
+            "edgeville-v2.rar"
+          fetch_extract "edgeville-v3" \
+            "https://www.dropbox.com/scl/fi/odbrsrvivfr7j9ktgt8eb/Edgeville-V3.rar?rlkey=z8542e6fr5qp9e7h2yuw1q70p&dl=1" \
+            "edgeville-v3.rar"
+          fetch_extract "edgeville-remade" \
+            "https://www.dropbox.com/scl/fi/rdip3r3l2kjnkpbp0mnk9/Edgeville-Remade.rar?rlkey=lv39ffig14ndk8dm57b97ltjc&dl=1" \
+            "edgeville-remade.rar"
+          fetch_extract "barrows-island" \
+            "https://raw.githubusercontent.com/yrfate/public-maps/master/barrows%20island.zip" \
+            "barrows-island.zip"
+          fetch_extract "chanston-donator-zone" \
+            "https://www.dropbox.com/s/zrde08zs9gsrq1y/bmxisrad%20donator%20zone.zip?dl=1" \
+            "chanston-donator-zone.zip"
+          fetch_extract "chanston-underground-castlewars" \
+            "https://www.dropbox.com/s/77ufcu5dvd6ytb2/Underground%20CWS.zip?dl=1" \
+            "chanston-underground-castlewars.zip"
+          fetch_extract "custom-manor" \
+            "https://www.dropbox.com/sh/v1lzbgmojedz8if/AAAZBTUPEqnLkyEq843PO6h3a?dl=1" \
+            "custom-manor.zip"
+
+          echo "BG_EXTRACTED=$extracted" >> "$GITHUB_ENV"
+
+      - name: Convert all available releases
+        run: |
+          python3 tools/convert_public_custom_maps.py --repo "$GITHUB_WORKSPACE" --extracted "$BG_EXTRACTED"
+
+      - name: Validate generated JSON
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+
+          root=Path("imports/custom-maps")
+          files=list(root.rglob("*.json"))
+          assert files, "converter produced no JSON"
+          for path in files:
+              json.loads(path.read_text(encoding="utf-8"))
+
+          status=json.loads((root/"conversion-status.json").read_text(encoding="utf-8"))
+          failed=[m for m in status["maps"] if m["status"]!="CONVERTED"]
+          assert not failed, failed
+          converted={m["slug"] for m in status["maps"]}
+          expected={
+              "edgeville-v12","boss-raids-room-v11","resource-dungeon-v1","snowy-area-v1",
+              "home-island-v11","edgeville-v11","edgeville-remade","barrows-island",
+              "custom-manor","underground-castlewars","ahoypk-zone",
+          }
+          assert converted==expected,(converted,expected)
+          print(f"Validated {len(files)} JSON files for {len(converted)} map releases.")
+          PY
+
+      - name: Commit converted 727 source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add imports/custom-maps docs/custom-map-conversion-status.md
+          if git diff --cached --quiet; then
+            echo "Converted source is unchanged."
+            exit 0
+          fi
+          git commit -m "maps: convert public custom maps to 727 source"
+          git pull --rebase origin "\${GITHUB_REF_NAME}"
+          git push origin "HEAD:\${GITHUB_REF_NAME}"
