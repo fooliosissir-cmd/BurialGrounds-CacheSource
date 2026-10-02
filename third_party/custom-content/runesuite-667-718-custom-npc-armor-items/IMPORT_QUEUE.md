@@ -28,7 +28,8 @@ Authoritative 727 cache: untouched
 4. **Shadow Drake / Fire Drake**
    - Six variants, all new v17.
    - Release metadata says Roc animations.
-   - Next gate: identify the 727 Roc BAS/sequence set and verify that the model vertex groups animate correctly before creating NPC definitions.
+   - 727 dependency research is now concrete: Giant Roc NPC 4972 uses render emote 924; its stand/walk sequences are 5021/5022, and the existing server combat definition names Roc attack/defend/death animations.
+   - Next gate: temporary model/NPC packing and a Developer World animation test against the 924 Roc family; verify the imported model vertex groups before creating production NPC definitions.
 
 5. **Vorkath armor**
    - Five equipment categories with inventory/drop + worn models.
