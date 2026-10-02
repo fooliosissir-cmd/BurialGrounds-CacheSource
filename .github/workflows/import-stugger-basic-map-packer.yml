@@ -1,0 +1,67 @@
+name: One-shot import Stugger map payloads
+
+on:
+  push:
+    branches:
+      - dev
+    paths:
+      - ".github/workflows/import-stugger-basic-map-packer.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: import-stugger-basic-map-packer
+  cancel-in-progress: false
+
+jobs:
+  reconstruct:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout dev
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+          fetch-depth: 0
+
+      - name: Reconstruct and verify map files
+        shell: bash
+        run: |
+          set -euo pipefail
+          root="tools/external-content/stugger-basic-map-packer"
+          incoming="$root/.incoming"
+
+          mkdir -p "$root/data/mapfiles/667/12342" "$root/data/mapfiles/718/12342"
+
+          base64 -d "$incoming/map.gz.b64" | gzip -dc > "$root/data/mapfiles/667/12342/624_map"
+          base64 -d "$incoming/land.gz.b64" | gzip -dc > "$root/data/mapfiles/667/12342/625_land"
+          base64 -d "$incoming/undermap.gz.b64" | gzip -dc > "$root/data/mapfiles/667/12342/2491_undermap"
+
+          cp "$root/data/mapfiles/667/12342/624_map" "$root/data/mapfiles/718/12342/3469_map"
+          cp "$root/data/mapfiles/667/12342/2491_undermap" "$root/data/mapfiles/718/12342/3470_undermap"
+          cp "$root/data/mapfiles/667/12342/625_land" "$root/data/mapfiles/718/12342/3471_land"
+
+          echo "dcd5c81cfcd105a4f3098ef0a5b0e46a9e95a34628d6513c41e6f381bbc41145  $root/data/mapfiles/667/12342/624_map" | sha256sum -c -
+          echo "8df7be884c8bef92a94fc09f550d4ab63171744bd5b1ee0617b224fadbed0603  $root/data/mapfiles/667/12342/625_land" | sha256sum -c -
+          echo "46e7292020f888064a3df40bb53974dfe4cdf9c30b27f80efc6c0c4f3e6541e2  $root/data/mapfiles/667/12342/2491_undermap" | sha256sum -c -
+          echo "dcd5c81cfcd105a4f3098ef0a5b0e46a9e95a34628d6513c41e6f381bbc41145  $root/data/mapfiles/718/12342/3469_map" | sha256sum -c -
+          echo "46e7292020f888064a3df40bb53974dfe4cdf9c30b27f80efc6c0c4f3e6541e2  $root/data/mapfiles/718/12342/3470_undermap" | sha256sum -c -
+          echo "8df7be884c8bef92a94fc09f550d4ab63171744bd5b1ee0617b224fadbed0603  $root/data/mapfiles/718/12342/3471_land" | sha256sum -c -
+
+          rm -rf "$incoming"
+
+      - name: Commit reconstructed payloads
+        shell: bash
+        run: |
+          set -euo pipefail
+          root="tools/external-content/stugger-basic-map-packer"
+          if [ -z "$(git status --porcelain -- "$root")" ]; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A "$root"
+          git commit -m "chore(cache): vendor Stugger Edgeville example maps"
+          git pull --rebase origin dev
+          git push origin HEAD:dev
