@@ -124,7 +124,7 @@ jobs:
             }
             END { for (e in count) print count[e], e }' |
             sort -nr |
-            head -80 |
+            sed -n '1,80p' |
             while read -r count ext; do
               printf '| %s | %s |\n' "$ext" "$count" >> "$report"
             done
@@ -133,7 +133,7 @@ jobs:
           echo "### Top-level tree" >> "$report"
           echo >> "$report"
           echo "~~~text" >> "$report"
-          find "$extract" -mindepth 1 -maxdepth 3 -printf '%P\n' | sort | head -400 >> "$report"
+          find "$extract" -mindepth 1 -maxdepth 3 -printf '%P\n' | sort | sed -n '1,400p' >> "$report"
           echo "~~~" >> "$report"
           echo >> "$report"
 
@@ -143,7 +143,7 @@ jobs:
           find "$extract" -type f -printf '%P\n' |
             grep -Ei '(boss|raid|event|model|npc|item|interface|map|vorkath|zulrah|cerberus|kraken|sire|hydra|olm|tekton|vasa|vespula|verzik|maiden|nightmare|custom)' |
             sort |
-            head -1200 >> "$report" || true
+            sed -n '1,1200p' >> "$report" || true
           echo "~~~" >> "$report"
           echo >> "$report"
 
@@ -154,7 +154,7 @@ jobs:
             xargs -0 grep -IlE '(Boss|boss|Raid|raid|NPC|Npc|npc|custom model|Custom Model)' 2>/dev/null |
             sed "s#^$extract/##" |
             sort |
-            head -1000 >> "$report" || true
+            sed -n '1,1000p' >> "$report" || true
           echo "~~~" >> "$report"
           echo >> "$report"
 
@@ -232,7 +232,7 @@ jobs:
                   echo "### Extracted tree sample" >> "$nested_report"
                   echo >> "$nested_report"
                   echo "~~~text" >> "$nested_report"
-                  find "$ndir" -type f -printf '%P\n' | sort | head -300 >> "$nested_report"
+                  find "$ndir" -type f -printf '%P\n' | sort | sed -n '1,300p' >> "$nested_report"
                   echo "~~~" >> "$nested_report"
                   echo >> "$nested_report"
                 else
@@ -287,7 +287,7 @@ jobs:
           echo >> "$content_report"
           echo "~~~text" >> "$content_report"
           if [ -d "$extract/718-Server/data/npcs" ]; then
-            find "$extract/718-Server/data/npcs" -type f -printf '%P\n' | sort | head -800 >> "$content_report"
+            find "$extract/718-Server/data/npcs" -type f -printf '%P\n' | sort | sed -n '1,800p' >> "$content_report"
           fi
           echo "~~~" >> "$content_report"
           echo >> "$content_report"
@@ -296,7 +296,7 @@ jobs:
           echo >> "$content_report"
           echo "~~~text" >> "$content_report"
           if [ -d "$extract/718-Server/data/items" ]; then
-            find "$extract/718-Server/data/items" -type f -printf '%P\n' | sort | head -800 >> "$content_report"
+            find "$extract/718-Server/data/items" -type f -printf '%P\n' | sort | sed -n '1,800p' >> "$content_report"
           fi
           echo "~~~" >> "$content_report"
           echo >> "$content_report"
@@ -305,7 +305,7 @@ jobs:
           echo >> "$content_report"
           echo "~~~text" >> "$content_report"
           if [ -d "$extract/718-Server/data/map" ]; then
-            find "$extract/718-Server/data/map" -type f -printf '%P\n' | sort | head -800 >> "$content_report"
+            find "$extract/718-Server/data/map" -type f -printf '%P\n' | sort | sed -n '1,800p' >> "$content_report"
           fi
           echo "~~~" >> "$content_report"
           echo >> "$content_report"
@@ -316,7 +316,7 @@ jobs:
           find "$extract/718-Server" -type f -printf '%P\n' |
             grep -Ei '(interface|model|cache|itemdef|npcdef|objectdef|renderanim)' |
             sort |
-            head -1000 >> "$content_report" || true
+            sed -n '1,1000p' >> "$content_report" || true
           echo "~~~" >> "$content_report"
 
       - name: Commit generated inventory
