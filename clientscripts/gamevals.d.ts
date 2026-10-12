@@ -25501,6 +25501,64 @@ declare namespace Obj {
     /** obj 45005 */ const clinkz_teal_gloves: number;
     /** obj 45006 */ const clinkz_teal_cape: number;
     /** obj 45007 */ const clinkz_teal_polearm: number;
+    /** obj 30208 */ const venomite_harpoon_launcher: number;
+    /** obj 30209 */ const venomite_imperial_ether_platelegs: number;
+    /** obj 30210 */ const venomite_imperial_ether_full_helm: number;
+    /** obj 30211 */ const venomite_imperial_ether_platebody: number;
+    /** obj 30212 */ const venomite_scythe_of_vitur_blood: number;
+    /** obj 30213 */ const venomite_twisted_bow_blood: number;
+    /** obj 30214 */ const blood_full_slayer_helmet: number;
+    /** obj 30215 */ const venomite_lava_d_hide_coif: number;
+    /** obj 30216 */ const venomite_lava_d_hide_chaps: number;
+    /** obj 30217 */ const venomite_lava_d_hide_body: number;
+    /** obj 30218 */ const venomite_twisted_bow_toxic: number;
+    /** obj 30219 */ const venomite_ancestral_robe_bottom_toxic: number;
+    /** obj 30220 */ const venomite_ancestral_robe_top_toxic: number;
+    /** obj 30221 */ const venomite_ancestral_hat_toxic: number;
+    /** obj 30222 */ const venomite_dark_ether_sword: number;
+    /** obj 30223 */ const venomite_dark_ether_bow: number;
+    /** obj 30224 */ const venomite_icicle_dagger: number;
+    /** obj 30225 */ const venomite_icicle_javelin: number;
+    /** obj 30226 */ const venomite_darkend_spear: number;
+    /** obj 30227 */ const venomite_infernal_longsword: number;
+    /** obj 30228 */ const death_full_slayer_helmet: number;
+    /** obj 30229 */ const venomite_harpoon_ammo: number;
+    /** obj 30230 */ const venomite_dark_ether_arrow: number;
+    /** obj 30231 */ const venomite_dark_ether_arrow_stack_28891: number;
+    /** obj 30232 */ const venomite_dark_ether_arrow_stack_28890: number;
+    /** obj 30233 */ const venomite_dark_ether_arrow_stack_28889: number;
+    /** obj 30234 */ const venomite_dark_ether_arrow_stack_28888: number;
+    /** obj 30239 */ const giant_custom_larran_s_bow: number;
+    /** obj 30240 */ const giant_custom_brimstone_staff: number;
+    /** obj 30242 */ const giant_custom_staff_of_sand: number;
+    /** obj 30250 */ const giant_custom_dark_abyssal_bludgeon: number;
+    /** obj 30260 */ const giant_custom_dark_staff: number;
+    /** obj 30261 */ const giant_custom_nazgul_chainmace: number;
+    /** obj 30264 */ const giant_custom_viggora_s_chainmace_blood: number;
+    /** obj 30266 */ const giant_custom_staff_of_pure_flame: number;
+    /** obj 30268 */ const giant_custom_venomous_staff: number;
+    /** obj 30270 */ const giant_custom_arcane_staff: number;
+    /** obj 30286 */ const giant_custom_cursed_ward: number;
+    /** obj 30287 */ const giant_custom_noxious_staff_shadow: number;
+    /** obj 30288 */ const giant_custom_noxious_scythe_shadow: number;
+    /** obj 30289 */ const giant_custom_maul_of_omens: number;
+    /** obj 30295 */ const giant_custom_zaros_godsword_blood: number;
+    /** obj 30320 */ const obj_30320: number;
+    /** obj 30359 */ const obj_30359: number;
+    /** obj 30360 */ const obj_30360: number;
+    /** obj 30361 */ const obj_30361: number;
+    /** obj 30362 */ const obj_30362: number;
+    /** obj 30363 */ const obj_30363: number;
+    /** obj 30364 */ const obj_30364: number;
+    /** obj 30366 */ const obj_30366: number;
+    /** obj 30367 */ const obj_30367: number;
+    /** obj 30368 */ const obj_30368: number;
+    /** obj 30369 */ const obj_30369: number;
+    /** obj 30371 */ const obj_30371: number;
+    /** obj 30372 */ const obj_30372: number;
+    /** obj 30373 */ const obj_30373: number;
+    /** obj 30374 */ const obj_30374: number;
+    /** obj 30375 */ const obj_30375: number;
 }
 
 /** Revision-727 npc ids by Jagex dev-name (15662 named of 15662). */
@@ -256550,6 +256608,9 @@ declare namespace Model {
     /** model 110050 */ const clinkz_armor_pants_dropb: number;
     /** model 110051 */ const clinkz_armor_pantsb: number;
     /** model 110052 */ const clinkz_armor_swordb: number;
+    /** model 91125 */ const venomite_lava_d_hide_body_drop: number;
+    /** model 91126 */ const venomite_lava_d_hide_body_female: number;
+    /** model 91127 */ const venomite_lava_d_hide_body_male: number;
 }
 
 /** Revision-727 interface components: `Component.<interface>.<component>` is the packed `(iface << 16) | comp`,
