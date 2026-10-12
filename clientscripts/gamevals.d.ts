@@ -25494,6 +25494,13 @@ declare namespace Obj {
     /** obj 25490 */ const urns_smithing5_rune: number;
     /** obj 25491 */ const urns_smithing5_started: number;
     /** obj 25492 */ const urns_smithing5_full: number;
+    /** obj 45001 */ const clinkz_teal_body: number;
+    /** obj 45002 */ const clinkz_teal_helm: number;
+    /** obj 45003 */ const clinkz_teal_legs: number;
+    /** obj 45004 */ const clinkz_teal_boots: number;
+    /** obj 45005 */ const clinkz_teal_gloves: number;
+    /** obj 45006 */ const clinkz_teal_cape: number;
+    /** obj 45007 */ const clinkz_teal_polearm: number;
 }
 
 /** Revision-727 npc ids by Jagex dev-name (15662 named of 15662). */
@@ -41160,6 +41167,31 @@ declare namespace Npc {
     /** npc 15659 */ const megagames_cheesewheel_cheese_stationary: number;
     /** npc 15660 */ const megagames_cheesewheel_cheese_rolling: number;
     /** npc 15661 */ const npc_15661: number;
+    /** npc 20101 */ const clinkz_boss20_35785: number;
+    /** npc 20102 */ const clinkz_boss20_36091: number;
+    /** npc 20103 */ const clinkz_boss20_36120: number;
+    /** npc 20104 */ const clinkz_boss20_36870: number;
+    /** npc 20105 */ const clinkz_boss20_37177: number;
+    /** npc 20106 */ const clinkz_boss20_37198: number;
+    /** npc 20107 */ const clinkz_boss20_37438: number;
+    /** npc 20108 */ const clinkz_boss20_37791: number;
+    /** npc 20109 */ const clinkz_boss20_37792: number;
+    /** npc 20110 */ const clinkz_boss20_37793: number;
+    /** npc 20111 */ const clinkz_boss20_37794: number;
+    /** npc 20112 */ const clinkz_boss20_37795: number;
+    /** npc 20113 */ const clinkz_boss20_37796: number;
+    /** npc 20114 */ const clinkz_boss20_38263: number;
+    /** npc 20115 */ const clinkz_boss20_38266: number;
+    /** npc 20116 */ const clinkz_boss20_38356: number;
+    /** npc 20117 */ const clinkz_boss20_38420: number;
+    /** npc 20118 */ const clinkz_booosss_175026: number;
+    /** npc 20119 */ const clinkz_booosss_175027: number;
+    /** npc 20120 */ const clinkz_booosss_175028: number;
+    /** npc 20121 */ const clinkz_booosss_175029: number;
+    /** npc 20122 */ const clinkz_booosss_175030: number;
+    /** npc 20123 */ const clinkz_booosss_175125: number;
+    /** npc 20124 */ const clinkz_booosss_175144: number;
+    /** npc 20125 */ const clinkz_booosss_175145: number;
 }
 
 /** Revision-727 loc ids by Jagex dev-name (73893 named of 73893). */
@@ -256480,6 +256512,44 @@ declare namespace Model {
     /** model 73503 */ const njloot_2013_t2: number;
     /** model 73504 */ const njloot_2013_t3: number;
     /** model 73505 */ const njloot_2013_t4: number;
+    /** model 110015 */ const clinkz_boss20_35785: number;
+    /** model 110016 */ const clinkz_boss20_36091: number;
+    /** model 110017 */ const clinkz_boss20_36120: number;
+    /** model 110018 */ const clinkz_boss20_36870: number;
+    /** model 110019 */ const clinkz_boss20_37177: number;
+    /** model 110020 */ const clinkz_boss20_37198: number;
+    /** model 110021 */ const clinkz_boss20_37438: number;
+    /** model 110022 */ const clinkz_boss20_37791: number;
+    /** model 110023 */ const clinkz_boss20_37792: number;
+    /** model 110024 */ const clinkz_boss20_37793: number;
+    /** model 110025 */ const clinkz_boss20_37794: number;
+    /** model 110026 */ const clinkz_boss20_37795: number;
+    /** model 110027 */ const clinkz_boss20_37796: number;
+    /** model 110028 */ const clinkz_boss20_38263: number;
+    /** model 110029 */ const clinkz_boss20_38266: number;
+    /** model 110030 */ const clinkz_boss20_38356: number;
+    /** model 110031 */ const clinkz_boss20_38420: number;
+    /** model 110032 */ const clinkz_booosss_175026: number;
+    /** model 110033 */ const clinkz_booosss_175027: number;
+    /** model 110034 */ const clinkz_booosss_175028: number;
+    /** model 110035 */ const clinkz_booosss_175029: number;
+    /** model 110036 */ const clinkz_booosss_175030: number;
+    /** model 110037 */ const clinkz_booosss_175125: number;
+    /** model 110038 */ const clinkz_booosss_175144: number;
+    /** model 110039 */ const clinkz_booosss_175145: number;
+    /** model 110040 */ const clinkz_armor_body_dropb: number;
+    /** model 110041 */ const clinkz_armor_bodyb: number;
+    /** model 110042 */ const clinkz_armor_boots_dropb: number;
+    /** model 110043 */ const clinkz_armor_bootsb: number;
+    /** model 110044 */ const clinkz_armor_capeb: number;
+    /** model 110045 */ const clinkz_armor_capedropb: number;
+    /** model 110046 */ const clinkz_armor_glove_dropb: number;
+    /** model 110047 */ const clinkz_armor_gloveb: number;
+    /** model 110048 */ const clinkz_armor_head_dropb: number;
+    /** model 110049 */ const clinkz_armor_headb: number;
+    /** model 110050 */ const clinkz_armor_pants_dropb: number;
+    /** model 110051 */ const clinkz_armor_pantsb: number;
+    /** model 110052 */ const clinkz_armor_swordb: number;
 }
 
 /** Revision-727 interface components: `Component.<interface>.<component>` is the packed `(iface << 16) | comp`,
