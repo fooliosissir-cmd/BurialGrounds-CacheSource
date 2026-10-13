@@ -1,0 +1,89 @@
+name: Preserve Venomite source package
+
+on:
+  push:
+    branches: [dev]
+    paths: [".github/workflows/preserve-venomite-source.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: preserve-venomite-source
+  cancel-in-progress: false
+
+jobs:
+  preserve:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            docs
+          fetch-depth: 1
+
+      - name: Install archive tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y megatools p7zip-full
+
+      - name: Retrieve and verify the recorded source package
+        env:
+          SOURCE_URL: "https://mega.nz/file/m65TlKDT#m_4DHtbOx3H8h_RVB9KJSZHVDVVksjiuVAsEcSO76Zw"
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/venomite-preservation"
+          cd "$RUNNER_TEMP/venomite-preservation"
+          timeout 20m megatools dl --no-progress --path venomite-718-source.rar "$SOURCE_URL"
+          echo 'c53a93449c0fadeb5e58cfbef3c75e3fa5bdb9c59b904486a751d5ea0eae19ef  venomite-718-source.rar' | sha256sum -c -
+          7z t venomite-718-source.rar > source-archive-test.txt
+          7z l venomite-718-source.rar > source-file-list.txt
+          7z x -y venomite-718-source.rar '718-Server/data/cache.rar' -oextracted
+          cp extracted/718-Server/data/cache.rar venomite-718-cache.rar
+          echo '9f8db07d778b24c939402d073b27e04fd17908de7e90ba1539ce6fab88b7fcc9  venomite-718-cache.rar' | sha256sum -c -
+          7z t venomite-718-cache.rar > cache-archive-test.txt
+          7z l venomite-718-cache.rar > cache-file-list.txt
+          7z x -y venomite-718-cache.rar -ocache-unpacked
+          test -s cache-unpacked/cache/main_file_cache.dat2
+          find cache-unpacked -type f -printf '%P %s bytes\n' | sort > unpacked-cache-file-list.txt
+          tar -cf venomite-718-unpacked-cache.tar -C cache-unpacked cache
+          sha256sum venomite-718-source.rar venomite-718-cache.rar venomite-718-unpacked-cache.tar > SHA256SUMS.txt
+          cat > README.txt <<'EOF'
+          Venomite 718 source and nested cache preservation
+
+          Original public release:
+          https://rune-server.org/threads/venomite-718-osrs-semi-custom.703434/
+
+          These archives match the SHA-256 hashes in the earlier Burial Grounds
+          source-package and nested-cache inventories. They are preserved here
+          at the user's explicit request so they remain available for inspection.
+          The original source package is unchanged; the nested cache archive is
+          extracted unchanged. No bundled executable or source code was run.
+          The unpacked-cache TAR contains the extracted packed-cache data/index
+          files, not individually decoded RuneScape item definitions or models.
+
+          This is an external research source, not the authoritative 727 cache
+          and not a game deployment. The release does not establish that wings
+          are present. Its item definitions and model payloads need decoding.
+          Existing source authorship and reuse terms remain with their authors.
+          EOF
+
+      - name: Save verified archives as GitHub release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          cd "$RUNNER_TEMP/venomite-preservation"
+          tag=external-venomite-718-source
+          if ! gh release view "$tag" >/dev/null 2>&1; then
+            gh release create "$tag" --target "$GITHUB_SHA" \
+              --title 'Venomite 718 — preserved source and cache' \
+              --notes-file README.txt
+          fi
+          gh release upload "$tag" venomite-718-source.rar venomite-718-cache.rar venomite-718-unpacked-cache.tar \
+            SHA256SUMS.txt README.txt source-file-list.txt cache-file-list.txt \
+            source-archive-test.txt cache-archive-test.txt unpacked-cache-file-list.txt --clobber
+          gh release view "$tag" --json url,assets

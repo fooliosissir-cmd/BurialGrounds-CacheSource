@@ -1,0 +1,56 @@
+{
+  "bundleVersion": 1,
+  "updated": "2026-10-02",
+  "targetRevision": 727,
+  "tools": [
+    {
+      "id": "runewiki-rs-data-api",
+      "name": "RuneWiki RS-DataAPI",
+      "kind": "git",
+      "status": "enabled",
+      "source": "https://github.com/RuneWiki/RS-DataAPI.git",
+      "pinnedCommit": "6155e9aad21d9b58133f720fc77a55c6fef1b9c3",
+      "installDir": ".third-party-tools/RS-DataAPI",
+      "purpose": "Cross-revision cache and object-definition research",
+      "licenseStatus": "No formal GitHub license detected; clone upstream, do not vendor."
+    },
+    {
+      "id": "stugger-basic-map-packer",
+      "name": "Stugger 667/718 Basic Map Packer",
+      "kind": "download",
+      "status": "enabled-optional",
+      "sourceThread": "https://rune-server.org/threads/667-718-basic-map-packer.695291/",
+      "download": "https://www.dropbox.com/scl/fi/ib2h2dtrl0pza8b9lruxm/Map-Packer.rar?rlkey=dhajyz6xr8j5c69cobh9evs3a&dl=1",
+      "installDir": ".third-party-tools/Stugger-Map-Packer",
+      "purpose": "Read/test Stugger map releases in disposable source-revision cache copies",
+      "licenseStatus": "Public download; redistribution license not confirmed."
+    },
+    {
+      "id": "stugger-667-cache-editor-source",
+      "name": "Stugger 667 Cache Definitions Editor / Model Packer source",
+      "kind": "download",
+      "status": "enabled-optional",
+      "sourceThread": "https://rune-server.org/threads/opensource-cache-definitions-editor.694828/",
+      "download": "https://www.dropbox.com/scl/fi/25p5m915idqq3gdhgdhhb/667-Cache-Editor-opensource.rar?rlkey=d2z8psyt5nl9yltiejg3ay0w0&dl=1",
+      "installDir": ".third-party-tools/Stugger-667-Cache-Editor-Source",
+      "purpose": "Reference code for 667 definition/model handling; never assume 727 layout compatibility",
+      "licenseStatus": "Author calls it open source; no formal license text confirmed."
+    },
+    {
+      "id": "stugger-full-map-editor",
+      "name": "Stugger full Map Editor",
+      "kind": "reference",
+      "status": "not-publicly-available",
+      "sourceThread": "https://rune-server.org/threads/map-editor.693642/",
+      "purpose": "Reference only"
+    },
+    {
+      "id": "stugger-cs2-editor",
+      "name": "Stugger 667/718 CS2 Editor",
+      "kind": "reference",
+      "status": "not-publicly-available",
+      "sourceThread": "https://rune-server.org/threads/667-718-cs2-editor.693130/",
+      "purpose": "Reference only"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+name: Inventory Venomite client packages
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - dev
+    paths:
+      - ".github/workflows/inventory-venomite-clients.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: inventory-venomite-clients-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
+
+      - name: Install inspection tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y megatools p7zip-full file
+
+      - name: Download and compare Venomite clients
+        shell: bash
+        env:
+          ORIGINAL_URL: "https://mega.nz/file/7zhW0CYY#6r8lECjoBuz_XEBSYfPzin_uoxPYArNbbFbdCm1dNSg"
+          FIXED_URL: "https://mega.nz/file/jvYVxDhS#a0MPjZA_kVWbyTf489Tduxzl9GsLtsebOslV_9A5DaU"
+        run: |
+          set -u
+          root="/tmp/bg-venomite-clients"
+          report="docs/generated-venomite-client-inventory.md"
+          mkdir -p "$root"
+
+          cat > "$report" <<'EOF'
+          # Generated Venomite Client Package Inventory
+
+          Generated in a temporary GitHub Actions runner. The original and later fixed client packages are inspected only; raw third-party files are not committed and no bundled executable or JAR is run.
+
+          EOF
+
+          inspect_client () {
+            local label="$1"
+            local url="$2"
+            local slug="$3"
+            local dlroot="$root/$slug-download"
+            local extract="$root/$slug-extracted"
+            local pkg=""
+            mkdir -p "$dlroot" "$extract"
+
+            echo "## $label" >> "$report"
+            echo >> "$report"
+
+            if ! timeout 15m megatools dl --no-progress --path "$dlroot" "$url" >"$root/$slug-mega.log" 2>&1; then
+              echo "**Download failed or timed out.**" >> "$report"
+              echo >> "$report"
+              echo "~~~text" >> "$report"
+              tail -80 "$root/$slug-mega.log" | sed -E 's/(https:\/\/mega\.nz\/file\/[^#[:space:]]+)#[^[:space:]]+/\1#REDACTED/g' >> "$report"
+              echo "~~~" >> "$report"
+              echo >> "$report"
+              return
+            fi
+
+            pkg="$(find "$dlroot" -type f | head -1 || true)"
+            if [ -z "$pkg" ] || [ ! -f "$pkg" ]; then
+              echo "**MEGA download completed but no package file was found.**" >> "$report"
+              echo >> "$report"
+              return
+            fi
+
+            local bytes sha kind
+            bytes="$(stat -c %s "$pkg")"
+            sha="$(sha256sum "$pkg" | awk '{print $1}')"
+            kind="$(file -b "$pkg" | tr '|' '/')"
+            printf -- '- Bytes: %s\n- SHA-256: %s\n- Type: %s\n\n' "$bytes" "$sha" "$kind" >> "$report"
+
+            echo "### Archive listing sample" >> "$report"
+            echo >> "$report"
+            echo "~~~text" >> "$report"
+            if timeout 5m 7z l -ba "$pkg" >"$root/$slug-listing.txt" 2>"$root/$slug-listing.err"; then
+              head -250 "$root/$slug-listing.txt" >> "$report"
+            else
+              head -80 "$root/$slug-listing.err" >> "$report"
+            fi
+            echo "~~~" >> "$report"
+            echo >> "$report"
+
+            if timeout 15m 7z x -y -o"$extract" "$pkg" >"$root/$slug-extract.log" 2>&1; then
+              local nfiles nbytes
+              nfiles="$(find "$extract" -type f | wc -l)"
+              nbytes="$(du -sb "$extract" | awk '{print $1}')"
+              printf -- '- Extracted files: %s\n- Extracted bytes: %s\n\n' "$nfiles" "$nbytes" >> "$report"
+
+              find "$extract" -type f -printf '%P|%s\n' | sort >"$root/$slug-files.txt"
+
+              echo "### Extensions" >> "$report"
+              echo >> "$report"
+              echo '| Extension | Files |' >> "$report"
+              echo '| --- | ---: |' >> "$report"
+              find "$extract" -type f -printf '%f\n' |
+                awk '{
+                  n=$0
+                  if (n !~ /\./) ext="[none]"
+                  else { sub(/^.*\./, "", n); ext=tolower(n) }
+                  count[ext]++
+                }
+                END { for (e in count) print count[e], e }' |
+                sort -nr |
+                head -60 |
+                while read -r count ext; do
+                  printf '| %s | %s |\n' "$ext" "$count" >> "$report"
+                done
+              echo >> "$report"
+
+              echo "### Custom/cache/interface candidate paths" >> "$report"
+              echo >> "$report"
+              echo "~~~text" >> "$report"
+              find "$extract" -type f -printf '%P\n' |
+                grep -Ei '(cache|model|npc|item|object|interface|sprite|texture|map|boss|raid|custom|animation|seq|render)' |
+                sort |
+                head -1000 >> "$report" || true
+              echo "~~~" >> "$report"
+              echo >> "$report"
+
+              echo "### Nested archive candidates" >> "$report"
+              echo >> "$report"
+              echo "~~~text" >> "$report"
+              find "$extract" -type f \( -iname '*.rar' -o -iname '*.zip' -o -iname '*.7z' -o -iname '*.gz' \) -printf '%P|%s bytes\n' |
+                sort |
+                head -300 >> "$report" || true
+              echo "~~~" >> "$report"
+              echo >> "$report"
+            else
+              echo "**Extraction failed or timed out.**" >> "$report"
+              echo >> "$report"
+              echo "~~~text" >> "$report"
+              tail -100 "$root/$slug-extract.log" >> "$report"
+              echo "~~~" >> "$report"
+              echo >> "$report"
+            fi
+
+            rm -rf "$dlroot"
+          }
+
+          inspect_client "Original client package" "$ORIGINAL_URL" "original"
+          inspect_client "Later fixed client package" "$FIXED_URL" "fixed"
+
+          echo "## Package file-tree comparison" >> "$report"
+          echo >> "$report"
+          if [ -f "$root/original-files.txt" ] && [ -f "$root/fixed-files.txt" ]; then
+            cut -d'|' -f1 "$root/original-files.txt" >"$root/original-paths.txt"
+            cut -d'|' -f1 "$root/fixed-files.txt" >"$root/fixed-paths.txt"
+
+            echo "### Only in original" >> "$report"
+            echo >> "$report"
+            echo "~~~text" >> "$report"
+            comm -23 "$root/original-paths.txt" "$root/fixed-paths.txt" | head -500 >> "$report"
+            echo "~~~" >> "$report"
+            echo >> "$report"
+
+            echo "### Only in fixed" >> "$report"
+            echo >> "$report"
+            echo "~~~text" >> "$report"
+            comm -13 "$root/original-paths.txt" "$root/fixed-paths.txt" | head -500 >> "$report"
+            echo "~~~" >> "$report"
+            echo >> "$report"
+          else
+            echo "A full comparison was not possible because one or both packages were unavailable." >> "$report"
+            echo >> "$report"
+          fi
+
+          echo "## Safety / import status" >> "$report"
+          echo >> "$report"
+          echo "- No bundled executable or JAR was run." >> "$report"
+          echo "- Raw client packages and extracted payloads are not committed." >> "$report"
+          echo "- Any useful client/cache assets still require provenance and 727 compatibility review." >> "$report"
+
+      - name: Commit generated client inventory
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- docs/generated-venomite-client-inventory.md)" ]; then
+            echo "Inventory unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/generated-venomite-client-inventory.md
+          git commit -m "docs: inventory Venomite client packages"
+          git pull --rebase origin "${GITHUB_REF_NAME}"
+          git push origin "HEAD:${GITHUB_REF_NAME}"
